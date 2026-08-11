@@ -1,0 +1,179 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.canvas_html_block
+  module:
+    - options
+    - text
+  theme:
+    - vartheme_bs5_rightup
+active_version: 82cd1f087fd469f4
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        text:
+          required: false
+          field_type: text_long
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+          derived_schema_metadata:
+            string_shape:
+              contentMediaType: text/html
+              x-formatting-context: block
+        trim:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        trim_length:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings:
+            min: 0
+            max: null
+          field_widget: number
+          default_value:
+            -
+              value: 50
+          expression: ℹ︎integer␟value
+          derived_schema_metadata: {  }
+        trim_units:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: words
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        suffix:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: ...
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        strip_html:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+  1f6fe433026fe38e:
+    settings:
+      prop_field_definitions:
+        text:
+          required: false
+          field_type: text_long
+          field_storage_settings: null
+          field_instance_settings:
+            allowed_formats:
+              - canvas_html_block
+          field_widget: text_textarea
+          default_value:
+            -
+              value: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'
+              format: canvas_html_block
+          expression: ℹ︎text_long␟processed
+          derived_schema_metadata:
+            string_shape:
+              contentMediaType: text/html
+              x-formatting-context: block
+        trim:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        trim_length:
+          required: false
+          field_type: integer
+          field_storage_settings: null
+          field_instance_settings:
+            min: 0
+            max: null
+          field_widget: number
+          default_value:
+            -
+              value: 50
+          expression: ℹ︎integer␟value
+          derived_schema_metadata: {  }
+        trim_units:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value:
+            -
+              value: words
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        suffix:
+          required: false
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value:
+            -
+              value: ...
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        strip_html:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Rich Text'
+id: sdc.vartheme_bs5_rightup.rich-text
+provider: vartheme_bs5_rightup
+source: sdc
+source_local_id: 'vartheme_bs5_rightup:rich-text'

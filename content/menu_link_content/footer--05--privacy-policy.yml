@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 7c19085e-dfed-4fe8-8338-fb0481e7a721
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  revision_log_message:
+    -
+      value: 'Created new Custom menu link'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Privacy Policy'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      uri: 'internal:/privacy-policy'
+      title: ''
+      options:
+        attributes:
+          class:
+            - small
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 20
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

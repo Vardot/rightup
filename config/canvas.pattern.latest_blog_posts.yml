@@ -1,0 +1,89 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.views_block.blog-latest
+    - canvas.component.sdc.vartheme_bs5_rightup.button
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+  module:
+    - link
+    - options
+id: latest_blog_posts
+label: 'Latest Blog Posts'
+component_tree:
+  5393f46a-f668-404c-91a8-912285895f60:
+    uuid: 5393f46a-f668-404c-91a8-912285895f60
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: false
+      columns: '100'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      section_header: true
+      section_footer: true
+    label: null
+  20efb87d-85c9-44e7-95b2-bbc75f25a4d9:
+    parent_uuid: 5393f46a-f668-404c-91a8-912285895f60
+    slot: header_slot
+    uuid: 20efb87d-85c9-44e7-95b2-bbc75f25a4d9
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Latest Updates'
+      level: 2
+      align: text-center
+    label: null
+  60aa8ebc-3679-4b9d-8b9c-57b6ffbc5c1a:
+    parent_uuid: 5393f46a-f668-404c-91a8-912285895f60
+    slot: header_slot
+    uuid: 60aa8ebc-3679-4b9d-8b9c-57b6ffbc5c1a
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  c307f64f-945b-4165-ba99-bada62bb5016:
+    parent_uuid: 5393f46a-f668-404c-91a8-912285895f60
+    slot: col_1
+    uuid: c307f64f-945b-4165-ba99-bada62bb5016
+    component_id: block.views_block.blog-latest
+    component_version: c336f6157683ac13
+    inputs:
+      label: 'Blog: Latest blog posts'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
+      exposed: {  }
+    label: null
+  2d1b69d2-233b-408e-a56e-02efc9b5be8e:
+    parent_uuid: 5393f46a-f668-404c-91a8-912285895f60
+    slot: footer_slot
+    uuid: 2d1b69d2-233b-408e-a56e-02efc9b5be8e
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs: {  }
+    label: null
+  5eae4c92-a9c6-4cea-a6c6-56a80d3173a0:
+    parent_uuid: 5393f46a-f668-404c-91a8-912285895f60
+    slot: footer_slot
+    uuid: 5eae4c92-a9c6-4cea-a6c6-56a80d3173a0
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: de3d2ab04711f861
+    inputs:
+      variant: btn-primary
+      outline: true
+      size: btn-md
+      label: 'View All Articles'
+      href:
+        uri: 'internal:/blog'
+        options: {  }
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: center
+      full_width: false
+      radius: rounded-1
+    label: null

@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_branding_block
+    - canvas.component.block.system_menu_block.main
+    - canvas.component.sdc.vartheme_bs5_rightup.group
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+  module:
+    - options
+id: header_global
+label: 'Site Header'
+component_tree:
+  d361c1e2-c0f0-4936-ade5-ce74e0a6570d:
+    uuid: d361c1e2-c0f0-4936-ade5-ce74e0a6570d
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      background_color: none
+      text_color: auto
+      columns: 25-75
+      gutter: 'gx-3 gy-3'
+      padding_block_start: pt-3
+      padding_block_end: pb-3
+      section_header: false
+      section_footer: false
+  41474f4e-b1b0-41bb-b4ee-47051ac01b32:
+    parent_uuid: d361c1e2-c0f0-4936-ade5-ce74e0a6570d
+    slot: col_1
+    uuid: 41474f4e-b1b0-41bb-b4ee-47051ac01b32
+    component_id: block.system_branding_block
+    component_version: 7d528e00f56b3abf
+    inputs:
+      label: 'Site branding'
+      label_display: '0'
+      use_site_logo: true
+      use_site_name: false
+      use_site_slogan: false
+  beaafff9-6dea-49e0-b737-08344d044c35:
+    parent_uuid: d361c1e2-c0f0-4936-ade5-ce74e0a6570d
+    slot: col_2
+    uuid: beaafff9-6dea-49e0-b737-08344d044c35
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: aef7f7b22127c944
+    inputs:
+      direction: horizontal
+      gap: gap-3
+      wrap: wrap
+      align_items: align-items-center
+      justify_content: justify-content-end
+  bb57452c-6c92-4cde-aec4-418b78b0552f:
+    parent_uuid: beaafff9-6dea-49e0-b737-08344d044c35
+    slot: content
+    uuid: bb57452c-6c92-4cde-aec4-418b78b0552f
+    component_id: block.system_menu_block.main
+    component_version: 322535c0078cf59c
+    inputs:
+      label: 'Main navigation'
+      label_display: '0'
+      level: 1
+      depth: 3
+      expand_all_items: true

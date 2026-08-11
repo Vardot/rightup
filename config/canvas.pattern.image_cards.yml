@@ -1,0 +1,291 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.button
+    - canvas.component.sdc.vartheme_bs5_rightup.card-text
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.image
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - field.field.media.image.field_media_image
+    - field.field.media.svg_image.field_media_svg_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - media.type.svg_image
+  content:
+    - 'file:file:2652f6cd-284e-5598-8d07-2242cad1c3e5'
+    - 'file:file:3bef5ee9-daa4-5584-a37c-7dc22bc78997'
+    - 'file:file:b9309646-f2ca-5c0d-8f2b-6e99da354e87'
+    - 'media:svg_image:1fbeced8-3376-5027-a8df-67d07c1352e3'
+    - 'media:svg_image:29e1d4c3-4817-5921-972d-0a276e6f9b19'
+    - 'media:svg_image:5fb606b9-9b43-54e7-9bf4-357a3360993d'
+    - 'media:svg_image:70e666ba-6af5-5456-bf74-13c53e653fb5'
+  module:
+    - file
+    - media
+    - options
+    - text
+id: image_cards
+label: 'Image Cards'
+component_tree:
+  d89509c1-aaf5-4aee-b0c4-c83fca5028f7:
+    uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      columns: 25-25-25-25
+      gutter: 'gx-5 gy-5'
+      padding_block_start: pt-0
+      padding_block_end: pb-5
+      margin_block_start: mt-5
+      vertical_alignment: align-items-stretch
+      section_header: true
+      section_footer: true
+      aos_once: false
+    label: null
+  492b6fc7-0ac6-4f10-a669-e124276e585d:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: header_slot
+    uuid: 492b6fc7-0ac6-4f10-a669-e124276e585d
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  c05f8e1f-9007-45e1-9e8c-5b69f438468b:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: header_slot
+    uuid: c05f8e1f-9007-45e1-9e8c-5b69f438468b
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Varbase can bring ease to you if you are '
+      level: 2
+      align: text-center
+    label: null
+  1b48ad11-c5f7-4e9c-b367-4abfa0009206:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: header_slot
+    uuid: 1b48ad11-c5f7-4e9c-b367-4abfa0009206
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  1f651f07-475a-418f-beee-42f6fcf7c121:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: col_1
+    uuid: 1f651f07-475a-418f-beee-42f6fcf7c121
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  414a0e1f-ce30-4d52-a7b4-edc4b9d59839:
+    parent_uuid: 1f651f07-475a-418f-beee-42f6fcf7c121
+    slot: content
+    uuid: 414a0e1f-ce30-4d52-a7b4-edc4b9d59839
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        target_id: '15'
+    label: null
+  1967964b-cdbd-43a3-8907-5bab8ac05509:
+    parent_uuid: 1f651f07-475a-418f-beee-42f6fcf7c121
+    slot: content
+    uuid: 1967964b-cdbd-43a3-8907-5bab8ac05509
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  ebd1255e-9d5c-4012-9d36-b75c508c72a9:
+    parent_uuid: 1f651f07-475a-418f-beee-42f6fcf7c121
+    slot: content
+    uuid: ebd1255e-9d5c-4012-9d36-b75c508c72a9
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Launching multilingual sites and need translation ready from day one.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  fda214d7-6837-4aba-b4f1-29f00be316a0:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: col_2
+    uuid: fda214d7-6837-4aba-b4f1-29f00be316a0
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  f1d5e5db-4d19-40ef-b0ac-fdceedd06380:
+    parent_uuid: fda214d7-6837-4aba-b4f1-29f00be316a0
+    slot: content
+    uuid: f1d5e5db-4d19-40ef-b0ac-fdceedd06380
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        target_id: '1'
+    label: null
+  c9fb45a5-989b-49e8-8130-ee270363a533:
+    parent_uuid: fda214d7-6837-4aba-b4f1-29f00be316a0
+    slot: content
+    uuid: c9fb45a5-989b-49e8-8130-ee270363a533
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  442d7cf9-9ca0-468f-9ffd-62090d7fd3fb:
+    parent_uuid: fda214d7-6837-4aba-b4f1-29f00be316a0
+    slot: content
+    uuid: 442d7cf9-9ca0-468f-9ffd-62090d7fd3fb
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Responsible for security and compliance on every project you ship.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  611f83d7-3b1c-411a-9cc4-17d5616caec8:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: col_3
+    uuid: 611f83d7-3b1c-411a-9cc4-17d5616caec8
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  4dd890a3-8d31-47b6-b681-93a815d7685e:
+    parent_uuid: 611f83d7-3b1c-411a-9cc4-17d5616caec8
+    slot: content
+    uuid: 4dd890a3-8d31-47b6-b681-93a815d7685e
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        target_id: '14'
+    label: null
+  a1334300-831a-4592-9152-7cbfc6b6a400:
+    parent_uuid: 611f83d7-3b1c-411a-9cc4-17d5616caec8
+    slot: content
+    uuid: a1334300-831a-4592-9152-7cbfc6b6a400
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  24c8147c-0fc3-4601-bf54-5e17186257f3:
+    parent_uuid: 611f83d7-3b1c-411a-9cc4-17d5616caec8
+    slot: content
+    uuid: 24c8147c-0fc3-4601-bf54-5e17186257f3
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Required to meet accessibility standards for every user.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  1d7a48f3-ad37-46f9-8ebc-081a3137cb38:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: col_4
+    uuid: 1d7a48f3-ad37-46f9-8ebc-081a3137cb38
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  164593e1-114a-4103-bb6d-90f1076d4878:
+    parent_uuid: 1d7a48f3-ad37-46f9-8ebc-081a3137cb38
+    slot: content
+    uuid: 164593e1-114a-4103-bb6d-90f1076d4878
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        target_id: '28'
+    label: null
+  546a626b-f136-4d7a-b6e1-f64d0b645959:
+    parent_uuid: 1d7a48f3-ad37-46f9-8ebc-081a3137cb38
+    slot: content
+    uuid: 546a626b-f136-4d7a-b6e1-f64d0b645959
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  bd9320ea-52f5-4df9-9941-a23127977eeb:
+    parent_uuid: 1d7a48f3-ad37-46f9-8ebc-081a3137cb38
+    slot: content
+    uuid: bd9320ea-52f5-4df9-9941-a23127977eeb
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Tired of wiring up the same modules and settings on every new site.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  0bdbfc24-7f96-41b3-b253-02112876b608:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: footer_slot
+    uuid: 0bdbfc24-7f96-41b3-b253-02112876b608
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  624cd552-b809-491b-a1af-a99704502acd:
+    parent_uuid: d89509c1-aaf5-4aee-b0c4-c83fca5028f7
+    slot: footer_slot
+    uuid: 624cd552-b809-491b-a1af-a99704502acd
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: de3d2ab04711f861
+    inputs:
+      variant: btn-primary
+      outline: true
+      size: btn-md
+      label: 'See All Varbase’s Features'
+      target: self
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: center
+      full_width: false
+      radius: rounded
+    label: null

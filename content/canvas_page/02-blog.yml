@@ -1,0 +1,285 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 33086ffd-e0c1-45c3-b5c0-75969873791c
+  default_langcode: en
+  depends:
+    fc33ecab-1c3d-4287-bd73-3927abb86a49: file
+    96101fa7-b093-4238-9259-38f22da6fa9c: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created English translation'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Blog
+  components:
+    -
+      uuid: cc1ea7d0-48fc-4714-bc08-e4430b4bdc42
+      component_id: sdc.vartheme_bs5_rightup.media-banner
+      inputs:
+        container_type: container
+        bg_edge2edge: false
+        height: ribbon
+        flex_position: center-left
+        object_position: center
+        radius: rounded-2
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 96101fa7-b093-4238-9259-38f22da6fa9c
+            target_type: media
+        overlay_bg: bg-dark
+        overlay_opacity: opacity-50
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+    -
+      parent_uuid: cc1ea7d0-48fc-4714-bc08-e4430b4bdc42
+      slot: media_banner_slot
+      uuid: 7343fb7e-44f7-4092-8956-4aeb159fb6bf
+      component_id: block.system_breadcrumb_block
+      inputs:
+        label: Breadcrumbs
+        label_display: '0'
+    -
+      parent_uuid: cc1ea7d0-48fc-4714-bc08-e4430b4bdc42
+      slot: media_banner_slot
+      uuid: 3bec2f38-2be3-4146-bff4-99dd0a2f4e87
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: cc1ea7d0-48fc-4714-bc08-e4430b4bdc42
+      slot: media_banner_slot
+      uuid: 6237189d-0891-46b9-89ef-79081bbba74a
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: Blog
+        text_color: text-white
+        text_size: display-2
+    -
+      parent_uuid: cc1ea7d0-48fc-4714-bc08-e4430b4bdc42
+      slot: media_banner_slot
+      uuid: 3de31731-3965-4030-8963-83cfba69cead
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p>Insights, updates, and stories from the Varbase team.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: cc1ea7d0-48fc-4714-bc08-e4430b4bdc42
+      slot: media_banner_slot
+      uuid: 6d3550bc-312b-4566-99f7-19152aa98202
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      uuid: d5fadb51-a3ec-4e7c-9f47-d2d37e6527b1
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-5
+    -
+      uuid: 3525871b-5b8c-42e4-84dd-df2ff8b9f1f6
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Latest Updates'
+        level: 2
+    -
+      uuid: e29550f9-ebe1-407f-86f6-6de7dbfdac9f
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs: {  }
+    -
+      uuid: 5a258afe-3992-4d6a-a556-502d052b81a5
+      component_id: sdc.vartheme_bs5_rightup.section
+      inputs:
+        bg_edge2edge: true
+        container_type: container
+        section_header: false
+        section_footer: false
+        columns: '100'
+    -
+      parent_uuid: 5a258afe-3992-4d6a-a556-502d052b81a5
+      slot: col_1
+      uuid: 26b72b2d-fc7b-4d69-acd1-82da0d84787d
+      component_id: block.views_exposed_filter_block.blog-all
+      inputs:
+        label: 'Filter blog posts'
+        label_display: '0'
+        views_label: ''
+      label: 'Blog filters'
+    -
+      parent_uuid: 5a258afe-3992-4d6a-a556-502d052b81a5
+      slot: col_1
+      uuid: ef1a9ade-5633-4bb2-bef9-665d58878f9b
+      component_id: block.views_block.blog-all
+      inputs:
+        label: 'Blog: All blog posts'
+        label_display: '0'
+        views_label: ''
+        items_per_page: 12
+        exposed: {  }
+    -
+      uuid: f17121ec-392c-47fd-b7cd-c9fcf5cf5fb0
+      component_id: sdc.vartheme_bs5_rightup.section
+      inputs:
+        vertical_alignment: align-items-stretch
+        bg_edge2edge: true
+        container_type: container
+        columns: 50-50
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        margin_block_start: mt-5
+        section_header: false
+        section_footer: false
+        aos_once: false
+    -
+      parent_uuid: f17121ec-392c-47fd-b7cd-c9fcf5cf5fb0
+      slot: header_slot
+      uuid: 26638469-abb9-48d8-b62d-6e1ad1f511d2
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Get started with Varbase'
+        level: 2
+    -
+      parent_uuid: f17121ec-392c-47fd-b7cd-c9fcf5cf5fb0
+      slot: col_1
+      uuid: 7e43aaaa-3bca-425b-853e-74e953c1133e
+      component_id: sdc.vartheme_bs5_rightup.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        corner_style: rounded-3
+        equal_height: true
+        stretched_link: false
+    -
+      parent_uuid: 7e43aaaa-3bca-425b-853e-74e953c1133e
+      slot: content
+      uuid: 0f4f6613-1cb0-4b19-82d7-19ae25963e02
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'About Varbase'
+        level: 3
+    -
+      parent_uuid: 7e43aaaa-3bca-425b-853e-74e953c1133e
+      slot: content
+      uuid: 3c8d57e9-bf79-43ba-bd64-b62b08454f2f
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-1
+    -
+      parent_uuid: 7e43aaaa-3bca-425b-853e-74e953c1133e
+      slot: content
+      uuid: cd6a905b-ba0a-406c-a09c-896301604722
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p>Varbase is an enterprise Drupal distribution by Vardot, built on Drupal 11 and assembled from reusable recipes.</p>'
+          format: canvas_html_block
+        text_size: fs-6
+        text_color: text-subtle-text
+    -
+      parent_uuid: 7e43aaaa-3bca-425b-853e-74e953c1133e
+      slot: content
+      uuid: 51a58250-7fd4-4006-a0ef-a65963d816bf
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 7e43aaaa-3bca-425b-853e-74e953c1133e
+      slot: content
+      uuid: 16adc117-1235-405e-8ca9-2063d6fbc5d2
+      component_id: sdc.vartheme_bs5_rightup.button
+      inputs:
+        variant: btn-primary
+        outline: true
+        size: btn-md
+        label: 'Learn More About Varbase'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        full_width: false
+        radius: rounded
+    -
+      parent_uuid: f17121ec-392c-47fd-b7cd-c9fcf5cf5fb0
+      slot: col_2
+      uuid: e92eaa04-7d8e-44d1-a8fc-48e3cb3e71d7
+      component_id: sdc.vartheme_bs5_rightup.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        corner_style: rounded-3
+        equal_height: true
+        stretched_link: false
+    -
+      parent_uuid: e92eaa04-7d8e-44d1-a8fc-48e3cb3e71d7
+      slot: content
+      uuid: 96fa59c7-8872-4bf5-9f5c-2aac6b1aea00
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Contact Us'
+        level: 3
+    -
+      parent_uuid: e92eaa04-7d8e-44d1-a8fc-48e3cb3e71d7
+      slot: content
+      uuid: 9b16ed82-7c01-46a4-818f-95163bf1642c
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-1
+    -
+      parent_uuid: e92eaa04-7d8e-44d1-a8fc-48e3cb3e71d7
+      slot: content
+      uuid: 306a02bc-d2dd-4be5-b6bc-74c6742e0088
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p>Need help with your Varbase project? Get in touch with our team and we will respond.</p>'
+          format: canvas_html_block
+        text_size: fs-6
+        text_color: text-subtle-text
+    -
+      parent_uuid: e92eaa04-7d8e-44d1-a8fc-48e3cb3e71d7
+      slot: content
+      uuid: 1e061054-5938-4f00-bad8-4f8fd4cf3e71
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: e92eaa04-7d8e-44d1-a8fc-48e3cb3e71d7
+      slot: content
+      uuid: f2285a27-4b57-46bf-b885-815a87f31907
+      component_id: sdc.vartheme_bs5_rightup.button
+      inputs:
+        variant: btn-primary
+        outline: true
+        size: btn-md
+        label: 'Contact Us Now'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        full_width: false
+        radius: rounded
+  path:
+    -
+      alias: /blog
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

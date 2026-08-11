@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 26924f83-3e7f-4b4f-965b-75582517a497
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Instagram
+  menu_name:
+    -
+      value: social-media-menu
+  link:
+    -
+      uri: 'https://www.instagram.com/vardotters/'
+      title: ''
+      options:
+        attributes:
+          target: _blank
+          class:
+            - bi
+            - bi-instagram
+            - fs-4
+            - ps-2
+            - pe-2
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 3
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag: { }

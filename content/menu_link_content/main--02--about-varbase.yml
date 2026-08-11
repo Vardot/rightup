@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 1f7b1638-0f87-4884-ac34-011f92264269
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'About Varbase'
+  menu_name:
+    - value: main
+  link:
+    - uri: "internal:/about-varbase"
+      title: ""
+      options: {}
+  external:
+    - value: false
+  rediscover:
+    - value: false
+  weight:
+    - value: -90
+  expanded:
+    - value: false
+  revision_translation_affected:
+    - value: true

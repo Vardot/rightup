@@ -1,0 +1,115 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_menu_block.footer
+    - canvas.component.block.system_menu_block.secondary
+    - canvas.component.block.system_menu_block.social-media-menu
+    - canvas.component.sdc.vartheme_bs5_rightup.divider
+    - canvas.component.sdc.vartheme_bs5_rightup.html-code
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+  module:
+    - options
+  theme:
+    - vartheme_bs5_rightup
+id: vartheme_bs5_rightup.footer
+region: footer
+theme: vartheme_bs5_rightup
+component_tree:
+  b6a309fb-cbd0-4601-918a-15294d8b1673:
+    uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      background_color: bg-light
+      text_color: text-dark
+      columns: 50-50
+      gutter: 'gx-3 gy-3'
+      padding_block_start: pt-5
+      padding_block_end: pb-0
+      section_header: false
+      section_footer: true
+      aos_once: false
+  1b8d6230-40b5-4224-b5c1-db5e805d31ac:
+    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+    slot: col_1
+    uuid: 1b8d6230-40b5-4224-b5c1-db5e805d31ac
+    component_id: block.system_menu_block.secondary
+    component_version: 31ecc6cc06f17d4e
+    inputs:
+      label: 'Footer sitemap menu'
+      label_display: '0'
+      level: 1
+      depth: 2
+      expand_all_items: true
+  8a0001f5-0e61-4176-b3ff-45bc3a5fde1e:
+    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+    slot: col_2
+    uuid: 8a0001f5-0e61-4176-b3ff-45bc3a5fde1e
+    component_id: sdc.vartheme_bs5_rightup.html-code
+    component_version: 656471f14c4594ec
+    inputs:
+      code: '<div class="footer-logo-wrapper"><p><img class="footer-logo-image" src="/themes/contrib/vartheme_bs5_rightup/logo.svg" alt="Varbase logo"></p><p class="footer-tagline mt-4">Enjoy the free software, or <a href="https://www.vardot.com/form/get-support-varbase?utm_source=varbase&amp;utm_campaign=varbase%20default%20links" target="_blank" rel="noopener noreferrer noreferrer" class="ext" data-extlink="" title="(opens in a new window)">get a quote</a> for enterprise support and fully functional websites.</p></div>'
+  e40a249a-c360-4f7b-b00f-9b3cbf0b04de:
+    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+    slot: col_2
+    uuid: e40a249a-c360-4f7b-b00f-9b3cbf0b04de
+    component_id: block.system_menu_block.social-media-menu
+    component_version: 0fcdbc0a997e263a
+    inputs:
+      label: 'Social media menu'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: true
+  d3c1cd06-e9bc-4f2e-85fb-f0a3faa8dd1f:
+    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+    slot: footer_slot
+    uuid: d3c1cd06-e9bc-4f2e-85fb-f0a3faa8dd1f
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 62f9294bba931609
+    inputs:
+      border_width: border-1
+      border_color: border-light
+      opacity: opacity-50
+      margin_top: mt-0
+      margin_bottom: mb-0
+  0bf79239-de05-498c-b5f0-2c07794b9444:
+    uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      background_color: bg-light
+      text_color: text-dark
+      columns: 50-50
+      gutter: 'gx-3 gy-3'
+      padding_block_start: pt-3
+      padding_block_end: pb-4
+      vertical_alignment: align-items-center
+      section_header: false
+      section_footer: false
+      aos_once: false
+  8bea199b-c0d7-4dd3-9540-7be4f4017f47:
+    parent_uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
+    slot: col_1
+    uuid: 8bea199b-c0d7-4dd3-9540-7be4f4017f47
+    component_id: block.system_menu_block.footer
+    component_version: 075503dbc228a45c
+    inputs:
+      label: 'Footer menu'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: true
+  6d18f41a-a332-42fa-b763-35cacb60adbd:
+    parent_uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
+    slot: col_2
+    uuid: 6d18f41a-a332-42fa-b763-35cacb60adbd
+    component_id: sdc.vartheme_bs5_rightup.html-code
+    component_version: 656471f14c4594ec
+    inputs:
+      code: '<div class="copyright-text mt-2 mb-0"><p class="mb-0 d-flex align-items-center gap-1 justify-content-start justify-content-md-end">Powered by <a class="d-inline-flex align-items-center" href="https://www.vardot.com/?utm_source=varbase&amp;utm_campaign=varbase%20default%20links" target="_blank" rel="noopener noreferrer" aria-label="Vardot"><img src="/themes/contrib/vartheme_bs5_rightup/vardot-logo.svg" alt="Vardot" class="powered-by-vardot-logo"></a></p></div>'

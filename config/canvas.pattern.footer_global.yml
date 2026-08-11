@@ -1,0 +1,112 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_menu_block.footer
+    - canvas.component.block.system_menu_block.secondary
+    - canvas.component.block.system_menu_block.social-media-menu
+    - canvas.component.sdc.vartheme_bs5_rightup.divider
+    - canvas.component.sdc.vartheme_bs5_rightup.html-code
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+  module:
+    - options
+id: footer_global
+label: 'Site Footer'
+component_tree:
+  ba428658-ceb8-4d57-8242-ab9b9a338068:
+    uuid: ba428658-ceb8-4d57-8242-ab9b9a338068
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      background_color: bg-light
+      text_color: text-dark
+      columns: 50-50
+      gutter: 'gx-3 gy-3'
+      padding_block_start: pt-5
+      padding_block_end: pb-0
+      section_header: false
+      section_footer: true
+      aos_once: false
+  70940a20-064d-48e6-8c09-34c5819c5c31:
+    parent_uuid: ba428658-ceb8-4d57-8242-ab9b9a338068
+    slot: col_1
+    uuid: 70940a20-064d-48e6-8c09-34c5819c5c31
+    component_id: block.system_menu_block.secondary
+    component_version: 31ecc6cc06f17d4e
+    inputs:
+      label: 'Footer sitemap menu'
+      label_display: '0'
+      level: 1
+      depth: 2
+      expand_all_items: true
+  4cb551a2-b88f-4a4a-a0fe-03839b486b1d:
+    parent_uuid: ba428658-ceb8-4d57-8242-ab9b9a338068
+    slot: col_2
+    uuid: 4cb551a2-b88f-4a4a-a0fe-03839b486b1d
+    component_id: sdc.vartheme_bs5_rightup.html-code
+    component_version: 656471f14c4594ec
+    inputs:
+      code: '<div class="footer-logo-wrapper"><p><img class="footer-logo-image" src="/themes/contrib/vartheme_bs5_rightup/logo.svg" alt="Varbase logo"></p><p class="footer-tagline mt-4">Enjoy the free software, or <a href="https://www.vardot.com/form/get-support-varbase?utm_source=varbase&amp;utm_campaign=varbase%20default%20links" target="_blank" rel="noopener noreferrer noreferrer" class="ext" data-extlink="" title="(opens in a new window)">get a quote</a> for enterprise support and fully functional websites.</p></div>'
+  f7ac0051-4994-494b-9564-7759fba8e0ec:
+    parent_uuid: ba428658-ceb8-4d57-8242-ab9b9a338068
+    slot: col_2
+    uuid: f7ac0051-4994-494b-9564-7759fba8e0ec
+    component_id: block.system_menu_block.social-media-menu
+    component_version: 0fcdbc0a997e263a
+    inputs:
+      label: 'Social media menu'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: true
+  a54027d7-f341-4d6e-aac5-05b7556c15c5:
+    parent_uuid: ba428658-ceb8-4d57-8242-ab9b9a338068
+    slot: footer_slot
+    uuid: a54027d7-f341-4d6e-aac5-05b7556c15c5
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 62f9294bba931609
+    inputs:
+      border_width: border-1
+      border_color: border-light
+      opacity: opacity-50
+      margin_top: mt-0
+      margin_bottom: mb-0
+  581161a3-f2d7-41b8-b65d-1bb2a8d2570a:
+    uuid: 581161a3-f2d7-41b8-b65d-1bb2a8d2570a
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      background_color: bg-light
+      text_color: text-dark
+      columns: 50-50
+      gutter: 'gx-3 gy-3'
+      padding_block_start: pt-3
+      padding_block_end: pb-4
+      vertical_alignment: align-items-center
+      section_header: false
+      section_footer: false
+      aos_once: false
+  c6e766c3-abdf-473c-a7a7-442fceb4245e:
+    parent_uuid: 581161a3-f2d7-41b8-b65d-1bb2a8d2570a
+    slot: col_1
+    uuid: c6e766c3-abdf-473c-a7a7-442fceb4245e
+    component_id: block.system_menu_block.footer
+    component_version: 075503dbc228a45c
+    inputs:
+      label: 'Footer menu'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: true
+  0b5a5ed0-7af0-43fd-b634-03080b8b2eeb:
+    parent_uuid: 581161a3-f2d7-41b8-b65d-1bb2a8d2570a
+    slot: col_2
+    uuid: 0b5a5ed0-7af0-43fd-b634-03080b8b2eeb
+    component_id: sdc.vartheme_bs5_rightup.html-code
+    component_version: 656471f14c4594ec
+    inputs:
+      code: '<div class="copyright-text mt-2 mb-0"><p class="mb-0 d-flex align-items-center gap-1 justify-content-start justify-content-md-end">Powered by <a class="d-inline-flex align-items-center" href="https://www.vardot.com/?utm_source=varbase&amp;utm_campaign=varbase%20default%20links" target="_blank" rel="noopener noreferrer" aria-label="Vardot"><img src="/themes/contrib/vartheme_bs5_rightup/vardot-logo.svg" alt="Vardot" class="powered-by-vardot-logo"></a></p></div>'

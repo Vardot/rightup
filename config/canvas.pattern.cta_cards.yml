@@ -1,0 +1,177 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.button
+    - canvas.component.sdc.vartheme_bs5_rightup.card-text
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - filter.format.canvas_html_block
+  module:
+    - link
+    - options
+    - text
+id: cta_cards
+label: 'Call to Action Cards'
+component_tree:
+  aa4cd243-a564-405d-83fb-27454c5db46f:
+    uuid: aa4cd243-a564-405d-83fb-27454c5db46f
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      gutter: 'gx-4 gy-4'
+      margin_block_start: mt-5
+      margin_block_end: mb-5
+      vertical_alignment: align-items-stretch
+      section_header: true
+      section_footer: false
+    label: null
+  a9167d87-1921-432e-bdc8-6f018d5d5773:
+    parent_uuid: aa4cd243-a564-405d-83fb-27454c5db46f
+    slot: header_slot
+    uuid: a9167d87-1921-432e-bdc8-6f018d5d5773
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Explore More'
+      level: 2
+      align: text-center
+    label: null
+  db674ad5-a689-4ba3-998e-7910698261c0:
+    parent_uuid: aa4cd243-a564-405d-83fb-27454c5db46f
+    slot: col_1
+    uuid: db674ad5-a689-4ba3-998e-7910698261c0
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  77efcf07-6f26-48f6-bc57-1bf4ff871796:
+    parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
+    slot: content
+    uuid: 77efcf07-6f26-48f6-bc57-1bf4ff871796
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'About Varbase'
+      level: 3
+    label: null
+  b919a0f1-671c-418e-b2a7-8bcd01bf2073:
+    parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
+    slot: content
+    uuid: b919a0f1-671c-418e-b2a7-8bcd01bf2073
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Varbase has successfully delivered over 200 digital experience projects for global brands and international enterprises that need the best Drupal web development and design capabilities for their custom and complex technical requirements.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  6059c74a-d85c-4b0f-b537-91f3998a3988:
+    parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
+    slot: content
+    uuid: 6059c74a-d85c-4b0f-b537-91f3998a3988
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  7f65fa7d-17f4-4064-bcde-abdf26e8e75c:
+    parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
+    slot: content
+    uuid: 7f65fa7d-17f4-4064-bcde-abdf26e8e75c
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: de3d2ab04711f861
+    inputs:
+      variant: btn-primary
+      outline: true
+      size: btn-md
+      label: 'Learn more'
+      href:
+        uri: 'https://www.vardot.com/en/solutions/varbase'
+        options: {  }
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: left
+      full_width: false
+      radius: rounded
+    label: null
+  ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4:
+    parent_uuid: aa4cd243-a564-405d-83fb-27454c5db46f
+    slot: col_2
+    uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  170cb322-ecb7-470b-91e0-8cefdef99932:
+    parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
+    slot: content
+    uuid: 170cb322-ecb7-470b-91e0-8cefdef99932
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: Blog
+      level: 3
+    label: null
+  b297c995-fd0f-473b-830c-67c167b56a60:
+    parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
+    slot: content
+    uuid: b297c995-fd0f-473b-830c-67c167b56a60
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Read the latest articles, tutorials, and release notes on the Varbase blog.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  e2f96d54-fe49-443d-ac5a-e9fa19569cb3:
+    parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
+    slot: content
+    uuid: e2f96d54-fe49-443d-ac5a-e9fa19569cb3
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  5ce80e8c-39e3-4946-9aae-e60156b93ab7:
+    parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
+    slot: content
+    uuid: 5ce80e8c-39e3-4946-9aae-e60156b93ab7
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: de3d2ab04711f861
+    inputs:
+      variant: btn-primary
+      outline: true
+      size: btn-md
+      label: 'View Updates'
+      href:
+        uri: 'internal:/blog'
+        options: {  }
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: left
+      full_width: false
+      radius: rounded
+    label: null

@@ -1,0 +1,326 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 0ac28534-833d-4fee-b4f8-0ea304c7b98f
+  default_langcode: en
+  depends:
+    55be58cb-39aa-43a3-a011-bd3c2711d669: file
+    65af2f45-8bb9-4c0c-b2fd-9dae1e4ff1c9: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created English translation'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Contact Us'
+  components:
+    -
+      uuid: 4e770ae1-c57d-48cd-905f-f806ac1e7732
+      component_id: sdc.vartheme_bs5_rightup.media-banner
+      inputs:
+        container_type: container
+        bg_edge2edge: false
+        height: ribbon
+        flex_position: center-left
+        object_position: center
+        radius: rounded-2
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 65af2f45-8bb9-4c0c-b2fd-9dae1e4ff1c9
+            target_type: media
+        overlay_bg: bg-dark
+        overlay_opacity: opacity-50
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+    -
+      parent_uuid: 4e770ae1-c57d-48cd-905f-f806ac1e7732
+      slot: media_banner_slot
+      uuid: 7222120b-d1eb-4332-9d21-87a4a97b37b0
+      component_id: block.system_breadcrumb_block
+      inputs:
+        label: Breadcrumbs
+        label_display: '0'
+    -
+      parent_uuid: 4e770ae1-c57d-48cd-905f-f806ac1e7732
+      slot: media_banner_slot
+      uuid: 01eb4dbb-752a-4548-995a-b84554a5672f
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 4e770ae1-c57d-48cd-905f-f806ac1e7732
+      slot: media_banner_slot
+      uuid: edd04b70-181f-414d-b429-6090ee2e85d6
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Contact Us'
+        text_color: text-white
+        level: 1
+    -
+      parent_uuid: 4e770ae1-c57d-48cd-905f-f806ac1e7732
+      slot: media_banner_slot
+      uuid: 3ac70592-f018-4c1b-b3b8-35fbb061fd86
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p>Get in touch with the Varbase team. We are here to help.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 4e770ae1-c57d-48cd-905f-f806ac1e7732
+      slot: media_banner_slot
+      uuid: 2d64e22b-a473-40fe-8447-c06bc203bea4
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      uuid: 3fd9081e-64e2-4539-897b-8508995df18c
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-5
+    -
+      uuid: e35f7f76-b49e-4356-9bd3-46863e47d7ce
+      component_id: sdc.vartheme_bs5_rightup.section
+      inputs:
+        bg_edge2edge: true
+        columns: 67-33
+        section_header: false
+        section_footer: false
+        gutter: 'gx-5 gy-5'
+        padding_block_end: pb-5
+        container_type: container
+        aos_once: false
+    -
+      parent_uuid: e35f7f76-b49e-4356-9bd3-46863e47d7ce
+      slot: col_1
+      uuid: a4ed961b-4066-499c-8391-e8ba3d7b693c
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Ask us about anything'
+        level: 2
+    -
+      parent_uuid: e35f7f76-b49e-4356-9bd3-46863e47d7ce
+      slot: col_1
+      uuid: 7e68a959-e42b-4ea5-b630-87d340fe0d37
+      component_id: block.webform_block
+      inputs:
+        label: Webform
+        label_display: '0'
+        webform_id: business_contact
+        default_data: ''
+        redirect: false
+        lazy: false
+    -
+      parent_uuid: e35f7f76-b49e-4356-9bd3-46863e47d7ce
+      slot: col_2
+      uuid: 073531b6-8ae0-4c15-99dc-60977c14325a
+      component_id: sdc.vartheme_bs5_rightup.group
+      inputs:
+        background_color: bg-secondary-subtle
+        radius: rounded-2
+        aos_once: true
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+        direction: horizontal
+    -
+      parent_uuid: 073531b6-8ae0-4c15-99dc-60977c14325a
+      slot: content
+      uuid: 82ec0833-5594-40a2-8aa0-b1819be5f017
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Contact Information'
+        level: 3
+    -
+      parent_uuid: 073531b6-8ae0-4c15-99dc-60977c14325a
+      slot: content
+      uuid: cf9de012-e64b-4ce8-98d2-70dff3731c8e
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p><strong>US &amp; Canada</strong></p><p>Phone Number: (408) 329 9888<br>Address: 3080 Olcott St, Suite A115, Santa Clara, CA 95054</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 073531b6-8ae0-4c15-99dc-60977c14325a
+      slot: content
+      uuid: b55e5c26-727c-45ee-a85f-2c66d4ae357e
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs: {  }
+    -
+      parent_uuid: 073531b6-8ae0-4c15-99dc-60977c14325a
+      slot: content
+      uuid: 9006122b-fd72-4afd-8f1e-50c32930cce7
+      component_id: sdc.vartheme_bs5_rightup.button
+      inputs:
+        variant: btn-primary
+        outline: true
+        size: btn-md
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded
+        label: 'Try Varbase for Free'
+        href:
+          uri: 'https://docs.varbase.vardot.com/11.0.x'
+          options: {  }
+    -
+      uuid: 3c1a9eaa-84da-42d1-9cf1-41c910fe3755
+      component_id: sdc.vartheme_bs5_rightup.section
+      inputs:
+        vertical_alignment: align-items-stretch
+        bg_edge2edge: true
+        margin_block_start: mt-5
+        section_header: true
+        section_footer: false
+        gutter: 'gx-4 gy-4'
+        margin_block_end: mb-5
+        container_type: container
+    -
+      parent_uuid: 3c1a9eaa-84da-42d1-9cf1-41c910fe3755
+      slot: header_slot
+      uuid: 78a513da-28a5-4e29-8081-a557d89a13f2
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'Explore More'
+        level: 2
+        align: text-center
+    -
+      parent_uuid: 3c1a9eaa-84da-42d1-9cf1-41c910fe3755
+      slot: col_1
+      uuid: 9a1108bc-e6d2-4f6d-85c6-64a916ba1abf
+      component_id: sdc.vartheme_bs5_rightup.card-text
+      inputs:
+        card_border: false
+        padded: true
+        equal_height: true
+        stretched_link: false
+        background_color: bg-secondary-subtle
+        corner_style: rounded-3
+    -
+      parent_uuid: 9a1108bc-e6d2-4f6d-85c6-64a916ba1abf
+      slot: content
+      uuid: 71af8e1f-ad09-448f-b149-10f2a3d97bbf
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: 'About Varbase'
+        level: 3
+    -
+      parent_uuid: 9a1108bc-e6d2-4f6d-85c6-64a916ba1abf
+      slot: content
+      uuid: 766dc5b8-e269-440e-b45a-fa43e0b960ee
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p>Varbase has successfully delivered over 200 digital experience projects for global brands and international enterprises that need the best Drupal web development and design capabilities for their custom and complex technical requirements.</p>'
+          format: canvas_html_block
+        text_size: fs-6
+        text_color: text-subtle-text
+    -
+      parent_uuid: 9a1108bc-e6d2-4f6d-85c6-64a916ba1abf
+      slot: content
+      uuid: 00706893-5511-40b7-b05c-38c5b7b419eb
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 9a1108bc-e6d2-4f6d-85c6-64a916ba1abf
+      slot: content
+      uuid: 4ec7d907-5fd5-42d5-b0ff-0e7060219b34
+      component_id: sdc.vartheme_bs5_rightup.button
+      inputs:
+        variant: btn-primary
+        size: btn-md
+        label: 'Learn more'
+        icon: none
+        icon_first: false
+        disabled: false
+        radius: rounded
+        href:
+          uri: 'https://www.vardot.com/en/solutions/varbase'
+          options: {  }
+        outline: true
+        full_width: false
+        alignment: left
+    -
+      parent_uuid: 3c1a9eaa-84da-42d1-9cf1-41c910fe3755
+      slot: col_2
+      uuid: cc5eaedb-de33-46db-b9c5-c1a22b0fdaad
+      component_id: sdc.vartheme_bs5_rightup.card-text
+      inputs:
+        card_border: false
+        padded: true
+        equal_height: true
+        stretched_link: false
+        background_color: bg-secondary-subtle
+        corner_style: rounded-3
+    -
+      parent_uuid: cc5eaedb-de33-46db-b9c5-c1a22b0fdaad
+      slot: content
+      uuid: 71a5f995-c309-456d-9e4e-45165801c5aa
+      component_id: sdc.vartheme_bs5_rightup.heading
+      inputs:
+        heading_text: Blog
+        level: 3
+    -
+      parent_uuid: cc5eaedb-de33-46db-b9c5-c1a22b0fdaad
+      slot: content
+      uuid: be95c7b8-d275-46b9-a094-6f3e411e9a0c
+      component_id: sdc.vartheme_bs5_rightup.text
+      inputs:
+        text:
+          value: '<p>Read the latest articles, tutorials, and release notes on the Varbase blog.</p>'
+          format: canvas_html_block
+        text_size: fs-6
+        text_color: text-subtle-text
+    -
+      parent_uuid: cc5eaedb-de33-46db-b9c5-c1a22b0fdaad
+      slot: content
+      uuid: 40822c6c-b610-4895-b2a7-4ccac4443578
+      component_id: sdc.vartheme_bs5_rightup.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: cc5eaedb-de33-46db-b9c5-c1a22b0fdaad
+      slot: content
+      uuid: 7373576c-9de3-4d45-a5c3-fdb612672cba
+      component_id: sdc.vartheme_bs5_rightup.button
+      inputs:
+        variant: btn-primary
+        size: btn-md
+        label: 'View Updates'
+        icon: none
+        icon_first: false
+        disabled: false
+        radius: rounded
+        href:
+          uri: 'internal:/blog'
+          options: {  }
+        outline: true
+        full_width: false
+        alignment: left
+  path:
+    -
+      alias: /contact-us
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

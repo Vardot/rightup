@@ -1,0 +1,37 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.editoria11y_results
+  module:
+    - views
+active_version: e42b8b7aec54049a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:editoria11y_results-block_top_issues'
+        label: 'Editoria11y - Most frequent alerts'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+  172d72fa4ce96acb:
+    settings:
+      default_settings:
+        id: 'views_block:editoria11y_results-block_top_issues'
+        label: 'Editoria11y - Most frequent alerts'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Editoria11y - Most frequent alerts'
+id: block.views_block.editoria11y_results-block_top_issues
+provider: views
+source: block
+source_local_id: 'views_block:editoria11y_results-block_top_issues'

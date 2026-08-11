@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 9277735d-4214-40eb-8b2d-aa79ba7f489e
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Facebook
+  menu_name:
+    -
+      value: social-media-menu
+  link:
+    -
+      uri: 'https://www.facebook.com/vardotters/'
+      title: ''
+      options:
+        attributes:
+          target: _blank
+          class:
+            - bi
+            - bi-facebook
+            - fs-4
+            - ps-1
+            - pe-2
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 2
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag: { }

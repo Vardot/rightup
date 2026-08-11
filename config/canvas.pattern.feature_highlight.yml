@@ -1,0 +1,96 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.card-featured
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - field.field.media.image.field_media_image
+    - field.field.media.svg_image.field_media_svg_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - media.type.svg_image
+  content:
+    - 'file:file:20f5e582-98d4-41be-a3cd-7cf937c05a0d'
+    - 'media:image:464c44f5-2ba4-46c0-909b-d6c82ad48a3e'
+  module:
+    - file
+    - media
+    - options
+    - text
+id: feature_highlight
+label: 'Feature Highlight'
+component_tree:
+  69b0d4ff-5693-4716-833f-739a9c5aa603:
+    uuid: 69b0d4ff-5693-4716-833f-739a9c5aa603
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      columns: '100'
+      gutter: 'gx-5 gy-5'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      margin_block_start: mt-5
+      vertical_alignment: align-items-center
+      section_header: false
+      section_footer: false
+      aos_once: false
+    label: null
+  78c8804d-1957-407e-92ae-cc431bccce7f:
+    parent_uuid: 69b0d4ff-5693-4716-833f-739a9c5aa603
+    slot: col_1
+    uuid: 78c8804d-1957-407e-92ae-cc431bccce7f
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    component_version: 760a4a6c1117384e
+    inputs:
+      media_position: end
+      media_image:
+        target_id: '19'
+      ratio: ratio-auto
+      fit: object-fit-contain
+      card_border: false
+      corner_style: rounded-3
+      padded: false
+      equal_height: true
+      stretched_link: false
+      content_vertical_alignment: align-items-center
+      gutters_between: 'g-4 g-lg-5'
+      columns_xs_size: '07_05'
+    label: null
+  c5e39d2a-14b6-48ed-820d-142de7de8e1f:
+    parent_uuid: 78c8804d-1957-407e-92ae-cc431bccce7f
+    slot: content
+    uuid: c5e39d2a-14b6-48ed-820d-142de7de8e1f
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Security Standards'
+      level: 2
+    label: null
+  f9e0ce39-888e-4656-9907-d10f70250179:
+    parent_uuid: 78c8804d-1957-407e-92ae-cc431bccce7f
+    slot: content
+    uuid: f9e0ce39-888e-4656-9907-d10f70250179
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  4b5981c7-b592-401e-9c10-97bed39e0cd8:
+    parent_uuid: 78c8804d-1957-407e-92ae-cc431bccce7f
+    slot: content
+    uuid: 4b5981c7-b592-401e-9c10-97bed39e0cd8
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Varbase comes with top security standards for an enterprise-security level website. You will find Password Policy, Security Review, Security Kit, and Username Enumeration Prevention are installed and configured to secure your site. Honeypot is also being used to lock your forms from spam bots.</p>'
+        format: canvas_html_block
+      text_size: none
+      text_color: text-subtle-text
+    label: null

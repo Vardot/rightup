@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: secondary
+label: 'Secondary menu'
+description: 'Mini sitemap links shown in the footer.'
+locked: false

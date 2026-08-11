@@ -1,0 +1,62 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.secondary
+  module:
+    - system
+active_version: 7206ccf6a90c8941
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:secondary'
+        label: 'Secondary menu'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+  31ecc6cc06f17d4e:
+    settings:
+      default_settings:
+        id: 'system_menu_block:secondary'
+        label: 'Secondary menu'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+  dba0b5285997433e:
+    settings:
+      default_settings:
+        id: 'system_menu_block:secondary'
+        label: Secondary
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+  8601a0c2eaaf3c94:
+    settings:
+      default_settings:
+        id: 'system_menu_block:secondary'
+        label: Secondary
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Secondary menu'
+id: block.system_menu_block.secondary
+provider: system
+source: block
+source_local_id: 'system_menu_block:secondary'

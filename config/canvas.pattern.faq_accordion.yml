@@ -1,0 +1,114 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.accordion-block
+    - canvas.component.sdc.vartheme_bs5_rightup.accordion-container
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - filter.format.canvas_html_block
+  module:
+    - options
+    - text
+id: faq_accordion
+label: 'FAQ Accordion'
+component_tree:
+  204f735b-6824-4fda-8877-792d0ae6a481:
+    uuid: 204f735b-6824-4fda-8877-792d0ae6a481
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      container_type: container
+      columns: '100'
+      gutter: 'gx-3 gy-3'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      horizontal_alignment: text-start
+      section_header: true
+      section_footer: false
+  4f066e9f-2129-473f-87e8-1501ced1536d:
+    parent_uuid: 204f735b-6824-4fda-8877-792d0ae6a481
+    slot: header_slot
+    uuid: 4f066e9f-2129-473f-87e8-1501ced1536d
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Frequently Asked Questions'
+      level: 2
+      align: text-center
+  d947c46d-c1c5-439b-b792-6a812b7210c2:
+    parent_uuid: 204f735b-6824-4fda-8877-792d0ae6a481
+    slot: col_1
+    uuid: d947c46d-c1c5-439b-b792-6a812b7210c2
+    component_id: sdc.vartheme_bs5_rightup.accordion-container
+    component_version: b57bfb879c784b04
+    inputs:
+      flush: false
+      always_open: false
+  c22ad975-29b7-4676-baee-ad3260c860ba:
+    parent_uuid: d947c46d-c1c5-439b-b792-6a812b7210c2
+    slot: accordion_content
+    uuid: c22ad975-29b7-4676-baee-ad3260c860ba
+    component_id: sdc.vartheme_bs5_rightup.accordion-block
+    component_version: d4ebc8481d81cca5
+    inputs:
+      title: 'What is Varbase?'
+      heading_level: 3
+      open_by_default: true
+  40e6b89e-7ed5-45e7-bf24-a9615f805c07:
+    parent_uuid: c22ad975-29b7-4676-baee-ad3260c860ba
+    slot: accordion_content
+    uuid: 40e6b89e-7ed5-45e7-bf24-a9615f805c07
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Varbase is an enhanced Drupal distribution that ships with the most commonly needed features, modules, and configuration to accelerate building standard websites and web applications.</p>'
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  770b323e-9883-43fb-aad3-94649ec0b661:
+    parent_uuid: d947c46d-c1c5-439b-b792-6a812b7210c2
+    slot: accordion_content
+    uuid: 770b323e-9883-43fb-aad3-94649ec0b661
+    component_id: sdc.vartheme_bs5_rightup.accordion-block
+    component_version: d4ebc8481d81cca5
+    inputs:
+      title: 'How do I get started?'
+      heading_level: 3
+      open_by_default: false
+  5498eb4d-1583-4b10-b13e-054a3ca86495:
+    parent_uuid: 770b323e-9883-43fb-aad3-94649ec0b661
+    slot: accordion_content
+    uuid: 5498eb4d-1583-4b10-b13e-054a3ca86495
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Install Varbase with Composer, run the guided installer, and start authoring pages right away. See our <a href="/documentation">documentation</a> for step-by-step setup instructions.</p>'
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  7aa56c75-46a6-4b8a-b03c-0beea5858307:
+    parent_uuid: d947c46d-c1c5-439b-b792-6a812b7210c2
+    slot: accordion_content
+    uuid: 7aa56c75-46a6-4b8a-b03c-0beea5858307
+    component_id: sdc.vartheme_bs5_rightup.accordion-block
+    component_version: d4ebc8481d81cca5
+    inputs:
+      title: 'Where can I get support?'
+      heading_level: 3
+      open_by_default: false
+  defecaeb-8964-4980-8e43-f25b4fac4198:
+    parent_uuid: 7aa56c75-46a6-4b8a-b03c-0beea5858307
+    slot: accordion_content
+    uuid: defecaeb-8964-4980-8e43-f25b4fac4198
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Reach the community through the issue queues and forums, or <a href="/contact-us">contact our team</a> for professional support and services.</p>'
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body

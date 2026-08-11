@@ -1,0 +1,127 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.button
+    - canvas.component.sdc.vartheme_bs5_rightup.card-text
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - filter.format.canvas_html_block
+  module:
+    - link
+    - options
+    - text
+id: cta_banner
+label: 'Call to Action Banner'
+component_tree:
+  620d4371-d5a7-4d05-947f-2474e2cf2c2a:
+    uuid: 620d4371-d5a7-4d05-947f-2474e2cf2c2a
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: false
+      container_type: none
+      columns: '100'
+      margin_block_start: mt-5
+      margin_block_end: mb-5
+      section_header: false
+      section_footer: false
+      aos_once: false
+    label: null
+  0f9eae57-57e6-4e19-ad4f-9a1044d312ed:
+    parent_uuid: 620d4371-d5a7-4d05-947f-2474e2cf2c2a
+    slot: col_1
+    uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-dark
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+    label: null
+  3d85884e-d008-421e-8c85-eeac8ae5ca75:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: 3d85884e-d008-421e-8c85-eeac8ae5ca75
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs: {  }
+    label: null
+  a653b100-fccc-42c5-806f-54b69db2cce2:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: a653b100-fccc-42c5-806f-54b69db2cce2
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Kick-start Your Journey with us Today!'
+      level: 2
+      text_size: h1
+      text_color: text-white
+      align: text-center
+    label: null
+  57c99b79-7654-4d45-969a-eff0b705c25c:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: 57c99b79-7654-4d45-969a-eff0b705c25c
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  10e3209e-eb69-4797-8ce8-30dc200becbe:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: 10e3209e-eb69-4797-8ce8-30dc200becbe
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p class="text-align-center">Websites you build with Varbase load fast, rank well, and stay fully responsive.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-white
+    label: null
+  b30f9144-27ff-4e63-a996-6ae3fd4adb8b:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: b30f9144-27ff-4e63-a996-6ae3fd4adb8b
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+    label: null
+  587e62cb-8c98-48cb-9ba4-911c967e0e08:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: 587e62cb-8c98-48cb-9ba4-911c967e0e08
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: de3d2ab04711f861
+    inputs:
+      variant: btn-primary
+      outline: false
+      size: btn-md
+      label: 'Contact Us'
+      href:
+        uri: 'internal:/contact-us'
+        options: {  }
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: center
+      full_width: false
+      radius: rounded-1
+    label: null
+  adec4b28-34ab-4bfc-b21d-7ba34c471477:
+    parent_uuid: 0f9eae57-57e6-4e19-ad4f-9a1044d312ed
+    slot: content
+    uuid: adec4b28-34ab-4bfc-b21d-7ba34c471477
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs: {  }
+    label: null

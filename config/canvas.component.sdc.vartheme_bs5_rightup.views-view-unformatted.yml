@@ -1,0 +1,13 @@
+langcode: en
+status: false
+dependencies: {  }
+active_version: fallback
+versioned_properties:
+  active:
+    settings:
+      last_active_version: ''
+label: 'Views view unformatted'
+id: sdc.vartheme_bs5_rightup.views-view-unformatted
+provider: vartheme_bs5_rightup
+source: sdc
+source_local_id: 'vartheme_bs5_rightup:views-view-unformatted'

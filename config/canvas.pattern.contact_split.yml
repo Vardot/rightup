@@ -1,0 +1,126 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.webform_block
+    - canvas.component.sdc.vartheme_bs5_rightup.button
+    - canvas.component.sdc.vartheme_bs5_rightup.group
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - filter.format.canvas_html_block
+  module:
+    - link
+    - options
+    - text
+id: contact_split
+label: 'Contact Form with Info'
+component_tree:
+  179b3860-636c-4074-a550-fd021ff11904:
+    uuid: 179b3860-636c-4074-a550-fd021ff11904
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      columns: 67-33
+      gutter: 'gx-5 gy-5'
+      padding_block_end: pb-5
+      section_header: false
+      section_footer: false
+      aos_once: false
+    label: null
+  56995c7f-6523-4ef7-af34-246d05eed027:
+    parent_uuid: 179b3860-636c-4074-a550-fd021ff11904
+    slot: col_1
+    uuid: 56995c7f-6523-4ef7-af34-246d05eed027
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Ask us about anything'
+      level: 2
+    label: null
+  e7706d44-4876-4238-9ba5-f16ffb96a42c:
+    parent_uuid: 179b3860-636c-4074-a550-fd021ff11904
+    slot: col_1
+    uuid: e7706d44-4876-4238-9ba5-f16ffb96a42c
+    component_id: block.webform_block
+    component_version: b5dca6ca0519bf1b
+    inputs:
+      label: Webform
+      label_display: '0'
+      webform_id: business_contact
+      default_data: ''
+      redirect: false
+      lazy: false
+    label: null
+  480e9841-537f-4933-802a-0f812955e215:
+    parent_uuid: 179b3860-636c-4074-a550-fd021ff11904
+    slot: col_2
+    uuid: 480e9841-537f-4933-802a-0f812955e215
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: aef7f7b22127c944
+    inputs:
+      background_color: bg-secondary-subtle
+      direction: horizontal
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      padding_inline_start: ps-5
+      padding_inline_end: pe-5
+      radius: rounded-2
+      aos_once: true
+    label: null
+  06914e88-8bb5-4caa-9676-234439736ca6:
+    parent_uuid: 480e9841-537f-4933-802a-0f812955e215
+    slot: content
+    uuid: 06914e88-8bb5-4caa-9676-234439736ca6
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Contact Information'
+      level: 3
+    label: null
+  b7cbfce3-2dc7-4c9c-8a42-37a1096ac719:
+    parent_uuid: 480e9841-537f-4933-802a-0f812955e215
+    slot: content
+    uuid: b7cbfce3-2dc7-4c9c-8a42-37a1096ac719
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p><strong>US &amp; Canada</strong></p><p>Phone Number: (408) 329 9888<br>Address: 3080 Olcott St, Suite A115, Santa Clara, CA 95054</p>'
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+    label: null
+  4f2f1f61-c420-4729-a13d-570c7b0da587:
+    parent_uuid: 480e9841-537f-4933-802a-0f812955e215
+    slot: content
+    uuid: 4f2f1f61-c420-4729-a13d-570c7b0da587
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs: {  }
+    label: null
+  357f664e-f887-4637-920d-6d973abe27da:
+    parent_uuid: 480e9841-537f-4933-802a-0f812955e215
+    slot: content
+    uuid: 357f664e-f887-4637-920d-6d973abe27da
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: de3d2ab04711f861
+    inputs:
+      variant: btn-primary
+      outline: true
+      size: btn-md
+      label: 'Try Varbase for Free'
+      href:
+        uri: 'https://docs.varbase.vardot.com/11.0.x'
+        options: {  }
+      target: self
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: inline
+      full_width: false
+      radius: rounded
+    label: null

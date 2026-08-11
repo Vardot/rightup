@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vartheme_bs5_rightup
+active_version: 656471f14c4594ec
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        code:
+          required: false
+          field_type: string_long
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textarea
+          default_value:
+            -
+              value: '<p class="mb-0">Hello <strong>world</strong>.</p>'
+          expression: ℹ︎string_long␟value
+          derived_schema_metadata:
+            string_shape:
+              pattern: '(.|\r?\n)*'
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'HTML Code'
+id: sdc.vartheme_bs5_rightup.html-code
+provider: vartheme_bs5_rightup
+source: sdc
+source_local_id: 'vartheme_bs5_rightup:html-code'

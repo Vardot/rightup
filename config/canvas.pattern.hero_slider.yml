@@ -1,0 +1,140 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.hero-slide
+    - canvas.component.sdc.vartheme_bs5_rightup.hero-slider-container
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - field.field.media.image.field_media_image
+    - field.field.media.svg_image.field_media_svg_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - media.type.svg_image
+  content:
+    - 'file:file:2d85a3ba-b9fb-42f4-bb02-3e4662b5e4ff'
+    - 'file:file:9f9cf049-c0d9-4596-9a17-a43e6ba81bfb'
+    - 'file:file:a9465d07-8e21-4374-b5f6-683e787d1388'
+    - 'file:file:ef46d5fb-c867-4451-8a2a-9f35a94b50a5'
+    - 'media:image:54f43ead-20b5-4c46-9e39-4a9e38a43e43'
+    - 'media:image:59d9ce37-b406-4b0d-8f7c-6002f3447554'
+    - 'media:image:8aa9c55f-602b-482a-b834-a94f06768e97'
+    - 'media:image:8e1ac1f0-8fa9-470d-ad15-6e9f7f0e38b6'
+  module:
+    - file
+    - media
+    - options
+    - text
+id: hero_slider
+label: 'Hero Slider'
+component_tree:
+  667bdc46-7746-4749-8fff-590df86dfef3:
+    uuid: 667bdc46-7746-4749-8fff-590df86dfef3
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: none
+      columns: '100'
+      section_header: false
+      section_footer: false
+      aos_once: true
+    label: null
+  dd0b7632-e33a-4cec-8882-8969355dac0b:
+    parent_uuid: 667bdc46-7746-4749-8fff-590df86dfef3
+    slot: col_1
+    uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
+    component_id: sdc.vartheme_bs5_rightup.hero-slider-container
+    component_version: e2e20b3c130bcb2d
+    inputs:
+      bg_edge2edge: false
+      autoplay: true
+      pause_on_hover: true
+      show_indicators: true
+      show_controls: true
+      controller_color: white
+    label: null
+  fb300bf2-391e-47fc-965c-d037980a36a0:
+    parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
+    slot: slides
+    uuid: fb300bf2-391e-47fc-965c-d037980a36a0
+    component_id: sdc.vartheme_bs5_rightup.hero-slide
+    component_version: 1b3b48066d8f9c3a
+    inputs:
+      enabled: true
+      active: false
+      title: 'Varbase, better than ever'
+      content:
+        value: "<p>Elevate your digital experience with Varbase's dynamic design system, seamlessly blending aesthetic appeal with unparalleled functionality. Unleash the power of intuitive design for a compelling web presence.</p>"
+        format: canvas_html_block
+      media:
+        target_id: '38'
+      title_tag: h2
+      title_size: h1
+      overlay_bg: none
+      button_text: 'Try Varbase for Free'
+      button_url: /about-varbase
+    label: null
+  c3feefad-fcdc-4c1a-829e-235d58291003:
+    parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
+    slot: slides
+    uuid: c3feefad-fcdc-4c1a-829e-235d58291003
+    component_id: sdc.vartheme_bs5_rightup.hero-slide
+    component_version: 1b3b48066d8f9c3a
+    inputs:
+      enabled: true
+      active: false
+      title: 'Compose your site from recipes'
+      content:
+        value: '<p>Assemble your site from composable Drupal recipes, applied on their own or grouped together. Start from an enterprise-ready baseline instead of wiring everything up by hand.</p>'
+        format: canvas_html_block
+      media:
+        target_id: '36'
+      title_tag: h2
+      title_size: h1
+      overlay_bg: none
+      button_text: 'About Varbase'
+      button_url: /about-varbase
+    label: null
+  d69b3e17-4c9a-4fe1-87cd-7de4f846d71d:
+    parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
+    slot: slides
+    uuid: d69b3e17-4c9a-4fe1-87cd-7de4f846d71d
+    component_id: sdc.vartheme_bs5_rightup.hero-slide
+    component_version: 1b3b48066d8f9c3a
+    inputs:
+      enabled: true
+      active: false
+      title: 'Design pages without code'
+      content:
+        value: '<p>Build and arrange pages visually with Drupal Canvas, no code required. The Bootstrap 5 based Vartheme keeps every layout responsive and on brand.</p>'
+        format: canvas_html_block
+      media:
+        target_id: '26'
+      title_tag: h2
+      title_size: h1
+      overlay_bg: none
+      button_text: 'Try the page builder'
+      button_url: /features
+    label: null
+  035c2ad1-4dad-4517-a333-51234879c65e:
+    parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
+    slot: slides
+    uuid: 035c2ad1-4dad-4517-a333-51234879c65e
+    component_id: sdc.vartheme_bs5_rightup.hero-slide
+    component_version: 1b3b48066d8f9c3a
+    inputs:
+      enabled: true
+      active: false
+      title: 'Secure and ready for production'
+      content:
+        value: '<p>Security hardening, accessibility, and SEO come configured out of the box. Launch with confidence on a foundation built for real-world production sites.</p>'
+        format: canvas_html_block
+      media:
+        target_id: '24'
+      title_tag: h2
+      title_size: h1
+      overlay_bg: none
+      button_text: 'Contact us'
+      button_url: /contact-us
+    label: null

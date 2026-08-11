@@ -1,0 +1,191 @@
+name: RightUp
+type: Site
+description: 'A media, news and magazine site template recipe for Varbase, providing a modern recipe-first approach to initializing editorial and newsroom sites.'
+recipes:
+  - varbase_users_base
+  - drupal_cms_admin_ui
+  - drupal_cms_anti_spam
+  - drupal_cms_authentication
+  - drupal_cms_forms
+  - drupal_cms_media
+  - drupal_cms_privacy_basic
+  - drupal_cms_seo_basic
+  - drupal_cms_seo_tools
+  - drupal_cms_accessibility_tools
+  - drupal_cms_search
+  - easy_email_express
+  - varbase_admin_base
+  - varbase_security_base
+  - varbase_media_base
+  - varbase_editor_base
+  - varbase_content_base
+  - varbase_workflow_base
+  - varbase_seo_base
+  - varbase_webform_base
+  - varbase_page_base
+  - varbase_blog_base
+  - varbase_performance_base
+  - varbase_demo_content
+install:
+  - vartheme_bs5_rightup
+  - better_exposed_filters
+config:
+  strict: false
+  actions:
+    system.site:
+      simpleConfigUpdate:
+        page.front: '/home'
+    system.theme:
+      simpleConfigUpdate:
+        default: vartheme_bs5_rightup
+    # The header search box shows the placeholder as its only prompt, so it
+    # carries the header design's wording instead of the Drupal CMS Search
+    # default. Set here rather than by patching that third-party recipe.
+    views.view.search:
+      simpleConfigUpdate:
+        display.default.display_options.filters.search_api_fulltext.expose.placeholder: 'Search by keyword'
+    package_manager.settings:
+      simpleConfigUpdate:
+        additional_trusted_composer_plugins:
+          - vardot/varbase
+          - drupal/rightup
+          - composer/installers
+          - cweagans/composer-patches
+          - oomphinc/composer-installers-extender
+          - drupal/core-composer-scaffold
+          - drupal/core-project-message
+          - dealerdirect/phpcodesniffer-composer-installer
+          - phpstan/extension-installer
+          - php-http/discovery
+          - tbachert/spi
+    project_browser.admin_settings:
+      simpleConfigUpdate:
+        enabled_sources:
+          recommended:
+            # @see recommended.yml
+            uri: 'https://git.drupalcode.org/api/v4/projects/201141/repository/files/recommended.yml/raw?ref=HEAD'
+            ttl: 1
+          drupalorg_jsonapi: []
+          varbase_recipes: []
+        default_source: recommended
+    ckeditor_media_embed.settings:
+      setCKEditorMediaEmbedVersion: true
+    canvas.component.block.system_menu_block.social-media-menu:
+      enable: []
+    canvas.component.block.announce_block:
+      disable: []
+    canvas.component.block.dashboard_placeholder:
+      disable: []
+    canvas.component.block.dashboard_site_status:
+      disable: []
+    canvas.component.block.help_block:
+      disable: []
+    canvas.component.block.local_actions_block:
+      disable: []
+    canvas.component.block.local_tasks_block:
+      disable: []
+    canvas.component.block.navigation_dashboard:
+      disable: []
+    canvas.component.block.navigation_link:
+      disable: []
+    canvas.component.block.navigation_shortcuts:
+      disable: []
+    canvas.component.block.page_title_block:
+      disable: []
+    canvas.component.block.project_browser_block.drupal_core:
+      disable: []
+    canvas.component.block.project_browser_block.drupalorg_jsonapi:
+      disable: []
+    canvas.component.block.project_browser_block.local_modules:
+      disable: []
+    canvas.component.block.project_browser_block.recipes:
+      disable: []
+    canvas.component.block.project_browser_block.recommended:
+      disable: []
+    canvas.component.block.system_clear_cache_block:
+      disable: []
+    canvas.component.block.system_menu_block.account:
+      disable: []
+    canvas.component.block.system_menu_block.admin:
+      disable: []
+    canvas.component.block.system_menu_block.content:
+      disable: []
+    canvas.component.block.system_menu_block.navigation-user-links:
+      disable: []
+    canvas.component.block.system_menu_block.tools:
+      disable: []
+    canvas.component.block.system_menu_block.top-tasks:
+      disable: []
+    canvas.component.block.system_messages_block:
+      disable: []
+    canvas.component.block.system_powered_by_block:
+      disable: []
+    canvas.component.block.user_login_block:
+      disable: []
+    canvas.component.block.views_block.a11y_tools_editoria11y_results-block_a11y_alerts:
+      disable: []
+    canvas.component.block.views_block.editoria11y_dismissals-recent_dismissals:
+      disable: []
+    canvas.component.block.views_block.editoria11y_results-block_recent_issues:
+      disable: []
+    canvas.component.block.views_block.editoria11y_results-block_top_issues:
+      disable: []
+    canvas.component.block.views_block.editoria11y_results-block_top_results:
+      disable: []
+    canvas.component.block.views_block.publishing_content-block_drafts:
+      disable: []
+    canvas.component.block.views_block.publishing_content-block_scheduled:
+      disable: []
+    canvas.component.block.views_block.recent_content-block_recent_content:
+      disable: []
+    canvas.component.sdc.navigation.title:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.details:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.field:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.fieldset:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.form:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.form-element:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.form-element-radiocheckbox:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.input-checkbox:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.input-submit:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.links-dropbutton:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.list:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.local-tasks:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.page:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.page-footer:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.radios:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.region:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.select:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.social-auth:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.user:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.views-view:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.views-view-grid:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.views-view-list:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.views-view-summary:
+      disable: []
+    canvas.component.sdc.vartheme_bs5_rightup.views-view-unformatted:
+      disable: []
+extra:
+  recipe_installer_kit:
+    finish_url: 'admin/dashboard/welcome'

@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 2e776555-717a-40ae-9128-1bb0503f902c
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    a89ece4d-d5e4-48db-8ef5-f224dc99b60f: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Get Professional Support'
+  menu_name:
+    -
+      value: secondary
+  link:
+    -
+      uri: 'https://www.vardot.com/form/get-support-varbase?utm_source=varbase&utm_campaign=varbase%20default%20links'
+      title: ''
+      options:
+        attributes:
+          class:
+            - pe-lg-0
+            - small
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:a89ece4d-d5e4-48db-8ef5-f224dc99b60f'
+  revision_translation_affected:
+    -
+      value: true

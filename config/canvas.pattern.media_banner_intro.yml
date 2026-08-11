@@ -1,0 +1,96 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.media-banner
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - field.field.media.image.field_media_image
+    - field.field.media.svg_image.field_media_svg_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - media.type.svg_image
+  content:
+    - 'file:file:55be58cb-39aa-43a3-a011-bd3c2711d669'
+    - 'media:image:65af2f45-8bb9-4c0c-b2fd-9dae1e4ff1c9'
+  module:
+    - file
+    - media
+    - options
+    - text
+id: media_banner_intro
+label: 'Page Intro Banner'
+component_tree:
+  4b714aa3-24dd-4e0b-8fda-cb5561527dff:
+    uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
+    component_id: sdc.vartheme_bs5_rightup.media-banner
+    component_version: 2233a9bacd7d69e9
+    inputs:
+      container_type: container
+      bg_edge2edge: false
+      height: ribbon
+      flex_position: center-left
+      overlay_bg: bg-dark
+      overlay_opacity: opacity-50
+      object_position: center
+      padding_inline_start: ps-5
+      padding_inline_end: pe-5
+      radius: rounded-2
+      media:
+        target_id: '27'
+    label: null
+  565d2149-dce3-431f-8b77-42c1750652fe:
+    parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
+    slot: media_banner_slot
+    uuid: 565d2149-dce3-431f-8b77-42c1750652fe
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+    label: null
+  f2d5849a-6b0b-4c87-bbc7-23cb31901d0f:
+    parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
+    slot: media_banner_slot
+    uuid: f2d5849a-6b0b-4c87-bbc7-23cb31901d0f
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  39f7a34d-2f1a-4a6a-b07b-a11a9bae9515:
+    parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
+    slot: media_banner_slot
+    uuid: 39f7a34d-2f1a-4a6a-b07b-a11a9bae9515
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Contact Us'
+      level: 1
+      text_color: text-white
+    label: null
+  580545d1-a1fc-4ee7-8554-0f9df9762761:
+    parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
+    slot: media_banner_slot
+    uuid: 580545d1-a1fc-4ee7-8554-0f9df9762761
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Get in touch with the Varbase team. We are here to help.</p>'
+        format: canvas_html_block
+      text_size: none
+      text_color: text-white
+    label: null
+  c4385d4a-76af-44e9-be44-279eae3ef516:
+    parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
+    slot: media_banner_slot
+    uuid: c4385d4a-76af-44e9-be44-279eae3ef516
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null

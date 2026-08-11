@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: b446aefb-7b73-40af-9f03-5e466dacc4f9
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    dc12fc4d-5d38-47f9-9f55-143e7299d7f7: canvas_page
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: "Contact Us"
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: "internal:/contact-us"
+      title: ""
+      options: {}
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -70
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

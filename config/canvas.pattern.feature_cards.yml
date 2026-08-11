@@ -1,0 +1,227 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.card-text
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - field.field.media.image.field_media_image
+    - field.field.media.svg_image.field_media_svg_image
+    - filter.format.canvas_html_block
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - media.type.svg_image
+  content:
+    - 'file:file:2652f6cd-284e-5598-8d07-2242cad1c3e5'
+    - 'file:file:b9309646-f2ca-5c0d-8f2b-6e99da354e87'
+    - 'file:file:e1261c3b-599d-58fc-9838-1c81975802a3'
+    - 'media:svg_image:1955c46d-6f86-50a7-880a-fa8d434c5abb'
+    - 'media:svg_image:1fbeced8-3376-5027-a8df-67d07c1352e3'
+    - 'media:svg_image:70e666ba-6af5-5456-bf74-13c53e653fb5'
+  module:
+    - file
+    - media
+    - options
+    - text
+id: feature_cards
+label: 'Feature Cards'
+component_tree:
+  281462cc-4f90-4193-a886-fa270ec33a11:
+    uuid: 281462cc-4f90-4193-a886-fa270ec33a11
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 4171719f53c41b9d
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      columns: 33-33-33
+      gutter: 'gx-5 gy-5'
+      padding_block_start: pt-0
+      padding_block_end: pb-5
+      vertical_alignment: align-items-stretch
+      section_header: false
+      section_footer: false
+      aos_once: false
+    label: null
+  ea4cf2c9-d0eb-404a-85e9-0c306bdae67b:
+    parent_uuid: 281462cc-4f90-4193-a886-fa270ec33a11
+    slot: header_slot
+    uuid: ea4cf2c9-d0eb-404a-85e9-0c306bdae67b
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'More reasons to choose Varbase'
+      level: 2
+    label: null
+  2838a875-78d1-4cfa-927c-29cace1cc59f:
+    parent_uuid: 281462cc-4f90-4193-a886-fa270ec33a11
+    slot: col_1
+    uuid: 2838a875-78d1-4cfa-927c-29cace1cc59f
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+      icon_image:
+        target_id: '13'
+    label: null
+  7047cc80-ddc7-495c-9b44-c1b48fad5180:
+    parent_uuid: 2838a875-78d1-4cfa-927c-29cace1cc59f
+    slot: content
+    uuid: 7047cc80-ddc7-495c-9b44-c1b48fad5180
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  01bb3f3d-dea3-468f-b561-29121db437c2:
+    parent_uuid: 2838a875-78d1-4cfa-927c-29cace1cc59f
+    slot: content
+    uuid: 01bb3f3d-dea3-468f-b561-29121db437c2
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: Multilingual
+      level: 3
+    label: null
+  6bcb2e3a-20d5-46c6-b189-6c88281039e4:
+    parent_uuid: 2838a875-78d1-4cfa-927c-29cace1cc59f
+    slot: content
+    uuid: 6bcb2e3a-20d5-46c6-b189-6c88281039e4
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-1
+    label: null
+  faeef5bc-5368-42c3-9630-a6f581352bba:
+    parent_uuid: 2838a875-78d1-4cfa-927c-29cace1cc59f
+    slot: content
+    uuid: faeef5bc-5368-42c3-9630-a6f581352bba
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Build and translate content in multiple languages, with localization ready out of the box.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  f37ffb3f-e9c3-4390-a48c-5d76362d58d5:
+    parent_uuid: 281462cc-4f90-4193-a886-fa270ec33a11
+    slot: col_2
+    uuid: f37ffb3f-e9c3-4390-a48c-5d76362d58d5
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+      icon_image:
+        target_id: '14'
+    label: null
+  985a31a9-03d9-4294-92de-1a9e8594b4e2:
+    parent_uuid: f37ffb3f-e9c3-4390-a48c-5d76362d58d5
+    slot: content
+    uuid: 985a31a9-03d9-4294-92de-1a9e8594b4e2
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  326928f2-8fb4-47bb-94fc-c1b61bc90a6b:
+    parent_uuid: f37ffb3f-e9c3-4390-a48c-5d76362d58d5
+    slot: content
+    uuid: 326928f2-8fb4-47bb-94fc-c1b61bc90a6b
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: 'Enterprise Security'
+      level: 3
+    label: null
+  26c6f4db-c179-4aa5-858d-e54c604e81b4:
+    parent_uuid: f37ffb3f-e9c3-4390-a48c-5d76362d58d5
+    slot: content
+    uuid: 26c6f4db-c179-4aa5-858d-e54c604e81b4
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-1
+    label: null
+  69ef69fd-02ca-48ff-92d3-59fedd6008de:
+    parent_uuid: f37ffb3f-e9c3-4390-a48c-5d76362d58d5
+    slot: content
+    uuid: 69ef69fd-02ca-48ff-92d3-59fedd6008de
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Hardened with security best practices, spam protection, and access controls.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null
+  24f0ea42-14af-4a6e-be9d-0e76f71eee91:
+    parent_uuid: 281462cc-4f90-4193-a886-fa270ec33a11
+    slot: col_3
+    uuid: 24f0ea42-14af-4a6e-be9d-0e76f71eee91
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: false
+      icon_image:
+        target_id: '28'
+    label: null
+  076f528f-1c8e-496f-88b1-5d18859204f8:
+    parent_uuid: 24f0ea42-14af-4a6e-be9d-0e76f71eee91
+    slot: content
+    uuid: 076f528f-1c8e-496f-88b1-5d18859204f8
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+    label: null
+  7235c44d-fd98-437c-9091-15d63680338f:
+    parent_uuid: 24f0ea42-14af-4a6e-be9d-0e76f71eee91
+    slot: content
+    uuid: 7235c44d-fd98-437c-9091-15d63680338f
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: Accessibility
+      level: 3
+    label: null
+  4f10d25b-a1fc-4536-acb3-15edeb3eb0cd:
+    parent_uuid: 24f0ea42-14af-4a6e-be9d-0e76f71eee91
+    slot: content
+    uuid: 4f10d25b-a1fc-4536-acb3-15edeb3eb0cd
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-1
+    label: null
+  db6c559b-2c4c-41d4-a54b-66e67243e69e:
+    parent_uuid: 24f0ea42-14af-4a6e-be9d-0e76f71eee91
+    slot: content
+    uuid: db6c559b-2c4c-41d4-a54b-66e67243e69e
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: c4ddb22de87220b3
+    inputs:
+      text:
+        value: '<p>Built to current web standards so your site stays usable for everyone.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-subtle-text
+    label: null

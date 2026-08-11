@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vartheme_bs5_rightup
+active_version: 814cd70680d38fc0
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        navbar_brand_utility_classes:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+  6327ef89b7918360:
+    settings:
+      prop_field_definitions:
+        navbar_brand_utility_classes:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Navbar brand'
+id: sdc.vartheme_bs5_rightup.navbar-brand
+provider: vartheme_bs5_rightup
+source: sdc
+source_local_id: 'vartheme_bs5_rightup:navbar-brand'
