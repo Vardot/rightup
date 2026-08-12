@@ -12,7 +12,7 @@ script_path=$(cd "$(dirname "$0")" && pwd);
 project_root=$(cd "${script_path}" && while [ ! -d "vendor" ] && [ "$(pwd)" != "/" ]; do cd ..; done && pwd);
 drush="${project_root}/vendor/drush/drush/drush";
 
-# List of default testing users for RightUp.
+# List of default testing users for Rightup.
 #   "name|mail|password|role"
 users=(
   "Normal user|test.authenticated@vardot.com|dD.123123ddd|_none_"

@@ -1,8 +1,8 @@
-# RightUp Scripts
+# Rightup Scripts
 
-## Add RightUp Testing Users
+## Add Rightup Testing Users
 
-To add testing users for each default user role in RightUp.
+To add testing users for each default user role in Rightup.
 
 ```
 cd PROJECT_DIR_NAME/recipes/rightup/scripts
@@ -61,7 +61,7 @@ The out put for this bash command:
  [success] Added administrator role to Super admin
 ```
 
-## Delete RightUp Testing Users
+## Delete Rightup Testing Users
 To delete all generated testing users, with all content created by them.
 ```
 cd PROJECT_DIR_NAME/recipes/rightup/scripts

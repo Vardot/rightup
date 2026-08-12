@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guidance for AI coding agents working on the RightUp recipe.
+Guidance for AI coding agents working on the Rightup recipe.
 
 ## Before you start
 
