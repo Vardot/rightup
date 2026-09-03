@@ -2,15 +2,81 @@ langcode: en
 status: true
 dependencies:
   module:
+    - canvas_icon_picker
     - options
   theme:
     - vartheme_bs5_rightup
-active_version: 1a1be90969d87a65
+active_version: 9bc1e1a79ad3aca5
 versioned_properties:
   active:
     settings:
       prop_field_definitions:
         icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - facebook
+              - twitter-x
+              - instagram
+              - linkedin
+              - x
+              - plus
+              - exclamation
+              - check
+              - dash
+              - question
+              - info
+              - search
+              - person
+              - people
+              - person-plus
+              - person-check
+              - chevron-up
+              - chevron-down
+              - chevron-left
+              - chevron-right
+              - chevron-double-up
+              - chevron-double-down
+              - chevron-double-left
+              - chevron-double-right
+              - arrow-up
+              - arrow-down
+              - arrow-left
+              - arrow-right
+              - arrow-up-right
+              - arrow-up-left
+              - arrow-down-right
+              - arrow-down-left
+              - arrow-repeat
+              - arrows-angle-expand
+              - arrows-angle-contract
+              - play
+              - pause
+              - skip-backward
+              - skip-forward
+              - circle
+              - circle-fill
+              - record-circle
+              - house-door-fill
+              - house-door
+              - box-arrow-in-right
+              - person-fill
+              - person-circle
+              - shield-check
+              - chat-dots
+              - laptop
+              - gear
+          field_widget: canvas_icon_picker
+          default_value:
+            -
+              value: people
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        icon_size:
           required: false
           field_type: list_string
           field_storage_settings:
@@ -19,8 +85,90 @@ versioned_properties:
           field_widget: options_select
           default_value:
             -
-              value: people
+              value: fs-4
           expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: text-body
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+  1a1be90969d87a65:
+    settings:
+      prop_field_definitions:
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - facebook
+              - twitter-x
+              - instagram
+              - linkedin
+              - x
+              - plus
+              - exclamation
+              - check
+              - dash
+              - question
+              - info
+              - search
+              - person
+              - people
+              - person-plus
+              - person-check
+              - chevron-up
+              - chevron-down
+              - chevron-left
+              - chevron-right
+              - chevron-double-up
+              - chevron-double-down
+              - chevron-double-left
+              - chevron-double-right
+              - arrow-up
+              - arrow-down
+              - arrow-left
+              - arrow-right
+              - arrow-up-right
+              - arrow-up-left
+              - arrow-down-right
+              - arrow-down-left
+              - arrow-repeat
+              - arrows-angle-expand
+              - arrows-angle-contract
+              - play
+              - pause
+              - skip-backward
+              - skip-forward
+              - circle
+              - circle-fill
+              - record-circle
+              - house-door-fill
+              - house-door
+              - box-arrow-in-right
+              - person-fill
+              - person-circle
+              - shield-check
+              - chat-dots
+              - laptop
+              - gear
+          field_widget: canvas_icon_picker
+          default_value:
+            -
+              value: people
+          expression: ℹ︎string␟value
           derived_schema_metadata: {  }
         icon_size:
           required: false
@@ -53,15 +201,68 @@ versioned_properties:
       prop_field_definitions:
         icon:
           required: false
-          field_type: list_string
-          field_storage_settings:
-            allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
-          field_widget: options_select
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - facebook
+              - twitter-x
+              - instagram
+              - linkedin
+              - x
+              - plus
+              - exclamation
+              - check
+              - dash
+              - question
+              - info
+              - search
+              - person
+              - people
+              - person-plus
+              - person-check
+              - chevron-up
+              - chevron-down
+              - chevron-left
+              - chevron-right
+              - chevron-double-up
+              - chevron-double-down
+              - chevron-double-left
+              - chevron-double-right
+              - arrow-up
+              - arrow-down
+              - arrow-left
+              - arrow-right
+              - arrow-up-right
+              - arrow-up-left
+              - arrow-down-right
+              - arrow-down-left
+              - arrow-repeat
+              - arrows-angle-expand
+              - arrows-angle-contract
+              - play
+              - pause
+              - skip-backward
+              - skip-forward
+              - circle
+              - circle-fill
+              - record-circle
+              - house-door-fill
+              - house-door
+              - box-arrow-in-right
+              - person-fill
+              - person-circle
+              - shield-check
+              - chat-dots
+              - laptop
+              - gear
+          field_widget: canvas_icon_picker
           default_value:
             -
               value: people
-          expression: ℹ︎list_string␟value
+          expression: ℹ︎string␟value
           derived_schema_metadata: {  }
     fallback_metadata:
       slot_definitions: {  }

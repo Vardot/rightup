@@ -2,11 +2,12 @@ langcode: en
 status: true
 dependencies:
   module:
+    - canvas_icon_picker
     - link
     - options
   theme:
     - vartheme_bs5_rightup
-active_version: de3d2ab04711f861
+active_version: 7c8b7b626a4fbd83
 versioned_properties:
   active:
     settings:
@@ -96,6 +97,82 @@ versioned_properties:
           derived_schema_metadata: {  }
         icon:
           required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - none
+              - facebook
+              - twitter-x
+              - instagram
+              - linkedin
+              - x
+              - plus
+              - exclamation
+              - check
+              - dash
+              - question
+              - info
+              - search
+              - person
+              - people
+              - person-plus
+              - person-check
+              - chevron-up
+              - chevron-down
+              - chevron-left
+              - chevron-right
+              - chevron-double-up
+              - chevron-double-down
+              - chevron-double-left
+              - chevron-double-right
+              - arrow-up
+              - arrow-down
+              - arrow-left
+              - arrow-right
+              - arrow-up-right
+              - arrow-up-left
+              - arrow-down-right
+              - arrow-down-left
+              - arrow-repeat
+              - arrows-angle-expand
+              - arrows-angle-contract
+              - play
+              - pause
+              - skip-backward
+              - skip-forward
+              - circle
+              - circle-fill
+              - record-circle
+              - arrow-right-circle-fill
+              - arrow-left-circle-fill
+              - arrow-up-circle-fill
+              - arrow-down-circle-fill
+              - caret-right-fill
+              - caret-left-fill
+              - caret-up-fill
+              - caret-down-fill
+          field_widget: canvas_icon_picker
+          default_value:
+            -
+              value: none
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        icon_first:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        alignment:
+          required: false
           field_type: list_string
           field_storage_settings:
             allowed_values_function: canvas_load_allowed_values_for_component_prop
@@ -103,8 +180,184 @@ versioned_properties:
           field_widget: options_select
           default_value:
             -
-              value: none
+              value: inline
           expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        full_width:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        radius:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: rounded-1
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+  de3d2ab04711f861:
+    settings:
+      prop_field_definitions:
+        variant:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: btn-primary
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        outline:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        size:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: btn-md
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Read more'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        href:
+          required: false
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: null
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        target:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: self
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        disabled:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - none
+              - facebook
+              - twitter-x
+              - instagram
+              - linkedin
+              - x
+              - plus
+              - exclamation
+              - check
+              - dash
+              - question
+              - info
+              - search
+              - person
+              - people
+              - person-plus
+              - person-check
+              - chevron-up
+              - chevron-down
+              - chevron-left
+              - chevron-right
+              - chevron-double-up
+              - chevron-double-down
+              - chevron-double-left
+              - chevron-double-right
+              - arrow-up
+              - arrow-down
+              - arrow-left
+              - arrow-right
+              - arrow-up-right
+              - arrow-up-left
+              - arrow-down-right
+              - arrow-down-left
+              - arrow-repeat
+              - arrows-angle-expand
+              - arrows-angle-contract
+              - play
+              - pause
+              - skip-backward
+              - skip-forward
+              - circle
+              - circle-fill
+              - record-circle
+              - arrow-right-circle-fill
+              - arrow-left-circle-fill
+              - arrow-up-circle-fill
+              - arrow-down-circle-fill
+              - caret-right-fill
+              - caret-left-fill
+              - caret-up-fill
+              - caret-down-fill
+          field_widget: canvas_icon_picker
+          default_value:
+            -
+              value: none
+          expression: ℹ︎string␟value
           derived_schema_metadata: {  }
         icon_first:
           required: false
@@ -242,15 +495,68 @@ versioned_properties:
           derived_schema_metadata: {  }
         icon:
           required: false
-          field_type: list_string
-          field_storage_settings:
-            allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
-          field_widget: options_select
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - none
+              - facebook
+              - twitter-x
+              - instagram
+              - linkedin
+              - x
+              - plus
+              - exclamation
+              - check
+              - dash
+              - question
+              - info
+              - search
+              - person
+              - people
+              - person-plus
+              - person-check
+              - chevron-up
+              - chevron-down
+              - chevron-left
+              - chevron-right
+              - chevron-double-up
+              - chevron-double-down
+              - chevron-double-left
+              - chevron-double-right
+              - arrow-up
+              - arrow-down
+              - arrow-left
+              - arrow-right
+              - arrow-up-right
+              - arrow-up-left
+              - arrow-down-right
+              - arrow-down-left
+              - arrow-repeat
+              - arrows-angle-expand
+              - arrows-angle-contract
+              - play
+              - pause
+              - skip-backward
+              - skip-forward
+              - circle
+              - circle-fill
+              - record-circle
+              - arrow-right-circle-fill
+              - arrow-left-circle-fill
+              - arrow-up-circle-fill
+              - arrow-down-circle-fill
+              - caret-right-fill
+              - caret-left-fill
+              - caret-up-fill
+              - caret-down-fill
+          field_widget: canvas_icon_picker
           default_value:
             -
               value: none
-          expression: ℹ︎list_string␟value
+          expression: ℹ︎string␟value
           derived_schema_metadata: {  }
         icon_first:
           required: false
