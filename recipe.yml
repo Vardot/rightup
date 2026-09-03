@@ -186,6 +186,70 @@ config:
       disable: []
     canvas.component.sdc.vartheme_bs5_rightup.views-view-unformatted:
       disable: []
+    views.view.blog:
+      setViewsComponentStyleTheme:
+        theme: default
+      simpleConfigUpdate:
+        display.all.display_options.style.options.component_id: vartheme_bs5_rightup:grid
+        display.latest.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
+        display.related.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-unformatted
+    canvas.content_template.node.blog.card:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_small:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_xsmall:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.full:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.hero_card:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_small:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_xsmall:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.overlay_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.overlay_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.overlay_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.text_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.text_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.text_card_small:
+      repointComponentTreeToTheme:
+        theme: default
 extra:
   recipe_installer_kit:
     finish_url: 'admin/dashboard/welcome'

@@ -2,7 +2,9 @@
   "name": "drupal/rightup",
   "description": "A media, news and magazine site template recipe for Varbase, providing a modern recipe-first approach to initializing editorial and newsroom sites.",
   "type": "drupal-recipe",
-  "license": ["GPL-2.0-or-later"],
+  "license": [
+    "GPL-2.0-or-later"
+  ],
   "require": {
     "drupal/core": "^11.4",
     "drupal/recipe_installer_kit": "~1",
@@ -21,6 +23,7 @@
     "drupal/drupal_cms_google_analytics": "~2",
     "drupal/easy_email_express": "~1",
     "drupal/varbase_admin_base": "1.0.x-dev",
+    "drupal/varbase_recipes": "1.0.x-dev",
     "drupal/varbase_users_base": "1.0.x-dev",
     "drupal/varbase_dev_base": "1.0.x-dev",
     "drupal/varbase_security_base": "1.0.x-dev",
