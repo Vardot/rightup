@@ -1,6 +1,6 @@
 name: Rightup
 type: Site
-description: 'A media, news and magazine site template recipe for Varbase, providing a modern recipe-first approach to initializing editorial and newsroom sites.'
+description: 'Designed for news sites, magazines and editorial teams, this template features ready-made home, blog, features and contact pages, with articles, categories and tags, a media library, search and a contact form.'
 recipes:
   - varbase_users_base
   - drupal_cms_admin_ui
