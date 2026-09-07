@@ -250,6 +250,53 @@ config:
     canvas.content_template.node.blog.text_card_small:
       repointComponentTreeToTheme:
         theme: default
+    workflows.workflow.varbase_editorial_workflow:
+      addNodeTypes:
+        - podcast
+    user.role.anonymous:
+      grantPermissions:
+        - 'access_unpublished node podcast'
+    user.role.authenticated:
+      grantPermissions:
+        - 'access_unpublished node podcast'
+    user.role.content_editor:
+      grantPermissions:
+        - 'create podcast content'
+        - 'delete any podcast content'
+        - 'delete own podcast content'
+        - 'delete podcast revisions'
+        - 'edit any podcast content'
+        - 'edit own podcast content'
+        - 'revert podcast revisions'
+        - 'view podcast revisions'
+    user.role.content_admin:
+      grantPermissions:
+        - 'create podcast content'
+        - 'delete any podcast content'
+        - 'delete own podcast content'
+        - 'delete podcast revisions'
+        - 'edit any podcast content'
+        - 'edit own podcast content'
+        - 'revert podcast revisions'
+        - 'view podcast revisions'
+    user.role.seo_admin:
+      grantPermissions:
+        - 'create podcast content'
+        - 'delete any podcast content'
+        - 'delete own podcast content'
+        - 'edit any podcast content'
+        - 'edit own podcast content'
+        - 'view podcast revisions'
+    user.role.site_admin:
+      grantPermissions:
+        - 'create podcast content'
+        - 'delete any podcast content'
+        - 'delete own podcast content'
+        - 'delete podcast revisions'
+        - 'edit any podcast content'
+        - 'edit own podcast content'
+        - 'revert podcast revisions'
+        - 'view podcast revisions'
 extra:
   recipe_installer_kit:
     finish_url: 'admin/dashboard/welcome'

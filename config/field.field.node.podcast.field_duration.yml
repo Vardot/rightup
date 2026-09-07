@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duration
+    - node.type.podcast
+id: node.podcast.field_duration
+field_name: field_duration
+entity_type: node
+bundle: podcast
+label: Duration
+description: 'Running time as it should read to a listener, for example 42:15.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

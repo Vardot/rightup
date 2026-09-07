@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - canvas.component.sdc.vartheme_bs5_rightup.heading
+  - canvas.component.sdc.vartheme_bs5_rightup.podcast-card
+  - core.entity_view_mode.node.card
+  - field.field.media.image.field_media_image
+  - field.field.node.podcast.field_duration
+  - field.field.node.podcast.field_featured_image
+  - image.style.canvas_parametrized_width
+  - media.type.image
+  - node.type.podcast
+  module:
+  - file
+  - media
+  - node
+  - options
+id: node.podcast.card
+content_entity_type_id: node
+content_entity_type_bundle: podcast
+content_entity_type_view_mode: card
+component_tree:
+  332ecae1-4986-404a-9a26-7ab433197288:
+    uuid: 332ecae1-4986-404a-9a26-7ab433197288
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    component_version: 16871dc1a0303e66
+    inputs:
+      media_image:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      content_padding: true
+      meta_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_duration␞␟value
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      button_text: Listen
+      button_url:
+        sourceType: host-entity-url
+        absolute: false
+      button_target: _self
+      stretched_link: true
+  39f3da58-7dc3-4e1f-a4e1-f1b1f04328a5:
+    parent_uuid: 332ecae1-4986-404a-9a26-7ab433197288
+    slot: content_slot
+    uuid: 39f3da58-7dc3-4e1f-a4e1-f1b1f04328a5
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+      level: 3

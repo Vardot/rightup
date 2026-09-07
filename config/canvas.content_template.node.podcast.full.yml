@@ -1,0 +1,156 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - canvas.component.block.system_breadcrumb_block
+  - canvas.component.sdc.vartheme_bs5_rightup.audio-player-remote
+  - canvas.component.sdc.vartheme_bs5_rightup.date
+  - canvas.component.sdc.vartheme_bs5_rightup.heading
+  - canvas.component.sdc.vartheme_bs5_rightup.image
+  - canvas.component.sdc.vartheme_bs5_rightup.rich-text
+  - canvas.component.sdc.vartheme_bs5_rightup.section
+  - canvas.component.sdc.vartheme_bs5_rightup.share
+  - canvas.component.sdc.vartheme_bs5_rightup.spacer
+  - core.entity_view_mode.node.full
+  - field.field.media.image.field_media_image
+  - field.field.node.podcast.field_audio_url
+  - field.field.node.podcast.field_content
+  - field.field.node.podcast.field_featured_image
+  - image.style.canvas_parametrized_width
+  - media.type.image
+  - node.type.podcast
+  module:
+  - file
+  - link
+  - media
+  - node
+  - options
+id: node.podcast.full
+content_entity_type_id: node
+content_entity_type_bundle: podcast
+content_entity_type_view_mode: full
+component_tree:
+  6c59d778-cb91-421a-a711-c90364a28869:
+    uuid: 6c59d778-cb91-421a-a711-c90364a28869
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  4bc8f966-3577-45e3-b94d-2e0353a4c45e:
+    uuid: 4bc8f966-3577-45e3-b94d-2e0353a4c45e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+      level: 1
+  79877a3b-05fc-421c-93a5-9710e33906e4:
+    uuid: 79877a3b-05fc-421c-93a5-9710e33906e4
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-1
+  9bafb45d-64f3-40ea-838b-d806304fdb1b:
+    uuid: 9bafb45d-64f3-40ea-838b-d806304fdb1b
+    component_id: sdc.vartheme_bs5_rightup.date
+    component_version: 3eae6f5d223f6bda
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝created␞␟value
+        adapter: unix_to_date
+  2594cf23-52b0-4d4c-a38d-bd13e833647c:
+    uuid: 2594cf23-52b0-4d4c-a38d-bd13e833647c
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-2
+  a522bcae-8f3b-44db-85aa-6b6c0843fd2d:
+    uuid: a522bcae-8f3b-44db-85aa-6b6c0843fd2d
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      target: self
+      ratio: ratio-16x9
+      width: w-100
+      rounded: rounded-3
+      loading: lazy
+  d96a8cf2-c31f-4399-9d43-34ae1c538ff5:
+    uuid: d96a8cf2-c31f-4399-9d43-34ae1c538ff5
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+  fcd39a7f-58b1-4765-b6e2-8dd271c61a10:
+    uuid: fcd39a7f-58b1-4765-b6e2-8dd271c61a10
+    component_id: sdc.vartheme_bs5_rightup.share
+    component_version: 24d3cc5800d6bb4f
+    inputs:
+      heading: Share
+      display_title: true
+      alignment: end
+      orientation: vertical
+      native_share: false
+      placement: rail-end
+      share_title:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+  2ad71a1b-f9a6-4d62-a765-ed566b65d6f4:
+    uuid: 2ad71a1b-f9a6-4d62-a765-ed566b65d6f4
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      bg_edge2edge: false
+      columns: '100'
+      padding_inline_start: ps-5
+      padding_inline_end: pe-5
+      margin_inline_start: ms-5
+      margin_inline_end: me-5
+      radius: none
+      section_header: false
+      section_footer: false
+      aos_once: true
+  15697915-9207-41c3-a02c-6d92d7100b69:
+    parent_uuid: 2ad71a1b-f9a6-4d62-a765-ed566b65d6f4
+    slot: col_1
+    uuid: 15697915-9207-41c3-a02c-6d92d7100b69
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
+    inputs:
+      size: py-4
+  eba53163-5f67-45f2-a4b9-85ce9454caf0:
+    parent_uuid: 2ad71a1b-f9a6-4d62-a765-ed566b65d6f4
+    slot: col_1
+    uuid: eba53163-5f67-45f2-a4b9-85ce9454caf0
+    component_id: sdc.vartheme_bs5_rightup.rich-text
+    component_version: 82cd1f087fd469f4
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_content␞␟processed
+      trim: false
+  3468a926-7940-4af1-8ea2-758f8aa181de:
+    uuid: 3468a926-7940-4af1-8ea2-758f8aa181de
+    component_id: sdc.vartheme_bs5_rightup.audio-player-remote
+    component_version: 819d7e678c6c2129
+    inputs:
+      url:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_audio_url␞␟uri
+      title:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+      autoplay: false
+      loop: false
+      preload: metadata
+      show_skip: true
+      skip_seconds: '15'
+      show_time: true
+      show_download: false
+      accent_color: accent
+exposed_slots: {}

@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - canvas.component.sdc.vartheme_bs5_rightup.card-text
+  - canvas.component.sdc.vartheme_bs5_rightup.date
+  - canvas.component.sdc.vartheme_bs5_rightup.heading
+  - core.entity_view_mode.node.text_card_medium
+  - node.type.podcast
+  module:
+  - node
+  - options
+id: node.podcast.text_card_medium
+content_entity_type_id: node
+content_entity_type_bundle: podcast
+content_entity_type_view_mode: text_card_medium
+component_tree:
+  cbe15ab4-ef9a-41fe-8ea8-65c40cb3688d:
+    uuid: cbe15ab4-ef9a-41fe-8ea8-65c40cb3688d
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      card_border: false
+      padded: false
+      box_shadow: shadow-none
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  2d9b9d72-4df4-453e-b810-0c0427680a56:
+    parent_uuid: cbe15ab4-ef9a-41fe-8ea8-65c40cb3688d
+    slot: content
+    uuid: 2d9b9d72-4df4-453e-b810-0c0427680a56
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+      level: 3
+  89c3c178-09c9-4e2c-809b-829a986a3f01:
+    parent_uuid: cbe15ab4-ef9a-41fe-8ea8-65c40cb3688d
+    slot: content
+    uuid: 89c3c178-09c9-4e2c-809b-829a986a3f01
+    component_id: sdc.vartheme_bs5_rightup.date
+    component_version: 3eae6f5d223f6bda
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝created␞␟value
+        adapter: unix_to_date

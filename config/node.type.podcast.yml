@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+    - search_api_exclude
+third_party_settings:
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: true
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: true
+    publish_touch: true
+    show_message_after_update: true
+    unpublish_enable: true
+    unpublish_required: false
+    unpublish_revision: true
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  search_api_exclude:
+    enabled: true
+name: 'Podcast episode'
+type: podcast
+description: 'Use <em>Podcast episode</em> to publish an audio episode with its cover art, show notes and either an uploaded audio file or a link to audio hosted elsewhere.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

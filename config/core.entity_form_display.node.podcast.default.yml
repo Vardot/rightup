@@ -1,0 +1,273 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.podcast.field_audio
+    - field.field.node.podcast.field_audio_url
+    - field.field.node.podcast.field_content
+    - field.field.node.podcast.field_description
+    - field.field.node.podcast.field_duration
+    - field.field.node.podcast.field_episode_number
+    - field.field.node.podcast.field_featured_image
+    - field.field.node.podcast.field_tags
+    - node.type.podcast
+  module:
+    - content_moderation
+    - field_group
+    - file
+    - link
+    - media_library
+    - path
+    - tagify
+    - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - moderation_state
+        - title
+        - field_description
+        - field_featured_image
+        - field_content
+      label: General
+      region: content
+      parent_name: group_tabs
+      weight: 0
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: group_general
+        label_as_html: false
+        formatter: open
+        description: ''
+        required_fields: true
+    group_audio:
+      children:
+        - field_audio
+        - field_audio_url
+        - field_duration
+        - field_episode_number
+      label: Audio
+      region: content
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: group_audio
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_categorization:
+      children:
+        - field_tags
+      label: Categorization
+      region: content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: group_categorization
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_seo:
+      children:
+        - simple_sitemap
+      label: 'Search Engine Optimization (SEO)'
+      region: content
+      parent_name: group_tabs
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: group_seo
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_options:
+      children:
+        - status
+        - uid
+        - created
+        - path
+        - url_redirects
+        - revision_log
+        - langcode
+      label: Options
+      region: content
+      parent_name: group_tabs
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: group_options
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_tabs:
+      children:
+        - group_general
+        - group_audio
+        - group_categorization
+        - group_seo
+        - group_options
+      label: 'Content settings'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: group_tabs
+        label_as_html: false
+        direction: horizontal
+        width_breakpoint: 640
+id: node.podcast.default
+targetEntityType: node
+bundle: podcast
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_audio:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_audio_url:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_content:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_duration:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_episode_number:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_featured_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_tags:
+    type: tagify_entity_reference_autocomplete_widget
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      placeholder: ''
+      suggestions_dropdown: 1
+      show_entity_id: 0
+      show_info_label: 0
+      info_label: ''
+      parent_selection: 1
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  unpublish_on: true
+  unpublish_state: true

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.podcast
+id: node.podcast.field_description
+field_name: field_description
+entity_type: node
+bundle: podcast
+label: Summary
+description: 'A one or two sentence summary of the episode. Shown on cards and listings, and used as the meta description when no SEO description is set.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

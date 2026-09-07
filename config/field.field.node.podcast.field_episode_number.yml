@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_episode_number
+    - node.type.podcast
+id: node.podcast.field_episode_number
+field_name: field_episode_number
+entity_type: node
+bundle: podcast
+label: 'Episode number'
+description: 'The episode number within the show. Used for ordering and shown alongside the title.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
