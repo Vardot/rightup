@@ -5,9 +5,78 @@ dependencies:
     - options
   theme:
     - vartheme_bs5_rightup
-active_version: ead44d287f956a39
+active_version: 2aeb2885f8b90977
 versioned_properties:
   active:
+    settings:
+      prop_field_definitions:
+        tabs_id:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        shape:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: tabs
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        active_bg:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: default
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        active_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: default
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        border_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: default
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        items:
+          title: Items
+          description: 'Place one or more Tab Item components inside this slot.'
+        panes:
+          title: Panes
+          description: 'Optional. Place one or more Tab Pane components inside this slot, in the same order as their paired Tab Items, to render real Bootstrap JS tab content. Each pane is paired with its Tab Item automatically by position (no Pane ID or Active flag needs to match, or even be set, on the Tab Item). Leave empty to use Tab Item as a plain filter/navigation link instead.'
+  ead44d287f956a39:
     settings:
       prop_field_definitions:
         shape:
@@ -21,7 +90,13 @@ versioned_properties:
           expression: ℹ︎list_string␟value
           derived_schema_metadata: {  }
     fallback_metadata:
-      slot_definitions: {  }
+      slot_definitions:
+        items:
+          title: Items
+          description: 'Place one or more Tab Item components inside this slot.'
+        panes:
+          title: Panes
+          description: 'Optional. Place one or more Tab Pane components inside this slot, in the same order as their paired Tab Items, to render real Bootstrap JS tab content. Each pane is paired with its Tab Item automatically by position (no Pane ID or Active flag needs to match, or even be set, on the Tab Item). Leave empty to use Tab Item as a plain filter/navigation link instead.'
   a672799ea76aabd6:
     settings:
       prop_field_definitions:
