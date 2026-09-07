@@ -3,59 +3,81 @@ status: true
 dependencies:
   config:
     - canvas.component.block.system_menu_block.footer
-    - canvas.component.block.system_menu_block.secondary
     - canvas.component.block.system_menu_block.social-media-menu
     - canvas.component.sdc.vartheme_bs5_rightup.divider
+    - canvas.component.sdc.vartheme_bs5_rightup.group
     - canvas.component.sdc.vartheme_bs5_rightup.html-code
     - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.spacer
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - filter.format.canvas_html_block
   module:
     - options
+    - text
   theme:
     - vartheme_bs5_rightup
 id: vartheme_bs5_rightup.footer
 region: footer
 theme: vartheme_bs5_rightup
 component_tree:
-  b6a309fb-cbd0-4601-918a-15294d8b1673:
-    uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+  3ccae34f-9c1c-416a-84dc-26b7a4087af8:
+    uuid: 3ccae34f-9c1c-416a-84dc-26b7a4087af8
     component_id: sdc.vartheme_bs5_rightup.section
-    component_version: 4171719f53c41b9d
+    component_version: 038d91867e142dd2
     inputs:
       bg_edge2edge: true
       container_type: container
-      background_color: bg-light
+      background_color: bg-black
       text_color: text-dark
-      columns: 50-50
+      columns: '100'
       gutter: 'gx-3 gy-3'
       padding_block_start: pt-5
       padding_block_end: pb-0
+      column_divider: false
       section_header: false
       section_footer: true
       aos_once: false
-  1b8d6230-40b5-4224-b5c1-db5e805d31ac:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+  f1710f59-e00b-4b7e-ab6a-e1d02c06659f:
+    parent_uuid: 3ccae34f-9c1c-416a-84dc-26b7a4087af8
     slot: col_1
-    uuid: 1b8d6230-40b5-4224-b5c1-db5e805d31ac
-    component_id: block.system_menu_block.secondary
-    component_version: 31ecc6cc06f17d4e
+    uuid: f1710f59-e00b-4b7e-ab6a-e1d02c06659f
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: aef7f7b22127c944
     inputs:
-      label: 'Footer sitemap menu'
-      label_display: '0'
-      level: 1
-      depth: 2
-      expand_all_items: true
-  8a0001f5-0e61-4176-b3ff-45bc3a5fde1e:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
-    slot: col_2
-    uuid: 8a0001f5-0e61-4176-b3ff-45bc3a5fde1e
+      background_color: none
+      direction: horizontal
+      gap: gap-3
+      wrap: nowrap
+      align_items: align-items-stretch
+      justify_content: justify-content-between
+      padding_block_start: pt-0
+      padding_block_end: pb-0
+      padding_inline_start: ps-0
+      padding_inline_end: pe-0
+      margin_block_start: mt-0
+      margin_block_end: mb-0
+      margin_inline_start: ms-0
+      margin_inline_end: me-0
+      radius: none
+      border: none
+      border_color: none
+      border_width: none
+      aos_animation: none
+      aos_duration: default
+      aos_delay: '0'
+      aos_once: true
+  735a29e1-7d4d-46a2-a98f-626675fa98a6:
+    parent_uuid: f1710f59-e00b-4b7e-ab6a-e1d02c06659f
+    slot: content
+    uuid: 735a29e1-7d4d-46a2-a98f-626675fa98a6
     component_id: sdc.vartheme_bs5_rightup.html-code
     component_version: 656471f14c4594ec
     inputs:
-      code: '<div class="footer-logo-wrapper"><p><img class="footer-logo-image" src="/themes/contrib/vartheme_bs5_rightup/logo.svg" alt="Varbase logo"></p><p class="footer-tagline mt-4">Enjoy the free software, or <a href="https://www.vardot.com/form/get-support-varbase?utm_source=varbase&amp;utm_campaign=varbase%20default%20links" target="_blank" rel="noopener noreferrer noreferrer" class="ext" data-extlink="" title="(opens in a new window)">get a quote</a> for enterprise support and fully functional websites.</p></div>'
-  e40a249a-c360-4f7b-b00f-9b3cbf0b04de:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
-    slot: col_2
-    uuid: e40a249a-c360-4f7b-b00f-9b3cbf0b04de
+      code: '<img class="footer-logo-image" src="/themes/contrib/vartheme_bs5_rightup/rightup-logo-white.svg" alt="RightUp logo" style ="height: auto;">'
+  a6068d50-17eb-4bf9-ba50-f15c0a0bd43f:
+    parent_uuid: f1710f59-e00b-4b7e-ab6a-e1d02c06659f
+    slot: content
+    uuid: a6068d50-17eb-4bf9-ba50-f15c0a0bd43f
     component_id: block.system_menu_block.social-media-menu
     component_version: 0fcdbc0a997e263a
     inputs:
@@ -64,39 +86,40 @@ component_tree:
       level: 1
       depth: null
       expand_all_items: true
-  d3c1cd06-e9bc-4f2e-85fb-f0a3faa8dd1f:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+  3525ac28-c0ee-4bf6-871d-096ff9d07c3a:
+    parent_uuid: 3ccae34f-9c1c-416a-84dc-26b7a4087af8
     slot: footer_slot
-    uuid: d3c1cd06-e9bc-4f2e-85fb-f0a3faa8dd1f
+    uuid: 3525ac28-c0ee-4bf6-871d-096ff9d07c3a
     component_id: sdc.vartheme_bs5_rightup.divider
-    component_version: 62f9294bba931609
+    component_version: 3351739a2f3f46b5
     inputs:
       border_width: border-1
       border_color: border-light
       opacity: opacity-50
       margin_top: mt-0
       margin_bottom: mb-0
-  0bf79239-de05-498c-b5f0-2c07794b9444:
-    uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
+  9e2935a6-8ad6-440a-8614-6184ffe7eb5a:
+    uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
     component_id: sdc.vartheme_bs5_rightup.section
-    component_version: 4171719f53c41b9d
+    component_version: 038d91867e142dd2
     inputs:
       bg_edge2edge: true
       container_type: container
-      background_color: bg-light
+      background_color: bg-black
       text_color: text-dark
-      columns: 50-50
+      columns: '100'
       gutter: 'gx-3 gy-3'
       padding_block_start: pt-3
       padding_block_end: pb-4
+      column_divider: false
       vertical_alignment: align-items-center
       section_header: false
       section_footer: false
       aos_once: false
-  8bea199b-c0d7-4dd3-9540-7be4f4017f47:
-    parent_uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
+  20e662f3-a52f-446e-a5ec-6978af1d9cdd:
+    parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
     slot: col_1
-    uuid: 8bea199b-c0d7-4dd3-9540-7be4f4017f47
+    uuid: 20e662f3-a52f-446e-a5ec-6978af1d9cdd
     component_id: block.system_menu_block.footer
     component_version: 075503dbc228a45c
     inputs:
@@ -105,11 +128,23 @@ component_tree:
       level: 1
       depth: null
       expand_all_items: true
-  6d18f41a-a332-42fa-b763-35cacb60adbd:
-    parent_uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
-    slot: col_2
-    uuid: 6d18f41a-a332-42fa-b763-35cacb60adbd
-    component_id: sdc.vartheme_bs5_rightup.html-code
-    component_version: 656471f14c4594ec
+  3b86b9dd-3c39-4d46-b9bc-1e36959f5033:
+    parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
+    slot: col_1
+    uuid: 3b86b9dd-3c39-4d46-b9bc-1e36959f5033
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    component_version: 80de1b3919d08f87
     inputs:
-      code: '<div class="copyright-text mt-2 mb-0"><p class="mb-0 d-flex align-items-center gap-1 justify-content-start justify-content-md-end">Powered by <a class="d-inline-flex align-items-center" href="https://www.vardot.com/?utm_source=varbase&amp;utm_campaign=varbase%20default%20links" target="_blank" rel="noopener noreferrer" aria-label="Vardot"><img src="/themes/contrib/vartheme_bs5_rightup/vardot-logo.svg" alt="Vardot" class="powered-by-vardot-logo"></a></p></div>'
+      size: py-2
+  edd1729e-2bd0-424f-ba2a-b8078f79e43c:
+    parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
+    slot: col_1
+    uuid: edd1729e-2bd0-424f-ba2a-b8078f79e43c
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: 34499abda8277068
+    inputs:
+      text:
+        value: '<p>©2026, The Right Up. All Rights Reserved.</p>'
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary

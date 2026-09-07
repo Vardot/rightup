@@ -3,10 +3,13 @@ status: true
 dependencies:
   config:
     - canvas.component.block.system_branding_block
+    - canvas.component.block.system_menu_block.footer
     - canvas.component.block.system_menu_block.main
     - canvas.component.block.views_exposed_filter_block.search-page
+    - canvas.component.sdc.vartheme_bs5_rightup.button
     - canvas.component.sdc.vartheme_bs5_rightup.group
     - canvas.component.sdc.vartheme_bs5_rightup.icon-toggle
+    - canvas.component.sdc.vartheme_bs5_rightup.offcanvas-menu
     - canvas.component.sdc.vartheme_bs5_rightup.section
   module:
     - options
@@ -16,25 +19,71 @@ id: vartheme_bs5_rightup.header
 region: header
 theme: vartheme_bs5_rightup
 component_tree:
-  baa39131-18c3-466a-95ea-15034b6fb94a:
-    uuid: baa39131-18c3-466a-95ea-15034b6fb94a
+  ca23622e-0171-4801-a804-3bdf71e9188e:
+    uuid: ca23622e-0171-4801-a804-3bdf71e9188e
     component_id: sdc.vartheme_bs5_rightup.section
-    component_version: 4171719f53c41b9d
+    component_version: 038d91867e142dd2
     inputs:
       bg_edge2edge: true
       container_type: container
       background_color: none
       text_color: auto
-      columns: 25-75
+      columns: 33-33-33
       gutter: 'gx-3 gy-3'
       padding_block_start: pt-3
       padding_block_end: pb-3
       section_header: false
-      section_footer: false
-  589cc59f-4a7b-42c2-b285-8fd7b65e6439:
-    parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
+      section_footer: true
+      aos_once: false
+  a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa:
+    parent_uuid: ca23622e-0171-4801-a804-3bdf71e9188e
     slot: col_1
-    uuid: 589cc59f-4a7b-42c2-b285-8fd7b65e6439
+    uuid: a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa
+    component_id: sdc.vartheme_bs5_rightup.offcanvas-menu
+    component_version: b15fbf5fea2cb26b
+    inputs:
+      label: 'Open menu'
+      close_label: 'Close menu'
+      placement: start
+      expand_in_editor: false
+  ac8c3843-0524-4d6d-b658-8971c4dc7446:
+    parent_uuid: a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa
+    slot: menu
+    uuid: ac8c3843-0524-4d6d-b658-8971c4dc7446
+    component_id: block.system_menu_block.main
+    component_version: 322535c0078cf59c
+    inputs:
+      label: 'Main navigation'
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: true
+  42c03fd6-1094-4994-9397-b81df2d7f5e5:
+    parent_uuid: a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa
+    slot: utility
+    uuid: 42c03fd6-1094-4994-9397-b81df2d7f5e5
+    component_id: block.system_menu_block.footer
+    component_version: 075503dbc228a45c
+    inputs:
+      label: Footer
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: true
+  c2b92c2a-fc11-419a-aefd-568d24395328:
+    parent_uuid: a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa
+    slot: search
+    uuid: c2b92c2a-fc11-419a-aefd-568d24395328
+    component_id: block.views_exposed_filter_block.search-page
+    component_version: 435ec28df1ef5629
+    inputs:
+      label: 'Exposed form: search-page'
+      label_display: '0'
+      views_label: ''
+  5228e161-67d9-470e-948e-39a911b273d8:
+    parent_uuid: ca23622e-0171-4801-a804-3bdf71e9188e
+    slot: col_2
+    uuid: 5228e161-67d9-470e-948e-39a911b273d8
     component_id: block.system_branding_block
     component_version: 7d528e00f56b3abf
     inputs:
@@ -43,49 +92,112 @@ component_tree:
       use_site_logo: true
       use_site_name: false
       use_site_slogan: false
-  b7d6ef10-663c-4e98-9e2d-982dc7573a4c:
-    parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
-    slot: col_2
-    uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
+  11297f2d-67b9-4680-90a5-157c55cee051:
+    parent_uuid: ca23622e-0171-4801-a804-3bdf71e9188e
+    slot: col_3
+    uuid: 11297f2d-67b9-4680-90a5-157c55cee051
     component_id: sdc.vartheme_bs5_rightup.group
     component_version: aef7f7b22127c944
     inputs:
+      background_color: none
       direction: horizontal
       gap: gap-3
-      wrap: wrap
-      align_items: align-items-center
+      wrap: nowrap
       justify_content: justify-content-end
-  d5f18bf8-f056-4581-a814-029b8c567d0b:
-    parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
+      padding_block_start: pt-0
+      padding_block_end: pb-0
+      padding_inline_start: ps-0
+      padding_inline_end: pe-0
+      margin_block_start: mt-0
+      margin_block_end: mb-0
+      margin_inline_start: ms-0
+      margin_inline_end: me-0
+      radius: none
+      border: none
+      border_color: none
+      border_width: none
+      aos_animation: none
+      aos_duration: default
+      aos_delay: '0'
+      aos_once: true
+  acb01c9a-335d-415a-91c9-0e35b369efa1:
+    parent_uuid: 11297f2d-67b9-4680-90a5-157c55cee051
     slot: content
-    uuid: d5f18bf8-f056-4581-a814-029b8c567d0b
+    uuid: acb01c9a-335d-415a-91c9-0e35b369efa1
+    component_id: sdc.vartheme_bs5_rightup.icon-toggle
+    component_version: 1fabce12570a28f0
+    inputs:
+      icon: search
+      label: Search
+      open_label: 'Close search'
+      icon_color: text-body
+      placement: end
+      expand_in_editor: false
+  e9e7b7b4-05df-4861-8ca6-983df67fdf38:
+    parent_uuid: acb01c9a-335d-415a-91c9-0e35b369efa1
+    slot: content
+    uuid: e9e7b7b4-05df-4861-8ca6-983df67fdf38
+    component_id: block.views_exposed_filter_block.search-page
+    component_version: 435ec28df1ef5629
+    inputs:
+      label: 'Exposed form: search-page'
+      label_display: '0'
+      views_label: ''
+  cc4b79ee-b129-4f32-882c-37b51e8ce17a:
+    parent_uuid: 11297f2d-67b9-4680-90a5-157c55cee051
+    slot: content
+    uuid: cc4b79ee-b129-4f32-882c-37b51e8ce17a
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: 89760b927a14a505
+    inputs:
+      variant: btn-accent
+      outline: false
+      size: btn-sm
+      label: Newsletter
+      target: self
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: inline
+      full_width: false
+      radius: rounded-0
+  00f536ff-8728-48b9-823d-7aa4f4bb9775:
+    parent_uuid: ca23622e-0171-4801-a804-3bdf71e9188e
+    slot: footer_slot
+    uuid: 00f536ff-8728-48b9-823d-7aa4f4bb9775
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: aef7f7b22127c944
+    inputs:
+      background_color: none
+      direction: vertical
+      gap: gap-3
+      align_items: align-items-center
+      justify_content: justify-content-start
+      padding_block_start: pt-0
+      padding_block_end: pb-0
+      padding_inline_start: ps-0
+      padding_inline_end: pe-0
+      margin_block_start: mt-0
+      margin_block_end: mb-0
+      margin_inline_start: ms-0
+      margin_inline_end: me-0
+      radius: none
+      border: none
+      border_color: none
+      border_width: none
+      aos_animation: none
+      aos_duration: default
+      aos_delay: '0'
+      aos_once: true
+  bb259555-84b0-4c8c-a9ea-c973b60f560b:
+    parent_uuid: 00f536ff-8728-48b9-823d-7aa4f4bb9775
+    slot: content
+    uuid: bb259555-84b0-4c8c-a9ea-c973b60f560b
     component_id: block.system_menu_block.main
     component_version: 322535c0078cf59c
     inputs:
       label: 'Main navigation'
       label_display: '0'
       level: 1
-      depth: 3
-      expand_all_items: true
-  afd25b14-039e-464e-8c0c-4ca7eeeeae9c:
-    parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
-    slot: content
-    uuid: afd25b14-039e-464e-8c0c-4ca7eeeeae9c
-    component_id: sdc.vartheme_bs5_rightup.icon-toggle
-    component_version: 5a87298f3691cd43
-    inputs:
-      icon: search
-      label: Search
-      open_label: 'Close search'
-      placement: end
-      panel: bar
-  64cc6d33-c24c-45be-a52b-1deb85fcab0b:
-    parent_uuid: afd25b14-039e-464e-8c0c-4ca7eeeeae9c
-    slot: content
-    uuid: 64cc6d33-c24c-45be-a52b-1deb85fcab0b
-    component_id: block.views_exposed_filter_block.search-page
-    component_version: 435ec28df1ef5629
-    inputs:
-      label: Search
-      label_display: '0'
-      views_label: ''
+      depth: null
+      expand_all_items: false
