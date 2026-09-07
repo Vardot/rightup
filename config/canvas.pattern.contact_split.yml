@@ -2,20 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.block.webform_block
-    - canvas.component.sdc.vartheme_bs5_rightup.button
-    - canvas.component.sdc.vartheme_bs5_rightup.group
-    - canvas.component.sdc.vartheme_bs5_rightup.heading
-    - canvas.component.sdc.vartheme_bs5_rightup.section
-    - canvas.component.sdc.vartheme_bs5_rightup.spacer
-    - canvas.component.sdc.vartheme_bs5_rightup.text
-    - filter.format.canvas_html_block
+  - canvas.component.block.webform_block
+  - canvas.component.sdc.vartheme_bs5_rightup.group
+  - canvas.component.sdc.vartheme_bs5_rightup.heading
+  - canvas.component.sdc.vartheme_bs5_rightup.section
+  - canvas.component.sdc.vartheme_bs5_rightup.spacer
+  - canvas.component.sdc.vartheme_bs5_rightup.text
+  - filter.format.canvas_html_block
   module:
-    - link
-    - options
-    - text
+  - link
+  - options
+  - text
 id: contact_split
-label: 'Contact Form with Info'
+label: Contact Form with Info
 component_tree:
   179b3860-636c-4074-a550-fd021ff11904:
     uuid: 179b3860-636c-4074-a550-fd021ff11904
@@ -25,7 +24,7 @@ component_tree:
       bg_edge2edge: true
       container_type: container
       columns: 67-33
-      gutter: 'gx-5 gy-5'
+      gutter: gx-5 gy-5
       padding_block_end: pb-5
       section_header: false
       section_footer: false
@@ -38,7 +37,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Ask us about anything'
+      heading_text: Ask us about anything
       level: 2
     label: null
   e7706d44-4876-4238-9ba5-f16ffb96a42c:
@@ -78,7 +77,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Contact Information'
+      heading_text: Contact Information
       level: 3
     label: null
   b7cbfce3-2dc7-4c9c-8a42-37a1096ac719:
@@ -100,27 +99,5 @@ component_tree:
     uuid: 4f2f1f61-c420-4729-a13d-570c7b0da587
     component_id: sdc.vartheme_bs5_rightup.spacer
     component_version: 80de1b3919d08f87
-    inputs: {  }
-    label: null
-  357f664e-f887-4637-920d-6d973abe27da:
-    parent_uuid: 480e9841-537f-4933-802a-0f812955e215
-    slot: content
-    uuid: 357f664e-f887-4637-920d-6d973abe27da
-    component_id: sdc.vartheme_bs5_rightup.button
-    component_version: de3d2ab04711f861
-    inputs:
-      variant: btn-primary
-      outline: true
-      size: btn-md
-      label: 'Try Varbase for Free'
-      href:
-        uri: 'https://docs.varbase.vardot.com/11.0.x'
-        options: {  }
-      target: self
-      disabled: false
-      icon: none
-      icon_first: false
-      alignment: inline
-      full_width: false
-      radius: rounded
+    inputs: {}
     label: null

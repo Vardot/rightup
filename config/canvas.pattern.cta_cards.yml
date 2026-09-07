@@ -2,19 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.sdc.vartheme_bs5_rightup.button
-    - canvas.component.sdc.vartheme_bs5_rightup.card-text
-    - canvas.component.sdc.vartheme_bs5_rightup.heading
-    - canvas.component.sdc.vartheme_bs5_rightup.section
-    - canvas.component.sdc.vartheme_bs5_rightup.spacer
-    - canvas.component.sdc.vartheme_bs5_rightup.text
-    - filter.format.canvas_html_block
+  - canvas.component.sdc.vartheme_bs5_rightup.button
+  - canvas.component.sdc.vartheme_bs5_rightup.card-text
+  - canvas.component.sdc.vartheme_bs5_rightup.heading
+  - canvas.component.sdc.vartheme_bs5_rightup.section
+  - canvas.component.sdc.vartheme_bs5_rightup.spacer
+  - canvas.component.sdc.vartheme_bs5_rightup.text
+  - filter.format.canvas_html_block
   module:
-    - link
-    - options
-    - text
+  - link
+  - options
+  - text
 id: cta_cards
-label: 'Call to Action Cards'
+label: Call to Action Cards
 component_tree:
   aa4cd243-a564-405d-83fb-27454c5db46f:
     uuid: aa4cd243-a564-405d-83fb-27454c5db46f
@@ -23,7 +23,7 @@ component_tree:
     inputs:
       bg_edge2edge: true
       container_type: container
-      gutter: 'gx-4 gy-4'
+      gutter: gx-4 gy-4
       margin_block_start: mt-5
       margin_block_end: mb-5
       vertical_alignment: align-items-stretch
@@ -37,7 +37,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Explore More'
+      heading_text: Explore More
       level: 2
       align: text-center
     label: null
@@ -62,7 +62,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'About Varbase'
+      heading_text: About Varbase
       level: 3
     label: null
   b919a0f1-671c-418e-b2a7-8bcd01bf2073:
@@ -73,7 +73,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Varbase has successfully delivered over 200 digital experience projects for global brands and international enterprises that need the best Drupal web development and design capabilities for their custom and complex technical requirements.</p>'
+        value: <p>Varbase has successfully delivered over 200 digital experience projects for global brands and international enterprises that need the best Drupal web development and design capabilities for their custom and complex technical requirements.</p>
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
@@ -97,10 +97,10 @@ component_tree:
       variant: btn-primary
       outline: true
       size: btn-md
-      label: 'Learn more'
+      label: Learn more
       href:
-        uri: 'https://www.vardot.com/en/solutions/varbase'
-        options: {  }
+        uri: internal:/features
+        options: {}
       disabled: false
       icon: none
       icon_first: false
@@ -140,7 +140,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Read the latest articles, tutorials, and release notes on the Varbase blog.</p>'
+        value: <p>Read the latest articles, tutorials, and release notes on the Varbase blog.</p>
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
@@ -164,10 +164,10 @@ component_tree:
       variant: btn-primary
       outline: true
       size: btn-md
-      label: 'View Updates'
+      label: View Updates
       href:
-        uri: 'internal:/blog'
-        options: {  }
+        uri: internal:/blog
+        options: {}
       disabled: false
       icon: none
       icon_first: false
