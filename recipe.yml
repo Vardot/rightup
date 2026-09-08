@@ -25,7 +25,6 @@ recipes:
   - varbase_page_base
   - varbase_blog_base
   - varbase_performance_base
-  - varbase_demo_content
 install:
   - vartheme_bs5_rightup
   - better_exposed_filters
