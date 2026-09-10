@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2652f6cd-284e-5598-8d07-2242cad1c3e5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: varbase-icon-accessibility.svg
+  uri:
+    -
+      value: 'public://2026-06/varbase-icon-accessibility.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 4400
+  status:
+    -
+      value: true

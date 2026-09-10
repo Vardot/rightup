@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9adc6fbf-e17a-5869-ad75-1b65f09b106c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: varbase-icon-mobile-responsiveness.svg
+  uri:
+    -
+      value: 'public://2026-06/varbase-icon-mobile-responsiveness.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 9021
+  status:
+    -
+      value: true

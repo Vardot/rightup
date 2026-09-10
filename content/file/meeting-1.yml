@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a9465d07-8e21-4374-b5f6-683e787d1388
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: meeting-1.webp
+  uri:
+    -
+      value: 'public://2026-01/meeting-1.webp'
+  filemime:
+    -
+      value: image/webp
+  filesize:
+    -
+      value: 909684
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1713438775

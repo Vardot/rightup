@@ -1,54 +1,751 @@
 ################################################################################
-# Basic build + validate GitLab CI for the Varbase recipe release.
+# GitLab CI for the RightUp site template recipe.
 #
-# Mirrors the build / validate stages of the Varbase project template, reduced
-# to the minimum a recipe needs: validate composer.json (build) and lint every
-# YAML file - recipe.yml + config (validate). No dependency install / browser
-# tests here (kept basic).
+# build    - validate the recipe's composer.json.
+# validate - lint YAML, spell-check + ESLint the suite, and a Cucumber dry-run
+#            that proves every step phrasing in the Varbase functional testing
+#            suite resolves (all reproducible offline in gitlab-ci-local).
+# pre-test - 🧩 Drupal CMS - The Rightup: build a plain
+#            drupal/cms host project, wire it for a Site recipe, require the
+#            checked-out RightUp recipe, install it through the Drupal
+#            CMS installer, prepare it for deterministic testing, then DUMP the
+#            DB (gzip). The built site (cmssite/), the varbase-e2e node_modules
+#            and the Playwright browser are cached so the test jobs reuse them
+#            instead of rebuilding per job.
+#
+#            Drupal CMS is the ONLY base this pipeline builds on. The former
+#            varbase_project lane was removed: RightUp is a Drupal CMS
+#            site template, so that is the base it has to work on.
+# test     - one parallel functional job per feature bucket: pull the build
+#            cache, restore the DB dump (seconds), serve the site and drive it
+#            through the browser. No composer create-project / require /
+#            site:install / npm install per job.
+# report   - merge every bucket's cucumber JSON into one HTML + PDF report.
+#
+# = Automated Functional Acceptance Testing (varbase-e2e) =
 ################################################################################
 
 stages:
   - build
   - validate
+  - pre-test
+  - test
+  - report
 
 variables:
-  # Drupal 11.4.0 released 2026-07-01; pinned templates ref $CORE_STABLE is still 11.3.
-  DRUPAL_CORE: "11.4.0"
-  IGNORE_PROJECT_DRUPAL_CORE_VERSION: "1"
   COMPOSER_ALLOW_SUPERUSER: "1"
   COMPOSER_MEMORY_LIMIT: "-1"
+  COMPOSER_NO_INTERACTION: "1"
+  DRUPAL_ADMIN_USERNAME: "webmaster"
+  DRUPAL_ADMIN_PASSWORD: "dD.123123ddd"
+  # Host site is built under cmssite/ (this repo is a recipe, not a docroot).
+  SITE_DIR: "$CI_PROJECT_DIR/cmssite"
+  WEB_ROOT: "$CI_PROJECT_DIR/cmssite/web"
+  DB_URL: "mysql://drupal:drupal@database/drupal"
+  LAUNCH_URL: "http://127.0.0.1:8888"
+  FORCE_COLOR: "1"
+  VARBASE_E2E_REPORT_DISABLE: "1"
+  # Cache locations: composer downloads + the Playwright browser go inside the
+  # project dir so the Install job can cache them for the pull-only test jobs.
+  COMPOSER_CACHE_DIR: "${CI_PROJECT_DIR}/.cache/composer"
+  PLAYWRIGHT_BROWSERS_PATH: "${CI_PROJECT_DIR}/.cache/ms-playwright"
 
-# Run for merge requests and branch pushes.
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
     - if: $CI_COMMIT_BRANCH
     - if: $CI_COMMIT_TAG
 
+# = Path-based job gating (Reduce CI usage) ===================================
+# Skip a job when the files it cares about did not change, but ALWAYS run the
+# full pipeline on the default branch, release branches and tags. A job whose
+# files did not change stays LISTED as a non-optional manual (allow_failure:
+# false), never dropped.
+.run_on_release_refs: &run_on_release_refs
+  if: '$CI_COMMIT_TAG || $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  when: on_success
+
+# What a recipe developer edits: the recipe itself (recipe.yml / recommended.yml
+# / config / content / scripts) and the functional testing suite + its config.
+.recipe_app_changes: &recipe_app_changes
+  - "composer.json"
+  - ".gitlab-ci.yml"
+  - ".gitlab-ci/**/*"
+  - "recipe.yml"
+  - "recommended.yml"
+  - "config/**/*"
+  - "content/**/*"
+  - "scripts/**/*"
+  - "tests/**/*"
+  - "package.json"
+  - "package-lock.json"
+  - "cucumber.js"
+  - "eslint.config.js"
+  - "playwright.config.ts"
+
+# Build cache populated by 🧩 Drupal CMS - The Rightup:
+# the built host site (cmssite/), the varbase-e2e node_modules and the composer +
+# Playwright download caches.
+# The test jobs pull this (see .test_cache) so they skip the whole host build
+# and only restore the DB dump.
+.varbase_cache: &varbase_cache
+  key: "rightup-cms-build-v3-$CI_COMMIT_REF_SLUG"
+  paths:
+    - .cache/composer
+    - .cache/ms-playwright
+    - cmssite
+    - node_modules
+
+.test_cache: &test_cache
+  key: "rightup-cms-build-v3-$CI_COMMIT_REF_SLUG"
+  policy: pull
+  paths:
+    - .cache/composer
+    - .cache/ms-playwright
+    - cmssite
+    - node_modules
+
+# = Reusable before_script fragments =
+.fragments:
+  # The Playwright image is Ubuntu noble (PHP 8.3 default); add ondrej/php for
+  # PHP 8.4, then PHP + Composer + ImageMagick/WebP + a MySQL client. Needed by
+  # the Install job (build + drush) and by every test job (drush restore/serve).
+  host_php_setup:
+    - export DEBIAN_FRONTEND=noninteractive
+    - apt-get update -y
+    - apt-get install -y --no-install-recommends software-properties-common ca-certificates curl gnupg lsb-release
+    - add-apt-repository -y ppa:ondrej/php
+    - apt-get update -y
+    - apt-get install -y --no-install-recommends php8.4-cli php8.4-mysql php8.4-gd php8.4-curl php8.4-xml php8.4-mbstring php8.4-zip php8.4-intl unzip git default-mysql-client webp imagemagick libmagickcore-6.q16-6-extra
+    - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    - corepack enable || true
+    - composer --version && php --version
+    - sed -i 's/rights="none"\s*pattern="WEBP"/rights="read|write" pattern="WEBP"/I' /etc/ImageMagick-*/policy.xml 2>/dev/null || true
+
+  # The version the path repo must advertise for this checkout.
+  #
+  # Both install jobs register $CI_PROJECT_DIR as a path repository so the site is
+  # built from THIS branch and not from a published copy. A path repository is
+  # canonical, so it shadows Packagist for drupal/rightup entirely: the
+  # only version of this package Composer can see is the one the path repo
+  # advertises, and by default that is whatever `version` composer.json carries.
+  #
+  # A release MR must set `"version": "1.0.0-rc1"` in composer.json. Left alone,
+  # the path repo would then advertise 1.0.0-rc1 as the ONLY available version,
+  # while the host project's graph (vardot/varbase 11.0.x-dev) requires
+  # drupal/rightup 1.0.x-dev — unsatisfiable, and every release would go
+  # red on its own version bump.
+  #
+  # Override the advertised version instead of removing the `version` key: the
+  # repo stays canonical (so the branch checkout is still definitively what gets
+  # installed) and it advertises the dev version the graph asks for. Derived from
+  # the branch the commit is FOR, never the source branch, so no release has to
+  # edit this file.
+  recipe_dev_version:
+    - export RECIPE_DEV_VERSION="${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH}-dev"
+    - echo "Path repo advertises drupal/rightup as $RECIPE_DEV_VERSION"
+
 # = build = validate the recipe's composer.json (schema + metadata, offline).
-build:composer-validate:
+"📦 Composer validate":
   stage: build
+  rules:
+    - <<: *run_on_release_refs
+    - changes:
+        - "composer.json"
+      when: on_success
+    # Its files did not change: keep the job LISTED as a manual (play button)
+    # so it never auto-runs on unrelated changes but stays visible. allow_failure
+    # stays false so that when it IS run it must pass.
+    - when: manual
+      allow_failure: false
   image: composer:2
   script:
     - composer --version
     - composer validate --no-check-all --no-check-publish
 
 # = validate = lint every YAML file (recipe.yml + config/*) for syntax errors.
-validate:yaml-lint:
+"📐 YAML lint":
   stage: validate
+  rules:
+    - <<: *run_on_release_refs
+    - changes:
+        - "**/*.yml"
+        - "**/*.yaml"
+      when: on_success
+    - when: manual
+      allow_failure: false
   image: python:3.12-slim
+  needs: []
+  before_script:
+    - pip install --no-cache-dir pyyaml
   script:
-    - python --version
-    - pip install --quiet pyyaml
     - |
       python - <<'PY'
-      import glob, sys, yaml
-      bad = 0
-      for f in sorted(glob.glob('**/*.yml', recursive=True)):
+      import sys, yaml
+      from pathlib import Path
+      class Loader(yaml.SafeLoader):
+          pass
+      Loader.add_multi_constructor('', lambda loader, suffix, node: None)
+      SKIP = ('node_modules/', '.cache/', 'tests/reports/', 'cmssite/')
+      errors = count = 0
+      for path in sorted(Path('.').rglob('*.y*ml')):
+          rel = str(path)
+          if any(s in rel for s in SKIP):
+              continue
+          count += 1
           try:
-              list(yaml.safe_load_all(open(f, encoding='utf-8')))
-          except Exception as e:
-              print('YAML ERROR:', f, '->', e); bad += 1
-      print('Checked YAML files; errors:', bad)
-      sys.exit(1 if bad else 0)
+              with open(path) as fh:
+                  list(yaml.load_all(fh, Loader=Loader))
+          except yaml.YAMLError as e:
+              errors += 1
+              print(f"INVALID: {rel}\n  {e}")
+      print(f"Checked {count} YAML files, {errors} invalid.")
+      sys.exit(1 if errors else 0)
       PY
+  allow_failure: false
+
+"🔤 Cspell":
+  stage: validate
+  rules:
+    - <<: *run_on_release_refs
+    - changes:
+        - "tests/**/*.feature"
+        - "tests/README.md"
+        - "cucumber.js"
+        - "eslint.config.js"
+        - ".cspell.json"
+      when: on_success
+    - when: manual
+      allow_failure: false
+  image: node:20
+  needs: []
+  before_script:
+    - npm install -g cspell
+  script:
+    - cspell "tests/**/*.feature" "tests/README.md" "cucumber.js" "eslint.config.js" --no-progress
+  allow_failure: false
+
+"🟨 ESLint":
+  stage: validate
+  rules:
+    - <<: *run_on_release_refs
+    - changes:
+        - "**/*.js"
+        - "eslint.config.js"
+        - "package.json"
+      when: on_success
+    - when: manual
+      allow_failure: false
+  image: node:20
+  needs: []
+  before_script:
+    - npm install --no-audit --no-fund
+  script:
+    - node --version
+    - ./node_modules/.bin/eslint .
+
+# = Cucumber dry-run = every step phrasing resolves, no browser, no site.
+"🧩 Cucumber dry-run":
+  stage: validate
+  rules:
+    - <<: *run_on_release_refs
+    - changes:
+        - "tests/**/*"
+        - "cucumber.js"
+        - "package.json"
+      when: on_success
+    - when: manual
+      allow_failure: false
+  image: node:20
+  needs: []
+  before_script:
+    - npm install --no-audit --no-fund
+  script:
+    - VARBASE_E2E_REPORT_DISABLE=1 ./node_modules/.bin/cucumber-js --config cucumber.js --dry-run
+
+# = pre-test = the ONLY pre-test job, and the only base this recipe is tested on.
+# Build a plain drupal/cms codebase, wire it inline (dev stability, allow-plugins
+# and the patches allowlist), require this recipe from the branch checkout and
+# install the site template through the Drupal CMS installer. RightUp is
+# a Drupal CMS site template, so Drupal CMS is the base it has to work on; the
+# former varbase_project lane was removed. This job also guards the
+# vardot/varbase-patches wiring against drifting out of use.
+"🧩 Drupal CMS - The Rightup":
+  stage: pre-test
+  rules:
+    - <<: *run_on_release_refs
+    - changes: *recipe_app_changes
+      when: on_success
+    - when: manual
+      allow_failure: false
+  image: mcr.microsoft.com/playwright:v1.56.0-noble
+  needs: []
+  timeout: 2h
+  # composer pulls dists from github.com unauthenticated; a rate limit there is
+  # transient, so let the runner re-attempt before the pipeline goes red.
+  retry:
+    max: 2
+    when:
+      - script_failure
+      - runner_system_failure
+      - stuck_or_timeout_failure
+  cache: *varbase_cache
+  services:
+    - name: mariadb:10.11
+      alias: database
+      variables:
+        MARIADB_DATABASE: drupal
+        MARIADB_USER: drupal
+        MARIADB_PASSWORD: drupal
+        MARIADB_ROOT_PASSWORD: root
+  before_script:
+    - !reference [.fragments, host_php_setup]
+    - !reference [.fragments, recipe_dev_version]
+  script:
+    # = Build a plain Drupal CMS project — no Varbase wiring of any kind =
+    # composer create-project refuses a non-empty target, so start clean on every
+    # run (idempotent across retries), mirroring the Varbase Install job.
+    - rm -rf "$SITE_DIR"
+    - composer create-project drupal/cms "$SITE_DIR" --no-interaction --no-install --no-scripts
+    - cd "$SITE_DIR"
+    # = Wire the plain Drupal CMS root for a Site recipe, inline (formerly
+    #   scripts/drupal-cms-wiring.php, which this recipe no longer ships): dev
+    #   stability, the allow-plugins + patches allowlist and
+    #   vardot/varbase-patches. The front-end libraries need nothing here:
+    #   each drupal-library package places itself.
+    - composer config minimum-stability dev
+    - composer config prefer-stable true
+    - composer config allow-plugins.cweagans/composer-patches true
+    - composer config allow-plugins.vardot/varbase-patches true
+    - composer config allow-plugins.oomphinc/composer-installers-extender true
+    - composer config --json extra.enable-patching true
+    - composer config --json extra.composer-exit-on-patch-failure true
+    - composer config --json extra.composer-patches.allowed-dependency-patches '["vardot/varbase-patches","vardot/drupal-core-patches"]'
+    - composer config --json extra.drupal-recipe-unpack.on-require false
+    - composer require vardot/varbase-patches:~11.0.0 --no-update
+    # = Point at the checked-out recipe and require it. --with-all-dependencies is
+    #   required: a partial update keeps the locked symfony/css-selector, which
+    #   drupal/storybook (via varbase_dev_base) conflicts with.
+    # symlink:false — the recipe must be COPIED in. A path-repo symlink would
+    # point recipes/rightup back at $CI_PROJECT_DIR, which contains this build,
+    # and any recursive scan then loops until "Too many levels of symbolic links".
+    # The repo stays canonical so this branch is what gets installed, and it
+    # advertises the branch dev version instead of the release version
+    # composer.json may carry. See .fragments.recipe_dev_version.
+    - composer config repositories.rightup
+        '{"type":"path","url":"'"$CI_PROJECT_DIR"'","options":{"symlink":false,"versions":{"drupal/rightup":"'"$RECIPE_DEV_VERSION"'"}}}'
+        --json
+    - composer require drupal/rightup:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
+    # The RightUp recipe deliberately does not compose the API / Auth /
+    # i18n / AI stacks, and no longer requires those recipe packages. Pull them
+    # into the TEST HOST (the Starter recipe itself is unchanged) so this lane
+    # still proves they resolve, and so they still install the front-end library
+    # files the assertion below checks. --with-all-dependencies is needed for the
+    # same reason it is on the require above, and on-require is already false, so
+    # core-recipe-unpack leaves the packages in place instead of unpacking them
+    # into the root composer.json.
+    #
+    # varbase_ai_context and varbase_ai_safety are required and applied as
+    # top-level recipes, not left to varbase_ai_base to pull in transitively:
+    # tests/features/14-ai/14-05-ai-context.feature, 14-06-ai-safety.feature and
+    # 14-07-ai-guardrails.feature assert the Context Control Center and the
+    # global AI guardrails, and those scenarios fail on a Drupal CMS host that
+    # has not had these two applied.
+    - composer require
+        drupal/varbase_ai_base drupal/varbase_ai_context drupal/varbase_ai_safety
+        drupal/varbase_api_base drupal/varbase_auth_base drupal/varbase_i18n_base
+        --no-interaction --no-progress --prefer-dist --with-all-dependencies
+    # = Assert the wiring took effect, so a silent no-op cannot pass =
+    - test -d recipes/rightup || (echo "❌ recipes/rightup missing" && exit 1)
+    # The recipe under test must come from the path repo, not a published copy.
+    - |
+      php -r '
+        $l = json_decode(file_get_contents("composer.lock"), TRUE);
+        foreach ($l["packages"] as $p) {
+          if ($p["name"] !== "drupal/rightup") { continue; }
+          $src = $p["dist"]["url"] ?? "";
+          printf("drupal/rightup %s from %s\n", $p["version"], $src);
+          if (($p["dist"]["type"] ?? "") !== "path" || $src !== getenv("CI_PROJECT_DIR")) {
+            fwrite(STDERR, "❌ not installed from the branch checkout\n");
+            exit(1);
+          }
+          print "✅ installed from the branch checkout\n";
+          exit(0);
+        }
+        fwrite(STDERR, "❌ drupal/rightup is not in the lock file\n");
+        exit(1);
+      '
+    - test -d web/modules/contrib/canvas || (echo "❌ drupal/canvas missing" && exit 1)
+    - composer show vardot/varbase-patches
+    - |
+      php -r '
+        $c = json_decode(file_get_contents("composer.json"), TRUE);
+        $p = $c["config"]["allow-plugins"] ?? [];
+        $need = ["cweagans/composer-patches", "vardot/varbase-patches", "oomphinc/composer-installers-extender"];
+        foreach ($need as $k) {
+          if (($p[$k] ?? FALSE) !== TRUE) {
+            fwrite(STDERR, "❌ allow-plugins missing: $k\n");
+            exit(1);
+          }
+        }
+        if (($c["minimum-stability"] ?? "") !== "dev") {
+          fwrite(STDERR, "❌ minimum-stability is not dev\n");
+          exit(1);
+        }
+        // The curated Vardot patch sets must be allowed to apply their
+        // patches; anything else a dependency declares is left to Composer.
+        $cp = $c["extra"]["composer-patches"] ?? [];
+        foreach (["vardot/varbase-patches", "vardot/drupal-core-patches"] as $a) {
+          if (!in_array($a, $cp["allowed-dependency-patches"] ?? [], TRUE)) {
+            fwrite(STDERR, "❌ allowed-dependency-patches missing: $a\n");
+            exit(1);
+          }
+        }
+        print "✅ composer wiring in place\n";
+      '
+    # = Assert the front-end libraries the recipe components expect are on disk =
+    #   They come from Composer now: each varbase_* recipe requires its own
+    #   drupal-library, so requiring the recipe above already installed them.
+    #   Checking the FILES the .libraries.yml entries load, not a declaration,
+    #   is what catches a wrong installer path or a repacked upstream layout.
+    - |
+      php -r '
+        $need = [
+          "web/libraries/ace/src-min-noconflict/ace.js",
+          "web/libraries/aos/aos.js",
+          "web/libraries/aos/aos.css",
+          "web/libraries/dropzone/dropzone-min.js",
+          "web/libraries/dropzone/dropzone.css",
+          "web/libraries/jquery.fancytree/dist/jquery.fancytree.min.js",
+          "web/libraries/jquery.fancytree/dist/skin-lion/ui.fancytree.min.css",
+          "web/libraries/swagger-ui/dist/swagger-ui-bundle.js",
+          "web/libraries/swagger-ui/dist/swagger-ui.css",
+          "web/libraries/ckeditor5/plugins/media-embed/build/media-embed.js",
+        ];
+        $missing = array_values(array_filter($need, fn($f) => !is_file($f)));
+        if ($missing) {
+          fwrite(STDERR, "❌ front-end libraries missing:\n  " . implode("\n  ", $missing) . "\n");
+          exit(1);
+        }
+        printf("✅ %d front-end library files in place\n", count($need));
+      '
+    - ls web/libraries
+    # = Install the site template from the recipe =
+    - mkdir -p web/sites/default/files
+    - chmod 777 web/sites/default web/sites/default/files
+    - ./vendor/bin/drush site:install recipes/rightup
+      --db-url=$DB_URL
+      --account-name=$DRUPAL_ADMIN_USERNAME --account-pass=$DRUPAL_ADMIN_PASSWORD
+      --account-mail=webmaster@vardot.com --site-name="RightUp on Drupal CMS" --locale=en -y
+    # = Prove the template is applied, not merely that the install exited 0 =
+    - ./vendor/bin/drush status --fields=drupal-version,theme,db-status
+    - |
+      THEME=$(./vendor/bin/drush config:get system.theme default --format=string)
+      echo "default theme: $THEME"
+      test "$THEME" = "vartheme_bs5_rightup" || (echo "❌ vartheme_bs5_rightup is not the default theme" && exit 1)
+    - |
+      PAGES=$(./vendor/bin/drush php:eval 'print \Drupal::entityQuery("canvas_page")->accessCheck(FALSE)->count()->execute();')
+      echo "canvas pages: ${PAGES:-0}"
+      test "${PAGES:-0}" -ge 5 || (echo "❌ site template content missing: ${PAGES:-0} canvas pages" && exit 1)
+    # = Apply the base recipes the copied suites exercise ====================
+    # RightUp deliberately does not compose the API / Auth / i18n / AI
+    # stacks, but the functional suites copied from varbase_project still cover
+    # them. Apply them to the TEST HOST only (the recipe itself is unchanged),
+    # or 03-03-json-api, 13-13/14/15 and the whole 14-ai bucket fail on modules
+    # that were never installed. A cache rebuild before each apply is required
+    # so a recipe sees what the previous one enabled.
+    #
+    # `dr` is core's own CLI (drupal/core declares bin: scripts/dr), so
+    # vendor/bin/dr exists on a drupal/cms root and resolves the site from the
+    # PROJECT root, not the docroot. `recipe` is a registered alias of
+    # `recipe:apply` on Drupal 11.4. Drush 13.x has no `recipe` command of its
+    # own, which is why the applies go through `dr`.
+    #
+    # A missing install path is FATAL, not a skip: each of these packages is
+    # required a few lines above, so an unresolvable path means the require did
+    # not take effect. Skipping it here left the job green and pushed the
+    # failure out to the 03-03 / 13-* / 14-ai buckets twenty jobs later.
+    #
+    # An apply that ABORTS is tolerated but never silent: the AI sub-recipes
+    # abort on config actions that need a live AI provider, which the firewalled
+    # runner does not have. Each failure is reported and summarised so the log
+    # distinguishes a clean apply from an aborted one.
+    - |
+      APPLY_FAILED=""
+      for R in varbase_i18n_base varbase_api_base varbase_auth_base \
+               varbase_ai_base varbase_ai_context varbase_ai_safety; do
+        RP=$(composer info "drupal/$R" --path 2>/dev/null | awk '{print $2}')
+        if [ -z "$RP" ] || [ ! -d "$RP" ]; then
+          echo "❌ drupal/$R has no resolvable install path; it was required above, so this is a wiring break." >&2
+          composer info "drupal/$R" >&2 || true
+          exit 1
+        fi
+        echo "Applying recipe $R from $RP"
+        ./vendor/bin/drush cache:rebuild
+        if ./vendor/bin/dr recipe "$RP"; then
+          echo "✅ applied $R"
+        else
+          echo "⚠️  $R did not apply cleanly (exit $?) — continuing; see the summary below." >&2
+          APPLY_FAILED="$APPLY_FAILED $R"
+        fi
+      done
+      if [ -n "$APPLY_FAILED" ]; then
+        echo "⚠️  recipes that did not apply cleanly:$APPLY_FAILED" >&2
+      else
+        echo "✅ every base recipe applied cleanly"
+      fi
+    - ./vendor/bin/drush cache:rebuild
+    # The AI safety/taxonomy sub-recipes abort on config actions that need a live
+    # AI provider (unavailable in CI), so enable their modules explicitly.
+    - ./vendor/bin/drush pm:enable ai_logging ai_observability ai_automators -y || true
+    # Strip the ai_ckeditor button/plugin from every editor: rendering its
+    # settings subform performs a live AI-provider lookup that hangs on the
+    # firewalled runner and times out the text-format page. Carried over from the
+    # removed varbase lane — the AI stack is applied on this host too, so the
+    # hang applies here unchanged.
+    - ./vendor/bin/drush php:eval 'foreach(\Drupal::entityTypeManager()->getStorage("editor")->loadMultiple() as $e){$s=$e->getSettings();$c=false;if(!empty($s["toolbar"]["items"])&&is_array($s["toolbar"]["items"])){$n=array_values(array_filter($s["toolbar"]["items"],function($i){return stripos((string)$i,"ai_ckeditor")===false&&stripos((string)$i,"aickeditor")===false;}));if($n!==$s["toolbar"]["items"]){$s["toolbar"]["items"]=$n;$c=true;}}if(!empty($s["plugins"])&&is_array($s["plugins"])){foreach(array_keys($s["plugins"]) as $k){if(stripos($k,"ai_ckeditor")!==false){unset($s["plugins"][$k]);$c=true;}}}if($c){$e->setSettings($s);$e->save();}}' || true
+    - ./vendor/bin/drush cache:rebuild
+    # = Prepare for deterministic testing =
+    - ./vendor/bin/drush pm:uninstall antibot -y || true
+    # Neutralize Honeypot (added by drupal_cms_anti_spam): its time-restriction
+    # rejects a form submitted faster than N seconds ("There was a problem with
+    # your form submission. Please wait N seconds and try again."), which the
+    # deterministic tests trip on. Mirror varbase_project's CI, which neutralizes
+    # antibot/honeypot/flood. Uninstall it, or fall back to disabling the timer.
+    - ./vendor/bin/drush pm:uninstall honeypot -y || ./vendor/bin/drush config:set honeypot.settings time_limit 0 -y || true
+    - ./vendor/bin/drush config:set user.flood ip_limit 1000000 -y
+    - ./vendor/bin/drush config:set user.flood user_limit 1000000 -y
+    - ./vendor/bin/drush config:set system.logging error_level all -y
+    - ./vendor/bin/drush cache:rebuild
+    # = Seed the per-role testing users the permission/role features log in as.
+    #   varbase-e2e's "I am a logged in user with the ..." step only submits the
+    #   login form; it does not create the user. Without these, every role-scoped
+    #   scenario lands anonymous and hits a 403. Roles come from varbase_users_base;
+    #   this mirrors scripts/add-testing-users.sh (adapted to the CI web/ layout).
+    - |
+      seed_user () {
+        ./vendor/bin/drush user:create "$1" --mail="$2" --password="dD.123123ddd" || \
+          ./vendor/bin/drush user:password "$1" "dD.123123ddd" || true
+        if [ "$3" != "_none_" ]; then ./vendor/bin/drush user:role:add "$3" "$1" || true; fi
+      }
+      seed_user "Normal user"    "test.authenticated@vardot.com"  "_none_"
+      seed_user "Content editor" "test.content_editor@vardot.com" "content_editor"
+      seed_user "Content admin"  "test.content_admin@vardot.com"  "content_admin"
+      seed_user "SEO admin"      "test.seo_admin@vardot.com"       "seo_admin"
+      seed_user "Site admin"     "test.site_admin@vardot.com"      "site_admin"
+      seed_user "Super admin"    "test.super_admin@vardot.com"     "administrator"
+    # = Install the varbase-e2e suite + the matching Chromium (cached) =
+    - cd "$CI_PROJECT_DIR"
+    - npm install --no-audit --no-fund
+    - ./node_modules/.bin/playwright install chromium
+    # = Dump the prepared DB for the parallel test jobs =
+    - $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT sql:dump --gzip --result-file=$CI_PROJECT_DIR/rightup-db.sql
+  artifacts:
+    when: always
+    expire_in: 1 day
+    paths:
+      - cmssite/composer.json
+      - rightup-db.sql.gz
+  allow_failure: false
+
+# = Smoke canary = a single fast pre-flight test that does the same runtime-only
+# restore and drives ONE assertion-free suite (the 01-00 warm-up: visit every
+# public page, assert nothing). Every parallel matrix job `needs` this canary,
+# so a systemic break (formatter/dependency/install-level) fails HERE once and
+# SKIPS the 24 matrix jobs instead of burning each one to the same failure.
+# GitLab has no native "cancel sibling parallel jobs on failure"; this is the
+# portable stand-in. Trade-off: on a green run it serialises this ~5-min canary
+# before the parallel fan-out; on a systemic break it saves 24x wasted jobs.
+"🧪 functional (smoke)":
+  stage: test
+  rules:
+    - <<: *run_on_release_refs
+    - changes: *recipe_app_changes
+      when: on_success
+    - when: manual
+      allow_failure: false
+  image: mcr.microsoft.com/playwright:v1.56.0-noble
+  needs: ["🧩 Drupal CMS - The Rightup"]
+  timeout: 30m
+  retry:
+    max: 2
+    when:
+      - script_failure
+      - runner_system_failure
+      - stuck_or_timeout_failure
+  cache: *test_cache
+  services:
+    - name: mariadb:10.11
+      alias: database
+      variables:
+        MARIADB_DATABASE: drupal
+        MARIADB_USER: drupal
+        MARIADB_PASSWORD: drupal
+        MARIADB_ROOT_PASSWORD: root
+  variables:
+    SUITE: "00-smoke"
+    CUCUMBER_JSON: "cucumber_report--00-smoke"
+    FEATURES_GLOB: "tests/features/01-website-base-requirements/01-00-*.feature"
+  artifacts:
+    when: always
+    paths:
+      - tests/reports/
+      - tests/screenshots/
+      - tests/videos/
+    expire_in: 30 days
+  before_script:
+    - !reference [.fragments, host_php_setup]
+    - gunzip -c $CI_PROJECT_DIR/rightup-db.sql.gz | $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT sql:cli
+    - $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT cache:rebuild
+  script:
+    - PHP_CLI_SERVER_WORKERS=8 $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT runserver 127.0.0.1:8888 > $CI_PROJECT_DIR/runserver.log 2>&1 &
+    - sleep 8
+    - cd "$CI_PROJECT_DIR"
+    - FEATURES="${FEATURES_GLOB}" VARBASE_E2E_REPORT_DISABLE=1 CUCUMBER_JSON="${CUCUMBER_JSON}" ./node_modules/.bin/cucumber-js --config cucumber.js --tags "not @wip"
+  allow_failure: false
+
+# = Automated Functional Acceptance Testing (varbase-e2e) - one parallel job per
+# feature bucket. Restores the built site + DB dump from 🧩 Drupal CMS - The Rightup.
+"🧪 functional":
+  stage: test
+  rules:
+    - <<: *run_on_release_refs
+    - changes: *recipe_app_changes
+      when: on_success
+    - when: manual
+      allow_failure: false
+  image: mcr.microsoft.com/playwright:v1.56.0-noble
+  needs: ["🧩 Drupal CMS - The Rightup", "🧪 functional (smoke)"]
+  timeout: 2h
+  retry:
+    max: 2
+    when:
+      - script_failure
+      - runner_system_failure
+      - stuck_or_timeout_failure
+  cache: *test_cache
+  parallel:
+    matrix:
+      # Suites that already fit one small job stay whole (FEATURES_GLOB defaults
+      # to tests/features/$SUITE per the job variables below).
+      - SUITE:
+          - "02-user-management"
+          - "03-admin-pages"
+          - "05-content-pages"
+          - "06-content-blog"
+          - "07-content-contact"
+          - "08-content-homepage"
+          - "10-content-permissions"
+          - "11-content-workflow"
+          - "13-varbase-recipes"
+          - "14-ai"
+          - "15-quality"
+          - "16-eca-workflow-modeler"
+      # The heaviest suites are split by feature-file globs so each parallel job
+      # stays short (concurrent, so more jobs LOWER wall-clock). SUITE names the
+      # report; FEATURES_GLOB overrides the glob (fed to cucumber.js as FEATURES).
+      - SUITE: "01-website-base-requirements-a"
+        FEATURES_GLOB: "tests/features/01-website-base-requirements/01-{00,01,02,03}-*.feature"
+      - SUITE: "01-website-base-requirements-b"
+        FEATURES_GLOB: "tests/features/01-website-base-requirements/01-{04,05,06}-*.feature"
+      - SUITE: "01-website-base-requirements-c"
+        FEATURES_GLOB: "tests/features/01-website-base-requirements/01-07-*.feature"
+      - SUITE: "04-admin-users-a"
+        FEATURES_GLOB: "tests/features/04-admin-users/04-01-*.feature"
+      - SUITE: "04-admin-users-b"
+        FEATURES_GLOB: "tests/features/04-admin-users/04-{02,03}-*.feature"
+      - SUITE: "09-drupal-canvas-a"
+        FEATURES_GLOB: "tests/features/09-drupal-canvas/09-01-*.feature"
+      - SUITE: "09-drupal-canvas-b"
+        FEATURES_GLOB: "tests/features/09-drupal-canvas/09-02-*.feature"
+      - SUITE: "09-drupal-canvas-c"
+        FEATURES_GLOB: "tests/features/09-drupal-canvas/09-{03,04,05,07}-*.feature"
+      - SUITE: "09-drupal-canvas-d"
+        FEATURES_GLOB: "tests/features/09-drupal-canvas/09-06-*.feature"
+      - SUITE: "12-content-access-and-lock-a"
+        FEATURES_GLOB: "tests/features/12-content-access-and-lock/12-01-*.feature"
+      - SUITE: "12-content-access-and-lock-b"
+        FEATURES_GLOB: "tests/features/12-content-access-and-lock/12-02-*.feature"
+  services:
+    - name: mariadb:10.11
+      alias: database
+      variables:
+        MARIADB_DATABASE: drupal
+        MARIADB_USER: drupal
+        MARIADB_PASSWORD: drupal
+        MARIADB_ROOT_PASSWORD: root
+  variables:
+    CUCUMBER_JSON: "cucumber_report--${SUITE}"
+    # Whole-suite jobs glob their whole folder; split jobs override this.
+    FEATURES_GLOB: "tests/features/${SUITE}/**/*.feature"
+  artifacts:
+    when: always
+    paths:
+      - tests/reports/
+      - tests/screenshots/
+      - tests/videos/
+    expire_in: 30 days
+  before_script:
+    # cmssite/ + node_modules + the browser arrive from the pull-only cache;
+    # only PHP (for drush) is added, then the seeded DB dump is restored.
+    - !reference [.fragments, host_php_setup]
+    - gunzip -c $CI_PROJECT_DIR/rightup-db.sql.gz | $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT sql:cli
+    - $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT cache:rebuild
+  script:
+    # Serve the restored site (parallel workers for the Canvas editor mounts).
+    - PHP_CLI_SERVER_WORKERS=8 $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT runserver 127.0.0.1:8888 > $CI_PROJECT_DIR/runserver.log 2>&1 &
+    - sleep 8
+    - cd "$CI_PROJECT_DIR"
+    # One feature bucket per matrix job. cucumber.js reads FEATURES.
+    - FEATURES="${FEATURES_GLOB}" VARBASE_E2E_REPORT_DISABLE=1 CUCUMBER_JSON="cucumber_report--${SUITE}" ./node_modules/.bin/cucumber-js --config cucumber.js --tags "not @wip"
+  after_script:
+    - cd "$CI_PROJECT_DIR"
+    - export REPORT="rightup--${CI_COMMIT_REF_SLUG:-local}--${SUITE}--automated-functional-testing-report--$(date +%Y-%m-%d)--$(date +%H-%M)"
+    - node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js
+        --json "tests/reports/cucumber_report--${SUITE}.json"
+        --out  "tests/reports/${REPORT}.html"
+        --format all
+        --pdf-out "tests/reports/${REPORT}.pdf" || true
+  allow_failure: false
+
+# = report = merge every matrix job's cucumber JSON into one combined report.
+"📊 Create reports":
+  stage: report
+  rules:
+    # Auto-run whenever the test chain ran (release refs or the app changed).
+    # DAG-scheduled via needs so it is not held behind an un-played
+    # blocking-manual validate job.
+    #
+    # NOTE: `when: always` here only governs RULE evaluation. `needs` has no
+    # run-on-failure form, so GitLab still skips this job if any 🧪 functional
+    # matrix job fails — the combined report publishes on a green matrix only.
+    # Each matrix job uploads its own per-suite HTML/PDF in after_script, so a
+    # red run is not left without a report.
+    - if: '$CI_COMMIT_TAG || $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: always
+    - changes: *recipe_app_changes
+      when: always
+    - when: never
+  image: node:20
+  needs: ["🧪 functional"]
+  dependencies:
+    - "🧪 functional"
+  before_script:
+    - apt-get update -y && apt-get install -y jq
+    - npm install --no-save --no-audit --no-fund @vardot/varbase-e2e
+    - ./node_modules/.bin/playwright install --with-deps chromium
+  script:
+    - jq -s 'add' tests/reports/cucumber_report--*.json > tests/reports/cucumber_report.json
+    - export REPORT="rightup--${CI_COMMIT_REF_SLUG}--automated-functional-testing-report--$(date +%Y-%m-%d)--$(date +%H-%M)"
+    - node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js
+        --json tests/reports/cucumber_report.json
+        --out  "tests/reports/${REPORT}.html"
+        --format all
+        --pdf-out "tests/reports/${REPORT}.pdf"
+  artifacts:
+    when: always
+    paths:
+      - tests/reports/
+      - tests/screenshots/
+    expire_in: 30 days
+  allow_failure: false

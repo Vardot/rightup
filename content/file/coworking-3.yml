@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ef46d5fb-c867-4451-8a2a-9f35a94b50a5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: coworking-3.webp
+  uri:
+    -
+      value: 'public://2026-01/coworking-3.webp'
+  filemime:
+    -
+      value: image/webp
+  filesize:
+    -
+      value: 98782
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1713438475

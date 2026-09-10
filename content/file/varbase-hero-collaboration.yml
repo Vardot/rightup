@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2d85a3ba-b9fb-42f4-bb02-3e4662b5e4ff
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: varbase-hero-collaboration.jpg
+  uri:
+    -
+      value: 'public://2026-05/varbase-hero-collaboration.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 10881039
+  status:
+    -
+      value: true

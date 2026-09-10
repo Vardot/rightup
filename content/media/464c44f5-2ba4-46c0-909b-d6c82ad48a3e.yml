@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 464c44f5-2ba4-46c0-909b-d6c82ad48a3e
+  bundle: image
+  default_langcode: en
+  depends:
+    20f5e582-98d4-41be-a3cd-7cf937c05a0d: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Curved Architectural Canopy'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Curved wooden architectural canopy with glass facade'
+      title: ''
+      width: 1300
+      height: 728
+      entity: 20f5e582-98d4-41be-a3cd-7cf937c05a0d

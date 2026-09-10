@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 20f5e582-98d4-41be-a3cd-7cf937c05a0d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: curved-architectural-canopy.webp
+  uri:
+    -
+      value: 'public://2026-06/curved-architectural-canopy.webp'
+  filemime:
+    -
+      value: image/webp
+  filesize:
+    -
+      value: 87120
+  status:
+    -
+      value: true

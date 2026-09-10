@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 4636b88f-f27b-502e-8f04-257ae082a013
+  bundle: svg_image
+  default_langcode: en
+  depends:
+    9adc6fbf-e17a-5869-ad75-1b65f09b106c: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new SVG Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Mobile Responsiveness icon'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_svg_image:
+    -
+      alt: 'Mobile Responsiveness'
+      title: ''
+      width: 44
+      height: 44
+      entity: 9adc6fbf-e17a-5869-ad75-1b65f09b106c

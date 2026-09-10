@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 96101fa7-b093-4238-9259-38f22da6fa9c
+  bundle: image
+  default_langcode: en
+  depends:
+    fc33ecab-1c3d-4287-bd73-3927abb86a49: file
+default:
+  revision_user:
+    -
+      target_id: 0
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Team meeting with laptops'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Team collaborating with laptops'
+      title: ''
+      width: 1600
+      height: 1069
+      entity: fc33ecab-1c3d-4287-bd73-3927abb86a49

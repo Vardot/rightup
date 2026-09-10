@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ed60a78f-204f-4892-8d2c-7eeb22d69e72
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: abstract-blue-light-trails.webp
+  uri:
+    -
+      value: 'public://2026-06/abstract-blue-light-trails.webp'
+  filemime:
+    -
+      value: image/webp
+  filesize:
+    -
+      value: 66168
+  status:
+    -
+      value: true

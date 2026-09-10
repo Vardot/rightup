@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3bef5ee9-daa4-5584-a37c-7dc22bc78997
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: varbase-icon-ai-integration.svg
+  uri:
+    -
+      value: 'public://2026-06/varbase-icon-ai-integration.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 5444
+  status:
+    -
+      value: true

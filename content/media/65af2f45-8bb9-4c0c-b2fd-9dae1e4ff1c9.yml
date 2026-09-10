@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 65af2f45-8bb9-4c0c-b2fd-9dae1e4ff1c9
+  bundle: image
+  default_langcode: en
+  depends:
+    55be58cb-39aa-43a3-a011-bd3c2711d669: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Colleagues Reviewing a Tablet'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Two colleagues reviewing a document on a tablet in a modern office'
+      title: ''
+      width: 1300
+      height: 400
+      entity: 55be58cb-39aa-43a3-a011-bd3c2711d669

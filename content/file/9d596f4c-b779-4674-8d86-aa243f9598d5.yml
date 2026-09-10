@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9d596f4c-b779-4674-8d86-aa243f9598d5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: varbase-about-banner.png
+  uri:
+    -
+      value: 'public://2026-05/varbase-about-banner.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 822683
+  status:
+    -
+      value: true

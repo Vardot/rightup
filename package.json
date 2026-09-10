@@ -1,0 +1,27 @@
+{
+  "name": "rightup",
+  "description": "Varbase functional testing suite (varbase-e2e) for the RightUp site template recipe.",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
+    "test:firefox": "BROWSER=firefox cucumber-js --config cucumber.js",
+    "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
+    "test:fast": "SLOW_MO=0 cucumber-js --config cucumber.js",
+    "generate-reports": "node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@vardot/varbase-e2e": "^2.0.4"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "12.9.0",
+    "@cucumber/pretty-formatter": "1.0.1"
+  },
+  "resolutions": {
+    "@cucumber/cucumber": "12.9.0",
+    "@cucumber/pretty-formatter": "1.0.1"
+  }
+}

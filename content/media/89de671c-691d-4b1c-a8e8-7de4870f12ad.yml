@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 89de671c-691d-4b1c-a8e8-7de4870f12ad
+  bundle: image
+  default_langcode: en
+  depends:
+    ed60a78f-204f-4892-8d2c-7eeb22d69e72: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Abstract Blue Light Trails'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Abstract blue and orange light trails on a dark background'
+      title: ''
+      width: 1300
+      height: 728
+      entity: ed60a78f-204f-4892-8d2c-7eeb22d69e72

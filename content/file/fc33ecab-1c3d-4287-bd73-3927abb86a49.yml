@@ -1,0 +1,21 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fc33ecab-1c3d-4287-bd73-3927abb86a49
+  default_langcode: en
+default:
+  filename:
+    -
+      value: team-meeting-with-laptops.webp
+  uri:
+    -
+      value: 'public://2026-06/team-meeting-with-laptops.webp'
+  filemime:
+    -
+      value: image/webp
+  filesize:
+    -
+      value: 56790
+  status:
+    -
+      value: true

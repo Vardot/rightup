@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 29e1d4c3-4817-5921-972d-0a276e6f9b19
+  bundle: svg_image
+  default_langcode: en
+  depends:
+    3bef5ee9-daa4-5584-a37c-7dc22bc78997: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new SVG Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'AI Integration icon'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_svg_image:
+    -
+      alt: 'AI Integration'
+      title: ''
+      width: 48
+      height: 45
+      entity: 3bef5ee9-daa4-5584-a37c-7dc22bc78997

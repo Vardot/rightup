@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b9309646-f2ca-5c0d-8f2b-6e99da354e87
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: varbase-icon-enterprise-security.svg
+  uri:
+    -
+      value: 'public://2026-06/varbase-icon-enterprise-security.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 2936
+  status:
+    -
+      value: true

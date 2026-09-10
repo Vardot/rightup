@@ -1,0 +1,16 @@
+{
+  "css": {
+    "site header": "header[role=\"banner\"]",
+    "footer": "footer[role=\"contentinfo\"]",
+    "main content": "main",
+    "main nav": "header[role=\"banner\"] nav",
+    "site branding": ".block-system-branding-block",
+    "skip link": ".skip-link",
+    "breadcrumb": "nav[aria-label=\"breadcrumb\"]",
+    "contact form": "form.webform-submission-form",
+    "blog view": ".view-blog",
+    "canvas patterns library": "[data-testid='canvas-library-patterns-tab-content']",
+    "canvas components library": "[data-testid='canvas-library-components-tab-content']"
+  },
+  "xpath": {}
+}

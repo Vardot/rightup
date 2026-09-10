@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 862c68b6-8714-41e2-9879-f53da2d9b6fc
+  bundle: image
+  default_langcode: en
+  depends:
+    8cd271e8-6372-44c4-a525-c8f313514f27: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Varbase AI Chatbot 2'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: RAG-based Drupal AI chatbot answering a query
+      title: ''
+      width: 650
+      height: 365
+      entity: 8cd271e8-6372-44c4-a525-c8f313514f27

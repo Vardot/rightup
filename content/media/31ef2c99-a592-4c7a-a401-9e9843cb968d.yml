@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 31ef2c99-a592-4c7a-a401-9e9843cb968d
+  bundle: image
+  default_langcode: en
+  depends:
+    d10e3528-5bf6-4dfc-be41-2b95ae9f42d3: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Varbase AI Chatbot 1'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: RAG-based Drupal AI chatbot conversation view
+      title: ''
+      width: 650
+      height: 365
+      entity: d10e3528-5bf6-4dfc-be41-2b95ae9f42d3

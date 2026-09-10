@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 70e666ba-6af5-5456-bf74-13c53e653fb5
+  bundle: svg_image
+  default_langcode: en
+  depends:
+    2652f6cd-284e-5598-8d07-2242cad1c3e5: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new SVG Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Accessibility icon'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_svg_image:
+    -
+      alt: 'Accessibility'
+      title: ''
+      width: 46
+      height: 42
+      entity: 2652f6cd-284e-5598-8d07-2242cad1c3e5

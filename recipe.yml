@@ -28,6 +28,7 @@ recipes:
 install:
   - vartheme_bs5_rightup
   - better_exposed_filters
+  - canvas_page_template_component
 config:
   strict: false
   actions:
@@ -139,51 +140,9 @@ config:
       disable: []
     canvas.component.sdc.navigation.title:
       disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.details:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.field:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.fieldset:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.form:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.form-element:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.form-element-radiocheckbox:
-      disable: []
     canvas.component.sdc.vartheme_bs5_rightup.input-checkbox:
       disable: []
     canvas.component.sdc.vartheme_bs5_rightup.input-submit:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.links-dropbutton:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.list:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.local-tasks:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.page:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.page-footer:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.radios:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.region:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.select:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.social-auth:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.user:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.views-view:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.views-view-grid:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.views-view-list:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.views-view-summary:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_rightup.views-view-unformatted:
       disable: []
     views.view.blog:
       setViewsComponentStyleTheme:
