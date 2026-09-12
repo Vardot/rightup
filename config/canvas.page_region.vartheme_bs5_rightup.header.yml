@@ -26,8 +26,8 @@ component_tree:
     inputs:
       bg_edge2edge: true
       container_type: container
-      background_color: none
-      text_color: auto
+      background_color: bg-black
+      text_color: text-white
       columns: 33-33-33
       gutter: 'gx-3 gy-3'
       padding_block_start: pt-3
@@ -130,7 +130,7 @@ component_tree:
       icon: search
       label: Search
       open_label: 'Close search'
-      icon_color: text-body
+      icon_color: text-white
       placement: end
       expand_in_editor: false
   e9e7b7b4-05df-4861-8ca6-983df67fdf38:
