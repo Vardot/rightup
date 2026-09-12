@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: be66b97b-3b45-41af-a662-3d18963c67aa
+  bundle: news
+  default_langcode: en
+  depends:
+    1e3d963f-7398-4088-8cfb-2b53c4e1b66c: user
+    3fe49026-d9f1-4749-855a-5a573459cae6: media
+    baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 1e3d963f-7398-4088-8cfb-2b53c4e1b66c
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 1e3d963f-7398-4088-8cfb-2b53c4e1b66c
+  created:
+    -
+      value: 1783414800
+  changed:
+    -
+      value: 1783414800
+  title:
+    -
+      value: 'Arclight Studio Announce Fall Exhibition'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/arclight-studio-announce-fall-exhibition
+      langcode: en
+  field_content:
+    -
+      value: '<p>The show will open the studio&#039;s archive of rejected work to the public for the first time.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "The show will open the studio's archive of rejected work to the public for the first time."
+  field_featured_image:
+    -
+      entity: 3fe49026-d9f1-4749-855a-5a573459cae6
+  field_news_categories:
+    -
+      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605

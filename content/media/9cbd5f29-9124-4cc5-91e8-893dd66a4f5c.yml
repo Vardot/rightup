@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9cbd5f29-9124-4cc5-91e8-893dd66a4f5c
+  bundle: image
+  default_langcode: en
+  depends:
+    c4a702a3-7814-435a-a5bb-2136dfa68348: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Office meeting by windows'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Colleagues meeting at a table beside tall office windows'
+      title: ''
+      width: 1200
+      height: 1600
+      entity: c4a702a3-7814-435a-a5bb-2136dfa68348

@@ -22,7 +22,7 @@ Feature: Drupal Canvas - translating a Canvas page
   # installed without its language.entity.en / und / zxx config entities).
   #
   # Fixture the @wip scenarios expect: English (default) + Arabic, and the
-  # "Features" Canvas page translated into Arabic with the title "المزايا".
+  # "About Us" Canvas page translated into Arabic with the title "من نحن".
   # Run them with:
   #   FEATURES="tests/features/09-drupal-canvas/09-07-*.feature" \
   #     ./node_modules/.bin/cucumber-js --config cucumber.js --tags "@multilingual"
@@ -55,18 +55,18 @@ Feature: Drupal Canvas - translating a Canvas page
   Scenario: The translations overview of a Canvas page lists the site languages and their status
      When I go to "/admin/content/pages"
       And wait
-      And I wait for the text "Features" to appear
-     Then I should see "Translate" in the "Features" row
-     When I open the "Translate" link in the "Features" row
+      And I wait for the text "About Us" to appear
+     Then I should see "Translate" in the "About Us" row
+     When I open the "Translate" link in the "About Us" row
       And wait
       And I wait for the text "Original language" to appear
      Then I should see "Language"
       And I should see "Translation"
       And I should see "Status"
       And I should see "Operations"
-      And I should see "Features" in the "English (Original language)" row
+      And I should see "About Us" in the "English (Original language)" row
       And I should see "Published" in the "English (Original language)" row
-      And I should see "المزايا" in the "Arabic" row
+      And I should see "من نحن" in the "Arabic" row
       And I should see "Published" in the "Arabic" row
       And I should not see "Not translated" in the "Arabic" row
 
@@ -77,11 +77,11 @@ Feature: Drupal Canvas - translating a Canvas page
   @wip @multilingual @check @local @development
   Scenario: A translated Canvas page is served in its own language and direction
     Given I am an anonymous user
-     When I go to "/features"
+     When I go to "/about-us"
       And wait
      Then "html" should have attribute "lang" with value "en"
       And "html" should have attribute "dir" with value "ltr"
-     When I go to "/ar/features"
+     When I go to "/ar/about-us"
       And wait
      Then "html" should have attribute "lang" with value "ar"
       And "html" should have attribute "dir" with value "rtl"

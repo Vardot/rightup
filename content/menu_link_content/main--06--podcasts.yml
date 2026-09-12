@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: cf0857fa-f254-5920-9aa7-19319c6d7cb1
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Podcasts
+  menu_name:
+  - value: main
+  link:
+  - uri: internal:/podcasts
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 6
+  expanded:
+  - value: false

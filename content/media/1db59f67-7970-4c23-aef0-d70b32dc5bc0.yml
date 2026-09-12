@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1db59f67-7970-4c23-aef0-d70b32dc5bc0
+  bundle: image
+  default_langcode: en
+  depends:
+    ebba1067-b99a-47ff-a515-844b53731244: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Vintage studio microphone'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Vintage studio microphone hanging against a dark background'
+      title: ''
+      width: 620
+      height: 349
+      entity: ebba1067-b99a-47ff-a515-844b53731244

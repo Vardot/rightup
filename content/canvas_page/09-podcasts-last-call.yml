@@ -1,0 +1,694 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 1aab03f6-10d4-5fda-b086-d1ee35110aa8
+  default_langcode: en
+  depends:
+    f45f5f79-94c2-401e-b75f-f83237693c68: file
+    1bbdc230-2b35-45e4-9cbe-a98c374aaaa4: media
+    a48f6896-10f8-4940-aec3-3908faa68e4a: file
+    da526131-9c0f-4699-b74e-d3f0f83a3472: media
+    a6ad03d1-893d-4f6f-9360-108e4d67a0cf: file
+    929fa437-2f56-4518-b130-01fc5fb3fe67: media
+    a8c96589-6e8f-4e76-928f-ae3a31362a7a: file
+    6f02f337-6d5c-461f-bae8-526a828d2d0c: media
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Last Call
+  components:
+  - uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 20-80
+      bg_edge2edge: true
+      background_color: bg-black
+      text_color: text-white
+      section_header: true
+      gutter: gx-4 gy-4
+      vertical_alignment: align-items-center
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
+    slot: header_slot
+    uuid: 1f20031b-bb98-534a-b2d1-54ddcfa8326e
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
+    slot: col_1
+    uuid: 104ca26e-da7f-50f9-a2a6-2639a4de906a
+    component_id: sdc.vartheme_bs5_rightup.image
+    inputs:
+      media:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 1bbdc230-2b35-45e4-9cbe-a98c374aaaa4
+          target_type: media
+      ratio: ratio-1x1
+      fit: object-fit-cover
+      width: w-100
+  - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
+    slot: col_2
+    uuid: 5e3ac53c-f732-53ba-813a-5a4e70b17f34
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Last Call
+      level: 1
+      text_size: h1
+      text_color: text-white
+  - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
+    slot: col_2
+    uuid: 7b780b09-df43-5fff-9a2d-238a62079bc0
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>The decisions nobody sees, told by the people who made them. Every week, we sit down with a working studio
+          to talk through one project — start to finish, no polish, no pretending it went smoothly.</p>
+        format: canvas_html_block
+      text_size: fs-5
+      text_color: text-white
+  - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
+    slot: col_2
+    uuid: ec413002-4173-5c57-a2dd-b3b3591a5476
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>48 Episodes · Hosted by Idris Calloway and Noor Fasi</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: '100'
+      bg_edge2edge: true
+      background_color: bg-black
+      text_color: text-white
+      section_header: true
+      padding_block_end: pb-5
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: header_slot
+    uuid: 459869c6-76db-5596-87a6-58eb92da850d
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: Episodes
+      text_size: fs-6
+      border_color: border-light
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/studio-wont-use-mood-board
+        options: {}
+      stretched_link: true
+  - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
+    slot: content
+    uuid: 5bd6f14d-a431-560a-b507-d3f8f20fa4ba
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 17
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
+    slot: content
+    uuid: 0c715e1d-bc33-5287-8a0f-5ce9b239f2e9
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Studio That Won't Use a Mood Board
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
+    slot: content
+    uuid: 2a49ccd4-4028-5ed9-892c-3b456b6d1632
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients
+          ask for one by name.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
+    slot: content
+    uuid: 3120ceab-d4cf-5d62-bc25-4075ecb8064f
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Idris Calloway · 42 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 1f0de455-5305-5d3e-a739-175016e73eb4
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-light
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/no-straight-walls
+        options: {}
+      stretched_link: true
+  - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
+    slot: content
+    uuid: 540f5ada-14b7-5cfa-8565-7c93461a8f6e
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 16
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
+    slot: content
+    uuid: 58c7c4a2-7283-54fa-8e69-1a52b693ef3e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: No Straight Walls
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
+    slot: content
+    uuid: ff97ab3c-abd9-5701-9002-33d7067985d4
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>An architect on designing a museum wing with no straight walls, why the client said yes on the first pass,
+          and what almost went wrong in construction when the contractor's crew had never framed a curve before.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
+    slot: content
+    uuid: ae551475-6cd3-51bb-aa83-ffb5bbf500ab
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Noor Fasi · 55 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 03456948-fd58-5224-9c76-a3d5e13cb4bb
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-light
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/three-years-without-deck
+        options: {}
+      stretched_link: true
+  - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
+    slot: content
+    uuid: 2eca362d-8121-5efd-9a59-d42dc03e25ed
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 15
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
+    slot: content
+    uuid: f275a89e-0c84-5b76-a3d7-d5ef311dab3e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Three Years Without a Deck
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
+    slot: content
+    uuid: dc42242a-3779-514a-8275-32ca7f8a0d4c
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Inside the studio that hasn't touched a computer for client presentations in three years, and how they've
+          kept winning work without one.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
+    slot: content
+    uuid: 6ab8ff79-d480-55e1-b84d-26f46d324e16
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Idris Calloway · 37 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 6ab82ece-33b8-53c6-b052-93e95311e202
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-light
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/client-who-fired-whole-deck
+        options: {}
+      stretched_link: true
+  - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
+    slot: content
+    uuid: 28445943-f3eb-5c06-a573-ef8402c6bd84
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 14
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
+    slot: content
+    uuid: 4ba5cac4-4335-5a43-8471-d9589437275b
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Client Who Fired the Whole Deck
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
+    slot: content
+    uuid: 5e2713a4-4ab2-5d72-bf82-73fdf7b19ecc
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and
+          why they've never gone back to slides since.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
+    slot: content
+    uuid: d3559f2d-e238-5208-9938-4cff1d577215
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Noor Fasi · 48 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 025c8460-9bcb-53ad-b5ca-c97a20194030
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-light
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/intern-who-redesigned-office
+        options: {}
+      stretched_link: true
+  - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
+    slot: content
+    uuid: 384f585f-1da9-5069-b140-45273027dea6
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 13
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
+    slot: content
+    uuid: 765b6dea-a5c6-54a8-bb45-137568c84647
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Intern Who Redesigned the Office
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
+    slot: content
+    uuid: 2da12c16-b519-552f-bcb9-d21b8970590d
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and
+          no way to undo it before the partners return from a two-week trip abroad.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
+    slot: content
+    uuid: 227b9e0d-5070-56ce-b4b9-ce2e9962dee6
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Idris Calloway · 44 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 18292ea0-254f-53e9-a54b-bee4e497caed
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-light
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/what-rejected-pitch-actually-sounds
+        options: {}
+      stretched_link: true
+  - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
+    slot: content
+    uuid: 53732576-2fe3-5946-91cd-c9296be2b803
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 12
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
+    slot: content
+    uuid: d2f70895-4841-5bc6-85b8-02ffa768698b
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: What a Rejected Pitch Actually Sounds Like
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
+    slot: content
+    uuid: fcba514b-37ae-548a-96e7-2c60071d0882
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>We got permission to play the room tone from a pitch that fell apart in real time, including the thirty
+          seconds of silence nobody wanted to fill and the recovery attempt that came two minutes too late to save the account.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
+    slot: content
+    uuid: fab698f8-ddc7-5070-88f9-c7199bb22c9d
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Noor Fasi · 51 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 3e1a853c-e227-5532-915a-55fab60b4da8
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-light
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    inputs:
+      background_color: none
+      icon_color: bg-accent
+      padded: false
+      link_url:
+        uri: internal:/podcast/studio-fires-itself-every-year
+        options: {}
+      stretched_link: true
+  - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
+    slot: content
+    uuid: b0c6bbbe-ec71-5dc1-a5e0-53281adff5a4
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Episode 11
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
+    slot: content
+    uuid: 1e7b8d3b-bb0c-5531-ac66-511bb316702d
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Studio That Fires Itself Every Year
+      level: 3
+      text_size: h4
+      text_color: text-white
+  - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
+    slot: content
+    uuid: b600d535-74a6-5908-97e5-0fc21ad4cc20
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Once a year, this practice dissolves and reforms under a new name, new structure, and often a new office.</p>
+        format: canvas_html_block
+      text_color: text-white
+  - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
+    slot: content
+    uuid: 94b56bc6-0a10-5758-978e-98340e69f856
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Hosted by Idris Calloway · 39 Mins</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-secondary
+  - uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 33-33-33
+      section_header: true
+      gutter: gx-4 gy-4
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
+    slot: header_slot
+    uuid: 654a2ee6-07e1-52b4-9302-64c7ef7f6751
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: More Podcasts
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
+    slot: col_1
+    uuid: 4218cd29-3c6d-5b9b-8238-1c9dd815934f
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: da526131-9c0f-4699-b74e-d3f0f83a3472
+          target_type: media
+      meta_text: 21 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: 4218cd29-3c6d-5b9b-8238-1c9dd815934f
+    slot: content_slot
+    uuid: 1fd8e7f4-5c24-5c0a-813a-6561fd8925f7
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Field Notes
+      level: 3
+      text_size: h4
+  - parent_uuid: 4218cd29-3c6d-5b9b-8238-1c9dd815934f
+    slot: content_slot
+    uuid: 8344a8d2-7225-5b0c-a732-8b607b46fe53
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Short dispatches recorded live from studio visits and site walks.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
+    slot: col_2
+    uuid: 43c040cc-337f-5d83-b4b8-87be6b4fa22f
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 929fa437-2f56-4518-b130-01fc5fb3fe67
+          target_type: media
+      meta_text: 14 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: 43c040cc-337f-5d83-b4b8-87be6b4fa22f
+    slot: content_slot
+    uuid: c77c0f91-6f9d-5f48-a707-5310b0839815
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Office Hours
+      level: 3
+      text_size: h4
+  - parent_uuid: 43c040cc-337f-5d83-b4b8-87be6b4fa22f
+    slot: content_slot
+    uuid: 899ef7df-9520-5516-91d0-0395aae715b8
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Studio founders answer the questions younger designers are afraid to ask.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
+    slot: col_3
+    uuid: bf026021-0f8b-579a-b5b4-234d08da5b4a
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 6f02f337-6d5c-461f-bae8-526a828d2d0c
+          target_type: media
+      meta_text: 9 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: bf026021-0f8b-579a-b5b4-234d08da5b4a
+    slot: content_slot
+    uuid: 787b1282-68c1-53a6-9dfa-dbc3a39b405e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Long Table
+      level: 3
+      text_size: h4
+  - parent_uuid: bf026021-0f8b-579a-b5b4-234d08da5b4a
+    slot: content_slot
+    uuid: 7f4a0801-19de-5700-9115-192c865c6177
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Round-table conversations recorded live at design week events.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - uuid: 513db387-8084-5d20-b2a7-fa680fbe277c
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: '100'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 513db387-8084-5d20-b2a7-fa680fbe277c
+    slot: col_1
+    uuid: 42e7ea7f-ddaa-5328-accf-7d7f06a484d0
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: none
+      columns: '100'
+      background_color: bg-tertiary
+      text_color: text-white
+      horizontal_alignment: text-center
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      padding_inline_start: ps-5
+      padding_inline_end: pe-5
+  - parent_uuid: 42e7ea7f-ddaa-5328-accf-7d7f06a484d0
+    slot: col_1
+    uuid: 3b4a29d0-4417-5f08-b8e9-e9add8bfac6c
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Design News Before It's Polished
+      level: 2
+      text_size: h1
+      text_color: text-white
+      align: text-center
+  - parent_uuid: 42e7ea7f-ddaa-5328-accf-7d7f06a484d0
+    slot: col_1
+    uuid: 8d91f090-e278-59ae-b531-33d946d3a900
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p class="text-align-center">One email a week. Studio breakdowns, process notes, and the projects we're watching
+          before anyone else is.</p>
+        format: canvas_html_block
+      text_size: fs-5
+      text_color: text-white
+  - parent_uuid: 42e7ea7f-ddaa-5328-accf-7d7f06a484d0
+    slot: col_1
+    uuid: 78d0e5be-b1bd-555e-aa02-78cacc818f45
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: none
+      columns: 33-33-33
+  - parent_uuid: 78d0e5be-b1bd-555e-aa02-78cacc818f45
+    slot: col_1
+    uuid: ef8dc4e4-4f3e-569f-bdcf-f9f48188e9ad
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    inputs:
+      size: py-0
+  - parent_uuid: 78d0e5be-b1bd-555e-aa02-78cacc818f45
+    slot: col_2
+    uuid: 90e41787-f58f-50cf-bbd5-08adc7de8855
+    component_id: block.webform_block
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  - parent_uuid: 78d0e5be-b1bd-555e-aa02-78cacc818f45
+    slot: col_3
+    uuid: 783225f1-fa29-537a-b454-bc6cd3fe791d
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    inputs:
+      size: py-0
+  path:
+  - alias: /podcasts/last-call
+    langcode: en

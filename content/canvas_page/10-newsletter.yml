@@ -1,0 +1,178 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 57e4fc88-35a3-5d77-8d72-b507d1be954d
+  default_langcode: en
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Newsletter
+  components:
+  - uuid: 0a619cdd-3edd-5bc1-82c7-356e62d8ea8b
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      bg_edge2edge: true
+      background_color: bg-accent-subtle
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 0a619cdd-3edd-5bc1-82c7-356e62d8ea8b
+    slot: col_1
+    uuid: 8c9f6b6a-29ee-56ee-86bd-8e36a8424d7c
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 0a619cdd-3edd-5bc1-82c7-356e62d8ea8b
+    slot: col_1
+    uuid: 877eefa2-f7c5-59da-a516-286b4043a410
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Get the Work Before It's Polished
+      level: 1
+      text_size: h1
+  - parent_uuid: 0a619cdd-3edd-5bc1-82c7-356e62d8ea8b
+    slot: col_1
+    uuid: a77bb66b-d25f-54e5-b0a0-2b0f8c6ebc78
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>One email a week. Studio breakdowns, process notes, and the projects we're watching before anyone else is.</p>
+        format: canvas_html_block
+      text_size: fs-5
+      text_color: text-body
+  - parent_uuid: 0a619cdd-3edd-5bc1-82c7-356e62d8ea8b
+    slot: col_1
+    uuid: f78b7376-e56b-509f-ae2b-b87f6cd4d5cc
+    component_id: block.webform_block
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  - uuid: 6c352c09-9975-56a4-b1ce-cbe560bd3482
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 33-33-33
+      section_header: true
+      gutter: gx-4 gy-4
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 6c352c09-9975-56a4-b1ce-cbe560bd3482
+    slot: header_slot
+    uuid: 13a71da2-fd7c-502d-a6f7-6beb29a3e8df
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: What You’ll Get
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: 6c352c09-9975-56a4-b1ce-cbe560bd3482
+    slot: col_1
+    uuid: a421a2b3-bf63-5e29-93b8-7fbd4d780cfe
+    component_id: sdc.vartheme_bs5_rightup.text-number-card
+    inputs:
+      number: '01'
+      number_color: bg-accent
+      background_color: none
+  - parent_uuid: a421a2b3-bf63-5e29-93b8-7fbd4d780cfe
+    slot: content
+    uuid: 42e1db29-ab8a-5c1a-b81d-94e6af110def
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Studio Breakdowns
+      level: 3
+      text_size: h4
+  - parent_uuid: a421a2b3-bf63-5e29-93b8-7fbd4d780cfe
+    slot: content
+    uuid: b6f90d99-fefb-560a-a434-1394843dd659
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>One real project, start to finish, with the parts that usually get cut from the case study.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 6c352c09-9975-56a4-b1ce-cbe560bd3482
+    slot: col_2
+    uuid: f3a199bf-4981-573d-b0bf-6e91089d1ef8
+    component_id: sdc.vartheme_bs5_rightup.text-number-card
+    inputs:
+      number: '02'
+      number_color: bg-accent
+      background_color: none
+  - parent_uuid: f3a199bf-4981-573d-b0bf-6e91089d1ef8
+    slot: content
+    uuid: 1d777c00-3538-5d0d-9027-446e8dd84314
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Early Episode Access
+      level: 3
+      text_size: h4
+  - parent_uuid: f3a199bf-4981-573d-b0bf-6e91089d1ef8
+    slot: content
+    uuid: e554cc33-a689-5387-8400-609584ce330f
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>New Last Call episodes land in your inbox before they're posted anywhere else.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 6c352c09-9975-56a4-b1ce-cbe560bd3482
+    slot: col_3
+    uuid: 5c8208b5-9795-5d12-8e77-45e0986c8929
+    component_id: sdc.vartheme_bs5_rightup.text-number-card
+    inputs:
+      number: '03'
+      number_color: bg-accent
+      background_color: none
+  - parent_uuid: 5c8208b5-9795-5d12-8e77-45e0986c8929
+    slot: content
+    uuid: c43a21fd-b4c8-5f6e-8636-761775e4c725
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: No Filler
+      level: 3
+      text_size: h4
+  - parent_uuid: 5c8208b5-9795-5d12-8e77-45e0986c8929
+    slot: content
+    uuid: 9237a2e3-1b62-51ad-a322-bdcfe8319e76
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Five links max, every week. If we don't have anything worth sending, we don't send it.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - uuid: 741b1fc0-e106-5859-bd0c-ac009a1806d5
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: '100'
+      section_header: true
+      padding_block_end: pb-5
+  - parent_uuid: 741b1fc0-e106-5859-bd0c-ac009a1806d5
+    slot: header_slot
+    uuid: f0ab13fb-7f7a-504c-bdbc-69ade0d25b1b
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: Recent Stories
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: 741b1fc0-e106-5859-bd0c-ac009a1806d5
+    slot: col_1
+    uuid: 38d15c3f-3bbd-53f3-8b4d-08b6807ca439
+    component_id: block.views_block.news-latest
+    inputs:
+      label: 'News: Latest'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
+      exposed: {}
+  path:
+  - alias: /newsletter
+    langcode: en

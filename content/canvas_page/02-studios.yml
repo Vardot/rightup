@@ -1,0 +1,1181 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 338d05c3-2ea3-5875-a996-2b1c8362d561
+  default_langcode: en
+  depends:
+    f117db62-0c4c-4cd6-a00f-99be644de182: file
+    d03fc580-a33e-4a2f-8334-21f688b3fc5f: media
+    f1a802c8-7cc9-4413-ba6a-5d18dd8aeabd: file
+    8235799f-3a5b-4c70-958d-df36f4bdcd44: media
+    79c7c9b9-254b-4e61-96a8-0d6ef65ef8df: file
+    02f79969-1865-4c03-9920-488972ff170d: media
+    3526ffaf-53fc-491f-b2f6-271c67c0e2fe: file
+    797fea71-ec14-46bb-a796-b74b5b3e0ae5: media
+    2bcee994-1003-48b0-b1f6-a5a92604c9d3: file
+    9390cad4-3619-4c98-94ae-f789202e28be: media
+    6ec012bb-b918-4ace-a8e7-4f67d4b835e9: file
+    5a4fa9a3-bc3e-4db7-a9dd-23ce48420fe7: media
+    136d7d91-4a18-4fc8-b65a-2db144b77240: file
+    48c9fc14-4475-4ba5-b11e-f0d4c7bd492d: media
+    bcf5d0ac-e23f-4bc5-bbe1-43165a9bdb76: file
+    f99ee5a2-64b7-49b2-b31c-d9409afe3c08: media
+    4906f0d7-0353-4d54-9837-086dd60336a9: file
+    81a56c89-31ab-4e1b-8c23-35a1f712c03c: media
+    6a4a19f6-ae49-4f50-a314-0038ad934c2f: file
+    a89990d3-1214-452b-9145-3142b6518607: media
+    4140eb97-0699-41f3-a24a-e25846283939: file
+    471e541e-c707-45ed-ac0f-fa2624c4bce4: media
+    c4a702a3-7814-435a-a5bb-2136dfa68348: file
+    9cbd5f29-9124-4cc5-91e8-893dd66a4f5c: media
+    0a09a25e-06fd-4b17-9858-15c5243f3986: file
+    7c7235fa-b462-42f2-9a60-6c61db0c9b52: media
+    b5154ddf-cc48-41af-9911-b49b351c5517: file
+    8c3b5cff-ace6-45ab-9613-3c34007fea48: media
+    c402d390-1651-47fd-a34f-2c10094262b7: file
+    2c55c445-abe2-496e-8cfe-a70c797da699: media
+    487ba764-acc1-49c3-b351-377129c5eadb: file
+    05874fa4-b6c6-4bd0-8daf-3c3830f6888c: media
+    5c905a41-4a51-4164-b375-e8fe354c9627: file
+    f49af479-626f-43e9-bc06-b5ae702bf041: media
+    9330bb06-ea01-469b-bc4e-15cd4b519a20: file
+    de02f379-7c66-479a-be1b-7497651dab4d: media
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Studios
+  components:
+  - uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      section_header: true
+      column_divider: true
+      column_divider_color: border-black
+      gutter: gx-4 gy-4
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    slot: header_slot
+    uuid: 7ca5d70d-66b5-52aa-b451-58ef73765f3a
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    slot: header_slot
+    uuid: 8da4d24e-49cd-5fc9-92d5-683668ddd7bc
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Studios
+      level: 1
+      text_size: h1
+  - parent_uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    slot: col_1
+    uuid: 816afeff-1ed6-5169-afb9-b460f38f88c4
+    component_id: sdc.vartheme_bs5_rightup.card-impressed
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: d03fc580-a33e-4a2f-8334-21f688b3fc5f
+          target_type: media
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      link_url:
+        uri: internal:/news/bloom-ash-kiro-tanaka-and-lea-wren-launch-new-collective
+        options: {}
+      stretched_link: false
+  - parent_uuid: 816afeff-1ed6-5169-afb9-b460f38f88c4
+    slot: content
+    uuid: 81a25de3-f16e-539a-9f71-4476e4ee3dc0
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Studios
+      url:
+        uri: internal:/studios
+        options: {}
+      size: taxonomy-sm
+      color: text-tertiary
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 816afeff-1ed6-5169-afb9-b460f38f88c4
+    slot: content
+    uuid: ed8e0f25-95c5-519e-8af0-a4a3aaae076e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Bloom & Ash, Kiro Tanaka, and Lea Wren Launch New Collective
+      level: 2
+      text_size: h2
+      url:
+        uri: internal:/news/bloom-ash-kiro-tanaka-and-lea-wren-launch-new-collective
+        options: {}
+  - parent_uuid: 816afeff-1ed6-5169-afb9-b460f38f88c4
+    slot: content
+    uuid: 2f68c86c-973d-560c-a6c6-5523ab9eeec7
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Three practices will share a studio, a client list and a single invoice template.</p>
+        format: canvas_html_block
+      text_color: text-muted
+  - parent_uuid: 816afeff-1ed6-5169-afb9-b460f38f88c4
+    slot: content
+    uuid: 077dcb3e-f112-566b-8620-d960829c7912
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Jazz Monroe
+      author_url:
+        uri: internal:/user/10
+        options: {}
+      date: '2026-07-09'
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    slot: col_2
+    uuid: 5fb00fc4-b11a-5f81-b7ab-41ef2b361659
+    component_id: sdc.vartheme_bs5_rightup.card-impressed
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 8235799f-3a5b-4c70-958d-df36f4bdcd44
+          target_type: media
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      link_url:
+        uri: internal:/news/inside-studio-turned-down-its-biggest-client
+        options: {}
+      stretched_link: false
+  - parent_uuid: 5fb00fc4-b11a-5f81-b7ab-41ef2b361659
+    slot: content
+    uuid: 4cb39fec-55c4-5fcf-b777-38af0e683006
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Studios
+      url:
+        uri: internal:/studios
+        options: {}
+      size: taxonomy-sm
+      color: text-tertiary
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 5fb00fc4-b11a-5f81-b7ab-41ef2b361659
+    slot: content
+    uuid: 0ce99a5f-bd97-59c7-b40b-8272573597eb
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Inside the Studio That Turned Down Its Biggest Client
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/inside-studio-turned-down-its-biggest-client
+        options: {}
+  - parent_uuid: 5fb00fc4-b11a-5f81-b7ab-41ef2b361659
+    slot: content
+    uuid: 42b82f45-a242-553c-b62f-f244abb542c3
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Tomas Adeyemi
+      author_url:
+        uri: internal:/user/3
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    slot: col_2
+    uuid: 85859d70-70af-5cea-89f0-fab92901d6ef
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: a64ad8e1-1dfc-58d1-b524-37a3bc25a732
+    slot: col_2
+    uuid: 09556c19-8686-54ce-97c0-d5de7c947753
+    component_id: sdc.vartheme_bs5_rightup.card-impressed
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 02f79969-1865-4c03-9920-488972ff170d
+          target_type: media
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      link_url:
+        uri: internal:/news/architecture-unease-how-brutalism-became-beautiful-again
+        options: {}
+      stretched_link: false
+  - parent_uuid: 09556c19-8686-54ce-97c0-d5de7c947753
+    slot: content
+    uuid: 4996d011-eefd-5aa1-9e63-24ac5cab7a2a
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    inputs:
+      label: Architecture
+      url:
+        uri: internal:/architecture
+        options: {}
+      size: taxonomy-sm
+      color: text-tertiary
+      no_padding: true
+      justify_content: justify-content-start
+  - parent_uuid: 09556c19-8686-54ce-97c0-d5de7c947753
+    slot: content
+    uuid: efa497be-e9c2-533e-b92a-79630d42b0aa
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: 'The Architecture of Unease: How Brutalism Became Beautiful Again'
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/architecture-unease-how-brutalism-became-beautiful-again
+        options: {}
+  - parent_uuid: 09556c19-8686-54ce-97c0-d5de7c947753
+    slot: content
+    uuid: ca2708fb-4f6d-52ad-9c60-d2bf957a2ca8
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Chiara Romano
+      author_url:
+        uri: internal:/user/2
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - uuid: db4555c9-2629-5f29-a338-1509e85f2702
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 33-33-33
+      section_header: true
+      gutter: gx-4 gy-4
+      padding_block_start: pt-5
+  - parent_uuid: db4555c9-2629-5f29-a338-1509e85f2702
+    slot: header_slot
+    uuid: dbc45c1c-847b-5042-b5e2-1aa6eb46ca8e
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: More Studios
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: db4555c9-2629-5f29-a338-1509e85f2702
+    slot: col_1
+    uuid: 6a82c589-1cf4-5705-b9d2-49ea649703e0
+    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
+          target_type: media
+      image_ratio: ratio-16x9
+      category_label: Architecture
+      category_url:
+        uri: internal:/architecture
+        options: {}
+      heading_text: Fen & Marble Reveal First Look at Rotterdam Flagship
+      heading_level: 3
+      heading_size: h4
+      heading_url:
+        uri: internal:/news/fen-marble-reveal-first-look-rotterdam-flagship
+        options: {}
+      author: Tomas Adeyemi
+      author_url:
+        uri: internal:/user/3
+        options: {}
+      date: '2026-07-15'
+      show_divider: false
+  - parent_uuid: db4555c9-2629-5f29-a338-1509e85f2702
+    slot: col_2
+    uuid: 980d1e88-eb45-5448-b85c-0470af5de146
+    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 9390cad4-3619-4c98-94ae-f789202e28be
+          target_type: media
+      image_ratio: ratio-16x9
+      category_label: Culture
+      category_url:
+        uri: internal:/culture
+        options: {}
+      heading_text: Milan Design Week Opens With Record Number of Independent Studios
+      heading_level: 3
+      heading_size: h4
+      heading_url:
+        uri: internal:/news/milan-design-week-opens-record-number-independent-studios
+        options: {}
+      author: Sana Kovač
+      author_url:
+        uri: internal:/user/4
+        options: {}
+      date: '2026-07-14'
+      show_divider: false
+  - parent_uuid: db4555c9-2629-5f29-a338-1509e85f2702
+    slot: col_3
+    uuid: e7e958cd-e20b-5b6d-8596-2320a117e943
+    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 5a4fa9a3-bc3e-4db7-a9dd-23ce48420fe7
+          target_type: media
+      image_ratio: ratio-16x9
+      category_label: Product
+      category_url:
+        uri: internal:/product
+        options: {}
+      heading_text: A Danish Lighting Brand Just Reissued Its Most Controversial Chair
+      heading_level: 3
+      heading_size: h4
+      heading_url:
+        uri: internal:/news/danish-lighting-brand-just-reissued-its-most-controversial-chair
+        options: {}
+      author: Sana Kovač
+      author_url:
+        uri: internal:/user/4
+        options: {}
+      date: '2026-07-13'
+      show_divider: false
+  - uuid: 8b6540bf-2eed-51c4-8377-2b85e3d66447
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 33-33-33
+      section_header: true
+      gutter: gx-4 gy-4
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 8b6540bf-2eed-51c4-8377-2b85e3d66447
+    slot: header_slot
+    uuid: bc4f07a6-9373-5fc1-a195-2e7ad9023d40
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: Editors' Picks
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: 8b6540bf-2eed-51c4-8377-2b85e3d66447
+    slot: col_1
+    uuid: 6b475cb5-7ff5-552f-9c2a-24ef90c024b9
+    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
+          target_type: media
+      image_ratio: ratio-16x9
+      category_label: Process
+      category_url:
+        uri: internal:/process
+        options: {}
+      heading_text: What Fen & Marble Actually Use to Pitch New Clients
+      heading_level: 3
+      heading_size: h4
+      heading_url:
+        uri: internal:/news/what-fen-marble-actually-use-pitch-new-clients
+        options: {}
+      author: Tom James
+      author_url:
+        uri: internal:/user/7
+        options: {}
+      date: '2026-07-12'
+      show_divider: false
+  - parent_uuid: 8b6540bf-2eed-51c4-8377-2b85e3d66447
+    slot: col_2
+    uuid: d0bb216a-09bb-5ba9-97c4-e19130e9d5cc
+    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: f99ee5a2-64b7-49b2-b31c-d9409afe3c08
+          target_type: media
+      image_ratio: ratio-16x9
+      category_label: Branding
+      category_url:
+        uri: internal:/branding
+        options: {}
+      heading_text: Arclight Studio Unveils New Identity for Nordic Airline
+      heading_level: 3
+      heading_size: h4
+      heading_url:
+        uri: internal:/news/arclight-studio-unveils-new-identity-nordic-airline
+        options: {}
+      author: Alex Suskind
+      author_url:
+        uri: internal:/user/8
+        options: {}
+      date: '2026-07-11'
+      show_divider: false
+  - parent_uuid: 8b6540bf-2eed-51c4-8377-2b85e3d66447
+    slot: col_3
+    uuid: 607e703d-6d3e-5678-a73b-56c828981db1
+    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
+          target_type: media
+      image_ratio: ratio-16x9
+      category_label: Culture
+      category_url:
+        uri: internal:/culture
+        options: {}
+      heading_text: Renzo Vidal Premieres Short Film Honoring Late Mentor
+      heading_level: 3
+      heading_size: h4
+      heading_url:
+        uri: internal:/news/renzo-vidal-premieres-short-film-honoring-late-mentor
+        options: {}
+      author: Nina Corcoran
+      author_url:
+        uri: internal:/user/9
+        options: {}
+      date: '2026-07-10'
+      show_divider: false
+  - uuid: ad250ed2-a59e-5177-a1e0-fbe8ce8c6877
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      bg_edge2edge: true
+      background_color: bg-accent-subtle
+      vertical_alignment: align-items-center
+      padding_block_start: pt-4
+      padding_block_end: pb-4
+  - parent_uuid: ad250ed2-a59e-5177-a1e0-fbe8ce8c6877
+    slot: col_1
+    uuid: 853577a1-dc34-54f7-90fd-554ab8555199
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The best of Right Up, delivered to you weekly.
+      level: 2
+      text_size: h4
+  - parent_uuid: ad250ed2-a59e-5177-a1e0-fbe8ce8c6877
+    slot: col_2
+    uuid: d39e6f84-10f4-55bb-8de2-91cf25ece267
+    component_id: block.webform_block
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  - uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 75-25
+      gutter: gx-5 gy-5
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 542fda3a-4045-5da8-af5f-877fb26c4f6f
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: The Latest
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: b2c9907c-027e-5386-b6c7-2e3c878b8ec3
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: a89990d3-1214-452b-9145-3142b6518607
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/concrete-church-reclaimed-climbing-gym
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: b2c9907c-027e-5386-b6c7-2e3c878b8ec3
+    slot: content
+    uuid: 313cb4cc-01b5-5f62-a422-850a33cf26d5
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Concrete Church Reclaimed as a Climbing Gym
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/concrete-church-reclaimed-climbing-gym
+        options: {}
+  - parent_uuid: b2c9907c-027e-5386-b6c7-2e3c878b8ec3
+    slot: content
+    uuid: 29ec2147-8d67-545e-bb89-ca63c4870c72
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>The nave now holds forty routes, and the congregation still meets on Sunday mornings before the walls open.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: b2c9907c-027e-5386-b6c7-2e3c878b8ec3
+    slot: content
+    uuid: d9c1f221-8d55-5067-8843-d3c07c18fc58
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Rena Osei
+      author_url:
+        uri: internal:/user/5
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: f55e30fc-b267-580b-881f-69682870c9bf
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: c06451de-5b80-57e1-aac0-d507b7ee7234
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 471e541e-c707-45ed-ac0f-fa2624c4bce4
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/why-airlines-new-logo-took-four-years
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: c06451de-5b80-57e1-aac0-d507b7ee7234
+    slot: content
+    uuid: 09d16db4-dba2-559b-968d-8fa1ab99ac1d
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Why This Airline's New Logo Took Four Years
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/why-airlines-new-logo-took-four-years
+        options: {}
+  - parent_uuid: c06451de-5b80-57e1-aac0-d507b7ee7234
+    slot: content
+    uuid: 054c37b6-6edd-582c-8a3b-0651c473a6fe
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Arclight Studio walks through the internal politics, three scrapped directions, and the one executive who
+          almost killed the project entirely before it shipped.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: c06451de-5b80-57e1-aac0-d507b7ee7234
+    slot: content
+    uuid: 0fc2cc98-aee3-5fe7-a807-b82fd20b7684
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Sana Kovač
+      author_url:
+        uri: internal:/user/4
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 9b04487e-071b-57a3-9c6b-f07cd0479f5c
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 5d5f2550-ad1f-598e-8258-f632e70973b0
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 8235799f-3a5b-4c70-958d-df36f4bdcd44
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/inside-studio-turned-down-its-biggest-client
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 5d5f2550-ad1f-598e-8258-f632e70973b0
+    slot: content
+    uuid: 8686544f-ce9d-560e-851e-6f720ac45762
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Inside the Studio That Turned Down Its Biggest Client
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/inside-studio-turned-down-its-biggest-client
+        options: {}
+  - parent_uuid: 5d5f2550-ad1f-598e-8258-f632e70973b0
+    slot: content
+    uuid: 25b4fc44-ad4d-5323-ab10-f8a7a7b14e00
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Fen & Marble on why they walked away from a seven-figure retainer, what they took on instead, and whether
+          they'd make the same call again.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 5d5f2550-ad1f-598e-8258-f632e70973b0
+    slot: content
+    uuid: b5df070a-3ab2-5471-a932-0b67ea2d4c96
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Tomas Adeyemi
+      author_url:
+        uri: internal:/user/3
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: ba31b3d8-7b25-5e1c-bfcb-6a3ebc767321
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 80048ba2-8d08-5f87-8f58-3a604294f481
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 9cbd5f29-9124-4cc5-91e8-893dd66a4f5c
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/what-actually-happens-first-client-meeting
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 80048ba2-8d08-5f87-8f58-3a604294f481
+    slot: content
+    uuid: 1066010c-eebf-581a-a18f-c6d143afee37
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: What Actually Happens in the First Client Meeting
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/what-actually-happens-first-client-meeting
+        options: {}
+  - parent_uuid: 80048ba2-8d08-5f87-8f58-3a604294f481
+    slot: content
+    uuid: eeb4519b-d506-5c8e-82aa-d6f3a60dd76a
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Five studio founders on the questions they ask before ever opening a laptop, and the one red flag that makes
+          them walk away from a project entirely.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 80048ba2-8d08-5f87-8f58-3a604294f481
+    slot: content
+    uuid: d72efa5e-c25b-54e2-98f6-075e362cddd8
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Tom James
+      author_url:
+        uri: internal:/user/7
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 854134cd-8d3a-524c-9c90-844406f16a13
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: da280c91-5c02-5db2-a15b-3ddbd076dcfb
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 7c7235fa-b462-42f2-9a60-6c61db0c9b52
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/archive-became-exhibition-accident
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: da280c91-5c02-5db2-a15b-3ddbd076dcfb
+    slot: content
+    uuid: 184c9080-d76c-540e-b763-f4382b7c2394
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Archive That Became an Exhibition by Accident
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/archive-became-exhibition-accident
+        options: {}
+  - parent_uuid: da280c91-5c02-5db2-a15b-3ddbd076dcfb
+    slot: content
+    uuid: 93cefc06-8ff6-5ea8-8e5f-1aad23fa4fbb
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>A museum digitized its storage records for insurance purposes. The results were too good not to show, so
+          they built a wing around them instead.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: da280c91-5c02-5db2-a15b-3ddbd076dcfb
+    slot: content
+    uuid: cc5cc055-8f74-5589-b3f9-ed0638ae5713
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Priya Nakamura
+      author_url:
+        uri: internal:/user/6
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: dbc6d6b4-93f3-5c50-9374-507cc83cc3a3
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 0a37b48a-9475-50e0-9a02-749de921d7f0
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 8c3b5cff-ace6-45ab-9613-3c34007fea48
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/facade-changes-color-weather
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 0a37b48a-9475-50e0-9a02-749de921d7f0
+    slot: content
+    uuid: b7125289-9df7-53aa-b07d-8e33f52af339
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: A Facade That Changes Color With the Weather
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/facade-changes-color-weather
+        options: {}
+  - parent_uuid: 0a37b48a-9475-50e0-9a02-749de921d7f0
+    slot: content
+    uuid: dcaee6af-bd13-5888-9591-3600bbf118f5
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>A thermochromic coating shifts the building's exterior tone by several degrees depending on humidity and
+          heat, turning the whole structure into a slow-moving instrument.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 0a37b48a-9475-50e0-9a02-749de921d7f0
+    slot: content
+    uuid: 1d60f626-1a65-57ce-9566-90949e66114c
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Rena Osei
+      author_url:
+        uri: internal:/user/5
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: f01850f2-0295-557c-88c3-f7ce7b7c304b
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 2dde10d5-dd9b-546f-b38c-d99570a0c23d
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 2c55c445-abe2-496e-8cfe-a70c797da699
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/one-typeface-six-rebrands-inside-foundrys-busiest-year
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 2dde10d5-dd9b-546f-b38c-d99570a0c23d
+    slot: content
+    uuid: 9b2538e3-018d-57ce-8c2f-d4ad11631c8a
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: 'One Typeface, Six Rebrands: Inside a Foundry''s Busiest Year'
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/one-typeface-six-rebrands-inside-foundrys-busiest-year
+        options: {}
+  - parent_uuid: 2dde10d5-dd9b-546f-b38c-d99570a0c23d
+    slot: content
+    uuid: ea9a6969-8cf5-58e8-a0cc-a6d2943311a6
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>How a single custom sans became the quiet backbone of half the rebrands you saw this year, without a single
+          client realizing they were sharing a typeface.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 2dde10d5-dd9b-546f-b38c-d99570a0c23d
+    slot: content
+    uuid: f9d25474-cf05-53de-8794-53256ee3a93a
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Tomas Adeyemi
+      author_url:
+        uri: internal:/user/3
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: eeeddbbf-18c8-542d-a0d6-8df3fbdcf41d
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 9a86d995-3070-5ff5-b202-df513f9634bd
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 05874fa4-b6c6-4bd0-8daf-3c3830f6888c
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/chair-every-design-school-still-teaches
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 9a86d995-3070-5ff5-b202-df513f9634bd
+    slot: content
+    uuid: aaf93029-ec85-5694-a02a-ea4cc7cd0127
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Chair Every Design School Still Teaches
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/chair-every-design-school-still-teaches
+        options: {}
+  - parent_uuid: 9a86d995-3070-5ff5-b202-df513f9634bd
+    slot: content
+    uuid: 1c3119a8-2061-500e-90b8-69d08cefd456
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Forty years on, it's still the first thing students are asked to take apart and rebuild, and most of them
+          still get the joinery wrong the first time.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 9a86d995-3070-5ff5-b202-df513f9634bd
+    slot: content
+    uuid: da17e0b0-7ac3-515d-bdf8-b955235170c0
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Alex Suskind
+      author_url:
+        uri: internal:/user/8
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 0345b3ed-7d7b-500a-bf4c-5008c7692311
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 6dc95d33-8788-56ad-b140-219c9f9de861
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: f49af479-626f-43e9-bc06-b5ae702bf041
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/why-more-studios-are-charging-pitch-itself
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 6dc95d33-8788-56ad-b140-219c9f9de861
+    slot: content
+    uuid: 9300d3b3-c66c-5dba-a65e-d8529ea8bc15
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Why More Studios Are Charging for the Pitch Itself
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/why-more-studios-are-charging-pitch-itself
+        options: {}
+  - parent_uuid: 6dc95d33-8788-56ad-b140-219c9f9de861
+    slot: content
+    uuid: 756b92cb-90d6-5647-8f3c-8dd3838bd5a2
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Free pitches are becoming rarer as studios push back against unpaid speculative work, and clients are surprisingly
+          willing to pay for it upfront.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 6dc95d33-8788-56ad-b140-219c9f9de861
+    slot: content
+    uuid: 2356579d-aaaf-5378-b281-b817f60f8472
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Tom James
+      author_url:
+        uri: internal:/user/7
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 79c87d10-995e-50ee-9310-300b0ff11d52
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_1
+    uuid: 0c07fcc9-cfb0-59ad-9a93-3deb702eb165
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: de02f379-7c66-479a-be1b-7497651dab4d
+          target_type: media
+      ratio: ratio-4x3
+      link_url:
+        uri: internal:/news/gallery-no-walls-only-light
+        options: {}
+      content_vertical_alignment: align-items-start
+      columns_md_size: '03_09'
+      columns_lg_size: '03_09'
+      columns_xl_size: '03_09'
+      columns_xxl_size: '03_09'
+  - parent_uuid: 0c07fcc9-cfb0-59ad-9a93-3deb702eb165
+    slot: content
+    uuid: 8a0b4258-c15e-5cb5-bcb2-b9f4aa14829a
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: A Gallery With No Walls, Only Light
+      level: 3
+      text_size: h5
+      url:
+        uri: internal:/news/gallery-no-walls-only-light
+        options: {}
+  - parent_uuid: 0c07fcc9-cfb0-59ad-9a93-3deb702eb165
+    slot: content
+    uuid: fbb0370a-00be-59f5-a929-9399afdc9aee
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>An exhibition built entirely from projection, shadow, and negative space — no physical works on display,
+          and no two visitors see quite the same show.</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-muted
+  - parent_uuid: 0c07fcc9-cfb0-59ad-9a93-3deb702eb165
+    slot: content
+    uuid: 9fe34e23-4601-56fd-a9e9-ff36db3c580d
+    component_id: sdc.vartheme_bs5_rightup.byline
+    inputs:
+      author: Priya Nakamura
+      author_url:
+        uri: internal:/user/6
+        options: {}
+      size: fs-6
+      text_color: text-muted
+  - parent_uuid: bd4b7a4f-51a5-5005-b882-8025e92b00ea
+    slot: col_2
+    uuid: 9e897248-b315-5114-bc75-8d642c10fd66
+    component_id: sdc.vartheme_bs5_rightup.card-overlay
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
+          target_type: media
+      ratio: ratio-1x1
+      padded: true
+      overlay_color: bg-dark
+      overlay_opacity: bg-opacity-25
+      h_align: text-center
+      v_align: align-items-center
+  - parent_uuid: 9e897248-b315-5114-bc75-8d642c10fd66
+    slot: content
+    uuid: 49b5339f-9b00-5944-9e90-1d8e222dd5bc
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Advertisement</p>
+        format: canvas_html_block
+      text_size: fs-6
+      text_color: text-white
+  - parent_uuid: 9e897248-b315-5114-bc75-8d642c10fd66
+    slot: content
+    uuid: 34372cfe-fd49-538b-a1c5-e85aa1c5a230
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Reach the People Who Make Things
+      level: 2
+      text_size: h3
+      text_color: text-white
+      align: text-center
+  - parent_uuid: 9e897248-b315-5114-bc75-8d642c10fd66
+    slot: content
+    uuid: d4855525-2ec6-5697-b9bf-79b97e8093c7
+    component_id: sdc.vartheme_bs5_rightup.button
+    inputs:
+      label: Advertise With Us
+      href:
+        uri: internal:/contact-us
+        options: {}
+      variant: btn-accent
+      size: btn-md
+      alignment: center
+  - uuid: 03951fce-07b2-524e-855c-359dc8a3b1dc
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: '100'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 03951fce-07b2-524e-855c-359dc8a3b1dc
+    slot: col_1
+    uuid: fe2208b8-f7b9-594b-b169-3ab875955941
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: none
+      columns: '100'
+      background_color: bg-tertiary
+      text_color: text-white
+      horizontal_alignment: text-center
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      padding_inline_start: ps-5
+      padding_inline_end: pe-5
+  - parent_uuid: fe2208b8-f7b9-594b-b169-3ab875955941
+    slot: col_1
+    uuid: 4f63a3dc-c04e-5eb5-8462-dac119c847ee
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Design News Before It's Polished
+      level: 2
+      text_size: h1
+      text_color: text-white
+      align: text-center
+  - parent_uuid: fe2208b8-f7b9-594b-b169-3ab875955941
+    slot: col_1
+    uuid: 5b8a36ed-b214-52f7-9693-f5f7897c0640
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p class="text-align-center">One email a week. Studio breakdowns, process notes, and the projects we're watching
+          before anyone else is.</p>
+        format: canvas_html_block
+      text_size: fs-5
+      text_color: text-white
+  - parent_uuid: fe2208b8-f7b9-594b-b169-3ab875955941
+    slot: col_1
+    uuid: d7843032-f030-5350-9715-84f41bb362ab
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: none
+      columns: 33-33-33
+  - parent_uuid: d7843032-f030-5350-9715-84f41bb362ab
+    slot: col_1
+    uuid: 310e7550-22ae-5a4d-8d91-3225439c05fe
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    inputs:
+      size: py-0
+  - parent_uuid: d7843032-f030-5350-9715-84f41bb362ab
+    slot: col_2
+    uuid: 6f67e9e6-0c54-5a55-99ff-5721caf6dfad
+    component_id: block.webform_block
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  - parent_uuid: d7843032-f030-5350-9715-84f41bb362ab
+    slot: col_3
+    uuid: fb8de265-3d6e-5633-b8ed-3bd241d854cf
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    inputs:
+      size: py-0
+  path:
+  - alias: /studios
+    langcode: en

@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d5ff8484-3c7c-4b48-9d91-86974687bad8
+  bundle: podcast
+  default_langcode: en
+  depends:
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1782896400
+  changed:
+    -
+      value: 1782896400
+  title:
+    -
+      value: 'Three Years Without a Deck'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcast/three-years-without-deck
+      langcode: en
+  field_content:
+    -
+      value: '<p>Inside the studio that hasn&#039;t touched a computer for client presentations in three years, and how they&#039;ve kept winning work without one. Physical models, hand-drawn diagrams, and a strict no-laptops-in-the-room policy that clients have come to expect.</p><p>Hosted by Idris Calloway.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "Inside the studio that hasn't touched a computer for client presentations in three years, and how they've kept winning work without one. Physical models, hand-drawn diagrams, and a strict no-laptops-in-the-room policy that clients have come to expect."
+  field_duration:
+    -
+      value: '37 Mins'
+  field_episode_number:
+    -
+      value: 15
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

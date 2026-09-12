@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
+  bundle: image
+  default_langcode: en
+  depends:
+    136d7d91-4a18-4fc8-b65a-2db144b77240: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Drafting notebook and tools'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Dark notebook, pencils and a drafting triangle on a textured table'
+      title: ''
+      width: 2640
+      height: 1749
+      entity: 136d7d91-4a18-4fc8-b65a-2db144b77240

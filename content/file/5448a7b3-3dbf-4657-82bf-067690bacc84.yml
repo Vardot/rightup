@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5448a7b3-3dbf-4657-82bf-067690bacc84
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: white-modernist-house.jpg
+  uri:
+    -
+      value: 'public://rightup/white-modernist-house.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 38164
+  status:
+    -
+      value: true

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7b0b8703-9042-48ac-a3d5-a36b2ddd74ed
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: circle-of-chairs.jpg
+  uri:
+    -
+      value: 'public://rightup/circle-of-chairs.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 36461
+  status:
+    -
+      value: true

@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8235799f-3a5b-4c70-958d-df36f4bdcd44
+  bundle: image
+  default_langcode: en
+  depends:
+    f1a802c8-7cc9-4413-ba6a-5d18dd8aeabd: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Bright design studio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Long bright design studio with pendant lamps and work tables'
+      title: ''
+      width: 1200
+      height: 1500
+      entity: f1a802c8-7cc9-4413-ba6a-5d18dd8aeabd

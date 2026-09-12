@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 07df9d69-7c26-4d0e-872a-53cad6a1c6ec
+  bundle: news
+  default_langcode: en
+  depends:
+    a41226dd-499d-4eae-ba05-dd955a50c7d4: user
+    ca2fe0ab-fe17-48d8-b59e-e191bffba296: media
+    8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  created:
+    -
+      value: 1783242000
+  changed:
+    -
+      value: 1783242000
+  title:
+    -
+      value: 'A Community Center Built From Color-Blocked Voids'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/community-center-built-color-blocked-voids
+      langcode: en
+  field_content:
+    -
+      value: '<p>Blue and yellow openings cut into white walls mark every entrance, so nobody needs a sign to find their way in.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Blue and yellow openings cut into white walls mark every entrance, so nobody needs a sign to find their way in.'
+  field_featured_image:
+    -
+      entity: ca2fe0ab-fe17-48d8-b59e-e191bffba296
+  field_news_categories:
+    -
+      entity: 8a80b689-1574-4def-8d9b-9f8edc647557

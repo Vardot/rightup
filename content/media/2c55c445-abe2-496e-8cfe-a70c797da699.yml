@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2c55c445-abe2-496e-8cfe-a70c797da699
+  bundle: image
+  default_langcode: en
+  depends:
+    c402d390-1651-47fd-a34f-2c10094262b7: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Hanken Grotesk type specimen'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'The words Hanken Grotesk set in a large black typeface on cream'
+      title: ''
+      width: 1003
+      height: 752
+      entity: c402d390-1651-47fd-a34f-2c10094262b7

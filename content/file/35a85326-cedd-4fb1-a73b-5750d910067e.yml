@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 35a85326-cedd-4fb1-a73b-5750d910067e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: weathered-ruin-wall.jpg
+  uri:
+    -
+      value: 'public://rightup/weathered-ruin-wall.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 963666
+  status:
+    -
+      value: true

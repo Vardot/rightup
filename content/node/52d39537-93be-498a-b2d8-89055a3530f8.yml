@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 52d39537-93be-498a-b2d8-89055a3530f8
+  bundle: news
+  default_langcode: en
+  depends:
+    f87cc252-9f43-46a8-86fb-a9f7433b78ad: user
+    e6c8ca16-67b7-4833-8df2-e3ae3c9b733b: media
+    98932ae0-060a-4811-8c93-dcea81871372: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  created:
+    -
+      value: 1783328400
+  changed:
+    -
+      value: 1783328400
+  title:
+    -
+      value: 'Why More Studios Are Sketching by Hand Again'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/why-more-studios-are-sketching-hand-again
+      langcode: en
+  field_content:
+    -
+      value: '<p>Founders say the first hour of a project goes better with a pencil than with a screen, and clients have started to notice.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Founders say the first hour of a project goes better with a pencil than with a screen, and clients have started to notice.'
+  field_featured_image:
+    -
+      entity: e6c8ca16-67b7-4833-8df2-e3ae3c9b733b
+  field_news_categories:
+    -
+      entity: 98932ae0-060a-4811-8c93-dcea81871372

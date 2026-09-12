@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 929fa437-2f56-4518-b130-01fc5fb3fe67
+  bundle: image
+  default_langcode: en
+  depends:
+    a6ad03d1-893d-4f6f-9360-108e4d67a0cf: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Purple grid collage'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Collage of hands holding a purple grid tile on a cream background'
+      title: ''
+      width: 620
+      height: 348
+      entity: a6ad03d1-893d-4f6f-9360-108e4d67a0cf

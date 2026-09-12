@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6f02f337-6d5c-461f-bae8-526a828d2d0c
+  bundle: image
+  default_langcode: en
+  depends:
+    a8c96589-6e8f-4e76-928f-ae3a31362a7a: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Teal light staircase'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Figure on a staircase lit by a teal skylight in a dark room'
+      title: ''
+      width: 1984
+      height: 2142
+      entity: a8c96589-6e8f-4e76-928f-ae3a31362a7a

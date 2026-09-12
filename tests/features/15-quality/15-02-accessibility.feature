@@ -31,7 +31,7 @@ Feature: Quality - Accessibility (a11y)
   @a11y @local @development @staging @production
   Scenario: A blog article page has no critical accessibility violations
     Given I am an anonymous user
-     When I go to "/blog/community-behind-varbase-support-and-collaboration"
+     When I go to "/news/architecture-unease-how-brutalism-became-beautiful-again"
       And wait
      Then the page should have no critical accessibility violations
 
@@ -52,7 +52,7 @@ Feature: Quality - Accessibility (a11y)
   @a11y @local @development @staging @production
   Scenario: The blog listing page has no critical accessibility violations
     Given I am an anonymous user
-     When I go to "/blog"
+     When I go to "/news"
       And wait
      Then the page should have no critical accessibility violations
 

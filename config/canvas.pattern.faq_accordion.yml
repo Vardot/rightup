@@ -53,7 +53,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.accordion-block
     component_version: d4ebc8481d81cca5
     inputs:
-      title: 'What is Varbase?'
+      title: 'What is The Right Up?'
       heading_level: 3
       open_by_default: true
   40e6b89e-7ed5-45e7-bf24-a9615f805c07:
@@ -64,7 +64,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Varbase is an enhanced Drupal distribution that ships with the most commonly needed features, modules, and configuration to accelerate building standard websites and web applications.</p>'
+        value: '<p>The Right Up is a design publication covering the studios, buildings and products being made right now, with the process notes that usually get cut.</p>'
         format: canvas_html_block
       text_size: none
       text_color: text-body
@@ -86,7 +86,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Install Varbase with Composer, run the guided installer, and start authoring pages right away. See our <a href="/documentation">documentation</a> for step-by-step setup instructions.</p>'
+        value: '<p>Start with the newsletter, then browse a section or a podcast show. See our <a href="/documentation">documentation</a> for step-by-step setup instructions.</p>'
         format: canvas_html_block
       text_size: none
       text_color: text-body
@@ -97,7 +97,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.accordion-block
     component_version: d4ebc8481d81cca5
     inputs:
-      title: 'Where can I get support?'
+      title: 'How do I pitch a story?'
       heading_level: 3
       open_by_default: false
   defecaeb-8964-4980-8e43-f25b4fac4198:

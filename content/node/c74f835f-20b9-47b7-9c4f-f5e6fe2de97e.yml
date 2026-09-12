@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c74f835f-20b9-47b7-9c4f-f5e6fe2de97e
+  bundle: news
+  default_langcode: en
+  depends:
+    a41226dd-499d-4eae-ba05-dd955a50c7d4: user
+    8c3b5cff-ace6-45ab-9613-3c34007fea48: media
+    8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  created:
+    -
+      value: 1761210000
+  changed:
+    -
+      value: 1761210000
+  title:
+    -
+      value: 'A Facade That Changes Color With the Weather'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/facade-changes-color-weather
+      langcode: en
+  field_content:
+    -
+      value: '<p>A thermochromic coating shifts the building&#039;s exterior tone by several degrees depending on humidity and heat, turning the whole structure into a slow-moving instrument.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "A thermochromic coating shifts the building's exterior tone by several degrees depending on humidity and heat, turning the whole structure into a slow-moving instrument."
+  field_featured_image:
+    -
+      entity: 8c3b5cff-ace6-45ab-9613-3c34007fea48
+  field_news_categories:
+    -
+      entity: 8a80b689-1574-4def-8d9b-9f8edc647557

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bc3e4d59-215a-4263-bfdd-8e7f9e76ca1f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: museum-gallery-room.jpg
+  uri:
+    -
+      value: 'public://rightup/museum-gallery-room.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 115056
+  status:
+    -
+      value: true

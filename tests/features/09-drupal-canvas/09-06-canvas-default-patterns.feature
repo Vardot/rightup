@@ -1,7 +1,7 @@
 @regression @any @canvas
 Feature: Drupal Canvas - default Canvas patterns
       As a site builder
-      I want the 14 default Canvas patterns that ship with Varbase to work in Drupal Canvas
+      I want the 14 default Canvas patterns that ship with RightUp to work in Drupal Canvas
       So that I can build a page from ready-made sections, reuse one many times and publish it.
 
   # Every scenario drives the real Drupal Canvas editor the way a site builder
@@ -89,15 +89,16 @@ Feature: Drupal Canvas - default Canvas patterns
     Examples:
       | label                 | slug        | marker                                 |
       | FAQ Accordion         | faq         | Frequently Asked Questions             |
-      | Hero Slider           | hero-slider | Varbase, better than ever              |
-      | Counters              | counters    | Sites using Varbase                    |
+      | Hero Slider           | hero-slider | Design news before it’s polished       |
+      | Counters              | counters    | Stories published                      |
       | Feature Cards         | feature     | Multilingual                           |
-      | Call to Action Banner | cta-banner  | Kick-start Your Journey with us Today! |
+      | Call to Action Banner | cta-banner  | Get the Work Before It’s Polished      |
 
   # The same pattern can be inserted more than once from the Library, each copy
   # independent. Two Counters inserts render two independent counters sections;
   # the Counters pattern renders three stat text blocks, so two copies produce
-  # six - proven on the front end with an element count, no layout-API read.
+  # six - proven on the front end with an element count inside the main
+  # landmark, since the global footer carries a text component of its own.
   @slow @flaky @check @local @development
   Scenario: the same pattern used twice gives two independent copies
     Given a new Canvas page "Test Pattern Twice" at "/test-pattern-twice"
@@ -109,6 +110,6 @@ Feature: Drupal Canvas - default Canvas patterns
      Then I am an anonymous user
       And I go to "/test-pattern-twice"
       And wait
-      And I should see "Sites using Varbase"
-      And I should see 6 "[data-component-id='vartheme_bs5_rightup:text']" elements
+      And I should see "Stories published"
+      And I should see 6 "main [data-component-id='vartheme_bs5_rightup:text']" elements
       And I should not see "The website encountered an unexpected error"

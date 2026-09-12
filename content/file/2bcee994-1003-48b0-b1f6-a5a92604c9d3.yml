@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2bcee994-1003-48b0-b1f6-a5a92604c9d3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: iridescent-glass-forms.jpg
+  uri:
+    -
+      value: 'public://rightup/iridescent-glass-forms.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 78069
+  status:
+    -
+      value: true

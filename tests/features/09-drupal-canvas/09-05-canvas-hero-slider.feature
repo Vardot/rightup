@@ -4,26 +4,22 @@ Feature: Content Structure - Hero Slider in Drupal Canvas
       I want a Bootstrap 5 carousel-based Hero Slider in Drupal Canvas
       So that I can present rotating hero slides with images, overlay content and buttons.
 
-  @check @local @development @staging @production
-  Scenario: The homepage renders a working hero slider carousel
-    Given I am an anonymous user
-     When I go to the homepage
+  # The RightUp homepage leads with the editorial hero grid rather than a
+  # carousel, so the Hero Slider is proven the way a site builder meets it: a
+  # page built in the Canvas editor.
+  @slow @flaky @check @local @development
+  Scenario: A site builder adds a Hero Slider and it renders as a Bootstrap carousel
+    Given I am a logged in user with the "webmaster" user
+      And a new Canvas page "Test Hero Slider Basic" at "/test-hero-slider-basic"
+     When I add the "Hero Slider (Container)" component to the "Test Hero Slider Basic" Canvas page using the editor
+      And I publish the Canvas page changes
+     Then I am an anonymous user
+      And I go to "/test-hero-slider-basic"
       And wait
-     Then the element ".carousel.hero-slider" should be displayed
-      And the element ".carousel-indicators" should be displayed
+      And the element ".carousel.hero-slider" should be displayed
       And the element "[data-bs-ride='carousel']" should be displayed
       And the element "[data-bs-slide='prev']" should be displayed
       And the element "[data-bs-slide='next']" should be displayed
-
-  @check @local @development @staging @production
-  Scenario: The hero slides show different styles with overlay content and a button
-    Given I am an anonymous user
-     When I go to the homepage
-      And wait
-     Then I should see 4 ".carousel-item" elements
-      And I should see "Varbase, better than ever"
-      And the element ".carousel-item.active" should be displayed
-      And the element ".carousel-item .btn-primary" should be displayed
 
   @slow @flaky @check @local @development
   Scenario Outline: A site builder styles a Hero Slider in the editor - <name>

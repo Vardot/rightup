@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f45f5f79-94c2-401e-b75f-f83237693c68
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: podcast-microphone-mark.jpg
+  uri:
+    -
+      value: 'public://rightup/podcast-microphone-mark.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 7773
+  status:
+    -
+      value: true

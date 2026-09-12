@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 487ba764-acc1-49c3-b351-377129c5eadb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: wooden-chairs-row.jpg
+  uri:
+    -
+      value: 'public://rightup/wooden-chairs-row.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 119576
+  status:
+    -
+      value: true

@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5a4fa9a3-bc3e-4db7-a9dd-23ce48420fe7
+  bundle: image
+  default_langcode: en
+  depends:
+    6ec012bb-b918-4ace-a8e7-4f67d4b835e9: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Snow field sculpture'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Curved grey sculpture rising from a field of snow'
+      title: ''
+      width: 1200
+      height: 900
+      entity: 6ec012bb-b918-4ace-a8e7-4f67d4b835e9

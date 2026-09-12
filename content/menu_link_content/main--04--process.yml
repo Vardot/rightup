@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 2c364381-2ce6-5083-b046-1ef0af66e98c
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Process
+  menu_name:
+  - value: main
+  link:
+  - uri: internal:/process
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 4
+  expanded:
+  - value: false

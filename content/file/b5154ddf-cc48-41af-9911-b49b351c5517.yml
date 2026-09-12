@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b5154ddf-cc48-41af-9911-b49b351c5517
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pink-orange-gradient.jpg
+  uri:
+    -
+      value: 'public://rightup/pink-orange-gradient.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 27975
+  status:
+    -
+      value: true

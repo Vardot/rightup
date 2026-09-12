@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cf0adcfe-45c6-41ca-be98-218f33579b7f
+  bundle: news
+  default_langcode: en
+  depends:
+    d57890ee-04ca-46f9-92e1-bee9fda7ec55: user
+    48c9fc14-4475-4ba5-b11e-f0d4c7bd492d: media
+    98932ae0-060a-4811-8c93-dcea81871372: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  created:
+    -
+      value: 1783846800
+  changed:
+    -
+      value: 1783846800
+  title:
+    -
+      value: 'What Fen & Marble Actually Use to Pitch New Clients'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/what-fen-marble-actually-use-pitch-new-clients
+      langcode: en
+  field_content:
+    -
+      value: '<p>A notebook, a set of pencils and a one-page brief: the studio walks through the kit it brings to every first meeting.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'A notebook, a set of pencils and a one-page brief: the studio walks through the kit it brings to every first meeting.'
+  field_featured_image:
+    -
+      entity: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
+  field_news_categories:
+    -
+      entity: 98932ae0-060a-4811-8c93-dcea81871372

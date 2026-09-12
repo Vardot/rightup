@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 7c859fa1-1eb5-545d-af10-a56217cc64ba
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Facebook
+  menu_name:
+  - value: social-media-menu
+  link:
+  - uri: https://www.facebook.com
+    title: ''
+    options: {}
+  external:
+  - value: true
+  weight:
+  - value: 0
+  expanded:
+  - value: false

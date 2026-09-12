@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8c3b5cff-ace6-45ab-9613-3c34007fea48
+  bundle: image
+  default_langcode: en
+  depends:
+    b5154ddf-cc48-41af-9911-b49b351c5517: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Pink and orange gradient'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Soft pink, blue and orange gradient'
+      title: ''
+      width: 736
+      height: 1308
+      entity: b5154ddf-cc48-41af-9911-b49b351c5517

@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f7f95b19-d4d6-491e-965f-8ae74b85f15c
+  bundle: news
+  default_langcode: en
+  depends:
+    6c9b3d66-9df6-42da-bf04-d54ceeb6e773: user
+    797fea71-ec14-46bb-a796-b74b5b3e0ae5: media
+    8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  created:
+    -
+      value: 1784106000
+  changed:
+    -
+      value: 1784106000
+  title:
+    -
+      value: 'Fen & Marble Reveal First Look at Rotterdam Flagship'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/fen-marble-reveal-first-look-rotterdam-flagship
+      langcode: en
+  field_content:
+    -
+      value: '<p>The studio&#039;s first permanent space pairs a spiralling steel stair with a ground floor that stays open to the street.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "The studio's first permanent space pairs a spiralling steel stair with a ground floor that stays open to the street."
+  field_featured_image:
+    -
+      entity: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
+  field_news_categories:
+    -
+      entity: 8a80b689-1574-4def-8d9b-9f8edc647557

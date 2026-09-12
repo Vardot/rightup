@@ -80,7 +80,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Get in touch with the Varbase team. We are here to help.</p>'
+        value: '<p>Get in touch with The Right Up. We read everything.</p>'
         format: canvas_html_block
       text_size: none
       text_color: text-white

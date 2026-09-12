@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 78c1c327-3d57-45c2-a6c4-244113b705db
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sound-wave-portrait.jpg
+  uri:
+    -
+      value: 'public://rightup/sound-wave-portrait.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 26669
+  status:
+    -
+      value: true

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c4a702a3-7814-435a-a5bb-2136dfa68348
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: office-meeting-by-windows.jpg
+  uri:
+    -
+      value: 'public://rightup/office-meeting-by-windows.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 217889
+  status:
+    -
+      value: true

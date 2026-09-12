@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e6c8ca16-67b7-4833-8df2-e3ae3c9b733b
+  bundle: image
+  default_langcode: en
+  depends:
+    9d880123-3e7b-4149-bce4-57fdad1b8bc6: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Green grid poster'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Dark green poster with a fine technical grid and circular guides'
+      title: ''
+      width: 736
+      height: 1308
+      entity: 9d880123-3e7b-4149-bce4-57fdad1b8bc6

@@ -7,10 +7,10 @@ Feature: Content Structure - Standard Breadcrumbs
   @check @local @development @staging @production
   Scenario: Check that the blog listing page has a breadcrumb
     Given I am an anonymous user
-     When I go to "/blog"
+     When I go to "/news/architecture-unease-how-brutalism-became-beautiful-again"
       And wait
      Then I should see "Home"
-      And I should see "Blog"
+      And I should see "Architecture"
 
   @check @local @development @staging @production
   Scenario: Check that the contact us page has a breadcrumb

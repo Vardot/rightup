@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 136d7d91-4a18-4fc8-b65a-2db144b77240
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: drafting-notebook-and-tools.jpg
+  uri:
+    -
+      value: 'public://rightup/drafting-notebook-and-tools.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 866495
+  status:
+    -
+      value: true

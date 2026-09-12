@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d5650757-9736-407b-a1a8-5842fba5321c
+  bundle: news
+  default_langcode: en
+  depends:
+    d57890ee-04ca-46f9-92e1-bee9fda7ec55: user
+    9cbd5f29-9124-4cc5-91e8-893dd66a4f5c: media
+    98932ae0-060a-4811-8c93-dcea81871372: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  created:
+    -
+      value: 1765875600
+  changed:
+    -
+      value: 1765875600
+  title:
+    -
+      value: 'What Actually Happens in the First Client Meeting'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/what-actually-happens-first-client-meeting
+      langcode: en
+  field_content:
+    -
+      value: '<p>Five studio founders on the questions they ask before ever opening a laptop, and the one red flag that makes them walk away from a project entirely.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Five studio founders on the questions they ask before ever opening a laptop, and the one red flag that makes them walk away from a project entirely.'
+  field_featured_image:
+    -
+      entity: 9cbd5f29-9124-4cc5-91e8-893dd66a4f5c
+  field_news_categories:
+    -
+      entity: 98932ae0-060a-4811-8c93-dcea81871372

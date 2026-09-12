@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 4ebd63e0-187b-49bf-8150-68b9e025649a
+  bundle: tags
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 0
+  revision_log_message:
+    -
+      value: 'Created new Tags'
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Last Call'
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null

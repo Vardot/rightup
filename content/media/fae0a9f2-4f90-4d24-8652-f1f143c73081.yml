@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: fae0a9f2-4f90-4d24-8652-f1f143c73081
+  bundle: image
+  default_langcode: en
+  depends:
+    bc3e4d59-215a-4263-bfdd-8e7f9e76ca1f: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Museum gallery room'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Museum room with paintings on the walls and sculptures on plinths'
+      title: ''
+      width: 735
+      height: 1029
+      entity: bc3e4d59-215a-4263-bfdd-8e7f9e76ca1f

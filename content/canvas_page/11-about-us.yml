@@ -1,0 +1,137 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: bd77fd15-e953-5fb4-806e-560c5617671b
+  default_langcode: en
+  depends:
+    78c1c327-3d57-45c2-a6c4-244113b705db: file
+    539f71e6-b97d-4900-872b-80d3a10ae9d2: media
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: About Us
+  components:
+  - uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: 664231ca-e719-558d-ae8e-3e6be4ec6a9b
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: 69b2517c-ec19-5519-b5e0-bd5668e5cf2d
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: About Us
+      level: 1
+      text_size: h1
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: 255810c4-8318-5405-a475-33802a1fc31a
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: '<p>The Right Up started from a simple frustration: almost everything written about design and architecture
+          is written after the fact, once the dead ends are gone and the rejected version never gets mentioned. What''s left
+          is a highlight reel, and highlight reels don''t teach anyone anything. We wanted something closer to the actual
+          process — not a takedown, just an honest account of how the work really gets made.</p>'
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: 371df731-fa29-5dc7-8cd3-464c54e0f136
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>We publish across six areas — studios, architecture, product, branding, process, and culture — because the
+          interesting parts of this industry rarely stay inside one lane. Alongside the writing, we run a weekly podcast,
+          Last Call, where we sit down with a working studio to talk through one project, start to finish, no polish, no pretending
+          it went smoothly.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: c5054354-1f26-5b01-a4b6-dad1a4cbb664
+    component_id: sdc.vartheme_bs5_rightup.image
+    inputs:
+      media:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 539f71e6-b97d-4900-872b-80d3a10ae9d2
+          target_type: media
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      width: w-100
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: fe3d076b-4500-5c42-9a9d-1b515d331905
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>The Right Up is written by a small group of contributors, most of whom have worked inside the studios and
+          practices we cover. We think that's a feature, not a conflict — it means we know which questions to ask. When we
+          have a connection to something we're writing about, we say so, plainly, in the piece itself. We're independently
+          run, not funded by any single studio or firm, and sponsored content is always labeled as such.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: 037d3490-378d-5242-8cbc-3304ce194ade
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>We publish most weekdays, release a podcast episode weekly, and send a short newsletter every Friday. That's
+          the whole operation.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 1b450ac8-732a-5462-a61f-c33e1bfa9575
+    slot: col_1
+    uuid: d5ee9794-2a20-5e90-93b3-43af581d8bcc
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: '<p>Pitches, tips, and corrections: <a href="mailto:hello@example.com">hello@example.com</a></p>'
+        format: canvas_html_block
+      text_color: text-body
+  - uuid: 5ee0bc2f-bb05-5937-bb46-81846bf7345d
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      bg_edge2edge: true
+      background_color: bg-accent-subtle
+      vertical_alignment: align-items-center
+      padding_block_start: pt-4
+      padding_block_end: pb-4
+  - parent_uuid: 5ee0bc2f-bb05-5937-bb46-81846bf7345d
+    slot: col_1
+    uuid: 47e26e41-f30a-563d-86f9-25ec5a5d38bd
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The best of Right Up, delivered to you weekly.
+      level: 2
+      text_size: h4
+  - parent_uuid: 5ee0bc2f-bb05-5937-bb46-81846bf7345d
+    slot: col_2
+    uuid: ab15733e-8254-5d96-857a-6f0771aace2c
+    component_id: block.webform_block
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  path:
+  - alias: /about-us
+    langcode: en

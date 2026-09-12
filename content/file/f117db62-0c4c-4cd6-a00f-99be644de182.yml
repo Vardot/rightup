@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f117db62-0c4c-4cd6-a00f-99be644de182
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: team-working-on-laptops.jpg
+  uri:
+    -
+      value: 'public://rightup/team-working-on-laptops.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 519163
+  status:
+    -
+      value: true

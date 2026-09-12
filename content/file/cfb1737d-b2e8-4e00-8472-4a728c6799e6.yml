@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cfb1737d-b2e8-4e00-8472-4a728c6799e6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: architecture-studio-models.jpg
+  uri:
+    -
+      value: 'public://rightup/architecture-studio-models.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 157401
+  status:
+    -
+      value: true

@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1b833f04-cc96-45d5-ba20-29df0eb00a95
+  bundle: podcast
+  default_langcode: en
+  depends:
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1784106000
+  changed:
+    -
+      value: 1784106000
+  title:
+    -
+      value: "The Studio That Won't Use a Mood Board"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcast/studio-wont-use-mood-board
+      langcode: en
+  field_content:
+    -
+      value: '<p>Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients ask for one by name. We talk through the three-hour intake conversation that replaces every deck, and why it&#039;s harder to sell internally than it sounds.</p><p>Hosted by Idris Calloway.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients ask for one by name. We talk through the three-hour intake conversation that replaces every deck, and why it's harder to sell internally than it sounds."
+  field_duration:
+    -
+      value: '42 Mins'
+  field_episode_number:
+    -
+      value: 17
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f1a802c8-7cc9-4413-ba6a-5d18dd8aeabd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bright-design-studio.jpg
+  uri:
+    -
+      value: 'public://rightup/bright-design-studio.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 380637
+  status:
+    -
+      value: true

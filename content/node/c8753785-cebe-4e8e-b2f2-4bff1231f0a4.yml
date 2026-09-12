@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c8753785-cebe-4e8e-b2f2-4bff1231f0a4
+  bundle: news
+  default_langcode: en
+  depends:
+    32b98ac3-34e5-433b-8516-a6ca9cad7559: user
+    de02f379-7c66-479a-be1b-7497651dab4d: media
+    baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
+  created:
+    -
+      value: 1733562000
+  changed:
+    -
+      value: 1733562000
+  title:
+    -
+      value: 'A Gallery With No Walls, Only Light'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/gallery-no-walls-only-light
+      langcode: en
+  field_content:
+    -
+      value: '<p>An exhibition built entirely from projection, shadow, and negative space — no physical works on display, and no two visitors see quite the same show.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'An exhibition built entirely from projection, shadow, and negative space — no physical works on display, and no two visitors see quite the same show.'
+  field_featured_image:
+    -
+      entity: de02f379-7c66-479a-be1b-7497651dab4d
+  field_news_categories:
+    -
+      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605

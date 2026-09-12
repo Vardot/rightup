@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a89990d3-1214-452b-9145-3142b6518607
+  bundle: image
+  default_langcode: en
+  depends:
+    6a4a19f6-ae49-4f50-a314-0038ad934c2f: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Brick residential tower'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Tall stepped brick residential tower beside a street'
+      title: ''
+      width: 768
+      height: 960
+      entity: 6a4a19f6-ae49-4f50-a314-0038ad934c2f

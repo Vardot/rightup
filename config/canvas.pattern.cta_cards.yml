@@ -62,7 +62,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: About Varbase
+      heading_text: About Us
       level: 3
     label: null
   b919a0f1-671c-418e-b2a7-8bcd01bf2073:
@@ -73,7 +73,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: <p>Varbase has successfully delivered over 200 digital experience projects for global brands and international enterprises that need the best Drupal web development and design capabilities for their custom and complex technical requirements.</p>
+        value: <p>The Right Up covers studios, architecture, product, branding, process and culture, reported first-hand from the people doing the work.</p>
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
@@ -99,7 +99,7 @@ component_tree:
       size: btn-md
       label: Learn more
       href:
-        uri: internal:/features
+        uri: internal:/about-us
         options: {}
       disabled: false
       icon: none
@@ -140,7 +140,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: <p>Read the latest articles, tutorials, and release notes on the Varbase blog.</p>
+        value: <p>Read the latest reporting, interviews and process notes.</p>
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
@@ -164,7 +164,7 @@ component_tree:
       variant: btn-primary
       outline: true
       size: btn-md
-      label: View Updates
+      label: Read the News
       href:
         uri: internal:/blog
         options: {}

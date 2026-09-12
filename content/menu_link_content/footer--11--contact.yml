@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 31ad3fc9-1579-5d35-9b14-c46e0d11d15f
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Contact
+  menu_name:
+  - value: footer
+  link:
+  - uri: internal:/contact-us
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 11
+  expanded:
+  - value: false

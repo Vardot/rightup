@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 539f71e6-b97d-4900-872b-80d3a10ae9d2
+  bundle: image
+  default_langcode: en
+  depends:
+    78c1c327-3d57-45c2-a6c4-244113b705db: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Sound wave portrait'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Portrait of a face formed from sound waves on a light background'
+      title: ''
+      width: 620
+      height: 620
+      entity: 78c1c327-3d57-45c2-a6c4-244113b705db

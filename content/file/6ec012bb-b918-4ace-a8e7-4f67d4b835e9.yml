@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6ec012bb-b918-4ace-a8e7-4f67d4b835e9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: snow-field-sculpture.jpg
+  uri:
+    -
+      value: 'public://rightup/snow-field-sculpture.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 221137
+  status:
+    -
+      value: true

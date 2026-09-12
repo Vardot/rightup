@@ -60,7 +60,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Sites using Varbase</p>'
+        value: '<p>Stories published</p>'
         format: canvas_html_block
       text_size: fs-6
       text_color: text-dark
@@ -95,7 +95,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Projects delivered by Vardot</p>'
+        value: '<p>Studios interviewed</p>'
         format: canvas_html_block
       text_size: fs-6
     label: null

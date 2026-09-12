@@ -1,0 +1,118 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: d2d3c10c-424e-56f6-9476-d6d25c17a5d6
+  default_langcode: en
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Contact Us
+  components:
+  - uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      section_header: true
+      gutter: gx-5 gy-5
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    slot: header_slot
+    uuid: ba865f33-7402-5a25-ae94-5b0478f4690e
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    slot: header_slot
+    uuid: 38e50530-6e0d-5bd6-aa32-71510d33ea73
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Contact Us
+      level: 1
+      text_size: h1
+  - parent_uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    slot: header_slot
+    uuid: 9964d078-789e-5652-b44c-d660e67fcaa1
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Questions, pitches, corrections or partnership ideas — we read everything.</p>
+        format: canvas_html_block
+      text_size: fs-5
+      text_color: text-body
+  - parent_uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    slot: col_1
+    uuid: 59dfb897-5d8c-5f0d-a52f-14505ebe00f5
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Ask us about anything
+      level: 2
+      text_size: h3
+  - parent_uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    slot: col_1
+    uuid: 1068ddc2-4d62-563e-8be4-494ec2d45b54
+    component_id: block.webform_block
+    inputs:
+      label: Webform
+      label_display: '0'
+      webform_id: business_contact
+      default_data: ''
+      redirect: false
+      lazy: false
+  - parent_uuid: 0726c4e6-2caa-5eb9-92c0-5d536a31e055
+    slot: col_2
+    uuid: 62ca7683-5830-5a2f-85d6-79823ce98f79
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    inputs:
+      background_color: bg-secondary-subtle
+      padded: true
+  - parent_uuid: 62ca7683-5830-5a2f-85d6-79823ce98f79
+    slot: content
+    uuid: cb8a0af0-e77c-5654-bbd9-3279ac0d4ce2
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Contact Information
+      level: 3
+      text_size: h5
+  - parent_uuid: 62ca7683-5830-5a2f-85d6-79823ce98f79
+    slot: content
+    uuid: c5aa1685-2dc5-56e4-9134-dbb4a25b111f
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Editorial
+      level: 4
+      text_size: h6
+  - parent_uuid: 62ca7683-5830-5a2f-85d6-79823ce98f79
+    slot: content
+    uuid: 20383e28-aa25-51f7-8a1f-119cb1721d02
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: '<p>Pitches, tips and corrections: <a href="mailto:hello@example.com">hello@example.com</a></p>'
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: 62ca7683-5830-5a2f-85d6-79823ce98f79
+    slot: content
+    uuid: 6ec5bd4b-37c9-54bf-a1a3-2b7367c6fd60
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Advertising
+      level: 4
+      text_size: h6
+  - parent_uuid: 62ca7683-5830-5a2f-85d6-79823ce98f79
+    slot: content
+    uuid: 60340903-1357-5f92-94f9-9619bcef2d66
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: '<p>Partnerships and sponsorships: <a href="mailto:partners@example.com">partners@example.com</a></p>'
+        format: canvas_html_block
+      text_color: text-body
+  path:
+  - alias: /contact-us
+    langcode: en

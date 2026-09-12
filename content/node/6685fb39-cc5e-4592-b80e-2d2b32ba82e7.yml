@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6685fb39-cc5e-4592-b80e-2d2b32ba82e7
+  bundle: news
+  default_langcode: en
+  depends:
+    6c9b3d66-9df6-42da-bf04-d54ceeb6e773: user
+    2c55c445-abe2-496e-8cfe-a70c797da699: media
+    50114c5e-67f5-4532-bf45-6a65b755a79e: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  created:
+    -
+      value: 1783242000
+  changed:
+    -
+      value: 1783242000
+  title:
+    -
+      value: 'The Typography Manual Every Junior Designer Still Reads'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/typography-manual-every-junior-designer-still-reads
+      langcode: en
+  field_content:
+    -
+      value: '<p>Fifty years after it was written, a short handbook on grids and type is still the first thing studios hand to new hires.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Fifty years after it was written, a short handbook on grids and type is still the first thing studios hand to new hires.'
+  field_featured_image:
+    -
+      entity: 2c55c445-abe2-496e-8cfe-a70c797da699
+  field_news_categories:
+    -
+      entity: 50114c5e-67f5-4532-bf45-6a65b755a79e

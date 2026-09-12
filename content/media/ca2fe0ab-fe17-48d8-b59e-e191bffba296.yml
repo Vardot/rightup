@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ca2fe0ab-fe17-48d8-b59e-e191bffba296
+  bundle: image
+  default_langcode: en
+  depends:
+    5448a7b3-3dbf-4657-82bf-067690bacc84: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'White modernist house'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'White modernist house with blue and yellow doorways under a clear sky'
+      title: ''
+      width: 736
+      height: 920
+      entity: 5448a7b3-3dbf-4657-82bf-067690bacc84

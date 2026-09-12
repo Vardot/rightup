@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  name:
+    -
+      value: 'Tom James'
+  mail:
+    -
+      value: tom.james@example.com
+  timezone:
+    -
+      value: Asia/Amman
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  path:
+    -
+      langcode: en
+      alias: null
+  field_last_password_reset:
+    -
+      value: '2026-09-10T14:40:22'
+  field_password_expiration:
+    -
+      value: false
+  field_pending_expire_sent:
+    -
+      value: 0

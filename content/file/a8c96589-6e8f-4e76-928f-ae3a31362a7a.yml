@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a8c96589-6e8f-4e76-928f-ae3a31362a7a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: teal-light-staircase.jpg
+  uri:
+    -
+      value: 'public://rightup/teal-light-staircase.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 161770
+  status:
+    -
+      value: true

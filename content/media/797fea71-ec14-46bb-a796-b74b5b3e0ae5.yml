@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
+  bundle: image
+  default_langcode: en
+  depends:
+    3526ffaf-53fc-491f-b2f6-271c67c0e2fe: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Black spiral sculpture'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Close-up of a black spiral sculpture with fine concentric ridges'
+      title: ''
+      width: 2640
+      height: 1485
+      entity: 3526ffaf-53fc-491f-b2f6-271c67c0e2fe

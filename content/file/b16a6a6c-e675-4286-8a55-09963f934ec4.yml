@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b16a6a6c-e675-4286-8a55-09963f934ec4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: striped-street-facade.png
+  uri:
+    -
+      value: 'public://rightup/striped-street-facade.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 37073
+  status:
+    -
+      value: true

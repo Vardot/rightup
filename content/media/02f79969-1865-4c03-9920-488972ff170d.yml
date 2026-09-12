@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 02f79969-1865-4c03-9920-488972ff170d
+  bundle: image
+  default_langcode: en
+  depends:
+    79c7c9b9-254b-4e61-96a8-0d6ef65ef8df: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Cantilevered concrete building'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Brutalist concrete building with a cantilevered upper block against a blue sky'
+      title: ''
+      width: 1024
+      height: 1024
+      entity: 79c7c9b9-254b-4e61-96a8-0d6ef65ef8df

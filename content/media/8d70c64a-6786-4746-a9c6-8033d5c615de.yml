@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8d70c64a-6786-4746-a9c6-8033d5c615de
+  bundle: image
+  default_langcode: en
+  depends:
+    cfb1737d-b2e8-4e00-8472-4a728c6799e6: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Architecture studio models'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Architects working in a studio with tall building models on the tables'
+      title: ''
+      width: 818
+      height: 818
+      entity: cfb1737d-b2e8-4e00-8472-4a728c6799e6

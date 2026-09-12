@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 19e6c642-da68-4a90-9d10-641a6ad425ec
+  bundle: news
+  default_langcode: en
+  depends:
+    6c9b3d66-9df6-42da-bf04-d54ceeb6e773: user
+    2c55c445-abe2-496e-8cfe-a70c797da699: media
+    50114c5e-67f5-4532-bf45-6a65b755a79e: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  created:
+    -
+      value: 1758963600
+  changed:
+    -
+      value: 1758963600
+  title:
+    -
+      value: "One Typeface, Six Rebrands: Inside a Foundry's Busiest Year"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/one-typeface-six-rebrands-inside-foundrys-busiest-year
+      langcode: en
+  field_content:
+    -
+      value: '<p>How a single custom sans became the quiet backbone of half the rebrands you saw this year, without a single client realizing they were sharing a typeface.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'How a single custom sans became the quiet backbone of half the rebrands you saw this year, without a single client realizing they were sharing a typeface.'
+  field_featured_image:
+    -
+      entity: 2c55c445-abe2-496e-8cfe-a70c797da699
+  field_news_categories:
+    -
+      entity: 50114c5e-67f5-4532-bf45-6a65b755a79e

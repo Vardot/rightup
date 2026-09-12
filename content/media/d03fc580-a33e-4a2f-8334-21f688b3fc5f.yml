@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d03fc580-a33e-4a2f-8334-21f688b3fc5f
+  bundle: image
+  default_langcode: en
+  depends:
+    f117db62-0c4c-4cd6-a00f-99be644de182: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Team working on laptops'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Team gathered around a table working on laptops and tablets'
+      title: ''
+      width: 2640
+      height: 1760
+      entity: f117db62-0c4c-4cd6-a00f-99be644de182

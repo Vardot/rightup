@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a6ad03d1-893d-4f6f-9360-108e4d67a0cf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: purple-grid-collage.png
+  uri:
+    -
+      value: 'public://rightup/purple-grid-collage.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 214306
+  status:
+    -
+      value: true

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: aa25aa6a-9ab1-4071-a993-f859690ccbf3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: brutalist-concrete-facade.jpg
+  uri:
+    -
+      value: 'public://rightup/brutalist-concrete-facade.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 235044
+  status:
+    -
+      value: true

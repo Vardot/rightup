@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 157504de-26e6-4c11-ae7a-cdb685af89cc
+  bundle: image
+  default_langcode: en
+  depends:
+    35a85326-cedd-4fb1-a73b-5750d910067e: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Weathered ruin wall'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Long weathered clay wall of a ruin under a blue sky'
+      title: ''
+      width: 2640
+      height: 1765
+      entity: 35a85326-cedd-4fb1-a73b-5750d910067e

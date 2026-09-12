@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f88a88c4-f279-48c0-8f11-c21f48c8230b
+  bundle: podcast
+  default_langcode: en
+  depends:
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1783501200
+  changed:
+    -
+      value: 1783501200
+  title:
+    -
+      value: 'No Straight Walls'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcast/no-straight-walls
+      langcode: en
+  field_content:
+    -
+      value: '<p>An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor&#039;s crew had never framed a curve before. The fix cost three weeks and a redrawn foundation plan.</p><p>Hosted by Noor Fasi.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never framed a curve before. The fix cost three weeks and a redrawn foundation plan."
+  field_duration:
+    -
+      value: '55 Mins'
+  field_episode_number:
+    -
+      value: 16
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

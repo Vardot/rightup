@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9d880123-3e7b-4149-bce4-57fdad1b8bc6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: green-grid-poster.jpg
+  uri:
+    -
+      value: 'public://rightup/green-grid-poster.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 108022
+  status:
+    -
+      value: true

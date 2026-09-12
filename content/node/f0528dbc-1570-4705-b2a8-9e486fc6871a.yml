@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f0528dbc-1570-4705-b2a8-9e486fc6871a
+  bundle: news
+  default_langcode: en
+  depends:
+    d57890ee-04ca-46f9-92e1-bee9fda7ec55: user
+    f49af479-626f-43e9-bc06-b5ae702bf041: media
+    6bc5ea95-be6c-43c0-8c08-6a29feb25494: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  created:
+    -
+      value: 1740819600
+  changed:
+    -
+      value: 1740819600
+  title:
+    -
+      value: 'Why More Studios Are Charging for the Pitch Itself'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/why-more-studios-are-charging-pitch-itself
+      langcode: en
+  field_content:
+    -
+      value: '<p>Free pitches are becoming rarer as studios push back against unpaid speculative work, and clients are surprisingly willing to pay for it upfront.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Free pitches are becoming rarer as studios push back against unpaid speculative work, and clients are surprisingly willing to pay for it upfront.'
+  field_featured_image:
+    -
+      entity: f49af479-626f-43e9-bc06-b5ae702bf041
+  field_news_categories:
+    -
+      entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494

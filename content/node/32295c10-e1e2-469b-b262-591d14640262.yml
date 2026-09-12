@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 32295c10-e1e2-469b-b262-591d14640262
+  bundle: news
+  default_langcode: en
+  depends:
+    86cbfd56-2388-4f0a-a77d-a91ee823ba73: user
+    02f79969-1865-4c03-9920-488972ff170d: media
+    8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 86cbfd56-2388-4f0a-a77d-a91ee823ba73
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 86cbfd56-2388-4f0a-a77d-a91ee823ba73
+  created:
+    -
+      value: 1784192400
+  changed:
+    -
+      value: 1784192400
+  title:
+    -
+      value: 'The Architecture of Unease: How Brutalism Became Beautiful Again'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/architecture-unease-how-brutalism-became-beautiful-again
+      langcode: en
+  field_content:
+    -
+      value: '<p>Once derided as concrete monstrosities, mid-century brutalist structures are experiencing a renaissance among a new generation of designers drawn to their uncompromising honesty.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Once derided as concrete monstrosities, mid-century brutalist structures are experiencing a renaissance among a new generation of designers drawn to their uncompromising honesty.'
+  field_featured_image:
+    -
+      entity: 02f79969-1865-4c03-9920-488972ff170d
+  field_news_categories:
+    -
+      entity: 8a80b689-1574-4def-8d9b-9f8edc647557

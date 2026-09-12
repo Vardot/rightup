@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: ec388a02-7448-533a-bbf7-1de3de9ebfc4
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Branding
+  menu_name:
+  - value: main
+  link:
+  - uri: internal:/branding
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 3
+  expanded:
+  - value: false

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 61a1f698-2bbc-4637-894e-511bffb9474f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: neon-gallery-installation.jpg
+  uri:
+    -
+      value: 'public://rightup/neon-gallery-installation.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 176158
+  status:
+    -
+      value: true

@@ -59,7 +59,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Kick-start Your Journey with us Today!'
+      heading_text: 'Get the Work Before It’s Polished'
       level: 2
       text_size: h1
       text_color: text-white
@@ -82,7 +82,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p class="text-align-center">Websites you build with Varbase load fast, rank well, and stay fully responsive.</p>'
+        value: '<p class="text-align-center">One email a week: studio breakdowns, process notes and the projects we are watching.</p>'
         format: canvas_html_block
       text_size: fs-6
       text_color: text-white

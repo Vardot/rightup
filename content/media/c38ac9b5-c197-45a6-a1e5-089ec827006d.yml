@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c38ac9b5-c197-45a6-a1e5-089ec827006d
+  bundle: image
+  default_langcode: en
+  depends:
+    0091b1af-f88c-4631-bf39-6cf5b614f2bf: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Timber slatted facade'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Warm timber slats on a building facade in evening light'
+      title: ''
+      width: 1200
+      height: 1799
+      entity: 0091b1af-f88c-4631-bf39-6cf5b614f2bf

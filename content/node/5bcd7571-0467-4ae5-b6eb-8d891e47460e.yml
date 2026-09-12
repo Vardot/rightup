@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5bcd7571-0467-4ae5-b6eb-8d891e47460e
+  bundle: podcast
+  default_langcode: en
+  depends:
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1781082000
+  changed:
+    -
+      value: 1781082000
+  title:
+    -
+      value: 'What a Rejected Pitch Actually Sounds Like'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcast/what-rejected-pitch-actually-sounds
+      langcode: en
+  field_content:
+    -
+      value: '<p>We got permission to play the room tone from a pitch that fell apart in real time, including the thirty seconds of silence nobody wanted to fill and the recovery attempt that came two minutes too late to save the account.</p><p>Hosted by Noor Fasi.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'We got permission to play the room tone from a pitch that fell apart in real time, including the thirty seconds of silence nobody wanted to fill and the recovery attempt that came two minutes too late to save the account.'
+  field_duration:
+    -
+      value: '51 Mins'
+  field_episode_number:
+    -
+      value: 12
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

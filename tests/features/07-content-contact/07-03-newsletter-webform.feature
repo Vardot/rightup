@@ -4,12 +4,12 @@ Feature: Frontend Webform - Newsletter Subscribe
       I want the Newsletter Subscribe form on the Home and Contact Us pages
       So that visitors can subscribe and we can see their emails in the back-end.
 
-  @check @local @development
-  Scenario: Add the Newsletter form to the bottom of the homepage
-    Given I am a logged in user with the "webmaster" user
-      And I add the "Newsletter Subscribe (newsletter_subscribe)" webform to the bottom of the "Home" Canvas page and publish it
-     When I am an anonymous user
-      And I go to the homepage
+  # The Home Canvas page ships the Newsletter Subscribe webform in its subscribe
+  # block, so there is nothing to add here.
+  @check @local @development @staging @production
+  Scenario: The homepage carries the Newsletter form
+    Given I am an anonymous user
+     When I go to the homepage
       And wait
      Then I should see "Subscribe"
       And I should see a "Email" element
@@ -26,10 +26,8 @@ Feature: Frontend Webform - Newsletter Subscribe
 
   @check @local @development
   Scenario: A subscription from the homepage is recorded in the back-end
-    Given I am a logged in user with the "webmaster" user
-      And I add the "Newsletter Subscribe (newsletter_subscribe)" webform to the bottom of the "Home" Canvas page and publish it
-     When I am an anonymous user
-      And I go to the homepage
+    Given I am an anonymous user
+     When I go to the homepage
       And wait
       And I fill in "Email" with "po.subscriber@example.com"
       And I press "Subscribe"

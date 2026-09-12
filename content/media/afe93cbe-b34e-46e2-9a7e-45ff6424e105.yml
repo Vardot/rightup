@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: afe93cbe-b34e-46e2-9a7e-45ff6424e105
+  bundle: image
+  default_langcode: en
+  depends:
+    aa25aa6a-9ab1-4071-a993-f859690ccbf3: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Brutalist concrete facade'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Looking up at the angular concrete facade of a brutalist building'
+      title: ''
+      width: 1024
+      height: 1024
+      entity: aa25aa6a-9ab1-4071-a993-f859690ccbf3

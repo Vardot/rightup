@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 26d013cf-6ed3-4c22-84da-40199d4fbed8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: worker-with-wheelbarrow.png
+  uri:
+    -
+      value: 'public://rightup/worker-with-wheelbarrow.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 285632
+  status:
+    -
+      value: true

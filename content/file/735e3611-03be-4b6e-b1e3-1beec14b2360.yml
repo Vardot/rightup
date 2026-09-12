@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 735e3611-03be-4b6e-b1e3-1beec14b2360
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: orange-dotted-wall-graphic.png
+  uri:
+    -
+      value: 'public://rightup/orange-dotted-wall-graphic.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 218823
+  status:
+    -
+      value: true

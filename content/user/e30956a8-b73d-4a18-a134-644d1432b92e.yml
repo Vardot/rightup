@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: e30956a8-b73d-4a18-a134-644d1432b92e
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  name:
+    -
+      value: 'Nina Corcoran'
+  mail:
+    -
+      value: nina.corcoran@example.com
+  timezone:
+    -
+      value: Asia/Amman
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  path:
+    -
+      langcode: en
+      alias: null
+  field_last_password_reset:
+    -
+      value: '2026-09-10T14:40:22'
+  field_password_expiration:
+    -
+      value: false
+  field_pending_expire_sent:
+    -
+      value: 0

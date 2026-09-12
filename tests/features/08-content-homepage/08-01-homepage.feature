@@ -9,7 +9,7 @@ Feature: Frontend Pages - Homepage
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "Try Varbase for Free"
+     Then I should see "The Architecture of Unease: How Brutalism Became Beautiful Again"
       And I should not see "Page not found"
 
   @check @local @development @staging @production
@@ -17,55 +17,46 @@ Feature: Frontend Pages - Homepage
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "About Varbase"
-      And I should see "Blog"
-      And I should see "Contact Us"
+     Then I should see "Studios"
+      And I should see "Architecture"
+      And I should see "Podcasts"
 
   @check @local @development @staging @production
-  Scenario: Check that the homepage has the hero section
+  Scenario: Check that the homepage has the latest news live feed
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "Varbase, Better Than Ever"
+     Then I should see "Latest"
 
   @check @local @development @staging @production
-  Scenario: Check that the homepage has the features section
+  Scenario: Check that the homepage has the featured section
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "Built To Empower Organizations"
-      And I should see "AI Integration"
-      And I should see "Mobile Responsiveness"
-      And I should see "Multilingual"
+     Then I should see "Featured"
+      And I should see "Inside the Gallery Show Built Entirely From Borrowed Light"
 
   @check @local @development @staging @production
-  Scenario: Check that the homepage has the statistics section
+  Scenario: Check that the homepage has the podcast section
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "Sites using Varbase"
-      And I should see "Projects delivered by Vardot"
+     Then I should see "Podcasts"
+      And I should see "Last Call"
+      And I should see "Hosted by Idris Calloway"
 
   @check @local @development @staging @production
-  Scenario: Check that the homepage has the security section
+  Scenario: Check that the homepage has the On Display slider
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "Security Standards"
+     Then I should see "On Display"
+      And the element ".card-slider" should be displayed
 
   @check @local @development @staging @production
-  Scenario: Check that the homepage has the latest updates section
+  Scenario: Check that the homepage has the newsletter subscribe block
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then I should see "Latest Updates"
-      And I should see "View All Articles"
-
-  @check @local @development @staging @production
-  Scenario: Check that the homepage has footer with support links
-    Given I am an anonymous user
-     When I go to homepage
-      And wait
-     Then I should see "Community Support"
-      And I should see "Documentation"
-      And I should see "Get Professional Support"
+     Then I should see "Design News Before It's Polished"
+      And the element "input[type='email']" should be displayed

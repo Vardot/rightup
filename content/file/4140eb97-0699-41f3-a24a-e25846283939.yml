@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4140eb97-0699-41f3-a24a-e25846283939
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: red-wing-brand-mark.jpg
+  uri:
+    -
+      value: 'public://rightup/red-wing-brand-mark.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 24855
+  status:
+    -
+      value: true

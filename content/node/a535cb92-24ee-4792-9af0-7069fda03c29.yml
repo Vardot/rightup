@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a535cb92-24ee-4792-9af0-7069fda03c29
+  bundle: news
+  default_langcode: en
+  depends:
+    86cbfd56-2388-4f0a-a77d-a91ee823ba73: user
+    c38ac9b5-c197-45a6-a1e5-089ec827006d: media
+    8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: 86cbfd56-2388-4f0a-a77d-a91ee823ba73
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 86cbfd56-2388-4f0a-a77d-a91ee823ba73
+  created:
+    -
+      value: 1782896400
+  changed:
+    -
+      value: 1782896400
+  title:
+    -
+      value: 'A Norwegian Firm Builds a Library With No Straight Shelves'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/norwegian-firm-builds-library-no-straight-shelves
+      langcode: en
+  field_content:
+    -
+      value: '<p>Curved timber shelving follows the reading rooms around a central light well.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Curved timber shelving follows the reading rooms around a central light well.'
+  field_featured_image:
+    -
+      entity: c38ac9b5-c197-45a6-a1e5-089ec827006d
+  field_news_categories:
+    -
+      entity: 8a80b689-1574-4def-8d9b-9f8edc647557

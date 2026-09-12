@@ -19,27 +19,38 @@ Feature: Website Base Requirements - Front-end pages
       And there should be no JavaScript errors
 
     Examples: Canvas pages
-      | name          | path           |
-      | Home          | /              |
-      | Features      | /features      |
-      | About Varbase | /about-varbase |
-      | Blog          | /blog          |
-      | Contact Us    | /contact-us    |
+      | name         | path                |
+      | Home         | /                   |
+      | Studios      | /studios            |
+      | Architecture | /architecture       |
+      | Product      | /product            |
+      | Branding     | /branding           |
+      | Process      | /process            |
+      | Culture      | /culture            |
+      | Podcasts     | /podcasts           |
+      | Last Call    | /podcasts/last-call |
+      | Newsletter   | /newsletter         |
+      | About Us     | /about-us           |
+      | Contact Us   | /contact-us         |
 
-    Examples: Blog articles
-      | name                       | path                                                                  |
-      | Blog - Getting started     | /blog/getting-started-varbase-step-step-guide-first-time-users        |
-      | Blog - Why Varbase         | /blog/why-varbase-ultimate-drupal-distribution-accelerated-development |
-      | Blog - Customizing         | /blog/customizing-your-website-varbase-flexibility-and-freedom         |
-      | Blog - Security            | /blog/enhancing-your-websites-security-varbase                         |
-      | Blog - SEO                 | /blog/how-varbase-optimizes-your-site-search-engines                   |
-      | Blog - Performance         | /blog/maximizing-performance-varbase-tips-and-tricks-site-optimization |
-      | Blog - Third-party         | /blog/integrating-third-party-applications-varbase                     |
-      | Blog - Mobile-first        | /blog/varbase-mobile-first-platform-building-responsive-websites       |
-      | Blog - Community           | /blog/community-behind-varbase-support-and-collaboration               |
-      | Blog - E-commerce          | /blog/leveraging-varbase-e-commerce-features-transform-your-online-store |
-      | Blog - Multilingual        | /blog/multilingual-websites-made-easy-varbase                          |
-      | Blog - Case studies        | /blog/case-studies-successful-websites-powered-varbase                 |
+    Examples: Listing pages
+      | name   | path    |
+      | News   | /news   |
+      | Search | /search |
+
+    Examples: News articles
+      | name                  | path                                                                   |
+      | Article - Brutalism   | /news/architecture-unease-how-brutalism-became-beautiful-again         |
+      | Article - Flagship    | /news/fen-marble-reveal-first-look-rotterdam-flagship                  |
+      | Article - Design Week | /news/milan-design-week-opens-record-number-independent-studios        |
+      | Article - Lighting    | /news/danish-lighting-brand-just-reissued-its-most-controversial-chair |
+      | Article - Pitching    | /news/what-fen-marble-actually-use-pitch-new-clients                   |
+      | Article - Identity    | /news/arclight-studio-unveils-new-identity-nordic-airline              |
+
+    Examples: Podcast episodes
+      | name                        | path                                |
+      | Podcast - Studio Wont Use   | /podcast/studio-wont-use-mood-board |
+      | Podcast - No Straight Walls | /podcast/no-straight-walls          |
 
   @check @local @development
   Scenario Outline: The <name> content page has a working header and footer

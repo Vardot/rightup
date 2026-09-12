@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f99ee5a2-64b7-49b2-b31c-d9409afe3c08
+  bundle: image
+  default_langcode: en
+  depends:
+    bcf5d0ac-e23f-4bc5-bbe1-43165a9bdb76: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Blue wave lines poster'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Poster of flowing blue horizontal wave lines'
+      title: ''
+      width: 650
+      height: 1024
+      entity: bcf5d0ac-e23f-4bc5-bbe1-43165a9bdb76

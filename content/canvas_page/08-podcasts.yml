@@ -1,0 +1,282 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 795ae22b-5b2b-57af-9071-99e454f0638d
+  default_langcode: en
+  depends:
+    f45f5f79-94c2-401e-b75f-f83237693c68: file
+    1bbdc230-2b35-45e4-9cbe-a98c374aaaa4: media
+    a48f6896-10f8-4940-aec3-3908faa68e4a: file
+    da526131-9c0f-4699-b74e-d3f0f83a3472: media
+    a6ad03d1-893d-4f6f-9360-108e4d67a0cf: file
+    929fa437-2f56-4518-b130-01fc5fb3fe67: media
+    a8c96589-6e8f-4e76-928f-ae3a31362a7a: file
+    6f02f337-6d5c-461f-bae8-526a828d2d0c: media
+    ebba1067-b99a-47ff-a515-844b53731244: file
+    1db59f67-7970-4c23-aef0-d70b32dc5bc0: media
+    78c1c327-3d57-45c2-a6c4-244113b705db: file
+    539f71e6-b97d-4900-872b-80d3a10ae9d2: media
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Podcasts
+  components:
+  - uuid: 8c8c5fd1-6317-5b2b-a692-fea1f09f5d59
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      bg_edge2edge: true
+      background_color: bg-tertiary
+      text_color: text-white
+  - parent_uuid: 8c8c5fd1-6317-5b2b-a692-fea1f09f5d59
+    slot: col_1
+    uuid: 72219da1-a614-5026-88d6-9f0fb560119a
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 8c8c5fd1-6317-5b2b-a692-fea1f09f5d59
+    slot: col_1
+    uuid: b48b099f-d3bd-507d-859a-12f634aa612e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Conversations With the People Actually Making Things
+      level: 1
+      text_size: h1
+      text_color: text-white
+  - parent_uuid: 8c8c5fd1-6317-5b2b-a692-fea1f09f5d59
+    slot: col_1
+    uuid: 61c9fc7f-c328-5466-85d4-15dfef6dfab8
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Every Right Up show, in one place — studio interviews, site walks, and the process notes that never make
+          it into a case study. New episodes drop weekly, with no polish added after the fact.</p>
+        format: canvas_html_block
+      text_size: fs-5
+      text_color: text-white
+  - uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 33-33-33
+      section_header: true
+      gutter: gx-4 gy-4
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: header_slot
+    uuid: 237338b6-4a2d-5ba8-a0ec-18cccd4ee7af
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      text: Podcasts
+      text_size: fs-6
+      border_color: border-black
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: col_1
+    uuid: 4ee2db26-90ec-5b8d-a19d-4dd2a9b6f529
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 1bbdc230-2b35-45e4-9cbe-a98c374aaaa4
+          target_type: media
+      meta_text: 48 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: View Show
+      button_url:
+        uri: internal:/podcasts/last-call
+        options: {}
+      button_target: _self
+  - parent_uuid: 4ee2db26-90ec-5b8d-a19d-4dd2a9b6f529
+    slot: content_slot
+    uuid: bd079f60-cf8b-5cb4-884e-249e51333e2c
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Last Call
+      level: 3
+      text_size: h4
+      url:
+        uri: internal:/podcasts/last-call
+        options: {}
+  - parent_uuid: 4ee2db26-90ec-5b8d-a19d-4dd2a9b6f529
+    slot: content_slot
+    uuid: 959cd3c1-e746-59de-9b85-a59571293ea8
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>The decisions nobody sees, told by the people who made them. Every week, we sit down with a working studio
+          to talk through one project — start to finish, no polish, no pretending it went smoothly.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: col_2
+    uuid: 6747f86e-f989-5d3c-970b-454925e71bbb
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: da526131-9c0f-4699-b74e-d3f0f83a3472
+          target_type: media
+      meta_text: 21 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: 6747f86e-f989-5d3c-970b-454925e71bbb
+    slot: content_slot
+    uuid: 2c449e89-e9b5-5083-99dc-2cd7b06ce537
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Field Notes
+      level: 3
+      text_size: h4
+  - parent_uuid: 6747f86e-f989-5d3c-970b-454925e71bbb
+    slot: content_slot
+    uuid: c1a74db2-c65f-59e0-a7ae-392ee8e3ccba
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Short dispatches recorded live from studio visits and site walks.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: col_3
+    uuid: efeafbc4-806a-5a79-ad0e-acfd47450ff6
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 929fa437-2f56-4518-b130-01fc5fb3fe67
+          target_type: media
+      meta_text: 14 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: efeafbc4-806a-5a79-ad0e-acfd47450ff6
+    slot: content_slot
+    uuid: ef630f34-5580-57b8-999f-a25afb0b4ba8
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Office Hours
+      level: 3
+      text_size: h4
+  - parent_uuid: efeafbc4-806a-5a79-ad0e-acfd47450ff6
+    slot: content_slot
+    uuid: 123f9b47-c699-54f3-9317-68e635823d9c
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Studio founders answer the questions younger designers are afraid to ask.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: col_1
+    uuid: abb58a5b-99ed-5bc3-b617-012795465b0b
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 6f02f337-6d5c-461f-bae8-526a828d2d0c
+          target_type: media
+      meta_text: 9 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: abb58a5b-99ed-5bc3-b617-012795465b0b
+    slot: content_slot
+    uuid: 47e8c0b2-98b9-5efb-aa6a-f6c40d467aaf
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: The Long Table
+      level: 3
+      text_size: h4
+  - parent_uuid: abb58a5b-99ed-5bc3-b617-012795465b0b
+    slot: content_slot
+    uuid: a2f588bb-9f7a-54f3-8b8d-6a13bf6507d7
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>Round-table conversations recorded live at design week events.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: col_2
+    uuid: 5734d7ca-ba95-5f7f-9902-cc82f77a2e32
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 1db59f67-7970-4c23-aef0-d70b32dc5bc0
+          target_type: media
+      meta_text: 17 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: 5734d7ca-ba95-5f7f-9902-cc82f77a2e32
+    slot: content_slot
+    uuid: 4711d2fa-9d9d-5053-a6f5-24442dc744c4
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Material World
+      level: 3
+      text_size: h4
+  - parent_uuid: 5734d7ca-ba95-5f7f-9902-cc82f77a2e32
+    slot: content_slot
+    uuid: 26f8d929-0817-54b7-8ca6-11110bad3bcf
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>A deep dive into one material, one fabricator, one episode at a time.</p>
+        format: canvas_html_block
+      text_color: text-body
+  - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
+    slot: col_3
+    uuid: 75676d6b-9d49-5206-a311-695b3fc53623
+    component_id: sdc.vartheme_bs5_rightup.podcast-card
+    inputs:
+      media_image:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 539f71e6-b97d-4900-872b-80d3a10ae9d2
+          target_type: media
+      meta_text: 11 Episodes
+      image_ratio: ratio-1x1
+      image_fit: object-fit-cover
+      content_padding: false
+      button_text: ''
+      button_target: _self
+  - parent_uuid: 75676d6b-9d49-5206-a311-695b3fc53623
+    slot: content_slot
+    uuid: 0590d120-5db0-5e4e-965f-9a0d88d9d864
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Small Practice
+      level: 3
+      text_size: h4
+  - parent_uuid: 75676d6b-9d49-5206-a311-695b3fc53623
+    slot: content_slot
+    uuid: c1a8eeb5-96fd-5241-91bf-2c8e71c5f764
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: <p>How two and three-person studios compete against agencies ten times their size.</p>
+        format: canvas_html_block
+      text_color: text-body
+  path:
+  - alias: /podcasts
+    langcode: en

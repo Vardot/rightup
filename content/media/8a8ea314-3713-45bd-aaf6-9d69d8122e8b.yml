@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8a8ea314-3713-45bd-aaf6-9d69d8122e8b
+  bundle: image
+  default_langcode: en
+  depends:
+    b16a6a6c-e675-4286-8a55-09963f934ec4: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Striped street facade'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Street facade broken into horizontal colour stripes with a pedestrian passing'
+      title: ''
+      width: 310
+      height: 175
+      entity: b16a6a6c-e675-4286-8a55-09963f934ec4

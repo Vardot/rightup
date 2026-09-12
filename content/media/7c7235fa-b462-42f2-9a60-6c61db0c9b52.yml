@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7c7235fa-b462-42f2-9a60-6c61db0c9b52
+  bundle: image
+  default_langcode: en
+  depends:
+    0a09a25e-06fd-4b17-9858-15c5243f3986: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Gallery with floor works'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Gallery interior with artworks laid on the floor and hung on the walls'
+      title: ''
+      width: 640
+      height: 832
+      entity: 0a09a25e-06fd-4b17-9858-15c5243f3986

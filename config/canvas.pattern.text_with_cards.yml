@@ -71,7 +71,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Built to empower organizations'
+      heading_text: 'Built for design reporting'
       level: 2
     label: null
   e64b4e3a-de12-42bb-bf2d-d59305ca6c17:
@@ -82,7 +82,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Varbase accelerates your projects with a fully featured, enterprise-ready Drupal distribution.</p>'
+        value: '<p>Reporting on the studios, buildings and products being made right now.</p>'
         format: canvas_html_block
       text_color: text-subtle-text
     label: null
@@ -96,9 +96,9 @@ component_tree:
       variant: btn-primary
       outline: true
       size: btn-md
-      label: 'View All Features'
+      label: 'Read the News'
       href:
-        uri: 'internal:/features'
+        uri: 'internal:/about-us'
         options: {  }
       target: self
       disabled: false
@@ -139,7 +139,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'AI Integration'
+      heading_text: 'Studio Profiles'
       level: 3
     label: null
   ea069e59-6d89-44ed-a0ce-f09725d0f469:
@@ -196,7 +196,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Mobile Responsiveness'
+      heading_text: 'Weekly Podcast'
       level: 3
     label: null
   37ad87b7-9467-4cda-a394-1377a61c479e:

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bcf5d0ac-e23f-4bc5-bbe1-43165a9bdb76
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: blue-wave-lines-poster.jpg
+  uri:
+    -
+      value: 'public://rightup/blue-wave-lines-poster.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 130033
+  status:
+    -
+      value: true

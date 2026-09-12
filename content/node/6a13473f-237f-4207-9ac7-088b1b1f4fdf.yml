@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6a13473f-237f-4207-9ac7-088b1b1f4fdf
+  bundle: podcast
+  default_langcode: en
+  depends:
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1780477200
+  changed:
+    -
+      value: 1780477200
+  title:
+    -
+      value: 'The Studio That Fires Itself Every Year'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcast/studio-fires-itself-every-year
+      langcode: en
+  field_content:
+    -
+      value: '<p>Once a year, this practice dissolves and reforms under a new name, new structure, and often a new office. Nobody on staff is entirely sure why it works, including the founder, who says he&#039;s stopped trying to explain it to new hires.</p><p>Hosted by Idris Calloway.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "Once a year, this practice dissolves and reforms under a new name, new structure, and often a new office. Nobody on staff is entirely sure why it works, including the founder, who says he's stopped trying to explain it to new hires."
+  field_duration:
+    -
+      value: '39 Mins'
+  field_episode_number:
+    -
+      value: 11
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

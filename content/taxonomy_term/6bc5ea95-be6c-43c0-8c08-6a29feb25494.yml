@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  bundle: news_categories
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 0
+  revision_log_message:
+    -
+      value: 'Created new News Categories'
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Product
+  weight:
+    -
+      value: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null

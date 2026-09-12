@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
+  bundle: image
+  default_langcode: en
+  depends:
+    4906f0d7-0353-4d54-9837-086dd60336a9: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Teal glowing ring'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Glowing teal ring on a dark teal background'
+      title: ''
+      width: 1536
+      height: 2736
+      entity: 4906f0d7-0353-4d54-9837-086dd60336a9

@@ -40,8 +40,9 @@ Feature: Content Structure - Blog post permissions
      Then I should see "Create Blog post"
 
   @check @local @development @staging @production
-  Scenario: Check that the blog listing page is accessible
+  Scenario: Check that the news listing page is accessible
     Given I am an anonymous user
-     When I go to "/blog"
+     When I go to "/news"
       And wait
-     Then I should see "Blog"
+     Then I should not see "Page not found"
+      And I should see "The Architecture of Unease: How Brutalism Became Beautiful Again"

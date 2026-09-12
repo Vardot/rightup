@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4906f0d7-0353-4d54-9837-086dd60336a9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: teal-glowing-ring.jpg
+  uri:
+    -
+      value: 'public://rightup/teal-glowing-ring.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 538934
+  status:
+    -
+      value: true

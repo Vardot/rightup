@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: da526131-9c0f-4699-b74e-d3f0f83a3472
+  bundle: image
+  default_langcode: en
+  depends:
+    a48f6896-10f8-4940-aec3-3908faa68e4a: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Microphone with headphones'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Studio microphone held by gloved hands wearing headphones, on mint green'
+      title: ''
+      width: 620
+      height: 620
+      entity: a48f6896-10f8-4940-aec3-3908faa68e4a

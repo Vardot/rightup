@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9330bb06-ea01-469b-bc4e-15cd4b519a20
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: mirrored-corridor.jpg
+  uri:
+    -
+      value: 'public://rightup/mirrored-corridor.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 103796
+  status:
+    -
+      value: true

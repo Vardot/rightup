@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 1a0cd804-7871-5bcc-8479-08faec935728
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Culture
+  menu_name:
+  - value: main
+  link:
+  - uri: internal:/culture
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 5
+  expanded:
+  - value: false

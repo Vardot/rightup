@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6a4a19f6-ae49-4f50-a314-0038ad934c2f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: brick-residential-tower.jpg
+  uri:
+    -
+      value: 'public://rightup/brick-residential-tower.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 106490
+  status:
+    -
+      value: true

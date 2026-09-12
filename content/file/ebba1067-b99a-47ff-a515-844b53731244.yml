@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ebba1067-b99a-47ff-a515-844b53731244
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: vintage-studio-microphone.png
+  uri:
+    -
+      value: 'public://rightup/vintage-studio-microphone.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 48092
+  status:
+    -
+      value: true

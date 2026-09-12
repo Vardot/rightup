@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5207c161-4735-4a53-817f-31f4606ce9f0
+  bundle: news
+  default_langcode: en
+  depends:
+    f87cc252-9f43-46a8-86fb-a9f7433b78ad: user
+    9390cad4-3619-4c98-94ae-f789202e28be: media
+    baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  created:
+    -
+      value: 1784019600
+  changed:
+    -
+      value: 1784019600
+  title:
+    -
+      value: 'Milan Design Week Opens With Record Number of Independent Studios'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/milan-design-week-opens-record-number-independent-studios
+      langcode: en
+  field_content:
+    -
+      value: '<p>More than half of this year&#039;s exhibitors are studios with fewer than ten people, and the fair has rearranged its halls around them.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: "More than half of this year's exhibitors are studios with fewer than ten people, and the fair has rearranged its halls around them."
+  field_featured_image:
+    -
+      entity: 9390cad4-3619-4c98-94ae-f789202e28be
+  field_news_categories:
+    -
+      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605

@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f49af479-626f-43e9-bc06-b5ae702bf041
+  bundle: image
+  default_langcode: en
+  depends:
+    5c905a41-4a51-4164-b375-e8fe354c9627: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Colleagues at monitors'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Colleagues discussing work in front of desktop monitors'
+      title: ''
+      width: 650
+      height: 365
+      entity: 5c905a41-4a51-4164-b375-e8fe354c9627

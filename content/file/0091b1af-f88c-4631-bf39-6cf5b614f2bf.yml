@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0091b1af-f88c-4631-bf39-6cf5b614f2bf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: timber-slatted-facade.jpg
+  uri:
+    -
+      value: 'public://rightup/timber-slatted-facade.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 358262
+  status:
+    -
+      value: true

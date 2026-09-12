@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 3d9a44e9-fa77-5956-9cff-7474dfeb4f48
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Studios
+  menu_name:
+  - value: main
+  link:
+  - uri: internal:/studios
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 0
+  expanded:
+  - value: false

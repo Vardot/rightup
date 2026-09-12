@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 59653ab7-714f-5d79-85e2-879eb79ad2db
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Instagram
+  menu_name:
+  - value: social-media-menu
+  link:
+  - uri: https://www.instagram.com
+    title: ''
+    options: {}
+  external:
+  - value: true
+  weight:
+  - value: 2
+  expanded:
+  - value: false

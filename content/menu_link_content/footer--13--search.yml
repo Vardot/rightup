@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 1af9505f-6b10-5791-8152-523a9f2d9637
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Search
+  menu_name:
+  - value: footer
+  link:
+  - uri: internal:/search
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 13
+  expanded:
+  - value: false

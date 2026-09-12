@@ -77,8 +77,9 @@ Feature: Frontend Pages - Contact Us Page
      When I go to "/contact-us"
       And wait
      Then I should see "Contact Information"
-      And I should see "(408) 329 9888"
-      And I should see "3080 Olcott St"
+      And I should see "Editorial"
+      And I should see "hello@example.com"
+      And I should see "Advertising"
 
   @check @local @development @staging @production
   Scenario: Check that the Contact Us page has breadcrumb navigation

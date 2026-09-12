@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c402d390-1651-47fd-a34f-2c10094262b7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hanken-grotesk-specimen.png
+  uri:
+    -
+      value: 'public://rightup/hanken-grotesk-specimen.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 143437
+  status:
+    -
+      value: true

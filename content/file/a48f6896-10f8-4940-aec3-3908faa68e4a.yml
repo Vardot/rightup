@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a48f6896-10f8-4940-aec3-3908faa68e4a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: microphone-with-headphones.jpg
+  uri:
+    -
+      value: 'public://rightup/microphone-with-headphones.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 18444
+  status:
+    -
+      value: true

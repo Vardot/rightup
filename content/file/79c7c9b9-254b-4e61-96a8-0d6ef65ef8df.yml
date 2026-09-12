@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 79c7c9b9-254b-4e61-96a8-0d6ef65ef8df
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: cantilevered-concrete-building.jpg
+  uri:
+    -
+      value: 'public://rightup/cantilevered-concrete-building.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 76372
+  status:
+    -
+      value: true

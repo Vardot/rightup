@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3fe49026-d9f1-4749-855a-5a573459cae6
+  bundle: image
+  default_langcode: en
+  depends:
+    a91edad7-b83d-4761-842e-68f687b924d8: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Abstract expressive painting'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Abstract painting with thick red, yellow, blue and white brushstrokes'
+      title: ''
+      width: 2640
+      height: 1760
+      entity: a91edad7-b83d-4761-842e-68f687b924d8

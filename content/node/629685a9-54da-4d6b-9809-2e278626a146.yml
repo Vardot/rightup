@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 629685a9-54da-4d6b-9809-2e278626a146
+  bundle: podcast
+  default_langcode: en
+  depends:
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1781686800
+  changed:
+    -
+      value: 1781686800
+  title:
+    -
+      value: 'The Intern Who Redesigned the Office'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcast/intern-who-redesigned-office
+      langcode: en
+  field_content:
+    -
+      value: '<p>A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and no way to undo it before the partners return from a two-week trip abroad. What came back was not what anyone expected, in either direction.</p><p>Hosted by Idris Calloway.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and no way to undo it before the partners return from a two-week trip abroad. What came back was not what anyone expected, in either direction.'
+  field_duration:
+    -
+      value: '44 Mins'
+  field_episode_number:
+    -
+      value: 13
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

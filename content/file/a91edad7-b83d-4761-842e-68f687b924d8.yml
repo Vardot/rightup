@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a91edad7-b83d-4761-842e-68f687b924d8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: abstract-expressive-painting.jpg
+  uri:
+    -
+      value: 'public://rightup/abstract-expressive-painting.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 815523
+  status:
+    -
+      value: true

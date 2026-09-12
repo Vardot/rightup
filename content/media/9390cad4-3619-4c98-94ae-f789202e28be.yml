@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9390cad4-3619-4c98-94ae-f789202e28be
+  bundle: image
+  default_langcode: en
+  depends:
+    2bcee994-1003-48b0-b1f6-a5a92604c9d3: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Iridescent glass forms'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Translucent iridescent glass shapes catching pastel light'
+      title: ''
+      width: 1024
+      height: 1024
+      entity: 2bcee994-1003-48b0-b1f6-a5a92604c9d3

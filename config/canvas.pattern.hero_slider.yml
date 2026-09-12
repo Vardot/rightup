@@ -63,17 +63,17 @@ component_tree:
     inputs:
       enabled: true
       active: false
-      title: 'Varbase, better than ever'
+      title: 'Design news before it’s polished'
       content:
-        value: "<p>Elevate your digital experience with Varbase's dynamic design system, seamlessly blending aesthetic appeal with unparalleled functionality. Unleash the power of intuitive design for a compelling web presence.</p>"
+        value: "<p>Reporting on the studios, buildings and products being made right now, told by the people who made them.</p>"
         format: canvas_html_block
       media:
         target_id: '38'
       title_tag: h2
       title_size: h1
       overlay_bg: none
-      button_text: 'Try Varbase for Free'
-      button_url: /about-varbase
+      button_text: 'Read the News'
+      button_url: /about-us
     label: null
   c3feefad-fcdc-4c1a-829e-235d58291003:
     parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
@@ -84,7 +84,7 @@ component_tree:
     inputs:
       enabled: true
       active: false
-      title: 'Compose your site from recipes'
+      title: 'Six sections, one publication'
       content:
         value: '<p>Assemble your site from composable Drupal recipes, applied on their own or grouped together. Start from an enterprise-ready baseline instead of wiring everything up by hand.</p>'
         format: canvas_html_block
@@ -93,8 +93,8 @@ component_tree:
       title_tag: h2
       title_size: h1
       overlay_bg: none
-      button_text: 'About Varbase'
-      button_url: /about-varbase
+      button_text: 'About Us'
+      button_url: /about-us
     label: null
   d69b3e17-4c9a-4fe1-87cd-7de4f846d71d:
     parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
@@ -114,7 +114,7 @@ component_tree:
       title_tag: h2
       title_size: h1
       overlay_bg: none
-      button_text: 'Try the page builder'
+      button_text: 'Browse the Sections'
       button_url: /features
     label: null
   035c2ad1-4dad-4517-a333-51234879c65e:
@@ -126,7 +126,7 @@ component_tree:
     inputs:
       enabled: true
       active: false
-      title: 'Secure and ready for production'
+      title: 'Conversations with the people making things'
       content:
         value: '<p>Security hardening, accessibility, and SEO come configured out of the box. Launch with confidence on a foundation built for real-world production sites.</p>'
         format: canvas_html_block

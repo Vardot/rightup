@@ -51,7 +51,7 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'Varbase; better than ever'
+              value: 'Design news before it’s polished'
           expression: ℹ︎string␟value
           derived_schema_metadata:
             string_shape: {  }
@@ -65,7 +65,7 @@ versioned_properties:
           field_widget: text_textarea
           default_value:
             -
-              value: "<p>Elevate your digital experience with Varbase's dynamic design system, seamlessly blending aesthetic appeal with unparalleled functionality. Unleash the power of intuitive design for a compelling web presence.</p>"
+              value: "<p>Reporting on the studios, buildings and products being made right now, told by the people who made them.</p>"
               format: canvas_html_block
           expression: ℹ︎text_long␟processed
           derived_schema_metadata:
@@ -300,7 +300,7 @@ versioned_properties:
           field_widget: text_textarea
           default_value:
             -
-              value: "<p>Elevate your digital experience with Varbase's dynamic design system, seamlessly blending aesthetic appeal with unparalleled functionality. Unleash the power of intuitive design for a compelling web presence.</p>"
+              value: "<p>Reporting on the studios, buildings and products being made right now, told by the people who made them.</p>"
               format: canvas_html_block
           expression: ℹ︎text_long␟processed
           derived_schema_metadata:

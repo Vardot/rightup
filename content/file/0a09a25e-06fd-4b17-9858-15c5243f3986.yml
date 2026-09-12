@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0a09a25e-06fd-4b17-9858-15c5243f3986
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: gallery-with-floor-works.jpg
+  uri:
+    -
+      value: 'public://rightup/gallery-with-floor-works.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 72213
+  status:
+    -
+      value: true

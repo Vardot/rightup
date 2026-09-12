@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 32b98ac3-34e5-433b-8516-a6ca9cad7559
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  name:
+    -
+      value: 'Priya Nakamura'
+  mail:
+    -
+      value: priya.nakamura@example.com
+  timezone:
+    -
+      value: Asia/Amman
+  status:
+    -
+      value: true
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  path:
+    -
+      langcode: en
+      alias: null
+  field_last_password_reset:
+    -
+      value: '2026-09-10T14:40:22'
+  field_password_expiration:
+    -
+      value: false
+  field_pending_expire_sent:
+    -
+      value: 0

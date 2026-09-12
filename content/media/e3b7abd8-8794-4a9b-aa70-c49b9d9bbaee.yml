@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee
+  bundle: image
+  default_langcode: en
+  depends:
+    735e3611-03be-4b6e-b1e3-1beec14b2360: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Orange dotted wall graphic'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Orange triangle and dotted pattern painted on a pale wall'
+      title: ''
+      width: 620
+      height: 349
+      entity: 735e3611-03be-4b6e-b1e3-1beec14b2360

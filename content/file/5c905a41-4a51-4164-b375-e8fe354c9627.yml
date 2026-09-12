@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5c905a41-4a51-4164-b375-e8fe354c9627
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: colleagues-at-monitors.jpg
+  uri:
+    -
+      value: 'public://rightup/colleagues-at-monitors.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 46211
+  status:
+    -
+      value: true

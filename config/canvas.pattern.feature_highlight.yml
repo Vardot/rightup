@@ -69,7 +69,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: 'Security Standards'
+      heading_text: 'Reporting Standards'
       level: 2
     label: null
   f9e0ce39-888e-4656-9907-d10f70250179:
@@ -89,7 +89,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>Varbase comes with top security standards for an enterprise-security level website. You will find Password Policy, Security Review, Security Kit, and Username Enumeration Prevention are installed and configured to secure your site. Honeypot is also being used to lock your forms from spam bots.</p>'
+        value: '<p>Every story is reported first-hand, with the studio named and the work shown. You will find Password Policy, Security Review, Security Kit, and Username Enumeration Prevention are installed and configured to secure your site. Honeypot is also being used to lock your forms from spam bots.</p>'
         format: canvas_html_block
       text_size: none
       text_color: text-subtle-text

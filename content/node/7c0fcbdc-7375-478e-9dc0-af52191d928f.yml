@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7c0fcbdc-7375-478e-9dc0-af52191d928f
+  bundle: news
+  default_langcode: en
+  depends:
+    e30956a8-b73d-4a18-a134-644d1432b92e: user
+    81a56c89-31ab-4e1b-8c23-35a1f712c03c: media
+    baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
+default:
+  revision_uid:
+    -
+      entity: e30956a8-b73d-4a18-a134-644d1432b92e
+  revision_log:
+    -
+      value: 'Created new News post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: e30956a8-b73d-4a18-a134-644d1432b92e
+  created:
+    -
+      value: 1783674000
+  changed:
+    -
+      value: 1783674000
+  title:
+    -
+      value: 'Renzo Vidal Premieres Short Film Honoring Late Mentor'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /news/renzo-vidal-premieres-short-film-honoring-late-mentor
+      langcode: en
+  field_content:
+    -
+      value: '<p>Shot over three years, the film follows the workshop its subject left behind.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
+      format: full_html
+  field_description:
+    -
+      value: 'Shot over three years, the film follows the workshop its subject left behind.'
+  field_featured_image:
+    -
+      entity: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
+  field_news_categories:
+    -
+      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605

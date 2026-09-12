@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 55b02503-61b9-413a-9aa0-7f08b2b7aa77
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: layered-glass-squares.jpg
+  uri:
+    -
+      value: 'public://rightup/layered-glass-squares.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 27651
+  status:
+    -
+      value: true
