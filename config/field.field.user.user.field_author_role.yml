@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_author_role
+  module:
+    - user
+id: user.user.field_author_role
+field_name: field_author_role
+entity_type: user
+bundle: user
+label: 'Author role'
+description: 'The role this person is credited with on the site, printed above their name on the author page, for example Staff writer, Contributor or Editor at large.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

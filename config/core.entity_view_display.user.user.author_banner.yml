@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.author_banner
+    - field.field.user.user.field_author_bio
+    - field.field.user.user.field_author_role
+  module:
+    - user
+id: user.user.author_banner
+targetEntityType: user
+bundle: user
+mode: author_banner
+content:
+  field_author_role:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_author_bio:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_last_password_reset: true
+  field_password_expiration: true
+  field_pending_expire_sent: true
+  masquerade: true
+  member_for: true
+  user_picture: true

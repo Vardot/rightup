@@ -342,6 +342,44 @@ config:
         - 'edit own podcast content'
         - 'revert podcast revisions'
         - 'view podcast revisions'
+    # The author fields are added to the profile form and the profile page the
+    # site already ships, so they sit beside the picture rather than replacing
+    # the upstream displays.
+    core.entity_form_display.user.user.default:
+      simpleConfigUpdate:
+        content.field_author_role:
+          type: string_textfield
+          weight: 1
+          region: content
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+        content.field_author_bio:
+          type: string_textarea
+          weight: 2
+          region: content
+          settings:
+            rows: 4
+            placeholder: ''
+          third_party_settings: {  }
+    core.entity_view_display.user.user.default:
+      simpleConfigUpdate:
+        content.field_author_role:
+          type: string
+          label: hidden
+          weight: 1
+          region: content
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+        content.field_author_bio:
+          type: basic_string
+          label: hidden
+          weight: 2
+          region: content
+          settings: {  }
+          third_party_settings: {  }
 extra:
   recipe_installer_kit:
     finish_url: 'admin/dashboard/welcome'

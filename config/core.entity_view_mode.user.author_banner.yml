@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.author_banner
+label: 'Author banner'
+description: 'The author page banner: the role label and the biography, printed beside the name in the page banner.'
+targetEntityType: user
+cache: true

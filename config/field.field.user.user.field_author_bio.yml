@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_author_bio
+  module:
+    - user
+id: user.user.field_author_bio
+field_name: field_author_bio
+entity_type: user
+bundle: user
+label: Biography
+description: 'A short third-person biography, printed on the author page under the name. Two or three sentences: what they cover, where they have written before, and where they are based.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
