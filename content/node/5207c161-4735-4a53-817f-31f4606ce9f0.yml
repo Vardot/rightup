@@ -10,52 +10,64 @@ _meta:
     baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
-  created:
-    -
-      value: 1784019600
-  changed:
-    -
-      value: 1784019600
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   title:
-    -
-      value: 'Milan Design Week Opens With Record Number of Independent Studios'
+  - value: Milan Design Week Opens With Record Number of Independent Studios
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/milan-design-week-opens-record-number-independent-studios
-      langcode: en
+  - alias: /news/milan-design-week-opens-record-number-independent-studios
+    langcode: en
   field_content:
-    -
-      value: '<p>More than half of this year&#039;s exhibitors are studios with fewer than ten people, and the fair has rearranged its halls around them.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>By ten on the first morning the queue outside the Tortona warehouses was three deep, and more than half of it was waiting for studios that did not exist five years ago.</p>
+
+      <p>Shows like this one tend to be remembered for a single room, and the argument about whether the rest earned it starts on the second weekend.</p>
+
+      <p>Giulia Ferrante, the fair''s programme director, has been close to it from the start.</p>
+
+      <h2>Background</h2>
+
+      <p>Of the 412 exhibitors this year, 214 have fewer than ten people on staff. In 2019 that figure was 96.</p>
+
+      <p>Budget was fixed before the brief was finished, which is the wrong order and, everyone involved agrees, the usual one.</p>
+
+      <p>The shift has changed what the week sounds like as much as what it shows.</p>
+
+      <blockquote><p>The small studios are not the fringe programme any more. They are the reason people come early.</p><footer>Ferrante</footer></blockquote>
+
+      <h2>The method</h2>
+
+      <p>The fair dropped its minimum stand size and introduced a shared-floor rate, which put eleven studios into a single hall that used to hold two.</p>
+
+      <p>The measure will be whether anything changes afterwards, in the collection or the programme, rather than in the press release.</p>
+
+      <p>The first week brought the kind of attention nobody plans for, and the second brought the criticism that actually changed something.</p>
+
+      <p>They are careful about what they claim. Two of the decisions that look deliberate now were, by their own account, the only option left by the time anyone noticed.</p>
+
+      <h2>Where it goes</h2>
+
+      <p>The fair runs until Sunday. The shared hall is already fully booked for next year.</p>'
+    format: full_html
   field_description:
-    -
-      value: "More than half of this year's exhibitors are studios with fewer than ten people, and the fair has rearranged its halls around them."
+  - value: More than half of this year's exhibitors are studios with fewer than ten people, and the fair has rearranged its halls around them.
   field_featured_image:
-    -
-      entity: 9390cad4-3619-4c98-94ae-f789202e28be
+  - entity: 9390cad4-3619-4c98-94ae-f789202e28be
   field_news_categories:
-    -
-      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  - entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  created:
+  - value: 1784019600
+  changed:
+  - value: 1784019600

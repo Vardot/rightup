@@ -10,52 +10,64 @@ _meta:
     6bc5ea95-be6c-43c0-8c08-6a29feb25494: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: c60b96e7-d54e-4249-b730-f686432d442b
+  - entity: c60b96e7-d54e-4249-b730-f686432d442b
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: c60b96e7-d54e-4249-b730-f686432d442b
-  created:
-    -
-      value: 1750150800
-  changed:
-    -
-      value: 1750150800
+  - entity: c60b96e7-d54e-4249-b730-f686432d442b
   title:
-    -
-      value: 'The Chair Every Design School Still Teaches'
+  - value: The Chair Every Design School Still Teaches
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/chair-every-design-school-still-teaches
-      langcode: en
+  - alias: /news/chair-every-design-school-still-teaches
+    langcode: en
   field_content:
-    -
-      value: '<p>Forty years on, it&#039;s still the first thing students are asked to take apart and rebuild, and most of them still get the joinery wrong the first time.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>Forty years on, it is still the first object first-year students are asked to take apart and rebuild.</p>
+
+      <p>Reissues are a particular kind of risk. The original has already been judged, and every deviation reads as a correction of somebody else''s work.</p>
+
+      <p>Alex Suskind, who spent a week in three workshops, has been close to it from the start.</p>
+
+      <h2>The decision</h2>
+
+      <p>Eleven components, four joints, and one of them is deliberately harder than it needs to be.</p>
+
+      <p>Budget was fixed before the brief was finished, which is the wrong order and, everyone involved agrees, the usual one.</p>
+
+      <p>The manufacturer has never changed the design, and has twice refused to licence a simplified version for teaching.</p>
+
+      <blockquote><p>It teaches failure in a way a lecture cannot. The chair simply will not stand up.</p><footer>one workshop tutor</footer></blockquote>
+
+      <h2>In practice</h2>
+
+      <p>Most students get the joinery wrong at the first attempt in the same place: the rear leg, where the grain direction matters more than the drawing suggests.</p>
+
+      <p>Whether it sells is almost beside the point for the archive. The chair exists again, and the drawings are complete for the first time since 1971.</p>
+
+      <p>The first week brought the kind of attention nobody plans for, and the second brought the criticism that actually changed something.</p>
+
+      <p>What they will not say, on the record, is how close it came to being cancelled in the spring.</p>
+
+      <h2>What comes next</h2>
+
+      <p>Which is, the tutors agree, the reason it still works.</p>'
+    format: full_html
   field_description:
-    -
-      value: "Forty years on, it's still the first thing students are asked to take apart and rebuild, and most of them still get the joinery wrong the first time."
+  - value: Forty years on, it's still the first thing students are asked to take apart and rebuild, and most of them still get the joinery wrong the first time.
   field_featured_image:
-    -
-      entity: 05874fa4-b6c6-4bd0-8daf-3c3830f6888c
+  - entity: 05874fa4-b6c6-4bd0-8daf-3c3830f6888c
   field_news_categories:
-    -
-      entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  - entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  created:
+  - value: 1750150800
+  changed:
+  - value: 1750150800

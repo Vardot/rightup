@@ -10,52 +10,64 @@ _meta:
     8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
-  created:
-    -
-      value: 1783328400
-  changed:
-    -
-      value: 1783328400
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
   title:
-    -
-      value: 'The Concert Hall Reshaping What a Roof Can Do'
+  - value: The Concert Hall Reshaping What a Roof Can Do
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/concert-hall-reshaping-what-roof-can-do
-      langcode: en
+  - alias: /news/concert-hall-reshaping-what-roof-can-do
+    langcode: en
   field_content:
-    -
-      value: '<p>The roof is the acoustic shell, the rain collector and the public terrace, all in one poured structure.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>The roof is the acoustic shell, the rainwater strategy and the only thing holding the building up.</p>
+
+      <p>The site had been empty for nine years, long enough for the neighbourhood to form a settled opinion about what should happen to it, and long enough for two previous schemes to be abandoned at planning.</p>
+
+      <p>Marta Dvořák, the project architect, has been close to it from the start.</p>
+
+      <h2>The decision</h2>
+
+      <p>A single folded plate spans 46 metres without an internal column, and its underside is the ceiling the audience hears.</p>
+
+      <p>It took three attempts. The first was abandoned at the end of the first month, the second survived until costing, and the third is the one standing.</p>
+
+      <p>The acoustic consultant asked for eleven changes to the fold geometry; nine were accepted.</p>
+
+      <blockquote><p>One element doing three jobs is cheaper than three elements doing one each. It is also much harder to draw.</p><footer>Dvořák</footer></blockquote>
+
+      <h2>In practice</h2>
+
+      <p>Rain is not piped. It runs down the folds into a channel at the perimeter, which is also the handrail on the upper terrace.</p>
+
+      <p>The detail that will matter in ten years is the one nobody photographed: the junction where the new work meets the old, and who is expected to maintain it.</p>
+
+      <p>It has been well received by the audience it was made for and largely ignored by everyone else, which the team says is the outcome they wanted.</p>
+
+      <p>There is no shortage of people willing to call it inevitable in hindsight. Nobody involved describes it that way.</p>
+
+      <h2>What comes next</h2>
+
+      <p>The first season opens in September with a programme chosen to test the room.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'The roof is the acoustic shell, the rain collector and the public terrace, all in one poured structure.'
+  - value: The roof is the acoustic shell, the rain collector and the public terrace, all in one poured structure.
   field_featured_image:
-    -
-      entity: afe93cbe-b34e-46e2-9a7e-45ff6424e105
+  - entity: afe93cbe-b34e-46e2-9a7e-45ff6424e105
   field_news_categories:
-    -
-      entity: 8a80b689-1574-4def-8d9b-9f8edc647557
+  - entity: 8a80b689-1574-4def-8d9b-9f8edc647557
+  created:
+  - value: 1783328400
+  changed:
+  - value: 1783328400

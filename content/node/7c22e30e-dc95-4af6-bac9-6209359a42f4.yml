@@ -9,58 +9,61 @@ _meta:
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-    -
-      target_id: 1
+  - target_id: 1
   revision_log:
-    -
-      value: 'Created new Podcast episode'
+  - value: Created new Podcast episode
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      target_id: 1
-  created:
-    -
-      value: 1782291600
-  changed:
-    -
-      value: 1782291600
+  - target_id: 1
   title:
-    -
-      value: 'The Client Who Fired the Whole Deck'
+  - value: The Client Who Fired the Whole Deck
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /podcast/client-who-fired-whole-deck
-      langcode: en
+  - alias: /podcast/client-who-fired-whole-deck
+    langcode: en
   field_content:
-    -
-      value: '<p>A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and why they&#039;ve never gone back to slides since. The founder walks through the exact meeting, minute by minute, including the question that ended it.</p><p>Hosted by Noor Fasi.</p>'
-      format: full_html
+  - value: '<p><strong>Noor Fasi:</strong> Let us start where most people would not. What did this cost you?</p>
+
+      <p><strong>Guest:</strong> Time, mostly. About eleven weeks we did not bill for. The money we can explain to ourselves. The eleven weeks are harder.</p>
+
+      <p><strong>Noor Fasi:</strong> And you would do it again.</p>
+
+      <p><strong>Guest:</strong> We are doing it again. That is the honest answer. We have two projects running the same way right now, and one of them is already late.</p>
+
+      <p><strong>Noor Fasi:</strong> Walk me through the moment you knew it was working.</p>
+
+      <p><strong>Guest:</strong> There was a meeting about six weeks in where nobody presented anything. We sat with the client and read the brief out loud, line by line, and changed four words. Everything
+      after that was easier, and I cannot fully tell you why.</p>
+
+      <p><strong>Noor Fasi:</strong> Four words.</p>
+
+      <p><strong>Guest:</strong> Four words. We had written "a space for events" and they said, no, it is a space that survives events. Same building. Completely different set of decisions.</p>
+
+      <p><strong>Noor Fasi:</strong> What would you tell a studio about to try this?</p>
+
+      <p><strong>Guest:</strong> Cost it properly, and tell the client what you are doing. The method only works if both sides know they are allowed to change their minds early. If you hide it, it just
+      looks like you are slow.</p>'
+    format: full_html
   field_description:
-    -
-      value: "A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and why they've never gone back to slides since. The founder walks through the exact meeting, minute by minute, including the question that ended it."
+  - value: A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and why they've never gone back to slides since. The founder walks through the exact meeting,
+      minute by minute, including the question that ended it.
   field_duration:
-    -
-      value: '48 Mins'
+  - value: 48 Mins
   field_episode_number:
-    -
-      value: 14
+  - value: 14
   field_featured_image:
-    -
-      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
   field_tags:
-    -
-      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+  created:
+  - value: 1782291600
+  changed:
+  - value: 1782291600

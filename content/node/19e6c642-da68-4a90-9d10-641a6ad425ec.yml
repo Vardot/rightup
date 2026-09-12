@@ -10,52 +10,64 @@ _meta:
     50114c5e-67f5-4532-bf45-6a65b755a79e: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  - entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
-  created:
-    -
-      value: 1758963600
-  changed:
-    -
-      value: 1758963600
+  - entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
   title:
-    -
-      value: "One Typeface, Six Rebrands: Inside a Foundry's Busiest Year"
+  - value: 'One Typeface, Six Rebrands: Inside a Foundry''s Busiest Year'
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/one-typeface-six-rebrands-inside-foundrys-busiest-year
-      langcode: en
+  - alias: /news/one-typeface-six-rebrands-inside-foundrys-busiest-year
+    langcode: en
   field_content:
-    -
-      value: '<p>How a single custom sans became the quiet backbone of half the rebrands you saw this year, without a single client realizing they were sharing a typeface.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>Half the rebrands you saw this year were set in the same custom sans, and none of the clients knew about the others.</p>
+
+      <p>The system has to survive people who do not care about it. That is the actual test, and it happens in procurement, in email signatures and on signage nobody briefed.</p>
+
+      <p>Tomas Adeyemi, who identified the family across six identities, has been close to it from the start.</p>
+
+      <h2>What changed</h2>
+
+      <p>The foundry licenses the family exclusively, per sector. Six clients, six sectors, one drawing.</p>
+
+      <p>The timeline tells its own story: eighteen months from first conversation to the point anyone outside the room saw anything, and then six weeks in which everything visible was decided.</p>
+
+      <p>Whether that holds as the sectors blur is a question the foundry is already fielding.</p>
+
+      <blockquote><p>Exclusivity by sector is the only honest way to sell the same letters twice.</p><footer>the foundry''s director</footer></blockquote>
+
+      <h2>How it works</h2>
+
+      <p>The only visible differences are the alternates each client chose, and in two cases a redrawn ampersand.</p>
+
+      <p>The system survives or fails on its worst application, not its best, and nobody presents that slide.</p>
+
+      <p>Reaction has split along predictable lines. The people who have to maintain it have the sharpest questions, and the fairest ones.</p>
+
+      <p>There is no shortage of people willing to call it inevitable in hindsight. Nobody involved describes it that way.</p>
+
+      <h2>What happens next</h2>
+
+      <p>The family is not available outside those agreements, and will not be until 2028.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'How a single custom sans became the quiet backbone of half the rebrands you saw this year, without a single client realizing they were sharing a typeface.'
+  - value: How a single custom sans became the quiet backbone of half the rebrands you saw this year, without a single client realizing they were sharing a typeface.
   field_featured_image:
-    -
-      entity: 2c55c445-abe2-496e-8cfe-a70c797da699
+  - entity: 2c55c445-abe2-496e-8cfe-a70c797da699
   field_news_categories:
-    -
-      entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
+  - entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
+  created:
+  - value: 1758963600
+  changed:
+  - value: 1758963600

@@ -10,52 +10,65 @@ _meta:
     8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
-  created:
-    -
-      value: 1783069200
-  changed:
-    -
-      value: 1783069200
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
   title:
-    -
-      value: 'A Facade System Built Entirely From Salvaged Material'
+  - value: A Facade System Built Entirely From Salvaged Material
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/facade-system-built-entirely-salvaged-material
-      langcode: en
+  - alias: /news/facade-system-built-entirely-salvaged-material
+    langcode: en
   field_content:
-    -
-      value: '<p>Every panel on the street front came from a building that was demolished within five kilometres of the site.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>Every panel on the street front came from a building that was coming down within four miles of this one.</p>
+
+      <p>Buildings of this kind are rarely decided by architects alone. A structural engineer, a planning officer and a facilities manager who will never be named in the credits each moved this one several
+      metres from where it started, and the drawings record the argument.</p>
+
+      <p>Rena Osei, who followed the salvage for three months, has been close to it from the start.</p>
+
+      <h2>Background</h2>
+
+      <p>The team catalogued 2,100 square metres of cladding from six demolitions, then designed the elevation around what they actually had.</p>
+
+      <p>The timeline tells its own story: eighteen months from first conversation to the point anyone outside the room saw anything, and then six weeks in which everything visible was decided.</p>
+
+      <p>Insurance was the hard part, not construction.</p>
+
+      <blockquote><p>We drew the building twice: once as we wanted it, and once as the skips allowed.</p><footer>the lead architect</footer></blockquote>
+
+      <h2>The method</h2>
+
+      <p>The panels are not matched. Four tones of brick slip sit side by side, and the joint pattern changes where the source changed.</p>
+
+      <p>What stops this being a one-off is the documentation. The practice has published the details, which means the next team does not have to rediscover the same three failures.</p>
+
+      <p>Reaction has split along predictable lines. The people who have to maintain it have the sharpest questions, and the fairest ones.</p>
+
+      <p>There is no shortage of people willing to call it inevitable in hindsight. Nobody involved describes it that way.</p>
+
+      <h2>Where it goes</h2>
+
+      <p>The practice has published its salvage schedule so the next project does not start from nothing.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'Every panel on the street front came from a building that was demolished within five kilometres of the site.'
+  - value: Every panel on the street front came from a building that was demolished within five kilometres of the site.
   field_featured_image:
-    -
-      entity: 8a8ea314-3713-45bd-aaf6-9d69d8122e8b
+  - entity: 8a8ea314-3713-45bd-aaf6-9d69d8122e8b
   field_news_categories:
-    -
-      entity: 8a80b689-1574-4def-8d9b-9f8edc647557
+  - entity: 8a80b689-1574-4def-8d9b-9f8edc647557
+  created:
+  - value: 1783069200
+  changed:
+  - value: 1783069200

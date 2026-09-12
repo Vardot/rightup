@@ -10,52 +10,64 @@ _meta:
     8a80b689-1574-4def-8d9b-9f8edc647557: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
-  created:
-    -
-      value: 1782982800
-  changed:
-    -
-      value: 1782982800
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
   title:
-    -
-      value: 'A Concrete Institute Built to Age on Purpose'
+  - value: A Concrete Institute Built to Age on Purpose
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/concrete-institute-built-age-purpose
-      langcode: en
+  - alias: /news/concrete-institute-built-age-purpose
+    langcode: en
   field_content:
-    -
-      value: '<p>A research center designed to weather, stain, and change color over decades — the architects call it &quot;planned patina,&quot; and they&#039;ve written the maintenance manual to match.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>The architects call it planned patina, and they have written the maintenance manual to match.</p>
+
+      <p>The site had been empty for nine years, long enough for the neighbourhood to form a settled opinion about what should happen to it, and long enough for two previous schemes to be abandoned at planning.</p>
+
+      <p>Rena Osei, on site the week before handover, has been close to it from the start.</p>
+
+      <h2>What changed</h2>
+
+      <p>The concrete mix includes a local aggregate that stains predictably, so the weathering follows the drip lines rather than fighting them.</p>
+
+      <p>The timeline tells its own story: eighteen months from first conversation to the point anyone outside the room saw anything, and then six weeks in which everything visible was decided.</p>
+
+      <p>The client''s facilities team pushed back hard, and the compromise is a cleaning schedule for the ground floor only.</p>
+
+      <blockquote><p>A building that cannot get dirty has nowhere to go.</p><footer>the project architect</footer></blockquote>
+
+      <h2>How it works</h2>
+
+      <p>The manual tells the client what not to clean, and when. It is four pages, and the first instruction is to do nothing for two years.</p>
+
+      <p>The detail that will matter in ten years is the one nobody photographed: the junction where the new work meets the old, and who is expected to maintain it.</p>
+
+      <p>Reaction has split along predictable lines. The people who have to maintain it have the sharpest questions, and the fairest ones.</p>
+
+      <p>There is no shortage of people willing to call it inevitable in hindsight. Nobody involved describes it that way.</p>
+
+      <h2>What happens next</h2>
+
+      <p>The research centre opens in January. The staining starts immediately.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'A research center designed to weather, stain, and change color over decades — the architects call it "planned patina," and they''ve written the maintenance manual to match.'
+  - value: A research center designed to weather, stain, and change color over decades — the architects call it "planned patina," and they've written the maintenance manual to match.
   field_featured_image:
-    -
-      entity: afe93cbe-b34e-46e2-9a7e-45ff6424e105
+  - entity: afe93cbe-b34e-46e2-9a7e-45ff6424e105
   field_news_categories:
-    -
-      entity: 8a80b689-1574-4def-8d9b-9f8edc647557
+  - entity: 8a80b689-1574-4def-8d9b-9f8edc647557
+  created:
+  - value: 1782982800
+  changed:
+  - value: 1782982800

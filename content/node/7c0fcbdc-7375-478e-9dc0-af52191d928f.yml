@@ -10,52 +10,64 @@ _meta:
     baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: e30956a8-b73d-4a18-a134-644d1432b92e
+  - entity: e30956a8-b73d-4a18-a134-644d1432b92e
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: e30956a8-b73d-4a18-a134-644d1432b92e
-  created:
-    -
-      value: 1783674000
-  changed:
-    -
-      value: 1783674000
+  - entity: e30956a8-b73d-4a18-a134-644d1432b92e
   title:
-    -
-      value: 'Renzo Vidal Premieres Short Film Honoring Late Mentor'
+  - value: Renzo Vidal Premieres Short Film Honoring Late Mentor
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/renzo-vidal-premieres-short-film-honoring-late-mentor
-      langcode: en
+  - alias: /news/renzo-vidal-premieres-short-film-honoring-late-mentor
+    langcode: en
   field_content:
-    -
-      value: '<p>Shot over three years, the film follows the workshop its subject left behind.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>The film opens on an empty workshop and stays there for four minutes before anyone speaks.</p>
+
+      <p>Shows like this one tend to be remembered for a single room, and the argument about whether the rest earned it starts on the second weekend.</p>
+
+      <p>Renzo Vidal, the director, who trained under the film''s subject for nine years, has been close to it from the start.</p>
+
+      <h2>What changed</h2>
+
+      <p>Shot over three years on a borrowed 16mm camera, the film follows the workshop through the seasons after its founder''s death, as his apprentices decide what to keep.</p>
+
+      <p>It took three attempts. The first was abandoned at the end of the first month, the second survived until costing, and the third is the one standing.</p>
+
+      <p>The hardest cut, Vidal says, was a nineteen-minute sequence of hands sharpening a chisel.</p>
+
+      <blockquote><p>He talked while he worked. I did not have to write anything.</p><footer>Vidal</footer></blockquote>
+
+      <h2>How it works</h2>
+
+      <p>There is no narration. What explanation exists comes from tape recordings made in the 1990s, which Vidal found in a drawer under the bench.</p>
+
+      <p>The measure will be whether anything changes afterwards, in the collection or the programme, rather than in the press release.</p>
+
+      <p>It has been well received by the audience it was made for and largely ignored by everyone else, which the team says is the outcome they wanted.</p>
+
+      <p>They are careful about what they claim. Two of the decisions that look deliberate now were, by their own account, the only option left by the time anyone noticed.</p>
+
+      <h2>What happens next</h2>
+
+      <p>It screens at three festivals this autumn before a limited run in April.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'Shot over three years, the film follows the workshop its subject left behind.'
+  - value: Shot over three years, the film follows the workshop its subject left behind.
   field_featured_image:
-    -
-      entity: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
+  - entity: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
   field_news_categories:
-    -
-      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  - entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  created:
+  - value: 1783674000
+  changed:
+  - value: 1783674000

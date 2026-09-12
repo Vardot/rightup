@@ -10,52 +10,64 @@ _meta:
     baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
+  - entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
-  created:
-    -
-      value: 1783414800
-  changed:
-    -
-      value: 1783414800
+  - entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
   title:
-    -
-      value: 'The Museum That Became Its Own Archive'
+  - value: The Museum That Became Its Own Archive
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/museum-became-its-own-archive
-      langcode: en
+  - alias: /news/museum-became-its-own-archive
+    langcode: en
   field_content:
-    -
-      value: '<p>With no budget for new acquisitions, a regional museum turned its storage rooms into the permanent collection.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>With nothing left to buy, the museum turned the camera on its own storage and found a show in the inventory.</p>
+
+      <p>Shows like this one tend to be remembered for a single room, and the argument about whether the rest earned it starts on the second weekend.</p>
+
+      <p>Dr Alma Petrov, the museum''s head of collections, has been close to it from the start.</p>
+
+      <h2>What changed</h2>
+
+      <p>A digitisation project meant for insurance produced 9,400 images of objects that had not been on public display since 1988.</p>
+
+      <p>It took three attempts. The first was abandoned at the end of the first month, the second survived until costing, and the third is the one standing.</p>
+
+      <p>The unexpected effect is scale: seen at true size, the collection reads as a single household.</p>
+
+      <blockquote><p>We were not curating. We were opening drawers with a camera.</p><footer>Petrov</footer></blockquote>
+
+      <h2>How it works</h2>
+
+      <p>The exhibition hangs the photographs at the size of the objects, so a brooch occupies eight centimetres of wall and a dining table occupies three metres.</p>
+
+      <p>The measure will be whether anything changes afterwards, in the collection or the programme, rather than in the press release.</p>
+
+      <p>It has been well received by the audience it was made for and largely ignored by everyone else, which the team says is the outcome they wanted.</p>
+
+      <p>They are careful about what they claim. Two of the decisions that look deliberate now were, by their own account, the only option left by the time anyone noticed.</p>
+
+      <h2>What happens next</h2>
+
+      <p>The archive is online, and the museum has made the whole catalogue downloadable.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'With no budget for new acquisitions, a regional museum turned its storage rooms into the permanent collection.'
+  - value: With no budget for new acquisitions, a regional museum turned its storage rooms into the permanent collection.
   field_featured_image:
-    -
-      entity: fae0a9f2-4f90-4d24-8652-f1f143c73081
+  - entity: fae0a9f2-4f90-4d24-8652-f1f143c73081
   field_news_categories:
-    -
-      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  - entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  created:
+  - value: 1783414800
+  changed:
+  - value: 1783414800

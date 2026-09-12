@@ -10,52 +10,65 @@ _meta:
     98932ae0-060a-4811-8c93-dcea81871372: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
+  - entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
-  created:
-    -
-      value: 1783846800
-  changed:
-    -
-      value: 1783846800
+  - entity: d57890ee-04ca-46f9-92e1-bee9fda7ec55
   title:
-    -
-      value: 'What Fen & Marble Actually Use to Pitch New Clients'
+  - value: What Fen & Marble Actually Use to Pitch New Clients
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/what-fen-marble-actually-use-pitch-new-clients
-      langcode: en
+  - alias: /news/what-fen-marble-actually-use-pitch-new-clients
+    langcode: en
   field_content:
-    -
-      value: '<p>A notebook, a set of pencils and a one-page brief: the studio walks through the kit it brings to every first meeting.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>There is no deck. There is a notebook, a set of pencils, and a single sheet of A4 with the brief written on it in the client''s own words.</p>
+
+      <p>Process stories are easy to romanticise. The studios worth listening to describe theirs in terms of what it costs them, not what it saves.</p>
+
+      <p>Rae Okonjo, who runs new business at the studio, has been close to it from the start.</p>
+
+      <h2>The decision</h2>
+
+      <p>The first meeting lasts ninety minutes and produces one page. The studio writes it, the client edits it, and nothing is designed until both sides sign the same sentence.</p>
+
+      <p>It took three attempts. The first was abandoned at the end of the first month, the second survived until costing, and the third is the one standing.</p>
+
+      <p>The method loses them work, and they can tell you exactly how much.</p>
+
+      <blockquote><p>A picture in the first meeting is a promise you have not costed yet.</p><footer>Okonjo</footer></blockquote>
+
+      <h2>In practice</h2>
+
+      <p>They stopped presenting visual work at pitch stage in 2023, after tracking that four of five projects that began with images ended in a rewritten brief.</p>
+
+      <p>None of this scales cleanly. Ask any of them to run it across forty people and they go quiet.</p>
+
+      <p>It has been well received by the audience it was made for and largely ignored by everyone else, which the team says is the outcome they wanted.</p>
+
+      <p>Asked what they would change, the team answers with process rather than product: earlier conversations, fewer assumptions carried over from the last job, and a willingness to lose an argument in
+      the first week rather than the last.</p>
+
+      <h2>What comes next</h2>
+
+      <p>Of the eleven pitches they ran last year on the one-page brief, they won seven, and none was rescoped after signature.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'A notebook, a set of pencils and a one-page brief: the studio walks through the kit it brings to every first meeting.'
+  - value: 'A notebook, a set of pencils and a one-page brief: the studio walks through the kit it brings to every first meeting.'
   field_featured_image:
-    -
-      entity: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
+  - entity: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
   field_news_categories:
-    -
-      entity: 98932ae0-060a-4811-8c93-dcea81871372
+  - entity: 98932ae0-060a-4811-8c93-dcea81871372
+  created:
+  - value: 1783846800
+  changed:
+  - value: 1783846800

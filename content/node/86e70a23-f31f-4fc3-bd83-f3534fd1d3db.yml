@@ -10,52 +10,64 @@ _meta:
     50114c5e-67f5-4532-bf45-6a65b755a79e: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
-  created:
-    -
-      value: 1776330000
-  changed:
-    -
-      value: 1776330000
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   title:
-    -
-      value: "Why This Airline's New Logo Took Four Years"
+  - value: Why This Airline's New Logo Took Four Years
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/why-airlines-new-logo-took-four-years
-      langcode: en
+  - alias: /news/why-airlines-new-logo-took-four-years
+    langcode: en
   field_content:
-    -
-      value: '<p>Arclight Studio walks through the internal politics, three scrapped directions, and the one executive who almost killed the project entirely before it shipped.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>Three scrapped directions, one change of chief executive, and a mark that survived because a single engineer liked it on a tail fin mock-up.</p>
+
+      <p>Identity work is judged twice: once in the room where it is presented, and once, much later, by people who never saw the presentation and have no idea a decision was made.</p>
+
+      <p>Sana Kovač, who was given access to the project files, has been close to it from the start.</p>
+
+      <h2>The decision</h2>
+
+      <p>The studio presented in year one, year two and year four. The mark that shipped is closest to the year-one work, redrawn at a different weight.</p>
+
+      <p>Budget was fixed before the brief was finished, which is the wrong order and, everyone involved agrees, the usual one.</p>
+
+      <p>The internal politics, not the design, is the story here, and both sides now agree on that.</p>
+
+      <blockquote><p>Nothing was wrong with the first route. There was simply nobody left in the room who had approved it.</p><footer>one person close to the project</footer></blockquote>
+
+      <h2>In practice</h2>
+
+      <p>The delay cost the airline a repaint cycle, which means fourteen aircraft flew for two years in a livery nobody intended to keep.</p>
+
+      <p>The work will be judged on the boring surfaces: the app, the boarding pass, the sign above a desk in a regional office. That is where identities actually live.</p>
+
+      <p>The first week brought the kind of attention nobody plans for, and the second brought the criticism that actually changed something.</p>
+
+      <p>They are careful about what they claim. Two of the decisions that look deliberate now were, by their own account, the only option left by the time anyone noticed.</p>
+
+      <h2>What comes next</h2>
+
+      <p>The full identity lands next month, four years and one chief executive later.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'Arclight Studio walks through the internal politics, three scrapped directions, and the one executive who almost killed the project entirely before it shipped.'
+  - value: Arclight Studio walks through the internal politics, three scrapped directions, and the one executive who almost killed the project entirely before it shipped.
   field_featured_image:
-    -
-      entity: 471e541e-c707-45ed-ac0f-fa2624c4bce4
+  - entity: 471e541e-c707-45ed-ac0f-fa2624c4bce4
   field_news_categories:
-    -
-      entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
+  - entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
+  created:
+  - value: 1776330000
+  changed:
+  - value: 1776330000

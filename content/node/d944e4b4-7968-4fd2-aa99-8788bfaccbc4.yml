@@ -10,52 +10,64 @@ _meta:
     50114c5e-67f5-4532-bf45-6a65b755a79e: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  - entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
-  created:
-    -
-      value: 1783155600
-  changed:
-    -
-      value: 1783155600
+  - entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
   title:
-    -
-      value: "A Studio's New Icon Set Ditches Every Convention"
+  - value: A Studio's New Icon Set Ditches Every Convention
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/studios-new-icon-set-ditches-every-convention
-      langcode: en
+  - alias: /news/studios-new-icon-set-ditches-every-convention
+    langcode: en
   field_content:
-    -
-      value: '<p>No rounded corners, no consistent stroke weight, and a triangle where you expect a house.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>No rounded corners. No consistent stroke weight. A triangle where a play button should be, pointing very slightly downward.</p>
+
+      <p>The system has to survive people who do not care about it. That is the actual test, and it happens in procurement, in email signatures and on signage nobody briefed.</p>
+
+      <p>Tomas Adeyemi, who saw the set in progress, has been close to it from the start.</p>
+
+      <h2>Background</h2>
+
+      <p>The set was drawn at 48 pixels and never tested smaller, which the studio treats as a constraint rather than an oversight.</p>
+
+      <p>The timeline tells its own story: eighteen months from first conversation to the point anyone outside the room saw anything, and then six weeks in which everything visible was decided.</p>
+
+      <p>The client tested it against their old set with 400 users, and comprehension went up on 14 icons and down on three.</p>
+
+      <blockquote><p>Consistency is a way of avoiding decisions. We made 60 decisions instead.</p><footer>the studio''s founder</footer></blockquote>
+
+      <h2>The method</h2>
+
+      <p>Each icon breaks one rule and only one, so the family holds together while no two members share a grid.</p>
+
+      <p>The system survives or fails on its worst application, not its best, and nobody presents that slide.</p>
+
+      <p>Reaction has split along predictable lines. The people who have to maintain it have the sharpest questions, and the fairest ones.</p>
+
+      <p>There is no shortage of people willing to call it inevitable in hindsight. Nobody involved describes it that way.</p>
+
+      <h2>Where it goes</h2>
+
+      <p>The three that lost are being redrawn. The rest ship next month.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'No rounded corners, no consistent stroke weight, and a triangle where you expect a house.'
+  - value: No rounded corners, no consistent stroke weight, and a triangle where you expect a house.
   field_featured_image:
-    -
-      entity: e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee
+  - entity: e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee
   field_news_categories:
-    -
-      entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
+  - entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
+  created:
+  - value: 1783155600
+  changed:
+  - value: 1783155600

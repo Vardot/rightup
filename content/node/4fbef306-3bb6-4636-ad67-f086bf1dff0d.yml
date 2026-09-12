@@ -10,52 +10,64 @@ _meta:
     6bc5ea95-be6c-43c0-8c08-6a29feb25494: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
-  created:
-    -
-      value: 1783933200
-  changed:
-    -
-      value: 1783933200
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   title:
-    -
-      value: 'A Danish Lighting Brand Just Reissued Its Most Controversial Chair'
+  - value: A Danish Lighting Brand Just Reissued Its Most Controversial Chair
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/danish-lighting-brand-just-reissued-its-most-controversial-chair
-      langcode: en
+  - alias: /news/danish-lighting-brand-just-reissued-its-most-controversial-chair
+    langcode: en
   field_content:
-    -
-      value: '<p>Pulled from production after a single season in 1971, the cantilevered chair is back with a new base and the same argument about comfort.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>It was pulled from production after a single season in 1971, and for fifty-four years the only way to sit in one was to find a collector willing to let you.</p>
+
+      <p>Manufacturing decided most of this, as it usually does. The tooling that survived set the limits, and the design worked inside them.</p>
+
+      <p>Mette Lindqvist, the brand''s design director, has been close to it from the start.</p>
+
+      <h2>What changed</h2>
+
+      <p>The original chair used a cantilevered steel frame that flexed further than the market was ready for. Two dealers refused to stock it.</p>
+
+      <p>The timeline tells its own story: eighteen months from first conversation to the point anyone outside the room saw anything, and then six weeks in which everything visible was decided.</p>
+
+      <p>The archive drawings were incomplete, so the team worked from three surviving chairs and a set of 1970 press photographs.</p>
+
+      <blockquote><p>We were not going to make it politer. The whole point of the chair is that it moves.</p><footer>Lindqvist</footer></blockquote>
+
+      <h2>How it works</h2>
+
+      <p>The reissue keeps the flex and changes the foam. The seat is now a moulded latex core, which holds its shape through the movement the frame allows.</p>
+
+      <p>The reissue market rewards fidelity and punishes nostalgia, and the difference between them is usually a single component.</p>
+
+      <p>Reaction has split along predictable lines. The people who have to maintain it have the sharpest questions, and the fairest ones.</p>
+
+      <p>They are careful about what they claim. Two of the decisions that look deliberate now were, by their own account, the only option left by the time anyone noticed.</p>
+
+      <h2>What happens next</h2>
+
+      <p>It ships in March, in the original four colours and one the brand describes only as a mistake worth keeping.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'Pulled from production after a single season in 1971, the cantilevered chair is back with a new base and the same argument about comfort.'
+  - value: Pulled from production after a single season in 1971, the cantilevered chair is back with a new base and the same argument about comfort.
   field_featured_image:
-    -
-      entity: 5a4fa9a3-bc3e-4db7-a9dd-23ce48420fe7
+  - entity: 5a4fa9a3-bc3e-4db7-a9dd-23ce48420fe7
   field_news_categories:
-    -
-      entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  - entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  created:
+  - value: 1783933200
+  changed:
+  - value: 1783933200

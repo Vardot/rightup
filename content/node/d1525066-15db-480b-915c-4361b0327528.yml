@@ -10,52 +10,64 @@ _meta:
     baf8b2de-ae5c-4bf8-9cf2-b6753bd31605: taxonomy_term
 default:
   revision_uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   revision_log:
-    -
-      value: 'Created new News post'
+  - value: Created new News post
   status:
-    -
-      value: true
+  - value: true
   uid:
-    -
-      entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
-  created:
-    -
-      value: 1783155600
-  changed:
-    -
-      value: 1783155600
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
   title:
-    -
-      value: "A Photographer's 10-Year Study of Ceremony and Color in West Africa"
+  - value: A Photographer's 10-Year Study of Ceremony and Color in West Africa
   promote:
-    -
-      value: false
+  - value: false
   sticky:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   moderation_state:
-    -
-      value: published
+  - value: published
   path:
-    -
-      alias: /news/photographers-10-year-study-ceremony-and-color-west-africa
-      langcode: en
+  - alias: /news/photographers-10-year-study-ceremony-and-color-west-africa
+    langcode: en
   field_content:
-    -
-      value: '<p>A decade of return visits produced a book about the colours people choose for the days that matter.</p><p>We spoke to the people closest to the work about how it came together, what changed along the way, and what they would do differently next time.</p><p>The full story, with drawings, process photographs and a timeline of the project, follows below.</p>'
-      format: full_html
+  - value: '<p>Ten years of return visits, the same three villages, the same week of the year, and a slowly changing cast.</p>
+
+      <p>Shows like this one tend to be remembered for a single room, and the argument about whether the rest earned it starts on the second weekend.</p>
+
+      <p>Sana Kovač, who wrote the book''s afterword, has been close to it from the start.</p>
+
+      <h2>What changed</h2>
+
+      <p>The photographs are not arranged by year. They are arranged by colour, so a 2016 procession sits beside one from 2023 because both are carrying the same blue.</p>
+
+      <p>Two of the people who started the project had left by the time it finished, and the handover notes are now part of the studio''s standard kit.</p>
+
+      <p>The decision to sequence by colour cost the book its chronology, which two editors argued against.</p>
+
+      <blockquote><p>I stopped photographing the ceremony and started photographing the return.</p><footer>the photographer</footer></blockquote>
+
+      <h2>How it works</h2>
+
+      <p>The final section prints the same nine people in the same order across a decade, one page per year, with nothing else on the spread.</p>
+
+      <p>The measure will be whether anything changes afterwards, in the collection or the programme, rather than in the press release.</p>
+
+      <p>Peers have been generous in public and more pointed in private, mostly about cost.</p>
+
+      <p>They are careful about what they claim. Two of the decisions that look deliberate now were, by their own account, the only option left by the time anyone noticed.</p>
+
+      <h2>What happens next</h2>
+
+      <p>It is out this month in an edition of 1,500.</p>'
+    format: full_html
   field_description:
-    -
-      value: 'A decade of return visits produced a book about the colours people choose for the days that matter.'
+  - value: A decade of return visits produced a book about the colours people choose for the days that matter.
   field_featured_image:
-    -
-      entity: 157504de-26e6-4c11-ae7a-cdb685af89cc
+  - entity: 157504de-26e6-4c11-ae7a-cdb685af89cc
   field_news_categories:
-    -
-      entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  - entity: baf8b2de-ae5c-4bf8-9cf2-b6753bd31605
+  created:
+  - value: 1783155600
+  changed:
+  - value: 1783155600
