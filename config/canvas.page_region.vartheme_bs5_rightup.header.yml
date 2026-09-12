@@ -26,7 +26,7 @@ component_tree:
     inputs:
       bg_edge2edge: true
       container_type: container
-      background_color: bg-black
+      background_color: bg-primary
       text_color: text-white
       columns: 33-33-33
       gutter: 'gx-3 gy-3'
