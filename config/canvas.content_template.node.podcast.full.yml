@@ -3,42 +3,54 @@ status: true
 dependencies:
   config:
   - canvas.component.block.system_breadcrumb_block
+  - canvas.component.block.webform_block
   - canvas.component.sdc.vartheme_bs5_rightup.audio-player-remote
   - canvas.component.sdc.vartheme_bs5_rightup.date
+  - canvas.component.sdc.vartheme_bs5_rightup.divider
   - canvas.component.sdc.vartheme_bs5_rightup.heading
   - canvas.component.sdc.vartheme_bs5_rightup.image
   - canvas.component.sdc.vartheme_bs5_rightup.rich-text
   - canvas.component.sdc.vartheme_bs5_rightup.section
   - canvas.component.sdc.vartheme_bs5_rightup.share
-  - canvas.component.sdc.vartheme_bs5_rightup.spacer
-  - core.entity_view_mode.node.full
-  - field.field.media.image.field_media_image
-  - field.field.node.podcast.field_audio_url
-  - field.field.node.podcast.field_content
-  - field.field.node.podcast.field_featured_image
-  - image.style.canvas_parametrized_width
-  - media.type.image
-  - node.type.podcast
+  - canvas.component.sdc.vartheme_bs5_rightup.text
   module:
   - file
   - link
   - media
   - node
   - options
+  - webform
 id: node.podcast.full
 content_entity_type_id: node
 content_entity_type_bundle: podcast
 content_entity_type_view_mode: full
 component_tree:
-  6c59d778-cb91-421a-a711-c90364a28869:
-    uuid: 6c59d778-cb91-421a-a711-c90364a28869
+  69de13ac-39e5-565e-b5c8-606e1516d5e3:
+    uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      container_type: container
+      columns: 67-33
+      bg_edge2edge: true
+      background_color: bg-primary
+      text_color: text-white
+      section_header: true
+      gutter: gx-5 gy-5
+      vertical_alignment: align-items-center
+      padding_block_start: pt-4
+      padding_block_end: pb-5
+  e4508d16-1ac0-5feb-9b34-4b539d763ce3:
+    uuid: e4508d16-1ac0-5feb-9b34-4b539d763ce3
     component_id: block.system_breadcrumb_block
     component_version: 0d7e961dd03aa710
     inputs:
       label: Breadcrumbs
       label_display: '0'
-  4bc8f966-3577-45e3-b94d-2e0353a4c45e:
-    uuid: 4bc8f966-3577-45e3-b94d-2e0353a4c45e
+    parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
+    slot: header_slot
+  0751d455-1416-5b01-9069-9c4654b01bc4:
+    uuid: 0751d455-1416-5b01-9069-9c4654b01bc4
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
@@ -46,96 +58,12 @@ component_tree:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:podcast␝title␞␟value
       level: 1
-  79877a3b-05fc-421c-93a5-9710e33906e4:
-    uuid: 79877a3b-05fc-421c-93a5-9710e33906e4
-    component_id: sdc.vartheme_bs5_rightup.spacer
-    component_version: 80de1b3919d08f87
-    inputs:
-      size: py-1
-  9bafb45d-64f3-40ea-838b-d806304fdb1b:
-    uuid: 9bafb45d-64f3-40ea-838b-d806304fdb1b
-    component_id: sdc.vartheme_bs5_rightup.date
-    component_version: 3eae6f5d223f6bda
-    inputs:
-      date:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:podcast␝created␞␟value
-        adapter: unix_to_date
-  2594cf23-52b0-4d4c-a38d-bd13e833647c:
-    uuid: 2594cf23-52b0-4d4c-a38d-bd13e833647c
-    component_id: sdc.vartheme_bs5_rightup.spacer
-    component_version: 80de1b3919d08f87
-    inputs:
-      size: py-2
-  a522bcae-8f3b-44db-85aa-6b6c0843fd2d:
-    uuid: a522bcae-8f3b-44db-85aa-6b6c0843fd2d
-    component_id: sdc.vartheme_bs5_rightup.image
-    component_version: 20b07c548b4cf729
-    inputs:
-      media:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:podcast␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
-      target: self
-      ratio: ratio-16x9
-      width: w-100
-      rounded: rounded-3
-      loading: lazy
-  d96a8cf2-c31f-4399-9d43-34ae1c538ff5:
-    uuid: d96a8cf2-c31f-4399-9d43-34ae1c538ff5
-    component_id: sdc.vartheme_bs5_rightup.spacer
-    component_version: 80de1b3919d08f87
-    inputs:
-      size: py-4
-  fcd39a7f-58b1-4765-b6e2-8dd271c61a10:
-    uuid: fcd39a7f-58b1-4765-b6e2-8dd271c61a10
-    component_id: sdc.vartheme_bs5_rightup.share
-    component_version: 24d3cc5800d6bb4f
-    inputs:
-      heading: Share
-      display_title: true
-      alignment: end
-      orientation: vertical
-      native_share: false
-      placement: rail-end
-      share_title:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:podcast␝title␞␟value
-  2ad71a1b-f9a6-4d62-a765-ed566b65d6f4:
-    uuid: 2ad71a1b-f9a6-4d62-a765-ed566b65d6f4
-    component_id: sdc.vartheme_bs5_rightup.section
-    component_version: 038d91867e142dd2
-    inputs:
-      bg_edge2edge: false
-      columns: '100'
-      padding_inline_start: ps-5
-      padding_inline_end: pe-5
-      margin_inline_start: ms-5
-      margin_inline_end: me-5
-      radius: none
-      section_header: false
-      section_footer: false
-      aos_once: true
-  15697915-9207-41c3-a02c-6d92d7100b69:
-    parent_uuid: 2ad71a1b-f9a6-4d62-a765-ed566b65d6f4
+      text_size: h1
+      text_color: text-white
+    parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
     slot: col_1
-    uuid: 15697915-9207-41c3-a02c-6d92d7100b69
-    component_id: sdc.vartheme_bs5_rightup.spacer
-    component_version: 80de1b3919d08f87
-    inputs:
-      size: py-4
-  eba53163-5f67-45f2-a4b9-85ce9454caf0:
-    parent_uuid: 2ad71a1b-f9a6-4d62-a765-ed566b65d6f4
-    slot: col_1
-    uuid: eba53163-5f67-45f2-a4b9-85ce9454caf0
-    component_id: sdc.vartheme_bs5_rightup.rich-text
-    component_version: 82cd1f087fd469f4
-    inputs:
-      text:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:podcast␝field_content␞␟processed
-      trim: false
-  3468a926-7940-4af1-8ea2-758f8aa181de:
-    uuid: 3468a926-7940-4af1-8ea2-758f8aa181de
+  7b3ab962-bb3e-5281-a383-c9419babd71e:
+    uuid: 7b3ab962-bb3e-5281-a383-c9419babd71e
     component_id: sdc.vartheme_bs5_rightup.audio-player-remote
     component_version: 819d7e678c6c2129
     inputs:
@@ -153,4 +81,159 @@ component_tree:
       show_time: true
       show_download: false
       accent_color: accent
+    parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
+    slot: col_1
+  85deeb50-fa6b-53ee-b163-ca73f4fa7f54:
+    uuid: 85deeb50-fa6b-53ee-b163-ca73f4fa7f54
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      target: self
+      ratio: ratio-1x1
+      fit: object-fit-cover
+      width: w-100
+      rounded: none
+      loading: eager
+    parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
+    slot: col_2
+  da4542ea-ac3e-580a-b3e7-67f452917b2b:
+    uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      container_type: container
+      columns: 67-33
+      bg_edge2edge: false
+      gutter: gx-5 gy-5
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  1dc5e20b-c6a0-562f-b91c-560a4b040f26:
+    uuid: 1dc5e20b-c6a0-562f-b91c-560a4b040f26
+    component_id: sdc.vartheme_bs5_rightup.date
+    component_version: 3eae6f5d223f6bda
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝created␞␟value
+        adapter: unix_to_date
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  3f5124b9-c7b9-5a2b-ada7-53ebb0a896ef:
+    uuid: 3f5124b9-c7b9-5a2b-ada7-53ebb0a896ef
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: 34499abda8277068
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_duration␞␟value
+      text_size: fs-6
+      text_color: text-muted
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  10948b7f-e251-5852-a6b2-f24f960b1876:
+    uuid: 10948b7f-e251-5852-a6b2-f24f960b1876
+    component_id: sdc.vartheme_bs5_rightup.share
+    component_version: 24d3cc5800d6bb4f
+    inputs:
+      heading: Share
+      display_title: true
+      alignment: start
+      orientation: horizontal
+      native_share: false
+      placement: inline
+      share_title:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  cf6fc9fc-c9d9-54d4-b3e2-b9ffd292c791:
+    uuid: cf6fc9fc-c9d9-54d4-b3e2-b9ffd292c791
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 3351739a2f3f46b5
+    inputs:
+      border_color: border-black
+      margin_top: mt-3
+      margin_bottom: mb-3
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  16f6537d-6628-5865-a552-4cb45d6378fa:
+    uuid: 16f6537d-6628-5865-a552-4cb45d6378fa
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: Details
+      level: 2
+      text_size: h4
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  53c3e6d6-689d-5f47-916f-414faa92724c:
+    uuid: 53c3e6d6-689d-5f47-916f-414faa92724c
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: 34499abda8277068
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_description␞␟value
+      text_color: text-body
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  56e260c9-d0bd-5f3a-9797-644d273cc887:
+    uuid: 56e260c9-d0bd-5f3a-9797-644d273cc887
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: Audio Transcript
+      level: 2
+      text_size: h4
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  9233325e-a19d-5eb2-924d-4a2ea58f7ae4:
+    uuid: 9233325e-a19d-5eb2-924d-4a2ea58f7ae4
+    component_id: sdc.vartheme_bs5_rightup.rich-text
+    component_version: 82cd1f087fd469f4
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_content␞␟processed
+      trim: false
+    parent_uuid: da4542ea-ac3e-580a-b3e7-67f452917b2b
+    slot: col_1
+  e6393fcd-92e7-527a-85c8-ea1974e66069:
+    uuid: e6393fcd-92e7-527a-85c8-ea1974e66069
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      container_type: container
+      columns: 67-33
+      bg_edge2edge: true
+      background_color: bg-accent-subtle
+      vertical_alignment: align-items-center
+      padding_block_start: pt-4
+      padding_block_end: pb-4
+  93552188-e00c-50c7-8551-48c261781f61:
+    uuid: 93552188-e00c-50c7-8551-48c261781f61
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: The best of Right Up, delivered to you weekly.
+      level: 2
+      text_size: h4
+    parent_uuid: e6393fcd-92e7-527a-85c8-ea1974e66069
+    slot: col_1
+  dd10258d-79a4-516c-9c04-aa94593e569d:
+    uuid: dd10258d-79a4-516c-9c04-aa94593e569d
+    component_id: block.webform_block
+    component_version: b5dca6ca0519bf1b
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+    parent_uuid: e6393fcd-92e7-527a-85c8-ea1974e66069
+    slot: col_2
 exposed_slots: {}
