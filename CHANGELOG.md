@@ -22,3 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   pages, their 18 media items and the menu links that pointed at them are gone, and the shipped
   Canvas patterns and the Hero Slide and Card Hero component defaults carry RightUp copy instead of
   Varbase marketing copy.
+
+### Fixed
+- The admin favicon and the Gin, Gin Login and Navigation logos 404'd on a Drupal CMS site: the Varbase
+  admin base recipe points them at Varbase profile and starter-theme images that do not exist there.
+  RightUp now points Gin and Gin Login at its own theme's `favicon.ico` and `logo.svg`, and the
+  Navigation logo at the default provider until the theme ships a square icon.
