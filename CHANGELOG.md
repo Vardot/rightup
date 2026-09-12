@@ -24,6 +24,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Varbase marketing copy.
 
 ### Fixed
+- Every front-end page returned HTTP 500 after installing on Drupal CMS: the header page region pinned the
+  `icon-toggle` and `button` components to versions (`1fabce12570a28f0`, `89760b927a14a505`) that no shipped
+  component config declares. The header now references their shipped active versions, and the recipe ships
+  the `offcanvas-menu` component config the header depends on.
 - The admin favicon and the Gin, Gin Login and Navigation logos 404'd on a Drupal CMS site: the Varbase
   admin base recipe points them at Varbase profile and starter-theme images that do not exist there.
   RightUp now points Gin and Gin Login at its own theme's `favicon.ico` and `logo.svg`, and the

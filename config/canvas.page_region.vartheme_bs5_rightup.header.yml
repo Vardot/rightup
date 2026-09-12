@@ -125,7 +125,7 @@ component_tree:
     slot: content
     uuid: acb01c9a-335d-415a-91c9-0e35b369efa1
     component_id: sdc.vartheme_bs5_rightup.icon-toggle
-    component_version: 1fabce12570a28f0
+    component_version: ab1b678dc1806d89
     inputs:
       icon: search
       label: Search
@@ -148,7 +148,7 @@ component_tree:
     slot: content
     uuid: cc4b79ee-b129-4f32-882c-37b51e8ce17a
     component_id: sdc.vartheme_bs5_rightup.button
-    component_version: 89760b927a14a505
+    component_version: 7c8b7b626a4fbd83
     inputs:
       variant: btn-accent
       outline: false

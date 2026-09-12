@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - vartheme_bs5_rightup
+active_version: b15fbf5fea2cb26b
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Open menu'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        close_label:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Close menu'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        placement:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: start
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        expand_in_editor:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        menu:
+          title: 'Main menu'
+          description: 'The primary navigation links, e.g. a "Main navigation" menu block rendered through the Nav Menu component.'
+        utility:
+          title: 'Utility links'
+          description: 'Secondary links shown below the divider, e.g. Newsletter, About, Advertise.'
+        search:
+          title: Search
+          description: "Search form, e.g. the 'Exposed form: search-page' block."
+label: 'Offcanvas Menu'
+id: sdc.vartheme_bs5_rightup.offcanvas-menu
+provider: vartheme_bs5_rightup
+source: sdc
+source_local_id: 'vartheme_bs5_rightup:offcanvas-menu'
+
