@@ -24,7 +24,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
       container_type: container
-      columns: 20-80
+      columns: 80-20
       bg_edge2edge: true
       background_color: bg-black
       text_color: text-white
@@ -41,7 +41,7 @@ default:
       label: Breadcrumbs
       label_display: '0'
   - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
-    slot: col_1
+    slot: col_2
     uuid: 104ca26e-da7f-50f9-a2a6-2639a4de906a
     component_id: sdc.vartheme_bs5_rightup.image
     inputs:
@@ -53,7 +53,7 @@ default:
       fit: object-fit-cover
       width: w-100
   - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
-    slot: col_2
+    slot: col_1
     uuid: 5e3ac53c-f732-53ba-813a-5a4e70b17f34
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
@@ -62,7 +62,7 @@ default:
       text_size: h1
       text_color: text-white
   - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
-    slot: col_2
+    slot: col_1
     uuid: 7b780b09-df43-5fff-9a2d-238a62079bc0
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
@@ -73,7 +73,7 @@ default:
       text_size: fs-5
       text_color: text-white
   - parent_uuid: 3eb0e286-93d0-581a-ad84-cf87bd889108
-    slot: col_2
+    slot: col_1
     uuid: ec413002-4173-5c57-a2dd-b3b3591a5476
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
@@ -88,8 +88,6 @@ default:
       container_type: container
       columns: '100'
       bg_edge2edge: true
-      background_color: bg-black
-      text_color: text-white
       section_header: true
       padding_block_end: pb-5
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -99,14 +97,14 @@ default:
     inputs:
       text: Episodes
       text_size: fs-6
-      border_color: border-light
+      border_color: border-tertiary
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/studio-wont-use-mood-board
@@ -118,8 +116,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 17
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
@@ -130,7 +128,6 @@ default:
       heading_text: The Studio That Won't Use a Mood Board
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
     slot: content
     uuid: 2a49ccd4-4028-5ed9-892c-3b456b6d1632
@@ -140,7 +137,6 @@ default:
         value: <p>Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients
           ask for one by name.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
     slot: content
     uuid: 3120ceab-d4cf-5d62-bc25-4075ecb8064f
@@ -150,13 +146,13 @@ default:
         value: <p>Hosted by Idris Calloway · 42 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 1f0de455-5305-5d3e-a739-175016e73eb4
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      border_color: border-light
+      border_color: border-black
       margin_top: mt-3
       margin_bottom: mb-3
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -165,7 +161,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/no-straight-walls
@@ -177,8 +173,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 16
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
@@ -189,7 +185,6 @@ default:
       heading_text: No Straight Walls
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
     slot: content
     uuid: ff97ab3c-abd9-5701-9002-33d7067985d4
@@ -199,7 +194,6 @@ default:
         value: <p>An architect on designing a museum wing with no straight walls, why the client said yes on the first pass,
           and what almost went wrong in construction when the contractor's crew had never framed a curve before.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
     slot: content
     uuid: ae551475-6cd3-51bb-aa83-ffb5bbf500ab
@@ -209,13 +203,13 @@ default:
         value: <p>Hosted by Noor Fasi · 55 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 03456948-fd58-5224-9c76-a3d5e13cb4bb
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      border_color: border-light
+      border_color: border-black
       margin_top: mt-3
       margin_bottom: mb-3
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -224,7 +218,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/three-years-without-deck
@@ -236,8 +230,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 15
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
@@ -248,7 +242,6 @@ default:
       heading_text: Three Years Without a Deck
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
     slot: content
     uuid: dc42242a-3779-514a-8275-32ca7f8a0d4c
@@ -258,7 +251,6 @@ default:
         value: <p>Inside the studio that hasn't touched a computer for client presentations in three years, and how they've
           kept winning work without one.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
     slot: content
     uuid: 6ab8ff79-d480-55e1-b84d-26f46d324e16
@@ -268,13 +260,13 @@ default:
         value: <p>Hosted by Idris Calloway · 37 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 6ab82ece-33b8-53c6-b052-93e95311e202
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      border_color: border-light
+      border_color: border-black
       margin_top: mt-3
       margin_bottom: mb-3
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -283,7 +275,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/client-who-fired-whole-deck
@@ -295,8 +287,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 14
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
@@ -307,7 +299,6 @@ default:
       heading_text: The Client Who Fired the Whole Deck
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
     slot: content
     uuid: 5e2713a4-4ab2-5d72-bf82-73fdf7b19ecc
@@ -317,7 +308,6 @@ default:
         value: <p>A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and
           why they've never gone back to slides since.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
     slot: content
     uuid: d3559f2d-e238-5208-9938-4cff1d577215
@@ -327,13 +317,13 @@ default:
         value: <p>Hosted by Noor Fasi · 48 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 025c8460-9bcb-53ad-b5ca-c97a20194030
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      border_color: border-light
+      border_color: border-black
       margin_top: mt-3
       margin_bottom: mb-3
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -342,7 +332,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/intern-who-redesigned-office
@@ -354,8 +344,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 13
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
@@ -366,7 +356,6 @@ default:
       heading_text: The Intern Who Redesigned the Office
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
     slot: content
     uuid: 2da12c16-b519-552f-bcb9-d21b8970590d
@@ -376,7 +365,6 @@ default:
         value: <p>A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and
           no way to undo it before the partners return from a two-week trip abroad.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
     slot: content
     uuid: 227b9e0d-5070-56ce-b4b9-ce2e9962dee6
@@ -386,13 +374,13 @@ default:
         value: <p>Hosted by Idris Calloway · 44 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 18292ea0-254f-53e9-a54b-bee4e497caed
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      border_color: border-light
+      border_color: border-black
       margin_top: mt-3
       margin_bottom: mb-3
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -401,7 +389,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/what-rejected-pitch-actually-sounds
@@ -413,8 +401,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 12
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
@@ -425,7 +413,6 @@ default:
       heading_text: What a Rejected Pitch Actually Sounds Like
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
     slot: content
     uuid: fcba514b-37ae-548a-96e7-2c60071d0882
@@ -435,7 +422,6 @@ default:
         value: <p>We got permission to play the room tone from a pitch that fell apart in real time, including the thirty
           seconds of silence nobody wanted to fill and the recovery attempt that came two minutes too late to save the account.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
     slot: content
     uuid: fab698f8-ddc7-5070-88f9-c7199bb22c9d
@@ -445,13 +431,13 @@ default:
         value: <p>Hosted by Noor Fasi · 51 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
     slot: col_1
     uuid: 3e1a853c-e227-5532-915a-55fab60b4da8
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      border_color: border-light
+      border_color: border-black
       margin_top: mt-3
       margin_bottom: mb-3
   - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
@@ -460,7 +446,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
     inputs:
       background_color: none
-      icon_color: bg-accent
+      icon_color: bg-tertiary
       padded: false
       link_url:
         uri: internal:/podcast/studio-fires-itself-every-year
@@ -472,8 +458,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.taxonomy
     inputs:
       label: Episode 11
-      size: taxonomy-sm
-      color: text-accent
+      size: taxonomy-lg
+      color: text-tertiary
       no_padding: true
       justify_content: justify-content-start
   - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
@@ -484,7 +470,6 @@ default:
       heading_text: The Studio That Fires Itself Every Year
       level: 3
       text_size: h4
-      text_color: text-white
   - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
     slot: content
     uuid: b600d535-74a6-5908-97e5-0fc21ad4cc20
@@ -493,7 +478,6 @@ default:
       text:
         value: <p>Once a year, this practice dissolves and reforms under a new name, new structure, and often a new office.</p>
         format: canvas_html_block
-      text_color: text-white
   - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
     slot: content
     uuid: 94b56bc6-0a10-5758-978e-98340e69f856
@@ -503,7 +487,7 @@ default:
         value: <p>Hosted by Idris Calloway · 39 Mins</p>
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-subtle-text
   - uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
@@ -520,7 +504,7 @@ default:
     inputs:
       text: More Podcasts
       text_size: fs-6
-      border_color: border-black
+      border_color: border-tertiary
   - parent_uuid: e0852c00-de26-5e78-aec8-7314a830f2ec
     slot: col_1
     uuid: 4218cd29-3c6d-5b9b-8238-1c9dd815934f
@@ -534,8 +518,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: 4218cd29-3c6d-5b9b-8238-1c9dd815934f
     slot: content_slot
     uuid: 1fd8e7f4-5c24-5c0a-813a-6561fd8925f7
@@ -566,8 +551,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: 43c040cc-337f-5d83-b4b8-87be6b4fa22f
     slot: content_slot
     uuid: c77c0f91-6f9d-5f48-a707-5310b0839815
@@ -598,8 +584,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: bf026021-0f8b-579a-b5b4-234d08da5b4a
     slot: content_slot
     uuid: 787b1282-68c1-53a6-9dfa-dbc3a39b405e
@@ -689,6 +676,20 @@ default:
     component_id: sdc.vartheme_bs5_rightup.spacer
     inputs:
       size: py-0
+  - parent_uuid: e76b95af-c97f-5584-bb60-da82abaf4561
+    slot: col_1
+    uuid: 8660cb38-584f-4f84-bd9c-4caa4c5a8551
+    component_id: sdc.vartheme_bs5_rightup.button
+    inputs:
+      label: View More Episodes
+      variant: btn-dark
+      size: btn-md
+      radius: rounded-0
+      alignment: left
+      href:
+        uri: internal:/podcasts
+        options: {}
+      target: self
   path:
   - alias: /podcasts/last-call
     langcode: en

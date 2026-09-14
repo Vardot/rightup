@@ -113,8 +113,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>The decisions nobody sees, told by the people who made them. Every week, we sit down with a working studio
-          to talk through one project — start to finish, no polish, no pretending it went smoothly.</p>
+        value: <p>The decisions nobody sees, told by the people who made them.</p>
         format: canvas_html_block
       text_color: text-body
   - parent_uuid: a6923ed9-11cf-5efe-a590-b93d09333661
@@ -130,8 +129,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: 6747f86e-f989-5d3c-970b-454925e71bbb
     slot: content_slot
     uuid: 2c449e89-e9b5-5083-99dc-2cd7b06ce537
@@ -162,8 +162,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: efeafbc4-806a-5a79-ad0e-acfd47450ff6
     slot: content_slot
     uuid: ef630f34-5580-57b8-999f-a25afb0b4ba8
@@ -194,8 +195,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: abb58a5b-99ed-5bc3-b617-012795465b0b
     slot: content_slot
     uuid: 47e8c0b2-98b9-5efb-aa6a-f6c40d467aaf
@@ -226,8 +228,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: 5734d7ca-ba95-5f7f-9902-cc82f77a2e32
     slot: content_slot
     uuid: 4711d2fa-9d9d-5053-a6f5-24442dc744c4
@@ -258,8 +261,9 @@ default:
       image_ratio: ratio-1x1
       image_fit: object-fit-cover
       content_padding: false
-      button_text: ''
+      button_text: View Show
       button_target: _self
+      button_url: /podcasts
   - parent_uuid: 75676d6b-9d49-5206-a311-695b3fc53623
     slot: content_slot
     uuid: 0590d120-5db0-5e4e-965f-9a0d88d9d864

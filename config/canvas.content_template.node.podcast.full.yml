@@ -13,6 +13,7 @@ dependencies:
   - canvas.component.sdc.vartheme_bs5_rightup.rich-text
   - canvas.component.sdc.vartheme_bs5_rightup.section
   - canvas.component.sdc.vartheme_bs5_rightup.share
+  - canvas.component.sdc.vartheme_bs5_rightup.taxonomy
   - canvas.component.sdc.vartheme_bs5_rightup.text
   module:
   - file
@@ -50,6 +51,21 @@ component_tree:
       label_display: '0'
     parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
     slot: header_slot
+  6e23a8a0-d9d4-4394-a6da-4d4c7b5c38ce:
+    parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
+    slot: col_1
+    uuid: 6e23a8a0-d9d4-4394-a6da-4d4c7b5c38ce
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    component_version: 6c96c2405efc9655
+    inputs:
+      label:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_episode_number␞␟value
+      prefix: Episode
+      size: taxonomy-lg
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
   0751d455-1416-5b01-9069-9c4654b01bc4:
     uuid: 0751d455-1416-5b01-9069-9c4654b01bc4
     component_id: sdc.vartheme_bs5_rightup.heading
@@ -71,9 +87,6 @@ component_tree:
       url:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:podcast␝field_audio_url␞␟uri
-      title:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:podcast␝title␞␟value
       autoplay: false
       loop: false
       preload: none
@@ -92,9 +105,6 @@ component_tree:
       audio_url:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:podcast␝field_audio␞␟entity␜␜entity:file␝uri␞␟value
-      title:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:podcast␝title␞␟value
       autoplay: false
       loop: false
       preload: none
