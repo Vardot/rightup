@@ -7,6 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+    0bd12fb2-187a-508c-91a5-dba13bbe7837: file
 default:
   revision_uid:
   - target_id: 1
@@ -29,34 +30,44 @@ default:
   path:
   - alias: /podcast/client-who-fired-whole-deck
     langcode: en
+  field_audio:
+  - description: ''
+    entity: 0bd12fb2-187a-508c-91a5-dba13bbe7837
   field_content:
-  - value: '<p><strong>Noor Fasi:</strong> Let us start where most people would not. What did this cost you?</p>
+  - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. My guest runs a branding studio that hasn''t shown a slide to a client in years, and it started with a pitch that was over
+      in four minutes. Daniel Mercer, welcome.</p>
 
-      <p><strong>Guest:</strong> Time, mostly. About eleven weeks we did not bill for. The money we can explain to ourselves. The eleven weeks are harder.</p>
+      <p><strong>Daniel Mercer:</strong> Thanks, Noor. Four minutes and ten seconds. I checked.</p>
 
-      <p><strong>Noor Fasi:</strong> And you would do it again.</p>
+      <p><strong>Noor Fasi:</strong> Walk us through it, minute by minute.</p>
 
-      <p><strong>Guest:</strong> We are doing it again. That is the honest answer. We have two projects running the same way right now, and one of them is already late.</p>
+      <p><strong>Daniel Mercer:</strong> Minute one, introductions, all fine. Minute two, our first slide, the market overview. Minute three, the client''s chief executive closed her laptop.</p>
 
-      <p><strong>Noor Fasi:</strong> Walk me through the moment you knew it was working.</p>
+      <p><strong>Noor Fasi:</strong> That''s a sign.</p>
 
-      <p><strong>Guest:</strong> There was a meeting about six weeks in where nobody presented anything. We sat with the client and read the brief out loud, line by line, and changed four words. Everything
-      after that was easier, and I cannot fully tell you why.</p>
+      <p><strong>Daniel Mercer:</strong> It''s a very clear sign. Minute four, she asked the question that ended it. She said, you''ve shown me forty slides about my own company. When do I see what you
+      think?</p>
 
-      <p><strong>Noor Fasi:</strong> Four words.</p>
+      <p><strong>Noor Fasi:</strong> What did you say?</p>
 
-      <p><strong>Guest:</strong> Four words. We had written "a space for events" and they said, no, it is a space that survives events. Same building. Completely different set of decisions.</p>
+      <p><strong>Daniel Mercer:</strong> I said, it''s on slide twenty two. And she said, then we should have started there.</p>
 
-      <p><strong>Noor Fasi:</strong> What would you tell a studio about to try this?</p>
+      <p><strong>Noor Fasi:</strong> What did you change afterwards?</p>
 
-      <p><strong>Guest:</strong> Cost it properly, and tell the client what you are doing. The method only works if both sides know they are allowed to change their minds early. If you hide it, it just
-      looks like you are slow.</p>'
+      <p><strong>Daniel Mercer:</strong> Everything about the order. We walk in now with one idea, printed on one sheet of paper, and we talk about it until they either lean in or push back. The research
+      still exists. It just waits until someone asks for it.</p>
+
+      <p><strong>Noor Fasi:</strong> And you''ve never gone back to slides?</p>
+
+      <p><strong>Daniel Mercer:</strong> Not once. A few clients have asked for a deck afterwards, for their own board. We make them one. We just never lead with it.</p>
+
+      <p><strong>Noor Fasi:</strong> Daniel Mercer, thank you. That''s The Client Who Fired the Whole Deck, on The RightUp.</p>'
     format: full_html
   field_description:
   - value: A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and why they've never gone back to slides since. The founder walks through the exact meeting,
       minute by minute, including the question that ended it.
   field_duration:
-  - value: 48 Mins
+  - value: 2 Mins
   field_episode_number:
   - value: 14
   field_featured_image:

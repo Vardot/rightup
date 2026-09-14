@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 06bca1d8-8211-560b-8d32-a7743f52c664
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-ep16-no-straight-walls.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-ep16-no-straight-walls.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 748016
+  status:
+    -
+      value: true

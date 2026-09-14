@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e5fac6c4-a509-5129-a490-b1adf9be2d22
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-ep11-studio-fires-itself-every-year.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-ep11-studio-fires-itself-every-year.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 754307
+  status:
+    -
+      value: true

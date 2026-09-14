@@ -7,6 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+    e5fac6c4-a509-5129-a490-b1adf9be2d22: file
 default:
   revision_uid:
   - target_id: 1
@@ -29,34 +30,40 @@ default:
   path:
   - alias: /podcast/studio-fires-itself-every-year
     langcode: en
+  field_audio:
+  - description: ''
+    entity: e5fac6c4-a509-5129-a490-b1adf9be2d22
   field_content:
-  - value: '<p><strong>Idris Calloway:</strong> Let us start where most people would not. What did this cost you?</p>
+  - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. Every January, one studio shuts its doors, retires its name, and opens again a week later as something new.
+      My guest has been through that reset six times. Mara Okafor, welcome.</p>
 
-      <p><strong>Guest:</strong> Time, mostly. About eleven weeks we did not bill for. The money we can explain to ourselves. The eleven weeks are harder.</p>
+      <p><strong>Mara Okafor:</strong> Thanks, Idris. Seven, actually, if you count the one we abandoned halfway.</p>
 
-      <p><strong>Idris Calloway:</strong> And you would do it again.</p>
+      <p><strong>Idris Calloway:</strong> Let''s start with the obvious question. Why would a working studio dissolve itself on purpose?</p>
 
-      <p><strong>Guest:</strong> We are doing it again. That is the honest answer. We have two projects running the same way right now, and one of them is already late.</p>
+      <p><strong>Mara Okafor:</strong> Because the version of us that exists in December is tuned for last year''s clients. New name, new structure, often a new office. It forces us to ask what we''re for,
+      instead of assuming.</p>
 
-      <p><strong>Idris Calloway:</strong> Walk me through the moment you knew it was working.</p>
+      <p><strong>Idris Calloway:</strong> And the founder? I hear he''s stopped trying to explain it.</p>
 
-      <p><strong>Guest:</strong> There was a meeting about six weeks in where nobody presented anything. We sat with the client and read the brief out loud, line by line, and changed four words. Everything
-      after that was easier, and I cannot fully tell you why.</p>
+      <p><strong>Mara Okafor:</strong> He has. New hires ask him on day one, and he just says, stay until January and you''ll see. He''s not being mysterious. He genuinely can''t put it into a sentence.</p>
 
-      <p><strong>Idris Calloway:</strong> Four words.</p>
+      <p><strong>Idris Calloway:</strong> What does the reset actually cost you?</p>
 
-      <p><strong>Guest:</strong> Four words. We had written "a space for events" and they said, no, it is a space that survives events. Same building. Completely different set of decisions.</p>
+      <p><strong>Mara Okafor:</strong> About three weeks of billing, every single year. And a website we redesign whether we like it or not. Clients get a letter explaining the new name. Most of them find
+      it charming. A few find it exhausting.</p>
 
-      <p><strong>Idris Calloway:</strong> What would you tell a studio about to try this?</p>
+      <p><strong>Idris Calloway:</strong> So why does it work?</p>
 
-      <p><strong>Guest:</strong> Cost it properly, and tell the client what you are doing. The method only works if both sides know they are allowed to change their minds early. If you hide it, it just
-      looks like you are slow.</p>'
+      <p><strong>Mara Okafor:</strong> Nobody gets to coast on a reputation. Every year we pitch like we''re new, because on paper, we are.</p>
+
+      <p><strong>Idris Calloway:</strong> Mara Okafor, thank you. That''s The Studio That Fires Itself Every Year, on The RightUp.</p>'
     format: full_html
   field_description:
   - value: Once a year, this practice dissolves and reforms under a new name, new structure, and often a new office. Nobody on staff is entirely sure why it works, including the founder, who says he's stopped
       trying to explain it to new hires.
   field_duration:
-  - value: 39 Mins
+  - value: 2 Mins
   field_episode_number:
   - value: 11
   field_featured_image:

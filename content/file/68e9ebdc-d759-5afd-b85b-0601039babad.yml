@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 68e9ebdc-d759-5afd-b85b-0601039babad
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-ep13-intern-who-redesigned-office.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-ep13-intern-who-redesigned-office.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 703522
+  status:
+    -
+      value: true

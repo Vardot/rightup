@@ -4,6 +4,7 @@ dependencies:
   config:
   - canvas.component.block.system_breadcrumb_block
   - canvas.component.block.webform_block
+  - canvas.component.sdc.vartheme_bs5_rightup.audio-player-local
   - canvas.component.sdc.vartheme_bs5_rightup.audio-player-remote
   - canvas.component.sdc.vartheme_bs5_rightup.date
   - canvas.component.sdc.vartheme_bs5_rightup.divider
@@ -75,7 +76,28 @@ component_tree:
         expression: ℹ︎␜entity:node:podcast␝title␞␟value
       autoplay: false
       loop: false
-      preload: metadata
+      preload: none
+      show_skip: true
+      skip_seconds: '15'
+      show_time: true
+      show_download: false
+      accent_color: accent
+    parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
+    slot: col_1
+  2dfaf4b9-0ca0-578a-b001-cb68a728c6c3:
+    uuid: 2dfaf4b9-0ca0-578a-b001-cb68a728c6c3
+    component_id: sdc.vartheme_bs5_rightup.audio-player-local
+    component_version: de925c16eca13054
+    inputs:
+      audio_url:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝field_audio␞␟entity␜␜entity:file␝uri␞␟value
+      title:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:podcast␝title␞␟value
+      autoplay: false
+      loop: false
+      preload: none
       show_skip: true
       skip_seconds: '15'
       show_time: true

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 162b8305-0f41-5aec-a7ca-e60f6c0172e4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-ep15-three-years-without-deck.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-ep15-three-years-without-deck.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 740710
+  status:
+    -
+      value: true

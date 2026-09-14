@@ -7,6 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+    68e9ebdc-d759-5afd-b85b-0601039babad: file
 default:
   revision_uid:
   - target_id: 1
@@ -29,34 +30,43 @@ default:
   path:
   - alias: /podcast/intern-who-redesigned-office
     langcode: en
+  field_audio:
+  - description: ''
+    entity: 68e9ebdc-d759-5afd-b85b-0601039babad
   field_content:
-  - value: '<p><strong>Idris Calloway:</strong> Let us start where most people would not. What did this cost you?</p>
+  - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. Picture a studio handing its entire physical space to its newest hire. One month, no oversight, no budget cap,
+      and the partners abroad for two weeks with no way to undo anything. Lena Sato was that hire. Lena, welcome.</p>
 
-      <p><strong>Guest:</strong> Time, mostly. About eleven weeks we did not bill for. The money we can explain to ourselves. The eleven weeks are harder.</p>
+      <p><strong>Lena Sato:</strong> Thank you. I was three weeks into the job when they told me.</p>
 
-      <p><strong>Idris Calloway:</strong> And you would do it again.</p>
+      <p><strong>Idris Calloway:</strong> What was your first thought?</p>
 
-      <p><strong>Guest:</strong> We are doing it again. That is the honest answer. We have two projects running the same way right now, and one of them is already late.</p>
+      <p><strong>Lena Sato:</strong> Honestly, that it was a test I was supposed to refuse. It wasn''t.</p>
 
-      <p><strong>Idris Calloway:</strong> Walk me through the moment you knew it was working.</p>
+      <p><strong>Idris Calloway:</strong> So where did you start?</p>
 
-      <p><strong>Guest:</strong> There was a meeting about six weeks in where nobody presented anything. We sat with the client and read the brief out loud, line by line, and changed four words. Everything
-      after that was easier, and I cannot fully tell you why.</p>
+      <p><strong>Lena Sato:</strong> I watched how people actually worked for five days before moving a single desk. Nobody used the meeting room. Everyone took calls in the stairwell.</p>
 
-      <p><strong>Idris Calloway:</strong> Four words.</p>
+      <p><strong>Idris Calloway:</strong> And what did you change?</p>
 
-      <p><strong>Guest:</strong> Four words. We had written "a space for events" and they said, no, it is a space that survives events. Same building. Completely different set of decisions.</p>
+      <p><strong>Lena Sato:</strong> I took out the meeting room and built four small phone booths. I moved the partners'' desks into the middle of the floor, and I put the model workshop right by the entrance,
+      so clients walk past the work first.</p>
 
-      <p><strong>Idris Calloway:</strong> What would you tell a studio about to try this?</p>
+      <p><strong>Idris Calloway:</strong> How did the partners react when they came back?</p>
 
-      <p><strong>Guest:</strong> Cost it properly, and tell the client what you are doing. The method only works if both sides know they are allowed to change their minds early. If you hide it, it just
-      looks like you are slow.</p>'
+      <p><strong>Lena Sato:</strong> One of them loved the booths. The other one hated sitting in the middle, and said so, for about a week. Then he stopped mentioning it.</p>
+
+      <p><strong>Idris Calloway:</strong> So not what anyone expected.</p>
+
+      <p><strong>Lena Sato:</strong> In either direction. We lost the big table, and people did miss it. But the stairwell is quiet now.</p>
+
+      <p><strong>Idris Calloway:</strong> Lena Sato, thank you. That''s The Intern Who Redesigned the Office, on The RightUp.</p>'
     format: full_html
   field_description:
   - value: A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and no way to undo it before the partners return from a two-week trip abroad. What came back
       was not what anyone expected, in either direction.
   field_duration:
-  - value: 44 Mins
+  - value: 2 Mins
   field_episode_number:
   - value: 13
   field_featured_image:

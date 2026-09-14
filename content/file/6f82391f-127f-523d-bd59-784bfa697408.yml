@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6f82391f-127f-523d-bd59-784bfa697408
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-ep17-studio-wont-use-mood-board.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-ep17-studio-wont-use-mood-board.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 680954
+  status:
+    -
+      value: true

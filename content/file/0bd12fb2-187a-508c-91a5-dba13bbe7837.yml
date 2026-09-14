@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0bd12fb2-187a-508c-91a5-dba13bbe7837
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-ep14-client-who-fired-whole-deck.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-ep14-client-who-fired-whole-deck.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 789620
+  status:
+    -
+      value: true

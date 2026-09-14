@@ -7,6 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
+    06bca1d8-8211-560b-8d32-a7743f52c664: file
 default:
   revision_uid:
   - target_id: 1
@@ -29,34 +30,44 @@ default:
   path:
   - alias: /podcast/no-straight-walls
     langcode: en
+  field_audio:
+  - description: ''
+    entity: 06bca1d8-8211-560b-8d32-a7743f52c664
   field_content:
-  - value: '<p><strong>Noor Fasi:</strong> Let us start where most people would not. What did this cost you?</p>
+  - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. My guest designed a museum wing with no straight walls anywhere in it. The client said yes on the first pass. Construction
+      was another story. Elias Brandt, welcome.</p>
 
-      <p><strong>Guest:</strong> Time, mostly. About eleven weeks we did not bill for. The money we can explain to ourselves. The eleven weeks are harder.</p>
+      <p><strong>Elias Brandt:</strong> Thanks for having me, Noor.</p>
 
-      <p><strong>Noor Fasi:</strong> And you would do it again.</p>
+      <p><strong>Noor Fasi:</strong> Why no straight walls?</p>
 
-      <p><strong>Guest:</strong> We are doing it again. That is the honest answer. We have two projects running the same way right now, and one of them is already late.</p>
+      <p><strong>Elias Brandt:</strong> The collection is mostly sculpture. Straight walls make a room feel like a corridor you walk past things in. Curves slow you down. They make you walk around the work.</p>
 
-      <p><strong>Noor Fasi:</strong> Walk me through the moment you knew it was working.</p>
+      <p><strong>Noor Fasi:</strong> And the client agreed straight away?</p>
 
-      <p><strong>Guest:</strong> There was a meeting about six weeks in where nobody presented anything. We sat with the client and read the brief out loud, line by line, and changed four words. Everything
-      after that was easier, and I cannot fully tell you why.</p>
+      <p><strong>Elias Brandt:</strong> On the first presentation. Which, honestly, worried me more than a no would have.</p>
 
-      <p><strong>Noor Fasi:</strong> Four words.</p>
+      <p><strong>Noor Fasi:</strong> So what almost went wrong?</p>
 
-      <p><strong>Guest:</strong> Four words. We had written "a space for events" and they said, no, it is a space that survives events. Same building. Completely different set of decisions.</p>
+      <p><strong>Elias Brandt:</strong> The contractor''s framing crew had never built a curve. Not once. Their first wall was set out as a series of short straight segments, and from the gallery floor
+      you could see every joint.</p>
 
-      <p><strong>Noor Fasi:</strong> What would you tell a studio about to try this?</p>
+      <p><strong>Noor Fasi:</strong> How did you find out?</p>
 
-      <p><strong>Guest:</strong> Cost it properly, and tell the client what you are doing. The method only works if both sides know they are allowed to change their minds early. If you hide it, it just
-      looks like you are slow.</p>'
+      <p><strong>Elias Brandt:</strong> I walked in on a Tuesday and the light was catching every corner that shouldn''t have been there. We stopped work that afternoon.</p>
+
+      <p><strong>Noor Fasi:</strong> And the fix?</p>
+
+      <p><strong>Elias Brandt:</strong> Three weeks, and a redrawn foundation plan. We changed how the base plate was set out, so the curve was built in from the ground rather than bent in afterwards. The
+      crew turned out to be excellent once they could see what we meant.</p>
+
+      <p><strong>Noor Fasi:</strong> Elias Brandt, thank you. That''s No Straight Walls, on The RightUp.</p>'
     format: full_html
   field_description:
   - value: An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never framed
       a curve before. The fix cost three weeks and a redrawn foundation plan.
   field_duration:
-  - value: 55 Mins
+  - value: 2 Mins
   field_episode_number:
   - value: 16
   field_featured_image:
