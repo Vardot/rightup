@@ -79,7 +79,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text-number-card
     inputs:
       number: '01'
-      number_color: bg-accent
+      number_color: bg-tertiary
       background_color: none
   - parent_uuid: a421a2b3-bf63-5e29-93b8-7fbd4d780cfe
     slot: content
@@ -160,7 +160,7 @@ default:
     uuid: f0ab13fb-7f7a-504c-bdbc-69ade0d25b1b
     component_id: sdc.vartheme_bs5_rightup.divider
     inputs:
-      text: Recent Stories
+      text: Recent Issues
       text_size: fs-6
       border_color: border-black
   - parent_uuid: 741b1fc0-e106-5859-bd0c-ac009a1806d5
