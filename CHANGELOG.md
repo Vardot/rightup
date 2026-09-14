@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- The header search opens as a full-width bar below the header, the way the design shows it, instead
+  of a narrow popover anchored under the icon. Sets `panel_width: full` on the Icon Toggle placement
+  in the header region, and repoints that placement at the component version carrying the new prop:
+  Canvas resolves inputs against the pinned version, so a placement left on the older version stores
+  the input and silently renders the popover anyway.
+
 ### Added
 - Ship the RightUp editorial content the design calls for: 33 news articles across six categories,
   seven podcast episodes, nine author accounts and 38 images, plus the Canvas pages that present

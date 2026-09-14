@@ -125,12 +125,13 @@ component_tree:
     slot: content
     uuid: acb01c9a-335d-415a-91c9-0e35b369efa1
     component_id: sdc.vartheme_bs5_rightup.icon-toggle
-    component_version: ab1b678dc1806d89
+    component_version: 0ac23c069b0597ee
     inputs:
       icon: search
       label: Search
       open_label: 'Close search'
       icon_color: text-white
+      panel_width: full
       placement: end
       expand_in_editor: false
   e9e7b7b4-05df-4861-8ca6-983df67fdf38:
