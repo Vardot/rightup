@@ -154,6 +154,7 @@ component_tree:
       outline: false
       size: btn-sm
       label: Newsletter
+      href: /newsletter
       target: self
       disabled: false
       icon: none

@@ -19,5 +19,6 @@ FEATURES="tests/features/01-website-base-requirements/**/*.feature" ddev yarn te
 | `01-05-website-languages.feature` | Website Base Requirements - Website Languages - Internationalization | 3 |
 | `01-06-front-end-pages.feature` | Website Base Requirements - Front-end pages (working header/footer, landmarks, language, no JS errors) across Canvas pages, blog articles and content pages | 19 |
 | `01-07-default-theme-settings.feature` | Website Base Requirements - Default theme settings (sticky header: default on, scrolled state, enable/disable) | 4 |
+| `01-08-header-newsletter-call-to-action.feature` | Website Base Requirements - Header newsletter call to action (the header Newsletter button links to, and opens, the newsletter page) | 6 |
 
-**Total: 33 scenarios across 7 feature files.**
+**Total: 39 scenarios across 8 feature files.**
