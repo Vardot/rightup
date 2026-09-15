@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   module:
-    - canvas_icon_picker
-    - options
+  - canvas_icon_picker
+  - options
   theme:
-    - vartheme_bs5_rightup
-active_version: ab1b678dc1806d89
+  - vartheme_bs5_rightup
+active_version: 0ac23c069b0597ee
 versioned_properties:
   active:
     settings:
@@ -14,361 +14,481 @@ versioned_properties:
         icon:
           required: false
           field_type: string
-          field_storage_settings: {  }
+          field_storage_settings: {}
           field_instance_settings:
             allowed_icon_pack:
-              - bootstrap_icons
+            - bootstrap_icons
             allowed_icon_ids:
-              - search
-              - facebook
-              - twitter-x
-              - instagram
-              - linkedin
-              - x
-              - plus
-              - exclamation
-              - check
-              - dash
-              - question
-              - info
-              - person
-              - people
-              - person-plus
-              - person-check
-              - chevron-up
-              - chevron-down
-              - chevron-left
-              - chevron-right
-              - chevron-double-up
-              - chevron-double-down
-              - chevron-double-left
-              - chevron-double-right
-              - arrow-up
-              - arrow-down
-              - arrow-left
-              - arrow-right
-              - arrow-up-right
-              - arrow-up-left
-              - arrow-down-right
-              - arrow-down-left
-              - arrow-repeat
-              - arrows-angle-expand
-              - arrows-angle-contract
-              - play
-              - pause
-              - skip-backward
-              - skip-forward
-              - circle
-              - circle-fill
-              - record-circle
-              - arrow-right-circle-fill
-              - arrow-left-circle-fill
-              - arrow-up-circle-fill
-              - arrow-down-circle-fill
-              - caret-right-fill
-              - caret-left-fill
-              - caret-up-fill
-              - caret-down-fill
+            - search
+            - facebook
+            - twitter-x
+            - instagram
+            - linkedin
+            - x
+            - plus
+            - exclamation
+            - check
+            - dash
+            - question
+            - info
+            - person
+            - people
+            - person-plus
+            - person-check
+            - chevron-up
+            - chevron-down
+            - chevron-left
+            - chevron-right
+            - chevron-double-up
+            - chevron-double-down
+            - chevron-double-left
+            - chevron-double-right
+            - arrow-up
+            - arrow-down
+            - arrow-left
+            - arrow-right
+            - arrow-up-right
+            - arrow-up-left
+            - arrow-down-right
+            - arrow-down-left
+            - arrow-repeat
+            - arrows-angle-expand
+            - arrows-angle-contract
+            - play
+            - pause
+            - skip-backward
+            - skip-forward
+            - circle
+            - circle-fill
+            - record-circle
+            - arrow-right-circle-fill
+            - arrow-left-circle-fill
+            - arrow-up-circle-fill
+            - arrow-down-circle-fill
+            - caret-right-fill
+            - caret-left-fill
+            - caret-up-fill
+            - caret-down-fill
           field_widget: canvas_icon_picker
           default_value:
-            -
-              value: search
+          - value: search
           expression: ℹ︎string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
         label:
           required: false
           field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: string_textfield
           default_value:
-            -
-              value: Search
+          - value: Search
           expression: ℹ︎string␟value
           derived_schema_metadata:
-            string_shape: {  }
+            string_shape: {}
         open_label:
           required: false
           field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: string_textfield
           default_value:
-            -
-              value: 'Close search'
+          - value: Close search
           expression: ℹ︎string␟value
           derived_schema_metadata:
-            string_shape: {  }
+            string_shape: {}
         icon_color:
           required: false
           field_type: list_string
           field_storage_settings:
             allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
+          field_instance_settings: {}
           field_widget: options_select
           default_value:
-            -
-              value: text-body
+          - value: text-body
           expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
+        panel_width:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
         placement:
           required: false
           field_type: list_string
           field_storage_settings:
             allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
+          field_instance_settings: {}
           field_widget: options_select
           default_value:
-            -
-              value: end
+          - value: end
           expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
         expand_in_editor:
           required: false
           field_type: boolean
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: boolean_checkbox
           default_value:
-            -
-              value: true
+          - value: true
           expression: ℹ︎boolean␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
     fallback_metadata:
       slot_definitions:
         content:
           title: Content
-          description: "The content revealed in the popover, e.g. the 'Exposed form: search-page' block for a search toggle."
+          description: 'The content revealed in the popover, e.g. the ''Exposed form: search-page'' block for a search toggle.'
+  ab1b678dc1806d89:
+    settings:
+      prop_field_definitions:
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings:
+            allowed_icon_pack:
+            - bootstrap_icons
+            allowed_icon_ids:
+            - search
+            - facebook
+            - twitter-x
+            - instagram
+            - linkedin
+            - x
+            - plus
+            - exclamation
+            - check
+            - dash
+            - question
+            - info
+            - person
+            - people
+            - person-plus
+            - person-check
+            - chevron-up
+            - chevron-down
+            - chevron-left
+            - chevron-right
+            - chevron-double-up
+            - chevron-double-down
+            - chevron-double-left
+            - chevron-double-right
+            - arrow-up
+            - arrow-down
+            - arrow-left
+            - arrow-right
+            - arrow-up-right
+            - arrow-up-left
+            - arrow-down-right
+            - arrow-down-left
+            - arrow-repeat
+            - arrows-angle-expand
+            - arrows-angle-contract
+            - play
+            - pause
+            - skip-backward
+            - skip-forward
+            - circle
+            - circle-fill
+            - record-circle
+            - arrow-right-circle-fill
+            - arrow-left-circle-fill
+            - arrow-up-circle-fill
+            - arrow-down-circle-fill
+            - caret-right-fill
+            - caret-left-fill
+            - caret-up-fill
+            - caret-down-fill
+          field_widget: canvas_icon_picker
+          default_value:
+          - value: search
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {}
+        label:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: Search
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        open_label:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: Close search
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        icon_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: text-body
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+        placement:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: end
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+        expand_in_editor:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: true
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'The content revealed in the popover, e.g. the ''Exposed form: search-page'' block for a search toggle.'
   89c883e11d4f832c:
     settings:
       prop_field_definitions:
         icon:
           required: false
           field_type: string
-          field_storage_settings: {  }
+          field_storage_settings: {}
           field_instance_settings:
             allowed_icon_pack:
-              - bootstrap_icons
+            - bootstrap_icons
             allowed_icon_ids:
-              - search
-              - facebook
-              - twitter-x
-              - instagram
-              - linkedin
-              - x
-              - plus
-              - exclamation
-              - check
-              - dash
-              - question
-              - info
-              - person
-              - people
-              - person-plus
-              - person-check
-              - chevron-up
-              - chevron-down
-              - chevron-left
-              - chevron-right
-              - chevron-double-up
-              - chevron-double-down
-              - chevron-double-left
-              - chevron-double-right
-              - arrow-up
-              - arrow-down
-              - arrow-left
-              - arrow-right
-              - arrow-up-right
-              - arrow-up-left
-              - arrow-down-right
-              - arrow-down-left
-              - arrow-repeat
-              - arrows-angle-expand
-              - arrows-angle-contract
-              - play
-              - pause
-              - skip-backward
-              - skip-forward
-              - circle
-              - circle-fill
-              - record-circle
-              - arrow-right-circle-fill
-              - arrow-left-circle-fill
-              - arrow-up-circle-fill
-              - arrow-down-circle-fill
-              - caret-right-fill
-              - caret-left-fill
-              - caret-up-fill
-              - caret-down-fill
+            - search
+            - facebook
+            - twitter-x
+            - instagram
+            - linkedin
+            - x
+            - plus
+            - exclamation
+            - check
+            - dash
+            - question
+            - info
+            - person
+            - people
+            - person-plus
+            - person-check
+            - chevron-up
+            - chevron-down
+            - chevron-left
+            - chevron-right
+            - chevron-double-up
+            - chevron-double-down
+            - chevron-double-left
+            - chevron-double-right
+            - arrow-up
+            - arrow-down
+            - arrow-left
+            - arrow-right
+            - arrow-up-right
+            - arrow-up-left
+            - arrow-down-right
+            - arrow-down-left
+            - arrow-repeat
+            - arrows-angle-expand
+            - arrows-angle-contract
+            - play
+            - pause
+            - skip-backward
+            - skip-forward
+            - circle
+            - circle-fill
+            - record-circle
+            - arrow-right-circle-fill
+            - arrow-left-circle-fill
+            - arrow-up-circle-fill
+            - arrow-down-circle-fill
+            - caret-right-fill
+            - caret-left-fill
+            - caret-up-fill
+            - caret-down-fill
           field_widget: canvas_icon_picker
           default_value:
-            -
-              value: search
+          - value: search
           expression: ℹ︎string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
         label:
           required: false
           field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: string_textfield
           default_value:
-            -
-              value: Search
+          - value: Search
           expression: ℹ︎string␟value
           derived_schema_metadata:
-            string_shape: {  }
+            string_shape: {}
         open_label:
           required: false
           field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: string_textfield
           default_value:
-            -
-              value: 'Close search'
+          - value: Close search
           expression: ℹ︎string␟value
           derived_schema_metadata:
-            string_shape: {  }
+            string_shape: {}
         placement:
           required: false
           field_type: list_string
           field_storage_settings:
             allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
+          field_instance_settings: {}
           field_widget: options_select
           default_value:
-            -
-              value: end
+          - value: end
           expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
     fallback_metadata:
       slot_definitions:
         content:
           title: Content
-          description: "The content revealed in the popover, e.g. the 'Exposed form: search-page' block for a search toggle."
+          description: 'The content revealed in the popover, e.g. the ''Exposed form: search-page'' block for a search toggle.'
   5a87298f3691cd43:
     settings:
       prop_field_definitions:
         icon:
           required: false
           field_type: string
-          field_storage_settings: {  }
+          field_storage_settings: {}
           field_instance_settings:
             allowed_icon_pack:
-              - bootstrap_icons
+            - bootstrap_icons
             allowed_icon_ids:
-              - search
-              - facebook
-              - twitter-x
-              - instagram
-              - linkedin
-              - x
-              - plus
-              - exclamation
-              - check
-              - dash
-              - question
-              - info
-              - person
-              - people
-              - person-plus
-              - person-check
-              - chevron-up
-              - chevron-down
-              - chevron-left
-              - chevron-right
-              - chevron-double-up
-              - chevron-double-down
-              - chevron-double-left
-              - chevron-double-right
-              - arrow-up
-              - arrow-down
-              - arrow-left
-              - arrow-right
-              - arrow-up-right
-              - arrow-up-left
-              - arrow-down-right
-              - arrow-down-left
-              - arrow-repeat
-              - arrows-angle-expand
-              - arrows-angle-contract
-              - play
-              - pause
-              - skip-backward
-              - skip-forward
-              - circle
-              - circle-fill
-              - record-circle
-              - arrow-right-circle-fill
-              - arrow-left-circle-fill
-              - arrow-up-circle-fill
-              - arrow-down-circle-fill
-              - caret-right-fill
-              - caret-left-fill
-              - caret-up-fill
-              - caret-down-fill
+            - search
+            - facebook
+            - twitter-x
+            - instagram
+            - linkedin
+            - x
+            - plus
+            - exclamation
+            - check
+            - dash
+            - question
+            - info
+            - person
+            - people
+            - person-plus
+            - person-check
+            - chevron-up
+            - chevron-down
+            - chevron-left
+            - chevron-right
+            - chevron-double-up
+            - chevron-double-down
+            - chevron-double-left
+            - chevron-double-right
+            - arrow-up
+            - arrow-down
+            - arrow-left
+            - arrow-right
+            - arrow-up-right
+            - arrow-up-left
+            - arrow-down-right
+            - arrow-down-left
+            - arrow-repeat
+            - arrows-angle-expand
+            - arrows-angle-contract
+            - play
+            - pause
+            - skip-backward
+            - skip-forward
+            - circle
+            - circle-fill
+            - record-circle
+            - arrow-right-circle-fill
+            - arrow-left-circle-fill
+            - arrow-up-circle-fill
+            - arrow-down-circle-fill
+            - caret-right-fill
+            - caret-left-fill
+            - caret-up-fill
+            - caret-down-fill
           field_widget: canvas_icon_picker
           default_value:
-            -
-              value: search
+          - value: search
           expression: ℹ︎string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
         label:
           required: false
           field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: string_textfield
           default_value:
-            -
-              value: Search
+          - value: Search
           expression: ℹ︎string␟value
           derived_schema_metadata:
-            string_shape: {  }
+            string_shape: {}
         open_label:
           required: false
           field_type: string
-          field_storage_settings: {  }
-          field_instance_settings: {  }
+          field_storage_settings: {}
+          field_instance_settings: {}
           field_widget: string_textfield
           default_value:
-            -
-              value: 'Close search'
+          - value: Close search
           expression: ℹ︎string␟value
           derived_schema_metadata:
-            string_shape: {  }
+            string_shape: {}
         placement:
           required: false
           field_type: list_string
           field_storage_settings:
             allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
+          field_instance_settings: {}
           field_widget: options_select
           default_value:
-            -
-              value: end
+          - value: end
           expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
         panel:
           required: false
           field_type: list_string
           field_storage_settings:
             allowed_values_function: canvas_load_allowed_values_for_component_prop
-          field_instance_settings: {  }
+          field_instance_settings: {}
           field_widget: options_select
           default_value:
-            -
-              value: popover
+          - value: popover
           expression: ℹ︎list_string␟value
-          derived_schema_metadata: {  }
+          derived_schema_metadata: {}
     fallback_metadata:
       slot_definitions:
         content:
           title: Content
-          description: "The content revealed in the popover, e.g. the 'Exposed form: search-page' block for a search toggle."
-label: 'Icon Toggle'
+          description: 'The content revealed in the popover, e.g. the ''Exposed form: search-page'' block for a search toggle.'
+label: Icon Toggle
 id: sdc.vartheme_bs5_rightup.icon-toggle
 provider: vartheme_bs5_rightup
 source: sdc
-source_local_id: 'vartheme_bs5_rightup:icon-toggle'
+source_local_id: vartheme_bs5_rightup:icon-toggle
