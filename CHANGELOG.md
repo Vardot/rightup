@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
+- The Navigation sidebar shows the RightUp mark instead of Drupal's default: the admin base recipe
+  pointed it at a Varbase profile emblem that does not exist on a Drupal CMS site, so it fell back.
+  Now `vartheme_bs5_rightup/logo-icon.svg`, the square mark, which is what fits Navigation's 40x40 cap.
+- The site-template card image (`logo.png`, shown in the Drupal CMS installer's template picker) is the
+  square RightUp icon rather than the full wordmark, so it reads at card size and matches the way
+  Varbase Starter, Educare and Horizon Aid each use a mark rather than a wordmark there.
+
+### Changed
 - The header search opens as a full-width bar below the header, the way the design shows it, instead
   of a narrow popover anchored under the icon. Sets `panel_width: full` on the Icon Toggle placement
   in the header region, and repoints that placement at the component version carrying the new prop:

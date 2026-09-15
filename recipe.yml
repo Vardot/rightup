@@ -84,7 +84,13 @@ config:
         logo.use_default: false
     navigation.settings:
       simpleConfigUpdate:
-        logo.provider: default
+        logo:
+          provider: custom
+          path: themes/contrib/vartheme_bs5_rightup/logo-icon.svg
+          max:
+            filesize: 1048576
+            height: 40
+            width: 40
     ckeditor_media_embed.settings:
       setCKEditorMediaEmbedVersion: true
     canvas.component.block.system_menu_block.social-media-menu:
