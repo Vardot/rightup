@@ -5,13 +5,14 @@ dependencies:
     - canvas.component.block.system_branding_block
     - canvas.component.block.system_menu_block.footer
     - canvas.component.block.system_menu_block.main
-    - canvas.component.block.views_exposed_filter_block.search-page
+    - canvas.component.block.views_exposed_filter_block.search-header_search
     - canvas.component.sdc.vartheme_bs5_rightup.button
     - canvas.component.sdc.vartheme_bs5_rightup.group
     - canvas.component.sdc.vartheme_bs5_rightup.icon-toggle
     - canvas.component.sdc.vartheme_bs5_rightup.offcanvas-menu
     - canvas.component.sdc.vartheme_bs5_rightup.section
   module:
+    - link
     - options
   theme:
     - vartheme_bs5_rightup
@@ -74,8 +75,8 @@ component_tree:
     parent_uuid: a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa
     slot: search
     uuid: c2b92c2a-fc11-419a-aefd-568d24395328
-    component_id: block.views_exposed_filter_block.search-page
-    component_version: 435ec28df1ef5629
+    component_id: block.views_exposed_filter_block.search-header_search
+    component_version: 7bcf8ab13aa5d5d0
     inputs:
       label: 'Exposed form: search-page'
       label_display: '0'
@@ -138,8 +139,8 @@ component_tree:
     parent_uuid: acb01c9a-335d-415a-91c9-0e35b369efa1
     slot: content
     uuid: e9e7b7b4-05df-4861-8ca6-983df67fdf38
-    component_id: block.views_exposed_filter_block.search-page
-    component_version: 435ec28df1ef5629
+    component_id: block.views_exposed_filter_block.search-header_search
+    component_version: 7bcf8ab13aa5d5d0
     inputs:
       label: 'Exposed form: search-page'
       label_display: '0'

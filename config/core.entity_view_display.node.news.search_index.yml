@@ -1,0 +1,51 @@
+---
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.search_index
+  - field.field.node.news.field_content
+  - field.field.node.news.field_description
+  - field.field.node.news.field_featured_image
+  - field.field.node.news.field_news_categories
+  - field.field.node.news.field_seo_analysis
+  - field.field.node.news.field_seo_description
+  - field.field.node.news.field_seo_image
+  - field.field.node.news.field_seo_title
+  - field.field.node.news.field_tags
+  - node.type.news
+  module:
+  - text
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  field_content:
+    type: text_default
+    label: hidden
+    settings: []
+    third_party_settings: []
+    weight: 0
+    region: content
+  field_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: []
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_featured_image: true
+  field_news_categories: true
+  field_seo_analysis: true
+  field_seo_description: true
+  field_seo_image: true
+  field_seo_title: true
+  field_tags: true
+  links: true
+  search_api_excerpt: true
+...

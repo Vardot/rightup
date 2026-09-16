@@ -30,6 +30,7 @@ install:
   - vartheme_bs5_rightup
   - better_exposed_filters
   - canvas_page_template_component
+  - facets
 config:
   strict: false
   actions:
@@ -44,7 +45,299 @@ config:
     # default. Set here rather than by patching that third-party recipe.
     views.view.search:
       simpleConfigUpdate:
-        display.default.display_options.filters.search_api_fulltext.expose.placeholder: 'Search by keyword'
+        # The search results page is a Drupal Canvas page (see
+        # content/canvas_page), so this view supplies blocks rather than a page:
+        #  - header_search  the keyword box the site header places. It overrides
+        #                   the default display's filters: every display
+        #                   inherits them, so otherwise the Date Published
+        #                   group renders inside the header popover too.
+        #  - results_block  the results, rendered through the search_result
+        #                   view mode, plus the keyword form above them
+        #  - date_block     the Date Published group in the filter rail
+        # The `page` display is disabled: one exposed form cannot be both a
+        # block and inline, and its path would collide with the Canvas page.
+        display.default.display_options.filters.search_api_fulltext.expose.placeholder: Search by keyword
+        display.default.display_options.filters.search_api_datasource:
+          id: search_api_datasource
+          table: search_api_index_content
+          field: search_api_datasource
+          plugin_id: search_api_options
+          operator: or
+          value:
+            entity:node: entity:node
+          group: 1
+          exposed: false
+        display.default.display_options.filters.created:
+          id: created
+          table: search_api_index_content
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: offset
+          group: 1
+          exposed: true
+          expose:
+            operator_id: created_op
+            label: Date Published
+            description: ''
+            use_operator: false
+            operator: created_op
+            operator_limit_selection: false
+            operator_list: []
+            identifier: published
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: true
+          group_info:
+            label: Date Published
+            description: ''
+            identifier: published
+            optional: true
+            widget: radios
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: []
+            group_items:
+              1:
+                title: Past 24 Hours
+                operator: '>='
+                value:
+                  min: ''
+                  max: ''
+                  value: -24 hours
+                  type: offset
+              2:
+                title: Past Week
+                operator: '>='
+                value:
+                  min: ''
+                  max: ''
+                  value: -1 week
+                  type: offset
+              3:
+                title: Past Month
+                operator: '>='
+                value:
+                  min: ''
+                  max: ''
+                  value: -1 month
+                  type: offset
+              4:
+                title: Past Year
+                operator: '>='
+                value:
+                  min: ''
+                  max: ''
+                  value: -1 year
+                  type: offset
+        display.default.display_options.header.result.content: Showing @start-@end of @total
+        display.header_search:
+          id: header_search
+          display_title: Header search
+          display_plugin: block
+          position: 2
+          display_options:
+            filters:
+              search_api_fulltext:
+                id: search_api_fulltext
+                table: search_api_index_content
+                field: search_api_fulltext
+                relationship: none
+                group_type: group
+                admin_label: ''
+                plugin_id: search_api_fulltext
+                operator: or
+                value: ''
+                group: 1
+                exposed: true
+                expose:
+                  operator_id: search_api_fulltext_op
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: search_api_fulltext_op
+                  operator_limit_selection: false
+                  operator_list: []
+                  identifier: keywords
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                  expose_fields: false
+                  placeholder: Search by keyword
+                  searched_fields_id: search_api_fulltext_searched_fields
+                  value_maxlength: 128
+                  value_max_words: null
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: []
+                  group_items: []
+                parse_mode: terms
+                min_length: null
+                fields: []
+              search_api_datasource:
+                id: search_api_datasource
+                table: search_api_index_content
+                field: search_api_datasource
+                plugin_id: search_api_options
+                operator: or
+                value:
+                  entity:node: entity:node
+                group: 1
+                exposed: false
+            filter_groups:
+              operator: AND
+              groups:
+                1: AND
+            defaults:
+              filters: false
+              filter_groups: false
+              exposed_block: false
+            display_description: Exposed search form for the header, so the page display can render its own form inline.
+            exposed_block: true
+            display_extenders: []
+            block_description: Header search
+          cache_metadata:
+            max-age: -1
+            contexts:
+            - languages:language_content
+            - languages:language_interface
+            - url
+            - url.query_args
+            - user.node_grants:view
+            - user.permissions
+            tags:
+            - config:search_api.index.content
+            - search_api_list:content
+        display.results_block:
+          id: results_block
+          display_title: Search results
+          display_plugin: block
+          position: 3
+          display_options:
+            pager:
+              type: full
+              options:
+                offset: 0
+                pagination_heading_level: h4
+                items_per_page: 10
+                id: 0
+                tags:
+                  next: ›
+                  previous: ‹
+                  first: « First
+                  last: Last »
+                quantity: 9
+            row:
+              type: search_api
+              options:
+                view_modes:
+                  entity:canvas_page:
+                    canvas_page: default
+                  entity:node:
+                    news: search_result
+                    page: search_result
+                    podcast: search_result
+            defaults:
+              pager: false
+              row: false
+              exposed_block: false
+            display_description: The results listing, placed on the Canvas search page beside the facet rail.
+            exposed_block: true
+            display_extenders: []
+            block_description: Search results
+          cache_metadata:
+            max-age: -1
+            contexts:
+            - languages:language_content
+            - languages:language_interface
+            - url
+            - url.query_args
+            - user.node_grants:view
+            - user.permissions
+            tags:
+            - config:search_api.index.content
+            - search_api_list:content
+        display.date_block:
+          id: date_block
+          display_title: Date filter block
+          display_plugin: block
+          position: 4
+          display_options:
+            exposed_form:
+              type: bef
+              options:
+                submit_button: Apply
+                reset_button: false
+                reset_button_label: Reset
+                exposed_sorts_label: Sort by
+                expose_sort_order: false
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+                text_input_required: ''
+                text_input_required_format: content_format
+                bef:
+                  general:
+                    autosubmit: true
+                    autosubmit_textfield_delay: 500
+                    autosubmit_hide: true
+                    autosubmit_exposed_input: false
+            defaults:
+              exposed_form: false
+            display_description: Date Published filter for the search results rail.
+            exposed_block: true
+            display_extenders: []
+        display.page.display_options.enabled: false
+    search_api.index.content:
+      simpleConfigUpdate:
+        # Content Type facets on the node bundle and Date Published filters on
+        # the authored date, so both have to be in the index.
+        field_settings.type:
+          label: 'Content type'
+          datasource_id: 'entity:node'
+          property_path: type
+          type: string
+          dependencies:
+            module:
+              - node
+        field_settings.created:
+          label: 'Authored on'
+          datasource_id: 'entity:node'
+          property_path: created
+          type: date
+          dependencies:
+            module:
+              - node
+        field_settings.category_name:
+          label: 'News categories » Name'
+          datasource_id: 'entity:node'
+          property_path: 'field_news_categories:entity:name'
+          type: string
+          dependencies:
+            config:
+              - field.storage.node.field_news_categories
+            module:
+              - taxonomy
     package_manager.settings:
       simpleConfigUpdate:
         additional_trusted_composer_plugins:
@@ -526,14 +819,22 @@ config:
         - podcast
     # Every article carries a byline that links to its author, so a visitor has
     # to be able to open an author page.
+    # Every article carries a category eyebrow, and the search results page
+    # binds it straight from the term. Canvas resolves a term reference through
+    # BOTH of these permissions — without the second it returns NULL and every
+    # result row fails to render.
     user.role.anonymous:
       grantPermissions:
         - 'access_unpublished node podcast'
         - 'access user profiles'
+        - 'view any term'
+        - 'view any term name'
     user.role.authenticated:
       grantPermissions:
         - 'access_unpublished node podcast'
         - 'access user profiles'
+        - 'view any term'
+        - 'view any term name'
     user.role.content_editor:
       grantPermissions:
         - 'create podcast content'

@@ -1,0 +1,111 @@
+---
+langcode: en
+status: true
+dependencies:
+  config:
+  - canvas.component.sdc.vartheme_bs5_rightup.byline
+  - canvas.component.sdc.vartheme_bs5_rightup.card-featured
+  - canvas.component.sdc.vartheme_bs5_rightup.heading
+  - canvas.component.sdc.vartheme_bs5_rightup.rich-text
+  - canvas.component.sdc.vartheme_bs5_rightup.taxonomy
+  - core.entity_view_mode.node.search_result
+  - field.field.media.image.field_media_image
+  - field.field.node.news.field_description
+  - field.field.node.news.field_featured_image
+  - field.field.node.news.field_news_categories
+  - image.style.canvas_parametrized_width
+  - media.type.image
+  - node.type.news
+  - taxonomy.vocabulary.news_categories
+  module:
+  - file
+  - media
+  - node
+  - options
+  - taxonomy
+  - user
+id: node.news.search_result
+content_entity_type_id: node
+content_entity_type_bundle: news
+content_entity_type_view_mode: search_result
+component_tree:
+  2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50:
+    uuid: 2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    component_version: 760a4a6c1117384e
+    inputs:
+      media_position: start
+      media_image:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:news\u241Dfield_featured_image\u241E\u241Fentity\u241C\u241Centity:media:image\u241Dfield_media_image\u241E\u241F{src\u21A0src_with_alternate_widths,alt\u21A0alt,width\u21A0width,height\u21A0height}"
+      ratio: ratio-4x3
+      fit: object-fit-cover
+      card_border: false
+      corner_style: rounded-0
+      padded: false
+      equal_height: false
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+      content_vertical_alignment: align-items-start
+      gutters_between: g-4
+      columns_xs_size: "12_12"
+      columns_sm_size: "12_12"
+      columns_md_size: "04_08"
+      columns_lg_size: "04_08"
+      columns_xl_size: "04_08"
+      columns_xxl_size: "04_08"
+  7fe74d8e-c7e7-41b9-90cb-4c55b5f0b7e5:
+    parent_uuid: 2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50
+    slot: content
+    uuid: 7fe74d8e-c7e7-41b9-90cb-4c55b5f0b7e5
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    component_version: 6c96c2405efc9655
+    inputs:
+      label:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:news\u241Dfield_news_categories\u241E0\u241Fentity\u241C\u241Centity:taxonomy_term:news_categories\u241Dname\u241E\u241Fvalue"
+  cba9ec0e-f80a-4011-9c1f-24c73574da62:
+    parent_uuid: 2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50
+    slot: content
+    uuid: cba9ec0e-f80a-4011-9c1f-24c73574da62
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:news\u241Dtitle\u241E\u241Fvalue"
+      level: 3
+  3d296e31-1f14-4903-8d96-e3e5a1b27252:
+    parent_uuid: 2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50
+    slot: content
+    uuid: 3d296e31-1f14-4903-8d96-e3e5a1b27252
+    component_id: sdc.vartheme_bs5_rightup.rich-text
+    component_version: 82cd1f087fd469f4
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:news\u241Dfield_description\u241E\u241Fvalue"
+      trim: true
+      trim_length: 30
+      trim_units: words
+      suffix: ' ...'
+      strip_html: true
+  e23f2cc3-2aa0-457b-a315-9f8114d970ae:
+    parent_uuid: 2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50
+    slot: content
+    uuid: e23f2cc3-2aa0-457b-a315-9f8114d970ae
+    component_id: sdc.vartheme_bs5_rightup.byline
+    component_version: cc4869187f83aa8b
+    inputs:
+      author:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:news\u241Duid\u241E\u241Fentity\u241C\u241Centity:user\u241Dname\u241E\u241Fvalue"
+      date:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:news\u241Dcreated\u241E\u241Fvalue"
+        adapter: unix_to_date
+exposed_slots: []
+page_variant: ~
+...

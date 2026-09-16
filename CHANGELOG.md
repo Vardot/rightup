@@ -6,6 +6,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- The search results page matches the design: a Drupal Canvas page at `/search` with the keyword bar,
+  the results, and a filter rail of Category, Content Type and Date Published. Results render through a
+  new `search_result` node view mode whose display is built in Canvas from the theme's existing
+  Featured Card, so a result row carries the image, category eyebrow, title, summary and byline the
+  design shows instead of a bare title and snippet. No new component was needed: Featured Card is
+  already a horizontal image-and-text row, and at `04_08` columns it lands the design's 260x195 image.
+- Category and Content Type are Facets (`drupal/facets`). Date Published is a Views GROUPED exposed
+  filter — Past 24 Hours, Past Week, Past Month, Past Year — because Facets cannot produce those:
+  its date processor always renders an actual date ("2026", "July 2026"), never a relative window.
+  It is exposed on its own block display so the rail can hold it while the keyword bar sits above the
+  results; each form carries both fields and hides the half it does not own, which is what keeps the
+  keyword through a date change and the date through a new search.
+
+### Fixed
+- The header search popover no longer carries the Date Published group. Every display inherits the
+  default display's filters, so the results page's date filter rendered inside the header panel too.
+- Search barely matched articles. `search_index` is the view mode Search API renders into its index,
+  but RightUp's carried almost no text, so a news article was indexed as little more than its title.
+  It now ships the body and description fields, the way Varbase Starter, Educare and Horizon Aid do.
+- Results are restricted to content, so a Canvas page no longer appears as a result rendered in full.
+- Anonymous visitors get `view any term` AND `view any term name`. Canvas needs both to resolve a term
+  reference; without the second it returns NULL and every result row fails to render.
+
 ### Changed
 - The Navigation sidebar shows the RightUp mark instead of Drupal's default: the admin base recipe
   pointed it at a Varbase profile emblem that does not exist on a Drupal CMS site, so it fell back.

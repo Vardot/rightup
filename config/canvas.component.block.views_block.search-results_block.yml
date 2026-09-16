@@ -1,0 +1,28 @@
+---
+langcode: en
+status: true
+dependencies:
+  config:
+  - views.view.search
+  module:
+  - views
+active_version: 460ab2865ba14ecf
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: views_block:search-results_block
+        label: Search results
+        label_display: "0"
+        provider: views
+        views_label: ""
+        items_per_page: ~
+        exposed: []
+    fallback_metadata:
+      slot_definitions: ~
+label: Search results
+id: block.views_block.search-results_block
+provider: views
+source: block
+source_local_id: views_block:search-results_block
+...

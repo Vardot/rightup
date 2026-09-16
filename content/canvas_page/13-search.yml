@@ -1,0 +1,125 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: cc4a40fd-8853-520f-912d-212087c44c03
+  default_langcode: en
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Search
+  components:
+  - uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: 67-33
+      gutter: gx-5 gy-5
+      vertical_alignment: align-items-start
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      section_header: true
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: header_slot
+    uuid: 6d366794-a175-5514-a17a-e3988a1c71f9
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Search
+      level: 1
+      text_size: h1
+      align: text-start
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: header_slot
+    uuid: 5c92e553-80ee-57e4-9ad2-806e3a060268
+    component_id: block.views_exposed_filter_block.search-results_block
+    inputs:
+      label_display: '0'
+      label: 'Exposed form: search-results_block'
+      views_label: ''
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_1
+    uuid: dab10909-a2b8-544c-9197-6e5c57893a0b
+    component_id: block.views_block.search-results_block
+    inputs:
+      label_display: '0'
+      label: Search results
+      views_label: ''
+      items_per_page: null
+      exposed: {}
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: 5675d2d1-1ae6-5c20-8f4a-01b00a50425c
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Category
+      level: 2
+      text_size: h6
+      font_weight: fw-medium
+      align: text-start
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: 3b4c4519-782f-5b50-93eb-703d1a18e0fa
+    component_id: block.facet_block.search_category
+    inputs:
+      label: Category
+      label_display: '0'
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: f181e600-cdb2-5610-b3a0-b58e4faab3d4
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_width: border-1
+      border_color: border-black
+      opacity: opacity-100
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: c5e45c44-2e3b-5d4a-808d-958e0deda277
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Content Type
+      level: 2
+      text_size: h6
+      font_weight: fw-medium
+      align: text-start
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: 9789470e-ec3d-5d6d-9742-6d4d947618d3
+    component_id: block.facet_block.search_content_type
+    inputs:
+      label: Content Type
+      label_display: '0'
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: e3dffab0-5341-5af4-ba66-61d173bd06e9
+    component_id: sdc.vartheme_bs5_rightup.divider
+    inputs:
+      border_width: border-1
+      border_color: border-black
+      opacity: opacity-100
+      margin_top: mt-3
+      margin_bottom: mb-3
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: 4182975b-10d9-53a6-877c-2ab64c082ec3
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: Date Published
+      level: 2
+      text_size: h6
+      font_weight: fw-medium
+      align: text-start
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: col_2
+    uuid: 5bc75de6-7364-553d-8c92-ebd7a7190028
+    component_id: block.views_exposed_filter_block.search-date_block
+    inputs:
+      label: Date Published
+      label_display: '0'
+      views_label: ''
+  path:
+  - alias: /search
+    langcode: en

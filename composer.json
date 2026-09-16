@@ -21,6 +21,7 @@
     "drupal/drupal_cms_accessibility_tools": "~2",
     "drupal/drupal_cms_ai": "~2",
     "drupal/drupal_cms_google_analytics": "~2",
+    "drupal/facets": "^3.0",
     "drupal/easy_email_express": "~1",
     "drupal/varbase_admin_base": "1.0.x-dev",
     "drupal/varbase_users_base": "1.0.x-dev",

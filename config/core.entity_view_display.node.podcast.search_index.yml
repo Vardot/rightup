@@ -1,0 +1,49 @@
+---
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.search_index
+  - field.field.node.podcast.field_audio
+  - field.field.node.podcast.field_audio_url
+  - field.field.node.podcast.field_content
+  - field.field.node.podcast.field_description
+  - field.field.node.podcast.field_duration
+  - field.field.node.podcast.field_episode_number
+  - field.field.node.podcast.field_featured_image
+  - field.field.node.podcast.field_tags
+  - node.type.podcast
+  module:
+  - text
+id: node.podcast.search_index
+targetEntityType: node
+bundle: podcast
+mode: search_index
+content:
+  field_content:
+    type: text_default
+    label: hidden
+    settings: []
+    third_party_settings: []
+    weight: 0
+    region: content
+  field_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: []
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_audio: true
+  field_audio_url: true
+  field_duration: true
+  field_episode_number: true
+  field_featured_image: true
+  field_tags: true
+  links: true
+  search_api_excerpt: true
+...
