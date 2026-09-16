@@ -464,6 +464,12 @@ config:
       setViewsComponentStyleTheme:
         theme: default
       simpleConfigUpdate:
+        # The listing's filters sit on one row, the way Educare and Horizon Aid
+        # lay theirs out. Better Exposed Filters draws each control inline; the
+        # bar itself is styled by the theme through `.vb-filter-bar`.
+        display.page_1.display_options.exposed_form.options.bef.filter.search_title.display_inline: true
+        display.page_1.display_options.exposed_form.options.bef.filter.field_tags_target_id.display_inline: true
+        display.page_1.display_options.exposed_form.options.bef.filter.field_news_categories_target_id.display_inline: true
         display.all.display_options.style.options.component_id: vartheme_bs5_rightup:grid
         display.page_1.display_options.style.options.component_id: vartheme_bs5_rightup:grid
         display.latest.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
