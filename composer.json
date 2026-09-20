@@ -37,6 +37,7 @@
     "drupal/varbase_page_base": "1.0.x-dev",
     "drupal/varbase_blog_base": "1.0.x-dev",
     "drupal/varbase_news_base": "1.0.x-dev",
+    "drupal/varbase_podcasts_base": "1.0.x-dev",
     "drupal/vartheme_bs5_rightup": "1.0.x-dev"
   },
   "version": "1.0.x-dev"
