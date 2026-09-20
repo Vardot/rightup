@@ -1,23 +1,25 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 870f0549-cf5e-5a90-ac55-d68d3318fd19
+  uuid: 41b0ab4e-7a99-5702-a35f-5975cd5c46da
   bundle: menu_link_content
   default_langcode: en
 default:
   enabled:
   - value: true
   title:
-  - value: Linkedin
+  - value: 'Cookie Policy'
   menu_name:
-  - value: social-media-menu
+  - value: footer
   link:
-  - uri: https://www.linkedin.com
+  - uri: 'internal:#'
     title: ''
-    options: {}
+    options: 
+      attributes:
+        rel: open-consent-manager
   external:
-  - value: true
+  - value: false
   weight:
-  - value: 3
+  - value: 15
   expanded:
   - value: false

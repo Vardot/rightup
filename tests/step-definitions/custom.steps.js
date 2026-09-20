@@ -52,10 +52,11 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working header$/, async
 /**
  * Verify the page footer is "working".
  *
- * On a RightUp site the Footer and Social media menus are rendered
- * through the Drupal Canvas global Footer region. A working footer means the
- * footer link text is present, the social profiles are linked, and the credits
- * and logos show. Alter the lines below to match your own site.
+ * On a RightUp site the Main navigation, Footer and Social media menus are
+ * rendered through the Drupal Canvas global Footer region. A working footer
+ * means the sitemap row and the policy row are present, the social profiles
+ * are linked, the copy page link control is there, and the credits show.
+ * Alter the lines below to match your own site.
  *
  * Example: Then the page should have a working footer
  *
@@ -77,8 +78,10 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working footer$/, async
   // Footer menu link text (one per line):
   if (!text.includes('About Us')) throw friendly('Footer is missing the "About Us" link.', 'Check the Footer menu in the Canvas Footer region.');
   if (!text.includes('Contact')) throw friendly('Footer is missing the "Contact" link.', 'Check the Footer menu in the Canvas Footer region.');
-  if (!text.includes('Newsletter')) throw friendly('Footer is missing the "Newsletter" link.', 'Check the Footer menu in the Canvas Footer region.');
-  if (!text.includes('Search')) throw friendly('Footer is missing the "Search" link.', 'Check the Footer menu in the Canvas Footer region.');
+  if (!text.includes('Advertise')) throw friendly('Footer is missing the "Advertise" link.', 'Check the Footer menu in the Canvas Footer region.');
+  if (!text.includes('Terms of Use')) throw friendly('Footer is missing the "Terms of Use" link.', 'Check the Footer menu in the Canvas Footer region.');
+  if (!text.includes('Cookie Policy')) throw friendly('Footer is missing the "Cookie Policy" link.', 'Check the Footer menu in the Canvas Footer region.');
+  if (!text.includes('Accessibility')) throw friendly('Footer is missing the "Accessibility" link.', 'Check the Footer menu in the Canvas Footer region.');
 
   // Footer credit text (one per line):
   if (!text.includes('The Right Up')) throw friendly('Footer is missing the "The Right Up" credit line.');
@@ -88,5 +91,9 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working footer$/, async
   if ((await footer.locator('a[href="https://www.facebook.com"]').count()) === 0) throw friendly('Footer is missing the Facebook link (https://www.facebook.com).', 'Check the Social media menu in the Canvas Footer region.');
   if ((await footer.locator('a[href="https://x.com"]').count()) === 0) throw friendly('Footer is missing the X link (https://x.com).', 'Check the Social media menu in the Canvas Footer region.');
   if ((await footer.locator('a[href="https://www.instagram.com"]').count()) === 0) throw friendly('Footer is missing the Instagram link (https://www.instagram.com).', 'Check the Social media menu in the Canvas Footer region.');
-  if ((await footer.locator('a[href="https://www.linkedin.com"]').count()) === 0) throw friendly('Footer is missing the LinkedIn link (https://www.linkedin.com).', 'Check the Social media menu in the Canvas Footer region.');
+  if ((await footer.locator('a[hx-on-click]').count()) === 0) throw friendly('Footer is missing the copy page link control.', 'Check the Copy link item in the Social media menu in the Canvas Footer region.');
+
+  // The sitemap row: the Main navigation menu, placed in the footer.
+  if (!text.includes('Studios')) throw friendly('Footer is missing the "Studios" sitemap link.', 'Check the Main navigation menu block in the Canvas Footer region.');
+  if (!text.includes('Podcasts')) throw friendly('Footer is missing the "Podcasts" sitemap link.', 'Check the Main navigation menu block in the Canvas Footer region.');
 });

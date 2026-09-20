@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - canvas.component.block.system_menu_block.footer
+    - canvas.component.block.system_menu_block.main
     - canvas.component.block.system_menu_block.social-media-menu
     - canvas.component.sdc.vartheme_bs5_rightup.divider
     - canvas.component.sdc.vartheme_bs5_rightup.group
     - canvas.component.sdc.vartheme_bs5_rightup.html-code
     - canvas.component.sdc.vartheme_bs5_rightup.section
-    - canvas.component.sdc.vartheme_bs5_rightup.spacer
     - canvas.component.sdc.vartheme_bs5_rightup.text
     - filter.format.canvas_html_block
   module:
@@ -28,10 +28,10 @@ component_tree:
       bg_edge2edge: true
       container_type: container
       background_color: bg-black
-      text_color: text-dark
+      text_color: text-white
       columns: '100'
       gutter: 'gx-3 gy-3'
-      padding_block_start: pt-5
+      padding_block_start: pt-0
       padding_block_end: pb-0
       column_divider: false
       section_header: false
@@ -48,7 +48,7 @@ component_tree:
       direction: horizontal
       gap: gap-3
       wrap: nowrap
-      align_items: align-items-stretch
+      align_items: align-items-center
       justify_content: justify-content-between
       padding_block_start: pt-0
       padding_block_end: pb-0
@@ -94,8 +94,8 @@ component_tree:
     component_version: 3351739a2f3f46b5
     inputs:
       border_width: border-1
-      border_color: border-light
-      opacity: opacity-50
+      border_color: border-tertiary
+      opacity: opacity-75
       margin_top: mt-0
       margin_bottom: mb-0
   9e2935a6-8ad6-440a-8614-6184ffe7eb5a:
@@ -106,16 +106,28 @@ component_tree:
       bg_edge2edge: true
       container_type: container
       background_color: bg-black
-      text_color: text-dark
+      text_color: text-white
       columns: '100'
       gutter: 'gx-3 gy-3'
-      padding_block_start: pt-3
-      padding_block_end: pb-4
+      padding_block_start: pt-0
+      padding_block_end: pb-0
       column_divider: false
       vertical_alignment: align-items-center
       section_header: false
       section_footer: false
       aos_once: false
+  fa8ff88a-efed-5c65-9ef8-a530ad60a14e:
+    parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
+    slot: col_1
+    uuid: fa8ff88a-efed-5c65-9ef8-a530ad60a14e
+    component_id: block.system_menu_block.main
+    component_version: 322535c0078cf59c
+    inputs:
+      label: 'Main navigation'
+      label_display: '0'
+      level: 1
+      depth: 1
+      expand_all_items: false
   20e662f3-a52f-446e-a5ec-6978af1d9cdd:
     parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
     slot: col_1
@@ -128,14 +140,6 @@ component_tree:
       level: 1
       depth: null
       expand_all_items: true
-  3b86b9dd-3c39-4d46-b9bc-1e36959f5033:
-    parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
-    slot: col_1
-    uuid: 3b86b9dd-3c39-4d46-b9bc-1e36959f5033
-    component_id: sdc.vartheme_bs5_rightup.spacer
-    component_version: 80de1b3919d08f87
-    inputs:
-      size: py-2
   edd1729e-2bd0-424f-ba2a-b8078f79e43c:
     parent_uuid: 9e2935a6-8ad6-440a-8614-6184ffe7eb5a
     slot: col_1
@@ -147,4 +151,5 @@ component_tree:
         value: '<p>©2026, The Right Up. All Rights Reserved.</p>'
         format: canvas_html_block
       text_size: fs-6
-      text_color: text-secondary
+      text_color: text-white
+      opacity: opacity-50

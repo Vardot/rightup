@@ -1,23 +1,23 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 1af9505f-6b10-5791-8152-523a9f2d9637
+  uuid: f218b11e-bed8-5d87-8524-2171d54497f2
   bundle: menu_link_content
   default_langcode: en
 default:
   enabled:
   - value: true
   title:
-  - value: Search
+  - value: 'Terms of Use'
   menu_name:
   - value: footer
   link:
-  - uri: internal:/search
+  - uri: 'internal:/terms-of-use'
     title: ''
     options: {}
   external:
   - value: false
   weight:
-  - value: 13
+  - value: 14
   expanded:
   - value: false

@@ -14,7 +14,11 @@ default:
   link:
   - uri: https://www.instagram.com
     title: ''
-    options: {}
+    options:
+      attributes:
+        class:
+          - bi
+          - bi-instagram
   external:
   - value: true
   weight:

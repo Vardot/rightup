@@ -1,18 +1,18 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 304c32ed-7191-543c-bfe2-5e941793c4ad
+  uuid: 6e1163b2-2288-540d-b562-66f6cfb868dc
   bundle: menu_link_content
   default_langcode: en
 default:
   enabled:
   - value: true
   title:
-  - value: Newsletter
+  - value: 'Advertise'
   menu_name:
   - value: footer
   link:
-  - uri: internal:/newsletter
+  - uri: 'internal:/advertise'
     title: ''
     options: {}
   external:

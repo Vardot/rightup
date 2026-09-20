@@ -1,27 +1,23 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: e24143ad-c2c5-55d5-9df7-9c8b57449873
+  uuid: 000b4b47-00fb-566f-a3b8-472d8addde3f
   bundle: menu_link_content
   default_langcode: en
 default:
   enabled:
   - value: true
   title:
-  - value: X-Twitter
+  - value: 'Privacy Notice'
   menu_name:
-  - value: social-media-menu
+  - value: footer
   link:
-  - uri: https://x.com
+  - uri: 'internal:/privacy-policy'
     title: ''
-    options:
-      attributes:
-        class:
-          - bi
-          - bi-twitter-x
+    options: {}
   external:
-  - value: true
+  - value: false
   weight:
-  - value: 1
+  - value: 13
   expanded:
   - value: false

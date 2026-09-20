@@ -1,27 +1,29 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 7c859fa1-1eb5-545d-af10-a56217cc64ba
+  uuid: 870f0549-cf5e-5a90-ac55-d68d3318fd19
   bundle: menu_link_content
   default_langcode: en
 default:
   enabled:
   - value: true
   title:
-  - value: Facebook
+  - value: 'Copy link'
   menu_name:
   - value: social-media-menu
   link:
-  - uri: https://www.facebook.com
+  - uri: 'internal:/'
     title: ''
     options:
       attributes:
         class:
           - bi
-          - bi-facebook
+          - bi-link-45deg
+        role: button
+        hx-on-click: 'event.preventDefault(); navigator.clipboard.writeText(window.location.href).then(() => this.classList.add(''is-copied''))'
   external:
-  - value: true
+  - value: false
   weight:
-  - value: 0
+  - value: 3
   expanded:
   - value: false
