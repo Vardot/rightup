@@ -78,6 +78,7 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working footer$/, async
   // Footer menu link text (one per line):
   if (!text.includes('About Us')) throw friendly('Footer is missing the "About Us" link.', 'Check the Footer menu in the Canvas Footer region.');
   if (!text.includes('Contact')) throw friendly('Footer is missing the "Contact" link.', 'Check the Footer menu in the Canvas Footer region.');
+  if (!text.includes('Privacy Notice')) throw friendly('Footer is missing the "Privacy Notice" link.', 'Check the Footer menu in the Canvas Footer region.');
   if (!text.includes('Advertise')) throw friendly('Footer is missing the "Advertise" link.', 'Check the Footer menu in the Canvas Footer region.');
   if (!text.includes('Terms of Use')) throw friendly('Footer is missing the "Terms of Use" link.', 'Check the Footer menu in the Canvas Footer region.');
   if (!text.includes('Cookie Policy')) throw friendly('Footer is missing the "Cookie Policy" link.', 'Check the Footer menu in the Canvas Footer region.');

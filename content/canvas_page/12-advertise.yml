@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 5a1f7b18-3e09-5bca-8517-2de08c4d5bf5
+  default_langcode: en
+default:
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: 'Advertise'
+  components:
+  - uuid: 13641e07-b0e1-5e08-adf4-681957a5fdb5
+    component_id: sdc.vartheme_bs5_rightup.section
+    inputs:
+      container_type: container
+      columns: '100'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+  - parent_uuid: 13641e07-b0e1-5e08-adf4-681957a5fdb5
+    slot: col_1
+    uuid: 3cd669b9-03b4-5007-b868-e511fc3e6d9e
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 13641e07-b0e1-5e08-adf4-681957a5fdb5
+    slot: col_1
+    uuid: 9ae17699-de11-5aa2-aa69-dcae4033743e
+    component_id: sdc.vartheme_bs5_rightup.heading
+    inputs:
+      heading_text: 'Advertise'
+      level: 1
+      text_size: h1
+  - parent_uuid: 13641e07-b0e1-5e08-adf4-681957a5fdb5
+    slot: col_1
+    uuid: 37563db4-da97-5bd5-b9af-fe1efd9f564f
+    component_id: sdc.vartheme_bs5_rightup.text
+    inputs:
+      text:
+        value: '<p>Reach the studios, architects and designers who read The Right Up. Replace this page with your own rates, formats and deadlines, and a contact for enquiries.</p>'
+        format: canvas_html_block
+      text_color: text-body
+  path:
+  - alias: /advertise
+    langcode: en

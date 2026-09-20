@@ -12,7 +12,7 @@ default:
   menu_name:
   - value: footer
   link:
-  - uri: 'internal:/privacy-policy'
+  - uri: 'internal:/privacy-notice'
     title: ''
     options: {}
   external:

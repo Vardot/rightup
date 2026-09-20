@@ -32,6 +32,10 @@ Feature: Website Base Requirements - Front-end pages
       | Newsletter   | /newsletter         |
       | About Us     | /about-us           |
       | Contact Us   | /contact-us         |
+      | Advertise    | /advertise          |
+      | Privacy Notice | /privacy-notice   |
+      | Terms of Use | /terms-of-use       |
+      | Accessibility | /accessibility     |
 
     Examples: Listing pages
       | name   | path    |
