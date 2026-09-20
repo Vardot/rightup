@@ -57,66 +57,6 @@ default:
     component_id: sdc.vartheme_bs5_rightup.live-feed
     inputs:
       label: Latest
-  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
-    slot: items
-    uuid: 355ee6eb-0a98-54ef-aa68-fc58189bf6f5
-    component_id: sdc.vartheme_bs5_rightup.live-feed-item
-    inputs:
-      time: 9:20 AM
-      title: 'The Architecture of Unease: How Brutalism Became Beautiful Again'
-      url:
-        uri: internal:/news/architecture-unease-how-brutalism-became-beautiful-again
-        options: {}
-  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
-    slot: items
-    uuid: 953b2bc4-0bc5-581c-95e0-901d918c4e84
-    component_id: sdc.vartheme_bs5_rightup.live-feed-item
-    inputs:
-      time: 10:05 AM
-      title: Fen & Marble Reveal First Look at Rotterdam Flagship
-      url:
-        uri: internal:/news/fen-marble-reveal-first-look-rotterdam-flagship
-        options: {}
-  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
-    slot: items
-    uuid: 13a83ddb-7056-5cc3-b5c8-63d8c1647295
-    component_id: sdc.vartheme_bs5_rightup.live-feed-item
-    inputs:
-      time: 11:40 AM
-      title: Milan Design Week Opens With Record Number of Independent Studios
-      url:
-        uri: internal:/news/milan-design-week-opens-record-number-independent-studios
-        options: {}
-  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
-    slot: items
-    uuid: e7b69fdf-9a57-51ef-874c-f150eb44f72e
-    component_id: sdc.vartheme_bs5_rightup.live-feed-item
-    inputs:
-      time: 1:15 PM
-      title: A Danish Lighting Brand Just Reissued Its Most Controversial Chair
-      url:
-        uri: internal:/news/danish-lighting-brand-just-reissued-its-most-controversial-chair
-        options: {}
-  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
-    slot: items
-    uuid: ce1f930c-d901-5188-a29f-8227ba494cfb
-    component_id: sdc.vartheme_bs5_rightup.live-feed-item
-    inputs:
-      time: 3:30 PM
-      title: What Fen & Marble Actually Use to Pitch New Clients
-      url:
-        uri: internal:/news/what-fen-marble-actually-use-pitch-new-clients
-        options: {}
-  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
-    slot: items
-    uuid: 63c1aab5-80b7-506c-94ae-0179c2818909
-    component_id: sdc.vartheme_bs5_rightup.live-feed-item
-    inputs:
-      time: 4:45 PM
-      title: Arclight Studio Unveils New Identity for Nordic Airline
-      url:
-        uri: internal:/news/arclight-studio-unveils-new-identity-nordic-airline
-        options: {}
   - uuid: c0462517-32da-53ad-80e1-f3e0585ec463
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
@@ -760,8 +700,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p class="text-align-center">A new exhibition strips away every wall label and didactic panel, letting neon,
-          steel, and shadow argue the point instead. We walked through opening night with the artist behind it.</p>
+        value: <p class="text-align-center">A new exhibition strips away every wall label and didactic panel, letting neon, steel, and shadow argue the point instead. We walked through opening night with
+          the artist behind it.</p>
         format: canvas_html_block
       text_size: fs-5
       text_color: text-body
@@ -970,8 +910,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>The decisions nobody sees, told by the people who made them. Every week, we sit down with a working studio
-          to talk through one project — start to finish, no polish, no pretending it went smoothly.</p>
+        value: <p>The decisions nobody sees, told by the people who made them. Every week, we sit down with a working studio to talk through one project — start to finish, no polish, no pretending it went
+          smoothly.</p>
         format: canvas_html_block
       text_color: text-white
   - parent_uuid: 2b350208-0333-50ae-a1ce-170335c3f506
@@ -1022,8 +962,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients
-          ask for one by name.</p>
+        value: <p>Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients ask for one by name.</p>
         format: canvas_html_block
       text_color: text-white
   - parent_uuid: 26ef4bed-5e09-5d48-8381-7928ab95e819
@@ -1081,8 +1020,8 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>An architect on designing a museum wing with no straight walls, why the client said yes on the first pass,
-          and what almost went wrong in construction when the contractor's crew had never framed a curve before.</p>
+        value: <p>An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never
+          framed a curve before.</p>
         format: canvas_html_block
       text_color: text-white
   - parent_uuid: d41a3d72-e975-5931-a5d4-c5ff43915c3d
@@ -1140,8 +1079,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>Inside the studio that hasn't touched a computer for client presentations in three years, and how they've
-          kept winning work without one.</p>
+        value: <p>Inside the studio that hasn't touched a computer for client presentations in three years, and how they've kept winning work without one.</p>
         format: canvas_html_block
       text_color: text-white
   - parent_uuid: 67bdacd5-e2bd-5807-97de-c37fa1fcb611
@@ -1589,8 +1527,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p class="text-align-center">One email a week. Studio breakdowns, process notes, and the projects we're watching
-          before anyone else is.</p>
+        value: <p class="text-align-center">One email a week. Studio breakdowns, process notes, and the projects we're watching before anyone else is.</p>
         format: canvas_html_block
       text_size: fs-5
       text_color: text-white
@@ -1624,6 +1561,15 @@ default:
     component_id: sdc.vartheme_bs5_rightup.spacer
     inputs:
       size: py-0
+  - parent_uuid: b84ffa9b-1474-5cbc-b353-73fd24fd604e
+    slot: items
+    uuid: c1d3d26c-982d-5656-9b36-4d09c996af08
+    component_id: block.views_block.live_feed-block_1
+    inputs:
+      label: Live feed
+      label_display: '0'
+      views_label: ''
+      items_per_page: null
   path:
   - alias: /home
     langcode: en

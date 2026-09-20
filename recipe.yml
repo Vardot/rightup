@@ -31,6 +31,7 @@ install:
   - better_exposed_filters
   - canvas_page_template_component
   - facets
+  - entityqueue
 config:
   strict: false
   actions:

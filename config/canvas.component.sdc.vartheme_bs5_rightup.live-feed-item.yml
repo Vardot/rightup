@@ -1,0 +1,117 @@
+---
+langcode: en
+status: true
+dependencies:
+  module:
+  - link
+  theme:
+  - vartheme_bs5_rightup
+active_version: c521ad982a5f3a56
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        time:
+          required: false
+          field_type: string
+          field_storage_settings: []
+          field_instance_settings: []
+          field_widget: string_textfield
+          default_value:
+          - value: 5:10 PM
+          expression: "\u2139\uFE0Estring\u241Fvalue"
+          derived_schema_metadata:
+            string_shape: []
+        timestamp:
+          required: false
+          field_type: integer
+          field_storage_settings: []
+          field_instance_settings: []
+          field_widget: number
+          default_value:
+          - value: 1789459200
+          expression: "\u2139\uFE0Einteger\u241Fvalue"
+          derived_schema_metadata: []
+        time_format:
+          required: false
+          field_type: string
+          field_storage_settings: []
+          field_instance_settings: []
+          field_widget: string_textfield
+          default_value:
+          - value: g:i A
+          expression: "\u2139\uFE0Estring\u241Fvalue"
+          derived_schema_metadata:
+            string_shape: []
+        title:
+          required: true
+          field_type: string
+          field_storage_settings: []
+          field_instance_settings: []
+          field_widget: string_textfield
+          default_value:
+          - value: Adobe Quietly Kills Its Font-Pairing Tool
+          expression: "\u2139\uFE0Estring\u241Fvalue"
+          derived_schema_metadata:
+            string_shape: []
+        url:
+          required: false
+          field_type: link
+          field_storage_settings: []
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: ~
+          expression: "\u2139\uFE0Elink\u241Furl"
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+    fallback_metadata:
+      slot_definitions: []
+  f845bd05e223b714:
+    settings:
+      prop_field_definitions:
+        time:
+          required: true
+          field_type: string
+          field_storage_settings: []
+          field_instance_settings: []
+          field_widget: string_textfield
+          default_value:
+          - value: 5:10 PM
+          expression: "\u2139\uFE0Estring\u241Fvalue"
+          derived_schema_metadata:
+            string_shape: []
+        title:
+          required: true
+          field_type: string
+          field_storage_settings: []
+          field_instance_settings: []
+          field_widget: string_textfield
+          default_value:
+          - value: Adobe Quietly Kills Its Font-Pairing Tool
+          expression: "\u2139\uFE0Estring\u241Fvalue"
+          derived_schema_metadata:
+            string_shape: []
+        url:
+          required: false
+          field_type: link
+          field_storage_settings: []
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: ~
+          expression: "\u2139\uFE0Elink\u241Furl"
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+    fallback_metadata:
+      slot_definitions: []
+label: Live Feed Item
+id: sdc.vartheme_bs5_rightup.live-feed-item
+provider: vartheme_bs5_rightup
+source: sdc
+source_local_id: vartheme_bs5_rightup:live-feed-item
+...

@@ -1,0 +1,33 @@
+---
+langcode: en
+status: true
+dependencies:
+  config:
+  - canvas.component.sdc.vartheme_bs5_rightup.live-feed-item
+  - core.entity_view_mode.node.live_feed
+  - node.type.podcast
+  module:
+  - node
+id: node.podcast.live_feed
+content_entity_type_id: node
+content_entity_type_bundle: podcast
+content_entity_type_view_mode: live_feed
+component_tree:
+  aa438ce0-245b-4dab-ae54-cfcbe6394008:
+    uuid: aa438ce0-245b-4dab-ae54-cfcbe6394008
+    component_id: sdc.vartheme_bs5_rightup.live-feed-item
+    component_version: c521ad982a5f3a56
+    inputs:
+      timestamp:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:podcast\u241Dcreated\u241E\u241Fvalue"
+      time_format: g:i A
+      title:
+        sourceType: entity-field
+        expression: "\u2139\uFE0E\u241Centity:node:podcast\u241Dtitle\u241E\u241Fvalue"
+      url:
+        sourceType: host-entity-url
+        absolute: false
+exposed_slots: []
+page_variant: ~
+...
