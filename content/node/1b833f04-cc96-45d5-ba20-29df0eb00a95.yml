@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    6f82391f-127f-523d-bd59-784bfa697408: file
+    9210aa76-84ea-5058-a3c8-68398e73971b: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/studio-wont-use-mood-board
     langcode: en
   field_audio:
-  - description: ''
-    entity: 6f82391f-127f-523d-bd59-784bfa697408
+  - entity: 9210aa76-84ea-5058-a3c8-68398e73971b
   field_content:
   - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. My guest works at a branding studio that refuses to pitch with a mood board, even when a client asks for one
       by name. Priya Nandakumar leads strategy there. Priya, welcome.</p>

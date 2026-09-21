@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0f8579b2-49da-573f-8f1a-f218f9559f46
+  bundle: audio
+  default_langcode: en
+  depends:
+    2b1ba062-ead6-56e7-9042-45da0e923a29: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'What a Rejected Pitch Actually Sounds Like audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 2b1ba062-ead6-56e7-9042-45da0e923a29

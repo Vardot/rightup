@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: dbbc6ab3-ef65-545b-aba7-fc25e1d97242
+  bundle: audio
+  default_langcode: en
+  depends:
+    68e9ebdc-d759-5afd-b85b-0601039babad: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Intern Who Redesigned the Office audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 68e9ebdc-d759-5afd-b85b-0601039babad

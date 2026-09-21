@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    e5fac6c4-a509-5129-a490-b1adf9be2d22: file
+    6b432c65-8103-5a0b-abac-d870810c8b3e: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/studio-fires-itself-every-year
     langcode: en
   field_audio:
-  - description: ''
-    entity: e5fac6c4-a509-5129-a490-b1adf9be2d22
+  - entity: 6b432c65-8103-5a0b-abac-d870810c8b3e
   field_content:
   - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. Every January, one studio shuts its doors, retires its name, and opens again a week later as something new.
       My guest has been through that reset six times. Mara Okafor, welcome.</p>

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6b432c65-8103-5a0b-abac-d870810c8b3e
+  bundle: audio
+  default_langcode: en
+  depends:
+    e5fac6c4-a509-5129-a490-b1adf9be2d22: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Studio That Fires Itself Every Year audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: e5fac6c4-a509-5129-a490-b1adf9be2d22

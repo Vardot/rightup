@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    162b8305-0f41-5aec-a7ca-e60f6c0172e4: file
+    c256f792-07e6-569d-8e52-9a78c8cc5f98: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/three-years-without-deck
     langcode: en
   field_audio:
-  - description: ''
-    entity: 162b8305-0f41-5aec-a7ca-e60f6c0172e4
+  - entity: c256f792-07e6-569d-8e52-9a78c8cc5f98
   field_content:
   - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. For three years, one studio hasn''t opened a computer in a client presentation. Not once. And they keep winning
       work. Hana Ruiz is a founding partner there. Hana, welcome.</p>

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e135f4a3-dffa-5f16-9967-33ed07b13678
+  bundle: audio
+  default_langcode: en
+  depends:
+    0bd12fb2-187a-508c-91a5-dba13bbe7837: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Client Who Fired the Whole Deck audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 0bd12fb2-187a-508c-91a5-dba13bbe7837

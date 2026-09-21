@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c256f792-07e6-569d-8e52-9a78c8cc5f98
+  bundle: audio
+  default_langcode: en
+  depends:
+    162b8305-0f41-5aec-a7ca-e60f6c0172e4: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Three Years Without a Deck audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 162b8305-0f41-5aec-a7ca-e60f6c0172e4

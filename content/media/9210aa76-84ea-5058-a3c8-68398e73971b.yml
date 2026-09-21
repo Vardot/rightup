@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9210aa76-84ea-5058-a3c8-68398e73971b
+  bundle: audio
+  default_langcode: en
+  depends:
+    6f82391f-127f-523d-bd59-784bfa697408: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Studio That Won''t Use a Mood Board audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 6f82391f-127f-523d-bd59-784bfa697408

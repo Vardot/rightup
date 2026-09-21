@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 061985be-dea2-5cbd-8d12-a189b3b7d9b3
+  bundle: audio
+  default_langcode: en
+  depends:
+    06bca1d8-8211-560b-8d32-a7743f52c664: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'No Straight Walls audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 06bca1d8-8211-560b-8d32-a7743f52c664

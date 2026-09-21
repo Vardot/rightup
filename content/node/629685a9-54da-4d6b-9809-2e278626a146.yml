@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    68e9ebdc-d759-5afd-b85b-0601039babad: file
+    dbbc6ab3-ef65-545b-aba7-fc25e1d97242: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/intern-who-redesigned-office
     langcode: en
   field_audio:
-  - description: ''
-    entity: 68e9ebdc-d759-5afd-b85b-0601039babad
+  - entity: dbbc6ab3-ef65-545b-aba7-fc25e1d97242
   field_content:
   - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. Picture a studio handing its entire physical space to its newest hire. One month, no oversight, no budget cap,
       and the partners abroad for two weeks with no way to undo anything. Lena Sato was that hire. Lena, welcome.</p>

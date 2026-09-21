@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    0bd12fb2-187a-508c-91a5-dba13bbe7837: file
+    e135f4a3-dffa-5f16-9967-33ed07b13678: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/client-who-fired-whole-deck
     langcode: en
   field_audio:
-  - description: ''
-    entity: 0bd12fb2-187a-508c-91a5-dba13bbe7837
+  - entity: e135f4a3-dffa-5f16-9967-33ed07b13678
   field_content:
   - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. My guest runs a branding studio that hasn''t shown a slide to a client in years, and it started with a pitch that was over
       in four minutes. Daniel Mercer, welcome.</p>

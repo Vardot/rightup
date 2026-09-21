@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    2b1ba062-ead6-56e7-9042-45da0e923a29: file
+    0f8579b2-49da-573f-8f1a-f218f9559f46: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/what-rejected-pitch-actually-sounds
     langcode: en
   field_audio:
-  - description: ''
-    entity: 2b1ba062-ead6-56e7-9042-45da0e923a29
+  - entity: 0f8579b2-49da-573f-8f1a-f218f9559f46
   field_content:
   - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. Today we''re doing something we''ve never done. We have permission to talk through the room tone of a pitch that fell apart
       in real time. Tomas Reyna was the creative director in that room. Tomas, welcome.</p>

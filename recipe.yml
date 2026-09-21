@@ -91,24 +91,6 @@ config:
               text_color: text-white
             parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
             slot: col_1
-          7b3ab962-bb3e-5281-a383-c9419babd71e:
-            uuid: 7b3ab962-bb3e-5281-a383-c9419babd71e
-            component_id: sdc.vartheme_bs5_rightup.audio-player-remote
-            component_version: 819d7e678c6c2129
-            inputs:
-              url:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:podcast␝field_audio_url␞␟uri
-              autoplay: false
-              loop: false
-              preload: none
-              show_skip: true
-              skip_seconds: '15'
-              show_time: true
-              show_download: false
-              accent_color: accent
-            parent_uuid: 69de13ac-39e5-565e-b5c8-606e1516d5e3
-            slot: col_1
           2dfaf4b9-0ca0-578a-b001-cb68a728c6c3:
             uuid: 2dfaf4b9-0ca0-578a-b001-cb68a728c6c3
             component_id: sdc.vartheme_bs5_rightup.audio-player-local
@@ -116,7 +98,7 @@ config:
             inputs:
               audio_url:
                 sourceType: entity-field
-                expression: ℹ︎␜entity:node:podcast␝field_audio␞␟entity␜␜entity:file␝uri␞␟value
+                expression: ℹ︎␜entity:node:podcast␝field_audio␞0␟entity␜␜entity:media:audio␝field_media_audio_file␞␟entity␜␜entity:file␝uri␞␟value
               autoplay: false
               loop: false
               preload: none
@@ -285,7 +267,6 @@ config:
           - canvas.component.block.system_breadcrumb_block
           - canvas.component.block.webform_block
           - canvas.component.sdc.vartheme_bs5_rightup.audio-player-local
-          - canvas.component.sdc.vartheme_bs5_rightup.audio-player-remote
           - canvas.component.sdc.vartheme_bs5_rightup.date
           - canvas.component.sdc.vartheme_bs5_rightup.divider
           - canvas.component.sdc.vartheme_bs5_rightup.heading
@@ -295,9 +276,10 @@ config:
           - canvas.component.sdc.vartheme_bs5_rightup.share
           - canvas.component.sdc.vartheme_bs5_rightup.taxonomy
           - canvas.component.sdc.vartheme_bs5_rightup.text
+          - media.type.audio
           module:
           - file
-          - link
+          - media
           - media
           - node
           - options

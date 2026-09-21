@@ -7,7 +7,7 @@ _meta:
   depends:
     0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
     4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
-    06bca1d8-8211-560b-8d32-a7743f52c664: file
+    061985be-dea2-5cbd-8d12-a189b3b7d9b3: media
 default:
   revision_uid:
   - target_id: 1
@@ -31,8 +31,7 @@ default:
   - alias: /podcast/no-straight-walls
     langcode: en
   field_audio:
-  - description: ''
-    entity: 06bca1d8-8211-560b-8d32-a7743f52c664
+  - entity: 061985be-dea2-5cbd-8d12-a189b3b7d9b3
   field_content:
   - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. My guest designed a museum wing with no straight walls anywhere in it. The client said yes on the first pass. Construction
       was another story. Elias Brandt, welcome.</p>
