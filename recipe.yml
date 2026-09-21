@@ -565,6 +565,10 @@ config:
         display.page.display_options.enabled: false
     search_api.index.content:
       simpleConfigUpdate:
+        # Index on cron, not on save. The install imports this recipe's content
+        # before the active theme has been rebuilt, so indexing it inline renders
+        # every node under the theme the request started with.
+        options.index_directly: false
         # Content Type facets on the node bundle and Date Published filters on
         # the authored date, so both have to be in the index.
         field_settings.type:
