@@ -1,8 +1,8 @@
 [![Varbase](https://raw.githubusercontent.com/Vardot/varbase/11.0.x/images/varbase-logo.png)](https://www.drupal.org/project/varbase)
 
-# Rightup
+# RightUp
 [![pipeline status](https://git.drupalcode.org/project/rightup/badges/1.0.x/pipeline.svg)](https://git.drupalcode.org/project/rightup/-/pipelines)
-[![Rightup](https://img.shields.io/badge/Rightup-1.0.x--dev-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/rightup/-/pipelines?ref=1.0.x)
+[![RightUp](https://img.shields.io/badge/RightUp-1.0.0--alpha1-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/rightup/-/pipelines?ref=1.0.0-alpha1)
 [![Automated Functional Testing](https://git.drupalcode.org/project/varbase_project/badges/11.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_project/-/pipelines)
 
 A media, news and magazine site template recipe for Varbase, providing a modern recipe-first approach to initializing editorial and newsroom sites.
