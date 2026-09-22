@@ -20,6 +20,7 @@ recipes:
   - varbase_editor_base
   - varbase_content_base
   - varbase_workflow_base
+  - varbase_search_base
   - varbase_seo_base
   - varbase_webform_base
   - varbase_page_base
@@ -29,9 +30,7 @@ recipes:
   - varbase_performance_base
 install:
   - vartheme_bs5_rightup
-  - better_exposed_filters
   - canvas_page_template_component
-  - facets
   - entityqueue
 config:
   strict: false
@@ -1176,6 +1175,56 @@ config:
           region: content
           settings: {  }
           third_party_settings: {  }
+    facets.facet.search_category:
+      createIfNotExists:
+        status: true
+        dependencies:
+          config:
+          - search_api.index.content
+          - views.view.search
+          module:
+          - search_api
+        id: search_category
+        name: Category
+        weight: 0
+        min_count: 1
+        missing: false
+        missing_label: others
+        url_alias: category
+        facet_source_id: search_api:views_block__search__results_block
+        field_identifier: category_name
+        query_operator: or
+        hard_limit: null
+        exclude: false
+        use_hierarchy: false
+        keep_hierarchy_parents_active: false
+        hierarchy:
+          type: taxonomy
+          config: []
+        expand_hierarchy: false
+        enable_parent_when_child_gets_disabled: true
+        widget:
+          type: checkbox
+          config:
+            show_numbers: true
+        empty_behavior:
+          behavior: none
+        only_visible_when_facet_source_is_visible: null
+        show_only_one_result: false
+        show_title: null
+        processor_configs:
+          url_processor_handler:
+            processor_id: url_processor_handler
+            weights:
+              pre_query: -10
+              build: -10
+            settings: []
+          display_value_widget_order:
+            processor_id: display_value_widget_order
+            weights:
+              sort: 20
+            settings:
+              sort: ASC
 extra:
   recipe_installer_kit:
     finish_url: 'admin/dashboard/welcome'
