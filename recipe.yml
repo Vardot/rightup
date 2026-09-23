@@ -1506,6 +1506,57 @@ config:
               level: 1
               depth: null
               expand_all_items: false
+    # The newsletter form as the design draws it (VBN 13142:10908): a square,
+    # black-bordered input joined to a black button. Varbase Webform Base ships
+    # it as a pill; RightUp replaces the element attributes.
+    webform.webform.newsletter_subscribe:
+      simpleConfigUpdate:
+        elements: |
+          subscribe:
+            '#type': container
+            '#attributes':
+              class:
+                - d-flex
+                - flex-column
+                - flex-sm-row
+                - align-items-stretch
+                - gap-0
+            email:
+              '#type': email
+              '#title': Email
+              '#title_display': invisible
+              '#placeholder': 'Email Address'
+              '#autocomplete': 'off'
+              '#required': true
+              '#wrapper_attributes':
+                class:
+                  - flex-grow-1
+                  - mb-0
+                style: 'max-width:304px;margin-right:-1px'
+              '#attributes':
+                class:
+                  - w-100
+                  - h-100
+                  - rounded-0
+                  - border-black
+                  - fs-6
+                  - ps-3
+                  - pe-2
+                  - py-2
+            actions:
+              '#type': webform_actions
+              '#title': 'Submit button(s)'
+              '#submit__label': Subscribe
+              '#submit__attributes':
+                class:
+                  - btn-primary
+                  - rounded-0
+                  - fs-5
+                  - w-100
+                  - w-sm-auto
+                  - flex-shrink-0
+                style: 'padding:12px 24px'
+
 extra:
   recipe_installer_kit:
     finish_url: 'admin/dashboard/welcome'

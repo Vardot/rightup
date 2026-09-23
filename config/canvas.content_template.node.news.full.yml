@@ -1,0 +1,321 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - canvas.component.block.system_breadcrumb_block
+  - core.entity_view_mode.node.full
+  - field.field.media.image.field_media_image
+  - field.field.node.news.field_content
+  - field.field.node.news.field_featured_image
+  - image.style.canvas_parametrized_width
+  - media.type.image
+  - node.type.news
+  module:
+  - file
+  - media
+  - menu_link_content
+  - node
+id: node.news.full
+content_entity_type_id: node
+content_entity_type_bundle: news
+content_entity_type_view_mode: full
+component_tree:
+  974e483a-6f58-53c6-b7c2-fbf7d819e4c7:
+    uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      bg_edge2edge: false
+      container_type: container
+      columns: 50-50
+      gutter: gx-5 gy-5
+      padding_block_start: pt-4
+      padding_block_end: pb-4
+      vertical_alignment: align-items-stretch
+      section_header: true
+  6f328b71-1f89-537c-9db7-e1e963adc1f3:
+    parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
+    slot: header_slot
+    uuid: 6f328b71-1f89-537c-9db7-e1e963adc1f3
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  f1a2b3c4-0d5e-5f60-a7b8-c9d0e1f2a3b4:
+    parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
+    slot: col_1
+    uuid: f1a2b3c4-0d5e-5f60-a7b8-c9d0e1f2a3b4
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: a84c76c20ee7a3da
+    inputs:
+      height: h-100
+      direction: vertical
+      gap: gap-4
+      wrap: nowrap
+      align_items: align-items-stretch
+      justify_content: justify-content-between
+  f2b3c4d5-1e6f-5a71-b8c9-d0e1f2a3b4c5:
+    parent_uuid: f1a2b3c4-0d5e-5f60-a7b8-c9d0e1f2a3b4
+    slot: content
+    uuid: f2b3c4d5-1e6f-5a71-b8c9-d0e1f2a3b4c5
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: a84c76c20ee7a3da
+    inputs:
+      direction: vertical
+      gap: gap-3
+      wrap: nowrap
+      align_items: align-items-stretch
+      justify_content: justify-content-start
+  981e66ef-0adf-5e0b-ac8c-d47cc3e8a04c:
+    parent_uuid: f2b3c4d5-1e6f-5a71-b8c9-d0e1f2a3b4c5
+    slot: content
+    uuid: 981e66ef-0adf-5e0b-ac8c-d47cc3e8a04c
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝title␞␟value
+      level: 1
+      text_size: h1
+  b64bd5f4-c3e5-51e2-b1a7-4fce666de78e:
+    parent_uuid: f2b3c4d5-1e6f-5a71-b8c9-d0e1f2a3b4c5
+    slot: content
+    uuid: b64bd5f4-c3e5-51e2-b1a7-4fce666de78e
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: 34499abda8277068
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝field_description␞␟value
+      text_size: fs-5
+      text_color: text-body
+  adaf5007-0fb2-5ded-ae03-4fc3440b242a:
+    parent_uuid: f2b3c4d5-1e6f-5a71-b8c9-d0e1f2a3b4c5
+    slot: content
+    uuid: adaf5007-0fb2-5ded-ae03-4fc3440b242a
+    component_id: sdc.vartheme_bs5_rightup.date
+    component_version: 3eae6f5d223f6bda
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝created␞␟value
+        adapter: unix_to_date
+  f3c4d5e6-2f70-5b82-c9d0-e1f2a3b4c5d6:
+    parent_uuid: f1a2b3c4-0d5e-5f60-a7b8-c9d0e1f2a3b4
+    slot: content
+    uuid: f3c4d5e6-2f70-5b82-c9d0-e1f2a3b4c5d6
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: a84c76c20ee7a3da
+    inputs:
+      direction: vertical
+      gap: gap-0
+      wrap: nowrap
+      align_items: align-items-stretch
+      justify_content: justify-content-end
+  5b71656b-f9c6-54c0-8e9e-75c14296ef92:
+    parent_uuid: f3c4d5e6-2f70-5b82-c9d0-e1f2a3b4c5d6
+    slot: content
+    uuid: 5b71656b-f9c6-54c0-8e9e-75c14296ef92
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 3351739a2f3f46b5
+    inputs:
+      border_color: none
+      opacity: opacity-100
+      margin_top: mt-3
+      margin_bottom: mb-3
+  c8a1f2e4-3b7d-5a19-9f26-1d4e7b0a5c33:
+    parent_uuid: f3c4d5e6-2f70-5b82-c9d0-e1f2a3b4c5d6
+    slot: content
+    uuid: c8a1f2e4-3b7d-5a19-9f26-1d4e7b0a5c33
+    component_id: sdc.vartheme_bs5_rightup.group
+    component_version: aef7f7b22127c944
+    inputs:
+      direction: horizontal
+      gap: gap-3
+      wrap: nowrap
+      align_items: align-items-center
+      justify_content: justify-content-between
+  d4b6e9a1-72c5-5e38-8a47-6c1f9b2d0e75:
+    parent_uuid: f3c4d5e6-2f70-5b82-c9d0-e1f2a3b4c5d6
+    slot: content
+    uuid: d4b6e9a1-72c5-5e38-8a47-6c1f9b2d0e75
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 3351739a2f3f46b5
+    inputs:
+      border_color: none
+      opacity: opacity-100
+      margin_top: mt-3
+      margin_bottom: mb-0
+  af0e1c2d-76ab-5a1c-94d6-3f8a22b9dc2a:
+    parent_uuid: c8a1f2e4-3b7d-5a19-9f26-1d4e7b0a5c33
+    slot: content
+    uuid: af0e1c2d-76ab-5a1c-94d6-3f8a22b9dc2a
+    component_id: sdc.vartheme_bs5_rightup.byline
+    component_version: cc4869187f83aa8b
+    inputs:
+      author:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝uid␞␟entity␜␜entity:user␝name␞␟value
+      size: fs-6
+      text_color: text-dark
+  0c25c8b6-326d-5881-b5d2-2bdde61064e7:
+    parent_uuid: c8a1f2e4-3b7d-5a19-9f26-1d4e7b0a5c33
+    slot: content
+    uuid: 0c25c8b6-326d-5881-b5d2-2bdde61064e7
+    component_id: sdc.vartheme_bs5_rightup.share
+    component_version: 24d3cc5800d6bb4f
+    inputs:
+      heading: Share
+      display_title: true
+      alignment: end
+      orientation: horizontal
+      native_share: false
+      placement: inline
+      share_title:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝title␞␟value
+  a7a427a0-1041-56cb-b799-e21d6c27d2d3:
+    parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
+    slot: col_2
+    uuid: a7a427a0-1041-56cb-b799-e21d6c27d2d3
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      target: self
+      ratio: ratio-4x3
+      fit: object-fit-cover
+      width: w-100
+      rounded: none
+      loading: eager
+  e5f7a9c1-8b2d-5c46-a3e1-7d9f2b4c6a08:
+    parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
+    slot: col_2
+    uuid: e5f7a9c1-8b2d-5c46-a3e1-7d9f2b4c6a08
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: a67ef6b9d036abac
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟title
+      text_size: fs-5
+      font_style: italic
+      text_color: text-muted
+      opacity: opacity-100
+  2b3e7323-09ca-51e8-99bd-6272e3501c8c:
+    uuid: 2b3e7323-09ca-51e8-99bd-6272e3501c8c
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      bg_edge2edge: false
+      container_type: container
+      columns: 67-33
+      gutter: gx-5 gy-5
+      padding_block_end: pb-5
+  11605cea-904b-5d5c-be47-fc45e38b3efe:
+    parent_uuid: 2b3e7323-09ca-51e8-99bd-6272e3501c8c
+    slot: col_1
+    uuid: 11605cea-904b-5d5c-be47-fc45e38b3efe
+    component_id: sdc.vartheme_bs5_rightup.rich-text
+    component_version: 82cd1f087fd469f4
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:news␝field_content␞␟processed
+      trim: false
+  8d15132b-61d4-5d37-a9d9-f40f2a56e9d7:
+    parent_uuid: 2b3e7323-09ca-51e8-99bd-6272e3501c8c
+    slot: col_2
+    uuid: 8d15132b-61d4-5d37-a9d9-f40f2a56e9d7
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 3351739a2f3f46b5
+    inputs:
+      text: Editor's Picks
+      text_size: fs-6
+      border_color: border-tertiary
+  16461c26-7f4a-5519-ac9f-f1af44698cb4:
+    parent_uuid: 2b3e7323-09ca-51e8-99bd-6272e3501c8c
+    slot: col_2
+    uuid: 16461c26-7f4a-5519-ac9f-f1af44698cb4
+    component_id: block.views_block.news-featured
+    component_version: e096bc92df683e11
+    inputs:
+      label: 'News: Featured'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
+      exposed: {}
+  32d5d746-8083-5876-8995-00768693cf41:
+    uuid: 32d5d746-8083-5876-8995-00768693cf41
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      bg_edge2edge: true
+      container_type: container
+      background_color: bg-accent-subtle
+      columns: 67-33
+      padding_block_start: pt-4
+      padding_block_end: pb-4
+      vertical_alignment: align-items-center
+  cf19eee0-31d9-5fc5-a59e-9e382b729be5:
+    parent_uuid: 32d5d746-8083-5876-8995-00768693cf41
+    slot: col_1
+    uuid: cf19eee0-31d9-5fc5-a59e-9e382b729be5
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text: The best of Right Up, delivered to you weekly.
+      level: 2
+      text_size: h4
+  2c459aea-4f54-5346-9fe8-89c887c69e57:
+    parent_uuid: 32d5d746-8083-5876-8995-00768693cf41
+    slot: col_2
+    uuid: 2c459aea-4f54-5346-9fe8-89c887c69e57
+    component_id: block.webform_block
+    component_version: b5dca6ca0519bf1b
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  9ed6d135-559e-5480-bb58-588c54cd2600:
+    uuid: 9ed6d135-559e-5480-bb58-588c54cd2600
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      bg_edge2edge: false
+      container_type: container
+      columns: '100'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      section_header: true
+  b2253e91-df8b-57c6-ac7a-aa35201c46dc:
+    parent_uuid: 9ed6d135-559e-5480-bb58-588c54cd2600
+    slot: header_slot
+    uuid: b2253e91-df8b-57c6-ac7a-aa35201c46dc
+    component_id: sdc.vartheme_bs5_rightup.divider
+    component_version: 3351739a2f3f46b5
+    inputs:
+      text: On Display
+      text_size: fs-6
+      border_color: border-tertiary
+  e8788926-7a29-5bd6-bcf9-0854e2a23fe1:
+    parent_uuid: 9ed6d135-559e-5480-bb58-588c54cd2600
+    slot: col_1
+    uuid: e8788926-7a29-5bd6-bcf9-0854e2a23fe1
+    component_id: block.views_block.news-latest
+    component_version: 6815ab2dcfe29656
+    inputs:
+      label: 'News: Latest'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
+      exposed: {}
+exposed_slots: {}
+page_variant: null
