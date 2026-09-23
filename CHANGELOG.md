@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-beta1] - 2026-09-23
+### Added
+- The article and podcast pages ship as Canvas page templates, and the subscribe form is built to
+  the design, so a fresh install renders both to the design instead of a bare layout (#3625202).
+
+### Fixed
+- Home card headings follow the page H1 as h2 rather than restarting the heading order, and the
+  menu placements are named, so assistive technology can tell the navigation regions apart
+  (#3625206).
+
 ## [1.0.0-alpha1] - 2026-09-22
 ### Added
 - The search results page comes from the Varbase Search Base recipe instead of being duplicated
