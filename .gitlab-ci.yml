@@ -323,6 +323,8 @@ workflow:
     - composer config --json extra.composer-patches.allowed-dependency-patches '["vardot/varbase-patches","vardot/drupal-core-patches"]'
     - composer config --json extra.drupal-recipe-unpack.on-require false
     - composer require vardot/varbase-patches:~11.0.0 --no-update
+    # Byte needs an untagged drupal_cms_helper, which pulls its dev branch.
+    - composer remove drupal/byte --no-update
     # = Point at the checked-out recipe and require it. --with-all-dependencies is
     #   required: a partial update keeps the locked symfony/css-selector, which
     #   drupal/storybook (via varbase_dev_base) conflicts with.

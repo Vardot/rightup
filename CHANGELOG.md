@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-rc1] - 2026-09-23
+### Changed
+- Requires Vartheme BS5 RightUp 1.0.0-rc1, which stops the hero slider starting inside the Canvas
+  editor preview and fixes the icon toggle, exposed filter labels and menu landmarks for assistive
+  technology.
+
 ## [1.0.0-beta1] - 2026-09-23
 ### Added
 - The article and podcast pages ship as Canvas page templates, and the subscribe form is built to
