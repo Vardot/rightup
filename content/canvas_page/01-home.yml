@@ -269,7 +269,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: A Danish Lighting Brand Just Reissued Its Most Controversial Chair
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/danish-lighting-brand-just-reissued-its-most-controversial-chair
@@ -313,7 +313,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: What Fen & Marble Actually Use to Pitch New Clients
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/what-fen-marble-actually-use-pitch-new-clients
@@ -357,7 +357,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Arclight Studio Unveils New Identity for Nordic Airline
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/arclight-studio-unveils-new-identity-nordic-airline
@@ -409,7 +409,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Renzo Vidal Premieres Short Film Honoring Late Mentor
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/renzo-vidal-premieres-short-film-honoring-late-mentor
@@ -461,7 +461,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Bloom & Ash, Kiro Tanaka, and Lea Wren Launch New Collective
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/bloom-ash-kiro-tanaka-and-lea-wren-launch-new-collective
@@ -513,7 +513,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: See Fen & Marble's Surprise Pop-Up With Local Ceramicists
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/see-fen-marbles-surprise-pop-local-ceramicists
@@ -565,7 +565,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Arclight Studio Announce Fall Exhibition
-      level: 3
+      level: 2
       text_size: h5
       url:
         uri: internal:/news/arclight-studio-announce-fall-exhibition

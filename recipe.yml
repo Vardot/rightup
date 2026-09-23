@@ -1356,7 +1356,7 @@ config:
             component_id: block.system_menu_block.main
             component_version: 322535c0078cf59c
             inputs:
-              label: Main navigation
+              label: Menu panel navigation
               label_display: '0'
               level: 1
               depth: null
