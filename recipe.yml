@@ -1310,8 +1310,8 @@ config:
         dependencies:
           config:
           - canvas.component.block.system_branding_block
-          - canvas.component.block.system_menu_block.footer
           - canvas.component.block.system_menu_block.main
+          - canvas.component.block.system_menu_block.secondary
           - canvas.component.block.views_exposed_filter_block.search-header_search
           - canvas.component.sdc.vartheme_bs5_rightup.button
           - canvas.component.sdc.vartheme_bs5_rightup.group
@@ -1338,8 +1338,9 @@ config:
               text_color: text-white
               columns: 33-33-33
               gutter: gx-3 gy-3
-              padding_block_start: pt-3
-              padding_block_end: pb-3
+              padding_block_start: pt-0
+              padding_block_end: pb-0
+              vertical_alignment: align-items-center
               section_header: false
               section_footer: true
               aos_once: false
@@ -1370,10 +1371,10 @@ config:
             parent_uuid: a2c32282-4fce-4bbf-9b1b-69af5c2ad0fa
             slot: utility
             uuid: 42c03fd6-1094-4994-9397-b81df2d7f5e5
-            component_id: block.system_menu_block.footer
-            component_version: 075503dbc228a45c
+            component_id: block.system_menu_block.secondary
+            component_version: 7206ccf6a90c8941
             inputs:
-              label: Footer
+              label: Secondary menu
               label_display: '0'
               level: 1
               depth: null
@@ -1411,6 +1412,7 @@ config:
               direction: horizontal
               gap: gap-3
               wrap: nowrap
+              align_items: align-items-center
               justify_content: justify-content-end
               padding_block_start: pt-0
               padding_block_end: pb-0
@@ -1468,7 +1470,7 @@ config:
               disabled: false
               icon: none
               icon_first: false
-              alignment: inline
+              alignment: right
               full_width: false
               radius: rounded-0
           00f536ff-8728-48b9-823d-7aa4f4bb9775:

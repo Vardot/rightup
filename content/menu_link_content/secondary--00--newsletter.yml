@@ -1,0 +1,23 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 526f0d45-0a34-484e-bc62-ba75e6e286ac
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+  - value: true
+  title:
+  - value: Newsletter
+  menu_name:
+  - value: secondary
+  link:
+  - uri: internal:/newsletter
+    title: ''
+    options: {}
+  external:
+  - value: false
+  weight:
+  - value: 0
+  expanded:
+  - value: false
