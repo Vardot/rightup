@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-24
+### Changed
+- Requires Vartheme BS5 RightUp 1.0.0.
+- Requires Varbase Canvas Base (#3625669).
+- The header menu panel lists the site menus (#3625604).
+- varbase-e2e 2.0.7, with a stricter accessibility gate (#3625545).
+
+### Fixes
+- Heading levels no longer skip from h1 to h3 on four Canvas pages (#3625581).
+- The News listing has an h1 (#3625582).
+
 ## [1.0.0-rc1] - 2026-09-23
 ### Changed
 - Requires Vartheme BS5 RightUp 1.0.0-rc1, which stops the hero slider starting inside the Canvas
