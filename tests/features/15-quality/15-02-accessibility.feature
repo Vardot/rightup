@@ -1,39 +1,63 @@
 @regression @any @a11y
 Feature: Quality - Accessibility (a11y)
       As a site owner
-      I want the key public pages to be free of critical accessibility issues
-      So that the site is usable by everyone and meets WCAG expectations.
-
-  # Uses varbase-e2e axe-core integration. We gate on "critical" violations
-  # (the highest impact level) so the suite stays green on the shipped theme
-  # while still catching the show-stoppers. Tighten to "serious" / an "AA"
-  # audit per page once the theme is clean at that level.
-  #
-  # The impact gates above only cover the impact level they name, so a rule
-  # that matters to us gets its own scenario by rule id. "page-has-heading-one"
-  # is a moderate rule and was invisible to both the critical and the serious
-  # gate until it was pinned here.
+      I want every public page to be free of serious accessibility issues
+      So that the site is usable by everyone, on any device and with any assistive technology.
 
   @a11y @local @development @staging @production
-  Scenario: The homepage has no critical accessibility violations
+  Scenario Outline: The <page> page has no serious accessibility violations
+    Given I am an anonymous user
+     When I go to "<path>"
+      And wait
+     Then the page should have no serious accessibility violations
+
+    Examples:
+      | page              | path                                                            |
+      | home              | /home                                                           |
+      | studios           | /studios                                                        |
+      | architecture      | /architecture                                                   |
+      | product           | /product                                                        |
+      | branding          | /branding                                                       |
+      | process           | /process                                                        |
+      | culture           | /culture                                                        |
+      | podcasts          | /podcasts                                                       |
+      | last call podcast | /podcasts/last-call                                             |
+      | newsletter        | /newsletter                                                     |
+      | about us          | /about-us                                                       |
+      | advertise         | /advertise                                                      |
+      | contact us        | /contact-us                                                     |
+      | privacy notice    | /privacy-notice                                                 |
+      | search            | /search                                                         |
+      | terms of use      | /terms-of-use                                                   |
+      | accessibility     | /accessibility                                                  |
+      | news listing      | /news                                                           |
+      | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |
+      | podcast episode   | /podcast/no-straight-walls                                      |
+      | login             | /user/login                                                     |
+      | not found         | /this-page-does-not-exist                                       |
+
+  @a11y @local @development @staging @production
+  Scenario Outline: The <page> page passes the full accessibility check
+    Given I am an anonymous user
+     When I go to "<path>"
+      And wait
+     Then the page should pass the full accessibility check
+
+    Examples:
+      | page            | path                                                           |
+      | home            | /home                                                          |
+      | news article    | /news/architecture-unease-how-brutalism-became-beautiful-again |
+      | podcast episode | /podcast/no-straight-walls                                     |
+      | news listing    | /news                                                          |
+      | podcasts        | /podcasts                                                      |
+      | search          | /search                                                        |
+
+  @a11y @local @development @staging @production
+  Scenario: The front page has no serious accessibility violations
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then the page should have no critical accessibility violations
-
-  @a11y @local @development @staging @production
-  Scenario: The login page has no critical accessibility violations
-    Given I am an anonymous user
-     When I go to "/user/login"
-      And wait
-     Then the page should have no critical accessibility violations
-
-  @a11y @local @development @staging @production
-  Scenario: A blog article page has no critical accessibility violations
-    Given I am an anonymous user
-     When I go to "/news/architecture-unease-how-brutalism-became-beautiful-again"
-      And wait
-     Then the page should have no critical accessibility violations
+     Then the page should have no serious accessibility violations
 
   @a11y @local @development @staging @production
   Scenario: The admin dashboard has no critical accessibility violations for the webmaster
@@ -43,64 +67,55 @@ Feature: Quality - Accessibility (a11y)
      Then the page should have no critical accessibility violations
 
   @a11y @local @development @staging @production
-  Scenario: The contact page has no critical accessibility violations
+  Scenario Outline: The <page> page satisfies the accessibility rule "<rule>"
     Given I am an anonymous user
-     When I go to "/contact-us"
+     When I go to "<path>"
       And wait
-     Then the page should have no critical accessibility violations
+     Then the page should not violate the accessibility rule "<rule>"
+
+    Examples:
+      | page         | path                                                           | rule                 |
+      | home         | /home                                                          | image-alt            |
+      | home         | /home                                                          | html-has-lang        |
+      | home         | /home                                                          | color-contrast       |
+      | home         | /home                                                          | page-has-heading-one |
+      | home         | /home                                                          | link-name            |
+      | home         | /home                                                          | button-name          |
+      | home         | /home                                                          | duplicate-id-aria    |
+      | news listing | /news                                                          | color-contrast       |
+      | news listing | /news                                                          | link-name            |
+      | news article | /news/architecture-unease-how-brutalism-became-beautiful-again | image-alt            |
+      | news article | /news/architecture-unease-how-brutalism-became-beautiful-again | color-contrast       |
+      | podcasts     | /podcasts                                                      | color-contrast       |
+      | contact us   | /contact-us                                                    | label                |
+      | newsletter   | /newsletter                                                    | label                |
+      | search       | /search                                                        | label                |
+      | login        | /user/login                                                    | label                |
 
   @a11y @local @development @staging @production
-  Scenario: The blog listing page has no critical accessibility violations
-    Given I am an anonymous user
-     When I go to "/news"
-      And wait
-     Then the page should have no critical accessibility violations
-
-  @a11y @local @development @staging @production
-  Scenario: The homepage has no serious accessibility violations
+  Scenario: The Live Feed ticker links meet the minimum target size
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then the page should have no serious accessibility violations
+     Then the page should not violate the accessibility rule "target-size"
 
   @a11y @local @development @staging @production
-  Scenario: Images on the homepage have a text alternative
+  Scenario: Each navigation landmark on the homepage is distinguishable
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then the page should not violate the accessibility rule "image-alt"
+     Then the page should not violate the accessibility rule "landmark-unique"
 
   @a11y @local @development @staging @production
-  Scenario: Form fields have labels on the login page
-    Given I am an anonymous user
-     When I go to "/user/login"
-      And wait
-     Then the page should not violate the accessibility rule "label"
-
-  @a11y @local @development @staging @production
-  Scenario: The document language is set on the homepage
+  Scenario: The homepage has a single main landmark
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then the page should not violate the accessibility rule "html-has-lang"
+     Then the page should not violate the accessibility rule "landmark-one-main"
 
   @a11y @local @development @staging @production
-  Scenario: Text on the homepage meets the colour contrast threshold
+  Scenario: The homepage headings descend without skipping a level
     Given I am an anonymous user
      When I go to homepage
       And wait
-     Then the page should not violate the accessibility rule "color-contrast"
-
-  @a11y @local @development @staging @production
-  Scenario: The homepage has a level 1 heading
-    Given I am an anonymous user
-     When I go to homepage
-      And wait
-     Then the page should not violate the accessibility rule "page-has-heading-one"
-
-  @a11y @local @development @staging @production
-  Scenario: The homepage has exactly one level 1 heading
-    Given I am an anonymous user
-     When I go to homepage
-      And wait
-     Then the page should have exactly one h1
+     Then the page should not violate the accessibility rule "heading-order"
