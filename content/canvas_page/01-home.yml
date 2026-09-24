@@ -101,7 +101,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Fen & Marble Reveal First Look at Rotterdam Flagship
-      level: 3
+      level: 2
       text_size: h4
       url:
         uri: internal:/news/fen-marble-reveal-first-look-rotterdam-flagship
@@ -159,7 +159,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Milan Design Week Opens With Record Number of Independent Studios
-      level: 3
+      level: 2
       text_size: h4
       url:
         uri: internal:/news/milan-design-week-opens-record-number-independent-studios

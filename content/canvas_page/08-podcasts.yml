@@ -102,7 +102,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Last Call
-      level: 3
+      level: 2
       text_size: h4
       url:
         uri: internal:/podcasts/last-call
@@ -138,7 +138,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Field Notes
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 6747f86e-f989-5d3c-970b-454925e71bbb
     slot: content_slot
@@ -171,7 +171,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Office Hours
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: efeafbc4-806a-5a79-ad0e-acfd47450ff6
     slot: content_slot
@@ -204,7 +204,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: The Long Table
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: abb58a5b-99ed-5bc3-b617-012795465b0b
     slot: content_slot
@@ -237,7 +237,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Material World
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 5734d7ca-ba95-5f7f-9902-cc82f77a2e32
     slot: content_slot
@@ -270,7 +270,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Small Practice
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 75676d6b-9d49-5206-a311-695b3fc53623
     slot: content_slot

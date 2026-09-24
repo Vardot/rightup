@@ -126,7 +126,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: The Studio That Won't Use a Mood Board
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 2fba42be-2d84-5626-9dc8-4043fe72757c
     slot: content
@@ -183,7 +183,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: No Straight Walls
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 9cc108e9-ae9b-559d-ab88-7ded3c423549
     slot: content
@@ -240,7 +240,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Three Years Without a Deck
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 5f41a69e-7efa-5d0e-8323-f48c4d946b19
     slot: content
@@ -297,7 +297,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: The Client Who Fired the Whole Deck
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: d976f5e1-d730-5b15-9b46-2ff5270c6391
     slot: content
@@ -354,7 +354,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: The Intern Who Redesigned the Office
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: b1376e27-ea05-5e4e-9014-dd5b6a3bf131
     slot: content
@@ -411,7 +411,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: What a Rejected Pitch Actually Sounds Like
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 92619da2-b272-53de-b9af-dde8b5f4b195
     slot: content
@@ -468,7 +468,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: The Studio That Fires Itself Every Year
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 63799e38-4ca2-55fd-a0f5-3f5fbbf24b4d
     slot: content
@@ -527,7 +527,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Field Notes
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 4218cd29-3c6d-5b9b-8238-1c9dd815934f
     slot: content_slot
@@ -560,7 +560,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: Office Hours
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: 43c040cc-337f-5d83-b4b8-87be6b4fa22f
     slot: content_slot
@@ -593,7 +593,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
       heading_text: The Long Table
-      level: 3
+      level: 2
       text_size: h4
   - parent_uuid: bf026021-0f8b-579a-b5b4-234d08da5b4a
     slot: content_slot
