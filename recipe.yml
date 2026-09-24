@@ -728,6 +728,8 @@ config:
         display.page_1.display_options.exposed_form.options.bef.filter.search_title.display_inline: true
         display.page_1.display_options.exposed_form.options.bef.filter.field_tags_target_id.display_inline: true
         display.page_1.display_options.exposed_form.options.bef.filter.field_news_categories_target_id.display_inline: true
+        # The listing has no page title block, so this header is its only title.
+        display.page_1.display_options.header.area.content.value: '<h1 class="visually-hidden">All news posts</h1>'
         display.all.display_options.style.options.component_id: vartheme_bs5_rightup:grid
         display.page_1.display_options.style.options.component_id: vartheme_bs5_rightup:grid
         display.latest.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
@@ -994,6 +996,9 @@ config:
     canvas.content_template.node.news.impressed_card_medium:
       repointComponentTreeToTheme:
         theme: default
+      simpleConfigUpdate:
+        # Listing cards sit straight under the page h1.
+        component_tree.10923ba4-b5af-4fa1-918e-143feb8ca8c4.inputs.level: 2
     canvas.content_template.node.news.impressed_card_small:
       repointComponentTreeToTheme:
         theme: default
