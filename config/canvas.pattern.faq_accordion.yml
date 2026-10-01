@@ -53,7 +53,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.accordion-block
     component_version: d4ebc8481d81cca5
     inputs:
-      title: 'What is The Right Up?'
+      title: 'What is The Rightup?'
       heading_level: 3
       open_by_default: true
   40e6b89e-7ed5-45e7-bf24-a9615f805c07:
@@ -64,7 +64,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: '<p>The Right Up is a design publication covering the studios, buildings and products being made right now, with the process notes that usually get cut.</p>'
+        value: '<p>The Rightup is a design publication covering the studios, buildings and products being made right now, with the process notes that usually get cut.</p>'
         format: canvas_html_block
       text_size: none
       text_color: text-body

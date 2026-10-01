@@ -1,7 +1,7 @@
 'use strict';
 
 // -----------------------------------------------------------------------------
-// Custom step definitions for the RightUp Live Feed ticker.
+// Custom step definitions for The Rightup Live Feed ticker.
 //
 // The Live Feed is content-driven: the `live_feed` entity queue curates which
 // news/podcast nodes appear and in what order, the `live_feed` view renders that
@@ -10,7 +10,7 @@
 // admin form and read the rendered ticker, so the feature file can stay in
 // business language.
 //
-// RightUp ships the queue EMPTY. A simple queue's subqueue cannot be shipped as
+// The Rightup ships the queue EMPTY. A simple queue's subqueue cannot be shipped as
 // recipe content — Entityqueue creates it on import with a freshly generated
 // UUID, so a shipped subqueue collides on `entity_subqueue.name` — and the view
 // therefore falls back to the latest published news and podcast content until
@@ -368,7 +368,7 @@ Given(
 );
 
 /**
- * Empty the Live feed queue — the state a fresh RightUp install ships, where
+ * Empty the Live feed queue — the state a fresh install of The Rightup ships, where
  * the ticker falls back to the latest published content.
  *
  * Example #1: Given the Live feed queue holds nothing

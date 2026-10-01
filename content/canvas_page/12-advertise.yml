@@ -39,7 +39,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: '<p>Reach the studios, architects and designers who read The Right Up. Replace this page with your own rates, formats and deadlines, and a contact for enquiries.</p>'
+        value: '<p>Reach the studios, architects and designers who read The Rightup. Replace this page with your own rates, formats and deadlines, and a contact for enquiries.</p>'
         format: canvas_html_block
       text_color: text-body
   path:

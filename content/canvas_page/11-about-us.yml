@@ -42,7 +42,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: '<p>The Right Up started from a simple frustration: almost everything written about design and architecture
+        value: '<p>The Rightup started from a simple frustration: almost everything written about design and architecture
           is written after the fact, once the dead ends are gone and the rejected version never gets mentioned. What''s left
           is a highlight reel, and highlight reels don''t teach anyone anything. We wanted something closer to the actual
           process — not a takedown, just an honest account of how the work really gets made.</p>'
@@ -78,7 +78,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>The Right Up is written by a small group of contributors, most of whom have worked inside the studios and
+        value: <p>The Rightup is written by a small group of contributors, most of whom have worked inside the studios and
           practices we cover. We think that's a feature, not a conflict — it means we know which questions to ask. When we
           have a connection to something we're writing about, we say so, plainly, in the piece itself. We're independently
           run, not funded by any single studio or firm, and sponsored content is always labeled as such.</p>
@@ -118,7 +118,7 @@ default:
     uuid: 47e26e41-f30a-563d-86f9-25ec5a5d38bd
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
-      heading_text: The best of Right Up, delivered to you weekly.
+      heading_text: The best of The Rightup, delivered to you weekly.
       level: 2
       text_size: h4
   - parent_uuid: 5ee0bc2f-bb05-5937-bb46-81846bf7345d

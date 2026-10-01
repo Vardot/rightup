@@ -33,7 +33,7 @@ default:
   field_audio:
   - entity: 061985be-dea2-5cbd-8d12-a189b3b7d9b3
   field_content:
-  - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. My guest designed a museum wing with no straight walls anywhere in it. The client said yes on the first pass. Construction
+  - value: '<p><strong>Noor Fasi:</strong> This is The Rightup. I''m Noor Fasi. My guest designed a museum wing with no straight walls anywhere in it. The client said yes on the first pass. Construction
       was another story. Elias Brandt, welcome.</p>
 
       <p><strong>Elias Brandt:</strong> Thanks for having me, Noor.</p>
@@ -60,7 +60,7 @@ default:
       <p><strong>Elias Brandt:</strong> Three weeks, and a redrawn foundation plan. We changed how the base plate was set out, so the curve was built in from the ground rather than bent in afterwards. The
       crew turned out to be excellent once they could see what we meant.</p>
 
-      <p><strong>Noor Fasi:</strong> Elias Brandt, thank you. That''s No Straight Walls, on The RightUp.</p>'
+      <p><strong>Noor Fasi:</strong> Elias Brandt, thank you. That''s No Straight Walls, on The Rightup.</p>'
     format: full_html
   field_description:
   - value: An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never framed

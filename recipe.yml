@@ -243,7 +243,7 @@ config:
             component_id: sdc.vartheme_bs5_rightup.heading
             component_version: 0889e2ce906c3164
             inputs:
-              heading_text: The best of Right Up, delivered to you weekly.
+              heading_text: The best of The Rightup, delivered to you weekly.
               level: 2
               text_size: h4
             parent_uuid: e6393fcd-92e7-527a-85c8-ea1974e66069
@@ -936,7 +936,7 @@ config:
             component_id: sdc.vartheme_bs5_rightup.heading
             component_version: 0889e2ce906c3164
             inputs:
-              heading_text: The best of Right Up, delivered to you weekly.
+              heading_text: The best of The Rightup, delivered to you weekly.
               level: 2
               text_size: h4
             parent_uuid: 32d5d746-8083-5876-8995-00768693cf41
@@ -1515,7 +1515,7 @@ config:
               expand_all_items: false
     # The newsletter form as the design draws it (VBN 13142:10908): a square,
     # black-bordered input joined to a black button. Varbase Webform Base ships
-    # it as a pill; RightUp replaces the element attributes.
+    # it as a pill; The Rightup replaces the element attributes.
     webform.webform.newsletter_subscribe:
       simpleConfigUpdate:
         elements: |

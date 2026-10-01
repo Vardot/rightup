@@ -33,7 +33,7 @@ default:
   field_audio:
   - entity: c256f792-07e6-569d-8e52-9a78c8cc5f98
   field_content:
-  - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. For three years, one studio hasn''t opened a computer in a client presentation. Not once. And they keep winning
+  - value: '<p><strong>Idris Calloway:</strong> This is The Rightup, and I''m Idris Calloway. For three years, one studio hasn''t opened a computer in a client presentation. Not once. And they keep winning
       work. Hana Ruiz is a founding partner there. Hana, welcome.</p>
 
       <p><strong>Hana Ruiz:</strong> Thanks, Idris. Three years and two months, if we''re being precise.</p>
@@ -59,7 +59,7 @@ default:
 
       <p><strong>Hana Ruiz:</strong> Often. We photograph the wall and send that. It''s the most honest record of the meeting we have.</p>
 
-      <p><strong>Idris Calloway:</strong> Hana Ruiz, thank you. That''s Three Years Without a Deck, on The RightUp.</p>'
+      <p><strong>Idris Calloway:</strong> Hana Ruiz, thank you. That''s Three Years Without a Deck, on The Rightup.</p>'
     format: full_html
   field_description:
   - value: Inside the studio that hasn't touched a computer for client presentations in three years, and how they've kept winning work without one. Physical models, hand-drawn diagrams, and a strict no-laptops-in-the-room

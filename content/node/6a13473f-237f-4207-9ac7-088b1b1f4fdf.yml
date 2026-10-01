@@ -33,7 +33,7 @@ default:
   field_audio:
   - entity: 6b432c65-8103-5a0b-abac-d870810c8b3e
   field_content:
-  - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. Every January, one studio shuts its doors, retires its name, and opens again a week later as something new.
+  - value: '<p><strong>Idris Calloway:</strong> This is The Rightup, and I''m Idris Calloway. Every January, one studio shuts its doors, retires its name, and opens again a week later as something new.
       My guest has been through that reset six times. Mara Okafor, welcome.</p>
 
       <p><strong>Mara Okafor:</strong> Thanks, Idris. Seven, actually, if you count the one we abandoned halfway.</p>
@@ -56,7 +56,7 @@ default:
 
       <p><strong>Mara Okafor:</strong> Nobody gets to coast on a reputation. Every year we pitch like we''re new, because on paper, we are.</p>
 
-      <p><strong>Idris Calloway:</strong> Mara Okafor, thank you. That''s The Studio That Fires Itself Every Year, on The RightUp.</p>'
+      <p><strong>Idris Calloway:</strong> Mara Okafor, thank you. That''s The Studio That Fires Itself Every Year, on The Rightup.</p>'
     format: full_html
   field_description:
   - value: Once a year, this practice dissolves and reforms under a new name, new structure, and often a new office. Nobody on staff is entirely sure why it works, including the founder, who says he's stopped

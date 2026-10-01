@@ -33,7 +33,7 @@ default:
   field_audio:
   - entity: dbbc6ab3-ef65-545b-aba7-fc25e1d97242
   field_content:
-  - value: '<p><strong>Idris Calloway:</strong> This is The RightUp, and I''m Idris Calloway. Picture a studio handing its entire physical space to its newest hire. One month, no oversight, no budget cap,
+  - value: '<p><strong>Idris Calloway:</strong> This is The Rightup, and I''m Idris Calloway. Picture a studio handing its entire physical space to its newest hire. One month, no oversight, no budget cap,
       and the partners abroad for two weeks with no way to undo anything. Lena Sato was that hire. Lena, welcome.</p>
 
       <p><strong>Lena Sato:</strong> Thank you. I was three weeks into the job when they told me.</p>
@@ -59,7 +59,7 @@ default:
 
       <p><strong>Lena Sato:</strong> In either direction. We lost the big table, and people did miss it. But the stairwell is quiet now.</p>
 
-      <p><strong>Idris Calloway:</strong> Lena Sato, thank you. That''s The Intern Who Redesigned the Office, on The RightUp.</p>'
+      <p><strong>Idris Calloway:</strong> Lena Sato, thank you. That''s The Intern Who Redesigned the Office, on The Rightup.</p>'
     format: full_html
   field_description:
   - value: A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and no way to undo it before the partners return from a two-week trip abroad. What came back

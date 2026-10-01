@@ -445,7 +445,7 @@ default:
     uuid: e82d5508-febd-544c-a25e-c0009421d704
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
-      heading_text: The best of Right Up, delivered to you weekly.
+      heading_text: The best of The Rightup, delivered to you weekly.
       level: 2
       text_size: h4
   - parent_uuid: 0e63e039-c5ed-518c-a12f-971a8aeef7f7

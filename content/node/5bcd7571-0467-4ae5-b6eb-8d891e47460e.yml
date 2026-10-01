@@ -33,7 +33,7 @@ default:
   field_audio:
   - entity: 0f8579b2-49da-573f-8f1a-f218f9559f46
   field_content:
-  - value: '<p><strong>Noor Fasi:</strong> This is The RightUp. I''m Noor Fasi. Today we''re doing something we''ve never done. We have permission to talk through the room tone of a pitch that fell apart
+  - value: '<p><strong>Noor Fasi:</strong> This is The Rightup. I''m Noor Fasi. Today we''re doing something we''ve never done. We have permission to talk through the room tone of a pitch that fell apart
       in real time. Tomas Reyna was the creative director in that room. Tomas, welcome.</p>
 
       <p><strong>Tomas Reyna:</strong> Thanks, Noor. I still can''t listen to it without wincing.</p>
@@ -58,7 +58,7 @@ default:
 
       <p><strong>Tomas Reyna:</strong> We rehearse the hardest question now, out loud, before every pitch. And whoever''s closest to the answer is allowed to take it, whatever their title is.</p>
 
-      <p><strong>Noor Fasi:</strong> Tomas Reyna, thank you for letting us sit in that silence. That''s What a Rejected Pitch Actually Sounds Like, on The RightUp.</p>'
+      <p><strong>Noor Fasi:</strong> Tomas Reyna, thank you for letting us sit in that silence. That''s What a Rejected Pitch Actually Sounds Like, on The Rightup.</p>'
     format: full_html
   field_description:
   - value: We got permission to play the room tone from a pitch that fell apart in real time, including the thirty seconds of silence nobody wanted to fill and the recovery attempt that came two minutes

@@ -268,7 +268,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: The best of Right Up, delivered to you weekly.
+      heading_text: The best of The Rightup, delivered to you weekly.
       level: 2
       text_size: h4
   2c459aea-4f54-5346-9fe8-89c887c69e57:

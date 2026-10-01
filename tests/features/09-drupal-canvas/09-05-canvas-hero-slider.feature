@@ -4,7 +4,7 @@ Feature: Content Structure - Hero Slider in Drupal Canvas
       I want a Bootstrap 5 carousel-based Hero Slider in Drupal Canvas
       So that I can present rotating hero slides with images, overlay content and buttons.
 
-  # The RightUp homepage leads with the editorial hero grid rather than a
+  # The Rightup homepage leads with the editorial hero grid rather than a
   # carousel, so the Hero Slider is proven the way a site builder meets it: a
   # page built in the Canvas editor.
   @slow @flaky @check @local @development

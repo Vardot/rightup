@@ -1,6 +1,6 @@
 {
   "name": "rightup",
-  "description": "Varbase functional testing suite (varbase-e2e) for the RightUp site template recipe.",
+  "description": "Varbase functional testing suite (varbase-e2e) for The Rightup site template recipe.",
   "license": "GPL-2.0-or-later",
   "private": true,
   "scripts": {

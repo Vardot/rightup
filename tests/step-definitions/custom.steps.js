@@ -1,9 +1,9 @@
 'use strict';
 
 // -----------------------------------------------------------------------------
-// Custom step definitions for the RightUp site template.
+// Custom step definitions for The Rightup site template.
 //
-// The "a working header" / "a working footer" steps assert the RightUp main
+// The "a working header" / "a working footer" steps assert The Rightup main
 // navigation, footer menu, social profiles and credit line. They are
 // site-specific, so they live here rather than in the shared
 // @vardot/varbase-e2e package. Adapt the expected values to your own site when
@@ -19,7 +19,7 @@ const {
 /**
  * Verify the page header is "working".
  *
- * On a RightUp site the Main navigation menu is rendered through the Drupal
+ * On The Rightup site the Main navigation menu is rendered through the Drupal
  * Canvas global Header region, so a working header means those primary links
  * are present. Alter the links below to match your own site's main menu.
  *
@@ -52,7 +52,7 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working header$/, async
 /**
  * Verify the page footer is "working".
  *
- * On a RightUp site the Main navigation, Footer and Social media menus are
+ * On The Rightup site the Main navigation, Footer and Social media menus are
  * rendered through the Drupal Canvas global Footer region. A working footer
  * means the sitemap row and the policy row are present, the social profiles
  * are linked, the copy page link control is there, and the credits show.
@@ -85,7 +85,7 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working footer$/, async
   if (!text.includes('Accessibility')) throw friendly('Footer is missing the "Accessibility" link.', 'Check the Footer menu in the Canvas Footer region.');
 
   // Footer credit text (one per line):
-  if (!text.includes('The Right Up')) throw friendly('Footer is missing the "The Right Up" credit line.');
+  if (!text.includes('The Rightup')) throw friendly('Footer is missing the "The Rightup" credit line.');
   if (!text.includes('All Rights Reserved')) throw friendly('Footer is missing the "All Rights Reserved" credit line.');
 
   // Social media menu profiles - full links (one per line):

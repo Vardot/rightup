@@ -73,7 +73,7 @@ component_tree:
     component_version: c4ddb22de87220b3
     inputs:
       text:
-        value: <p>The Right Up covers studios, architecture, product, branding, process and culture, reported first-hand from the people doing the work.</p>
+        value: <p>The Rightup covers studios, architecture, product, branding, process and culture, reported first-hand from the people doing the work.</p>
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text

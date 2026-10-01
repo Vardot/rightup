@@ -56,7 +56,7 @@ default:
     component_id: sdc.vartheme_bs5_rightup.text
     inputs:
       text:
-        value: <p>Every Right Up show, in one place — studio interviews, site walks, and the process notes that never make
+        value: <p>Every show from The Rightup, in one place — studio interviews, site walks, and the process notes that never make
           it into a case study. New episodes drop weekly, with no polish added after the fact.</p>
         format: canvas_html_block
       text_size: fs-5

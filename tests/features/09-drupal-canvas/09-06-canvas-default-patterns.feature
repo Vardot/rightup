@@ -1,7 +1,7 @@
 @regression @any @canvas
 Feature: Drupal Canvas - default Canvas patterns
       As a site builder
-      I want the 14 default Canvas patterns that ship with RightUp to work in Drupal Canvas
+      I want the 14 default Canvas patterns that ship with The Rightup to work in Drupal Canvas
       So that I can build a page from ready-made sections, reuse one many times and publish it.
 
   # Every scenario drives the real Drupal Canvas editor the way a site builder

@@ -39,7 +39,7 @@ node's "Authored on" value off its own edit form and compares it with the render
 
 ### The shipped default: an empty queue
 
-RightUp ships the `live_feed` queue **empty**, and that is deliberate. A simple queue's
+The Rightup ships the `live_feed` queue **empty**, and that is deliberate. A simple queue's
 subqueue cannot travel as recipe content: Entityqueue creates the subqueue itself on import
 with a freshly generated UUID, so a shipped subqueue collides on the `entity_subqueue.name`
 unique key and aborts the install. The view covers for it — queued items lead, then the

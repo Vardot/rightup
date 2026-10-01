@@ -73,7 +73,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.html-code
     component_version: 656471f14c4594ec
     inputs:
-      code: '<img class="footer-logo-image" src="/themes/contrib/vartheme_bs5_rightup/rightup-logo-white.svg" alt="RightUp logo" style ="height: auto;">'
+      code: '<img class="footer-logo-image" src="/themes/contrib/vartheme_bs5_rightup/rightup-logo-white.svg" alt="The Rightup logo" style ="height: auto;">'
   a6068d50-17eb-4bf9-ba50-f15c0a0bd43f:
     parent_uuid: f1710f59-e00b-4b7e-ab6a-e1d02c06659f
     slot: content
@@ -148,7 +148,7 @@ component_tree:
     component_version: 34499abda8277068
     inputs:
       text:
-        value: '<p>©2026, The Right Up. All Rights Reserved.</p>'
+        value: '<p>©2026, The Rightup. All Rights Reserved.</p>'
         format: canvas_html_block
       text_size: fs-6
       text_color: text-white

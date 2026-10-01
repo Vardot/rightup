@@ -1,5 +1,5 @@
 ################################################################################
-# GitLab CI for the RightUp site template recipe.
+# GitLab CI for The Rightup site template recipe.
 #
 # build    - validate the recipe's composer.json.
 # validate - lint YAML, spell-check + ESLint the suite, and a Cucumber dry-run
@@ -7,14 +7,14 @@
 #            suite resolves (all reproducible offline in gitlab-ci-local).
 # pre-test - 🧩 Drupal CMS - The Rightup: build a plain
 #            drupal/cms host project, wire it for a Site recipe, require the
-#            checked-out RightUp recipe, install it through the Drupal
+#            checked-out copy of The Rightup, install it through the Drupal
 #            CMS installer, prepare it for deterministic testing, then DUMP the
 #            DB (gzip). The built site (cmssite/), the varbase-e2e node_modules
 #            and the Playwright browser are cached so the test jobs reuse them
 #            instead of rebuilding per job.
 #
 #            Drupal CMS is the ONLY base this pipeline builds on. The former
-#            varbase_project lane was removed: RightUp is a Drupal CMS
+#            varbase_project lane was removed: The Rightup is a Drupal CMS
 #            site template, so that is the base it has to work on.
 # test     - one parallel functional job per feature bucket: pull the build
 #            cache, restore the DB dump (seconds), serve the site and drive it
@@ -266,7 +266,7 @@ workflow:
 # = pre-test = the ONLY pre-test job, and the only base this recipe is tested on.
 # Build a plain drupal/cms codebase, wire it inline (dev stability, allow-plugins
 # and the patches allowlist), require this recipe from the branch checkout and
-# install the site template through the Drupal CMS installer. RightUp is
+# install the site template through the Drupal CMS installer. The Rightup is
 # a Drupal CMS site template, so Drupal CMS is the base it has to work on; the
 # former varbase_project lane was removed. This job also guards the
 # vardot/varbase-patches wiring against drifting out of use.
@@ -338,7 +338,7 @@ workflow:
         '{"type":"path","url":"'"$CI_PROJECT_DIR"'","options":{"symlink":false,"versions":{"drupal/rightup":"'"$RECIPE_DEV_VERSION"'"}}}'
         --json
     - composer require drupal/rightup:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
-    # The RightUp recipe deliberately does not compose the API / Auth /
+    # The Rightup recipe deliberately does not compose the API / Auth /
     # i18n / AI stacks, and no longer requires those recipe packages. Pull them
     # into the TEST HOST (the Starter recipe itself is unchanged) so this lane
     # still proves they resolve, and so they still install the front-end library
@@ -438,7 +438,7 @@ workflow:
     - ./vendor/bin/drush site:install recipes/rightup
       --db-url=$DB_URL
       --account-name=$DRUPAL_ADMIN_USERNAME --account-pass=$DRUPAL_ADMIN_PASSWORD
-      --account-mail=webmaster@vardot.com --site-name="RightUp on Drupal CMS" --locale=en -y
+      --account-mail=webmaster@vardot.com --site-name="The Rightup on Drupal CMS" --locale=en -y
     # = Prove the template is applied, not merely that the install exited 0 =
     - ./vendor/bin/drush status --fields=drupal-version,theme,db-status
     - |
@@ -450,7 +450,7 @@ workflow:
       echo "canvas pages: ${PAGES:-0}"
       test "${PAGES:-0}" -ge 5 || (echo "❌ site template content missing: ${PAGES:-0} canvas pages" && exit 1)
     # = Apply the base recipes the copied suites exercise ====================
-    # RightUp deliberately does not compose the API / Auth / i18n / AI
+    # The Rightup deliberately does not compose the API / Auth / i18n / AI
     # stacks, but the functional suites copied from varbase_project still cover
     # them. Apply them to the TEST HOST only (the recipe itself is unchanged),
     # or 03-03-json-api, 13-13/14/15 and the whole 14-ai bucket fail on modules
