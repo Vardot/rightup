@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-10-03
+### Changed
+- Requires Varbase Podcasts Base 2.0.0, where a Podcast is a show with episodes (#3622954,
+  #3627732), and Vartheme BS5 Rightup 1.0.2.
+- The Podcasts page, the show pages and the episode pages follow the design and list real
+  content: six shows and 67 episodes, each with its own recording and transcript (#3627507).
+- The Live Feed lists news and podcast episodes, and its queue accepts episodes (#3627507).
+- Functional tests cover the podcasts section, and the slowest CI jobs are split (#3627507).
+
+### Fixes
+- The header Newsletter button test was in no CI job; it runs now (#3627507).
+- The product is named "The Rightup" everywhere the recipe shows it (#3627380).
+
 ## [1.0.0] - 2026-09-24
 ### Changed
 - Requires Vartheme BS5 Rightup 1.0.0.
