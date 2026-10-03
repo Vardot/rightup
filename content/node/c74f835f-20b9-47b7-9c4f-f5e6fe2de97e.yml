@@ -22,7 +22,7 @@ default:
   promote:
   - value: false
   sticky:
-  - value: false
+  - value: true
   revision_translation_affected:
   - value: true
   moderation_state:

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.rightup_list
+label: 'List item'
+description: null
+targetEntityType: node
+cache: true
+

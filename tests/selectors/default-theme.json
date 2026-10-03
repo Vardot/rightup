@@ -20,7 +20,22 @@
     "audio transcript": ".read-more",
     "share": "nav.webshare",
     "episode details": ".view-id-podcast_episodes.view-display-id-details",
-    "page header": "main section:has(h1)"
+    "page header": "main section:has(h1)",
+    "lead story": ".view-id-rightup_news.view-display-id-lead",
+    "side stories": ".view-id-rightup_news.view-display-id-side",
+    "more stories": ".view-id-rightup_news.view-display-id-more",
+    "editors' picks": ".view-id-rightup_news.view-display-id-editors_picks",
+    "latest stories": ".view-id-rightup_news.view-display-id-latest",
+    "home latest stories": ".view-id-rightup_news.view-display-id-latest_grid",
+    "top story": ".view-id-rightup_news.view-display-id-top_hero",
+    "top side stories": ".view-id-rightup_news.view-display-id-top_side",
+    "top story pair": ".view-id-rightup_news.view-display-id-top_pair",
+    "top stories list": ".view-id-rightup_news.view-display-id-top_text",
+    "featured story": ".view-id-rightup_news.view-display-id-featured",
+    "more featured stories": ".view-id-rightup_news.view-display-id-featured_more",
+    "on display": ".view-id-rightup_news.view-display-id-featured_slider",
+    "podcast show": ".view-id-rightup_news.view-display-id-podcast_show",
+    "podcast episodes": ".view-id-rightup_news.view-display-id-podcast_episodes"
   },
   "xpath": {}
 }

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rightup_news
+  module:
+    - views
+active_version: 96629325fd6f01d3
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:rightup_news-editors_picks'
+        label: "News: Editors' picks"
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+label: "News: Editors' picks"
+id: block.views_block.rightup_news-editors_picks
+provider: views
+source: block
+source_local_id: 'views_block:rightup_news-editors_picks'
+

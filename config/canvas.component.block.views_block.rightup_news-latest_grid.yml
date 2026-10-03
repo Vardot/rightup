@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rightup_news
+  module:
+    - views
+active_version: 63cf2a9425c3f0ac
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:rightup_news-latest_grid'
+        label: 'News: Latest stories grid'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+label: 'News: Latest stories grid'
+id: block.views_block.rightup_news-latest_grid
+provider: views
+source: block
+source_local_id: 'views_block:rightup_news-latest_grid'
+

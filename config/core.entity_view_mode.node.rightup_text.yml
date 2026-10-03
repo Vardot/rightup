@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.rightup_text
+label: 'Text card'
+description: null
+targetEntityType: node
+cache: true
+

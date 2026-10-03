@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.card-featured
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.taxonomy
+    - core.entity_view_mode.node.rightup_featured_small
+    - field.field.media.image.field_media_image
+    - field.field.node.news.field_featured_image
+    - field.field.node.news.field_news_categories
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.news
+    - taxonomy.vocabulary.news_categories
+  module:
+    - file
+    - media
+    - node
+    - options
+    - taxonomy
+id: node.news.rightup_featured_small
+content_entity_type_id: node
+content_entity_type_bundle: news
+content_entity_type_view_mode: rightup_featured_small
+component_tree:
+  bead7a7c-85d8-4670-8b88-ac054e463b7e:
+    uuid: bead7a7c-85d8-4670-8b88-ac054e463b7e
+    component_id: sdc.vartheme_bs5_rightup.card-featured
+    component_version: 760a4a6c1117384e
+    inputs:
+      media_position: end
+      media_image:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:news␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      ratio: ratio-4x3
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+      content_vertical_alignment: align-items-start
+      columns_md_size: '07_05'
+      columns_lg_size: '07_05'
+      columns_xl_size: '07_05'
+      columns_xxl_size: '07_05'
+  9d4e3700-aade-4e3a-87d7-6c4376b0cf74:
+    parent_uuid: bead7a7c-85d8-4670-8b88-ac054e463b7e
+    slot: content
+    uuid: 9d4e3700-aade-4e3a-87d7-6c4376b0cf74
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    component_version: 6c96c2405efc9655
+    inputs:
+      label:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:news␝field_news_categories␞0␟entity␜␜entity:taxonomy_term:news_categories␝name␞␟value'
+      size: taxonomy-sm
+      color: text-tertiary
+      no_padding: true
+      justify_content: justify-content-start
+  8609c854-138a-4088-8558-ac92f61e0ad8:
+    parent_uuid: bead7a7c-85d8-4670-8b88-ac054e463b7e
+    slot: content
+    uuid: 8609c854-138a-4088-8558-ac92f61e0ad8
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:news␝title␞␟value'
+      level: 3
+      text_size: h4
+      url:
+        sourceType: host-entity-url
+        absolute: false
+exposed_slots: {  }
+page_variant: null
+

@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d89c2424-6d6b-5d75-87ab-cb1fb874271a
+  bundle: news
+  default_langcode: en
+  depends:
+    1e3d963f-7398-4088-8cfb-2b53c4e1b66c: user
+    8d70c64a-6786-4746-a9c6-8033d5c615de: media
+    4190771e-e477-4d78-a6bf-1fcef05f99e1: taxonomy_term
+default:
+  revision_uid:
+  - entity: 1e3d963f-7398-4088-8cfb-2b53c4e1b66c
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: 1e3d963f-7398-4088-8cfb-2b53c4e1b66c
+  title:
+  - value: 'Halden & Roe Moves Its Whole Studio Into a Former Ferry Terminal'
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/halden-roe-moves-studio-former-ferry-terminal
+    langcode: en
+  field_content:
+  - value: '<p>Halden & Roe spent a decade in a fourth-floor loft above a shoe shop. This spring the twenty-two person studio moved its desks, its model shop and its archive into a ferry terminal that had stood empty since the crossing was cancelled.</p>
+
+      <p>The building is a single timber shed with a mezzanine along one side. The studio kept the departure boards and now uses them to post deadlines.</p>
+
+      <h2>In practice</h2>
+
+      <p>The model shop sits where the ticket hall used to be, so the noise stays on the ground floor and the drawing desks get the light from the water.</p>
+
+      <blockquote><p>We wanted a room where everyone can see what everyone else is making.</p><footer>Ingrid Halden, co-founder</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'The Oslo practice traded a city-centre loft for a timber shed on the water, and kept the departure boards.'
+  field_featured_image:
+  - entity: 8d70c64a-6786-4746-a9c6-8033d5c615de
+  field_news_categories:
+  - entity: 4190771e-e477-4d78-a6bf-1fcef05f99e1
+  created:
+  - value: 1765443600
+  changed:
+  - value: 1765443600

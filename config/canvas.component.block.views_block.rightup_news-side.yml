@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rightup_news
+  module:
+    - views
+active_version: fb0950e0e3ee1436
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:rightup_news-side'
+        label: 'News: Side stories'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+label: 'News: Side stories'
+id: block.views_block.rightup_news-side
+provider: views
+source: block
+source_local_id: 'views_block:rightup_news-side'
+

@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4e907363-5e8c-5a45-bf29-46e84dbbe87d
+  bundle: news
+  default_langcode: en
+  depends:
+    c60b96e7-d54e-4249-b730-f686432d442b: user
+    157504de-26e6-4c11-ae7a-cdb685af89cc: media
+    4190771e-e477-4d78-a6bf-1fcef05f99e1: taxonomy_term
+default:
+  revision_uid:
+  - entity: c60b96e7-d54e-4249-b730-f686432d442b
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: c60b96e7-d54e-4249-b730-f686432d442b
+  title:
+  - value: 'A Rotterdam Collective Shares One Workshop Between Nine Studios'
+  promote:
+  - value: false
+  sticky:
+  - value: true
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/rotterdam-collective-shares-one-workshop-nine-studios
+    langcode: en
+  field_content:
+  - value: '<p>The depot in Rotterdam-West houses nine studios on one lease. They share a CNC router, a paint booth and a bookkeeper.</p>
+
+      <p>Each studio pays according to floor area, and the workshop is booked through a paper calendar by the door.</p>
+
+      <h2>In practice</h2>
+
+      <p>Two of the studios have started bidding for work together, which none of them could have won alone.</p>
+
+      <blockquote><p>Nobody here could afford the router. Together we can afford two.</p><footer>Femke de Wit, furniture maker</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'Nine small practices split the rent, the tools and the night shifts in a converted tram depot.'
+  field_featured_image:
+  - entity: 157504de-26e6-4c11-ae7a-cdb685af89cc
+  field_news_categories:
+  - entity: 4190771e-e477-4d78-a6bf-1fcef05f99e1
+  created:
+  - value: 1757926800
+  changed:
+  - value: 1757926800

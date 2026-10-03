@@ -15,8 +15,9 @@ FEATURES="tests/features/08-content-homepage/**/*.feature" ddev yarn test:chromi
 | `08-01-homepage.feature` | Frontend Pages - Homepage | 8 |
 | `08-02-homepage-live-feed.feature` | Frontend Pages - Homepage Live Feed | 7 |
 | `08-03-homepage-live-feed-queue.feature` | Frontend Pages - Homepage Live Feed queue editing | 4 |
+| `08-04-homepage-news-lists.feature` | Frontend Pages - Homepage news lists | 5 |
 
-**Total: 19 scenarios across 3 feature files.** 08-02 and 08-03 are one suite split in two so
+**Total: 24 scenarios across 4 feature files.** 08-02 and 08-03 are one suite split in two so
 each CI job stays short.
 
 ## 08-02 and 08-03 — what the Live Feed suite covers

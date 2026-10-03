@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 410e3c59-ba5a-5ce0-aebd-e0914ad281b9
+  bundle: news
+  default_langcode: en
+  depends:
+    f87cc252-9f43-46a8-86fb-a9f7433b78ad: user
+    a7804bb9-9833-40ce-a6b0-465ce8ee6b56: media
+    98932ae0-060a-4811-8c93-dcea81871372: taxonomy_term
+default:
+  revision_uid:
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  title:
+  - value: 'The Case for Slower Feedback Rounds'
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/case-slower-feedback-rounds
+    langcode: en
+  field_content:
+  - value: '<p>Northfold used to show clients work every Friday. It now holds two reviews per project: one for direction, one for sign-off.</p>
+
+      <p>Between them, the team works without client input and documents every decision.</p>
+
+      <h2>In practice</h2>
+
+      <p>Projects finish eleven days sooner on average, and revision requests have fallen by half.</p>
+
+      <blockquote><p>Weekly reviews were teaching clients to design by committee.</p><footer>Owen Clarke, creative director</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'A Toronto agency moved to two client reviews per project, and timelines got shorter.'
+  field_featured_image:
+  - entity: a7804bb9-9833-40ce-a6b0-465ce8ee6b56
+  field_news_categories:
+  - entity: 98932ae0-060a-4811-8c93-dcea81871372
+  created:
+  - value: 1760432400
+  changed:
+  - value: 1760432400

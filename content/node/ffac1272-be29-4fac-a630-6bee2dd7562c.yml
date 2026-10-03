@@ -20,7 +20,7 @@ default:
   title:
   - value: The Concert Hall Reshaping What a Roof Can Do
   promote:
-  - value: false
+  - value: true
   sticky:
   - value: false
   revision_translation_affected:

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rightup_news
+  module:
+    - views
+active_version: b2f1720afd32e3a5
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:rightup_news-featured'
+        label: 'News: Featured: lead'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+label: 'News: Featured: lead'
+id: block.views_block.rightup_news-featured
+provider: views
+source: block
+source_local_id: 'views_block:rightup_news-featured'
+

@@ -1,0 +1,89 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.button
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.image
+    - canvas.component.sdc.vartheme_bs5_rightup.section
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - core.entity_view_mode.node.rightup_show
+    - field.field.media.image.field_media_image
+    - field.field.node.podcast.field_description
+    - field.field.node.podcast.field_featured_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.podcast
+  module:
+    - file
+    - media
+    - node
+    - options
+id: node.podcast.rightup_show
+content_entity_type_id: node
+content_entity_type_bundle: podcast
+content_entity_type_view_mode: rightup_show
+component_tree:
+  2167b81c-343d-4421-8fc9-3c22a688d675:
+    uuid: 2167b81c-343d-4421-8fc9-3c22a688d675
+    component_id: sdc.vartheme_bs5_rightup.section
+    component_version: 038d91867e142dd2
+    inputs:
+      container_type: none
+      columns: 20-80
+      gutter: 'gx-4 gy-4'
+      margin_block_end: mb-4
+      vertical_alignment: align-items-center
+  c45a845f-e9e2-4030-8319-0434a33709b4:
+    parent_uuid: 2167b81c-343d-4421-8fc9-3c22a688d675
+    slot: col_1
+    uuid: c45a845f-e9e2-4030-8319-0434a33709b4
+    component_id: sdc.vartheme_bs5_rightup.image
+    component_version: 20b07c548b4cf729
+    inputs:
+      media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:podcast␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      ratio: ratio-1x1
+      fit: object-fit-cover
+      width: w-100
+  b14fc0be-6a63-49b3-8f65-3de87f4b8e20:
+    parent_uuid: 2167b81c-343d-4421-8fc9-3c22a688d675
+    slot: col_2
+    uuid: b14fc0be-6a63-49b3-8f65-3de87f4b8e20
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:podcast␝title␞␟value'
+      level: 2
+      text_size: h1
+      text_color: text-white
+  8c8b9b78-7842-4f0f-8572-64fb27c004e8:
+    parent_uuid: 2167b81c-343d-4421-8fc9-3c22a688d675
+    slot: col_2
+    uuid: 8c8b9b78-7842-4f0f-8572-64fb27c004e8
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: a67ef6b9d036abac
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:podcast␝field_description␞␟value'
+      text_color: text-white
+  9a583789-8df1-419c-8ee3-9b9a20a2f1f9:
+    parent_uuid: 2167b81c-343d-4421-8fc9-3c22a688d675
+    slot: col_2
+    uuid: 9a583789-8df1-419c-8ee3-9b9a20a2f1f9
+    component_id: sdc.vartheme_bs5_rightup.button
+    component_version: f7a537484db43170
+    inputs:
+      variant: btn-accent
+      size: btn-md
+      label: 'View All'
+      href:
+        sourceType: host-entity-url
+        absolute: false
+exposed_slots: {  }
+page_variant: null
+

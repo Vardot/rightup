@@ -4,38 +4,8 @@ _meta:
   uuid: 8c1e18db-3d44-5e14-ac8c-bcf1dada617f
   default_langcode: en
   depends:
-    3526ffaf-53fc-491f-b2f6-271c67c0e2fe: file
-    797fea71-ec14-46bb-a796-b74b5b3e0ae5: media
-    2bcee994-1003-48b0-b1f6-a5a92604c9d3: file
-    9390cad4-3619-4c98-94ae-f789202e28be: media
-    79c7c9b9-254b-4e61-96a8-0d6ef65ef8df: file
-    02f79969-1865-4c03-9920-488972ff170d: media
     b5154ddf-cc48-41af-9911-b49b351c5517: file
     8c3b5cff-ace6-45ab-9613-3c34007fea48: media
-    61a1f698-2bbc-4637-894e-511bffb9474f: file
-    34e0d823-b607-4fd8-84af-8516062fe3e2: media
-    55b02503-61b9-413a-9aa0-7f08b2b7aa77: file
-    a7804bb9-9833-40ce-a6b0-465ce8ee6b56: media
-    bc3e4d59-215a-4263-bfdd-8e7f9e76ca1f: file
-    fae0a9f2-4f90-4d24-8652-f1f143c73081: media
-    aa25aa6a-9ab1-4071-a993-f859690ccbf3: file
-    afe93cbe-b34e-46e2-9a7e-45ff6424e105: media
-    f45f5f79-94c2-401e-b75f-f83237693c68: file
-    1bbdc230-2b35-45e4-9cbe-a98c374aaaa4: media
-    9d880123-3e7b-4149-bce4-57fdad1b8bc6: file
-    e6c8ca16-67b7-4833-8df2-e3ae3c9b733b: media
-    c402d390-1651-47fd-a34f-2c10094262b7: file
-    2c55c445-abe2-496e-8cfe-a70c797da699: media
-    5448a7b3-3dbf-4657-82bf-067690bacc84: file
-    ca2fe0ab-fe17-48d8-b59e-e191bffba296: media
-    735e3611-03be-4b6e-b1e3-1beec14b2360: file
-    e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee: media
-    35a85326-cedd-4fb1-a73b-5750d910067e: file
-    157504de-26e6-4c11-ae7a-cdb685af89cc: media
-    26d013cf-6ed3-4c22-84da-40199d4fbed8: file
-    5e6e0d0f-4f98-4fc5-9d86-a5ec6305293b: media
-    b16a6a6c-e675-4286-8a55-09963f934ec4: file
-    8a8ea314-3713-45bd-aaf6-9d69d8122e8b: media
 default:
   status:
   - value: true
@@ -69,112 +39,15 @@ default:
       padding_block_end: pb-5
   - parent_uuid: c0462517-32da-53ad-80e1-f3e0585ec463
     slot: col_1
-    uuid: 148d8b3d-3170-5c11-ab6f-878934802bdf
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
+    uuid: 7840c88a-f446-556e-a094-5279a4b27cc1
+    component_id: block.views_block.rightup_news-top_side
     inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/fen-marble-reveal-first-look-rotterdam-flagship
-        options: {}
-      stretched_link: false
-  - parent_uuid: 148d8b3d-3170-5c11-ab6f-878934802bdf
-    slot: content
-    uuid: 809671be-6075-5e7e-9002-65b23de2a235
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Architecture
-      url:
-        uri: internal:/architecture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 148d8b3d-3170-5c11-ab6f-878934802bdf
-    slot: content
-    uuid: a6f59563-cdfe-59de-84d1-65c718b2c722
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Fen & Marble Reveal First Look at Rotterdam Flagship
-      level: 2
-      text_size: h4
-      url:
-        uri: internal:/news/fen-marble-reveal-first-look-rotterdam-flagship
-        options: {}
-  - parent_uuid: 148d8b3d-3170-5c11-ab6f-878934802bdf
-    slot: content
-    uuid: 16896156-301f-5e95-8ebb-143860dcf2b3
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Tomas Adeyemi
-      author_url:
-        uri: internal:/user/3
-        options: {}
-      size: fs-6
-      text_color: text-muted
-  - parent_uuid: c0462517-32da-53ad-80e1-f3e0585ec463
-    slot: col_1
-    uuid: 63adc65b-1bc0-5428-bcd3-3e158b0bdb11
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-black
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: c0462517-32da-53ad-80e1-f3e0585ec463
-    slot: col_1
-    uuid: 4ca06654-dcde-5d5a-a7cb-a85beecfeb6b
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 9390cad4-3619-4c98-94ae-f789202e28be
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/milan-design-week-opens-record-number-independent-studios
-        options: {}
-      stretched_link: false
-  - parent_uuid: 4ca06654-dcde-5d5a-a7cb-a85beecfeb6b
-    slot: content
-    uuid: 1a248867-273d-55c6-95dd-2fb311be42c5
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 4ca06654-dcde-5d5a-a7cb-a85beecfeb6b
-    slot: content
-    uuid: 08867a3d-0c79-54d4-8eef-2cc9387a3803
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Milan Design Week Opens With Record Number of Independent Studios
-      level: 2
-      text_size: h4
-      url:
-        uri: internal:/news/milan-design-week-opens-record-number-independent-studios
-        options: {}
-  - parent_uuid: 4ca06654-dcde-5d5a-a7cb-a85beecfeb6b
-    slot: content
-    uuid: 111902de-f41f-5eb6-8fa6-c940a80a71b3
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Sana Kovač
-      author_url:
-        uri: internal:/user/4
-        options: {}
-      size: fs-6
-      text_color: text-muted
+      label: 'News: Top stories: side'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 2
+      pager_offset: 1
+      exposed: {}
   - parent_uuid: c0462517-32da-53ad-80e1-f3e0585ec463
     slot: col_2
     uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
@@ -187,43 +60,14 @@ default:
       gutter: gx-4 gy-4
   - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
     slot: col_1
-    uuid: 4148dc81-4f32-520c-b346-89b27847dfa6
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
+    uuid: 49e08ae8-45cf-58ec-8722-97df25cda250
+    component_id: block.views_block.rightup_news-top_hero
     inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 02f79969-1865-4c03-9920-488972ff170d
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/architecture-unease-how-brutalism-became-beautiful-again
-        options: {}
-      stretched_link: false
-  - parent_uuid: 4148dc81-4f32-520c-b346-89b27847dfa6
-    slot: content
-    uuid: 8fef0172-4cf7-54d5-afa1-e7bcbe880afa
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Architecture
-      url:
-        uri: internal:/architecture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 4148dc81-4f32-520c-b346-89b27847dfa6
-    slot: content
-    uuid: e8765390-87ab-5b87-81c5-1ab0de21ad92
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: 'The Architecture of Unease: How Brutalism Became Beautiful Again'
-      level: 1
-      text_size: h1
-      url:
-        uri: internal:/news/architecture-unease-how-brutalism-became-beautiful-again
-        options: {}
+      label: 'News: Top stories: hero'
+      label_display: '0'
+      views_label: ''
+      items_per_page: null
+      exposed: {}
   - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
     slot: col_1
     uuid: dd5a6fb7-d1bc-5fcf-ade1-836816d6b5bd
@@ -234,353 +78,26 @@ default:
       margin_bottom: mb-3
   - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
     slot: col_1
-    uuid: 38a6cab8-2a80-5e83-89b1-3c152ca7218f
-    component_id: sdc.vartheme_bs5_rightup.section
+    uuid: 41b36d70-ea84-51ee-90a2-fc4466d828ec
+    component_id: block.views_block.rightup_news-top_pair
     inputs:
-      container_type: none
-      columns: 50-50
-      column_divider: true
-      column_divider_color: border-black
-  - parent_uuid: 38a6cab8-2a80-5e83-89b1-3c152ca7218f
-    slot: col_1
-    uuid: 963a9218-c814-564f-84d9-c23304a828e0
-    component_id: sdc.vartheme_bs5_rightup.card-text
-    inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/danish-lighting-brand-just-reissued-its-most-controversial-chair
-        options: {}
-  - parent_uuid: 963a9218-c814-564f-84d9-c23304a828e0
-    slot: content
-    uuid: d61eba96-1fb3-5dfd-a0ab-8427db5e98dc
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Product
-      url:
-        uri: internal:/product
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 963a9218-c814-564f-84d9-c23304a828e0
-    slot: content
-    uuid: d66bea23-9469-5986-bf00-969635401b55
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: A Danish Lighting Brand Just Reissued Its Most Controversial Chair
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/danish-lighting-brand-just-reissued-its-most-controversial-chair
-        options: {}
-  - parent_uuid: 963a9218-c814-564f-84d9-c23304a828e0
-    slot: content
-    uuid: bd32b7bd-9073-5e7b-9ab6-b25e0a4b4e62
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Sana Kovač
-      author_url:
-        uri: internal:/user/4
-        options: {}
-      size: fs-6
-      text_color: text-muted
-  - parent_uuid: 38a6cab8-2a80-5e83-89b1-3c152ca7218f
-    slot: col_2
-    uuid: 57014f70-444a-5767-85f3-be7247a30176
-    component_id: sdc.vartheme_bs5_rightup.card-text
-    inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/what-fen-marble-actually-use-pitch-new-clients
-        options: {}
-  - parent_uuid: 57014f70-444a-5767-85f3-be7247a30176
-    slot: content
-    uuid: 1bbad2fc-2dda-5c07-9334-c776d1901b90
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Process
-      url:
-        uri: internal:/process
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 57014f70-444a-5767-85f3-be7247a30176
-    slot: content
-    uuid: eded61de-91e9-5e9c-9875-a1c6ed2fb96f
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: What Fen & Marble Actually Use to Pitch New Clients
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/what-fen-marble-actually-use-pitch-new-clients
-        options: {}
-  - parent_uuid: 57014f70-444a-5767-85f3-be7247a30176
-    slot: content
-    uuid: 446d95cb-46d0-5688-9582-9cb8f72b8145
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Tom James
-      author_url:
-        uri: internal:/user/7
-        options: {}
-      size: fs-6
-      text_color: text-muted
+      label: 'News: Top stories: text pair'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 2
+      pager_offset: 3
+      exposed: {}
   - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
     slot: col_2
-    uuid: e20f6b5e-eb37-569e-ad71-f6ec94e20646
-    component_id: sdc.vartheme_bs5_rightup.card-text
+    uuid: 1c211195-565d-5537-97ab-ff19bcbaf0d8
+    component_id: block.views_block.rightup_news-top_text
     inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/arclight-studio-unveils-new-identity-nordic-airline
-        options: {}
-  - parent_uuid: e20f6b5e-eb37-569e-ad71-f6ec94e20646
-    slot: content
-    uuid: 5d210307-5265-55c0-8cb5-6f0dfb4ad841
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Branding
-      url:
-        uri: internal:/branding
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: e20f6b5e-eb37-569e-ad71-f6ec94e20646
-    slot: content
-    uuid: 1d9a51d0-6b40-5317-b3e6-d5fdc443655e
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Arclight Studio Unveils New Identity for Nordic Airline
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/arclight-studio-unveils-new-identity-nordic-airline
-        options: {}
-  - parent_uuid: e20f6b5e-eb37-569e-ad71-f6ec94e20646
-    slot: content
-    uuid: ab1974a7-d11f-56c4-b800-011a5b5a1e41
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Alex Suskind
-      author_url:
-        uri: internal:/user/8
-        options: {}
-      size: fs-6
-      text_color: text-muted
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: 8109f9af-96c3-5fc6-beea-1cf1f48a2d43
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-black
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: 59bb7862-904c-51f2-9c27-ab84972337c7
-    component_id: sdc.vartheme_bs5_rightup.card-text
-    inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/renzo-vidal-premieres-short-film-honoring-late-mentor
-        options: {}
-  - parent_uuid: 59bb7862-904c-51f2-9c27-ab84972337c7
-    slot: content
-    uuid: 149209ce-4f74-5adf-8d33-5eb75a1cf7a3
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 59bb7862-904c-51f2-9c27-ab84972337c7
-    slot: content
-    uuid: 8eb97221-0c56-52bd-9bea-052c9a7aa2cc
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Renzo Vidal Premieres Short Film Honoring Late Mentor
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/renzo-vidal-premieres-short-film-honoring-late-mentor
-        options: {}
-  - parent_uuid: 59bb7862-904c-51f2-9c27-ab84972337c7
-    slot: content
-    uuid: 5ca9b9af-a875-5756-a84c-44610e1cc6ef
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Nina Corcoran
-      author_url:
-        uri: internal:/user/9
-        options: {}
-      size: fs-6
-      text_color: text-muted
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: 3cfd04ac-5ad7-5bf6-a061-1988f3c68141
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-black
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: 7e2a7ffc-68dd-5f42-99bf-013257eed98e
-    component_id: sdc.vartheme_bs5_rightup.card-text
-    inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/bloom-ash-kiro-tanaka-and-lea-wren-launch-new-collective
-        options: {}
-  - parent_uuid: 7e2a7ffc-68dd-5f42-99bf-013257eed98e
-    slot: content
-    uuid: 558c1f39-4bd5-5942-ae1d-6b8fbaf498ab
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Studios
-      url:
-        uri: internal:/studios
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 7e2a7ffc-68dd-5f42-99bf-013257eed98e
-    slot: content
-    uuid: d4cb2002-3ddf-5fed-942a-a3173e3124f6
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Bloom & Ash, Kiro Tanaka, and Lea Wren Launch New Collective
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/bloom-ash-kiro-tanaka-and-lea-wren-launch-new-collective
-        options: {}
-  - parent_uuid: 7e2a7ffc-68dd-5f42-99bf-013257eed98e
-    slot: content
-    uuid: e9f204de-30a0-5b58-9d55-980ab4b8bfb6
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Jazz Monroe
-      author_url:
-        uri: internal:/user/10
-        options: {}
-      size: fs-6
-      text_color: text-muted
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: 012f74cd-cb89-5b15-89b9-c104a1aa6667
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-black
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: 1c8bed0d-10a6-5f06-98ba-d45fbc063c28
-    component_id: sdc.vartheme_bs5_rightup.card-text
-    inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/see-fen-marbles-surprise-pop-local-ceramicists
-        options: {}
-  - parent_uuid: 1c8bed0d-10a6-5f06-98ba-d45fbc063c28
-    slot: content
-    uuid: 0ed50b46-5175-52c6-aebd-e70622d45333
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 1c8bed0d-10a6-5f06-98ba-d45fbc063c28
-    slot: content
-    uuid: b7f6ff4e-101c-5f2f-80fd-5b1ce1c678f0
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: See Fen & Marble's Surprise Pop-Up With Local Ceramicists
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/see-fen-marbles-surprise-pop-local-ceramicists
-        options: {}
-  - parent_uuid: 1c8bed0d-10a6-5f06-98ba-d45fbc063c28
-    slot: content
-    uuid: 6af756f3-0596-5e8c-803d-b0be92dce401
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Alex Suskind
-      author_url:
-        uri: internal:/user/8
-        options: {}
-      size: fs-6
-      text_color: text-muted
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: d55f8ae0-122c-5e55-9314-9792d1042366
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-black
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: d2151ce1-2792-5420-81a1-81f003cf87c8
-    slot: col_2
-    uuid: ca400eb5-1f35-5588-b7c9-e3a63840c1f4
-    component_id: sdc.vartheme_bs5_rightup.card-text
-    inputs:
-      background_color: none
-      link_url:
-        uri: internal:/news/arclight-studio-announce-fall-exhibition
-        options: {}
-  - parent_uuid: ca400eb5-1f35-5588-b7c9-e3a63840c1f4
-    slot: content
-    uuid: 26090d3b-e067-54d5-a09a-fd7916cc2830
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: ca400eb5-1f35-5588-b7c9-e3a63840c1f4
-    slot: content
-    uuid: c7b40cfe-3781-5391-a004-229da8081e13
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Arclight Studio Announce Fall Exhibition
-      level: 2
-      text_size: h5
-      url:
-        uri: internal:/news/arclight-studio-announce-fall-exhibition
-        options: {}
-  - parent_uuid: ca400eb5-1f35-5588-b7c9-e3a63840c1f4
-    slot: content
-    uuid: cb1cb8b8-8861-51a1-9bd6-1a8746a7c6f7
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Jazz Monroe
-      author_url:
-        uri: internal:/user/10
-        options: {}
-      size: fs-6
-      text_color: text-muted
+      label: 'News: Top stories: text'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 5
+      pager_offset: 5
+      exposed: {}
   - uuid: 15a1e1ce-7c86-5a22-bacc-f425096c97e4
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
@@ -652,209 +169,25 @@ default:
       border_color: border-black
   - parent_uuid: 5fb8a565-f7fa-548e-a2a2-f6d458ab3b15
     slot: col_1
-    uuid: a73e14d9-58c8-5df7-bcfb-b8e655a20b84
-    component_id: sdc.vartheme_bs5_rightup.card-featured
+    uuid: 7ccdac1e-a2df-584a-9179-57316acf1cc0
+    component_id: block.views_block.rightup_news-featured
     inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 34e0d823-b607-4fd8-84af-8516062fe3e2
-          target_type: media
-      ratio: ratio-4x3
-      link_url:
-        uri: internal:/news/inside-gallery-show-built-entirely-borrowed-light
-        options: {}
-      content_vertical_alignment: align-items-center
-      gutters_between: g-4
-      columns_md_size: '07_05'
-      columns_lg_size: '07_05'
-      columns_xl_size: '07_05'
-      columns_xxl_size: '07_05'
-  - parent_uuid: a73e14d9-58c8-5df7-bcfb-b8e655a20b84
-    slot: content
-    uuid: 16bf2511-d420-5917-8170-8b8b41287727
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-center
-  - parent_uuid: a73e14d9-58c8-5df7-bcfb-b8e655a20b84
-    slot: content
-    uuid: b74190df-8af5-5923-b1b0-1137a1dee171
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Inside the Gallery Show Built Entirely From Borrowed Light
-      level: 2
-      text_size: h1
-      align: text-center
-      url:
-        uri: internal:/news/inside-gallery-show-built-entirely-borrowed-light
-        options: {}
-  - parent_uuid: a73e14d9-58c8-5df7-bcfb-b8e655a20b84
-    slot: content
-    uuid: ccf14a80-8381-59a1-ad61-26b5e4bf0bad
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p class="text-align-center">A new exhibition strips away every wall label and didactic panel, letting neon, steel, and shadow argue the point instead. We walked through opening night with
-          the artist behind it.</p>
-        format: canvas_html_block
-      text_size: fs-5
-      text_color: text-body
-  - parent_uuid: a73e14d9-58c8-5df7-bcfb-b8e655a20b84
-    slot: content
-    uuid: 96859559-c53d-5a83-8d24-0791e8d996be
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p class="text-align-center">By Priya Nakamura</p>
-        format: canvas_html_block
-      text_size: fs-6
-      text_color: text-muted
+      label: 'News: Featured: lead'
+      label_display: '0'
+      views_label: ''
+      items_per_page: null
+      exposed: {}
   - parent_uuid: 5fb8a565-f7fa-548e-a2a2-f6d458ab3b15
     slot: col_1
-    uuid: f61d76c1-cf84-51fc-8865-f1113789219a
-    component_id: sdc.vartheme_bs5_rightup.section
+    uuid: af1cfcec-a01b-5b12-95ba-0c8fd523756a
+    component_id: block.views_block.rightup_news-featured_more
     inputs:
-      container_type: none
-      columns: 33-33-33
-      column_divider: true
-      column_divider_color: border-black
-      gutter: gx-4 gy-4
-      margin_block_start: mt-4
-  - parent_uuid: f61d76c1-cf84-51fc-8865-f1113789219a
-    slot: col_1
-    uuid: 202e7618-cd77-581e-a90d-e69a9602b9b6
-    component_id: sdc.vartheme_bs5_rightup.card-featured
-    inputs:
-      media_position: end
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: a7804bb9-9833-40ce-a6b0-465ce8ee6b56
-          target_type: media
-      ratio: ratio-4x3
-      link_url:
-        uri: internal:/news/type-foundry-built-overlapping-shapes
-        options: {}
-      content_vertical_alignment: align-items-start
-      columns_md_size: '07_05'
-      columns_lg_size: '07_05'
-      columns_xl_size: '07_05'
-      columns_xxl_size: '07_05'
-  - parent_uuid: 202e7618-cd77-581e-a90d-e69a9602b9b6
-    slot: content
-    uuid: e2b08cb0-597d-5bcc-8d37-56ac8e070c98
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Branding
-      url:
-        uri: internal:/branding
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 202e7618-cd77-581e-a90d-e69a9602b9b6
-    slot: content
-    uuid: f6e79b8b-f390-5c88-aa65-65c1eb0c2d73
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: A Type Foundry Built From Overlapping Shapes
-      level: 3
-      text_size: h4
-      url:
-        uri: internal:/news/type-foundry-built-overlapping-shapes
-        options: {}
-  - parent_uuid: f61d76c1-cf84-51fc-8865-f1113789219a
-    slot: col_2
-    uuid: 12a2c211-c9ae-5768-9b23-7cdd6277b3a9
-    component_id: sdc.vartheme_bs5_rightup.card-featured
-    inputs:
-      media_position: end
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: fae0a9f2-4f90-4d24-8652-f1f143c73081
-          target_type: media
-      ratio: ratio-4x3
-      link_url:
-        uri: internal:/news/museum-became-its-own-archive
-        options: {}
-      content_vertical_alignment: align-items-start
-      columns_md_size: '07_05'
-      columns_lg_size: '07_05'
-      columns_xl_size: '07_05'
-      columns_xxl_size: '07_05'
-  - parent_uuid: 12a2c211-c9ae-5768-9b23-7cdd6277b3a9
-    slot: content
-    uuid: b6718de8-7815-57e3-8216-cc94d2807494
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 12a2c211-c9ae-5768-9b23-7cdd6277b3a9
-    slot: content
-    uuid: 96986347-8df0-57db-9f66-b02a219f4378
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: The Museum That Became Its Own Archive
-      level: 3
-      text_size: h4
-      url:
-        uri: internal:/news/museum-became-its-own-archive
-        options: {}
-  - parent_uuid: f61d76c1-cf84-51fc-8865-f1113789219a
-    slot: col_3
-    uuid: 41907362-6efb-500e-9b8a-559bec186d74
-    component_id: sdc.vartheme_bs5_rightup.card-featured
-    inputs:
-      media_position: end
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: afe93cbe-b34e-46e2-9a7e-45ff6424e105
-          target_type: media
-      ratio: ratio-4x3
-      link_url:
-        uri: internal:/news/concert-hall-reshaping-what-roof-can-do
-        options: {}
-      content_vertical_alignment: align-items-start
-      columns_md_size: '07_05'
-      columns_lg_size: '07_05'
-      columns_xl_size: '07_05'
-      columns_xxl_size: '07_05'
-  - parent_uuid: 41907362-6efb-500e-9b8a-559bec186d74
-    slot: content
-    uuid: 39e43040-976d-507a-b200-d98c3b7f6999
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Architecture
-      url:
-        uri: internal:/architecture
-        options: {}
-      size: taxonomy-sm
-      color: text-tertiary
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 41907362-6efb-500e-9b8a-559bec186d74
-    slot: content
-    uuid: aa393a5a-fbba-5632-abd5-95b66dea7cc2
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: The Concert Hall Reshaping What a Roof Can Do
-      level: 3
-      text_size: h4
-      url:
-        uri: internal:/news/concert-hall-reshaping-what-roof-can-do
-        options: {}
+      label: 'News: Featured: more'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
+      pager_offset: 1
+      exposed: {}
   - uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
@@ -875,236 +208,41 @@ default:
       border_color: border-light
   - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
     slot: col_1
-    uuid: 2b350208-0333-50ae-a1ce-170335c3f506
-    component_id: sdc.vartheme_bs5_rightup.section
+    uuid: 876f1463-00eb-5e24-a3eb-2279745e3d4d
+    component_id: block.views_block.rightup_news-podcast_show
     inputs:
-      container_type: none
-      columns: 20-80
-      gutter: gx-4 gy-4
-      vertical_alignment: align-items-center
-      margin_block_end: mb-4
-  - parent_uuid: 2b350208-0333-50ae-a1ce-170335c3f506
-    slot: col_1
-    uuid: 5ebeb13f-9a61-5387-8963-d7b5ce1de4e7
-    component_id: sdc.vartheme_bs5_rightup.image
-    inputs:
-      media:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 1bbdc230-2b35-45e4-9cbe-a98c374aaaa4
-          target_type: media
-      ratio: ratio-1x1
-      fit: object-fit-cover
-      width: w-100
-  - parent_uuid: 2b350208-0333-50ae-a1ce-170335c3f506
-    slot: col_2
-    uuid: 45a53d7f-0e6e-54c7-8d2a-665d141fd871
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Last Call
-      level: 2
-      text_size: h1
-      text_color: text-white
-  - parent_uuid: 2b350208-0333-50ae-a1ce-170335c3f506
-    slot: col_2
-    uuid: 07bffbbb-ad48-5f28-b58d-07f53eee563a
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>The decisions nobody sees, told by the people who made them. Every week, we sit down with a working studio to talk through one project — start to finish, no polish, no pretending it went
-          smoothly.</p>
-        format: canvas_html_block
-      text_color: text-white
-  - parent_uuid: 2b350208-0333-50ae-a1ce-170335c3f506
-    slot: col_2
-    uuid: fd019fc6-4495-539e-a64d-e376d622d6e5
-    component_id: sdc.vartheme_bs5_rightup.button
-    inputs:
-      label: View All
-      href:
-        uri: internal:/podcasts/last-call
-        options: {}
-      variant: btn-accent
-      size: btn-md
+      label: 'News: Podcast show'
+      label_display: '0'
+      views_label: ''
+      items_per_page: null
+      exposed:
+        filter-title:
+          value: Last Call
+          plugin_id: string
+          exposed: false
+          expose:
+            use_operator: false
   - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
     slot: col_1
-    uuid: 26ef4bed-5e09-5d48-8381-7928ab95e819
-    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    uuid: 11b552dc-5a8b-5cb4-bc5a-53418e2af918
+    component_id: block.views_block.rightup_news-podcast_episodes
     inputs:
-      background_color: none
-      icon_color: bg-accent
-      padded: false
-      link_url:
-        uri: internal:/podcast/studio-wont-use-mood-board
-        options: {}
-      stretched_link: true
-  - parent_uuid: 26ef4bed-5e09-5d48-8381-7928ab95e819
-    slot: content
-    uuid: 3cc3848b-f742-5b3c-8342-fa3a3bf69171
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Episode 17
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 26ef4bed-5e09-5d48-8381-7928ab95e819
-    slot: content
-    uuid: da347e74-43e3-5137-abf2-04ea8b54c245
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: The Studio That Won't Use a Mood Board
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: 26ef4bed-5e09-5d48-8381-7928ab95e819
-    slot: content
-    uuid: ae46649e-e6a0-5a67-9164-753f69b64cb6
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients ask for one by name.</p>
-        format: canvas_html_block
-      text_color: text-white
-  - parent_uuid: 26ef4bed-5e09-5d48-8381-7928ab95e819
-    slot: content
-    uuid: a98a8643-dbf0-5891-9b2e-4073d874e7af
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>Hosted by Idris Calloway · 3 Mins</p>
-        format: canvas_html_block
-      text_size: fs-6
-      text_color: text-secondary
-  - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
-    slot: col_1
-    uuid: 70279493-bba6-594c-b0f5-a2f2fcb6a007
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-light
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
-    slot: col_1
-    uuid: d41a3d72-e975-5931-a5d4-c5ff43915c3d
-    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
-    inputs:
-      background_color: none
-      icon_color: bg-accent
-      padded: false
-      link_url:
-        uri: internal:/podcast/no-straight-walls
-        options: {}
-      stretched_link: true
-  - parent_uuid: d41a3d72-e975-5931-a5d4-c5ff43915c3d
-    slot: content
-    uuid: 59445cac-41b4-5167-82da-fcce5e2d2070
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Episode 16
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: d41a3d72-e975-5931-a5d4-c5ff43915c3d
-    slot: content
-    uuid: cd23e45c-4a0e-5906-bfae-67d338b36a77
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: No Straight Walls
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: d41a3d72-e975-5931-a5d4-c5ff43915c3d
-    slot: content
-    uuid: e2d52a7b-9470-530c-b386-bc0d036d56ff
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never
-          framed a curve before.</p>
-        format: canvas_html_block
-      text_color: text-white
-  - parent_uuid: d41a3d72-e975-5931-a5d4-c5ff43915c3d
-    slot: content
-    uuid: 3ee2d4e8-17e4-59fc-ab8e-d536db618b8b
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>Hosted by Idris Calloway · 3 Mins</p>
-        format: canvas_html_block
-      text_size: fs-6
-      text_color: text-secondary
-  - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
-    slot: col_1
-    uuid: ed56c45d-4361-594a-9a82-d919cfee4845
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-light
-      margin_top: mt-3
-      margin_bottom: mb-3
-  - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
-    slot: col_1
-    uuid: 67bdacd5-e2bd-5807-97de-c37fa1fcb611
-    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
-    inputs:
-      background_color: none
-      icon_color: bg-accent
-      padded: false
-      link_url:
-        uri: internal:/podcast/three-years-without-deck
-        options: {}
-      stretched_link: true
-  - parent_uuid: 67bdacd5-e2bd-5807-97de-c37fa1fcb611
-    slot: content
-    uuid: 55b09f24-0b2f-5477-b393-896dd423c6de
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Episode 15
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 67bdacd5-e2bd-5807-97de-c37fa1fcb611
-    slot: content
-    uuid: 8d925561-14ec-55ee-a7a5-5305380e9068
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: Three Years Without a Deck
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: 67bdacd5-e2bd-5807-97de-c37fa1fcb611
-    slot: content
-    uuid: 6076eeff-4150-5a18-b418-a496d43c9768
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>Inside the studio that hasn't touched a computer for client presentations in three years, and how they've kept winning work without one.</p>
-        format: canvas_html_block
-      text_color: text-white
-  - parent_uuid: 67bdacd5-e2bd-5807-97de-c37fa1fcb611
-    slot: content
-    uuid: 9d8c94a9-dbcf-592f-9268-99d62f8e6715
-    component_id: sdc.vartheme_bs5_rightup.text
-    inputs:
-      text:
-        value: <p>Hosted by Idris Calloway · 3 Mins</p>
-        format: canvas_html_block
-      text_size: fs-6
-      text_color: text-secondary
-  - parent_uuid: 2d6cab47-5a13-5b63-9558-f5f4a61e230b
-    slot: col_1
-    uuid: a8dda955-4323-5917-a53d-e1503bde70d0
-    component_id: sdc.vartheme_bs5_rightup.divider
-    inputs:
-      border_color: border-light
-      margin_top: mt-3
-      margin_bottom: mb-3
+      label: 'News: Podcast episodes'
+      label_display: '0'
+      views_label: ''
+      items_per_page: null
+      exposed:
+        filter-title:
+          value: Last Call
+          plugin_id: string
+          exposed: false
+          expose:
+            use_operator: false
   - uuid: b55335df-9a09-53a6-b74e-017792e3c579
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
       container_type: container
-      columns: 33-33-33
+      columns: '100'
       section_header: true
       gutter: gx-4 gy-4
       padding_block_start: pt-5
@@ -1119,160 +257,15 @@ default:
       border_color: border-black
   - parent_uuid: b55335df-9a09-53a6-b74e-017792e3c579
     slot: col_1
-    uuid: 5c6656a7-ebaa-5ee4-ae6a-9d422bb0994d
-    component_id: sdc.vartheme_bs5_rightup.article-teaser
+    uuid: 360a8636-a8ec-55c4-bf50-509c3bdffcda
+    component_id: block.views_block.rightup_news-latest_grid
     inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: e6c8ca16-67b7-4833-8df2-e3ae3c9b733b
-          target_type: media
-      image_ratio: ratio-16x9
-      category_label: Process
-      category_url:
-        uri: internal:/process
-        options: {}
-      heading_text: Why More Studios Are Sketching by Hand Again
-      heading_level: 3
-      heading_size: h4
-      heading_url:
-        uri: internal:/news/why-more-studios-are-sketching-hand-again
-        options: {}
-      author: Sana Kovač
-      author_url:
-        uri: internal:/user/4
-        options: {}
-      date: '2026-07-06'
-      show_divider: false
-  - parent_uuid: b55335df-9a09-53a6-b74e-017792e3c579
-    slot: col_2
-    uuid: 0964b060-f21a-5533-b070-9ac4524738d1
-    component_id: sdc.vartheme_bs5_rightup.article-teaser
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 2c55c445-abe2-496e-8cfe-a70c797da699
-          target_type: media
-      image_ratio: ratio-16x9
-      category_label: Branding
-      category_url:
-        uri: internal:/branding
-        options: {}
-      heading_text: The Typography Manual Every Junior Designer Still Reads
-      heading_level: 3
-      heading_size: h4
-      heading_url:
-        uri: internal:/news/typography-manual-every-junior-designer-still-reads
-        options: {}
-      author: Tomas Adeyemi
-      author_url:
-        uri: internal:/user/3
-        options: {}
-      date: '2026-07-05'
-      show_divider: false
-  - parent_uuid: b55335df-9a09-53a6-b74e-017792e3c579
-    slot: col_3
-    uuid: a7e223c7-45de-52d3-8eff-08ee583a18e8
-    component_id: sdc.vartheme_bs5_rightup.article-teaser
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: ca2fe0ab-fe17-48d8-b59e-e191bffba296
-          target_type: media
-      image_ratio: ratio-16x9
-      category_label: Architecture
-      category_url:
-        uri: internal:/architecture
-        options: {}
-      heading_text: A Community Center Built From Color-Blocked Voids
-      heading_level: 3
-      heading_size: h4
-      heading_url:
-        uri: internal:/news/community-center-built-color-blocked-voids
-        options: {}
-      author: Rena Osei
-      author_url:
-        uri: internal:/user/5
-        options: {}
-      date: '2026-07-05'
-      show_divider: false
-  - parent_uuid: b55335df-9a09-53a6-b74e-017792e3c579
-    slot: col_1
-    uuid: 31eb1a88-9ecb-5cfa-af90-f599789cb5a0
-    component_id: sdc.vartheme_bs5_rightup.article-teaser
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: a7804bb9-9833-40ce-a6b0-465ce8ee6b56
-          target_type: media
-      image_ratio: ratio-16x9
-      category_label: Branding
-      category_url:
-        uri: internal:/branding
-        options: {}
-      heading_text: A Type Foundry Built From Overlapping Shapes
-      heading_level: 3
-      heading_size: h4
-      heading_url:
-        uri: internal:/news/type-foundry-built-overlapping-shapes
-        options: {}
-      author: Rena Osei
-      author_url:
-        uri: internal:/user/5
-        options: {}
-      date: '2026-07-07'
-      show_divider: false
-  - parent_uuid: b55335df-9a09-53a6-b74e-017792e3c579
-    slot: col_2
-    uuid: 0557ac2a-06b9-5a7d-aeaa-141a2894ee7a
-    component_id: sdc.vartheme_bs5_rightup.article-teaser
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: fae0a9f2-4f90-4d24-8652-f1f143c73081
-          target_type: media
-      image_ratio: ratio-16x9
-      category_label: Culture
-      category_url:
-        uri: internal:/culture
-        options: {}
-      heading_text: The Museum That Became Its Own Archive
-      heading_level: 3
-      heading_size: h4
-      heading_url:
-        uri: internal:/news/museum-became-its-own-archive
-        options: {}
-      author: Priya Nakamura
-      author_url:
-        uri: internal:/user/6
-        options: {}
-      date: '2026-07-07'
-      show_divider: false
-  - parent_uuid: b55335df-9a09-53a6-b74e-017792e3c579
-    slot: col_3
-    uuid: 08aa41ca-96ab-506b-a263-869a0088a165
-    component_id: sdc.vartheme_bs5_rightup.article-teaser
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee
-          target_type: media
-      image_ratio: ratio-16x9
-      category_label: Branding
-      category_url:
-        uri: internal:/branding
-        options: {}
-      heading_text: A Studio's New Icon Set Ditches Every Convention
-      heading_level: 3
-      heading_size: h4
-      heading_url:
-        uri: internal:/news/studios-new-icon-set-ditches-every-convention
-        options: {}
-      author: Tomas Adeyemi
-      author_url:
-        uri: internal:/user/3
-        options: {}
-      date: '2026-07-04'
-      show_divider: false
+      label: 'News: Latest stories grid'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 6
+      pager_offset: 10
+      exposed: {}
   - uuid: 939ae392-a6ff-5ffa-92ae-697b3f56d091
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:
@@ -1285,211 +278,15 @@ default:
       padding_block_end: pb-5
   - parent_uuid: 939ae392-a6ff-5ffa-92ae-697b3f56d091
     slot: col_1
-    uuid: a16ecc42-5511-56db-a726-925b1b3d908c
-    component_id: sdc.vartheme_bs5_rightup.card-slider
+    uuid: 143c8580-78cc-50f0-a2cf-e160949d031a
+    component_id: block.views_block.rightup_news-featured_slider
     inputs:
-      id: on-display
-      label: On Display
-      title_color: text-white
-      control_bg_color: accent
-      control_icon_color: black
-      visible_items: '3'
-  - parent_uuid: a16ecc42-5511-56db-a726-925b1b3d908c
-    slot: cards
-    uuid: e3219fd8-0e9a-52ac-b6b2-5c8372b5272a
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 157504de-26e6-4c11-ae7a-cdb685af89cc
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/photographers-10-year-study-ceremony-and-color-west-africa
-        options: {}
-      stretched_link: true
-  - parent_uuid: e3219fd8-0e9a-52ac-b6b2-5c8372b5272a
-    slot: content
-    uuid: 2aefaaa1-e755-53e9-a703-3ba40e169031
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: e3219fd8-0e9a-52ac-b6b2-5c8372b5272a
-    slot: content
-    uuid: 77cb4bbf-ffce-5688-8dad-51c347f91c2a
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: A Photographer's 10-Year Study of Ceremony and Color in West Africa
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: e3219fd8-0e9a-52ac-b6b2-5c8372b5272a
-    slot: content
-    uuid: cf7ccc83-6306-5723-a5db-57ec7194fe27
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Sana Kovač
-      author_url:
-        uri: internal:/user/4
-        options: {}
-      date: '2026-07-04'
-      size: fs-6
-      text_color: text-secondary
-  - parent_uuid: a16ecc42-5511-56db-a726-925b1b3d908c
-    slot: cards
-    uuid: 077d6057-a01a-5388-a0f3-906007d67758
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 5e6e0d0f-4f98-4fc5-9d86-a5ec6305293b
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/documentary-series-turning-manual-labor-still-life
-        options: {}
-      stretched_link: true
-  - parent_uuid: 077d6057-a01a-5388-a0f3-906007d67758
-    slot: content
-    uuid: aa8246da-fbd7-5ded-867d-6de4e615c4b1
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Culture
-      url:
-        uri: internal:/culture
-        options: {}
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: 077d6057-a01a-5388-a0f3-906007d67758
-    slot: content
-    uuid: e8ec9c93-578c-5be7-b071-3548d0405f7a
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: The Documentary Series Turning Manual Labor Into Still Life
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: 077d6057-a01a-5388-a0f3-906007d67758
-    slot: content
-    uuid: 72e89cf4-3f79-56d1-a8b6-0580abbb8cd5
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Priya Nakamura
-      author_url:
-        uri: internal:/user/6
-        options: {}
-      date: '2026-07-03'
-      size: fs-6
-      text_color: text-secondary
-  - parent_uuid: a16ecc42-5511-56db-a726-925b1b3d908c
-    slot: cards
-    uuid: d4ba4dff-4559-5195-808f-886aa28d7ebf
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 8a8ea314-3713-45bd-aaf6-9d69d8122e8b
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/facade-system-built-entirely-salvaged-material
-        options: {}
-      stretched_link: true
-  - parent_uuid: d4ba4dff-4559-5195-808f-886aa28d7ebf
-    slot: content
-    uuid: b23b0684-4d62-528a-b950-d5c6f58982f1
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Architecture
-      url:
-        uri: internal:/architecture
-        options: {}
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: d4ba4dff-4559-5195-808f-886aa28d7ebf
-    slot: content
-    uuid: bc2f4bce-38a2-56c4-8c6d-c8af8f30f15a
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: A Facade System Built Entirely From Salvaged Material
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: d4ba4dff-4559-5195-808f-886aa28d7ebf
-    slot: content
-    uuid: 2f0af5d8-b1ca-52ec-83e0-db11e07c5ac5
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Rena Osei
-      author_url:
-        uri: internal:/user/5
-        options: {}
-      date: '2026-07-03'
-      size: fs-6
-      text_color: text-secondary
-  - parent_uuid: a16ecc42-5511-56db-a726-925b1b3d908c
-    slot: cards
-    uuid: e7c37924-fdd2-52be-b55e-727bfda8bb5e
-    component_id: sdc.vartheme_bs5_rightup.card-impressed
-    inputs:
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: afe93cbe-b34e-46e2-9a7e-45ff6424e105
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      link_url:
-        uri: internal:/news/concrete-institute-built-age-purpose
-        options: {}
-      stretched_link: true
-  - parent_uuid: e7c37924-fdd2-52be-b55e-727bfda8bb5e
-    slot: content
-    uuid: 913ea1e9-5c9a-58af-a7c1-0968a710c968
-    component_id: sdc.vartheme_bs5_rightup.taxonomy
-    inputs:
-      label: Architecture
-      url:
-        uri: internal:/architecture
-        options: {}
-      size: taxonomy-sm
-      color: text-accent
-      no_padding: true
-      justify_content: justify-content-start
-  - parent_uuid: e7c37924-fdd2-52be-b55e-727bfda8bb5e
-    slot: content
-    uuid: b9c2246c-64af-5c64-8488-297a111816bc
-    component_id: sdc.vartheme_bs5_rightup.heading
-    inputs:
-      heading_text: A Concrete Institute Built to Age on Purpose
-      level: 3
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: e7c37924-fdd2-52be-b55e-727bfda8bb5e
-    slot: content
-    uuid: fd2708f8-4155-5a43-bfef-480388c2f940
-    component_id: sdc.vartheme_bs5_rightup.byline
-    inputs:
-      author: Rena Osei
-      author_url:
-        uri: internal:/user/5
-        options: {}
-      date: '2026-07-02'
-      size: fs-6
-      text_color: text-secondary
+      label: 'News: Featured: slider'
+      label_display: '0'
+      views_label: ''
+      items_per_page: 4
+      pager_offset: 4
+      exposed: {}
   - uuid: 86f8c8f4-f3f9-5e09-81a2-662ebcd1e22f
     component_id: sdc.vartheme_bs5_rightup.section
     inputs:

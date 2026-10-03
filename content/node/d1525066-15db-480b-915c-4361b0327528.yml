@@ -20,9 +20,9 @@ default:
   title:
   - value: A Photographer's 10-Year Study of Ceremony and Color in West Africa
   promote:
-  - value: false
+  - value: true
   sticky:
-  - value: false
+  - value: true
   revision_translation_affected:
   - value: true
   moderation_state:

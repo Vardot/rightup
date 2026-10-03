@@ -20,7 +20,7 @@ default:
   title:
   - value: A Type Foundry Built From Overlapping Shapes
   promote:
-  - value: false
+  - value: true
   sticky:
   - value: false
   revision_translation_affected:
@@ -68,6 +68,6 @@ default:
   field_news_categories:
   - entity: 50114c5e-67f5-4532-bf45-6a65b755a79e
   created:
-  - value: 1783414800
+  - value: 1783418400
   changed:
-  - value: 1783414800
+  - value: 1783418400

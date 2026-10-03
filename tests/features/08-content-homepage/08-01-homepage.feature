@@ -43,7 +43,7 @@ Feature: Frontend Pages - Homepage
       And wait
      Then I should see "Podcasts"
       And I should see "Last Call"
-      And I should see "Hosted by Idris Calloway"
+      And the "podcast episodes" should list 3 stories
 
   @check @local @development @staging @production
   Scenario: Check that the homepage has the On Display slider

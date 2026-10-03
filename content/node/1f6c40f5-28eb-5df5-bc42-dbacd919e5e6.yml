@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1f6c40f5-28eb-5df5-bc42-dbacd919e5e6
+  bundle: news
+  default_langcode: en
+  depends:
+    32b98ac3-34e5-433b-8516-a6ca9cad7559: user
+    929fa437-2f56-4518-b130-01fc5fb3fe67: media
+    98932ae0-060a-4811-8c93-dcea81871372: taxonomy_term
+default:
+  revision_uid:
+  - entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: 32b98ac3-34e5-433b-8516-a6ca9cad7559
+  title:
+  - value: 'What Happens to the Sketches After the Project Ships'
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/what-happens-sketches-after-project-ships
+    langcode: en
+  field_content:
+  - value: '<p>Most design studios produce far more sketches than any client sees. We asked three how they keep them.</p>
+
+      <p>One scans every page into a shared drive tagged by project. One binds them into a yearly book. One throws them away on purpose.</p>
+
+      <h2>In practice</h2>
+
+      <p>All three agree the habit matters more than the method.</p>
+
+      <blockquote><p>The archive is for the next junior, not for us.</p><footer>Studio lead, Amsterdam</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'Three studios explain how they archive the drawings nobody asked for.'
+  field_featured_image:
+  - entity: 929fa437-2f56-4518-b130-01fc5fb3fe67
+  field_news_categories:
+  - entity: 98932ae0-060a-4811-8c93-dcea81871372
+  created:
+  - value: 1756803600
+  changed:
+  - value: 1756803600

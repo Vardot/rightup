@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.byline
+    - canvas.component.sdc.vartheme_bs5_rightup.card-text
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.taxonomy
+    - core.entity_view_mode.node.rightup_text
+    - field.field.node.news.field_news_categories
+    - node.type.news
+    - taxonomy.vocabulary.news_categories
+  module:
+    - node
+    - options
+    - taxonomy
+    - user
+id: node.news.rightup_text
+content_entity_type_id: node
+content_entity_type_bundle: news
+content_entity_type_view_mode: rightup_text
+component_tree:
+  2893b597-4f97-42dc-82bf-26b638952256:
+    uuid: 2893b597-4f97-42dc-82bf-26b638952256
+    component_id: sdc.vartheme_bs5_rightup.card-text
+    component_version: e029fefa26d20f4f
+    inputs:
+      background_color: none
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  55c7a8b9-8d8f-463b-84d2-5676646119fd:
+    parent_uuid: 2893b597-4f97-42dc-82bf-26b638952256
+    slot: content
+    uuid: 55c7a8b9-8d8f-463b-84d2-5676646119fd
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    component_version: 6c96c2405efc9655
+    inputs:
+      label:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:news␝field_news_categories␞0␟entity␜␜entity:taxonomy_term:news_categories␝name␞␟value'
+      size: taxonomy-sm
+      color: text-tertiary
+      no_padding: true
+      justify_content: justify-content-start
+  16077c22-9874-489a-805e-1fca18c52644:
+    parent_uuid: 2893b597-4f97-42dc-82bf-26b638952256
+    slot: content
+    uuid: 16077c22-9874-489a-805e-1fca18c52644
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:news␝title␞␟value'
+      level: 2
+      text_size: h5
+      url:
+        sourceType: host-entity-url
+        absolute: false
+  eb069efe-2b72-490b-8dde-7e5bd4651206:
+    parent_uuid: 2893b597-4f97-42dc-82bf-26b638952256
+    slot: content
+    uuid: eb069efe-2b72-490b-8dde-7e5bd4651206
+    component_id: sdc.vartheme_bs5_rightup.byline
+    component_version: cc4869187f83aa8b
+    inputs:
+      author:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:news␝uid␞␟entity␜␜entity:user␝name␞␟value'
+      size: fs-6
+      text_color: text-muted
+exposed_slots: {  }
+page_variant: null
+

@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5_rightup.heading
+    - canvas.component.sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    - canvas.component.sdc.vartheme_bs5_rightup.taxonomy
+    - canvas.component.sdc.vartheme_bs5_rightup.text
+    - core.entity_view_mode.node.rightup_episode
+    - field.field.node.podcast_episode.field_description
+    - field.field.node.podcast_episode.field_episode_number
+    - node.type.podcast_episode
+  module:
+    - node
+    - options
+id: node.podcast_episode.rightup_episode
+content_entity_type_id: node
+content_entity_type_bundle: podcast_episode
+content_entity_type_view_mode: rightup_episode
+component_tree:
+  337dbb8b-3cba-490b-83e0-14ce0cc03bf4:
+    uuid: 337dbb8b-3cba-490b-83e0-14ce0cc03bf4
+    component_id: sdc.vartheme_bs5_rightup.horizontal-text-icon-card
+    component_version: ddcbdf2f09a07f99
+    inputs:
+      icon_color: bg-accent
+      background_color: none
+      padded: false
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  45c3630d-d577-49c3-86e0-6d16f17ce997:
+    parent_uuid: 337dbb8b-3cba-490b-83e0-14ce0cc03bf4
+    slot: content
+    uuid: 45c3630d-d577-49c3-86e0-6d16f17ce997
+    component_id: sdc.vartheme_bs5_rightup.taxonomy
+    component_version: 6c96c2405efc9655
+    inputs:
+      label:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:podcast_episode␝field_episode_number␞␟value'
+      prefix: Episode
+      size: taxonomy-sm
+      color: text-accent
+      no_padding: true
+      justify_content: justify-content-start
+  ae478553-dfae-405c-8077-d7beb034af03:
+    parent_uuid: 337dbb8b-3cba-490b-83e0-14ce0cc03bf4
+    slot: content
+    uuid: ae478553-dfae-405c-8077-d7beb034af03
+    component_id: sdc.vartheme_bs5_rightup.heading
+    component_version: 0889e2ce906c3164
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:podcast_episode␝title␞␟value'
+      level: 3
+      text_size: h4
+      text_color: text-white
+  15be803b-b0c2-4e0e-80fc-2df876c88a8b:
+    parent_uuid: 337dbb8b-3cba-490b-83e0-14ce0cc03bf4
+    slot: content
+    uuid: 15be803b-b0c2-4e0e-80fc-2df876c88a8b
+    component_id: sdc.vartheme_bs5_rightup.text
+    component_version: a67ef6b9d036abac
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:podcast_episode␝field_description␞␟value'
+      text_color: text-white
+exposed_slots: {  }
+page_variant: null
+

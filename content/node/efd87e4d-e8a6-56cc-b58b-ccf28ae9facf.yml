@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: efd87e4d-e8a6-56cc-b58b-ccf28ae9facf
+  bundle: news
+  default_langcode: en
+  depends:
+    f87cc252-9f43-46a8-86fb-a9f7433b78ad: user
+    05874fa4-b6c6-4bd0-8daf-3c3830f6888c: media
+    6bc5ea95-be6c-43c0-8c08-6a29feb25494: taxonomy_term
+default:
+  revision_uid:
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: f87cc252-9f43-46a8-86fb-a9f7433b78ad
+  title:
+  - value: 'The Folding Stool That Took a Decade to Get Right'
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/folding-stool-took-decade-get-right
+    langcode: en
+  field_content:
+  - value: '<p>Puu Works first drew its folding stool in 2014. The version going on sale this month is the eleventh prototype.</p>
+
+      <p>The problem was the hinge. Every earlier version either wobbled when open or pinched fingers when closed.</p>
+
+      <h2>In practice</h2>
+
+      <p>The final design uses a single brass pin and a birch leg that locks against a shoulder cut into the seat.</p>
+
+      <blockquote><p>Ten years sounds long until you sit on the first nine.</p><footer>Eero Lindqvist, founder</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'A Finnish maker finally put its three-legged stool into production after eleven prototypes.'
+  field_featured_image:
+  - entity: 05874fa4-b6c6-4bd0-8daf-3c3830f6888c
+  field_news_categories:
+  - entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  created:
+  - value: 1739523600
+  changed:
+  - value: 1739523600

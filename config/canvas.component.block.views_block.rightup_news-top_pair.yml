@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rightup_news
+  module:
+    - views
+active_version: f0b0c944288445a3
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:rightup_news-top_pair'
+        label: 'News: Top stories: text pair'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+label: 'News: Top stories: text pair'
+id: block.views_block.rightup_news-top_pair
+provider: views
+source: block
+source_local_id: 'views_block:rightup_news-top_pair'
+

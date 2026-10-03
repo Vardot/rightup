@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0a9655f6-d73b-553b-9948-5b7d0778d128
+  bundle: news
+  default_langcode: en
+  depends:
+    a41226dd-499d-4eae-ba05-dd955a50c7d4: user
+    de02f379-7c66-479a-be1b-7497651dab4d: media
+    4190771e-e477-4d78-a6bf-1fcef05f99e1: taxonomy_term
+default:
+  revision_uid:
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: a41226dd-499d-4eae-ba05-dd955a50c7d4
+  title:
+  - value: 'The Seoul Studio Designing Only for Public Libraries'
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/seoul-studio-designing-only-public-libraries
+    langcode: en
+  field_content:
+  - value: '<p>Bureau Haneul has completed fourteen libraries across South Korea and has not taken a commission for anything else.</p>
+
+      <p>The specialism began by accident, after a competition win in Daejeon led to calls from three neighbouring districts.</p>
+
+      <h2>In practice</h2>
+
+      <p>The studio now keeps a shared database of shelving loads, reading light levels and children''s furniture heights that it updates after every opening.</p>
+
+      <blockquote><p>Every library teaches us something the next one needs.</p><footer>Park Ji-won, director</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'Bureau Haneul has spent eight years on one building type and has no plans to stop.'
+  field_featured_image:
+  - entity: de02f379-7c66-479a-be1b-7497651dab4d
+  field_news_categories:
+  - entity: 4190771e-e477-4d78-a6bf-1fcef05f99e1
+  created:
+  - value: 1759914000
+  changed:
+  - value: 1759914000

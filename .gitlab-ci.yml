@@ -667,7 +667,7 @@ workflow:
       - SUITE: "08-content-homepage-a"
         FEATURES_GLOB: "tests/features/08-content-homepage/08-{01,02}-*.feature"
       - SUITE: "08-content-homepage-b"
-        FEATURES_GLOB: "tests/features/08-content-homepage/08-03-*.feature"
+        FEATURES_GLOB: "tests/features/08-content-homepage/08-{03,04}-*.feature"
       - SUITE: "12-content-access-and-lock-a"
         FEATURES_GLOB: "tests/features/12-content-access-and-lock/12-01-*.feature"
       - SUITE: "12-content-access-and-lock-b"

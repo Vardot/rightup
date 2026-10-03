@@ -1,0 +1,2551 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rightup_episode
+    - core.entity_view_mode.node.rightup_featured
+    - core.entity_view_mode.node.rightup_featured_small
+    - core.entity_view_mode.node.rightup_hero
+    - core.entity_view_mode.node.rightup_lead
+    - core.entity_view_mode.node.rightup_list
+    - core.entity_view_mode.node.rightup_show
+    - core.entity_view_mode.node.rightup_side
+    - core.entity_view_mode.node.rightup_slide
+    - core.entity_view_mode.node.rightup_teaser
+    - core.entity_view_mode.node.rightup_text
+    - entityqueue.entity_queue.rightup_editors_picks
+    - entityqueue.entity_queue.rightup_featured
+    - entityqueue.entity_queue.rightup_top_stories
+    - node.type.news
+    - node.type.podcast
+    - node.type.podcast_episode
+  module:
+    - entityqueue
+    - node
+    - taxonomy
+    - user
+    - varbase_components
+id: rightup_news
+label: 'News lists'
+module: views
+description: 'News lists for the home and category landing pages. Each Canvas placement sets the category, offset and count.'
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: ''
+      fields: {  }
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            news: news
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_news_categories
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Category
+            description: 'The category name, for example Architecture. Leave empty for every category.'
+            use_operator: false
+            operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_teaser
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: {  }
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  editors_picks:
+    id: editors_picks
+    display_title: "Editors' picks"
+    display_plugin: block
+    position: 4
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
+          order: DESC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-grid'
+          rows_slot: rows
+          prop_mappings:
+            grid_utility_classes: 'gx-4 gy-4'
+            column_utility_classes: ''
+            col_xs: col-12
+            col_sm: ''
+            col_md: col-md-4
+            col_lg: ''
+            col_xl: ''
+            col_xxl: ''
+            column_divider: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_teaser
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: "Editors' picks queue"
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_editors_picks: rightup_editors_picks
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: "News: Editors' picks"
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_editors_picks'
+  featured:
+    id: featured
+    display_title: 'Featured: lead'
+    display_plugin: block
+    position: 11
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: promote
+          plugin_id: standard
+          order: DESC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: ''
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_featured
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Featured queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_featured: rightup_featured
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Featured: lead'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_featured'
+  featured_more:
+    id: featured_more
+    display_title: 'Featured: more'
+    display_plugin: block
+    position: 12
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: promote
+          plugin_id: standard
+          order: DESC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-grid'
+          rows_slot: rows
+          prop_mappings:
+            grid_utility_classes: 'gx-4 gy-4 mt-4'
+            column_utility_classes: ''
+            col_xs: col-12
+            col_sm: ''
+            col_md: col-md-4
+            col_lg: ''
+            col_xl: ''
+            col_xxl: ''
+            column_divider: '1'
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_featured_small
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Featured queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_featured: rightup_featured
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Featured: more'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_featured'
+  featured_slider:
+    id: featured_slider
+    display_title: 'Featured: slider'
+    display_plugin: block
+    position: 13
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: promote
+          plugin_id: standard
+          order: DESC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:card-slider'
+          rows_slot: cards
+          prop_mappings:
+            id: on-display
+            label: 'On Display'
+            title_color: text-white
+            control_bg_color: accent
+            control_icon_color: black
+            visible_items: '3'
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_slide
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Featured queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_featured: rightup_featured
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Featured: slider'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_featured'
+  latest:
+    id: latest
+    display_title: 'Latest stories list'
+    display_plugin: block
+    position: 5
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 10
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: '1'
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_list
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Latest stories list'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  latest_grid:
+    id: latest_grid
+    display_title: 'Latest stories grid'
+    display_plugin: block
+    position: 6
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 6
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-grid'
+          rows_slot: rows
+          prop_mappings:
+            grid_utility_classes: 'gx-4 gy-4'
+            column_utility_classes: ''
+            col_xs: col-12
+            col_sm: ''
+            col_md: col-md-4
+            col_lg: ''
+            col_xl: ''
+            col_xxl: ''
+            column_divider: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_teaser
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Latest stories grid'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  lead:
+    id: lead
+    display_title: 'Lead story'
+    display_plugin: block
+    position: 1
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            news: news
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: boolean
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_news_categories
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Category
+            description: 'The category name, for example Architecture. Leave empty for every category.'
+            use_operator: false
+            operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: ''
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_lead
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Lead story'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  more:
+    id: more
+    display_title: 'More stories'
+    display_plugin: block
+    position: 3
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 3
+          items_per_page: 3
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            news: news
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: boolean
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_news_categories
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Category
+            description: 'The category name, for example Architecture. Leave empty for every category.'
+            use_operator: false
+            operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-grid'
+          rows_slot: rows
+          prop_mappings:
+            grid_utility_classes: 'gx-4 gy-4'
+            column_utility_classes: ''
+            col_xs: col-12
+            col_sm: ''
+            col_md: col-md-4
+            col_lg: ''
+            col_xl: ''
+            col_xxl: ''
+            column_divider: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_teaser
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: More stories'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  podcast_episodes:
+    id: podcast_episodes
+    display_title: 'Podcast episodes'
+    display_plugin: block
+    position: 15
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            podcast_episode: podcast_episode
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: field_podcast
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Show
+            description: 'The podcast show title, for example Last Call. Leave empty for every show.'
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: show
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: '1'
+            row_divider_color: border-light
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_episode
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        filters: false
+        filter_groups: false
+      relationships:
+        field_podcast:
+          id: field_podcast
+          table: node__field_podcast
+          field: field_podcast
+          relationship: none
+          group_type: group
+          admin_label: Show
+          plugin_id: standard
+          required: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Podcast episodes'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  podcast_show:
+    id: podcast_show
+    display_title: 'Podcast show'
+    display_plugin: block
+    position: 14
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            podcast: podcast
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Show
+            description: 'The podcast show title, for example Last Call. Leave empty for every show.'
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: show
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: ''
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_show
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        filters: false
+        filter_groups: false
+      relationships: {  }
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Podcast show'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  side:
+    id: side
+    display_title: 'Side stories'
+    display_plugin: block
+    position: 2
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 1
+          items_per_page: 2
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            news: news
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: boolean
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_news_categories
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Category
+            description: 'The category name, for example Architecture. Leave empty for every category.'
+            use_operator: false
+            operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: '1'
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_side
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Side stories'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  top_hero:
+    id: top_hero
+    display_title: 'Top stories: hero'
+    display_plugin: block
+    position: 7
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: ''
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_hero
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Top stories queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_top_stories: rightup_top_stories
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Top stories: hero'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_top_stories'
+  top_pair:
+    id: top_pair
+    display_title: 'Top stories: text pair'
+    display_plugin: block
+    position: 9
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 2
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-grid'
+          rows_slot: rows
+          prop_mappings:
+            grid_utility_classes: 'gx-4 gy-4'
+            column_utility_classes: ''
+            col_xs: col-12
+            col_sm: ''
+            col_md: col-md-6
+            col_lg: ''
+            col_xl: ''
+            col_xxl: ''
+            column_divider: '1'
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_text
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Top stories queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_top_stories: rightup_top_stories
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Top stories: text pair'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_top_stories'
+  top_side:
+    id: top_side
+    display_title: 'Top stories: side'
+    display_plugin: block
+    position: 8
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 2
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: '1'
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_side
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Top stories queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_top_stories: rightup_top_stories
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Top stories: side'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_top_stories'
+  top_text:
+    id: top_text
+    display_title: 'Top stories: text'
+    display_plugin: block
+    position: 10
+    display_options:
+      title: ''
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 5
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_queue_position
+          order: ASC
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          exposed: false
+          granularity: second
+      style:
+        type: components_views_style
+        options:
+          uses_fields: false
+          component_id: 'vartheme_bs5_rightup:views-view-unformatted'
+          rows_slot: rows
+          prop_mappings:
+            title: ''
+            title_level: ''
+            default_row_class: ''
+            row_divider: '1'
+            row_divider_color: ''
+            attributes: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: rightup_text
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+      relationships:
+        field_news_categories:
+          id: field_news_categories
+          table: node__field_news_categories
+          field: field_news_categories
+          relationship: none
+          group_type: group
+          admin_label: Category
+          plugin_id: standard
+          required: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Top stories queue'
+          plugin_id: entity_queue
+          required: false
+          limit_queue:
+            rightup_top_stories: rightup_top_stories
+      display_description: ''
+      exposed_block: true
+      display_extenders: {  }
+      block_description: 'News: Top stories: text'
+      block_category: 'Lists (Views)'
+      block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: '0'
+        hide_fields: '0'
+        sort_fields: '0'
+        configure_filters: configure_filters
+        disable_filters: '0'
+        configure_sorts: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.rightup_top_stories'
+

@@ -952,6 +952,25 @@ config:
         display.latest.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
         display.featured.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
         display.related.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-unformatted
+        # All news reads newest first. Sticky stories are the editors' picks
+        # fallback on the category pages, so they must not jump the listing.
+        display.default.display_options.sorts:
+          created:
+            id: created
+            table: node_field_data
+            field: created
+            relationship: none
+            group_type: group
+            admin_label: ''
+            entity_type: node
+            entity_field: created
+            plugin_id: date
+            order: DESC
+            expose:
+              label: ''
+              field_identifier: ''
+            exposed: false
+            granularity: second
     views.view.podcasts:
       setViewsComponentStyleTheme:
         theme: default

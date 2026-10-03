@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 95b3571f-c095-56f4-aeb7-28bde45b6f8c
+  bundle: news
+  default_langcode: en
+  depends:
+    6c9b3d66-9df6-42da-bf04-d54ceeb6e773: user
+    81a56c89-31ab-4e1b-8c23-35a1f712c03c: media
+    6bc5ea95-be6c-43c0-8c08-6a29feb25494: taxonomy_term
+default:
+  revision_uid:
+  - entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  revision_log:
+  - value: Created new News post
+  status:
+  - value: true
+  uid:
+  - entity: 6c9b3d66-9df6-42da-bf04-d54ceeb6e773
+  title:
+  - value: 'The Desk Lamp Built From a Single Sheet of Aluminium'
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /news/desk-lamp-built-single-sheet-aluminium
+    langcode: en
+  field_content:
+  - value: '<p>Studio Ferri''s Piega lamp starts life as one flat sheet of aluminium and is folded into shape by hand.</p>
+
+      <p>The cable runs through a channel pressed into the stem, and the head tilts on a fold that can be bent back and forth thousands of times.</p>
+
+      <h2>In practice</h2>
+
+      <p>It ships flat, in an envelope.</p>
+
+      <blockquote><p>We wanted the packaging to be thinner than the lamp.</p><footer>Giulia Ferri</footer></blockquote>'
+    format: full_html
+  field_description:
+  - value: 'No screws, no glue: a Milan studio folds its new lamp from one laser-cut blank.'
+  field_featured_image:
+  - entity: 81a56c89-31ab-4e1b-8c23-35a1f712c03c
+  field_news_categories:
+  - entity: 6bc5ea95-be6c-43c0-8c08-6a29feb25494
+  created:
+  - value: 1734512400
+  changed:
+  - value: 1734512400

@@ -20,7 +20,7 @@ default:
   title:
   - value: 'The Architecture of Unease: How Brutalism Became Beautiful Again'
   promote:
-  - value: true
+  - value: false
   sticky:
   - value: false
   revision_translation_affected:
