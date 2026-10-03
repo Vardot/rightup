@@ -6,7 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.2] - 2026-10-03
 ### Changed
+- Requires Vartheme BS5 Rightup 1.0.3.
 - The home page and the six category pages list news, podcasts and episodes from the
   `rightup_news` view instead of static cards. Each Canvas placement sets its category,
   offset and count, and three queues (Top stories, Featured, Editors' picks) decide what
@@ -14,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Rightup with #3627823.
 - All news lists newest first; sticky stories feed the Editors' picks fallback instead
   (#3627824).
+- Varbase Blog Base is no longer required or applied (#3627803).
 
 ## [1.0.1] - 2026-10-03
 ### Changed
