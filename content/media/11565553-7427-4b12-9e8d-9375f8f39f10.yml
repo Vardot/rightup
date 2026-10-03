@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 11565553-7427-4b12-9e8d-9375f8f39f10
+  bundle: audio
+  default_langcode: en
+  depends:
+    78b61def-8ad4-456c-9eee-fd6431e0a2e6: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Designing for a Client Who Cannot See It audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 78b61def-8ad4-456c-9eee-fd6431e0a2e6

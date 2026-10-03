@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8d8c1425-b3ca-4527-8d73-2d17aa533233
+  bundle: audio
+  default_langcode: en
+  depends:
+    9265d66b-4583-41ca-bb31-d2c50f490ebb: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Shared Office audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 9265d66b-4583-41ca-bb31-d2c50f490ebb

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2f20d4f3-104d-4298-8196-470dd7748f07
+  bundle: audio
+  default_langcode: en
+  depends:
+    b8983a88-6335-4811-aa24-3eef7adbe504: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Model Shop That Refuses to Go Digital audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: b8983a88-6335-4811-aa24-3eef7adbe504

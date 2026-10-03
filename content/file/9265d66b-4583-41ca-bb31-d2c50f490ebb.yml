@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9265d66b-4583-41ca-bb31-d2c50f490ebb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep03-shared-office.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep03-shared-office.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 571563
+  status:
+    -
+      value: true

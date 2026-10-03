@@ -39,7 +39,7 @@ Feature: Quality - Accessibility structure
       | accessibility     | /accessibility                                                  |
       | news listing      | /news                                                           |
       | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |
-      | podcast episode   | /podcast/no-straight-walls                                      |
+      | podcast episode   | /podcasts/last-call/no-straight-walls                                      |
 
   @a11y @local @development @staging @production
   Scenario Outline: Every control and image on the <page> page can be identified
@@ -74,7 +74,7 @@ Feature: Quality - Accessibility structure
       | accessibility     | /accessibility                                                  |
       | news listing      | /news                                                           |
       | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |
-      | podcast episode   | /podcast/no-straight-walls                                      |
+      | podcast episode   | /podcasts/last-call/no-straight-walls                                      |
 
   @a11y @local @development @staging @production
   Scenario Outline: Every form field on the <page> page is labelled

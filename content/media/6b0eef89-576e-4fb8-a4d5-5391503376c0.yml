@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6b0eef89-576e-4fb8-a4d5-5391503376c0
+  bundle: audio
+  default_langcode: en
+  depends:
+    a2c3a134-ee78-4d0d-9757-571ef38094d2: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'One Colour, Eleven Years audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: a2c3a134-ee78-4d0d-9757-571ef38094d2

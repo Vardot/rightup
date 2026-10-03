@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d284cae0-1ce3-47bf-82c7-8e231c1bd1ec
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep02-when-should-i-fire-client.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep02-when-should-i-fire-client.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 590066
+  status:
+    -
+      value: true

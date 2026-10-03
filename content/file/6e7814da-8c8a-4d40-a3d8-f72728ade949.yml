@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6e7814da-8c8a-4d40-a3d8-f72728ade949
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep02-live-furniture-fair.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep02-live-furniture-fair.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 581187
+  status:
+    -
+      value: true

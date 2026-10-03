@@ -2,77 +2,94 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: 629685a9-54da-4d6b-9809-2e278626a146
-  bundle: podcast
+  bundle: podcast_episode
   default_langcode: en
   depends:
-    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
-    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
     dbbc6ab3-ef65-545b-aba7-fc25e1d97242: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Podcast episode
+    -
+      value: 'Created new Podcast episode'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
-  title:
-  - value: The Intern Who Redesigned the Office
-  promote:
-  - value: false
-  sticky:
-  - value: false
-  revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
-  path:
-  - alias: /podcast/intern-who-redesigned-office
-    langcode: en
-  field_audio:
-  - entity: dbbc6ab3-ef65-545b-aba7-fc25e1d97242
-  field_content:
-  - value: '<p><strong>Idris Calloway:</strong> This is The Rightup, and I''m Idris Calloway. Picture a studio handing its entire physical space to its newest hire. One month, no oversight, no budget cap,
-      and the partners abroad for two weeks with no way to undo anything. Lena Sato was that hire. Lena, welcome.</p>
-
-      <p><strong>Lena Sato:</strong> Thank you. I was three weeks into the job when they told me.</p>
-
-      <p><strong>Idris Calloway:</strong> What was your first thought?</p>
-
-      <p><strong>Lena Sato:</strong> Honestly, that it was a test I was supposed to refuse. It wasn''t.</p>
-
-      <p><strong>Idris Calloway:</strong> So where did you start?</p>
-
-      <p><strong>Lena Sato:</strong> I watched how people actually worked for five days before moving a single desk. Nobody used the meeting room. Everyone took calls in the stairwell.</p>
-
-      <p><strong>Idris Calloway:</strong> And what did you change?</p>
-
-      <p><strong>Lena Sato:</strong> I took out the meeting room and built four small phone booths. I moved the partners'' desks into the middle of the floor, and I put the model workshop right by the entrance,
-      so clients walk past the work first.</p>
-
-      <p><strong>Idris Calloway:</strong> How did the partners react when they came back?</p>
-
-      <p><strong>Lena Sato:</strong> One of them loved the booths. The other one hated sitting in the middle, and said so, for about a week. Then he stopped mentioning it.</p>
-
-      <p><strong>Idris Calloway:</strong> So not what anyone expected.</p>
-
-      <p><strong>Lena Sato:</strong> In either direction. We lost the big table, and people did miss it. But the stairwell is quiet now.</p>
-
-      <p><strong>Idris Calloway:</strong> Lena Sato, thank you. That''s The Intern Who Redesigned the Office, on The Rightup.</p>'
-    format: full_html
-  field_description:
-  - value: A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and no way to undo it before the partners return from a two-week trip abroad. What came back
-      was not what anyone expected, in either direction.
-  field_duration:
-  - value: 2 Mins
-  field_episode_number:
-  - value: 13
-  field_featured_image:
-  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
-  field_tags:
-  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+    -
+      target_id: 1
   created:
-  - value: 1781686800
+  - value: 1768467600
   changed:
-  - value: 1781686800
+  - value: 1768467600
+  title:
+    -
+      value: 'The Intern Who Redesigned the Office'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/intern-who-redesigned-office
+      langcode: en
+  field_audio:
+    -
+      entity: dbbc6ab3-ef65-545b-aba7-fc25e1d97242
+  field_content:
+    -
+      value: |-
+        <p><strong>Idris Calloway:</strong> I'm Idris Calloway and this is Last Call. A studio in Lisbon handed its whole office to its newest hire for one month: no oversight, no budget cap, and the partners away for two weeks in Japan. Lena Sato was that hire, and the partner who agreed to it, Duarte Pinheiro, is here too. Welcome to you both.</p>
+        <p><strong>Lena Sato:</strong> Thank you. I was three weeks into the job when they told me.</p>
+        <p><strong>Duarte Pinheiro:</strong> And I was the one who insisted on no budget cap, which my business partner has not let me forget.</p>
+        <p><strong>Idris Calloway:</strong> Duarte, why do it at all?</p>
+        <p><strong>Duarte Pinheiro:</strong> We had been in the same layout for nine years. Every senior person had an opinion about the office, and those opinions cancelled each other out. I wanted someone who had not yet learned what was impossible.</p>
+        <p><strong>Idris Calloway:</strong> Lena, where did you start?</p>
+        <p><strong>Lena Sato:</strong> I spent the first week just watching. I timed how long people spent standing at the plotter, where they took phone calls, which desks were empty on which days. The big finding was that the meeting room was booked solid but people only used it for calls, because the open floor was too loud.</p>
+        <p><strong>Idris Calloway:</strong> So what did you build?</p>
+        <p><strong>Lena Sato:</strong> I took the meeting room apart. The table went to the middle of the studio as a shared work surface, and I built four phone booths out of plywood and recycled felt in the old room. Then I moved the partners' desks from the window to the back wall, next to the kitchen.</p>
+        <p><strong>Duarte Pinheiro:</strong> Which we found out about from a photo on the studio group chat while we were in Osaka.</p>
+        <p><strong>Idris Calloway:</strong> How much did it cost?</p>
+        <p><strong>Lena Sato:</strong> Fourteen thousand two hundred euros. The booths were most of it. A carpenter friend helped on two weekends.</p>
+        <p><strong>Idris Calloway:</strong> And when the partners came back?</p>
+        <p><strong>Duarte Pinheiro:</strong> Honestly, I was angry for about a day. The window desk was the one thing I cared about. Then I noticed I was overhearing every project conversation from the kitchen wall, which I had not done in years. I knew more about our work in a week than in the previous quarter.</p>
+        <p><strong>Lena Sato:</strong> Not everything worked. The big shared table is too loud for drawing, and two people asked to go back to their old desks. We let them.</p>
+        <p><strong>Idris Calloway:</strong> The description says it surprised people in both directions.</p>
+        <p><strong>Duarte Pinheiro:</strong> The booths were used by everyone, constantly, so that was a win. But we lost the only room where a client could see a full presentation wall, and we have had to hire space twice for big reviews.</p>
+        <p><strong>Idris Calloway:</strong> Would you do it again?</p>
+        <p><strong>Duarte Pinheiro:</strong> Next year, with a different hire. And yes, a budget cap.</p>
+        <p><strong>Idris Calloway:</strong> Lena Sato, Duarte Pinheiro, thank you. That is Last Call.</p>
+      format: full_html
+  field_description:
+    -
+      value: 'A studio hands its physical space over to its newest hire for one month, no oversight, no budget cap, and no way to undo it before the partners return from a two-week trip abroad. What came back was not what anyone expected, in either direction.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 13
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

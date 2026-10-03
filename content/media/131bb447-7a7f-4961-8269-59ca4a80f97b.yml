@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 131bb447-7a7f-4961-8269-59ca4a80f97b
+  bundle: audio
+  default_langcode: en
+  depends:
+    ef01981a-1649-4781-9870-f11c362c1332: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Recycled Glass Terrazzo audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: ef01981a-1649-4781-9870-f11c362c1332

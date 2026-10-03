@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6e7da8f7-247d-4dfb-9515-391b44419237
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    04e2d104-e68c-4190-8914-c2b62e0d8bae: media
+    a7804bb9-9833-40ce-a6b0-465ce8ee6b56: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1767085200
+  changed:
+  - value: 1767085200
+  title:
+    -
+      value: 'On Site: The Timber Tower'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/site-timber-tower
+      langcode: en
+  field_audio:
+    -
+      entity: 04e2d104-e68c-4190-8914-c2b62e0d8bae
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> Field Notes, Malik Osei, and I'm slightly out of breath, because we've just walked up eleven of fourteen storeys of a residential tower built almost entirely from cross-laminated timber. The cladding goes on in two weeks, so right now the walls are bare spruce panels and the whole stairwell smells like a sawmill. With me is Maren Solheim, the site manager. Maren, the first thing I noticed is how quiet it is.</p><p><strong>Maren Solheim:</strong> Everyone says that. There's no grinding, no wet trades, no concrete pump running all day. The panels arrive from the factory already cut, with the window openings and the service holes routed. A crew of four can fix a whole floor of wall and slab in a day.</p><p><strong>Malik Osei:</strong> How big is one of these panels?</p><p><strong>Maren Solheim:</strong> The floor slabs are up to sixteen metres long and three metres wide, five layers, two hundred millimetres thick. One crane lift each. The factory numbers them in the order we need them and the lorries arrive in that order.</p><p><strong>Malik Osei:</strong> There's a small grey box screwed to the panel by the window here. What is it?</p><p><strong>Maren Solheim:</strong> Moisture sensor. There's one in every slab and every other wall panel, four hundred and twelve in total. Somebody reads them twice a day. Timber delivered at twelve percent moisture content needs to stay under about sixteen. Above that, you start worrying about mould and movement once the building is closed up.</p><p><strong>Malik Osei:</strong> So rain is the enemy.</p><p><strong>Maren Solheim:</strong> Until the cladding is on, yes. We had a week of storms in April. We tented the top three floors and ran dehumidifiers for nine days. One slab went to nineteen percent and we left it open to dry for another week before anybody was allowed to lay a screed on it.</p><p><strong>Malik Osei:</strong> Let's step out onto the floor plate. The view goes all the way to the river. And the ceiling is just bare timber.</p><p><strong>Maren Solheim:</strong> That's the bit the architects fought for. In most timber buildings you encapsulate everything behind plasterboard for fire. Here the fire engineer allowed the ceilings in the flats to stay exposed, because the slab is sized to char. A fire burns the outer layer at roughly point seven of a millimetre a minute, and the char protects the rest. We designed for ninety minutes, so there's sacrificial timber built in.</p><p><strong>Malik Osei:</strong> Is anything here not timber?</p><p><strong>Maren Solheim:</strong> The core. The lift and stair core is concrete, poured first, and the timber hangs off it. Also the ground floor, because the regulations for the shops at street level are stricter, and because nobody wants a delivery van reversing into a timber column.</p><p><strong>Malik Osei:</strong> What will the people who live here notice?</p><p><strong>Maren Solheim:</strong> Sound, mostly. Timber is lighter, so footfall noise is the hard problem. There's a floating screed with a rubber layer under it on every floor. We tested flat nine last week and it passed with three decibels to spare.</p><p><strong>Malik Osei:</strong> Maren Solheim, thank you. From eleven storeys up, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A walk up fourteen storeys of cross-laminated timber with the site manager, two weeks before the cladding went on.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 4
+  field_featured_image:
+    -
+      entity: a7804bb9-9833-40ce-a6b0-465ce8ee6b56
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

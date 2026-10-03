@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b3cd75c3-7059-4967-b976-e70b8623a383
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    1e1dabe6-16ca-470c-8cbd-884589ae7fd7: media
+    d03fc580-a33e-4a2f-8334-21f688b3fc5f: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1737363600
+  changed:
+  - value: 1737363600
+  title:
+    -
+      value: 'The Partner Who Left Mid-Project'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/partner-who-left-mid-project
+      langcode: en
+  field_audio:
+    -
+      entity: 1e1dabe6-16ca-470c-8cbd-884589ae7fd7
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> This is Last Call, and I'm Idris Calloway. In week nine of a hospital commission, one of three founding partners walked out. The building still opened on the date in the contract. Ruth Achterberg is one of the two who stayed, and Willem Brouwer, the practice's third partner, is with us too. Ruth, start with the Tuesday.</p><p><strong>Ruth Achterberg:</strong> He asked for twenty minutes at the end of the day, which he never did. He said he was taking a job in Rotterdam and he would be gone by Friday. We were at stage four on a sixty-bed rehabilitation wing, and he had led the clinical planning from the first workshop.</p><p><strong>Idris Calloway:</strong> What did that leave on the table?</p><p><strong>Willem Brouwer:</strong> Forty-one drawings with his initials in the checked-by box, a room data sheet for every bay, and a user group meeting with the ward sisters the following Monday. The sisters trusted him. They did not know us.</p><p><strong>Idris Calloway:</strong> Did you tell the client straight away?</p><p><strong>Ruth Achterberg:</strong> Wednesday morning, by phone, before he had told anyone else. The estates director was quiet for a long time and then asked one question: who signs the drawings now? I said I would, and that I would read every one of them before I did.</p><p><strong>Idris Calloway:</strong> Did you?</p><p><strong>Ruth Achterberg:</strong> All forty-one, over a weekend, with a red pen and a flask of coffee. I found two things he would have caught and one thing he had got wrong. A sluice room had no floor drain. That would have been a very expensive Monday in eighteen months' time.</p><p><strong>Idris Calloway:</strong> Willem, what did you change in how the office ran?</p><p><strong>Willem Brouwer:</strong> We stopped pretending we were three. We hired a clinical planner on a freelance contract for six months, a woman who had worked as a theatre nurse for twelve years, and we put her in the user group meetings instead of either of us. The sisters respected her within one session because she knew where the gloves go.</p><p><strong>Idris Calloway:</strong> Was there a cost you have not talked about?</p><p><strong>Ruth Achterberg:</strong> Our fee. We absorbed about eighteen thousand euros of extra hours and never billed it. I also did not take a holiday for fourteen months, which my children remember better than I do.</p><p><strong>Idris Calloway:</strong> Has the partner who left seen the building?</p><p><strong>Willem Brouwer:</strong> He came to the opening. He stood in the courtyard for a while and said the planting was better than he had drawn it. That was the whole conversation, and honestly it was enough.</p><p><strong>Idris Calloway:</strong> What would you tell a practice of three that is reading this and doing quiet arithmetic about one of its partners?</p><p><strong>Ruth Achterberg:</strong> Write down who checks what, today, while everybody is still friendly. We had a partnership agreement that covered money and said nothing about drawings.</p><p><strong>Idris Calloway:</strong> Ruth Achterberg and Willem Brouwer, thank you. That's Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A founding partner walks out in week nine of a hospital commission. The remaining two explain how the building still opened on time.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 1
+  field_featured_image:
+    -
+      entity: d03fc580-a33e-4a2f-8334-21f688b3fc5f
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

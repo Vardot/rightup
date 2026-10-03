@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6a7f5de7-99f9-4702-bb47-1aea76ba8884
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep02-print-shop-six-morning.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep02-print-shop-six-morning.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 651302
+  status:
+    -
+      value: true

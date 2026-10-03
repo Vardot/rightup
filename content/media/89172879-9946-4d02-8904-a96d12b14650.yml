@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 89172879-9946-4d02-8904-a96d12b14650
+  bundle: audio
+  default_langcode: en
+  depends:
+    e9f1cc00-7da1-476c-a19a-11e03336af66: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Oak audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: e9f1cc00-7da1-476c-a19a-11e03336af66

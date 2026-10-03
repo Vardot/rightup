@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 38294b4f-c316-41ad-9879-870e5c07a321
+  bundle: audio
+  default_langcode: en
+  depends:
+    6a7f5de7-99f9-4702-bb47-1aea76ba8884: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'A Print Shop at Six in the Morning audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 6a7f5de7-99f9-4702-bb47-1aea76ba8884

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0d2bb9c1-9684-411d-ba7d-9437e495c342
+  bundle: audio
+  default_langcode: en
+  depends:
+    0e9ee756-d8dd-4140-adb6-3db8a98a1c08: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Inside the Model Archive audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 0e9ee756-d8dd-4140-adb6-3db8a98a1c08

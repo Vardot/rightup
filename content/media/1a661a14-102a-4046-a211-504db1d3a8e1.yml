@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1a661a14-102a-4046-a211-504db1d3a8e1
+  bundle: audio
+  default_langcode: en
+  depends:
+    b498297f-fc89-4597-b9ce-9591497fb056: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Why We Killed Our Best-Selling Product audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: b498297f-fc89-4597-b9ce-9591497fb056

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e671d05d-ffce-4de3-8e0a-ea2ad88c9448
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep05-we-publish-our-rates.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep05-we-publish-our-rates.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 504379
+  status:
+    -
+      value: true

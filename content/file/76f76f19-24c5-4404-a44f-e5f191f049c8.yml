@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 76f76f19-24c5-4404-a44f-e5f191f049c8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep03-sample-room.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep03-sample-room.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 689004
+  status:
+    -
+      value: true

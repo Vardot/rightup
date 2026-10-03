@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e2efc2fe-b8f2-47b8-8a93-542443587435
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    0d2bb9c1-9684-411d-ba7d-9437e495c342: media
+    929fa437-2f56-4518-b130-01fc5fb3fe67: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1774861200
+  changed:
+  - value: 1774861200
+  title:
+    -
+      value: 'Inside the Model Archive'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/inside-model-archive
+      langcode: en
+  field_audio:
+    -
+      entity: 0d2bb9c1-9684-411d-ba7d-9437e495c342
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> This is Field Notes, I'm Malik Osei, and I've just been told to put on cotton gloves before I'm allowed through the door. We're in a basement under a school of architecture where sixty years of models are kept at eighteen degrees and fifty percent humidity. It's dim, the shelves go back further than the light does, and the only sound is the air handling. Estelle Varga is one of the two conservators here.</p><p><strong>Estelle Varga:</strong> Welcome. Mind the step. And please don't lean on anything, some of these shelves hold things that weigh less than a sandwich and are worth a lot more.</p><p><strong>Malik Osei:</strong> How many models are down here?</p><p><strong>Estelle Varga:</strong> About two thousand four hundred, catalogued. The oldest is from 1961, a competition entry for a concert hall that was never built. The newest came in last month. Every year the school gives us the best ten graduation models, and every few years an alumnus dies and their family gives us an office's worth.</p><p><strong>Malik Osei:</strong> Which materials age worst?</p><p><strong>Estelle Varga:</strong> Foam, without question. Anything from the late eighties and nineties made in polystyrene foam is slowly turning to powder. It yellows, gets brittle and then starts to slump. The balsa and limewood from the fifties and sixties are almost perfect. Card is fine if it was good card. The glues are the real problem. Contact adhesives from the seventies let go, and you come in one morning and a roof is on the floor.</p><p><strong>Malik Osei:</strong> We're at a bench now with a model of a housing estate under a magnifier.</p><p><strong>Estelle Varga:</strong> This is my colleague Ruben's project this month. Six hundred tiny houses, each one a block of jelutong about a centimetre long, and about a fifth of them have come loose from the base. He's reattaching them with a reversible adhesive, one by one, from the original photographs, so they go back in exactly the right place.</p><p><strong>Malik Osei:</strong> Reversible?</p><p><strong>Estelle Varga:</strong> Everything we add must come off again without damage. If somebody in fifty years has a better method, they should be able to undo us.</p><p><strong>Malik Osei:</strong> Do you ever rebuild a model that's too far gone?</p><p><strong>Estelle Varga:</strong> No. We stabilise. We'd rather keep a broken original than make a perfect copy. If I rebuild a model, it stops being the thing the architect made with their own hands and starts being mine. Where a piece is missing, we leave the gap and we document it.</p><p><strong>Malik Osei:</strong> Who comes down here to see them?</p><p><strong>Estelle Varga:</strong> Students, mostly, about four hundred visits a year. Some researchers. And occasionally an architect who wants to see their own student model, which is always a strange afternoon for everybody.</p><p><strong>Malik Osei:</strong> Estelle Varga, thank you. From the model archive, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Sixty years of architectural models in a climate-controlled basement, and the two people who keep them standing.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 7
+  field_featured_image:
+    -
+      entity: 929fa437-2f56-4518-b130-01fc5fb3fe67
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

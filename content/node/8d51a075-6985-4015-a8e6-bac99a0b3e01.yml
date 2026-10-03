@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8d51a075-6985-4015-a8e6-bac99a0b3e01
+  bundle: podcast
+  default_langcode: en
+  depends:
+    05874fa4-b6c6-4bd0-8daf-3c3830f6888c: media
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1786438800
+  changed:
+  - value: 1786438800
+  title:
+    -
+      value: 'The Long Table'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table
+      langcode: en
+  field_description:
+    -
+      value: 'Round-table conversations recorded live at design week events.'
+  field_featured_image:
+    -
+      entity: 05874fa4-b6c6-4bd0-8daf-3c3830f6888c
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_listen_links:
+    -
+      uri: 'https://music.youtube.com/podcasts'
+      title: 'YouTube Music'
+      options: {  }
+    -
+      uri: 'https://podcasts.apple.com'
+      title: 'Apple Podcast'
+      options: {  }
+    -
+      uri: 'https://overcast.fm'
+      title: Overcast
+      options: {  }
+    -
+      uri: 'https://open.spotify.com'
+      title: Spotify
+      options: {  }
+    -
+      uri: 'internal:/podcasts/feed'
+      title: RSS
+      options: {  }

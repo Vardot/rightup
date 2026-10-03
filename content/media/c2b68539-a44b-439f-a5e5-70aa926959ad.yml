@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c2b68539-a44b-439f-a5e5-70aa926959ad
+  bundle: audio
+  default_langcode: en
+  depends:
+    ae8e3462-9061-4570-9b41-fd702773c108: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Critics'' Table audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: ae8e3462-9061-4570-9b41-fd702773c108

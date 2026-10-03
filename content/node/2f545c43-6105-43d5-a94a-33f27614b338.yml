@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2f545c43-6105-43d5-a94a-33f27614b338
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    ee3ddc63-2e43-480e-be3d-2ef6a46996ce: media
+    929fa437-2f56-4518-b130-01fc5fb3fe67: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1767430800
+  changed:
+  - value: 1767430800
+  title:
+    -
+      value: 'Working for Free, Once'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/working-free-once
+      langcode: en
+  field_audio:
+    -
+      entity: ee3ddc63-2e43-480e-be3d-2ef6a46996ce
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> You're listening to Office Hours. I'm Beatriz Solano. A question from a junior designer in Leeds: a local festival has asked her studio to do their identity for free, for the exposure. Should she push for it? Tomas Reinholt runs a typographic studio in Copenhagen, and Adaeze Okoro co-founded a campaign agency in Lagos. Both do pro bono work, and both have strict rules.</p><p><strong>Tomas Reinholt:</strong> Exposure is the word that should make you suspicious, first of all.</p><p><strong>Beatriz Solano:</strong> Why?</p><p><strong>Tomas Reinholt:</strong> Because the festival is paying its sound engineer and its security firm. If the only free supplier is the designer, they have told you how much they value design. Our rule is simple: we work for free when we would have paid to do it. A cause we care about, or a brief we could never get otherwise.</p><p><strong>Adaeze Okoro:</strong> We do one unpaid project a year, chosen in January by the whole team. Last year it was a maternal health charity in Ibadan that needed patient leaflets in Yoruba and Hausa. Nobody was going to commission that from us, and it changed how we design for low literacy.</p><p><strong>Beatriz Solano:</strong> How do you stop it growing?</p><p><strong>Adaeze Okoro:</strong> A contract, exactly like a paid one. Scope, rounds, dates, and the value of the work written in. We put the full fee on the invoice and then a line that says waived. The charity sees what it was worth, and so does the board that approves it.</p><p><strong>Tomas Reinholt:</strong> That line matters. When the board later asks for a paid campaign, they already know the number.</p><p><strong>Beatriz Solano:</strong> Has free work ever paid off commercially?</p><p><strong>Tomas Reinholt:</strong> Once, properly. We did signage for a community library on Amager for nothing. An architect who used that library recommended us for a school, and that school was a two-year paid project. But I cannot plan for that. If I did the library for the school, I would have resented the library.</p><p><strong>Adaeze Okoro:</strong> The opposite has happened too. A tech founder asked us for a free pitch deck as a favour, promised paid work after the round closed. The round closed. We never heard from him again.</p><p><strong>Beatriz Solano:</strong> What about a junior designer deciding alone?</p><p><strong>Adaeze Okoro:</strong> Ask who else on the project is unpaid. If the answer is nobody, ask for a fee. If they say no budget, offer a smaller job for a smaller fee, a poster rather than a full identity.</p><p><strong>Tomas Reinholt:</strong> And never do free work for a company that makes a profit. Charities, yes. Festivals with ticket sales and sponsors, no.</p><p><strong>Beatriz Solano:</strong> So, Leeds?</p><p><strong>Tomas Reinholt:</strong> Ask to see their sponsor list.</p><p><strong>Beatriz Solano:</strong> Tomas Reinholt and Adaeze Okoro, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'When pro bono work pays off, when it does not, and how the founders decide.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 4
+  field_featured_image:
+    -
+      entity: 929fa437-2f56-4518-b130-01fc5fb3fe67
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

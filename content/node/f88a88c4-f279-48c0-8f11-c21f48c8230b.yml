@@ -2,78 +2,93 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: f88a88c4-f279-48c0-8f11-c21f48c8230b
-  bundle: podcast
+  bundle: podcast_episode
   default_langcode: en
   depends:
-    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
-    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
     061985be-dea2-5cbd-8d12-a189b3b7d9b3: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Podcast episode
+    -
+      value: 'Created new Podcast episode'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
-  title:
-  - value: No Straight Walls
-  promote:
-  - value: false
-  sticky:
-  - value: false
-  revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
-  path:
-  - alias: /podcast/no-straight-walls
-    langcode: en
-  field_audio:
-  - entity: 061985be-dea2-5cbd-8d12-a189b3b7d9b3
-  field_content:
-  - value: '<p><strong>Noor Fasi:</strong> This is The Rightup. I''m Noor Fasi. My guest designed a museum wing with no straight walls anywhere in it. The client said yes on the first pass. Construction
-      was another story. Elias Brandt, welcome.</p>
-
-      <p><strong>Elias Brandt:</strong> Thanks for having me, Noor.</p>
-
-      <p><strong>Noor Fasi:</strong> Why no straight walls?</p>
-
-      <p><strong>Elias Brandt:</strong> The collection is mostly sculpture. Straight walls make a room feel like a corridor you walk past things in. Curves slow you down. They make you walk around the work.</p>
-
-      <p><strong>Noor Fasi:</strong> And the client agreed straight away?</p>
-
-      <p><strong>Elias Brandt:</strong> On the first presentation. Which, honestly, worried me more than a no would have.</p>
-
-      <p><strong>Noor Fasi:</strong> So what almost went wrong?</p>
-
-      <p><strong>Elias Brandt:</strong> The contractor''s framing crew had never built a curve. Not once. Their first wall was set out as a series of short straight segments, and from the gallery floor
-      you could see every joint.</p>
-
-      <p><strong>Noor Fasi:</strong> How did you find out?</p>
-
-      <p><strong>Elias Brandt:</strong> I walked in on a Tuesday and the light was catching every corner that shouldn''t have been there. We stopped work that afternoon.</p>
-
-      <p><strong>Noor Fasi:</strong> And the fix?</p>
-
-      <p><strong>Elias Brandt:</strong> Three weeks, and a redrawn foundation plan. We changed how the base plate was set out, so the curve was built in from the ground rather than bent in afterwards. The
-      crew turned out to be excellent once they could see what we meant.</p>
-
-      <p><strong>Noor Fasi:</strong> Elias Brandt, thank you. That''s No Straight Walls, on The Rightup.</p>'
-    format: full_html
-  field_description:
-  - value: An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never framed
-      a curve before. The fix cost three weeks and a redrawn foundation plan.
-  field_duration:
-  - value: 2 Mins
-  field_episode_number:
-  - value: 16
-  field_featured_image:
-  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
-  field_tags:
-  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+    -
+      target_id: 1
   created:
-  - value: 1783501200
+  - value: 1776243600
   changed:
-  - value: 1783501200
+  - value: 1776243600
+  title:
+    -
+      value: 'No Straight Walls'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/no-straight-walls
+      langcode: en
+  field_audio:
+    -
+      entity: 061985be-dea2-5cbd-8d12-a189b3b7d9b3
+  field_content:
+    -
+      value: |-
+        <p><strong>Idris Calloway:</strong> You are listening to Last Call, and I'm Idris Calloway. My guest designed a museum wing with no straight walls anywhere in it. The client said yes on the first pass. The contractor's framing crew had never built a curve. Elias Brandt, welcome.</p>
+        <p><strong>Elias Brandt:</strong> Thanks for having me, Idris.</p>
+        <p><strong>Idris Calloway:</strong> Why no straight walls?</p>
+        <p><strong>Elias Brandt:</strong> The collection is mostly twentieth-century sculpture, about ninety pieces. Straight walls turn a gallery into a corridor you walk past things in. A curve slows you down, it makes you walk around the work and see the back of it.</p>
+        <p><strong>Idris Calloway:</strong> And the client agreed straight away?</p>
+        <p><strong>Elias Brandt:</strong> At the first presentation, which never happens. The director had worked in a museum in Aarhus with one curved room and said it was the only room people lingered in. The board approved it the same month.</p>
+        <p><strong>Idris Calloway:</strong> So where did it go wrong?</p>
+        <p><strong>Elias Brandt:</strong> On site. The walls are lightweight steel stud with two layers of plasterboard, set out on radii between four and eleven metres. The framing crew were very good, but they had only ever framed straight runs. On the first gallery they set the studs out by eye from the drawings, at the normal six-hundred centres. Plasterboard will not bend to a four-metre radius at that spacing, it cracks. We had about thirty metres of wall that had to come down.</p>
+        <p><strong>Idris Calloway:</strong> How did you find out?</p>
+        <p><strong>Elias Brandt:</strong> The site manager sent me a photo of a crack you could fit a coin in. I was there by the afternoon.</p>
+        <p><strong>Idris Calloway:</strong> What was the fix?</p>
+        <p><strong>Elias Brandt:</strong> Two things. We reduced the stud spacing to three hundred on the tight curves and specified a thinner, flexible board, wetted before fixing. And we made a set of plywood templates, one for each radius, cut on a CNC router, so the crew could set out the track on the floor without reading curves off a drawing. The second part was the real fix.</p>
+        <p><strong>Idris Calloway:</strong> The description mentions a redrawn foundation plan.</p>
+        <p><strong>Elias Brandt:</strong> Yes, and that part still makes me wince. The tighter studs and the heavier board put more load on the slab edge where two galleries meet. The engineer checked it and we had to add a thickened strip of foundation along about eighteen metres. Redrawing that plan, getting it approved and pouring it cost three weeks.</p>
+        <p><strong>Idris Calloway:</strong> Who paid?</p>
+        <p><strong>Elias Brandt:</strong> It was split. We should have specified the stud spacing, and we said so.</p>
+        <p><strong>Idris Calloway:</strong> Would you design it the same way again?</p>
+        <p><strong>Elias Brandt:</strong> Yes. But I would build one curved wall in a yard before the contract starts.</p>
+        <p><strong>Idris Calloway:</strong> Elias Brandt, thank you. That is Last Call.</p>
+      format: full_html
+  field_description:
+    -
+      value: "An architect on designing a museum wing with no straight walls, why the client said yes on the first pass, and what almost went wrong in construction when the contractor's crew had never framed a curve before. The fix cost three weeks and a redrawn foundation plan."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 16
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

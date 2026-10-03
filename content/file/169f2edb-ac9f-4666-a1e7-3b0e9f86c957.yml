@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 169f2edb-ac9f-4666-a1e7-3b0e9f86c957
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep02-why-bridge-lost-its-colour.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep02-why-bridge-lost-its-colour.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 576795
+  status:
+    -
+      value: true

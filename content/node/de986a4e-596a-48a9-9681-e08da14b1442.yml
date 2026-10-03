@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: de986a4e-596a-48a9-9681-e08da14b1442
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    8d78617b-c890-4e27-b254-e15ab142de83: media
+    8d70c64a-6786-4746-a9c6-8033d5c615de: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1770022800
+  changed:
+  - value: 1770022800
+  title:
+    -
+      value: 'Should I Specialise?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/should-i-specialise
+      langcode: en
+  field_audio:
+    -
+      entity: 8d78617b-c890-4e27-b254-e15ab142de83
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> This is Office Hours with me, Beatriz Solano. Should a young designer specialise early? I have two people who answered that question in opposite ways. Ayesha Qureshi does wayfinding and nothing else, mostly hospitals and transport hubs. Callum Whitfield runs a small studio in Glasgow that does books, websites, exhibitions and once, memorably, a ferry.</p><p><strong>Callum Whitfield:</strong> The livery and the menus. It was a good year.</p><p><strong>Beatriz Solano:</strong> Ayesha, did you plan to specialise?</p><p><strong>Ayesha Qureshi:</strong> Not at all. I did signage for one hospital in Birmingham as a junior, and two years later the people who build hospitals were phoning me by name. Specialising happened to me. What I did choose was to say yes to the second call and no to a cosmetics brand the same month.</p><p><strong>Beatriz Solano:</strong> What did that give you?</p><p><strong>Ayesha Qureshi:</strong> Depth you cannot get otherwise. I know that a corridor sign in a ward needs to be readable at nine metres by someone on morphine. I know the infection control rules on which surfaces can be wiped. Clients pay for that knowledge, and my day rate is about forty percent higher than it would be as a generalist.</p><p><strong>Callum Whitfield:</strong> And you lose variety, which for me is the whole point. Every project teaches something the next one uses. The ferry taught me about marine paint and how type behaves on a curved hull. That ended up in an exhibition about shipbuilding two years later.</p><p><strong>Beatriz Solano:</strong> Callum, what does a generalist give up?</p><p><strong>Callum Whitfield:</strong> Pricing power, definitely. When we pitch against a specialist, we often lose on credibility in the first ten minutes. And the admin is relentless. Every new sector means new suppliers, new printers, new jargon.</p><p><strong>Ayesha Qureshi:</strong> The risk on my side is a market turning. During the pandemic, two of my airport projects stopped in one week. If hospitals had not been building, I would have had no work at all.</p><p><strong>Beatriz Solano:</strong> So what would you each tell a graduate?</p><p><strong>Ayesha Qureshi:</strong> Do not pick a specialism at twenty-two. Notice where you are more useful than other people, after about three years, and follow that.</p><p><strong>Callum Whitfield:</strong> I'd say stay broad until your work starts to repeat. When you catch yourself solving the same problem a third time, that is either a specialism or a sign to move on.</p><p><strong>Ayesha Qureshi:</strong> And learn the boring regulations of whatever you do. That is where the expertise really lives.</p><p><strong>Callum Whitfield:</strong> On that, we agree completely.</p><p><strong>Beatriz Solano:</strong> Ayesha Qureshi, Callum Whitfield, thank you. You've been listening to Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Whether a young designer should pick one thing early, argued by a generalist and a specialist.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 5
+  field_featured_image:
+    -
+      entity: 8d70c64a-6786-4746-a9c6-8033d5c615de
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

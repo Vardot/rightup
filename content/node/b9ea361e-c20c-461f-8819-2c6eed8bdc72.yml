@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b9ea361e-c20c-461f-8819-2c6eed8bdc72
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    2f20d4f3-104d-4298-8196-470dd7748f07: media
+    8d70c64a-6786-4746-a9c6-8033d5c615de: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1775898000
+  changed:
+  - value: 1775898000
+  title:
+    -
+      value: 'The Model Shop That Refuses to Go Digital'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/model-shop-refuses-go-digital
+      langcode: en
+  field_audio:
+    -
+      entity: 2f20d4f3-104d-4298-8196-470dd7748f07
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> On Small Practice this week, the sound of a bandsaw. I'm Noor Fasi, on The Rightup, and I'm in Turin, in a model shop of three people run by Giulia Santoro. Giulia, welcome.</p><p><strong>Giulia Santoro:</strong> Welcome. Mind the offcuts, the floor is mostly foam.</p><p><strong>Noor Fasi:</strong> What do you make here?</p><p><strong>Giulia Santoro:</strong> Architectural models, mostly at one to two hundred and one to fifty, for about twenty practices in Piedmont and Lombardy. Foam board, grey card, limewood, acrylic for glazing, and a lot of brass rod. We have a laser cutter, but we use it for parts, not for whole models.</p><p><strong>Noor Fasi:</strong> The description says you refuse to go digital. Is that fair?</p><p><strong>Giulia Santoro:</strong> Half fair. We draw in CAD and we cut on a laser. What we refuse is to replace the physical model with a rendering or a VR headset, which three clients have asked us to help them do.</p><p><strong>Noor Fasi:</strong> Why do clients still pay for physical models in 2026?</p><p><strong>Giulia Santoro:</strong> Because a committee cannot zoom. A planning committee of nine councillors looking at a screen each see a different building. Around a model on a table they see the same thing, at the same size, at the same time. The arguments are shorter and they end.</p><p><strong>Noor Fasi:</strong> Is there evidence of that, or is it a feeling?</p><p><strong>Giulia Santoro:</strong> One of our clients, a practice in Milan, tracked it on their own projects. Schemes they presented with a physical model went through planning with fewer conditions on average. They paid for this model behind you because of that spreadsheet.</p><p><strong>Noor Fasi:</strong> What does a model like that cost?</p><p><strong>Giulia Santoro:</strong> That one, a school at one to one hundred with a removable roof, around six thousand five hundred euros and four weeks. A massing model for a competition, perhaps eight hundred and two days.</p><p><strong>Noor Fasi:</strong> How do you compete with practices printing their own models?</p><p><strong>Giulia Santoro:</strong> Many of them tried. A 3D printer prints a building that looks like plastic, because it is. Clients see the layer lines. We still finish printed parts for some offices, sanding and painting, which is very boring work and pays very well.</p><p><strong>Noor Fasi:</strong> Who will take this over?</p><p><strong>Giulia Santoro:</strong> My apprentice, Tommaso, is twenty-three and better with a scalpel than I am. That is the hardest thing to find.</p><p><strong>Noor Fasi:</strong> Giulia Santoro, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Foam, card and a bandsaw in 2026. Why their clients keep paying for physical models.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 7
+  field_featured_image:
+    -
+      entity: 8d70c64a-6786-4746-a9c6-8033d5c615de
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

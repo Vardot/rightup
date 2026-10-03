@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3344fdc2-6374-4358-9d4a-d7c6ecf3397c
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    1a661a14-102a-4046-a211-504db1d3a8e1: media
+    e6c8ca16-67b7-4833-8df2-e3ae3c9b733b: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1750323600
+  changed:
+  - value: 1750323600
+  title:
+    -
+      value: 'Why We Killed Our Best-Selling Product'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/why-we-killed-our-best-selling-product
+      langcode: en
+  field_audio:
+    -
+      entity: 1a661a14-102a-4046-a211-504db1d3a8e1
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> This is Last Call. I'm Idris Calloway. Some decisions are made with a replacement ready. This one was not. Jonas Weber co-founded a furniture brand that retired its best-selling chair eighteen months before it had anything to sell in its place. Jonas, describe the chair.</p><p><strong>Jonas Weber:</strong> A stacking dining chair in steamed beech with a woven paper cord seat. We launched it in 2017 at two hundred and ninety euros and it became about sixty percent of our revenue within three years. Cafes bought it by the hundred.</p><p><strong>Idris Calloway:</strong> So what went wrong?</p><p><strong>Jonas Weber:</strong> The back leg joined the seat rail with a dowel joint that worked perfectly in Hamburg and failed in Singapore, in Miami, in anywhere with real humidity. The beech swelled and shrank and the joint worked loose. By 2022 the chair was sixty percent of our sales and ninety percent of our returns.</p><p><strong>Idris Calloway:</strong> Could you not fix the joint?</p><p><strong>Jonas Weber:</strong> We tried three times. A mortise and tenon fixed it, but it added nine minutes of machine time per chair and our workshop in Poland could not absorb that at the price. A metal bracket fixed it, and it looked like a repair. We had one engineer test a resin insert and it cracked in the climate chamber after forty cycles.</p><p><strong>Idris Calloway:</strong> So you stopped making it.</p><p><strong>Jonas Weber:</strong> We stopped selling it outside Europe first, then everywhere. We told our cafe customers we would honour repairs for ten years and we put a page on our site explaining why, with photographs of the failed joint.</p><p><strong>Idris Calloway:</strong> What did those eighteen months cost?</p><p><strong>Jonas Weber:</strong> Four people. Two in the workshop, two in sales. I am not going to dress it up as strategy. It was the least bad option, and four people paid for it with their jobs, not me.</p><p><strong>Idris Calloway:</strong> Did anyone try to talk you out of it?</p><p><strong>Jonas Weber:</strong> Our investor, quite forcefully, and my co-founder for about a month. Her argument was that most customers never had a problem. Mine was that every returned chair was a cafe owner who would never buy from us again, and they talk to each other.</p><p><strong>Idris Calloway:</strong> And the replacement?</p><p><strong>Jonas Weber:</strong> A chair in ash with a bridle joint at the back leg, designed with the workshop rather than for it. It costs three hundred and forty euros and outsells the old one now. Returns are under two percent.</p><p><strong>Idris Calloway:</strong> Would you do it the same way again?</p><p><strong>Jonas Weber:</strong> I would do it six months earlier. We kept selling it a whole season after we knew, because the numbers looked good.</p><p><strong>Idris Calloway:</strong> Jonas Weber, thank you. That's Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A product team retired the thing paying the bills, eighteen months before they had a replacement.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 6
+  field_featured_image:
+    -
+      entity: e6c8ca16-67b7-4833-8df2-e3ae3c9b733b
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

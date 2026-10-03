@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9cff6b9e-6941-4914-957d-b843bd185f20
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    ab376674-d38a-4184-9857-d73d1fe3d8da: media
+    2c55c445-abe2-496e-8cfe-a70c797da699: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1758099600
+  changed:
+  - value: 1758099600
+  title:
+    -
+      value: 'The Font That Took Four Years'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/font-took-four-years
+      langcode: en
+  field_audio:
+    -
+      entity: ab376674-d38a-4184-9857-d73d1fe3d8da
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> Last Call. I'm Idris Calloway. A national rail operator commissioned a typeface in 2019. It was delivered in 2023, by which time the client had been through three marketing directors. The type designer was Margaux Delacroix. Margaux, four years for one typeface. Where did the time go?</p><p><strong>Margaux Delacroix:</strong> Mostly into the parts nobody sees in a brand presentation. The display weights took eight months. The rest went into the text weights for timetables, the condensed width for platform screens, the tabular figures that have to align on a departure board, and the languages. The operator runs services into four countries, and the Vietnamese and Polish diacritics alone took five months because they collide at small sizes.</p><p><strong>Idris Calloway:</strong> Why Vietnamese for a European railway?</p><p><strong>Margaux Delacroix:</strong> Their accessibility team asked for full Latin coverage because their ticket machines serve tourists. Vietnamese stacks two accents on one vowel, which pushes the line height. If you design it last, you redesign everything else.</p><p><strong>Idris Calloway:</strong> Three marketing directors came and went. Did the brief change each time?</p><p><strong>Margaux Delacroix:</strong> Every time. The first wanted something warm and humanist. The second arrived in month fourteen and wanted it more geometric, more modern. The third arrived in year three and asked whether we really needed a custom typeface at all.</p><p><strong>Idris Calloway:</strong> How did it survive that?</p><p><strong>Margaux Delacroix:</strong> Two decisions at the start. The contract was signed with the company's procurement team, not with marketing, and the brief was written around operational needs: legibility at forty metres on a platform, legibility on a thermal ticket, legibility for passengers with low vision. Those requirements did not change when the director changed. The taste did, and taste was not in the contract.</p><p><strong>Idris Calloway:</strong> So you could say no to the second director.</p><p><strong>Margaux Delacroix:</strong> I could say, here is the test at forty metres, show me what more geometric does to it. We printed the letters on boards and stood them at the end of a real platform at six in the morning. The geometric a and the round e were confused at distance. The argument ended there.</p><p><strong>Idris Calloway:</strong> What did the third one say when it shipped?</p><p><strong>Margaux Delacroix:</strong> That it was the best thing the brand had. Which is kind, and also a little funny.</p><p><strong>Idris Calloway:</strong> Is it finished?</p><p><strong>Margaux Delacroix:</strong> No typeface is finished. They have since added Welsh place names to the timetable and I am fixing a w with a circumflex this month.</p><p><strong>Idris Calloway:</strong> Margaux Delacroix, thank you. That's Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: "A type designer on why a single commissioned typeface outlasted three of the client's marketing directors."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 9
+  field_featured_image:
+    -
+      entity: 2c55c445-abe2-496e-8cfe-a70c797da699
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

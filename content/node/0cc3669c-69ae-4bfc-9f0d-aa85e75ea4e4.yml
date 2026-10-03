@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0cc3669c-69ae-4bfc-9f0d-aa85e75ea4e4
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    167f2157-cf44-4933-bad4-0a737afb6feb: media
+    539f71e6-b97d-4900-872b-80d3a10ae9d2: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1774515600
+  changed:
+  - value: 1774515600
+  title:
+    -
+      value: 'Students Ask the Jury'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/students-ask-jury
+      langcode: en
+  field_audio:
+    -
+      entity: 167f2157-cf44-4933-bad4-0a737afb6feb
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> This is The Long Table, and tonight is a slightly cruel format. We are in the degree show hall, surrounded by the work, and final-year students get to question the people who marked it. The marks went out this morning, so nobody can change anything. I'm Tamsin Achari. Emeka Nwosu is the external examiner for the product design course, and Delphine Arceneaux teaches the final year and sat on the jury. The microphone is going round the audience. First question, from the back.</p><p><strong>Tamsin Achari:</strong> The question is: what do you look for first when you walk up to a stand?</p><p><strong>Emeka Nwosu:</strong> Whether the student can tell me what they would do differently. A finished project with no doubts is a warning. This year I saw sixty-four projects in two days, so I have perhaps four minutes each. If the first minute is a sales pitch, I learn nothing.</p><p><strong>Delphine Arceneaux:</strong> I look at the bin. Literally. The prototypes that did not work. The best stand this year had a shelf of nine failed hinge mechanisms with dates written on them, and that told me more about the student than the final piece.</p><p><strong>Tamsin Achari:</strong> Next question, from a student in the front row who designed a folding bicycle trailer. She asks whether the jury rewards ambition or finish.</p><p><strong>Emeka Nwosu:</strong> Honestly, finish, more than we should. A well-made modest idea photographs well and reads well in four minutes. An ambitious idea that is eighty percent resolved looks unfinished. We try to correct for it, and we do not always manage.</p><p><strong>Delphine Arceneaux:</strong> We discussed your trailer for twenty minutes, which is longer than almost anything else. That is all I will say.</p><p><strong>Tamsin Achari:</strong> There is a groan from the audience. Next question: has a mark ever changed after an argument?</p><p><strong>Emeka Nwosu:</strong> Yes. Two of us on this jury have changed a mark after a student or a colleague pushed back. In my case, in 2019, I had misread a project as decorative when it was really about repairability. The student showed me the screw schedule. It went up a grade band.</p><p><strong>Delphine Arceneaux:</strong> And I have moved one down. Somebody had clearly had a lot of help from a fabricator and had not said so.</p><p><strong>Tamsin Achari:</strong> Last question, from a student who did not get the mark he wanted. What should he do with the next five years?</p><p><strong>Delphine Arceneaux:</strong> Keep the failed prototypes. Employers ask for them more than you would think.</p><p><strong>Emeka Nwosu:</strong> And forget the mark by Christmas. I have never once been asked mine.</p><p><strong>Tamsin Achari:</strong> Emeka Nwosu and Delphine Arceneaux, thank you, and thank you to the year group for being brave. This has been The Long Table.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Final-year students question the people who will mark their degree shows, with the marks already in.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 5
+  field_featured_image:
+    -
+      entity: 539f71e6-b97d-4900-872b-80d3a10ae9d2
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

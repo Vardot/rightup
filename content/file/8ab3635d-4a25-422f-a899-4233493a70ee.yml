@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8ab3635d-4a25-422f-a899-4233493a70ee
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep07-hemp.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep07-hemp.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 578760
+  status:
+    -
+      value: true

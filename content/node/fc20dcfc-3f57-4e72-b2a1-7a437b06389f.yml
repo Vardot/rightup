@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fc20dcfc-3f57-4e72-b2a1-7a437b06389f
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    9dd96767-8a00-462e-9ce8-651cc69ad60e: media
+    6f02f337-6d5c-461f-bae8-526a828d2d0c: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1772614800
+  changed:
+  - value: 1772614800
+  title:
+    -
+      value: 'How Do I Ask for a Raise?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/how-do-i-ask-raise
+      langcode: en
+  field_audio:
+    -
+      entity: 9dd96767-8a00-462e-9ce8-651cc69ad60e
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> Office Hours, I'm Beatriz Solano. Today we hear the raise conversation from the other side of the desk. Marcus Ellery is principal of a twenty-two-person architecture studio in Bristol, and Yuki Tanabe runs a motion design studio in Osaka. Between them, they have approved and refused a lot of raises.</p><p><strong>Marcus Ellery:</strong> Refused more than approved, sadly.</p><p><strong>Beatriz Solano:</strong> Marcus, what makes you say yes?</p><p><strong>Marcus Ellery:</strong> Someone who tells me what has changed since their last raise. Not how long they have been here; what is different. A designer told me last spring that she now ran client calls on two projects without a senior present, and that she had taken our planning drawings from three revision cycles to one. That's a list of things I would otherwise pay someone else to do.</p><p><strong>Yuki Tanabe:</strong> For me, it is someone who comes with a number. Half the people who ask me say they would like more. I then have to guess, and I always guess low, because I'm running a business.</p><p><strong>Beatriz Solano:</strong> How do they get the number?</p><p><strong>Yuki Tanabe:</strong> Salary surveys, friends at other studios, job adverts. In Osaka, a mid-weight motion designer is advertised at roughly four and a half to five and a half million yen. If you are at four million and doing mid-weight work, say that with the adverts in hand.</p><p><strong>Beatriz Solano:</strong> What is the worst approach?</p><p><strong>Marcus Ellery:</strong> Arriving with an offer from another studio you do not intend to take. I can tell. And if I match it, I now know you were looking, and so does everyone you told.</p><p><strong>Yuki Tanabe:</strong> Also timing. Do not ask in the week a client has cancelled. Our budgets are set in March, so I tell my team to raise it in January.</p><p><strong>Beatriz Solano:</strong> What if the answer is no?</p><p><strong>Marcus Ellery:</strong> Ask what would make it yes, and when. Then write it down and send it to me. If I say lead one project from stage two to planning, and you do it, I've given you the case for the next meeting.</p><p><strong>Yuki Tanabe:</strong> Sometimes the answer is no because the studio cannot afford it, not because you have not earned it. Ask that question directly. A good boss will tell you the truth about the books, roughly.</p><p><strong>Beatriz Solano:</strong> And if they won't?</p><p><strong>Marcus Ellery:</strong> Then you have learned something about the studio, and it is probably time to look.</p><p><strong>Beatriz Solano:</strong> Does anything other than salary work?</p><p><strong>Yuki Tanabe:</strong> A four-day week, training budget, a better title. I granted one designer Fridays off instead of money. Three years later she is still here.</p><p><strong>Beatriz Solano:</strong> Marcus Ellery and Yuki Tanabe, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'The conversation from the other side of the desk, with the people who have to say yes or no.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 6
+  field_featured_image:
+    -
+      entity: 6f02f337-6d5c-461f-bae8-526a828d2d0c
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1e2957bf-5bf3-44a8-8e21-367a91043ba0
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    8feb36a6-9ef0-424a-b134-b0483349ac0d: media
+    1db59f67-7970-4c23-aef0-d70b32dc5bc0: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1780390800
+  changed:
+  - value: 1780390800
+  title:
+    -
+      value: "Is a Master's Worth It?"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/masters-worth-it
+      langcode: en
+  field_audio:
+    -
+      entity: 8feb36a6-9ef0-424a-b134-b0483349ac0d
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> Office Hours, with me, Beatriz Solano. Today: is a master's worth two years and a lot of money? I have two founders who did one and one who did not. Ines Carvalho runs a spatial design studio in Lisbon and teaches on a master's programme. Felix Amundsen did his master's in Helsinki and now runs a furniture studio. And Grace Mwangi, who skipped it, founded a digital studio in Nairobi.</p><p><strong>Grace Mwangi:</strong> The outsider on the panel. Fine by me.</p><p><strong>Beatriz Solano:</strong> Ines, would you do yours again?</p><p><strong>Ines Carvalho:</strong> For the two years of time, yes. For the qualification, no. Nobody has ever asked me whether I have it. What I got was time to make one project badly and then make it well, without a client deadline. In practice you never get that again.</p><p><strong>Felix Amundsen:</strong> Mine was free, which changes the maths completely. Finnish universities did not charge tuition then. If I had paid what some London programmes cost today, around thirty thousand pounds, I'm not sure the answer would be the same.</p><p><strong>Beatriz Solano:</strong> What did it buy you, Felix?</p><p><strong>Felix Amundsen:</strong> A workshop. Industrial-grade machines, a CNC router, a steam bending rig. And introductions. My first two manufacturers came from a tutor who knew a factory in Lahti. That's ten years of supply chain from one coffee.</p><p><strong>Beatriz Solano:</strong> Grace, what did skipping it give you?</p><p><strong>Grace Mwangi:</strong> Two years of paid work. I joined a fintech company at twenty-two, designed a mobile payments app used in three countries, and by twenty-five I had clients asking for me by name. My master's was the company.</p><p><strong>Ines Carvalho:</strong> That's real, and it's why I tell some students not to come. If you already have a clear direction and a job offer, a master's can be a very expensive pause.</p><p><strong>Beatriz Solano:</strong> Who should do one?</p><p><strong>Ines Carvalho:</strong> Someone who wants to change discipline, graphic to spatial for instance. Or someone who wants to teach, because many universities require it.</p><p><strong>Felix Amundsen:</strong> Or someone who needs the equipment. You cannot build a steam bending rig in a flat.</p><p><strong>Grace Mwangi:</strong> And I'd say not straight after your degree. Work two years first. You'll know what to ask the tutors.</p><p><strong>Beatriz Solano:</strong> Has it ever counted against anyone?</p><p><strong>Grace Mwangi:</strong> When I hire, I look at the work. The degree line is the last thing I read.</p><p><strong>Felix Amundsen:</strong> Same. Although I do notice who learned to write about their work. Master's students usually can.</p><p><strong>Beatriz Solano:</strong> Ines Carvalho, Felix Amundsen, Grace Mwangi, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Two founders who did one and one who did not, on what the extra two years bought them.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 9
+  field_featured_image:
+    -
+      entity: 1db59f67-7970-4c23-aef0-d70b32dc5bc0
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

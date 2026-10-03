@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0f79255d-7ac7-4723-976c-ae3af607fc14
+  bundle: audio
+  default_langcode: en
+  depends:
+    b7b7e24b-8fbb-41ae-a8cf-ab6edf666e34: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Brick audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: b7b7e24b-8fbb-41ae-a8cf-ab6edf666e34

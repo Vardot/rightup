@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7fa7f413-967e-4219-aa94-5b2b44aa0381
+  bundle: audio
+  default_langcode: en
+  depends:
+    c4c8b9f4-464c-4001-8436-9bafa04d0d14: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Architects Versus Engineers, Round Table audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: c4c8b9f4-464c-4001-8436-9bafa04d0d14

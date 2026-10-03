@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2166c2fa-152d-4c27-b31c-fd788ef31446
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    30615b14-5023-4b43-8662-178470485596: media
+    5e6e0d0f-4f98-4fc5-9d86-a5ec6305293b: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1747731600
+  changed:
+  - value: 1747731600
+  title:
+    -
+      value: 'The Client Who Wanted It Uglier'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/client-who-wanted-it-uglier
+      langcode: en
+  field_audio:
+    -
+      entity: 30615b14-5023-4b43-8662-178470485596
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> Last Call, with me Idris Calloway. A product team was asked by its own client to make a launch screen look worse, and agreed. Carmen Vidal led the design, and her research lead Owen Mbeki is here too. Carmen, what was the product?</p><p><strong>Carmen Vidal:</strong> An invoicing app for tradespeople: plumbers, electricians, tilers. Mostly sole traders who send ten or twenty invoices a month from a van. The client was a small company in Valencia that had built the accounting engine and needed a front end.</p><p><strong>Idris Calloway:</strong> And your first version of the launch screen?</p><p><strong>Carmen Vidal:</strong> Honestly, it was lovely. A custom illustration of a van, a soft gradient, two typefaces, a pricing card that floated. We were proud of it.</p><p><strong>Idris Calloway:</strong> Owen, what did the users say?</p><p><strong>Owen Mbeki:</strong> We ran twelve sessions in builders' merchants, at the counter, at seven in the morning when the trade buys materials. The phrase that came back again and again was some version of, this looks like it costs more than they say it does. One electrician asked whether the price on the screen was per week.</p><p><strong>Carmen Vidal:</strong> The client watched two of those sessions on video and the next day the founder asked us to make it uglier. Those were his words.</p><p><strong>Idris Calloway:</strong> What did you actually take out?</p><p><strong>Carmen Vidal:</strong> The illustration, the gradient, the second typeface and the floating card. We moved the price to the top in plain black, set in the same face as the rest. We added a photograph of an actual invoice, a bit crumpled, taken on a van dashboard.</p><p><strong>Idris Calloway:</strong> And the numbers?</p><p><strong>Owen Mbeki:</strong> Sign-ups from the landing screen went up eleven percent over the next six weeks against the old version, on about nine thousand visits each. Small numbers, but the direction did not wobble.</p><p><strong>Idris Calloway:</strong> Carmen, did that sting?</p><p><strong>Carmen Vidal:</strong> For about a week. What I had made was a screen that pleased designers. What the users wanted was a screen that looked like it was made by someone who understood their margins. Those are different audiences, and I had been designing for the wrong one.</p><p><strong>Idris Calloway:</strong> Is there a lesson you would not want people to take from this?</p><p><strong>Owen Mbeki:</strong> That ugly converts. It does not. Plain converted here because the audience distrusts polish. Show the same screen to a law firm and I would expect the opposite.</p><p><strong>Idris Calloway:</strong> Carmen Vidal and Owen Mbeki, thank you. This has been Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A product team was asked to make a launch screen worse on purpose. They explain why it was the right call.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 5
+  field_featured_image:
+    -
+      entity: 5e6e0d0f-4f98-4fc5-9d86-a5ec6305293b
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9a06e7d8-6f05-4213-a370-f5e7256e974e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep01-how-do-i-price-my-first-project.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep01-how-do-i-price-my-first-project.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 604594
+  status:
+    -
+      value: true

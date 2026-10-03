@@ -10,7 +10,18 @@
     "contact form": "form.webform-submission-form",
     "blog view": ".view-blog",
     "canvas patterns library": "[data-testid='canvas-library-patterns-tab-content']",
-    "canvas components library": "[data-testid='canvas-library-components-tab-content']"
+    "canvas components library": "[data-testid='canvas-library-components-tab-content']",
+    "podcasts listing": ".view-id-podcasts.view-display-id-all",
+    "more podcasts": ".view-id-podcasts.view-display-id-more",
+    "episodes list": ".view-id-podcast_episodes.view-display-id-by_podcast",
+    "episode count": ".view-id-podcast_episodes.view-display-id-count_by_podcast",
+    "more episodes": ".block-views-blockpodcast-episodes-more-by-podcast",
+    "listen on": ".podcast-platforms",
+    "audio player": ".audio-player-local",
+    "audio transcript": ".read-more",
+    "share": "nav.webshare",
+    "episode details": ".view-id-podcast_episodes.view-display-id-details",
+    "page header": "main section:has(h1)"
   },
   "xpath": {}
 }

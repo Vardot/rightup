@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 42515689-0b8e-4dd9-bf63-dacb744036a9
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    ea0055c1-80a4-4dd0-a970-03596d89ac35: media
+    34e0d823-b607-4fd8-84af-8516062fe3e2: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1759654800
+  changed:
+  - value: 1759654800
+  title:
+    -
+      value: 'How Do I Price My First Project?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/how-do-i-price-my-first-project
+      langcode: en
+  field_audio:
+    -
+      entity: ea0055c1-80a4-4dd0-a970-03596d89ac35
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> Welcome to Office Hours, where founders take the questions younger designers would rather not ask out loud. I'm Beatriz Solano. Today's question came in eleven times this month: how do I price my first project? With me are Naledi Khumalo, who runs a five-person identity studio in Johannesburg, and Pieter Vos, who set up an exhibition design practice in Rotterdam nine years ago.</p><p><strong>Naledi Khumalo:</strong> Happy to be here. And eleven sounds low, honestly.</p><p><strong>Beatriz Solano:</strong> Naledi, where does a first number come from?</p><p><strong>Naledi Khumalo:</strong> From a spreadsheet, not from a feeling. Rent, software, insurance, your accountant, the laptop you will replace in three years. Divide that by the hours you can actually bill, which is about sixty percent of the hours you work. That gives you a floor. Most graduates have never done that sum, so they quote whatever their friend charged.</p><p><strong>Beatriz Solano:</strong> What did your first quote look like?</p><p><strong>Naledi Khumalo:</strong> A logo and stationery for a bakery, eight thousand rand. It took me ninety hours. I was paid less than the person serving coffee at the counter, and I did not even get free bread.</p><p><strong>Pieter Vos:</strong> Mine was worse. I quoted a museum by the day, three days, and the curator changed the brief on day two. I spent four weeks on it.</p><p><strong>Beatriz Solano:</strong> So day rate or fixed fee?</p><p><strong>Pieter Vos:</strong> Fixed fee for the client, day rate in your head. You estimate the days, multiply by your rate, then add a third for the meetings nobody puts in the plan. The client sees one number. You see the days, and when you blow through them you know exactly where.</p><p><strong>Beatriz Solano:</strong> The third for meetings is real?</p><p><strong>Pieter Vos:</strong> I tracked it for two years. Thirty-one percent of our time on exhibition projects was coordination: lighting designers, conservators, the fire officer. None of it was in the original scope.</p><p><strong>Naledi Khumalo:</strong> The other thing graduates forget is the second round. Write down how many rounds of changes the fee covers. Two is normal. After that it is a new line on a new invoice.</p><p><strong>Beatriz Solano:</strong> What about the client who says the budget is fixed at a number well below yours?</p><p><strong>Naledi Khumalo:</strong> Then you take things out, not money out. Fewer applications, one typeface instead of a family, no animated version. If you drop the price and keep the scope, you have told them your first number was invented.</p><p><strong>Pieter Vos:</strong> And you will be quoting that lower number to their friends for the next five years. Clients talk to each other more than designers do.</p><p><strong>Beatriz Solano:</strong> Last question. Should a graduate publish a price list?</p><p><strong>Pieter Vos:</strong> No. Publish a starting point if you must. A first price is a guess you refine for about twenty projects.</p><p><strong>Naledi Khumalo:</strong> Keep every quote and every timesheet. By project twelve, your spreadsheet knows more than you do.</p><p><strong>Beatriz Solano:</strong> Naledi Khumalo, Pieter Vos, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Three founders answer the question every graduate asks and nobody at school does.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 1
+  field_featured_image:
+    -
+      entity: 34e0d823-b607-4fd8-84af-8516062fe3e2
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

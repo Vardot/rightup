@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 75948559-e1ea-4957-91d9-af1f14c101b3
+  bundle: audio
+  default_langcode: en
+  depends:
+    d5d4f08f-c6a4-4288-93f6-2882c1317d61: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Foundry Pour audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: d5d4f08f-c6a4-4288-93f6-2882c1317d61

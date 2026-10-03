@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bc1b2b2b-1927-4e65-a226-e2d5d02ca39a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep04-who-owns-brief.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep04-who-owns-brief.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 599777
+  status:
+    -
+      value: true

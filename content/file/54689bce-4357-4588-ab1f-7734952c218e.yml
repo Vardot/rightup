@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 54689bce-4357-4588-ab1f-7734952c218e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep09-hiring-employee-number-one.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep09-hiring-employee-number-one.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 569691
+  status:
+    -
+      value: true

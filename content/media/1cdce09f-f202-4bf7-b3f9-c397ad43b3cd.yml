@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1cdce09f-f202-4bf7-b3f9-c397ad43b3cd
+  bundle: audio
+  default_langcode: en
+  depends:
+    bd648f7c-1e20-4b6b-a5d3-2279bd19fb43: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Quarry at First Light audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: bd648f7c-1e20-4b6b-a5d3-2279bd19fb43

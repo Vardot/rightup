@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e584e9b1-a573-4901-9e90-203756150cf8
+  bundle: audio
+  default_langcode: en
+  depends:
+    6e7814da-8c8a-4d40-a3d8-f72728ade949: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Live From the Furniture Fair audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 6e7814da-8c8a-4d40-a3d8-f72728ade949

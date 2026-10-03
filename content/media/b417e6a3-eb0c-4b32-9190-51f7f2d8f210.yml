@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b417e6a3-eb0c-4b32-9190-51f7f2d8f210
+  bundle: audio
+  default_langcode: en
+  depends:
+    281bb871-5804-4a1f-abbc-027c4ef94d19: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'We Stopped Taking Briefs audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 281bb871-5804-4a1f-abbc-027c4ef94d19

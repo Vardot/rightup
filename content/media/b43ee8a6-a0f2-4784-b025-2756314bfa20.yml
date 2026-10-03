@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b43ee8a6-a0f2-4784-b025-2756314bfa20
+  bundle: audio
+  default_langcode: en
+  depends:
+    169f2edb-ac9f-4666-a1e7-3b0e9f86c957: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Why the Bridge Lost Its Colour audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 169f2edb-ac9f-4666-a1e7-3b0e9f86c957

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 435f2610-76cf-41ca-92e8-fe40c00344be
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    b5283f2a-13a3-4c3c-8b4f-9c49a9627e2d: media
+    02f79969-1865-4c03-9920-488972ff170d: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1760000400
+  changed:
+  - value: 1760000400
+  title:
+    -
+      value: Cork
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/cork
+      langcode: en
+  field_audio:
+    -
+      entity: b5283f2a-13a3-4c3c-8b4f-9c49a9627e2d
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> This is Material World, and I'm Kenji Arakawa. Today we are in the Alentejo, about two hours east of Lisbon, under a cork oak that was last stripped in the summer of 2017. Joaquim Estrela runs a family montado of around four hundred hectares. Joaquim, start with the number everyone quotes. Why nine years?</p><p><strong>Joaquim Estrela:</strong> Because that is how long the tree needs to grow a layer of bark thick enough to sell. Portuguese law says no less than nine. We paint the last digit of the harvest year on the trunk in white, so this one says seven, and a seven tree comes off in 2026, not before.</p><p><strong>Kenji Arakawa:</strong> And the first harvest is not the one that makes stoppers.</p><p><strong>Joaquim Estrela:</strong> No. A tree has to be about twenty-five years old and seventy centimetres round at chest height before you touch it. The first bark, the virgin cork, is rough and cracked. It goes to granulate, for insulation board and flooring. The second harvest is better but still not good enough. Only from the third, when the tree is past forty, do we get bark you can punch a wine stopper from.</p><p><strong>Kenji Arakawa:</strong> So you are planting for your grandchildren.</p><p><strong>Joaquim Estrela:</strong> My grandfather planted the trees I am harvesting. That is the honest way to say it.</p><p><strong>Kenji Arakawa:</strong> Walk me through the cut itself.</p><p><strong>Joaquim Estrela:</strong> It is done with an axe, by hand, in June and July, when the tree is growing and the bark separates cleanly. The extractor makes a horizontal cut and vertical cuts, then twists the axe handle to lever the plank away. The skill is depth. Cut into the phellogen, the living layer underneath, and you scar the tree and the next harvest grows deformed. A good crew of six takes maybe eighty trees a day.</p><p><strong>Kenji Arakawa:</strong> What does the tree look like afterwards?</p><p><strong>Joaquim Estrela:</strong> Orange, almost red, for a few weeks, then it darkens to brown. It is not damaged. It simply starts again. A cork oak can be stripped fifteen or sixteen times in its life, so two hundred years of work from one tree.</p><p><strong>Kenji Arakawa:</strong> Architects come to you now, not only wineries. Who is buying?</p><p><strong>Joaquim Estrela:</strong> Mostly expanded cork board. The granules are heated with steam in an autoclave at about three hundred and fifty degrees, and the cork's own resin binds them, no glue. A studio in Porto specified it as the exterior skin of a house, twelve centimetres thick, exposed to the rain. People thought they were mad. Eight years later it has gone silver, like old timber, and still insulates.</p><p><strong>Kenji Arakawa:</strong> What worries you?</p><p><strong>Joaquim Estrela:</strong> Drought. Young trees are dying before they reach their first harvest. We lost almost one in five of a planting from 2012. If the montado goes, the bark goes with it, and so does a landscape of pigs, sheep and shade.</p><p><strong>Kenji Arakawa:</strong> Joaquim Estrela, thank you. That is Cork, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'One fabricator, one material: a cork producer on why the bark comes off every nine years and what happens to the tree.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 1
+  field_featured_image:
+    -
+      entity: 02f79969-1865-4c03-9920-488972ff170d
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

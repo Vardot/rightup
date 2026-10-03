@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 84cb36c5-cba7-4eda-96dd-79fe3146aa81
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    e584e9b1-a573-4901-9e90-203756150cf8: media
+    471e541e-c707-45ed-ac0f-fa2624c4bce4: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1766739600
+  changed:
+  - value: 1766739600
+  title:
+    -
+      value: 'Live From the Furniture Fair'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/live-furniture-fair
+      langcode: en
+  field_audio:
+    -
+      entity: e584e9b1-a573-4901-9e90-203756150cf8
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> This is The Long Table, and tonight we are recording in the back corner of hall three at the furniture fair, with the forklifts still running behind us. I'm Tamsin Achari. On the fourth day of the fair, three makers on what sold, what did not, and what the buyers said when they thought nobody was listening. With me are Soren Aagaard, who makes chairs in a workshop outside Aarhus, and Wren Halloway, who makes ceramic lighting in Bristol. Soren, what sold?</p><p><strong>Soren Aagaard:</strong> The stool. It is always the stool. We brought a lounge chair that took eighteen months to develop and sold four. We sold sixty-one stools. It fits in the back of a car, it costs less than dinner for four, and nobody has to measure their living room first.</p><p><strong>Tamsin Achari:</strong> Does that frustrate you?</p><p><strong>Soren Aagaard:</strong> It pays for the lounge chair. The stool is twelve parts and two hours of finishing. The chair is forty parts and a whole day. I would not be at this fair without the stool.</p><p><strong>Wren Halloway:</strong> Ours is the same story with a pendant shade. The large pieces get photographed and the small ones get bought. On Saturday a couple spent twenty minutes taking pictures of our big cluster light and then bought two of the little ones at ninety pounds each.</p><p><strong>Tamsin Achari:</strong> And the buyers. What did they say when they thought the stand was empty?</p><p><strong>Wren Halloway:</strong> A buyer from a department store stood under the cluster and said to her colleague, lovely, but who is going to dust it. Which is a fair question I had never asked.</p><p><strong>Soren Aagaard:</strong> Our one was worse. A buyer told us everything was beautiful and could we do it forty percent cheaper. He said it right into the microphone we had set up for this recording.</p><p><strong>Tamsin Achari:</strong> People in the audience are laughing because they have all heard that sentence this week.</p><p><strong>Soren Aagaard:</strong> Everyone has. The honest answer is yes, in beech instead of oak, with a lacquer instead of oil, made in a factory instead of by us. At which point it is a different stool.</p><p><strong>Tamsin Achari:</strong> Wren, did you change anything on the stand during the week?</p><p><strong>Wren Halloway:</strong> On Thursday night we moved the price cards to the front. On the first two days people were too shy to ask. Sales went up by about a third once the numbers were visible.</p><p><strong>Tamsin Achari:</strong> What will you bring next year?</p><p><strong>Soren Aagaard:</strong> Fewer things. Three products, all in stock, all able to leave with the customer.</p><p><strong>Wren Halloway:</strong> A shade that packs flat. Half of what we lost this week was people who flew in and could not carry glazed stoneware home.</p><p><strong>Tamsin Achari:</strong> Soren Aagaard and Wren Halloway, thank you. This has been The Long Table, from the furniture fair.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Three makers on what sold, what did not, and what the buyers said when they thought nobody was listening.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 2
+  field_featured_image:
+    -
+      entity: 471e541e-c707-45ed-ac0f-fa2624c4bce4
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

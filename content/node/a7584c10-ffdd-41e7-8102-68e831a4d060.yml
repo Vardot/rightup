@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a7584c10-ffdd-41e7-8102-68e831a4d060
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    842e0bae-3842-4b12-aebd-d0a6b6b8ce11: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1782291600
+  changed:
+  - value: 1782291600
+  title:
+    -
+      value: 'Clients on Stage'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/clients-stage
+      langcode: en
+  field_audio:
+    -
+      entity: 842e0bae-3842-4b12-aebd-d0a6b6b8ce11
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> You are listening to The Long Table, recorded in the courtyard marquee on the last night of design week. I'm Tamsin Achari. For once the people on stage are not designers. They are people who commission design, and I have asked them what they wish studios would stop doing in meetings. The audience is almost entirely studio people, so this may get uncomfortable. Bettina Kraus is head of brand at a Munich-based outdoor equipment company, and Rahul Sethi runs estates for a group of six further education colleges. Bettina, what should studios stop doing?</p><p><strong>Bettina Kraus:</strong> Presenting three options when they only believe in one. We can always tell which, and we resent the other two. Last spring a studio showed us three routes for a new tent range. Two were clearly there to lose. We spent forty minutes of a ninety minute meeting politely rejecting work nobody wanted to make.</p><p><strong>Tamsin Achari:</strong> There is some laughter, and some people looking at their shoes.</p><p><strong>Rahul Sethi:</strong> Mine is the slide that explains our own organisation back to us. Every pitch opens with twelve slides about further education, the funding picture, our student numbers. I wrote that document. I would rather they used the first ten minutes asking me what is not in it.</p><p><strong>Tamsin Achari:</strong> What is not in it?</p><p><strong>Rahul Sethi:</strong> That two of our six campuses flood. That our caretakers have to approve every door handle because they are the ones who change them. That the principal of one college hates the colour orange because of a previous rebrand. None of that is in a tender document, and all of it decides whether a scheme survives.</p><p><strong>Bettina Kraus:</strong> Yes. Ask the boring questions. Who signs the invoice. Who maintains it. That brings me to the thing I want studios to start doing: tell us what it will cost to run. Nobody ever does, and that is where the budget goes. Our website redesign cost us a hundred and eighty thousand euros. Keeping it running costs about sixty thousand a year, and nobody mentioned that figure until after launch.</p><p><strong>Tamsin Achari:</strong> A question from the floor. A studio owner asks whether clients ever admit when the brief was wrong.</p><p><strong>Rahul Sethi:</strong> Rarely in the meeting. Usually in the pub afterwards. If a studio notices the brief is wrong, write it down and send it the next day. I will forward it upwards with my name on it, which is the best thing that can happen to you.</p><p><strong>Bettina Kraus:</strong> And bring fewer people. Five designers in a room for a check-in tells me where my fee is going.</p><p><strong>Tamsin Achari:</strong> Bettina Kraus and Rahul Sethi, thank you for being brave in a marquee full of studios. This has been The Long Table.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Four people who commission design, on what they wish studios would stop doing in meetings.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 8
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 78d4fad9-682b-44c8-85a5-8f85e04122c8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep08-how-do-i-leave-job-well.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep08-how-do-i-leave-job-well.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 578884
+  status:
+    -
+      value: true

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 691d7fdc-8091-4c22-a2cb-0f4c5dfa8a95
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep06-craft-versus-scale.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep06-craft-versus-scale.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 579400
+  status:
+    -
+      value: true

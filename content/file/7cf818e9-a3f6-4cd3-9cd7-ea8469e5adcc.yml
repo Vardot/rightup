@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7cf818e9-a3f6-4cd3-9cd7-ea8469e5adcc
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep01-two-people-one-hospital.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep01-two-people-one-hospital.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 668118
+  status:
+    -
+      value: true

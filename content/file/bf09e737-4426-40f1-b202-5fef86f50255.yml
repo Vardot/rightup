@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bf09e737-4426-40f1-b202-5fef86f50255
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep02-saying-no-growth.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep02-saying-no-growth.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 531232
+  status:
+    -
+      value: true

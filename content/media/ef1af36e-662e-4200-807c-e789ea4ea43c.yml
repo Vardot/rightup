@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ef1af36e-662e-4200-807c-e789ea4ea43c
+  bundle: audio
+  default_langcode: en
+  depends:
+    78d4fad9-682b-44c8-85a5-8f85e04122c8: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'How Do I Leave a Job Well? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 78d4fad9-682b-44c8-85a5-8f85e04122c8

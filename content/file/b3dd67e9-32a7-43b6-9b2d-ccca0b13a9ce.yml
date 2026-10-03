@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b3dd67e9-32a7-43b6-9b2d-ccca0b13a9ce
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep04-rammed-earth.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep04-rammed-earth.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 589425
+  status:
+    -
+      value: true

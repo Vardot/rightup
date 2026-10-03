@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6f6537dd-b769-4ffb-a7c5-a7401da96a63
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep05-client-who-wanted-it-uglier.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep05-client-who-wanted-it-uglier.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 529358
+  status:
+    -
+      value: true

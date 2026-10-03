@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f0abd602-620b-4012-9aa7-315da1f69b9f
+  bundle: audio
+  default_langcode: en
+  depends:
+    de49d16f-569e-42be-9268-5a0e6ed9a355: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'How Do I Give Feedback to My Boss? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: de49d16f-569e-42be-9268-5a0e6ed9a355

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 247ada39-1013-40eb-9970-92b379507d38
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep01-cork.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep01-cork.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 629124
+  status:
+    -
+      value: true

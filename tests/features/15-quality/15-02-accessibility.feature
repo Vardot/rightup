@@ -32,7 +32,7 @@ Feature: Quality - Accessibility (a11y)
       | accessibility     | /accessibility                                                  |
       | news listing      | /news                                                           |
       | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |
-      | podcast episode   | /podcast/no-straight-walls                                      |
+      | podcast episode   | /podcasts/last-call/no-straight-walls                                      |
       | login             | /user/login                                                     |
       | not found         | /this-page-does-not-exist                                       |
 
@@ -47,7 +47,7 @@ Feature: Quality - Accessibility (a11y)
       | page            | path                                                           |
       | home            | /home                                                          |
       | news article    | /news/architecture-unease-how-brutalism-became-beautiful-again |
-      | podcast episode | /podcast/no-straight-walls                                     |
+      | podcast episode | /podcasts/last-call/no-straight-walls                                     |
       | news listing    | /news                                                          |
       | podcasts        | /podcasts                                                      |
       | search          | /search                                                        |

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 296ae29d-6a5b-4eea-b380-dd3e5f4a7e3b
+  bundle: audio
+  default_langcode: en
+  depends:
+    2881cd93-c369-48fb-8e32-81d6ac2d059c: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Linoleum audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 2881cd93-c369-48fb-8e32-81d6ac2d059c

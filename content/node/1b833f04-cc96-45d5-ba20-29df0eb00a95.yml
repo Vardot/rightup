@@ -2,76 +2,91 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: 1b833f04-cc96-45d5-ba20-29df0eb00a95
-  bundle: podcast
+  bundle: podcast_episode
   default_langcode: en
   depends:
-    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
-    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
     9210aa76-84ea-5058-a3c8-68398e73971b: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Podcast episode
+    -
+      value: 'Created new Podcast episode'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
-  title:
-  - value: The Studio That Won't Use a Mood Board
-  promote:
-  - value: false
-  sticky:
-  - value: false
-  revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
-  path:
-  - alias: /podcast/studio-wont-use-mood-board
-    langcode: en
-  field_audio:
-  - entity: 9210aa76-84ea-5058-a3c8-68398e73971b
-  field_content:
-  - value: '<p><strong>Idris Calloway:</strong> This is The Rightup, and I''m Idris Calloway. My guest works at a branding studio that refuses to pitch with a mood board, even when a client asks for one
-      by name. Priya Nandakumar leads strategy there. Priya, welcome.</p>
-
-      <p><strong>Priya Nandakumar:</strong> Thanks, Idris. And yes, they do ask by name.</p>
-
-      <p><strong>Idris Calloway:</strong> What''s wrong with a mood board?</p>
-
-      <p><strong>Priya Nandakumar:</strong> Nothing, as a private tool. The problem is showing one. A client picks the three pictures they like, and suddenly those pictures are the brief.</p>
-
-      <p><strong>Idris Calloway:</strong> So what do you do instead?</p>
-
-      <p><strong>Priya Nandakumar:</strong> A three-hour intake conversation. No visuals at all. We ask what the company is afraid of, who they''re quietly jealous of, and what they''d never be caught saying.</p>
-
-      <p><strong>Idris Calloway:</strong> Three hours is a long meeting.</p>
-
-      <p><strong>Priya Nandakumar:</strong> It''s long. But it replaces the deck, the mood board, and usually the first round of revisions too.</p>
-
-      <p><strong>Idris Calloway:</strong> And the hard part?</p>
-
-      <p><strong>Priya Nandakumar:</strong> Honestly, selling it internally. Our own designers want to show something. Walking into a room with nothing to point at feels exposed.</p>
-
-      <p><strong>Idris Calloway:</strong> How do clients respond?</p>
-
-      <p><strong>Priya Nandakumar:</strong> The first hour, a little impatient. By the third, they''re usually the ones talking. That''s when we know we''ve got the real brief.</p>
-
-      <p><strong>Idris Calloway:</strong> Priya Nandakumar, thank you. That''s The Studio That Won''t Use a Mood Board, on The Rightup.</p>'
-    format: full_html
-  field_description:
-  - value: Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients ask for one by name. We talk through the three-hour intake conversation that replaces
-      every deck, and why it's harder to sell internally than it sounds.
-  field_duration:
-  - value: 2 Mins
-  field_episode_number:
-  - value: 17
-  field_featured_image:
-  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
-  field_tags:
-  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+    -
+      target_id: 1
   created:
-  - value: 1784106000
+  - value: 1778835600
   changed:
-  - value: 1784106000
+  - value: 1778835600
+  title:
+    -
+      value: "The Studio That Won't Use a Mood Board"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/studio-wont-use-mood-board
+      langcode: en
+  field_audio:
+    -
+      entity: 9210aa76-84ea-5058-a3c8-68398e73971b
+  field_content:
+    -
+      value: |-
+        <p><strong>Idris Calloway:</strong> Last Call, I'm Idris Calloway. Priya Nandakumar leads strategy at a branding studio in Bristol that refuses to pitch with a mood board, even when the client asks for one by name. Priya, welcome.</p>
+        <p><strong>Priya Nandakumar:</strong> Thanks, Idris. And yes, they do ask by name. It is in about half the briefs we get.</p>
+        <p><strong>Idris Calloway:</strong> What is wrong with a mood board?</p>
+        <p><strong>Priya Nandakumar:</strong> Nothing, as a private tool. Our designers make them all the time. The problem is showing one. A client picks the three pictures they like, and suddenly those three pictures are the brief. You have handed them a menu before you have agreed what they are hungry for.</p>
+        <p><strong>Idris Calloway:</strong> So what do you do instead?</p>
+        <p><strong>Priya Nandakumar:</strong> A three-hour intake conversation. We book it before any visual work starts, with the client team and ideally one person who is not in marketing, somebody from operations or customer service. We have a script of about twenty questions, and we record and transcribe it.</p>
+        <p><strong>Idris Calloway:</strong> Three hours is a lot of a client's time.</p>
+        <p><strong>Priya Nandakumar:</strong> It is, and that is part of the point. If a client cannot find three hours, they will not find the time to make decisions later either. The questions are things like: describe a customer you would be glad to lose, what did your best year feel like inside the building, what word would you ban from your own website.</p>
+        <p><strong>Idris Calloway:</strong> And what comes out of it?</p>
+        <p><strong>Priya Nandakumar:</strong> A written document, about four pages, that quotes the client back to themselves. Then the first visual work responds to that. When a client sees a typeface, they judge it against their own words, not against a picture of a Scandinavian kitchen.</p>
+        <p><strong>Idris Calloway:</strong> The description says it is harder to sell internally than it sounds.</p>
+        <p><strong>Priya Nandakumar:</strong> Much harder. Our designers felt it delayed the fun part. And the account team hated it, because a mood board is the easiest thing to put in a pitch. It looks like progress. Telling a procurement panel that you will ask them questions for three hours does not look like progress.</p>
+        <p><strong>Idris Calloway:</strong> Have you lost pitches because of it?</p>
+        <p><strong>Priya Nandakumar:</strong> At least four that we know of. One client told us outright that the other agency brought pictures and we brought homework. But our first-round approval rate on identity work went from roughly forty percent to seventy-five. Fewer rounds pays for a lot of lost pitches.</p>
+        <p><strong>Idris Calloway:</strong> What happens when a client insists?</p>
+        <p><strong>Priya Nandakumar:</strong> We show them the transcript and ask which parts they want illustrated. Usually that ends the request.</p>
+        <p><strong>Idris Calloway:</strong> Priya Nandakumar, thank you. That is Last Call.</p>
+      format: full_html
+  field_description:
+    -
+      value: "Why one branding studio refuses to pitch with a mood board — and what they do instead, even when clients ask for one by name. We talk through the three-hour intake conversation that replaces every deck, and why it's harder to sell internally than it sounds."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 17
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

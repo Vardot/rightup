@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e5bd92e2-327c-42f7-ace5-af149eb99924
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    7fa7f413-967e-4219-aa94-5b2b44aa0381: media
+    1db59f67-7970-4c23-aef0-d70b32dc5bc0: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1769331600
+  changed:
+  - value: 1769331600
+  title:
+    -
+      value: 'Architects Versus Engineers, Round Table'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/architects-versus-engineers-round-table
+      langcode: en
+  field_audio:
+    -
+      entity: 7fa7f413-967e-4219-aa94-5b2b44aa0381
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> Welcome to The Long Table. I'm Tamsin Achari, and we are in the lecture theatre at the engineering faculty, in front of about two hundred people who were asked to sit on the left if they are architects and on the right if they are engineers. The right is noticeably emptier. The question tonight: who really designs a building? Fatima Zahra El Idrissi is a structural engineer who has worked on stadiums in Casablanca and Lyon. Bram Oosterhuis is an architect whose practice does mostly schools. Fatima, who designs the building?</p><p><strong>Fatima Zahra El Idrissi:</strong> Whoever decides where the columns go. I will let the audience work out who that is.</p><p><strong>Bram Oosterhuis:</strong> That is the engineer's answer, and it is half right. The engineer decides where the columns can go. The architect decides where they should go, and then the engineer tells us why we are wrong.</p><p><strong>Tamsin Achari:</strong> There is some applause from the left.</p><p><strong>Fatima Zahra El Idrissi:</strong> Let me give a real example. On a sports hall in Lyon, the competition drawings showed a roof spanning sixty metres with no visible support and a fascia four hundred millimetres deep. That roof does not exist. The only way to build something that looked like that was a cable net we designed, and the cable net changed the whole section of the building, the seating rake, the services. Who designed that hall?</p><p><strong>Bram Oosterhuis:</strong> You did the roof. But the decision to have one uninterrupted space with daylight from the north was ours, and it was why the city picked the scheme. Your cable net served an idea.</p><p><strong>Fatima Zahra El Idrissi:</strong> A good idea. I am not against ideas. I am against drawings that pretend gravity is a detail.</p><p><strong>Tamsin Achari:</strong> Bram, when did an engineer last change your mind?</p><p><strong>Bram Oosterhuis:</strong> Last year. A primary school in Utrecht. We wanted a timber frame, the engineer said steel would save three months. We lost the argument, and I still think the classrooms feel colder for it, but the school opened in September instead of January, and that is two hundred children in a building instead of a portakabin.</p><p><strong>Tamsin Achari:</strong> Fatima, should engineers be credited on the plaque?</p><p><strong>Fatima Zahra El Idrissi:</strong> Yes. Not to win anything. Because the next client needs to know who to call when they want that roof again.</p><p><strong>Tamsin Achari:</strong> Let's take the show of hands. Who designs the building? Architects... and engineers. It goes to the architects, narrowly.</p><p><strong>Fatima Zahra El Idrissi:</strong> I am told most of the engineers are at the bar.</p><p><strong>Bram Oosterhuis:</strong> Which is where most of our decisions are made anyway.</p><p><strong>Tamsin Achari:</strong> Fatima Zahra El Idrissi and Bram Oosterhuis, thank you. This has been The Long Table.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A good-natured argument about who really designs a building, recorded in front of two hundred people who took sides.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 3
+  field_featured_image:
+    -
+      entity: 1db59f67-7970-4c23-aef0-d70b32dc5bc0
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

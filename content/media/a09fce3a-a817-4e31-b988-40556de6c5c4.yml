@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a09fce3a-a817-4e31-b988-40556de6c5c4
+  bundle: audio
+  default_langcode: en
+  depends:
+    ef1757e8-af2d-4270-82c4-c348b6d57e0f: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Lime Plaster audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: ef1757e8-af2d-4270-82c4-c348b6d57e0f

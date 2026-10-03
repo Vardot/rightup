@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0b0ef409-3078-4ff6-9b9d-f25a126db1d2
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    38294b4f-c316-41ad-9879-870e5c07a321: media
+    da526131-9c0f-4699-b74e-d3f0f83a3472: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1761901200
+  changed:
+  - value: 1761901200
+  title:
+    -
+      value: 'A Print Shop at Six in the Morning'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/print-shop-six-morning
+      langcode: en
+  field_audio:
+    -
+      entity: 38294b4f-c316-41ad-9879-870e5c07a321
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> It is ten past six in the morning, the radiators are still cold, and I'm in a letterpress studio in a former bakery with Odile Ferrand, who has printed here for nineteen years. This is Field Notes. Odile, the first thing you did when you unlocked the door was not turn on a light. You went and touched the paper.</p><p><strong>Odile Ferrand:</strong> I always do. This stack is a cotton stock, three hundred grams, and it came in yesterday afternoon. If it sat near the door overnight it would have taken on water from the street, and damp paper stretches. Stretched paper doesn't register. The second colour lands half a millimetre off and you've wasted a morning.</p><p><strong>Malik Osei:</strong> How can you tell by touching it?</p><p><strong>Odile Ferrand:</strong> Cold paper feels damp even when it isn't, so it's not the temperature. It's the edges. If they wave, it's taken on moisture. These are flat. We're fine.</p><p><strong>Malik Osei:</strong> Now the lights are on. There are three presses in here. Which one are we using?</p><p><strong>Odile Ferrand:</strong> The Heidelberg windmill. 1962. It's the one that runs the long jobs. Today is four hundred wedding invitations, two colours, a deep green and a copper.</p><p><strong>Malik Osei:</strong> And the reason you start at six?</p><p><strong>Odile Ferrand:</strong> The ink. Rubber-based ink stays open on the rollers for hours, which is lovely, but its tack changes with the temperature. At six the room is twelve degrees and the ink is stiff and behaves. By ten the heating has been on and the sun is on the windows, and it gets loose and starts to fill in the counters of small type. So the fine work happens first.</p><p><strong>Malik Osei:</strong> She's now putting ink onto the disc with a knife. How much?</p><p><strong>Odile Ferrand:</strong> Less than people think. A strip about the size of a fingernail for the first run. You let the rollers spread it for a few minutes and listen. Too much ink and it hisses. Too little and it sounds dry, almost papery. You want a soft, even sound.</p><p><strong>Malik Osei:</strong> I can hear it. It sounds like rain on a tent.</p><p><strong>Odile Ferrand:</strong> That's right. That's the sound.</p><p><strong>Malik Osei:</strong> Then the first proof.</p><p><strong>Odile Ferrand:</strong> On newsprint, never on the good stock. I check the impression from the back. With this paper the client wants a bite you can feel with a fingertip, about point two of a millimetre. Any deeper and it shows through on the reverse, where their names are going to go.</p><p><strong>Malik Osei:</strong> The proof has just come off. What do you see?</p><p><strong>Odile Ferrand:</strong> The copper is fine. The green is heavy on the left. The rollers aren't quite parallel to the bed; it's been cold. A quarter turn on this screw. Then another proof, and probably one more. On a normal morning I make six proofs before the first sheet I'd sell.</p><p><strong>Malik Osei:</strong> Odile Ferrand, thank you. That was the first hour of a print shop, for Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: "The first hour of a letterpress studio's day, from inking the rollers to the first proof."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 2
+  field_featured_image:
+    -
+      entity: da526131-9c0f-4699-b74e-d3f0f83a3472
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

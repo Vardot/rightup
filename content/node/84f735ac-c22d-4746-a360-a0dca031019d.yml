@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 84f735ac-c22d-4746-a360-a0dca031019d
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    5662ddde-9a37-4ed3-a455-aedcade4b8ae: media
+    a89990d3-1214-452b-9145-3142b6518607: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1764147600
+  changed:
+  - value: 1764147600
+  title:
+    -
+      value: 'Design Week Panel: The End of the Mood Board'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/design-week-panel-end-mood-board
+      langcode: en
+  field_audio:
+    -
+      entity: 5662ddde-9a37-4ed3-a455-aedcade4b8ae
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> Good evening, and welcome to The Long Table, recorded on the main stage at design week. I'm Tamsin Achari. Five studios, one microphone that we are passing down the table by hand, and a single question: is the mood board finished? Priya Nandakumar runs branding at a studio of twenty-two people, and Oskar Brenner is a furniture maker who works alone. Priya, you said in the green room that you have not made a mood board since 2023.</p><p><strong>Priya Nandakumar:</strong> Not one. We stopped after a pitch for a regional bakery chain. We showed forty images of other people's packaging and the client picked a jar from a Danish brand. For the next six weeks every proposal we made was measured against that jar. We had hired a competitor without meaning to.</p><p><strong>Tamsin Achari:</strong> So what replaced it?</p><p><strong>Priya Nandakumar:</strong> Words, first. A one-page written position, then three rough sketches of our own, done in a day. The client argues with our work instead of with somebody else's. The meetings got shorter. Our first-round approval rate went from about a third to a little over half.</p><p><strong>Oskar Brenner:</strong> Can I come in, because I think that is a branding problem dressed up as a general rule.</p><p><strong>Tamsin Achari:</strong> Please. The room has been waiting for you.</p><p><strong>Oskar Brenner:</strong> When I make a dining table, the client and I have to agree on a colour of oiled ash that does not exist yet. Nobody can describe that in writing. I pin up offcuts, a photograph of a floor in Turku, a scrap of linen. That is a mood board, and it is the only honest way I know to argue about colour.</p><p><strong>Priya Nandakumar:</strong> I cannot fault that. But those are materials you will actually use. A board of finished work by famous studios is something else.</p><p><strong>Oskar Brenner:</strong> Then we agree the problem is the pictures, not the board.</p><p><strong>Tamsin Achari:</strong> There is a lot of nodding in the front row. Priya, is the mood board dead or just the Pinterest kind?</p><p><strong>Priya Nandakumar:</strong> The borrowed kind. If every image on the wall is something we made or something we will source, I have no objection. The trouble starts when the board becomes the design.</p><p><strong>Tamsin Achari:</strong> Oskar, has a board ever gone wrong for you?</p><p><strong>Oskar Brenner:</strong> Once. A restaurant in Malmo. I put a photo of a green tiled bar on the board for the colour only. The owner fell in love with the tiles. I spent two months sourcing tiles I was never meant to supply, and lost money on the job.</p><p><strong>Tamsin Achari:</strong> So the same failure, from the other end of the table.</p><p><strong>Oskar Brenner:</strong> The same failure. An image says more than you mean it to.</p><p><strong>Tamsin Achari:</strong> We have about a minute. One rule each for anyone still making boards tomorrow morning.</p><p><strong>Priya Nandakumar:</strong> Caption every image with the one thing you want from it. The colour, the weight, the light. Nothing else.</p><p><strong>Oskar Brenner:</strong> And put a physical sample next to every picture, or take the picture down.</p><p><strong>Tamsin Achari:</strong> Priya Nandakumar and Oskar Brenner, thank you both. This has been The Long Table, live from design week.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Five studios on stage, one microphone, and no agreement at all about whether the mood board is finished.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 1
+  field_featured_image:
+    -
+      entity: a89990d3-1214-452b-9145-3142b6518607
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

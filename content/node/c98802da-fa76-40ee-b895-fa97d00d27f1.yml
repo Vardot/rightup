@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c98802da-fa76-40ee-b895-fa97d00d27f1
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    131bb447-7a7f-4961-8269-59ca4a80f97b: media
+    8235799f-3a5b-4c70-958d-df36f4bdcd44: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1765184400
+  changed:
+  - value: 1765184400
+  title:
+    -
+      value: 'Recycled Glass Terrazzo'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/recycled-glass-terrazzo
+      langcode: en
+  field_audio:
+    -
+      entity: 131bb447-7a7f-4961-8269-59ca4a80f97b
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> Welcome to Material World. I'm Kenji Arakawa. This week, a former tile works on the edge of Treviso, where Dario Fontana and eleven staff grind bottles into floors. Dario, where does the glass come from?</p><p><strong>Dario Fontana:</strong> Municipal collection, mostly. We buy cullet, broken bottles already sorted by colour, from a processor in Verona. About ninety tonnes a year. We could buy more, but we cannot use more, because the colours do not arrive in the proportions designers want.</p><p><strong>Kenji Arakawa:</strong> Which brings us to the colour you cannot get rid of.</p><p><strong>Dario Fontana:</strong> Green. Wine bottle green. Italy drinks a lot of wine, and roughly half of what we receive is that olive green. Clear glass is in short supply because the bottle makers want it back for new clear bottles. Blue is rare, maybe two percent. Every architect asks for blue.</p><p><strong>Kenji Arakawa:</strong> So how do you sell the green?</p><p><strong>Dario Fontana:</strong> We stopped fighting it. We developed three mixes where green is the base and you add a few percent of amber and clear, so it reads as a sea colour rather than a beer bottle. A hotel in Trieste took eleven hundred square metres of it for the lobby and the corridors. That one order used most of a year's green.</p><p><strong>Kenji Arakawa:</strong> Walk me through the process.</p><p><strong>Dario Fontana:</strong> We crush the cullet and grade it through screens into four sizes, from two to twelve millimetres. Then we mix it with white cement, marble powder and pigment, and cast it into blocks, two metres by one and a half. The blocks cure for twenty-eight days. Then they are sliced into slabs on a multi-wire saw and ground and polished in six stages, down to a fifteen hundred grit.</p><p><strong>Kenji Arakawa:</strong> How much of the finished slab is actually glass?</p><p><strong>Dario Fontana:</strong> Up to seventy percent by volume. The rest is binder. People ask why not resin, which gives you more glass and less weight. Resin terrazzo yellows in sun, and you cannot easily recycle it. Cement terrazzo can be crushed again at the end of its life.</p><p><strong>Kenji Arakawa:</strong> Is there anything glass cannot do that marble can?</p><p><strong>Dario Fontana:</strong> Edges. Glass chips are sharp and they can pluck out at a polished edge, so we design rounded nosings for stairs. And it is slippery wet. For entrances we use a honed finish, not polished, to get the slip resistance up to what the building code asks.</p><p><strong>Kenji Arakawa:</strong> And the economics?</p><p><strong>Dario Fontana:</strong> About fifteen percent more than a standard marble terrazzo per square metre, because the grinding wears our diamond tools much faster. Clients pay it for the story. I would prefer they paid for the floor.</p><p><strong>Kenji Arakawa:</strong> Dario Fontana, thank you. That is Recycled Glass Terrazzo, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'The small factory grinding bottle glass into floors, and the colour they cannot get rid of.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 3
+  field_featured_image:
+    -
+      entity: 8235799f-3a5b-4c70-958d-df36f4bdcd44
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

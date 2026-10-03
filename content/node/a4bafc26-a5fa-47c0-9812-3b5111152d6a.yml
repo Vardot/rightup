@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a4bafc26-a5fa-47c0-9812-3b5111152d6a
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    4082de15-9790-468e-ad66-206906ebfc8c: media
+    f99ee5a2-64b7-49b2-b31c-d9409afe3c08: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1764838800
+  changed:
+  - value: 1764838800
+  title:
+    -
+      value: 'Do I Need a Portfolio Site?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/do-i-need-portfolio-site
+      langcode: en
+  field_audio:
+    -
+      entity: 4082de15-9790-468e-ad66-206906ebfc8c
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> Office Hours, I'm Beatriz Solano. A listener in Manchester, eight months out of college, wants to know whether to spend her summer building a portfolio website. I asked two people who read portfolios for a living. Sunita Varma is design director at a forty-person brand consultancy, and Owen Garrity hires for a digital product studio in Dublin.</p><p><strong>Sunita Varma:</strong> Tell her to keep her summer.</p><p><strong>Beatriz Solano:</strong> That's blunt.</p><p><strong>Sunita Varma:</strong> It's honest. I get roughly two hundred applications a year. I open the link, I look at one project for about forty seconds, and I read the paragraph where you describe what you personally did. The website around it barely registers.</p><p><strong>Owen Garrity:</strong> Same for me. A clean PDF of twelve pages does the job. Half the custom sites I see have a loading animation, which means I spend the first four seconds watching a logo spin.</p><p><strong>Beatriz Solano:</strong> So what makes those forty seconds count?</p><p><strong>Sunita Varma:</strong> One project shown properly. The brief in two sentences, the constraint, the three directions you rejected and why, the final work in use. If it was a team project, say which parts were yours. When a graduate writes that they did the whole rebrand of a national bank, I know that is not true, and I stop trusting the rest.</p><p><strong>Owen Garrity:</strong> For product roles I want to see a decision that was hard. A screen before and after usability testing, with the number that changed. Task completion went from sixty-two percent to eighty-eight, that kind of thing. Polished final screens alone tell me you can use Figma.</p><p><strong>Beatriz Solano:</strong> Is there a case for a site at all?</p><p><strong>Owen Garrity:</strong> If you design websites for a living, your own site is a sample. Then it has to be fast, accessible and readable on a phone, because I will open it on my phone on the train.</p><p><strong>Sunita Varma:</strong> Or if you write. A designer who publishes short case notes shows me how they think between projects. That is worth more than a fancy grid.</p><p><strong>Beatriz Solano:</strong> What puts you off immediately?</p><p><strong>Sunita Varma:</strong> Mockups of things that do not exist presented as client work. Fake magazine covers. A logo on a tote bag on a model.</p><p><strong>Owen Garrity:</strong> Passwords. If I need to email you for access, I move on to the next of forty.</p><p><strong>Beatriz Solano:</strong> How many projects is right?</p><p><strong>Sunita Varma:</strong> Four. Three strong ones and one that shows a range you have not shown elsewhere.</p><p><strong>Owen Garrity:</strong> Five at most. Every weak project lowers the average.</p><p><strong>Beatriz Solano:</strong> So, for Manchester?</p><p><strong>Sunita Varma:</strong> A twelve-page PDF, four projects, honest captions. Then spend the summer making one more thing worth showing.</p><p><strong>Beatriz Solano:</strong> Sunita Varma, Owen Garrity, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A blunt answer from people who hire, and the one thing they actually look at.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 3
+  field_featured_image:
+    -
+      entity: f99ee5a2-64b7-49b2-b31c-d9409afe3c08
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

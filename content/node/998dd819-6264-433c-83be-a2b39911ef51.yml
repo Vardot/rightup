@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 998dd819-6264-433c-83be-a2b39911ef51
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    f5923166-2fb0-4cab-b3e7-b909c361f2a3: media
+    7c7235fa-b462-42f2-9a60-6c61db0c9b52: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1762938000
+  changed:
+  - value: 1762938000
+  title:
+    -
+      value: 'Saying No to Growth'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/saying-no-growth
+      langcode: en
+  field_audio:
+    -
+      entity: f5923166-2fb0-4cab-b3e7-b909c361f2a3
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> You're listening to Small Practice, on The Rightup. I'm Noor Fasi. Elliot Graves is one of three partners in a practice in Bristol that has had exactly three people since 2014. Not three partners and staff. Three people. Elliot, welcome.</p><p><strong>Elliot Graves:</strong> Hello, Noor. Three people and a dog, if we are being precise.</p><p><strong>Noor Fasi:</strong> Eleven years without a hire. Was that a decision or a drift?</p><p><strong>Elliot Graves:</strong> A decision, made on a specific evening. In 2014 we had a school extension that needed a fourth person, and we sat in a pub and worked out that a fourth person meant a bigger office, a second phone line, a practice manager within three years and one of us managing instead of drawing. None of us wanted that job.</p><p><strong>Noor Fasi:</strong> What do you turn down?</p><p><strong>Elliot Graves:</strong> Anything with a programme shorter than about a year, and anything over roughly six million in construction value. We cannot resource two large jobs at once. On average we say no once a month. Last year it was fourteen times.</p><p><strong>Noor Fasi:</strong> Do you keep a list?</p><p><strong>Elliot Graves:</strong> We do, in a spreadsheet called Not Ours. Client, project, value, and who we think got it. It is a humbling document. There is a riverside housing scheme on it that won a national award.</p><p><strong>Noor Fasi:</strong> Does that sting?</p><p><strong>Elliot Graves:</strong> For a week. Then I remember that the firm who won it now has forty staff and two of their founders have not drawn a line in five years. I asked one of them.</p><p><strong>Noor Fasi:</strong> How does the money work with three?</p><p><strong>Elliot Graves:</strong> We each take the same salary, around fifty two thousand, and split any profit equally in March. Overheads are tiny. Our studio is a former dental surgery we rent for nine hundred a month. We use one plotter, one model saw, and a shared server in a cupboard.</p><p><strong>Noor Fasi:</strong> Clients must ask what happens if one of you leaves.</p><p><strong>Elliot Graves:</strong> Every time. The honest answer is that every project has two of us on it, always, so no client depends on a single person. It means we are each on about four jobs, not six.</p><p><strong>Noor Fasi:</strong> What would make you hire?</p><p><strong>Elliot Graves:</strong> Succession. Two of us are over fifty. At some point the practice either takes on someone who could own it, or it closes gracefully. We have not decided which, and I would rather say that than pretend.</p><p><strong>Noor Fasi:</strong> Elliot Graves, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A three-person practice that has turned down hiring for eleven years, and the work they lose because of it.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 2
+  field_featured_image:
+    -
+      entity: 7c7235fa-b462-42f2-9a60-6c61db0c9b52
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

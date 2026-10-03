@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1ee6beac-1efe-4ec0-aafc-e95067263cd7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep05-cast-iron.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep05-cast-iron.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 750546
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6296a9f4-eaf2-4d0e-8c1a-879384b57f6a
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    11565553-7427-4b12-9e8d-9375f8f39f10: media
+    de02f379-7c66-479a-be1b-7497651dab4d: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1760691600
+  changed:
+  - value: 1760691600
+  title:
+    -
+      value: 'Designing for a Client Who Cannot See It'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/designing-client-who-cannot-see-it
+      langcode: en
+  field_audio:
+    -
+      entity: 11565553-7427-4b12-9e8d-9375f8f39f10
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> You are listening to Last Call, and I'm Idris Calloway. A regional health service rebuilt its online appointment booking with a product owner who is blind. Samuel Adeyemi is that product owner. With him is Hannah Ferreira, the lead designer on the team. Samuel, what had the team been getting wrong before you arrived?</p><p><strong>Samuel Adeyemi:</strong> They tested with a screen reader at the very end, in an accessibility audit two weeks before launch. That is like checking the foundations after the roof is on. The audit found about two hundred issues, they fixed the forty marked critical, and shipped.</p><p><strong>Idris Calloway:</strong> Ruth, did it feel like that from the inside?</p><p><strong>Hannah Ferreira:</strong> Honestly, it felt like we were doing well. We had contrast ratios on every colour and alt text on every image. We thought accessibility was a checklist and we had ticked it.</p><p><strong>Idris Calloway:</strong> Samuel, what changed first?</p><p><strong>Samuel Adeyemi:</strong> Every design review started with me using the thing aloud, on the big screen, with my screen reader at the speed I normally use, which is fast. Everyone in the room heard what I heard. The first week, booking a blood test took me eleven minutes and two phone calls to my sister.</p><p><strong>Hannah Ferreira:</strong> That review was very quiet. Nobody defended anything.</p><p><strong>Idris Calloway:</strong> What do sighted designers miss most?</p><p><strong>Samuel Adeyemi:</strong> Order. You see a page all at once. I hear it one item at a time, top to bottom. The old form put the appointment date picker above the explanation of which clinics were open, so I had to pick a date before I knew whether it was possible. Sighted users skipped down and back up without noticing they were doing it.</p><p><strong>Idris Calloway:</strong> What did you change in the booking itself?</p><p><strong>Hannah Ferreira:</strong> We dropped the calendar grid entirely. It became a list: the next five available slots, in plain sentences, with the clinic and the bus route in each one. It tested better with every group, including people booking on their phone at a bus stop.</p><p><strong>Idris Calloway:</strong> Numbers?</p><p><strong>Samuel Adeyemi:</strong> Phone bookings went down about a fifth in the first quarter. Complaints about the online service halved. And booking a blood test now takes me ninety seconds.</p><p><strong>Idris Calloway:</strong> Ruth, what would you tell a team starting now?</p><p><strong>Hannah Ferreira:</strong> Hire the person, do not just consult them. A consultant visits. Samuel is in every standup, and he has a veto.</p><p><strong>Idris Calloway:</strong> Samuel Adeyemi and Hannah Ferreira, thank you. This has been Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Rebuilding a booking service with a blind product owner, and what the team had been getting wrong.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 10
+  field_featured_image:
+    -
+      entity: de02f379-7c66-479a-be1b-7497651dab4d
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

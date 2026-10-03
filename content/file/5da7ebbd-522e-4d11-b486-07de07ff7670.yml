@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5da7ebbd-522e-4d11-b486-07de07ff7670
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep09-morning-type-foundry-floor.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep09-morning-type-foundry-floor.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 618703
+  status:
+    -
+      value: true

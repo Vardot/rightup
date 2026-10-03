@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 04e2d104-e68c-4190-8914-c2b62e0d8bae
+  bundle: audio
+  default_langcode: en
+  depends:
+    bf2ade97-67a7-4b49-8a5f-cad7a3b64937: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'On Site: The Timber Tower audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: bf2ade97-67a7-4b49-8a5f-cad7a3b64937

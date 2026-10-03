@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2645a7bc-6160-4c57-a5b1-77dd4fffb0ab
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep04-studio-no-job-titles.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep04-studio-no-job-titles.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 557782
+  status:
+    -
+      value: true

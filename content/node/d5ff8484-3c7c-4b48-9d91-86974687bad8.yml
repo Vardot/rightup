@@ -2,77 +2,93 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: d5ff8484-3c7c-4b48-9d91-86974687bad8
-  bundle: podcast
+  bundle: podcast_episode
   default_langcode: en
   depends:
-    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
-    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
     c256f792-07e6-569d-8e52-9a78c8cc5f98: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Podcast episode
+    -
+      value: 'Created new Podcast episode'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
-  title:
-  - value: Three Years Without a Deck
-  promote:
-  - value: false
-  sticky:
-  - value: false
-  revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
-  path:
-  - alias: /podcast/three-years-without-deck
-    langcode: en
-  field_audio:
-  - entity: c256f792-07e6-569d-8e52-9a78c8cc5f98
-  field_content:
-  - value: '<p><strong>Idris Calloway:</strong> This is The Rightup, and I''m Idris Calloway. For three years, one studio hasn''t opened a computer in a client presentation. Not once. And they keep winning
-      work. Hana Ruiz is a founding partner there. Hana, welcome.</p>
-
-      <p><strong>Hana Ruiz:</strong> Thanks, Idris. Three years and two months, if we''re being precise.</p>
-
-      <p><strong>Idris Calloway:</strong> So what''s in the room instead?</p>
-
-      <p><strong>Hana Ruiz:</strong> Physical models, hand-drawn diagrams, and paper. Lots of paper. We pin the thinking to the wall before the client arrives.</p>
-
-      <p><strong>Idris Calloway:</strong> And no laptops at all?</p>
-
-      <p><strong>Hana Ruiz:</strong> None. Not ours, and we politely ask the client team as well. It started as an experiment. Now clients come in expecting it.</p>
-
-      <p><strong>Idris Calloway:</strong> Doesn''t that make it harder to show detail?</p>
-
-      <p><strong>Hana Ruiz:</strong> It makes us choose. If an idea needs forty screens to explain, it usually isn''t ready. A model on the table gets touched, turned around, argued over. A slide gets nodded
-      at.</p>
-
-      <p><strong>Idris Calloway:</strong> What was the hardest part of the switch?</p>
-
-      <p><strong>Hana Ruiz:</strong> The first month. A model takes three days to build, and a slide takes twenty minutes. We had to learn to decide earlier.</p>
-
-      <p><strong>Idris Calloway:</strong> Has a client ever asked for a presentation file afterwards?</p>
-
-      <p><strong>Hana Ruiz:</strong> Often. We photograph the wall and send that. It''s the most honest record of the meeting we have.</p>
-
-      <p><strong>Idris Calloway:</strong> Hana Ruiz, thank you. That''s Three Years Without a Deck, on The Rightup.</p>'
-    format: full_html
-  field_description:
-  - value: Inside the studio that hasn't touched a computer for client presentations in three years, and how they've kept winning work without one. Physical models, hand-drawn diagrams, and a strict no-laptops-in-the-room
-      policy that clients have come to expect.
-  field_duration:
-  - value: 2 Mins
-  field_episode_number:
-  - value: 15
-  field_featured_image:
-  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
-  field_tags:
-  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+    -
+      target_id: 1
   created:
-  - value: 1782896400
+  - value: 1773651600
   changed:
-  - value: 1782896400
+  - value: 1773651600
+  title:
+    -
+      value: 'Three Years Without a Deck'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/three-years-without-deck
+      langcode: en
+  field_audio:
+    -
+      entity: c256f792-07e6-569d-8e52-9a78c8cc5f98
+  field_content:
+    -
+      value: |-
+        <p><strong>Idris Calloway:</strong> This is Last Call, I'm Idris Calloway. For three years one design studio has not opened a computer in front of a client. Not once, and they keep winning work. Hana Ruiz is a founding partner there. Hana, welcome.</p>
+        <p><strong>Hana Ruiz:</strong> Thanks, Idris. Three years and two months, if we are being precise.</p>
+        <p><strong>Idris Calloway:</strong> What is in the room instead?</p>
+        <p><strong>Hana Ruiz:</strong> Physical models, hand-drawn diagrams, and a lot of paper. We do interiors and small public buildings, so there is usually a model at one to fifty and sometimes a bigger detail at one to five, a bit of a stair or a window reveal. The diagrams are drawn on A1 sheets and pinned up before the client arrives.</p>
+        <p><strong>Idris Calloway:</strong> And no laptops at all?</p>
+        <p><strong>Hana Ruiz:</strong> None. Not ours, and we ask clients to leave theirs closed. Phones face down. People are surprised the first time, then they relax. It is the only meeting of their week where nobody is answering email.</p>
+        <p><strong>Idris Calloway:</strong> How did it start?</p>
+        <p><strong>Hana Ruiz:</strong> A library refurbishment in Valencia. The projector failed ten minutes before a council review. We had a sketch model on the back shelf, and we presented with that and a roll of tracing paper. The councillors stayed forty minutes over the hour, and the head of the library picked up the model and turned it round to look at the reading room from the entrance. We approved the scheme in that meeting. A deck had never done that for us.</p>
+        <p><strong>Idris Calloway:</strong> So you made it a policy.</p>
+        <p><strong>Hana Ruiz:</strong> We tried it for six months first. Then it became the rule.</p>
+        <p><strong>Idris Calloway:</strong> It must cost more.</p>
+        <p><strong>Hana Ruiz:</strong> In time, yes. A presentation model takes our model maker about three days, and she is a full-time salary we did not have before. We budget around four percent of fees for models. But revisions after the first review dropped. Clients point at something real, so the comments are specific. Move this wall, not I am not sure about the feel.</p>
+        <p><strong>Idris Calloway:</strong> What about the digital files they need?</p>
+        <p><strong>Hana Ruiz:</strong> They get everything afterwards, drawings, renders, the lot, in a link the same evening. The rule is about the meeting, not the deliverable. We are not anti-computer, we draw everything in Revit.</p>
+        <p><strong>Idris Calloway:</strong> Have any clients refused?</p>
+        <p><strong>Hana Ruiz:</strong> One hotel group insisted on a remote review with their team in Dubai. We filmed the model on a phone on a tripod and walked the camera through it. It was clumsy, but they hired us.</p>
+        <p><strong>Idris Calloway:</strong> What would make you give it up?</p>
+        <p><strong>Hana Ruiz:</strong> If our model maker left. Honestly, she is the policy.</p>
+        <p><strong>Idris Calloway:</strong> Hana Ruiz, thank you. That is Last Call.</p>
+      format: full_html
+  field_description:
+    -
+      value: "Inside the studio that hasn't touched a computer for client presentations in three years, and how they've kept winning work without one. Physical models, hand-drawn diagrams, and a strict no-laptops-in-the-room policy that clients have come to expect."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 15
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

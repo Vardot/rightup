@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fd950c0f-9590-4f47-87f1-ad887aa25c2f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep10-glassblowers-bench.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep10-glassblowers-bench.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 598316
+  status:
+    -
+      value: true

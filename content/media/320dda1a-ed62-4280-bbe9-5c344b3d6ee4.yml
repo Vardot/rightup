@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 320dda1a-ed62-4280-bbe9-5c344b3d6ee4
+  bundle: audio
+  default_langcode: en
+  depends:
+    54689bce-4357-4588-ab1f-7734952c218e: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Hiring Employee Number One audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 54689bce-4357-4588-ab1f-7734952c218e

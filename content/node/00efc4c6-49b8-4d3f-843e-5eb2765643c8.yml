@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  bundle: podcast
+  default_langcode: en
+  depends:
+    1bbdc230-2b35-45e4-9cbe-a98c374aaaa4: media
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1788253200
+  changed:
+  - value: 1788253200
+  title:
+    -
+      value: 'Last Call'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call
+      langcode: en
+  field_description:
+    -
+      value: 'The decisions nobody sees, told by the people who made them.'
+  field_featured_image:
+    -
+      entity: 1bbdc230-2b35-45e4-9cbe-a98c374aaaa4
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_listen_links:
+    -
+      uri: 'https://music.youtube.com/podcasts'
+      title: 'YouTube Music'
+      options: {  }
+    -
+      uri: 'https://podcasts.apple.com'
+      title: 'Apple Podcast'
+      options: {  }
+    -
+      uri: 'https://overcast.fm'
+      title: Overcast
+      options: {  }
+    -
+      uri: 'https://open.spotify.com'
+      title: Spotify
+      options: {  }
+    -
+      uri: 'internal:/podcasts/feed'
+      title: RSS
+      options: {  }

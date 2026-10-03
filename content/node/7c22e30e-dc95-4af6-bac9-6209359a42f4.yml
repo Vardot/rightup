@@ -2,78 +2,93 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: 7c22e30e-dc95-4af6-bac9-6209359a42f4
-  bundle: podcast
+  bundle: podcast_episode
   default_langcode: en
   depends:
-    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
-    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
     e135f4a3-dffa-5f16-9967-33ed07b13678: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Podcast episode
+    -
+      value: 'Created new Podcast episode'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
-  title:
-  - value: The Client Who Fired the Whole Deck
-  promote:
-  - value: false
-  sticky:
-  - value: false
-  revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
-  path:
-  - alias: /podcast/client-who-fired-whole-deck
-    langcode: en
-  field_audio:
-  - entity: e135f4a3-dffa-5f16-9967-33ed07b13678
-  field_content:
-  - value: '<p><strong>Noor Fasi:</strong> This is The Rightup. I''m Noor Fasi. My guest runs a branding studio that hasn''t shown a slide to a client in years, and it started with a pitch that was over
-      in four minutes. Daniel Mercer, welcome.</p>
-
-      <p><strong>Daniel Mercer:</strong> Thanks, Noor. Four minutes and ten seconds. I checked.</p>
-
-      <p><strong>Noor Fasi:</strong> Walk us through it, minute by minute.</p>
-
-      <p><strong>Daniel Mercer:</strong> Minute one, introductions, all fine. Minute two, our first slide, the market overview. Minute three, the client''s chief executive closed her laptop.</p>
-
-      <p><strong>Noor Fasi:</strong> That''s a sign.</p>
-
-      <p><strong>Daniel Mercer:</strong> It''s a very clear sign. Minute four, she asked the question that ended it. She said, you''ve shown me forty slides about my own company. When do I see what you
-      think?</p>
-
-      <p><strong>Noor Fasi:</strong> What did you say?</p>
-
-      <p><strong>Daniel Mercer:</strong> I said, it''s on slide twenty two. And she said, then we should have started there.</p>
-
-      <p><strong>Noor Fasi:</strong> What did you change afterwards?</p>
-
-      <p><strong>Daniel Mercer:</strong> Everything about the order. We walk in now with one idea, printed on one sheet of paper, and we talk about it until they either lean in or push back. The research
-      still exists. It just waits until someone asks for it.</p>
-
-      <p><strong>Noor Fasi:</strong> And you''ve never gone back to slides?</p>
-
-      <p><strong>Daniel Mercer:</strong> Not once. A few clients have asked for a deck afterwards, for their own board. We make them one. We just never lead with it.</p>
-
-      <p><strong>Noor Fasi:</strong> Daniel Mercer, thank you. That''s The Client Who Fired the Whole Deck, on The Rightup.</p>'
-    format: full_html
-  field_description:
-  - value: A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and why they've never gone back to slides since. The founder walks through the exact meeting,
-      minute by minute, including the question that ended it.
-  field_duration:
-  - value: 2 Mins
-  field_episode_number:
-  - value: 14
-  field_featured_image:
-  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
-  field_tags:
-  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+    -
+      target_id: 1
   created:
-  - value: 1782291600
+  - value: 1771059600
   changed:
-  - value: 1782291600
+  - value: 1771059600
+  title:
+    -
+      value: 'The Client Who Fired the Whole Deck'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/client-who-fired-whole-deck
+      langcode: en
+  field_audio:
+    -
+      entity: e135f4a3-dffa-5f16-9967-33ed07b13678
+  field_content:
+    -
+      value: |-
+        <p><strong>Idris Calloway:</strong> Welcome to Last Call. I'm Idris Calloway. Daniel Mercer runs a branding studio in Manchester that has not shown a client a slide in six years, and it started with a pitch that ended in four minutes. Daniel, welcome.</p>
+        <p><strong>Daniel Mercer:</strong> Thanks, Idris. Four minutes and ten seconds. I checked the timestamp on the calendar invite.</p>
+        <p><strong>Idris Calloway:</strong> Who was the client?</p>
+        <p><strong>Daniel Mercer:</strong> A family-owned outdoor clothing company, about two hundred staff, third generation running it. Big rebrand, the first since the eighties. We had forty-two slides.</p>
+        <p><strong>Idris Calloway:</strong> Take me through it, minute by minute.</p>
+        <p><strong>Daniel Mercer:</strong> Minute one, introductions, coffee, all fine. Minute two, our first content slide, a market overview with competitor logos in a grid. Minute three, the chief executive closes her laptop and puts her hands flat on the table.</p>
+        <p><strong>Idris Calloway:</strong> That is not a good sign.</p>
+        <p><strong>Daniel Mercer:</strong> It is a very clear sign. Minute four, she asks the question. She says, you have told me about my competitors for two minutes. Have any of you been to one of our shops? And none of us had. We had read the annual report, the customer research, the reviews. Nobody had walked into a shop.</p>
+        <p><strong>Idris Calloway:</strong> And that was it?</p>
+        <p><strong>Daniel Mercer:</strong> She thanked us and said she did not think it was a fit. Very polite. Our account director held the door open for us, which I always remember.</p>
+        <p><strong>Idris Calloway:</strong> What did you change?</p>
+        <p><strong>Daniel Mercer:</strong> The first thing was a rule that nobody pitches a retail client without having bought something from them in person. Receipts go in the proposal. Then over about a year we dropped slides entirely. We bring printed sheets, maybe twelve, laid out on the table in the order we want to talk about them. The client can pick them up, turn them over, push one aside.</p>
+        <p><strong>Idris Calloway:</strong> Why does paper work better than a screen?</p>
+        <p><strong>Daniel Mercer:</strong> A screen gives you one thing to look at, in the order I decided. Paper lets the client interrupt. The question that ended that meeting was a client interrupting a deck that had no room for her. Now the interruption is the format.</p>
+        <p><strong>Idris Calloway:</strong> Has it cost you work?</p>
+        <p><strong>Daniel Mercer:</strong> Two procurement processes that required a PDF submission. We sent scans of the sheets and lost both. But our win rate on direct pitches went from about one in five to one in three.</p>
+        <p><strong>Idris Calloway:</strong> Did you ever go back to that company?</p>
+        <p><strong>Daniel Mercer:</strong> We did, four years later, for a smaller job on their repair service. I mentioned the meeting. She said she remembered the market overview slide, and nothing else.</p>
+        <p><strong>Idris Calloway:</strong> Daniel Mercer, thank you. That is Last Call.</p>
+      format: full_html
+  field_description:
+    -
+      value: "A branding studio on the pitch that got rejected in the first four minutes, what they changed after, and why they've never gone back to slides since. The founder walks through the exact meeting, minute by minute, including the question that ended it."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 14
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

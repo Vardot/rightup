@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: edbddc6e-fce0-42d1-9ab7-ac4effd12075
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep08-warehouse-became-library.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep08-warehouse-became-library.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 516405
+  status:
+    -
+      value: true

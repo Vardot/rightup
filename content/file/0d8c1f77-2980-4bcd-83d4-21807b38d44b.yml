@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0d8c1f77-2980-4bcd-83d4-21807b38d44b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep05-should-i-specialise.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep05-should-i-specialise.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 501765
+  status:
+    -
+      value: true

@@ -9,16 +9,16 @@ default:
       target_id: 1
   filename:
     -
-      value: rightup-podcast-ep11-studio-fires-itself-every-year.mp3
+      value: rightup-podcast-last-call-ep11-studio-fires-itself-every-year.mp3
   uri:
     -
-      value: 'public://rightup/rightup-podcast-ep11-studio-fires-itself-every-year.mp3'
+      value: 'public://rightup/rightup-podcast-last-call-ep11-studio-fires-itself-every-year.mp3'
   filemime:
     -
       value: audio/mpeg
   filesize:
     -
-      value: 754307
+      value: 603032
   status:
     -
       value: true

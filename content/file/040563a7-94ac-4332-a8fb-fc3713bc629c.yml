@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 040563a7-94ac-4332-a8fb-fc3713bc629c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep09-font-took-four-years.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep09-font-took-four-years.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 581810
+  status:
+    -
+      value: true

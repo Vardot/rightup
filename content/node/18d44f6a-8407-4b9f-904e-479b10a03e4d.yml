@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 18d44f6a-8407-4b9f-904e-479b10a03e4d
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    adfd03c9-02a2-49ab-ba56-cae84170dc67: media
+    8c3b5cff-ace6-45ab-9613-3c34007fea48: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1770714000
+  changed:
+  - value: 1770714000
+  title:
+    -
+      value: 'We Publish Our Rates'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/we-publish-our-rates
+      langcode: en
+  field_audio:
+    -
+      entity: adfd03c9-02a2-49ab-ba56-cae84170dc67
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> I'm Noor Fasi, and this is Small Practice, on The Rightup. In 2022 a brand studio in Gothenburg did something most studios consider reckless. It published its day rates on its website. Annika Berglund is the founder. Annika, welcome.</p><p><strong>Annika Berglund:</strong> Thank you, Noor. Reckless was one of the kinder words used at the time.</p><p><strong>Noor Fasi:</strong> What exactly is on the page?</p><p><strong>Annika Berglund:</strong> Three numbers. Eleven thousand kronor a day for a designer, fourteen thousand for me, and a minimum engagement of ten days. Underneath, a paragraph explaining that we do not discount for exposure and we do not pitch for free.</p><p><strong>Noor Fasi:</strong> What happened the week it went live?</p><p><strong>Annika Berglund:</strong> Enquiries halved. We went from roughly twelve a month to six. For about three weeks I thought I had made a terrible mistake. Then we noticed that all six had a budget, and four of them became work. The year before, we converted about two in twelve.</p><p><strong>Noor Fasi:</strong> So fewer conversations, better ones.</p><p><strong>Annika Berglund:</strong> And much shorter. The first call used to spend twenty minutes circling money. Now it starts at scope, because the client has already done the arithmetic.</p><p><strong>Noor Fasi:</strong> Which clients stopped coming?</p><p><strong>Annika Berglund:</strong> Start-ups before their first funding round, which I miss, because they did the most interesting work. And public sector frameworks, because they want to negotiate a rate down as a matter of procedure and we had published ours as fixed. We lost a municipal wayfinding job over that.</p><p><strong>Noor Fasi:</strong> Did competitors use the numbers against you?</p><p><strong>Annika Berglund:</strong> Two studios in the city quoted just under us on the same tender. We know because the client told us. One of them later called me to say they had put their own rates up after seeing ours. That was a strange phone call.</p><p><strong>Noor Fasi:</strong> Has the published rate changed?</p><p><strong>Annika Berglund:</strong> Twice, by about eight percent each time. We update the page in January and email existing clients a month before. Nobody has left over it, which suggests we were too cheap before.</p><p><strong>Noor Fasi:</strong> Would you recommend it to a younger studio?</p><p><strong>Annika Berglund:</strong> Only if they can survive a quiet quarter. It worked because we had a year of cash in the bank. Publishing rates when you are desperate just advertises the desperation.</p><p><strong>Noor Fasi:</strong> Annika Berglund, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A studio put its day rates on its website. Four years of fallout, and the clients it stopped attracting.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 5
+  field_featured_image:
+    -
+      entity: 8c3b5cff-ace6-45ab-9613-3c34007fea48
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

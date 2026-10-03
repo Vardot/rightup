@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e5c81899-9508-4ac7-be7f-ec233679e9e9
+  bundle: audio
+  default_langcode: en
+  depends:
+    8ab3635d-4a25-422f-a899-4233493a70ee: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Hemp audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 8ab3635d-4a25-422f-a899-4233493a70ee

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b13e8d92-0eaa-4c02-9fdf-bb25e81afcdb
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    f7462208-6936-410c-a21c-638dde18b401: media
+    a89990d3-1214-452b-9145-3142b6518607: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1771923600
+  changed:
+  - value: 1771923600
+  title:
+    -
+      value: 'Who Owns the Brief?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/who-owns-brief
+      langcode: en
+  field_audio:
+    -
+      entity: f7462208-6936-410c-a21c-638dde18b401
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> You are listening to The Long Table, recorded on the upper floor of the old print works during design week. I'm Tamsin Achari. Tonight: clients, strategists and designers arguing about who gets to change the question. Rosalind Achebe is a strategy director who has written briefs for a national rail operator and two banks. Gideon Mwangi is head of marketing at a chain of forty-one pharmacies, and he commissions design for a living. Rosalind, who owns the brief?</p><p><strong>Rosalind Achebe:</strong> The client owns the problem. The moment they hand you a solution and call it a brief, you are allowed to hand it back. Redesign our logo is not a brief. Fewer people under thirty come into our shops is a brief.</p><p><strong>Gideon Mwangi:</strong> I agree, which I am told rather spoils the argument you had planned.</p><p><strong>Tamsin Achari:</strong> It does. Gideon, try to disagree a little.</p><p><strong>Gideon Mwangi:</strong> Fine. Here is where it gets hard. I do not walk into the agency with a blank page. By the time I brief anyone, my finance director has signed off a number, my chief executive has an opinion about the colour green, and our legal team has a list of words we cannot use. I own a problem with a lot of fences around it. If a designer tells me the real problem is something else entirely, I may agree, and still be unable to buy that answer.</p><p><strong>Rosalind Achebe:</strong> Then say so in the brief. The worst briefs are the ones that hide the fences. If I know the budget is two hundred thousand and the green is non-negotiable, I can work. If I find out in week six, everyone has wasted a month.</p><p><strong>Tamsin Achari:</strong> Somebody in the second row just said yes, out loud.</p><p><strong>Gideon Mwangi:</strong> The pharmacy project last year is a good example. We briefed a new shop format. The studio came back after two weeks and said the real issue was the queue at the prescription counter, which was where people decided never to come back. They were right. We spent the money on the counter and the waiting system, not the shopfront.</p><p><strong>Tamsin Achari:</strong> So the designers changed the question and you let them.</p><p><strong>Gideon Mwangi:</strong> Because they came with evidence. They had sat in four branches with a stopwatch. Average wait, eleven minutes. That number did more than any presentation.</p><p><strong>Rosalind Achebe:</strong> That is the rule. You can change the question, but you have to earn it with something the client cannot argue with.</p><p><strong>Tamsin Achari:</strong> Last word. One thing every brief should contain that most do not.</p><p><strong>Rosalind Achebe:</strong> What happens if we do nothing.</p><p><strong>Gideon Mwangi:</strong> The name of the person who can actually say yes.</p><p><strong>Tamsin Achari:</strong> Rosalind Achebe and Gideon Mwangi, thank you. This has been The Long Table.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Clients, strategists and designers on stage, arguing about who gets to change the question.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 4
+  field_featured_image:
+    -
+      entity: a89990d3-1214-452b-9145-3142b6518607
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

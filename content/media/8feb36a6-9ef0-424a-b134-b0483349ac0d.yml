@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8feb36a6-9ef0-424a-b134-b0483349ac0d
+  bundle: audio
+  default_langcode: en
+  depends:
+    5b43766c-c3c4-4ad6-a207-619d5193aac3: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Is a Master''s Worth It? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 5b43766c-c3c4-4ad6-a207-619d5193aac3

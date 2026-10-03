@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cb520c60-4563-49e6-86c8-39219b6ae087
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep01-design-week-panel-end-mood-board.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep01-design-week-panel-end-mood-board.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 645360
+  status:
+    -
+      value: true

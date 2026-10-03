@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c4633bbf-cb52-45cc-82f4-76f8f6fc00a0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep08-part-time-studio.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep08-part-time-studio.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 520052
+  status:
+    -
+      value: true

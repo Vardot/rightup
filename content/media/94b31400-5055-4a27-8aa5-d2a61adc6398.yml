@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 94b31400-5055-4a27-8aa5-d2a61adc6398
+  bundle: audio
+  default_langcode: en
+  depends:
+    1ee6beac-1efe-4ec0-aafc-e95067263cd7: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Cast Iron audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 1ee6beac-1efe-4ec0-aafc-e95067263cd7

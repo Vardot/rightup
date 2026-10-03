@@ -9,16 +9,16 @@ default:
       target_id: 1
   filename:
     -
-      value: rightup-podcast-ep12-what-rejected-pitch-actually-sounds.mp3
+      value: rightup-podcast-last-call-ep12-what-rejected-pitch-actually-sounds.mp3
   uri:
     -
-      value: 'public://rightup/rightup-podcast-ep12-what-rejected-pitch-actually-sounds.mp3'
+      value: 'public://rightup/rightup-podcast-last-call-ep12-what-rejected-pitch-actually-sounds.mp3'
   filemime:
     -
       value: audio/mpeg
   filesize:
     -
-      value: 745115
+      value: 577435
   status:
     -
       value: true

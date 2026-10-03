@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 376e0181-1fde-49a9-b835-81b45889cfc4
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    c2b68539-a44b-439f-a5e5-70aa926959ad: media
+    1bbdc230-2b35-45e4-9cbe-a98c374aaaa4: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1779699600
+  changed:
+  - value: 1779699600
+  title:
+    -
+      value: "The Critics' Table"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/critics-table
+      langcode: en
+  field_audio:
+    -
+      entity: c2b68539-a44b-439f-a5e5-70aa926959ad
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> This is The Long Table. I'm Tamsin Achari, recording in the reading room of the architecture library, with four critics and an audience that has, I suspect, been reviewed by most of them. The subject is the review they regret, and the building that proved them wrong. On the microphone first, Anselm Wright, who has written about buildings for a national newspaper for twenty years, and Marguerite Osei, who edits a quarterly architecture journal. Anselm, which review do you regret?</p><p><strong>Anselm Wright:</strong> A housing scheme in east London that I called joyless in 2014. Grey brick, small windows, deep balconies, very little ornament. I visited on a wet Tuesday before anyone had moved in. I went back last year, and the residents have filled every balcony. Tomatoes, bicycles, a satellite dish painted to look like a sunflower. The architects left space for people to finish the building, and I reviewed it unfinished.</p><p><strong>Tamsin Achari:</strong> Did you tell them?</p><p><strong>Anselm Wright:</strong> I wrote to the practice. The partner replied in two lines: thank you, and we kept the cutting.</p><p><strong>Tamsin Achari:</strong> There is a laugh in the room for that. Marguerite, yours.</p><p><strong>Marguerite Osei:</strong> A concert hall in Porto. I praised it in 2006 for its acoustics, which I had heard for exactly one evening, from a press seat in the best part of the hall. It turned out the upper balcony had a dead zone that took four years and a new ceiling to fix. My regret is the reverse of Anselm's. I was too generous because I sat in the right chair.</p><p><strong>Tamsin Achari:</strong> Do critics visit twice often enough?</p><p><strong>Anselm Wright:</strong> Almost never. We review buildings on the day they are least themselves. The landscaping is twelve weeks old, the furniture has not arrived, and the only people inside are the architects and the press.</p><p><strong>Marguerite Osei:</strong> Our journal has started a section called Five Years On. We go back to one building per issue. It is the most read thing we publish, and the most expensive, because it means paying someone to travel twice.</p><p><strong>Tamsin Achari:</strong> Someone at the back has a question for Anselm. Does a bad review ever kill a building?</p><p><strong>Anselm Wright:</strong> Not the building. It can kill a practice's next commission, which is why I take longer over them now. I used to write a review in a day. Now I give it a week, and I call the client before I file.</p><p><strong>Marguerite Osei:</strong> And I try to say who I was in the building with, and when. Readers deserve to know it was a press view.</p><p><strong>Tamsin Achari:</strong> Anselm Wright and Marguerite Osei, thank you. This has been The Long Table.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Four critics on the review they regret, and the building that proved them wrong.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 7
+  field_featured_image:
+    -
+      entity: 1bbdc230-2b35-45e4-9cbe-a98c374aaaa4
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

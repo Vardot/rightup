@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5662ddde-9a37-4ed3-a455-aedcade4b8ae
+  bundle: audio
+  default_langcode: en
+  depends:
+    cb520c60-4563-49e6-86c8-39219b6ae087: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Design Week Panel: The End of the Mood Board audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: cb520c60-4563-49e6-86c8-39219b6ae087

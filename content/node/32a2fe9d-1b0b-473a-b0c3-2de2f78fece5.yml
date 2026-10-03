@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 32a2fe9d-1b0b-473a-b0c3-2de2f78fece5
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    8d8c1425-b3ca-4527-8d73-2d17aa533233: media
+    fae0a9f2-4f90-4d24-8652-f1f143c73081: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1765530000
+  changed:
+  - value: 1765530000
+  title:
+    -
+      value: 'The Shared Office'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/shared-office
+      langcode: en
+  field_audio:
+    -
+      entity: 8d8c1425-b3ca-4527-8d73-2d17aa533233
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> Small Practice, on The Rightup. I'm Noor Fasi, and I'm recording in a shared studio in Glasgow, in a converted print works on the south side, where four separate practices rent one long room. Mei-Lin Zhou runs one of them, a two-person landscape studio. Mei-Lin, welcome.</p><p><strong>Mei-Lin Zhou:</strong> Welcome to our room. Please ignore the printer, it does this.</p><p><strong>Noor Fasi:</strong> Who else is in here?</p><p><strong>Mei-Lin Zhou:</strong> An interiors studio of three, a graphic designer working alone, and a structural engineer with one assistant. Nine people, four businesses, one kitchen and one receptionist, Morag, who works for all of us and is the only person here who knows where everything is.</p><p><strong>Noor Fasi:</strong> How is Morag paid?</p><p><strong>Mei-Lin Zhou:</strong> Pro rata by headcount. We worked it out on a whiteboard in 2019. Each studio pays a share of rent, Morag, the printer lease and broadband. My studio pays about eleven hundred a month all in, which in this city gets you a cupboard on your own.</p><p><strong>Noor Fasi:</strong> The description says you share clients occasionally. How does that start?</p><p><strong>Mei-Lin Zhou:</strong> Usually in the kitchen. The interiors team were doing a care home and the client asked about the garden. I was standing by the kettle. Two weeks later we had a joint appointment.</p><p><strong>Noor Fasi:</strong> And has that ever gone wrong?</p><p><strong>Mei-Lin Zhou:</strong> Once, properly. A café fit-out where three of us were working for the same owner and nobody had agreed who sends the invoice. The client received three invoices in one week and assumed he was being taken advantage of. He paid none of them for two months.</p><p><strong>Noor Fasi:</strong> What did you change?</p><p><strong>Mei-Lin Zhou:</strong> A single page we now sign before any shared job. One lead studio, one invoice, one point of contact, and the fee split written down before the first meeting. It has worked on four jobs since.</p><p><strong>Noor Fasi:</strong> Beyond money, what does the room actually give you?</p><p><strong>Mei-Lin Zhou:</strong> Criticism you did not ask for. The engineer walks past my screen and tells me a retaining wall is too thin before I have embarrassed myself. The graphic designer redid our planting labels. You cannot buy that from a consultant on a fee.</p><p><strong>Noor Fasi:</strong> Any downside?</p><p><strong>Mei-Lin Zhou:</strong> Privacy. If I lose a pitch, everyone knows by lunchtime. And the music. We have a rota. Thursdays are the engineer, and he likes brass bands.</p><p><strong>Noor Fasi:</strong> Mei-Lin Zhou, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Four small studios in one room, sharing a printer, a receptionist and occasionally a client.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 3
+  field_featured_image:
+    -
+      entity: fae0a9f2-4f90-4d24-8652-f1f143c73081
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

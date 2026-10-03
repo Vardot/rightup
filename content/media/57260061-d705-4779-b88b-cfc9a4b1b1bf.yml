@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 57260061-d705-4779-b88b-cfc9a4b1b1bf
+  bundle: audio
+  default_langcode: en
+  depends:
+    8a075993-e040-4c03-990a-7580449e377c: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Ten Years of One Logo audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 8a075993-e040-4c03-990a-7580449e377c

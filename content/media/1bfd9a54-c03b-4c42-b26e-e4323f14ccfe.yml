@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1bfd9a54-c03b-4c42-b26e-e4323f14ccfe
+  bundle: audio
+  default_langcode: en
+  depends:
+    d284cae0-1ce3-47bf-82c7-8e231c1bd1ec: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'When Should I Fire a Client? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: d284cae0-1ce3-47bf-82c7-8e231c1bd1ec

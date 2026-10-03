@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ee3ddc63-2e43-480e-be3d-2ef6a46996ce
+  bundle: audio
+  default_langcode: en
+  depends:
+    ebebcc03-2a16-45e9-85fb-ea978277f3da: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Working for Free, Once audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: ebebcc03-2a16-45e9-85fb-ea978277f3da

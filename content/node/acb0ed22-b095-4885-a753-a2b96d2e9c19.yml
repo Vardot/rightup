@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: acb0ed22-b095-4885-a753-a2b96d2e9c19
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    b9cb61e1-2430-467c-8fab-5a43abb73108: media
+    1db59f67-7970-4c23-aef0-d70b32dc5bc0: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1783674000
+  changed:
+  - value: 1783674000
+  title:
+    -
+      value: 'The Studio in a Garage'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/studio-garage
+      langcode: en
+  field_audio:
+    -
+      entity: b9cb61e1-2430-467c-8fab-5a43abb73108
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> Small Practice, on The Rightup. I'm Noor Fasi, and today I'm sitting in a garage in Leicester, on a stool next to a plan chest. Darius Rahimi has run his architecture practice from this single-car garage for six years. Darius, welcome.</p><p><strong>Darius Rahimi:</strong> Welcome to the office. The heater takes about ten minutes, so keep your coat on.</p><p><strong>Noor Fasi:</strong> Describe the space for people who cannot see it.</p><p><strong>Darius Rahimi:</strong> Two point eight metres by five and a half. Insulated walls, a rooflight I fitted myself, a desk along the back, the plan chest, a shelf of samples, and a folding table for meetings. The roller door is still there. In summer I open it and work facing the street.</p><p><strong>Noor Fasi:</strong> Why have you not moved?</p><p><strong>Darius Rahimi:</strong> Rent. A small studio in the city centre would be around a third of my turnover. Here my overhead is the electricity and the broadband, about ninety pounds a month. That difference means I can say no to a job I do not believe in.</p><p><strong>Noor Fasi:</strong> What kind of work do you do?</p><p><strong>Darius Rahimi:</strong> Houses, extensions, two small chapels, and a lot of work for a community land trust. Eight to twelve projects a year, from fifteen thousand to about a million in build cost.</p><p><strong>Noor Fasi:</strong> What do clients make of meeting in a garage?</p><p><strong>Darius Rahimi:</strong> Most of them like it. Many of my clients are about to spend their savings on building something, and I think seeing a practice that is careful with its own money reassures them. One client, a solicitor, asked politely whether I had a proper office. I took the meeting to a café after that.</p><p><strong>Noor Fasi:</strong> Do you meet clients here at all?</p><p><strong>Darius Rahimi:</strong> For samples, yes. I can put a brick and a timber window sample in their hands. For first meetings I go to them, because I need to see the house anyway.</p><p><strong>Noor Fasi:</strong> The isolation must be real.</p><p><strong>Darius Rahimi:</strong> It is. I fixed it with a Tuesday. Every Tuesday I work from a shared studio in town for a day rate of twenty pounds. I get the gossip, the criticism and a coffee machine. Then I come home.</p><p><strong>Noor Fasi:</strong> Will you ever leave the garage?</p><p><strong>Darius Rahimi:</strong> When my daughter wants her bicycle back in it, perhaps. She is four. I have time.</p><p><strong>Noor Fasi:</strong> Darius Rahimi, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Six years of a practice run from a single-car garage, and why they have not moved.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 10
+  field_featured_image:
+    -
+      entity: 1db59f67-7970-4c23-aef0-d70b32dc5bc0
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

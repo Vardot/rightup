@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0e9ee756-d8dd-4140-adb6-3db8a98a1c08
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep07-inside-model-archive.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep07-inside-model-archive.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 609079
+  status:
+    -
+      value: true

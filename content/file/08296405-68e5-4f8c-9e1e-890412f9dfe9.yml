@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 08296405-68e5-4f8c-9e1e-890412f9dfe9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep08-clients-stage.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep08-clients-stage.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 583996
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 388c7e3b-c775-49da-b361-ea5f6f49ac89
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    f0abd602-620b-4012-9aa7-315da1f69b9f: media
+    05874fa4-b6c6-4bd0-8daf-3c3830f6888c: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1782982800
+  changed:
+  - value: 1782982800
+  title:
+    -
+      value: 'How Do I Give Feedback to My Boss?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/how-do-i-give-feedback-my-boss
+      langcode: en
+  field_audio:
+    -
+      entity: f0abd602-620b-4012-9aa7-315da1f69b9f
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> You're listening to Office Hours. I'm Beatriz Solano. How do you tell your boss they are wrong without damaging your career? I asked three people who are now the boss. Daniel Oyelaran runs a landscape architecture studio in Birmingham. Signe Holm is a partner at a branding agency in Oslo. And Andrés Quintero leads a product design team in Bogotá.</p><p><strong>Andrés Quintero:</strong> I'll say up front: I've been both the junior and the boss who got it wrong.</p><p><strong>Beatriz Solano:</strong> Daniel, how should someone tell you you are wrong?</p><p><strong>Daniel Oyelaran:</strong> Early and in private, with the consequence spelled out. Not what I did wrong, but what will happen because of it. A junior once told me the planting plan I had signed off would die in the first dry summer because the soil report showed heavy clay. She brought the page from the report. I changed it that afternoon.</p><p><strong>Signe Holm:</strong> The worst version is in front of the client. Even if you are right, now I have to defend myself or lose face. I can't really listen at that point.</p><p><strong>Beatriz Solano:</strong> What about something more subjective, like a design direction?</p><p><strong>Signe Holm:</strong> Bring an alternative, not just an objection. Last year a designer disagreed with my typeface choice for a ferry company. She made two pages with her option and two with mine and put them side by side on my desk. Hers was better. We used it.</p><p><strong>Andrés Quintero:</strong> And use evidence when you have it. In product work, we have numbers. One designer showed me that my onboarding flow lost thirty-eight percent of users on the third screen. Hard to argue with that.</p><p><strong>Beatriz Solano:</strong> What if the boss doesn't listen?</p><p><strong>Daniel Oyelaran:</strong> Write it down afterwards, politely. Short email: following our conversation, here's my concern about the clay and the replanting cost. It's not a threat; it's a record. If it goes wrong, nobody can say you didn't flag it.</p><p><strong>Andrés Quintero:</strong> Then let it go. You have raised it. If you keep raising the same point every meeting, people stop hearing everything else you say.</p><p><strong>Beatriz Solano:</strong> Has disagreeing ever hurt anyone on your team?</p><p><strong>Signe Holm:</strong> Only once, and it was tone, not content. Someone wrote in a group chat that the direction was embarrassing. The content was fair. The word was not.</p><p><strong>Beatriz Solano:</strong> Any advice for the junior who is nervous?</p><p><strong>Andrés Quintero:</strong> Ask a question instead of making a statement. Have we checked how this works on a small screen? It gives the boss room to find the problem.</p><p><strong>Daniel Oyelaran:</strong> And remember that most of us want to be told. Being wrong in private is much cheaper than being wrong on site.</p><p><strong>Beatriz Solano:</strong> Daniel Oyelaran, Signe Holm, Andrés Quintero, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Disagreeing upward without ending your career, from three people who are now the boss.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 10
+  field_featured_image:
+    -
+      entity: 05874fa4-b6c6-4bd0-8daf-3c3830f6888c
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

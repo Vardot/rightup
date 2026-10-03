@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4074abf4-1b83-4716-942f-ad0e2eb118dd
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    b417e6a3-eb0c-4b32-9190-51f7f2d8f210: media
+    8235799f-3a5b-4c70-958d-df36f4bdcd44: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1773306000
+  changed:
+  - value: 1773306000
+  title:
+    -
+      value: 'We Stopped Taking Briefs'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/we-stopped-taking-briefs
+      langcode: en
+  field_audio:
+    -
+      entity: b417e6a3-eb0c-4b32-9190-51f7f2d8f210
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> This is Small Practice, on The Rightup, I'm Noor Fasi. Callum Reid runs a four-person service design studio in Edinburgh, and since 2021 he has refused to start work from a written brief. Instead, he sits in the client's office for two days. Callum, welcome.</p><p><strong>Callum Reid:</strong> Thanks for having me. Two days, and I bring my own lunch, which surprises people more than anything else.</p><p><strong>Noor Fasi:</strong> What was wrong with the brief?</p><p><strong>Callum Reid:</strong> It was always written by the wrong person. Usually someone in marketing or procurement, describing a problem they had been told about. We kept answering the brief perfectly and missing the actual problem, and the client would realise it at the second presentation.</p><p><strong>Noor Fasi:</strong> So what happens in those two days?</p><p><strong>Callum Reid:</strong> Day one, I sit wherever the work happens. For a housing association that was the repairs call centre, with a headset on, listening. Day two, I go to meetings I am not invited to, with permission, and I keep quiet. On the Friday I write a single page called What I Think You Asked Me, and the client corrects it.</p><p><strong>Noor Fasi:</strong> Do they pay for the two days?</p><p><strong>Callum Reid:</strong> They do now. It is a fixed fee of two thousand four hundred pounds, deducted from the main fee if they appoint us. In the first year we did it for free and roughly a third of clients treated it as free consultancy and went elsewhere.</p><p><strong>Noor Fasi:</strong> The description says your win rate went up.</p><p><strong>Callum Reid:</strong> From about one in four to two in three. Partly because by the time we propose, we know who decides. It is almost never the person who wrote the brief. At the housing association it was the head of repairs, who had not been copied on a single email.</p><p><strong>Noor Fasi:</strong> What do people say when you turn up?</p><p><strong>Callum Reid:</strong> Suspicion first, then confession. By the afternoon someone always tells me the thing nobody put in writing. At a university it was that the new student portal had been bought before anyone asked what students needed.</p><p><strong>Noor Fasi:</strong> Any time it backfired?</p><p><strong>Callum Reid:</strong> A law firm where the partners would not let me into any meeting. Two days at a desk reading the intranet. I told them honestly we were not the right studio, and they appreciated that more than a proposal.</p><p><strong>Noor Fasi:</strong> Callum Reid, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: "A studio replaced the written brief with two days of sitting in the client's office. Their win rate went up."
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 6
+  field_featured_image:
+    -
+      entity: 8235799f-3a5b-4c70-958d-df36f4bdcd44
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

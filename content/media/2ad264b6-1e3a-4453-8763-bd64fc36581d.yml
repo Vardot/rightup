@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2ad264b6-1e3a-4453-8763-bd64fc36581d
+  bundle: audio
+  default_langcode: en
+  depends:
+    4ab16ee8-3d16-46b8-9ecb-37fa9edbf30d: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Building That Changes Every Winter audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 4ab16ee8-3d16-46b8-9ecb-37fa9edbf30d

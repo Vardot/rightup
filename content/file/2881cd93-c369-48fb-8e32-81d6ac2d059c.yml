@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2881cd93-c369-48fb-8e32-81d6ac2d059c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep06-linoleum.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep06-linoleum.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 667998
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9ee0ce43-a0bf-45a3-b86c-be7457ed8a18
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    94b31400-5055-4a27-8aa5-d2a61adc6398: media
+    157504de-26e6-4c11-ae7a-cdb685af89cc: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1770368400
+  changed:
+  - value: 1770368400
+  title:
+    -
+      value: 'Cast Iron'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/cast-iron
+      langcode: en
+  field_audio:
+    -
+      entity: 94b31400-5055-4a27-8aa5-d2a61adc6398
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> You are listening to Material World. I'm Kenji Arakawa, and it is loud here because a ladle of iron has just been poured behind me. This is a foundry in the Black Country, owned by Winifred Ashby, whose family has run it since 1874. Winifred, what are we looking at?</p><p><strong>Winifred Ashby:</strong> A bollard. Specifically a Victorian cannon-style bollard for a borough council in north London, which lost six of them to a delivery lorry last winter. The pattern for it was carved in pear wood in 1886, and it is on that shelf.</p><p><strong>Kenji Arakawa:</strong> Explain a pattern for people who have never been inside a foundry.</p><p><strong>Winifred Ashby:</strong> It is a full-size model of the object, slightly oversized, because iron shrinks about one percent as it cools. We press it into a box of sand bonded with resin, pull it out, and the hole it leaves is the mould. Pour molten iron in at about fourteen hundred degrees, wait, break the sand away, and you have a casting.</p><p><strong>Kenji Arakawa:</strong> And you are still using patterns carved in the 1880s.</p><p><strong>Winifred Ashby:</strong> We hold around three thousand of them. Lamp columns, railings, bench ends, drain grates, the little plates that say which water company owns a stopcock. Pear and mahogany, because they are stable and carve cleanly. A pattern maker spent weeks on a single lamp base. We could scan them and print new ones, and for repairs we sometimes do, but the originals carry detail a scan softens.</p><p><strong>Kenji Arakawa:</strong> Is it actually the same iron?</p><p><strong>Winifred Ashby:</strong> No, and that matters. Victorian street furniture was grey iron, which is brittle. Hit it with a van and it shatters. For new bollards we cast ductile iron, with a little magnesium added so the graphite forms spheres rather than flakes. It bends before it breaks. Same pattern, same look, very different behaviour on impact.</p><p><strong>Kenji Arakawa:</strong> Who is your client now?</p><p><strong>Winifred Ashby:</strong> Councils, heritage trusts, and increasingly architects working on public squares who want a bench that will still be there in eighty years. A landscape practice in Leeds ordered three hundred metres of railing for a park last year. They specified it from our catalogue of 1903.</p><p><strong>Kenji Arakawa:</strong> What does the pour cost you in energy?</p><p><strong>Winifred Ashby:</strong> We moved from a coke cupola to an electric induction furnace in 2019. Melting a tonne of iron takes roughly six hundred kilowatt hours. Our electricity bill is now the biggest single cost after wages, bigger than the scrap iron itself.</p><p><strong>Kenji Arakawa:</strong> And the skills?</p><p><strong>Winifred Ashby:</strong> We have one pattern maker left, aged sixty-three, and an apprentice of nineteen. That is the most fragile thing in this building.</p><p><strong>Kenji Arakawa:</strong> Winifred Ashby, thank you. That is Cast Iron, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A foundry that still casts street furniture from patterns carved in the 1880s.'
+  field_duration:
+    -
+      value: '4 Mins'
+  field_episode_number:
+    -
+      value: 5
+  field_featured_image:
+    -
+      entity: 157504de-26e6-4c11-ae7a-cdb685af89cc
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8d78617b-c890-4e27-b254-e15ab142de83
+  bundle: audio
+  default_langcode: en
+  depends:
+    0d8c1f77-2980-4bcd-83d4-21807b38d44b: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Should I Specialise? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 0d8c1f77-2980-4bcd-83d4-21807b38d44b

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b498297f-fc89-4597-b9ce-9591497fb056
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep06-why-we-killed-our-best-selling-product.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep06-why-we-killed-our-best-selling-product.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 544934
+  status:
+    -
+      value: true

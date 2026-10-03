@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b37bac98-c8cf-4fac-8445-96a39b9c703f
+  bundle: audio
+  default_langcode: en
+  depends:
+    08551f3c-4310-4e30-b5b3-5b77b0ae5490: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'What Goes in a Contract? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 08551f3c-4310-4e30-b5b3-5b77b0ae5490

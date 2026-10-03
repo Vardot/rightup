@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f6f22d3c-6221-4f6a-8628-a2e6f4e44564
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    320dda1a-ed62-4280-bbe9-5c344b3d6ee4: media
+    797fea71-ec14-46bb-a796-b74b5b3e0ae5: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1781082000
+  changed:
+  - value: 1781082000
+  title:
+    -
+      value: 'Hiring Employee Number One'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/hiring-employee-number-one
+      langcode: en
+  field_audio:
+    -
+      entity: 320dda1a-ed62-4280-bbe9-5c344b3d6ee4
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> This is Small Practice, on The Rightup, and I'm Noor Fasi. The first hire is the most expensive decision a small studio makes, usually with the least information. Freya Lindgren runs a furniture and interiors studio in Copenhagen, now five people. She made her first hire in 2020. Freya, welcome.</p><p><strong>Freya Lindgren:</strong> Hi, Noor. And I made it badly, so this should be useful.</p><p><strong>Noor Fasi:</strong> Start with the role. What did you think you needed?</p><p><strong>Freya Lindgren:</strong> Another me. Someone who loved concepts, sketching, the first meeting. So I hired a brilliant graduate from the Royal Academy who loved exactly those things. Within three months we had twice as many concepts and nothing finished.</p><p><strong>Noor Fasi:</strong> What did you actually need?</p><p><strong>Freya Lindgren:</strong> Someone good at what I avoid, which is finishing. Drawings for the joiner, tender packages, chasing the upholsterer in Odense. My second hire was a production designer who had worked at a kitchen manufacturer. The studio doubled its output that year.</p><p><strong>Noor Fasi:</strong> And the graduate?</p><p><strong>Freya Lindgren:</strong> Still with us, and now leads concepts. It was not the wrong person. It was the wrong order.</p><p><strong>Noor Fasi:</strong> Let's talk about pay.</p><p><strong>Freya Lindgren:</strong> I paid what I thought I could afford, which was about thirty one thousand kroner a month, without checking the union scale. It was under. She found out within six weeks from a classmate. We fixed it, with back pay, but trust takes longer to fix than salary.</p><p><strong>Noor Fasi:</strong> What would you advise?</p><p><strong>Freya Lindgren:</strong> Look up the collective agreement before you write the advert. In Denmark that is easy. Then budget the real cost, which is roughly salary plus thirty percent once you add pension, holiday pay and a computer.</p><p><strong>Noor Fasi:</strong> The description mentions the desk.</p><p><strong>Freya Lindgren:</strong> I had a studio of twenty square metres and put her at a small table facing a wall, behind me. I thought it was fine. She told me months later she felt like a guest. Now everyone has the same desk, one point eight metres, by the window, and mine is not the best one.</p><p><strong>Noor Fasi:</strong> Is there anything you got right?</p><p><strong>Freya Lindgren:</strong> A three-month review written into the contract, for both of us. She reviewed me too. That review is where I learned about the wall.</p><p><strong>Noor Fasi:</strong> Freya Lindgren, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'The first hire: what the founders got wrong about the role, the pay and the desk.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 9
+  field_featured_image:
+    -
+      entity: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

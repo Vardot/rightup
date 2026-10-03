@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 23eb35bc-63fe-412d-ab8d-854764181fb4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep01-walking-unfinished-terminal.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep01-walking-unfinished-terminal.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 713366
+  status:
+    -
+      value: true

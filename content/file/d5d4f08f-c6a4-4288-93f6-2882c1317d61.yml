@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d5d4f08f-c6a4-4288-93f6-2882c1317d61
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep05-foundry-pour.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep05-foundry-pour.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 693289
+  status:
+    -
+      value: true

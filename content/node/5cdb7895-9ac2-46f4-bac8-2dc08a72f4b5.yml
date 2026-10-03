@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5cdb7895-9ac2-46f4-bac8-2dc08a72f4b5
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    a67f6aed-d837-476f-9770-17573c34e0b7: media
+    a7804bb9-9833-40ce-a6b0-465ce8ee6b56: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1780045200
+  changed:
+  - value: 1780045200
+  title:
+    -
+      value: 'A Morning on the Type Foundry Floor'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/morning-type-foundry-floor
+      langcode: en
+  field_audio:
+    -
+      entity: a67f6aed-d837-476f-9770-17573c34e0b7
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> There's a steady clatter in here, like a sewing machine with hiccups. That's a Monotype caster, one of nine in this workshop, making metal type one letter at a time. This is Field Notes, I'm Malik Osei, and the woman feeding it is Greta Lindahl, one of the two people who work here. Greta, what's it casting right now?</p><p><strong>Greta Lindahl:</strong> Lowercase e, twelve point, in a Caslon. Six hundred of them. It makes about a hundred and forty a minute, so this order takes around five minutes of casting and about an hour of setting up.</p><p><strong>Malik Osei:</strong> Who orders six hundred lowercase e's in 2026?</p><p><strong>Greta Lindahl:</strong> A printer who lost theirs. That's honestly most of our work. Somebody drops a type case, half the e's roll under a cabinet, and they phone me. E is the most used letter in English, so it wears out first and gets lost first. I cast more e's than the rest of the alphabet put together.</p><p><strong>Malik Osei:</strong> How does the machine know what shape to make?</p><p><strong>Greta Lindahl:</strong> From the matrix, this small bronze block with the letter struck into it. Each machine holds a case of two hundred and twenty-five matrices. Molten metal, mostly lead with tin and antimony, is pumped into the mould at about three hundred and forty degrees, against the matrix, and a second later a finished letter drops out on the right.</p><p><strong>Malik Osei:</strong> It's still hot.</p><p><strong>Greta Lindahl:</strong> Don't pick it up. Give it ten seconds.</p><p><strong>Malik Osei:</strong> Where do the matrices come from?</p><p><strong>Greta Lindahl:</strong> Everywhere. Bought from closing foundries, mostly in the eighties and nineties. Some of ours are from 1911. You can't easily make new ones any more, so we treat them carefully. A matrix that cracks is a letter that may never exist again in that size.</p><p><strong>Malik Osei:</strong> What breaks most?</p><p><strong>Greta Lindahl:</strong> The machines, a little every day. They're from the 1950s. My colleague Piet spends most mornings with a spanner. We have a tenth machine at the back that has never run; we take parts from it.</p><p><strong>Malik Osei:</strong> I can see shelves of paper ribbons with holes punched in them.</p><p><strong>Greta Lindahl:</strong> That's the other way of using the caster. A keyboard operator types the text and it punches the ribbon; then the caster reads the ribbon and casts whole lines in order. We still do that for small poetry presses. A book of forty pages is about three days of casting.</p><p><strong>Malik Osei:</strong> And the metal?</p><p><strong>Greta Lindahl:</strong> Recycled forever. Customers send old type back, we melt it down in that pot, and it becomes new type. Some of this alloy has probably been a hundred different books.</p><p><strong>Malik Osei:</strong> Greta Lindahl, thank you. From the type foundry floor, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Hot metal type still cast to order, one sort at a time, in a workshop with nine machines and two staff.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 9
+  field_featured_image:
+    -
+      entity: a7804bb9-9833-40ce-a6b0-465ce8ee6b56
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6debbd07-371d-44d9-9b41-8d0cf109d00e
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    b37bac98-c8cf-4fac-8445-96a39b9c703f: media
+    ca2fe0ab-fe17-48d8-b59e-e191bffba296: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1775206800
+  changed:
+  - value: 1775206800
+  title:
+    -
+      value: 'What Goes in a Contract?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/what-goes-contract
+      langcode: en
+  field_audio:
+    -
+      entity: b37bac98-c8cf-4fac-8445-96a39b9c703f
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> Welcome to Office Hours. I'm Beatriz Solano, and today we're reading contracts. Helena Brandt practised commercial law in Hamburg before founding a brand studio, and Rashid Al-Amin runs an interiors practice in Amman. I asked each for the clauses they will not start a project without.</p><p><strong>Helena Brandt:</strong> I have four, and I can say them in one breath.</p><p><strong>Beatriz Solano:</strong> Go on.</p><p><strong>Helena Brandt:</strong> Number of revision rounds, payment schedule, ownership of rights transferring on full payment, and termination. Everything else is decoration.</p><p><strong>Beatriz Solano:</strong> Why revision rounds first?</p><p><strong>Helena Brandt:</strong> Because without a number, a project ends when the client gets bored, and clients do not get bored. Two rounds per stage, then a day rate. I once had a hotel group on round fourteen of a logo. That clause has saved me more than any other.</p><p><strong>Rashid Al-Amin:</strong> For us, the payment schedule. Interiors projects run eighteen months, and suppliers want deposits. We invoice thirty percent on signing, then by stage. If the client stops paying at stage three, we stop at stage three. Before I wrote that down, I funded a restaurant's furniture for four months out of my own account.</p><p><strong>Beatriz Solano:</strong> Helena, talk about rights.</p><p><strong>Helena Brandt:</strong> The client owns the final work when the last invoice is paid, not when it is delivered. Until then it's licensed. That sounds aggressive, but it's the only leverage a small studio has. We used it once: a retailer launched our packaging and then disputed the final payment. A letter quoting the clause, and they paid in nine days.</p><p><strong>Beatriz Solano:</strong> And unused concepts?</p><p><strong>Helena Brandt:</strong> Stay ours. The two directions they rejected are not theirs to give to the next agency.</p><p><strong>Rashid Al-Amin:</strong> My fourth is about site visits. A fixed number, with the rate for extra visits written in. Contractors call you to site because you are free, so make sure you are not.</p><p><strong>Beatriz Solano:</strong> What about termination?</p><p><strong>Helena Brandt:</strong> Either side can end it with thirty days' notice, and the work done is paid for. Clients relax when they see they can leave, and oddly they leave less.</p><p><strong>Rashid Al-Amin:</strong> Mine also says what happens to drawings if we're replaced. They can be used, but our name comes off.</p><p><strong>Beatriz Solano:</strong> Where should a young designer get a contract?</p><p><strong>Helena Brandt:</strong> Your professional body usually has a template. Pay a lawyer for two hours to adapt it once. Do not copy one from a forum.</p><p><strong>Rashid Al-Amin:</strong> Then read it aloud to the client in the first meeting. It's twenty minutes, and it prevents twenty arguments.</p><p><strong>Beatriz Solano:</strong> Helena Brandt, Rashid Al-Amin, thank you. That's Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'The four clauses the founders will not work without, and the one that has saved each of them.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 7
+  field_featured_image:
+    -
+      entity: ca2fe0ab-fe17-48d8-b59e-e191bffba296
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f5923166-2fb0-4cab-b3e7-b909c361f2a3
+  bundle: audio
+  default_langcode: en
+  depends:
+    bf09e737-4426-40f1-b202-5fef86f50255: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Saying No to Growth audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: bf09e737-4426-40f1-b202-5fef86f50255

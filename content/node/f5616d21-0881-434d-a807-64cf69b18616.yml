@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f5616d21-0881-434d-a807-64cf69b18616
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    f991e0ff-ee42-4085-9a98-21a9a123510b: media
+    3fe49026-d9f1-4749-855a-5a573459cae6: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1782637200
+  changed:
+  - value: 1782637200
+  title:
+    -
+      value: "The Glassblowers' Bench"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/glassblowers-bench
+      langcode: en
+  field_audio:
+    -
+      entity: f991e0ff-ee42-4085-9a98-21a9a123510b
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> The glory hole is open behind me, and the heat on the back of my neck is extraordinary even at three metres. This is Field Notes, I'm Malik Osei, and I'm at the bench of a small studio that makes pendant lighting glass by hand. Mirela Popescu has just gathered molten glass on the end of a blowpipe. Mirela, what's the piece?</p><p><strong>Mirela Popescu:</strong> A pendant shade for a restaurant, a soft cone, about thirty centimetres across. They've ordered forty-two, all in a pale smoke grey, and all within five millimetres of each other. That's the hard part. One is easy. Forty-two the same is the job.</p><p><strong>Malik Osei:</strong> How much glass is on the pipe?</p><p><strong>Mirela Popescu:</strong> About two kilos, two gathers. The first one is small; I let it cool slightly, then go back into the furnace for the second. The furnace is at eleven hundred and fifty degrees. The glass comes out like thick honey.</p><p><strong>Malik Osei:</strong> She's now rolling it on a steel table. That's the marver?</p><p><strong>Mirela Popescu:</strong> Marver, yes. It centres the glass on the pipe and cools the skin a little so I can blow into it without the bubble going off to one side.</p><p><strong>Malik Osei:</strong> And her assistant, Andrei, is blowing into the pipe while she turns it.</p><p><strong>Andrei Lazar:</strong> Just a puff. You want a small bubble first, then build on it.</p><p><strong>Mirela Popescu:</strong> Then into the mould. We use a cherrywood mould, soaked in water. When the glass touches it, the wood steams, and the steam is what keeps the glass from sticking. A mould like this lasts about three hundred pieces before it's burnt too far.</p><p><strong>Malik Osei:</strong> That sound, like frying.</p><p><strong>Mirela Popescu:</strong> That's the steam. Good.</p><p><strong>Malik Osei:</strong> And now, oh. It just cracked.</p><p><strong>Mirela Popescu:</strong> Yes. It cooled on one side while I was answering you. From the mould to the annealer, I have maybe ninety seconds of working time, and I spent about ten of them talking to you. A crack like that runs straight through. It's finished.</p><p><strong>Malik Osei:</strong> I'm sorry.</p><p><strong>Mirela Popescu:</strong> Don't be. It happens. On a good day seven out of ten survive. The other three go back into the furnace as cullet, so we don't waste glass. We only waste the morning.</p><p><strong>Malik Osei:</strong> Where do the good ones go?</p><p><strong>Mirela Popescu:</strong> Into the annealer, an oven at five hundred degrees that cools them to room temperature over fourteen hours. If you cool glass quickly, it holds stress and can break a week later, hanging over somebody's dinner. Tomorrow we cut the top, grind the rim, and fit the gallery for the fitting.</p><p><strong>Malik Osei:</strong> Mirela Popescu and Andrei Lazar, thank you. From the glassblowers' bench, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A studio making lighting glass by hand, recorded across one gather, one blow and one failure.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 10
+  field_featured_image:
+    -
+      entity: 3fe49026-d9f1-4749-855a-5a573459cae6
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

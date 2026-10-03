@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bf2ade97-67a7-4b49-8a5f-cad7a3b64937
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep04-site-timber-tower.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep04-site-timber-tower.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 719421
+  status:
+    -
+      value: true

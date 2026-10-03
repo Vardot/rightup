@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 78b61def-8ad4-456c-9eee-fd6431e0a2e6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep10-designing-client-who-cannot-see-it.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep10-designing-client-who-cannot-see-it.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 512023
+  status:
+    -
+      value: true

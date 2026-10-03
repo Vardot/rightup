@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9dd96767-8a00-462e-9ce8-651cc69ad60e
+  bundle: audio
+  default_langcode: en
+  depends:
+    4ce3910d-bde2-497d-a458-be8452c34373: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'How Do I Ask for a Raise? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 4ce3910d-bde2-497d-a458-be8452c34373

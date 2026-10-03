@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4ce3910d-bde2-497d-a458-be8452c34373
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep06-how-do-i-ask-raise.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep06-how-do-i-ask-raise.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 588601
+  status:
+    -
+      value: true

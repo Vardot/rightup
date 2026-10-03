@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9f18ea34-d527-4869-ad9b-a0a633b3d791
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep03-pitch-we-won-saying-no.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep03-pitch-we-won-saying-no.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 538760
+  status:
+    -
+      value: true

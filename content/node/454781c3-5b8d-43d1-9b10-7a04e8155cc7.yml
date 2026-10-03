@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 454781c3-5b8d-43d1-9b10-7a04e8155cc7
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    1bfd9a54-c03b-4c42-b26e-e4323f14ccfe: media
+    48c9fc14-4475-4ba5-b11e-f0d4c7bd492d: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1762246800
+  changed:
+  - value: 1762246800
+  title:
+    -
+      value: 'When Should I Fire a Client?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/when-should-i-fire-client
+      langcode: en
+  field_audio:
+    -
+      entity: 1bfd9a54-c03b-4c42-b26e-e4323f14ccfe
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> This is Office Hours, I'm Beatriz Solano, and today we're talking about the client you should not keep. Viktor Hale runs a product design studio of fourteen people in Prague, and Lucía Ferrer founded a packaging studio in Valencia. Both have ended client relationships, and both say they waited too long.</p><p><strong>Viktor Hale:</strong> About eighteen months too long, in my case.</p><p><strong>Beatriz Solano:</strong> Viktor, what is the first sign?</p><p><strong>Viktor Hale:</strong> How they treat the most junior person in the room. If a client talks over your intern or forwards their work to the founder with a complaint, that client will eventually do it to you. Everything else, late payment, scope drift, is survivable. Contempt is not.</p><p><strong>Lucía Ferrer:</strong> For me it is invoices. We had a wine cooperative that paid at ninety days, then a hundred and twenty, then asked for a discount on the overdue amount. That was thirty percent of our revenue, which is exactly why I did not act.</p><p><strong>Beatriz Solano:</strong> That dependency is the trap, isn't it?</p><p><strong>Lucía Ferrer:</strong> Completely. My rule now is that no client goes above twenty percent of a year's fees. If one does, I start winning other work before I need to, not after.</p><p><strong>Beatriz Solano:</strong> What does the conversation sound like?</p><p><strong>Viktor Hale:</strong> It happens in writing first, then on a call. The email is short: we are not the right studio for the next phase, here is what we will finish, here is the date, here is who we recommend. You give them a finish line. Nobody likes being dropped mid-project, and the files you leave behind matter.</p><p><strong>Lucía Ferrer:</strong> I also hand over everything. Working files, font licences, the printer specifications, the colour references we agreed with the factory. A client who has been let go and then cannot reprint a label will tell everyone in the region.</p><p><strong>Beatriz Solano:</strong> Do you give a reason?</p><p><strong>Viktor Hale:</strong> A true one, but a small one. I said we could not staff it properly. That was correct. I did not say their marketing head shouted at my designers in a review, although that was also correct.</p><p><strong>Beatriz Solano:</strong> What happened afterwards?</p><p><strong>Lucía Ferrer:</strong> We lost the thirty percent and replaced it in seven months, with two olive oil producers and a small brewery. The team was calmer within a week. People stopped dreading Tuesdays, which was the cooperative's call day.</p><p><strong>Viktor Hale:</strong> Two of my designers told me afterwards they had been looking for jobs. Neither had said so.</p><p><strong>Beatriz Solano:</strong> What do you wish you had done sooner?</p><p><strong>Viktor Hale:</strong> Put the twenty percent rule in place before I needed it.</p><p><strong>Lucía Ferrer:</strong> Write the reasons down as they happen. When you finally decide, you want a list, not a mood.</p><p><strong>Beatriz Solano:</strong> Viktor Hale and Lucía Ferrer, thank you both. This has been Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'The warning signs, the conversation itself, and what the three founders wish they had done sooner.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 2
+  field_featured_image:
+    -
+      entity: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

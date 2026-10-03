@@ -48,5 +48,5 @@ Feature: Website Base Requirements - Front-end pages warm-up
 
     Examples: Podcast episodes
       | name                        | path                                |
-      | Podcast - Studio Wont Use   | /podcast/studio-wont-use-mood-board |
-      | Podcast - No Straight Walls | /podcast/no-straight-walls          |
+      | Podcast - Studio Wont Use   | /podcasts/last-call/studio-wont-use-mood-board |
+      | Podcast - No Straight Walls | /podcasts/last-call/no-straight-walls |

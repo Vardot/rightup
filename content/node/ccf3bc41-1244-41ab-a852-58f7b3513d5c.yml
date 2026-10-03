@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ccf3bc41-1244-41ab-a852-58f7b3513d5c
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    b43ee8a6-a0f2-4784-b025-2756314bfa20: media
+    de02f379-7c66-479a-be1b-7497651dab4d: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1739955600
+  changed:
+  - value: 1739955600
+  title:
+    -
+      value: 'Why the Bridge Lost Its Colour'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/why-bridge-lost-its-colour
+      langcode: en
+  field_audio:
+    -
+      entity: b43ee8a6-a0f2-4784-b025-2756314bfa20
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> Last Call, I'm Idris Calloway. The competition render showed a footbridge in signal red over a canal. What got built is grey. Today both sides of the decision are on the line: Tobias Lindqvist, the structural engineer, and Annelie Strand, who ran the project for the city. Tobias, where did the red go?</p><p><strong>Tobias Lindqvist:</strong> Into a maintenance spreadsheet. The red in the render was a three-coat polyurethane system. Over water, with salt on the deck in winter, you repaint it every twelve years, and every repaint means scaffolding over a navigable canal. I priced that across a sixty-year design life and it came to roughly one point four million kronor.</p><p><strong>Idris Calloway:</strong> Annelie, is that why the city chose grey?</p><p><strong>Annelie Strand:</strong> No, and this is where we disagree. The city did not choose anything. Tobias sent a value engineering list with fourteen items, and the coating was item nine, described as an alternative finish, galvanised and duplex grey. It sat beside a cheaper handrail fixing and a change to the lighting. Nobody on our side read item nine as killing the colour.</p><p><strong>Tobias Lindqvist:</strong> It said grey in the description. I remember typing it.</p><p><strong>Annelie Strand:</strong> It did. It also said alternative finish in the heading, and the committee read headings.</p><p><strong>Idris Calloway:</strong> When did the architects find out?</p><p><strong>Annelie Strand:</strong> When the first span arrived on a barge. Their project architect saw it from the quay and phoned me before it had even been lifted.</p><p><strong>Idris Calloway:</strong> Tobias, would you fight for the red now?</p><p><strong>Tobias Lindqvist:</strong> I would present it differently. A colour on a bridge is not a finish line on a cost plan, it is the reason the public voted for the scheme. I should have put it on its own page with its own price and let somebody with authority say yes or no to it out loud.</p><p><strong>Idris Calloway:</strong> Annelie, what does the city do differently?</p><p><strong>Annelie Strand:</strong> Anything that changes what the jury saw now goes back to the jury chair, even if it saves money, even if it is item nine of fourteen. We added that clause to our competition rules in the spring.</p><p><strong>Idris Calloway:</strong> And the people who use it every day, do they mind?</p><p><strong>Annelie Strand:</strong> We had about thirty letters, almost all from people who had kept the competition leaflet. Two schoolchildren painted a red stripe on the handrail last summer. We left it for a month before we cleaned it off.</p><p><strong>Tobias Lindqvist:</strong> I walked across it during that month. It looked right.</p><p><strong>Idris Calloway:</strong> Tobias Lindqvist and Annelie Strand, thank you both for arguing it out here. This has been Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A competition-winning red bridge was built in grey. The engineer and the client disagree about who decided, and both are on the call.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 2
+  field_featured_image:
+    -
+      entity: de02f379-7c66-479a-be1b-7497651dab4d
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

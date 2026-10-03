@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7afb9f2a-f461-46a8-a656-c6877e0c5bef
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    6b0eef89-576e-4fb8-a4d5-5391503376c0: media
+    471e541e-c707-45ed-ac0f-fa2624c4bce4: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1784019600
+  changed:
+  - value: 1784019600
+  title:
+    -
+      value: 'One Colour, Eleven Years'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/one-colour-eleven-years
+      langcode: en
+  field_audio:
+    -
+      entity: 6b0eef89-576e-4fb8-a4d5-5391503376c0
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> I'm Idris Calloway, and on Last Call today, a brand that has used exactly one accent colour since it launched eleven years ago, and the three times it nearly changed. Dalia Rahman has been brand director for most of that time. Dalia, welcome.</p><p><strong>Dalia Rahman:</strong> Thank you, Idris. Glad to be here.</p><p><strong>Idris Calloway:</strong> Tell people what the brand is and what the colour is.</p><p><strong>Dalia Rahman:</strong> We are a chain of bakeries, thirty-one shops now, started with one in Leeds. The colour is a warm orange we call crust. Everything else is black, white and the natural kraft of our bags. Crust is the only colour on the shopfronts, the boxes, the aprons and the app.</p><p><strong>Idris Calloway:</strong> Three near misses. Start with the first.</p><p><strong>Dalia Rahman:</strong> Year three. We opened in London and an agency told us orange read as budget there. They proposed a deep teal. We tested it on two shops for a month and the teal shops had slightly better sales, about four percent.</p><p><strong>Idris Calloway:</strong> So why not switch?</p><p><strong>Dalia Rahman:</strong> Because both shops were new. Any new shop sells more. When we compared like for like, the difference vanished. That taught us to be suspicious of tests that confirm what someone wants.</p><p><strong>Idris Calloway:</strong> And the second?</p><p><strong>Dalia Rahman:</strong> Year six, the closest one. A new chief executive wanted green because a competitor had gone green and was being written about. We printed both and put them in the window of the Headingley shop for a week, green bags on one side, crust on the other.</p><p><strong>Idris Calloway:</strong> And?</p><p><strong>Dalia Rahman:</strong> Nobody noticed the green. Customers asked staff if the orange bags were new. That ended it, and the chief executive told the board it was the cheapest research he ever paid for.</p><p><strong>Idris Calloway:</strong> The third?</p><p><strong>Dalia Rahman:</strong> Last year, and it was accessibility, which is a good reason. Our orange on white failed contrast for small text in the app. We could have changed the colour. Instead we kept crust for shapes and large headings and darkened it by about fifteen percent only for text. Most people cannot see the difference, but it passes.</p><p><strong>Idris Calloway:</strong> What does one colour cost you?</p><p><strong>Dalia Rahman:</strong> Matching it. Orange shifts on every substrate. Kraft board, enamel signs, cotton aprons. We keep a physical swatch book and reject about one print run in ten.</p><p><strong>Idris Calloway:</strong> Dalia Rahman, thank you. That is Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A brand that has used exactly one accent colour since launch, and the three times they nearly changed it.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 19
+  field_featured_image:
+    -
+      entity: 471e541e-c707-45ed-ac0f-fa2624c4bce4
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a7b1dec2-c72b-4613-a03a-3172f0376597
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    ef1af36e-662e-4200-807c-e789ea4ea43c: media
+    797fea71-ec14-46bb-a796-b74b5b3e0ae5: media
+    0253d415-b91c-4dce-b806-ade838e7df6a: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1777798800
+  changed:
+  - value: 1777798800
+  title:
+    -
+      value: 'How Do I Leave a Job Well?'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/office-hours/how-do-i-leave-job-well
+      langcode: en
+  field_audio:
+    -
+      entity: ef1af36e-662e-4200-807c-e789ea4ea43c
+  field_content:
+    -
+      value: "<p><strong>Beatriz Solano:</strong> This is Office Hours. I'm Beatriz Solano. A listener has accepted her second job and wants to leave her first one properly. Kofi Mensah is creative director at a design agency in Accra and has worked in four studios across two continents. Marta Kowalczyk founded a studio in Kraków after leaving a large consultancy.</p><p><strong>Kofi Mensah:</strong> Leaving well is mostly about the last three weeks.</p><p><strong>Beatriz Solano:</strong> What does a good exit look like?</p><p><strong>Kofi Mensah:</strong> You finish something. Nobody remembers your notice period. They remember the project you left half done, the files called final final v3, and the client who rang and got nobody. Pick one piece of work you can complete before you go, and complete it.</p><p><strong>Marta Kowalczyk:</strong> And write a handover document. Mine was eleven pages when I left the consultancy. Every live project, the client contact, where the files are, what was promised verbally and is not in any email. My old manager still mentions it, nine years later.</p><p><strong>Beatriz Solano:</strong> Should you say why you are leaving?</p><p><strong>Kofi Mensah:</strong> To your manager, briefly and truthfully, and kindly. I said I wanted to work on more public sector projects, which was true. I did not say I found the creative director exhausting, which was also true. In the exit interview, keep it to one constructive point. HR may write it down; your colleagues will hear about it.</p><p><strong>Marta Kowalczyk:</strong> In Poland the notice period is usually one to three months, depending on how long you have been there. Ask if you can leave early once the handover is done. Often they say yes, and it costs nothing.</p><p><strong>Beatriz Solano:</strong> What about the reference?</p><p><strong>Marta Kowalczyk:</strong> That's the one that matters in five years. When I hired my first designer, I rang the studio she had left in 2019. The founder remembered her handover and nothing else. That's what decided it.</p><p><strong>Kofi Mensah:</strong> Ask for a written reference before you leave, while people still remember the details. A letter dated the week you left is worth more than a phone call three years later.</p><p><strong>Beatriz Solano:</strong> Can you take your work for your portfolio?</p><p><strong>Kofi Mensah:</strong> Ask. Never assume. Some clients forbid it. Ask your manager which projects you can show, get it in an email, and take only final, public material.</p><p><strong>Marta Kowalczyk:</strong> Not the working files. Never the working files. That's how people end up in a lawyer's office.</p><p><strong>Beatriz Solano:</strong> Anything on the last day?</p><p><strong>Kofi Mensah:</strong> Say goodbye to the studio manager and the people at reception. They know everyone.</p><p><strong>Marta Kowalczyk:</strong> And clear your desk. Somebody else has to sit there on Monday.</p><p><strong>Beatriz Solano:</strong> Kofi Mensah and Marta Kowalczyk, thank you. You've been listening to Office Hours.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Notice periods, handovers and the reference you will need in five years.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 8
+  field_featured_image:
+    -
+      entity: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
+  field_host:
+    -
+      value: 'Beatriz Solano'
+  field_podcast:
+    -
+      entity: 0253d415-b91c-4dce-b806-ade838e7df6a

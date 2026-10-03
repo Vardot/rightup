@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 19ea3479-651e-4822-bb81-27a85ba416fa
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    b1919d18-0777-488b-8370-b12a85452b9c: media
+    02f79969-1865-4c03-9920-488972ff170d: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1752915600
+  changed:
+  - value: 1752915600
+  title:
+    -
+      value: 'Building on the Site Nobody Wanted'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/building-site-nobody-wanted
+      langcode: en
+  field_audio:
+    -
+      entity: b1919d18-0777-488b-8370-b12a85452b9c
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> Welcome to Last Call. I'm Idris Calloway. For nine years a corner plot in a city centre sat empty because every developer who looked at it walked away. Then a small practice bought it with its own money. Leila Haddad is the architect who did that. Leila, why did everyone else pass?</p><p><strong>Leila Haddad:</strong> It is a triangle, about four hundred square metres, at a junction where three streets meet at awkward angles. And a Victorian sewer runs diagonally under the middle of it. The water authority will not let you build within three metres of the pipe either side, so you can only build on about forty percent of the land.</p><p><strong>Idris Calloway:</strong> That is a hard pitch to a bank.</p><p><strong>Leila Haddad:</strong> Impossible, actually. We did not use a bank. My partner and I, and two of our senior staff, put in our own savings and borrowed the rest from a housing cooperative we had worked for. The price reflected the sewer. We paid about a third of what a normal plot that size would cost.</p><p><strong>Idris Calloway:</strong> So what did you build?</p><p><strong>Leila Haddad:</strong> A building shaped exactly like the part you are allowed to build on. Two thin wings along the two street edges, meeting at the point of the triangle, five storeys high. The ground above the sewer became a courtyard open to the street. The constraint did most of the design work for us.</p><p><strong>Idris Calloway:</strong> What is in it?</p><p><strong>Leila Haddad:</strong> Fourteen flats, our own studio on the ground floor of one wing, and a bakery at the point. The bakery was not in the plan. The owner walked in during construction and asked if the corner was taken.</p><p><strong>Idris Calloway:</strong> And it became your best-known building.</p><p><strong>Leila Haddad:</strong> Because of the courtyard, mostly. It is the only open space on that street, and people use it for lunch. It ends up in every photograph of the neighbourhood, which means it ends up in every client meeting we have.</p><p><strong>Idris Calloway:</strong> What nearly went wrong?</p><p><strong>Leila Haddad:</strong> The foundations. The piles near the sewer had to be bored, not driven, because vibration could crack the brick. That added eleven weeks and about ninety thousand pounds. We had a two percent contingency. I did not sleep well that winter.</p><p><strong>Idris Calloway:</strong> Would you buy another plot like it?</p><p><strong>Leila Haddad:</strong> I already have. It is a strip behind a railway viaduct, four metres wide. Ask me again in three years.</p><p><strong>Idris Calloway:</strong> Leila Haddad, thank you. That's Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A practice bought the awkward corner plot everyone else passed on, and it became their best-known building.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 7
+  field_featured_image:
+    -
+      entity: 02f79969-1865-4c03-9920-488972ff170d
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

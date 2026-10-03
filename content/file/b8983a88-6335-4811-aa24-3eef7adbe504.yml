@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b8983a88-6335-4811-aa24-3eef7adbe504
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep07-model-shop-refuses-go-digital.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep07-model-shop-refuses-go-digital.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 567512
+  status:
+    -
+      value: true

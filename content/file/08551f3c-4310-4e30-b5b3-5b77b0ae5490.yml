@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 08551f3c-4310-4e30-b5b3-5b77b0ae5490
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep07-what-goes-contract.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep07-what-goes-contract.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 591212
+  status:
+    -
+      value: true

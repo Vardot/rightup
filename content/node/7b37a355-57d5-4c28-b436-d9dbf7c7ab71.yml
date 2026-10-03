@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7b37a355-57d5-4c28-b436-d9dbf7c7ab71
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    e5c81899-9508-4ac7-be7f-ec233679e9e9: media
+    afe93cbe-b34e-46e2-9a7e-45ff6424e105: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1775552400
+  changed:
+  - value: 1775552400
+  title:
+    -
+      value: Hemp
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/hemp
+      langcode: en
+  field_audio:
+    -
+      entity: e5c81899-9508-4ac7-be7f-ec233679e9e9
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> Material World, I'm Kenji Arakawa. We are in Brittany, on the edge of a field of three-metre-tall hemp, with Clementine Arsenault, who grows it, processes it and then builds with it. Clementine, you have strong feelings about why this plant disappeared.</p><p><strong>Clementine Arsenault:</strong> I do. Industrial hemp was lumped together with cannabis by drug law, but it has almost none of the psychoactive compound, less than point three percent. It was banned in many countries for decades because of what it looks like, not what it does. France never fully stopped, which is why we still have the processing plants.</p><p><strong>Kenji Arakawa:</strong> What happens after you cut it?</p><p><strong>Clementine Arsenault:</strong> We leave the stalks on the field for two or three weeks to ret, which loosens the fibre from the woody core. Then a decorticator separates them. The long fibre goes to insulation batts and textiles. The woody core, cut into pieces of around fifteen millimetres, is called hurd or shiv. That is what goes into hempcrete.</p><p><strong>Kenji Arakawa:</strong> And hempcrete is shiv plus what?</p><p><strong>Clementine Arsenault:</strong> A lime binder and water. Roughly one part binder to two of shiv by weight. We cast it around a timber frame, three hundred millimetres thick, and tamp it lightly. Not hard, like rammed earth. You want the air left in it, because air is the insulation.</p><p><strong>Kenji Arakawa:</strong> So it is not structural.</p><p><strong>Clementine Arsenault:</strong> Not at all. It is a wall that insulates, regulates humidity and stores some heat, around a frame that carries the load. People get that wrong and expect it to hold up a roof. It has about a twentieth of the compressive strength of concrete.</p><p><strong>Kenji Arakawa:</strong> How does it perform as insulation?</p><p><strong>Clementine Arsenault:</strong> A thermal conductivity around point zero seven. Mineral wool is closer to point zero four, so you need a thicker wall for the same number. But hempcrete buffers moisture and has mass, so the house feels more even than the figure suggests. And while it grows, the crop takes up more carbon than the lime releases.</p><p><strong>Kenji Arakawa:</strong> What is the catch?</p><p><strong>Clementine Arsenault:</strong> Drying time. A thirty centimetre wall needs six to eight weeks of good weather before you can render it. We had a school extension in Rennes where the contractor tried to plaster after three weeks and trapped the water. We cut it back and started again.</p><p><strong>Kenji Arakawa:</strong> How much hemp is needed for a house?</p><p><strong>Clementine Arsenault:</strong> A small three-bedroom house uses around four hectares of crop. One harvest, about a hundred and twenty days from sowing.</p><p><strong>Kenji Arakawa:</strong> Clementine Arsenault, thank you. That is Hemp, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Hempcrete walls, hemp insulation and a grower who thinks the crop was banned for the wrong reasons.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 7
+  field_featured_image:
+    -
+      entity: afe93cbe-b34e-46e2-9a7e-45ff6424e105
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

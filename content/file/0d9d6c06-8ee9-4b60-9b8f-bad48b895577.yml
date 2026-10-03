@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0d9d6c06-8ee9-4b60-9b8f-bad48b895577
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep01-partner-who-left-mid-project.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep01-partner-who-left-mid-project.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 550884
+  status:
+    -
+      value: true

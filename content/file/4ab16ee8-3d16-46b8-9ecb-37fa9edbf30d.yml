@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4ab16ee8-3d16-46b8-9ecb-37fa9edbf30d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep18-building-changes-every-winter.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep18-building-changes-every-winter.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 576700
+  status:
+    -
+      value: true

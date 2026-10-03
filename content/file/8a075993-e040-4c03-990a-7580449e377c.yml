@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8a075993-e040-4c03-990a-7580449e377c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep04-ten-years-one-logo.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep04-ten-years-one-logo.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 530079
+  status:
+    -
+      value: true

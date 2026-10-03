@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 842e0bae-3842-4b12-aebd-d0a6b6b8ce11
+  bundle: audio
+  default_langcode: en
+  depends:
+    08296405-68e5-4f8c-9e1e-890412f9dfe9: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Clients on Stage audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 08296405-68e5-4f8c-9e1e-890412f9dfe9

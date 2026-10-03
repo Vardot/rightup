@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1d2b8665-de47-462a-8aab-9680d232da83
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    4c514259-0a22-4d55-910e-ddabd7d0aedd: media
+    f49af479-626f-43e9-bc06-b5ae702bf041: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1768122000
+  changed:
+  - value: 1768122000
+  title:
+    -
+      value: 'The Studio With No Job Titles'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/studio-no-job-titles
+      langcode: en
+  field_audio:
+    -
+      entity: 4c514259-0a22-4d55-910e-ddabd7d0aedd
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> Welcome to Small Practice, on The Rightup. I'm Noor Fasi. Rafael Montoya works at an eleven-person architecture and product studio in Valencia. On their website there are eleven names, eleven photographs, and no job titles at all. Rafael, welcome.</p><p><strong>Rafael Montoya:</strong> Thank you, Noor. Eleven names, in alphabetical order, which means I am usually near the bottom.</p><p><strong>Noor Fasi:</strong> When did the titles go?</p><p><strong>Rafael Montoya:</strong> In 2020. The founders realised that the title Associate Director was being used in fee negotiations to justify a rate, and not to describe what anybody did. So they took them off the site, then off the email signatures, then off the contracts.</p><p><strong>Noor Fasi:</strong> Off the contracts? Clients often insist on a named lead.</p><p><strong>Rafael Montoya:</strong> They still get one. Every appointment names a project lead by person, not by rank. On the market hall in Alzira the lead was Lucía, who was twenty-eight. On the next job she was supporting someone else. Leadership travels with the project.</p><p><strong>Noor Fasi:</strong> So what happens when a client walks in and asks who is in charge?</p><p><strong>Rafael Montoya:</strong> We say the name of whoever is running their job. If they push and ask who is in charge of the studio, we explain that the two founders own it and sign the accounts, but they do not overrule a project lead on design. Most clients find that reassuring. A few do not.</p><p><strong>Noor Fasi:</strong> Tell me about one who did not.</p><p><strong>Rafael Montoya:</strong> A hotel developer from Madrid. Second meeting, he looked around the table and said, I want to speak to the boss. We said the boss of his project was Pau, who was sitting next to him. He shook Pau's hand, went back to Madrid, and appointed someone else.</p><p><strong>Noor Fasi:</strong> Did that make you reconsider?</p><p><strong>Rafael Montoya:</strong> We discussed it for an afternoon. It was a two hundred thousand euro fee. We decided that a client who needs a hierarchy to trust us will need one at every difficult moment, and those moments are where the money is lost anyway.</p><p><strong>Noor Fasi:</strong> What about pay, without titles?</p><p><strong>Rafael Montoya:</strong> Pay is banded by years in practice and published internally. There are four bands. Everyone knows everyone's salary. That was harder than removing titles, honestly. It took two years and one person left over it.</p><p><strong>Noor Fasi:</strong> And career progression?</p><p><strong>Rafael Montoya:</strong> You progress by leading bigger projects. Nobody needs a word on a business card to know who led the market hall.</p><p><strong>Noor Fasi:</strong> Rafael Montoya, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Eleven people, no seniority, no titles on the website. What happens when a client asks who is in charge.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 4
+  field_featured_image:
+    -
+      entity: f49af479-626f-43e9-bc06-b5ae702bf041
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

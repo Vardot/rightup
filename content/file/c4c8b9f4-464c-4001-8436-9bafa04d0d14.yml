@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c4c8b9f4-464c-4001-8436-9bafa04d0d14
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep03-architects-versus-engineers-round-table.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep03-architects-versus-engineers-round-table.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 568556
+  status:
+    -
+      value: true

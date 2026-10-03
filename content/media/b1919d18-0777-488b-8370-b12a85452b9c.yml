@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b1919d18-0777-488b-8370-b12a85452b9c
+  bundle: audio
+  default_langcode: en
+  depends:
+    b4bf6cd1-f859-4b79-b1da-3e2a9a8ad195: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Building on the Site Nobody Wanted audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: b4bf6cd1-f859-4b79-b1da-3e2a9a8ad195

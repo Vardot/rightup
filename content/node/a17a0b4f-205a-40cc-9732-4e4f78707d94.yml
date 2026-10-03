@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a17a0b4f-205a-40cc-9732-4e4f78707d94
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    099ab346-e1f6-4759-af14-753d22ab0f84: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1759309200
+  changed:
+  - value: 1759309200
+  title:
+    -
+      value: 'Walking the Unfinished Terminal'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/walking-unfinished-terminal
+      langcode: en
+  field_audio:
+    -
+      entity: 099ab346-e1f6-4759-af14-753d22ab0f84
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> This is Field Notes, and I'm Malik Osei, standing on a concourse that will not see a passenger for another eleven months. There is no glazing on the west side yet, so the wind is coming straight off the apron, and somewhere behind me a telehandler is reversing. I'm here with Gareth Pryce, who runs this site for the main contractor. Gareth, where exactly are we?</p><p><strong>Gareth Pryce:</strong> Gate fourteen, or where gate fourteen will be. The slab under your feet went in on Thursday. You can still smell it, that wet lime smell. In a week it'll be grey and nobody will notice it again.</p><p><strong>Malik Osei:</strong> The pier runs almost half a kilometre. Standing at one end, I can't see the other.</p><p><strong>Gareth Pryce:</strong> Four hundred and sixty metres. And the thing people don't expect is that it isn't one building. It's nine, structurally. There's a movement joint every fifty-odd metres, because steel this long grows. Between January and July the whole pier gets about eleven centimetres longer.</p><p><strong>Malik Osei:</strong> Where does that eleven centimetres go?</p><p><strong>Gareth Pryce:</strong> Into those joints. See the strip in the floor there, the stainless plate? That slides. The ceiling has the same thing, the cable trays have it, the sprinkler mains have flexible sections. If one trade forgets, you get a pipe that tears itself off a bracket in the first hot week. We had a drainage run fixed straight across a joint in March. Caught it on a walk like this one.</p><p><strong>Malik Osei:</strong> Let's keep walking. What is this room?</p><p><strong>Gareth Pryce:</strong> Future coffee concession. Right now it's where the electricians keep their drums. The fit-out goes to a different contractor, so we hand over a shell with services capped off and a floor that's level to three millimetres over three metres. They'll still complain about the floor.</p><p><strong>Malik Osei:</strong> There's a man up on a scissor lift above the gate lounge. What's he doing?</p><p><strong>Gareth Pryce:</strong> Setting out for the acoustic ceiling. Every panel hangs from a grid, and that grid has to dodge four hundred sprinkler heads, the speakers, the cameras and the departure screens. The coordination model for this zone alone has about twelve thousand clashes resolved in it. Some of them were resolved by moving a speaker forty millimetres.</p><p><strong>Malik Osei:</strong> Twelve thousand.</p><p><strong>Gareth Pryce:</strong> Most of them are trivial. The fifty that aren't took months.</p><p><strong>Malik Osei:</strong> The design is very much about the view to the runway. How much of that glass is in?</p><p><strong>Gareth Pryce:</strong> East side is complete, west side starts Monday. Each pane is three point two metres high and weighs just under six hundred kilos. We can fit eight a day if the wind stays under the limit for the vacuum lifter, which out here it often doesn't.</p><p><strong>Malik Osei:</strong> What does this place sound like when it's finished?</p><p><strong>Gareth Pryce:</strong> Nothing like this. The acoustic target for the gate lounges is low enough that you'll hear the boarding announcement and not the trolleys. Right now you can hear a dropped spanner from three gates away.</p><p><strong>Malik Osei:</strong> Gareth Pryce, thank you. That was a walk through an unfinished terminal, for Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Twenty minutes inside an airport pier that opens next year, recorded on the concourse with the contractor.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 1
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 65d3f4d6-0861-4ac1-bd14-e5c72eb2c4dd
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    eb665405-3418-46b7-a9ca-27053fcc7e6e: media
+    2c55c445-abe2-496e-8cfe-a70c797da699: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1760346000
+  changed:
+  - value: 1760346000
+  title:
+    -
+      value: 'Two People, One Hospital'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/two-people-one-hospital
+      langcode: en
+  field_audio:
+    -
+      entity: eb665405-3418-46b7-a9ca-27053fcc7e6e
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> This is Small Practice, on The Rightup, I'm Noor Fasi. Today, a hospital commission that went to a studio of two. Nadia Rahimi runs that studio with her partner from a room above a bakery in Leeds. Nadia, welcome.</p><p><strong>Nadia Rahimi:</strong> Thanks, Noor. The bakery matters, by the way. Every client meeting smells of bread, and people relax.</p><p><strong>Noor Fasi:</strong> Set the scene. What was the job, and who were you up against?</p><p><strong>Nadia Rahimi:</strong> A 24-bed day surgery unit for an NHS trust, with a budget of around eleven million. The shortlist was us and four national firms, two of them with healthcare teams bigger than our entire turnover.</p><p><strong>Noor Fasi:</strong> How did two people even get shortlisted?</p><p><strong>Nadia Rahimi:</strong> A small mental health refurbishment we did in 2021. The estates manager had moved to this trust and remembered that we had spent a week on the ward before drawing anything. She put our name forward and then told us, very plainly, that she could not help us after that.</p><p><strong>Noor Fasi:</strong> So what did you do differently at interview?</p><p><strong>Nadia Rahimi:</strong> We brought a ward sister. Not as a reference, as part of the presentation. She talked for six minutes about how far a nurse walks on a night shift, and we showed a plan that cut that walk by about a third. The big firms brought renderings of the atrium.</p><p><strong>Noor Fasi:</strong> The panel noticed.</p><p><strong>Nadia Rahimi:</strong> The panel chair said afterwards it was the only presentation that started inside a room rather than outside the building.</p><p><strong>Noor Fasi:</strong> The description says it cost you. What did it cost?</p><p><strong>Nadia Rahimi:</strong> Almost everything else. For two years that unit was ninety percent of our work. We turned down three houses and a library extension we badly wanted. And we had to buy professional indemnity cover at ten million, which tripled our premium overnight.</p><p><strong>Noor Fasi:</strong> Did you hire?</p><p><strong>Nadia Rahimi:</strong> We subcontracted. A healthcare planner in Manchester did the departmental adjacencies, and a freelance technician did the detail packages. We kept the design and the client relationship, and we said that in the bid, in writing, so nobody felt misled.</p><p><strong>Noor Fasi:</strong> Did the trust push back on that?</p><p><strong>Nadia Rahimi:</strong> Their procurement team asked for a resilience plan. What happens if one of you is ill for a month? We wrote one. It was four pages and it was honest, and I think honesty read as competence.</p><p><strong>Noor Fasi:</strong> And the fee? Healthcare is notorious.</p><p><strong>Nadia Rahimi:</strong> We came in at about seven percent. One of the national firms was under five. We lost money in year one and made a modest profit by handover, mostly because there were fewer meetings with two of us in them.</p><p><strong>Noor Fasi:</strong> Would you do it again?</p><p><strong>Nadia Rahimi:</strong> Yes, but not straight away. The unit opened in March. We are taking a year of small jobs first. My partner says she wants to design a bathroom again.</p><p><strong>Noor Fasi:</strong> Nadia Rahimi, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'How a two-person studio won a healthcare commission against four national firms, and what it cost them.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 1
+  field_featured_image:
+    -
+      entity: 2c55c445-abe2-496e-8cfe-a70c797da699
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

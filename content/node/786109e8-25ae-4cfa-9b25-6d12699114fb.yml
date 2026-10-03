@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 786109e8-25ae-4cfa-9b25-6d12699114fb
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    3bff6ee5-f695-4b51-ad76-730345f6f2b0: media
+    ca2fe0ab-fe17-48d8-b59e-e191bffba296: media
+    ab425d36-8ed0-4e02-a782-d60107bd989b: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1778490000
+  changed:
+  - value: 1778490000
+  title:
+    -
+      value: 'The Part-Time Studio'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/small-practice/part-time-studio
+      langcode: en
+  field_audio:
+    -
+      entity: 3bff6ee5-f695-4b51-ad76-730345f6f2b0
+  field_content:
+    -
+      value: "<p><strong>Noor Fasi:</strong> Small Practice, from The Rightup. I'm Noor Fasi. Oluwaseun Bello co-founded an interiors studio in Lagos with a friend from university, and both of them work three days a week, by design, not by circumstance. Seun, welcome.</p><p><strong>Oluwaseun Bello:</strong> Thank you, Noor. Monday to Wednesday for me, Wednesday to Friday for Kemi. Wednesday is the day we both exist.</p><p><strong>Noor Fasi:</strong> Why three days?</p><p><strong>Oluwaseun Bello:</strong> Different reasons. I have two small children. Kemi paints, and sells her work, and was not willing to give that up to run a business. We set up in 2019 and decided early that if the studio needed five days from both of us, it was the wrong studio.</p><p><strong>Noor Fasi:</strong> How did clients react?</p><p><strong>Oluwaseun Bello:</strong> Fine when it was in the contract. Badly when they discovered it. Our first restaurant client found out on a Thursday that I would not answer until Monday, and he was furious. Since then the appointment letter states who is on the project which days, and who covers.</p><p><strong>Noor Fasi:</strong> Do you lose work because of it?</p><p><strong>Oluwaseun Bello:</strong> Hospitality clients who want a reply at ten at night, yes. We lost a hotel group in Victoria Island because their general manager wanted daily site meetings. Our work now is mostly residential and offices, with programmes of six to nine months, which suits a slower rhythm.</p><p><strong>Noor Fasi:</strong> How do you hand over between you?</p><p><strong>Oluwaseun Bello:</strong> Wednesday is the handover. We spend the morning walking through every live job, then site visits together in the afternoon. And a shared notebook, a paper one, which sounds old-fashioned, but it is quicker than our project software and it never crashes during a power cut.</p><p><strong>Noor Fasi:</strong> The money must be different too.</p><p><strong>Oluwaseun Bello:</strong> We charge by fee, not by time, which helps. Our turnover is perhaps sixty percent of a full-time studio of two. Our overheads are lower because we share one desk, and one site car on a schedule.</p><p><strong>Noor Fasi:</strong> Has anyone tried to change your minds?</p><p><strong>Oluwaseun Bello:</strong> Our accountant, every year. And a developer who offered us a whole block of apartments if one of us went full time. We thought about it for a week. Kemi said she would rather paint than manage forty kitchens, and so would I, honestly.</p><p><strong>Noor Fasi:</strong> Oluwaseun Bello, thank you. That's Small Practice.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Two founders who each work three days a week, and the clients who had to be told.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 8
+  field_featured_image:
+    -
+      entity: ca2fe0ab-fe17-48d8-b59e-e191bffba296
+  field_host:
+    -
+      value: 'Noor Fasi'
+  field_podcast:
+    -
+      entity: ab425d36-8ed0-4e02-a782-d60107bd989b

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 269a011d-c291-4eef-9941-8edfe1171b92
+  bundle: audio
+  default_langcode: en
+  depends:
+    d4a2ffe4-e300-412b-9f66-c793ed783384: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Night Shift at the Signwriter''s audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: d4a2ffe4-e300-412b-9f66-c793ed783384

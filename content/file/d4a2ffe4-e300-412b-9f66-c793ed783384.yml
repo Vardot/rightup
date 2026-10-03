@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d4a2ffe4-e300-412b-9f66-c793ed783384
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep06-night-shift-signwriters.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep06-night-shift-signwriters.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 729562
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f9ac0eec-bed0-430a-922c-a6f1a69535e1
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    11389bbb-d205-4d46-80ab-b12ab1c57b3b: media
+    a7804bb9-9833-40ce-a6b0-465ce8ee6b56: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1783328400
+  changed:
+  - value: 1783328400
+  title:
+    -
+      value: Paper
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/paper
+      langcode: en
+  field_audio:
+    -
+      entity: 11389bbb-d205-4d46-80ab-b12ab1c57b3b
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> This is Material World, I'm Kenji Arakawa. We are at a small paper mill in a converted dye house outside Kyoto, where Sachiko Ueda makes conservation paper by hand, one sheet at a time, from old cotton. Sachiko, what is in that vat?</p><p><strong>Sachiko Ueda:</strong> Cotton rag pulp, about one percent fibre and ninety-nine percent water. The rags are offcuts from a shirt factory and old bed sheets, white cotton only. We cut out buttons, seams and any polyester, then beat the cloth for six hours in a Hollander beater until it separates into fibres.</p><p><strong>Kenji Arakawa:</strong> Why rags rather than wood pulp?</p><p><strong>Sachiko Ueda:</strong> Cotton fibre is almost pure cellulose, long and strong. Wood contains lignin, which turns acidic and yellow with time. Look at a cheap paperback from the sixties. That brown edge is lignin. A rag sheet, kept properly, lasts many centuries. Museums need paper that will outlive the object it is repairing.</p><p><strong>Kenji Arakawa:</strong> Who uses your paper?</p><p><strong>Sachiko Ueda:</strong> Conservators, mostly. A museum in Leiden buys our thinnest weight, about twelve grams per square metre, to repair tears in eighteenth-century maps. A print studio in Melbourne buys heavier sheets for etching. And one bookbinder in Edinburgh, who orders the same weight every spring.</p><p><strong>Kenji Arakawa:</strong> Show me the dip.</p><p><strong>Sachiko Ueda:</strong> I hold the mould, a wire screen in a wooden frame, with a deckle on top. I dip it in at an angle, lift it level, and shake it once forwards and once sideways. That shake aligns the fibres in both directions, so the sheet is equally strong each way. Then I lift the deckle and couch the wet sheet onto felt.</p><p><strong>Kenji Arakawa:</strong> How many in a day?</p><p><strong>Sachiko Ueda:</strong> On a good day around three hundred and fifty sheets of A2. Then the stack of felts and paper goes into a press, takes about two hundred litres of water out, and the sheets dry on boards for two days.</p><p><strong>Kenji Arakawa:</strong> What can go wrong?</p><p><strong>Sachiko Ueda:</strong> Iron. One rusty staple in the rags and you get small brown spots months later, which ruins paper meant for conservation. We test the water monthly for iron and we filter it twice. We also add a little calcium carbonate as a buffer, so the sheet resists acid from the air.</p><p><strong>Kenji Arakawa:</strong> Is anyone learning this?</p><p><strong>Sachiko Ueda:</strong> Two apprentices, both former graphic designers. They came because they were tired of screens. One of them left after the winter. The vats are cold in January.</p><p><strong>Kenji Arakawa:</strong> Sachiko Ueda, thank you. That is Paper, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A mill making conservation paper by hand, sheet by sheet, from old cotton rags.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 10
+  field_featured_image:
+    -
+      entity: a7804bb9-9833-40ce-a6b0-465ce8ee6b56
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ef1757e8-af2d-4270-82c4-c348b6d57e0f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep02-lime-plaster.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep02-lime-plaster.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 647522
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5b70b689-6a47-489b-8123-6f902e01df38
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    75948559-e1ea-4957-91d9-af1f14c101b3: media
+    02f79969-1865-4c03-9920-488972ff170d: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1769677200
+  changed:
+  - value: 1769677200
+  title:
+    -
+      value: 'The Foundry Pour'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/foundry-pour
+      langcode: en
+  field_audio:
+    -
+      entity: 75948559-e1ea-4957-91d9-af1f14c101b3
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> You can probably hear the furnace. That roar has been constant since I arrived at seven. This is Field Notes, I'm Malik Osei, and I'm in a bronze foundry on the morning of a pour, standing on a sand floor between the crucible furnace and a row of moulds. Bastien Morel is the foundry master. Bastien, what are we casting today?</p><p><strong>Bastien Morel:</strong> A pair of door handles for a library, about sixty centimetres each, and a series of twelve small plaques for the same building. Altogether a hundred and forty kilos of bronze in the crucible. Silicon bronze, mostly copper, three percent silicon, a little manganese.</p><p><strong>Malik Osei:</strong> How long has the metal been heating?</p><p><strong>Bastien Morel:</strong> Since five thirty. It needs to reach about eleven hundred and fifty degrees for this alloy. We pour at a little less, maybe eleven twenty, depending on the thickness of the pieces. Thin plaques want it hotter, so the metal doesn't freeze before it fills the mould.</p><p><strong>Malik Osei:</strong> You keep looking into the crucible rather than at the thermometer.</p><p><strong>Bastien Morel:</strong> The thermometer confirms. The eye decides. When it's ready the surface goes very bright, almost like a mirror, and when you skim off the dross it sounds different. Heavier. After thirty years you just know.</p><p><strong>Malik Osei:</strong> Let's look at the moulds. They're boxes of dark sand, clamped shut, with a funnel in the top.</p><p><strong>Bastien Morel:</strong> That's the sprue, where the metal goes in. And there are risers, little chimneys, which give the air a way out and feed the casting as it shrinks. Bronze shrinks about one and a half percent as it cools. If the riser isn't big enough, the shrinkage happens inside the handle and you get a hole you only find when you machine it.</p><p><strong>Malik Osei:</strong> What goes wrong on a day like this?</p><p><strong>Bastien Morel:</strong> Damp, always. One wet patch in a mould and the metal turns it to steam instantly and spits. That's why nobody stands over a mould when we pour, and why I distrust any mould that has been in the yard. These were dried overnight with a gas torch.</p><p><strong>Malik Osei:</strong> Everyone has gone quiet and put on face shields. Here comes Ines with the crucible on the overhead hoist.</p><p><strong>Ines Vaz:</strong> Crucible's up. Bastien, handles first?</p><p><strong>Bastien Morel:</strong> Handles first, then the plaques while it's still hot enough. Steady, Ines, keep the stream unbroken. If you stop and start you trap air.</p><p><strong>Malik Osei:</strong> A long orange rope of metal going into the first mould. It took about eight seconds. Now the second.</p><p><strong>Bastien Morel:</strong> Good. Both full, the risers came up. Now we wait four hours before we break them out. The sand comes off, the sprues are cut, and then the long part starts: two days of chasing and polishing for each handle. The pour is the exciting forty minutes. The work is the rest of the week.</p><p><strong>Malik Osei:</strong> Bastien Morel and Ines Vaz, thank you. From the foundry floor, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Forty minutes in a bronze foundry on the morning of a pour, recorded between the furnace and the sand moulds.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 5
+  field_featured_image:
+    -
+      entity: 02f79969-1865-4c03-9920-488972ff170d
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

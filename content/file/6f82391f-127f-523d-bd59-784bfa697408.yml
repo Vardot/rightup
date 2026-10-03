@@ -9,16 +9,16 @@ default:
       target_id: 1
   filename:
     -
-      value: rightup-podcast-ep17-studio-wont-use-mood-board.mp3
+      value: rightup-podcast-last-call-ep17-studio-wont-use-mood-board.mp3
   uri:
     -
-      value: 'public://rightup/rightup-podcast-ep17-studio-wont-use-mood-board.mp3'
+      value: 'public://rightup/rightup-podcast-last-call-ep17-studio-wont-use-mood-board.mp3'
   filemime:
     -
       value: audio/mpeg
   filesize:
     -
-      value: 680954
+      value: 553398
   status:
     -
       value: true

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: eb665405-3418-46b7-a9ca-27053fcc7e6e
+  bundle: audio
+  default_langcode: en
+  depends:
+    7cf818e9-a3f6-4cd3-9cd7-ea8469e5adcc: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Two People, One Hospital audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 7cf818e9-a3f6-4cd3-9cd7-ea8469e5adcc

@@ -2,76 +2,94 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: 5bcd7571-0467-4ae5-b6eb-8d891e47460e
-  bundle: podcast
+  bundle: podcast_episode
   default_langcode: en
   depends:
-    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
-    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
     0f8579b2-49da-573f-8f1a-f218f9559f46: media
+    0f9e1bc9-e24f-430f-bfc6-00d0841652be: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+    4ebd63e0-187b-49bf-8150-68b9e025649a: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Podcast episode
+    -
+      value: 'Created new Podcast episode'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
-  title:
-  - value: What a Rejected Pitch Actually Sounds Like
-  promote:
-  - value: false
-  sticky:
-  - value: false
-  revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
-  path:
-  - alias: /podcast/what-rejected-pitch-actually-sounds
-    langcode: en
-  field_audio:
-  - entity: 0f8579b2-49da-573f-8f1a-f218f9559f46
-  field_content:
-  - value: '<p><strong>Noor Fasi:</strong> This is The Rightup. I''m Noor Fasi. Today we''re doing something we''ve never done. We have permission to talk through the room tone of a pitch that fell apart
-      in real time. Tomas Reyna was the creative director in that room. Tomas, welcome.</p>
-
-      <p><strong>Tomas Reyna:</strong> Thanks, Noor. I still can''t listen to it without wincing.</p>
-
-      <p><strong>Noor Fasi:</strong> Take us to the moment it turned.</p>
-
-      <p><strong>Tomas Reyna:</strong> About eleven minutes in, the client asked who the work was really for. I opened my mouth, and nothing came out.</p>
-
-      <p><strong>Noor Fasi:</strong> And then?</p>
-
-      <p><strong>Tomas Reyna:</strong> Thirty seconds of silence. On the recording it sounds like a fan and somebody''s pen clicking. Nobody on our side wanted to be the one to fill it.</p>
-
-      <p><strong>Noor Fasi:</strong> Thirty seconds feels short when you say it.</p>
-
-      <p><strong>Tomas Reyna:</strong> It isn''t. In a pitch room it''s a lifetime. You can hear the client decide, somewhere in the middle of it.</p>
-
-      <p><strong>Noor Fasi:</strong> You did try to recover.</p>
-
-      <p><strong>Tomas Reyna:</strong> We did, about two minutes later. A good answer, honestly. It just came after they''d already stopped listening.</p>
-
-      <p><strong>Noor Fasi:</strong> What changed in the studio after that?</p>
-
-      <p><strong>Tomas Reyna:</strong> We rehearse the hardest question now, out loud, before every pitch. And whoever''s closest to the answer is allowed to take it, whatever their title is.</p>
-
-      <p><strong>Noor Fasi:</strong> Tomas Reyna, thank you for letting us sit in that silence. That''s What a Rejected Pitch Actually Sounds Like, on The Rightup.</p>'
-    format: full_html
-  field_description:
-  - value: We got permission to play the room tone from a pitch that fell apart in real time, including the thirty seconds of silence nobody wanted to fill and the recovery attempt that came two minutes
-      too late to save the account.
-  field_duration:
-  - value: 2 Mins
-  field_episode_number:
-  - value: 12
-  field_featured_image:
-  - entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
-  field_tags:
-  - entity: 4ebd63e0-187b-49bf-8150-68b9e025649a
+    -
+      target_id: 1
   created:
-  - value: 1781082000
+  - value: 1765875600
   changed:
-  - value: 1781082000
+  - value: 1765875600
+  title:
+    -
+      value: 'What a Rejected Pitch Actually Sounds Like'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/what-rejected-pitch-actually-sounds
+      langcode: en
+  field_audio:
+    -
+      entity: 0f8579b2-49da-573f-8f1a-f218f9559f46
+  field_content:
+    -
+      value: |-
+        <p><strong>Idris Calloway:</strong> On Last Call this week, something we have never aired before. Tomas Reyna has given us permission to talk through the room tone of a pitch that fell apart while he was leading it, including the silence. Tomas, thanks for coming back to it.</p>
+        <p><strong>Tomas Reyna:</strong> Thank you, Idris. I have listened to that recording more times than is healthy.</p>
+        <p><strong>Idris Calloway:</strong> Set the scene. Who was the client, and what was at stake?</p>
+        <p><strong>Tomas Reyna:</strong> A regional bank, about forty branches, rebranding after a merger. We were one of three agencies on the shortlist. The account was worth roughly six hundred thousand over two years, which for a studio of twenty-two people is the year.</p>
+        <p><strong>Idris Calloway:</strong> And the recording exists because?</p>
+        <p><strong>Tomas Reyna:</strong> The bank recorded every pitch for its procurement file. Afterwards I asked for ours. Legal took four months to say yes.</p>
+        <p><strong>Idris Calloway:</strong> So where does it go wrong?</p>
+        <p><strong>Tomas Reyna:</strong> About eleven minutes in. Their head of retail asks, quite gently, who the work is really for. Customers, staff, or the board. And I realise our whole deck is written for the board. I open my mouth and nothing comes out.</p>
+        <p><strong>Idris Calloway:</strong> How long is the silence?</p>
+        <p><strong>Tomas Reyna:</strong> Thirty-one seconds. On the recording you can hear the air conditioning, somebody's pen clicking, and my colleague Inge shifting her chair because she is deciding whether to rescue me.</p>
+        <p><strong>Inge Vasquez:</strong> I decided not to, which I still think about. It was his question to answer, and if I jumped in it would look like we did not agree with each other.</p>
+        <p><strong>Idris Calloway:</strong> What did you eventually say, Tomas?</p>
+        <p><strong>Tomas Reyna:</strong> Something about all three audiences being equally important. Which is the answer you give when you have no answer. You can hear the room cool on the tape.</p>
+        <p><strong>Idris Calloway:</strong> The description says the recovery came two minutes too late.</p>
+        <p><strong>Tomas Reyna:</strong> Yes. At minute fourteen I skipped to the staff section, which was the strongest thing we had, a set of branch uniforms and a counter redesign the tellers had helped us test. That part of the recording is good. People ask questions, someone laughs. But by then the head of retail had stopped writing.</p>
+        <p><strong>Inge Vasquez:</strong> The feedback letter said our thinking was strong and our priorities were unclear. Which is a polite way of saying the silence.</p>
+        <p><strong>Idris Calloway:</strong> What changed after?</p>
+        <p><strong>Tomas Reyna:</strong> Two things. We now write a one-line answer to who the work is for and put it on the first slide, and we rehearse with someone whose only job is to ask the uncomfortable question. Usually Inge.</p>
+        <p><strong>Inge Vasquez:</strong> I enjoy it far too much.</p>
+        <p><strong>Idris Calloway:</strong> Tomas Reyna, Inge Vasquez, thank you. That is Last Call.</p>
+      format: full_html
+  field_description:
+    -
+      value: 'We got permission to play the room tone from a pitch that fell apart in real time, including the thirty seconds of silence nobody wanted to fill and the recovery attempt that came two minutes too late to save the account.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 12
+  field_featured_image:
+    -
+      entity: 0f9e1bc9-e24f-430f-bfc6-00d0841652be
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8
+  field_tags:
+    -
+      entity: 4ebd63e0-187b-49bf-8150-68b9e025649a

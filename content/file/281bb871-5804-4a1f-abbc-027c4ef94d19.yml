@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 281bb871-5804-4a1f-abbc-027c4ef94d19
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep06-we-stopped-taking-briefs.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep06-we-stopped-taking-briefs.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 517757
+  status:
+    -
+      value: true

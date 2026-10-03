@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3749d569-dd25-4f5a-8e79-c960491f5233
+  bundle: podcast
+  default_langcode: en
+  depends:
+    9390cad4-3619-4c98-94ae-f789202e28be: media
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1785834000
+  changed:
+  - value: 1785834000
+  title:
+    -
+      value: 'Material World'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world
+      langcode: en
+  field_description:
+    -
+      value: 'A deep dive into one material, one fabricator, one episode at a time.'
+  field_featured_image:
+    -
+      entity: 9390cad4-3619-4c98-94ae-f789202e28be
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_listen_links:
+    -
+      uri: 'https://music.youtube.com/podcasts'
+      title: 'YouTube Music'
+      options: {  }
+    -
+      uri: 'https://podcasts.apple.com'
+      title: 'Apple Podcast'
+      options: {  }
+    -
+      uri: 'https://overcast.fm'
+      title: Overcast
+      options: {  }
+    -
+      uri: 'https://open.spotify.com'
+      title: Spotify
+      options: {  }
+    -
+      uri: 'internal:/podcasts/feed'
+      title: RSS
+      options: {  }

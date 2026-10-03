@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5797ab56-813d-47a4-a72f-291c6ae25a89
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-small-practice-ep10-studio-garage.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-small-practice-ep10-studio-garage.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 521100
+  status:
+    -
+      value: true

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 4082de15-9790-468e-ad66-206906ebfc8c
+  bundle: audio
+  default_langcode: en
+  depends:
+    039cd535-5d0d-45e6-8775-b70215491b50: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Do I Need a Portfolio Site? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 039cd535-5d0d-45e6-8775-b70215491b50

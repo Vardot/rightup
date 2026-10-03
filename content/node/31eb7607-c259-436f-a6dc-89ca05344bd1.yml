@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 31eb7607-c259-436f-a6dc-89ca05344bd1
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    1cdce09f-f202-4bf7-b3f9-c397ad43b3cd: media
+    e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1777453200
+  changed:
+  - value: 1777453200
+  title:
+    -
+      value: 'The Quarry at First Light'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/quarry-first-light
+      langcode: en
+  field_audio:
+    -
+      entity: 1cdce09f-f202-4bf7-b3f9-c397ad43b3cd
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> The sun isn't up yet, but the quarry face has started to go from grey to a pale honey colour. I'm Malik Osei, this is Field Notes, and I'm standing on a bench of limestone about twenty metres below the rim of a quarry with Arturo Benedetti, the quarry master. Arturo, why are we here this early?</p><p><strong>Arturo Benedetti:</strong> Because low light shows the beds. When the sun is high, the face is flat and white and you can't read anything. At dawn the light comes in sideways and every layer throws a shadow. I can see a clay seam from fifty metres at this hour. At noon I'd need to walk up and touch it.</p><p><strong>Malik Osei:</strong> You're choosing stone for a library facade.</p><p><strong>Arturo Benedetti:</strong> Eighteen hundred square metres of cladding, forty millimetres thick, plus window surrounds and a cornice. The architect wants the colour to stay consistent across the whole building. So the question this morning is which bed we cut from for the next eight months.</p><p><strong>Malik Osei:</strong> What are you looking for in the face?</p><p><strong>Arturo Benedetti:</strong> Bedding you can read. A good bed is even for six metres or more, no seams, no shell pockets, no iron staining. That band there, about a metre and a half thick, is what we call the cream bed. It's beautiful and it's consistent. The band above it looks the same to you, but it has a fine clay seam every few metres. Put that on a facade and the first hard frost opens it up.</p><p><strong>Malik Osei:</strong> How do you get a block out?</p><p><strong>Arturo Benedetti:</strong> We drill a line of holes, then use a wire saw. A steel cable with diamond beads, running in a loop, cooled with water. It cuts about two square metres an hour. Then airbags in the cut to push the block off the face. A typical block is about eight tonnes.</p><p><strong>Malik Osei:</strong> A man in an orange jacket has just walked over with a tablet.</p><p><strong>Davide Rossi:</strong> Arturo, the lab came back on the samples from Tuesday. Cream bed, water absorption two point one percent, compressive strength well above the spec. The upper bed was four point six.</p><p><strong>Arturo Benedetti:</strong> That's the answer then. Thank you, Davide. Four point six is too thirsty for a north facade. Cream bed it is.</p><p><strong>Malik Osei:</strong> How much of what you cut ends up on the building?</p><p><strong>Arturo Benedetti:</strong> About a third. Blocks have defects inside that you only find when you saw them into slabs. The offcuts become paving, then walling stone, then aggregate, and the dust goes to farmers to sweeten acid soil. Very little leaves here as waste. But it's humbling: three tonnes out of the ground for one tonne on the library.</p><p><strong>Malik Osei:</strong> Does the architect come to the quarry?</p><p><strong>Arturo Benedetti:</strong> This one came twice. She stood exactly where you are, at about this time. I think more architects should. They'd draw thinner joints and fewer sharp corners.</p><p><strong>Malik Osei:</strong> Arturo Benedetti and Davide Rossi, thank you. From the quarry at first light, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A limestone quarry at dawn, with the quarry master choosing which bed to cut for a library facade.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 8
+  field_featured_image:
+    -
+      entity: e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

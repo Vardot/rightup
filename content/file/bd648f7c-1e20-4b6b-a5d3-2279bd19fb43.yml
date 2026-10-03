@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bd648f7c-1e20-4b6b-a5d3-2279bd19fb43
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-field-notes-ep08-quarry-first-light.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-field-notes-ep08-quarry-first-light.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 661533
+  status:
+    -
+      value: true

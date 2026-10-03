@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ea0055c1-80a4-4dd0-a970-03596d89ac35
+  bundle: audio
+  default_langcode: en
+  depends:
+    9a06e7d8-6f05-4213-a370-f5e7256e974e: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'How Do I Price My First Project? audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 9a06e7d8-6f05-4213-a370-f5e7256e974e

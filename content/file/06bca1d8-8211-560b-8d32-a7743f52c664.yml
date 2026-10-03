@@ -9,16 +9,16 @@ default:
       target_id: 1
   filename:
     -
-      value: rightup-podcast-ep16-no-straight-walls.mp3
+      value: rightup-podcast-last-call-ep16-no-straight-walls.mp3
   uri:
     -
-      value: 'public://rightup/rightup-podcast-ep16-no-straight-walls.mp3'
+      value: 'public://rightup/rightup-podcast-last-call-ep16-no-straight-walls.mp3'
   filemime:
     -
       value: audio/mpeg
   filesize:
     -
-      value: 748016
+      value: 536450
   status:
     -
       value: true

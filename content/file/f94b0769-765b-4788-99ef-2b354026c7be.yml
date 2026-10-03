@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f94b0769-765b-4788-99ef-2b354026c7be
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep10-paper.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep10-paper.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 581583
+  status:
+    -
+      value: true

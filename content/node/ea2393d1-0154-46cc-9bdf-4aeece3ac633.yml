@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ea2393d1-0154-46cc-9bdf-4aeece3ac633
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    13d211ee-0041-46be-9790-f62354af63d1: media
+    34e0d823-b607-4fd8-84af-8516062fe3e2: media
+    8d51a075-6985-4015-a8e6-bac99a0b3e01: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1777107600
+  changed:
+  - value: 1777107600
+  title:
+    -
+      value: 'Craft Versus Scale'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/long-table/craft-versus-scale
+      langcode: en
+  field_audio:
+    -
+      entity: 13d211ee-0041-46be-9790-f62354af63d1
+  field_content:
+    -
+      value: "<p><strong>Tamsin Achari:</strong> Welcome to The Long Table. I'm Tamsin Achari, and we are recording in the textile pavilion, under a ceiling hung with sixty metres of handwoven cloth. The question: can anything made by hand be made ten thousand times? Ximena Robles is a weaver from Oaxaca who now works in Glasgow, on a floor loom she built herself. Callum Ferrier runs a wool mill in the Borders with eleven power looms and twenty-six staff. Ximena, can your cloth be made at scale?</p><p><strong>Ximena Robles:</strong> A version of it. Callum's mill could make my pattern tomorrow. It cannot make the unevenness, the place where the weft packs a little tighter because I was tired at four in the afternoon. And the unevenness is what people buy.</p><p><strong>Callum Ferrier:</strong> I would push on that. We can make it uneven. We can program irregular beat-up, vary the tension, slub the yarn. What we cannot do is make it uneven in a way that means anything. Ours would be designed unevenness. Yours is a record of a day.</p><p><strong>Tamsin Achari:</strong> Does the buyer care about the difference?</p><p><strong>Callum Ferrier:</strong> Some do. Most care about the price. Ximena's throws are four hundred and twenty pounds. Ours, in the same weight of lambswool, retail at ninety-five. A retailer told me last year that he would happily sell both, the uneven one at four times the price, and both of us would be happy.</p><p><strong>Ximena Robles:</strong> He may be right. That is the uncomfortable part.</p><p><strong>Tamsin Achari:</strong> Someone near the front just said shame. Ximena, why is it uncomfortable?</p><p><strong>Ximena Robles:</strong> Because I want my work to be ordinary. In my grandmother's village, handwoven cloth was what you used to carry tortillas. Here it becomes a luxury object hanging on a wall. Scale is the only way it goes back to being something you use.</p><p><strong>Callum Ferrier:</strong> And that is where we could actually work together. We have done this twice. A designer weaves a length by hand, we study it, and we make a mill version that is honest about being a mill version. Different name, different label, a royalty of eight percent back to the designer.</p><p><strong>Ximena Robles:</strong> Eight is low.</p><p><strong>Callum Ferrier:</strong> It is the number we can afford on a ninety-five pound throw. I would rather tell you that here than in a contract.</p><p><strong>Tamsin Achari:</strong> So, craft and scale can coexist as long as nobody pretends one is the other?</p><p><strong>Ximena Robles:</strong> As long as the label tells the truth. Made by hand means one person, one loom, one day.</p><p><strong>Callum Ferrier:</strong> And made in a mill should not be said quietly. There are twenty-six people's skills in our cloth too.</p><p><strong>Tamsin Achari:</strong> Ximena Robles and Callum Ferrier, thank you. This has been The Long Table.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A weaver, a mill owner and a retailer on whether anything made by hand can be made ten thousand times.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 6
+  field_featured_image:
+    -
+      entity: 34e0d823-b607-4fd8-84af-8516062fe3e2
+  field_host:
+    -
+      value: 'Tamsin Achari'
+  field_podcast:
+    -
+      entity: 8d51a075-6985-4015-a8e6-bac99a0b3e01

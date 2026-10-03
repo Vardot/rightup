@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 81b9440e-4803-4429-ac2b-e59917d302bd
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    269a011d-c291-4eef-9941-8edfe1171b92: media
+    afe93cbe-b34e-46e2-9a7e-45ff6424e105: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1772269200
+  changed:
+  - value: 1772269200
+  title:
+    -
+      value: "Night Shift at the Signwriter's"
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/night-shift-signwriters
+      langcode: en
+  field_audio:
+    -
+      entity: 269a011d-c291-4eef-9941-8edfe1171b92
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> It's nearly eleven at night on a high street, the shops are shut, a bus has just gone past empty, and above me on an aluminium ladder is Colm Brannigan, a signwriter, painting a fascia by hand. I'm Malik Osei and this is Field Notes. Colm, can you talk and paint at the same time?</p><p><strong>Colm Brannigan:</strong> On the fill, yes. On the outlines, no. You'll know when to stop asking questions.</p><p><strong>Malik Osei:</strong> Whose shop is this?</p><p><strong>Colm Brannigan:</strong> A greengrocer, third generation. The old fascia was a vinyl print that had faded to pink. The grandson wanted it back the way his grandfather had it in 1971, so I worked from one photograph. Cream letters, a dark bottle green ground, a thin gold keyline. The lettering is a condensed slab serif, which I drew out from the photo at full size on brown paper.</p><p><strong>Malik Osei:</strong> Why paint at night?</p><p><strong>Colm Brannigan:</strong> The shop is shut, so nobody walks under my ladder. The street is quiet. And nobody stops to give me advice, which during the day happens about every ten minutes. Also it has to be open at seven, with the fascia dry enough that nobody's sleeve takes a letter off.</p><p><strong>Malik Osei:</strong> You prepared the board earlier.</p><p><strong>Colm Brannigan:</strong> Two nights ago. Sanded, primed, two coats of the green. Tonight I pounced the letters on. That's the paper pattern with tiny holes pricked along every line, and you dab chalk through it. You can see the little dotted outlines if you look up close.</p><p><strong>Malik Osei:</strong> I can. There are faint blue dots everywhere. And now you're on the letter G.</p><p><strong>Colm Brannigan:</strong> G is the hardest letter in this alphabet, because of the spur. The brush is a squirrel-hair liner, number four. I load it, then I take a breath and I pull the curve in one stroke. If you stop halfway, the join always shows.</p><p><strong>Malik Osei:</strong> What paint is it?</p><p><strong>Colm Brannigan:</strong> Enamel, oil based. It levels itself out, so brush marks mostly disappear, and it lasts fifteen, twenty years on a north-facing front. Acrylic would be dry in an hour, but it doesn't flow and it doesn't last.</p><p><strong>Malik Osei:</strong> How many letters are there?</p><p><strong>Colm Brannigan:</strong> Twenty-two, plus the ampersand and the phone number. One night if the drawing is done, which it is. Two nights if the owner changes the name at midnight, which has happened to me once. Not this one, I hope.</p><p><strong>Malik Osei:</strong> A man walking his dog has stopped to watch.</p><p><strong>Colm Brannigan:</strong> There's always one. Evening. Yes, by hand. No, I don't do vans.</p><p><strong>Malik Osei:</strong> Where is the gold?</p><p><strong>Colm Brannigan:</strong> Last, and only if the size is tacky at the right moment. The gold leaf goes onto an oil size, and that size needs about twelve hours. So I'll put the size down tonight, go home and sleep, and be back at half six to lay the leaf before the shop opens. Twenty-three carat. Cheaper golds go green in a couple of winters.</p><p><strong>Malik Osei:</strong> Colm Brannigan, thank you. From the bottom of a ladder, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A fascia painted by hand between closing time and opening time, on a ladder on a high street.'
+  field_duration:
+    -
+      value: '4 Mins'
+  field_episode_number:
+    -
+      value: 6
+  field_featured_image:
+    -
+      entity: afe93cbe-b34e-46e2-9a7e-45ff6424e105
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

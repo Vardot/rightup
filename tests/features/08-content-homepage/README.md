@@ -13,17 +13,19 @@ FEATURES="tests/features/08-content-homepage/**/*.feature" ddev yarn test:chromi
 | Feature file | Description | Scenarios |
 | --- | --- | --- |
 | `08-01-homepage.feature` | Frontend Pages - Homepage | 8 |
-| `08-02-homepage-live-feed.feature` | Frontend Pages - Homepage Live Feed | 11 |
+| `08-02-homepage-live-feed.feature` | Frontend Pages - Homepage Live Feed | 7 |
+| `08-03-homepage-live-feed-queue.feature` | Frontend Pages - Homepage Live Feed queue editing | 4 |
 
-**Total: 19 scenarios across 2 feature files.**
+**Total: 19 scenarios across 3 feature files.** 08-02 and 08-03 are one suite split in two so
+each CI job stays short.
 
-## 08-02 — what the Live Feed suite covers
+## 08-02 and 08-03 — what the Live Feed suite covers
 
 The ticker used to carry hardcoded headlines and times typed into the Canvas page, so
 publishing an article never reached it. It is now content-driven, and these scenarios
 protect that chain end to end:
 
-- entity queue `live_feed` (simple, max 10, `news` + `podcast`) — the editor's curation
+- entity queue `live_feed` (simple, max 10, `news` + `podcast_episode`) — the editor's curation
 - view `live_feed`, block display `block_1` — reads the queue through
   `entityqueue_relationship`, sorted in-queue first, then by queue position ascending, then
   by authored date descending, filtered to published, DISTINCT
@@ -43,7 +45,7 @@ The Rightup ships the `live_feed` queue **empty**, and that is deliberate. A sim
 subqueue cannot travel as recipe content: Entityqueue creates the subqueue itself on import
 with a freshly generated UUID, so a shipped subqueue collides on the `entity_subqueue.name`
 unique key and aborts the install. The view covers for it — queued items lead, then the
-latest published `news` and `podcast` content fills the remaining rows, with a DISTINCT
+latest published `news` and `podcast_episode` content fills the remaining rows, with a DISTINCT
 query so nothing appears twice.
 
 So a fresh install renders ten entries from the fallback, and

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b4bf6cd1-f859-4b79-b1da-3e2a9a8ad195
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep07-building-site-nobody-wanted.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep07-building-site-nobody-wanted.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 498327
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7f5a341d-9c46-4c33-80b7-75685a33c6eb
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    0f79255d-7ac7-4723-976c-ae3af607fc14: media
+    e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1780736400
+  changed:
+  - value: 1780736400
+  title:
+    -
+      value: Brick
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/brick
+      langcode: en
+  field_audio:
+    -
+      entity: 0f79255d-7ac7-4723-976c-ae3af607fc14
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> This is Material World, I'm Kenji Arakawa, and I am at a brickworks on the river Waal in the eastern Netherlands, where the last coal-fired batch is cooling. Hendrik de Wit has been kiln master here for nineteen years. Hendrik, how does it feel?</p><p><strong>Hendrik de Wit:</strong> Strange. My father fired this kiln with coal, and I learned the colours of the bricks by watching the flame. Tomorrow we start conversion. Within two years we fire with hydrogen, if the pipeline arrives on time.</p><p><strong>Kenji Arakawa:</strong> Explain the kiln for people who imagine a pizza oven.</p><p><strong>Hendrik de Wit:</strong> It is a tunnel kiln, a hundred and twenty metres long. Cars stacked with green bricks move slowly through it, about three days end to end. They pass through preheating, then the firing zone at around eleven hundred degrees, then cooling. Coal was fed from above into the firing zone.</p><p><strong>Kenji Arakawa:</strong> What does the fuel change, apart from carbon?</p><p><strong>Hendrik de Wit:</strong> The colour. River clay here is rich in iron. With coal, the atmosphere in parts of the kiln is reducing, there is not enough oxygen, and the iron turns darker, purple, blue-black on the faces. These clinker bricks are what the Dutch architects ask for. Hydrogen burns very clean. Its only product is water vapour, and the flame behaves differently. In the first test batch the bricks came out a flat orange.</p><p><strong>Kenji Arakawa:</strong> So how do you get the darkness back?</p><p><strong>Hendrik de Wit:</strong> We are experimenting. Controlling the air to make zones without oxygen. Adding manganese to the clay, which darkens it but costs money. We fired eight test batches with a burner supplier in Germany. Batch six got close. Our biggest client, an architect in Rotterdam doing four hundred social housing units, has seen the samples and says close is not the same.</p><p><strong>Kenji Arakawa:</strong> What does the switch cost?</p><p><strong>Hendrik de Wit:</strong> About eleven million euros for the burners and controls, half of it subsidised. Gas, which most brickworks use, is cheaper than hydrogen today by a factor of three. We are betting that changes.</p><p><strong>Kenji Arakawa:</strong> Why not electric kilns?</p><p><strong>Hendrik de Wit:</strong> For a tunnel this size, the electrical connection we would need does not exist in this region. The grid operator gave us a date of 2034. Hydrogen comes by pipeline from the port, so that was faster.</p><p><strong>Kenji Arakawa:</strong> What will you miss?</p><p><strong>Hendrik de Wit:</strong> Reading the flame. With coal, you looked through the peephole and you knew. With hydrogen the flame is almost invisible. I will read a screen instead.</p><p><strong>Kenji Arakawa:</strong> Hendrik de Wit, thank you. That is Brick, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A brickworks firing with coal for the last time, and the kiln master who is switching to hydrogen.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 9
+  field_featured_image:
+    -
+      entity: e3b7abd8-8794-4a9b-aa70-c49b9d9bbaee
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

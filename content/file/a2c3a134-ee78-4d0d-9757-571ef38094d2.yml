@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a2c3a134-ee78-4d0d-9757-571ef38094d2
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-last-call-ep19-one-colour-eleven-years.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-last-call-ep19-one-colour-eleven-years.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 503961
+  status:
+    -
+      value: true

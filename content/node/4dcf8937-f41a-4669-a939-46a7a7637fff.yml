@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4dcf8937-f41a-4669-a939-46a7a7637fff
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    c76e252c-edf7-470a-a447-8f7d8b14608d: media
+    8a8ea314-3713-45bd-aaf6-9d69d8122e8b: media
+    29a9c442-4ce7-4a44-85eb-c0c3d092cb06: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1764493200
+  changed:
+  - value: 1764493200
+  title:
+    -
+      value: 'The Sample Room'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/field-notes/sample-room
+      langcode: en
+  field_audio:
+    -
+      entity: c76e252c-edf7-470a-a447-8f7d8b14608d
+  field_content:
+    -
+      value: "<p><strong>Malik Osei:</strong> Welcome to Field Notes. I'm Malik Osei, and I'm two floors below street level in a materials library. Long aisles of grey steel drawers, a slight hum from the dehumidifier, and very bright, very even light. My guide is Yusuf Demir, the archivist. Yusuf, how many samples are down here?</p><p><strong>Yusuf Demir:</strong> Eleven thousand two hundred, as of last Friday. We take in about forty a week and throw out about thirty, so it grows slowly.</p><p><strong>Malik Osei:</strong> You've told me you can find any of them in under a minute. Let's test it. A recycled rubber floor tile.</p><p><strong>Yusuf Demir:</strong> Aisle C, because rubber is a resilient floor, not a rubber. Drawer C-forty. Here, three of them. One from tyres, one from trainers, one from conveyor belts.</p><p><strong>Malik Osei:</strong> Twenty-two seconds. Why aisle C?</p><p><strong>Yusuf Demir:</strong> Because we file by what a material does, not by what it is made of. Everything that takes a footfall is together. Everything that resists water is together, whether it's a bitumen membrane or a ceramic glaze. A designer who comes in doesn't usually know which material they need. They know the problem. A floor for a school canteen, a wall for a wet room.</p><p><strong>Malik Osei:</strong> There's a woman at the big table with about twenty samples spread out.</p><p><strong>Yusuf Demir:</strong> An interior team, choosing finishes for a hotel. They booked for two hours. They'll leave with eight samples and they'll bring back six.</p><p><strong>Malik Osei:</strong> Why only six?</p><p><strong>Yusuf Demir:</strong> Two always end up in the client meeting and never come home. We charge for the ones that go missing. It's the only rule people argue with.</p><p><strong>Malik Osei:</strong> What gets borrowed most?</p><p><strong>Yusuf Demir:</strong> Anything that looks like stone and isn't. Sintered porcelain, quartz composites, a terrazzo that's mostly resin. Budgets are what they are. And everybody wants a marble that won't stain from red wine.</p><p><strong>Malik Osei:</strong> You also throw things out. How do you decide?</p><p><strong>Yusuf Demir:</strong> Every sample has a card with its date and its manufacturer's contact. If a product is discontinued we keep one example in the reference collection, the back room, and remove it from the floor. People get very upset if they fall in love with something and it can't be bought.</p><p><strong>Malik Osei:</strong> What's in the reference collection?</p><p><strong>Yusuf Demir:</strong> About two thousand things that no longer exist. A laminate from 1974 that half the libraries in the country used for their counters. Asbestos-free versions of things that used to contain it, kept so a surveyor can compare. A linoleum colour that was discontinued in 1988 and that a school still needs to patch a corridor.</p><p><strong>Malik Osei:</strong> What do people misunderstand about this place?</p><p><strong>Yusuf Demir:</strong> That it's about inspiration. It's about evidence. You can hold the thing, scratch it, drop water on it. A photograph of a material tells you almost nothing.</p><p><strong>Malik Osei:</strong> Yusuf Demir, thank you. From the sample room, this has been Field Notes.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'Inside a materials library of eleven thousand swatches, with the archivist who can find any of them in under a minute.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 3
+  field_featured_image:
+    -
+      entity: 8a8ea314-3713-45bd-aaf6-9d69d8122e8b
+  field_host:
+    -
+      value: 'Malik Osei'
+  field_podcast:
+    -
+      entity: 29a9c442-4ce7-4a44-85eb-c0c3d092cb06

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5b43766c-c3c4-4ad6-a207-619d5193aac3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-office-hours-ep09-masters-worth-it.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-office-hours-ep09-masters-worth-it.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 588181
+  status:
+    -
+      value: true

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3c980528-f92f-4ffc-8842-54c2752e4b81
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    d3063d98-d41c-42f7-885e-3b7ad133232b: media
+    6f02f337-6d5c-461f-bae8-526a828d2d0c: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1742547600
+  changed:
+  - value: 1742547600
+  title:
+    -
+      value: 'The Pitch We Won by Saying No'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/pitch-we-won-saying-no
+      langcode: en
+  field_audio:
+    -
+      entity: d3063d98-d41c-42f7-885e-3b7ad133232b
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> On Last Call this week, a pitch won by subtraction. I'm Idris Calloway, and my guest is Amara Okonkwo, creative director of a twelve-person studio in Lagos and London. The brief asked for three things. Amara, what were they?</p><p><strong>Amara Okonkwo:</strong> A full rebrand, a launch campaign across six markets, and a new website for a regional logistics company. About four hundred thousand pounds of work if we had done all of it. Five studios were shortlisted.</p><p><strong>Idris Calloway:</strong> And you walked in and said no to most of it.</p><p><strong>Amara Okonkwo:</strong> In the first ten minutes. We had spent two weeks before the pitch talking to their drivers, their depot managers and about twenty of their small business customers. Not one of them had a problem with the name or the logo. Every single one of them had a problem with tracking a parcel on the website.</p><p><strong>Idris Calloway:</strong> How did you say it in the room?</p><p><strong>Amara Okonkwo:</strong> We put one slide up. It was a screenshot of their tracking page on a cheap Android phone on a 3G connection, with a timer underneath. Forty-seven seconds to load. Then I said, we think you should not rebrand this year, and we think the campaign will send people to this page.</p><p><strong>Idris Calloway:</strong> What happened next?</p><p><strong>Amara Okonkwo:</strong> The marketing director looked at the floor. The chief executive looked at the marketing director. About a minute of very uncomfortable silence. Then the finance director, who had not said a word, asked how much the website would cost on its own.</p><p><strong>Idris Calloway:</strong> You were giving up three quarters of the fee.</p><p><strong>Amara Okonkwo:</strong> On paper. In practice we would never have won the rebrand against the two big agencies on the list. Their decks were beautiful. We would have been the third-best rebrand pitch and the only honest one about the website.</p><p><strong>Idris Calloway:</strong> Did the rest of the brief come back later?</p><p><strong>Amara Okonkwo:</strong> The campaign did, eighteen months later, once the new tracking had cut their customer service calls by about a third. The rebrand never did, and I still think that was right. The logo is fine. It is a truck and a wordmark, and people trust it.</p><p><strong>Idris Calloway:</strong> Is this a tactic now?</p><p><strong>Amara Okonkwo:</strong> It only works when it is true. If you turn down part of a brief as theatre, clients smell it. We have done it twice since. Won once, lost once, and the one we lost went to a studio that delivered everything we said they did not need.</p><p><strong>Idris Calloway:</strong> How did the marketing director feel about you afterwards?</p><p><strong>Amara Okonkwo:</strong> She hired us again when she moved to another company. So, better than I expected.</p><p><strong>Idris Calloway:</strong> Amara Okonkwo, thank you. That's Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A studio turned down two thirds of the brief in the room, and was hired for the third it kept.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 3
+  field_featured_image:
+    -
+      entity: 6f02f337-6d5c-461f-bae8-526a828d2d0c
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

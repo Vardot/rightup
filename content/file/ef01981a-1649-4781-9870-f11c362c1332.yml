@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ef01981a-1649-4781-9870-f11c362c1332
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-material-world-ep03-recycled-glass-terrazzo.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-material-world-ep03-recycled-glass-terrazzo.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 570315
+  status:
+    -
+      value: true

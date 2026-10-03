@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c76e252c-edf7-470a-a447-8f7d8b14608d
+  bundle: audio
+  default_langcode: en
+  depends:
+    76f76f19-24c5-4404-a44f-e5f191f049c8: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Sample Room audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 76f76f19-24c5-4404-a44f-e5f191f049c8

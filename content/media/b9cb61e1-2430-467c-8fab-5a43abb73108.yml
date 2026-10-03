@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b9cb61e1-2430-467c-8fab-5a43abb73108
+  bundle: audio
+  default_langcode: en
+  depends:
+    5797ab56-813d-47a4-a72f-291c6ae25a89: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Audio'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'The Studio in a Garage audio'
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_audio_file:
+    -
+      description: ''
+      entity: 5797ab56-813d-47a4-a72f-291c6ae25a89

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 040138fe-6ecf-4d6f-a109-4c679906dc91
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    89172879-9946-4d02-8904-a96d12b14650: media
+    929fa437-2f56-4518-b130-01fc5fb3fe67: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1778144400
+  changed:
+  - value: 1778144400
+  title:
+    -
+      value: Oak
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/oak
+      langcode: en
+  field_audio:
+    -
+      entity: 89172879-9946-4d02-8904-a96d12b14650
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> I'm Kenji Arakawa and this is Material World. Today a sawmill in the Welsh Marches, and a stack of oak beams so freshly cut that they are wet to the touch. Rhodri Maddox has run this mill for twenty-six years. Rhodri, why sell oak wet?</p><p><strong>Rhodri Maddox:</strong> Because dry oak is too hard to work at that size. Green oak has a moisture content of maybe sixty or seventy percent. A carpenter can cut a mortice in it with a chisel and a mallet in twenty minutes. Season the same beam for a decade and it is like cutting stone, and it splits when you drive a peg.</p><p><strong>Kenji Arakawa:</strong> And you cannot kiln dry a beam that size.</p><p><strong>Rhodri Maddox:</strong> Not economically. Oak dries at roughly an inch a year from each face, and a beam of three hundred millimetres square would need a century in a yard, or months in a kiln that would crack it to pieces. So the frame is built green and dries in place, in the building.</p><p><strong>Kenji Arakawa:</strong> What happens as it dries?</p><p><strong>Rhodri Maddox:</strong> It shrinks across the grain, about five to eight percent, but hardly at all along the length. It also twists and it checks, opening cracks along the face. A beam of that size can twist a finger's width over ten years. Carpenters call that character. The clients sometimes call it a defect, and then they call the builder.</p><p><strong>Kenji Arakawa:</strong> How do framers design for that?</p><p><strong>Rhodri Maddox:</strong> The joints are drawbored. The peg hole in the tenon is offset two or three millimetres from the hole in the mortice, so driving the oak peg pulls the joint tight. As the frame dries and shrinks, the joints get tighter, not looser. And glazing has to sit in grooves that allow movement, or the glass cracks in year two.</p><p><strong>Kenji Arakawa:</strong> Where does your timber come from?</p><p><strong>Rhodri Maddox:</strong> Within sixty miles. Estates in Herefordshire and Shropshire, trees of a hundred and fifty years or more, felled in winter when the sap is down. We buy standing timber and we get maybe forty percent of the trunk as beam. The rest goes to cladding, flooring and firewood.</p><p><strong>Kenji Arakawa:</strong> Who is ordering?</p><p><strong>Rhodri Maddox:</strong> Self-builders, still. But last year we supplied a barn-style community hall in Ludlow, sixty-two cubic metres of oak, and the architect came to the mill to pick the curved braces from the yard herself. You cannot specify that from a catalogue.</p><p><strong>Kenji Arakawa:</strong> What is the one thing you would tell an architect?</p><p><strong>Rhodri Maddox:</strong> Draw your gaps. Every place oak meets plaster or glass, assume it will move twelve millimetres, and show it on the drawing.</p><p><strong>Kenji Arakawa:</strong> Rhodri Maddox, thank you. That is Oak, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A sawmill on why green oak is sold wet, and what happens to a frame as it dries in place.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 8
+  field_featured_image:
+    -
+      entity: 929fa437-2f56-4518-b130-01fc5fb3fe67
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

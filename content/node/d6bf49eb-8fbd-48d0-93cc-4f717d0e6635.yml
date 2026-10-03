@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d6bf49eb-8fbd-48d0-93cc-4f717d0e6635
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    4e1dd4f5-0bb7-45c9-b9e6-2b851894dd76: media
+    ca2fe0ab-fe17-48d8-b59e-e191bffba296: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1767776400
+  changed:
+  - value: 1767776400
+  title:
+    -
+      value: 'Rammed Earth'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/rammed-earth
+      langcode: en
+  field_audio:
+    -
+      entity: 4e1dd4f5-0bb7-45c9-b9e6-2b851894dd76
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> This is Material World, I'm Kenji Arakawa, and the wall beside me was a field eighteen months ago. Tariq Mansour builds in rammed earth, mostly in southern Spain and Morocco, and we are on a site outside Granada. Tariq, what is actually in this wall?</p><p><strong>Tariq Mansour:</strong> The ground we dug out for the foundations. Clay, silt, sand and gravel. We sent samples to a lab first to check the grading. You want roughly fifteen percent clay. Too little and it will not bind, too much and it shrinks and cracks as it dries.</p><p><strong>Kenji Arakawa:</strong> And then you ram it.</p><p><strong>Tariq Mansour:</strong> We build plywood formwork, sixty centimetres apart for this wall, and pour in loose soil in layers of about fifteen centimetres. A pneumatic rammer compacts each layer down to roughly ten. You can see the lines on the face. Every stripe is one layer, one morning of work. This wall is three metres high, so about thirty lifts.</p><p><strong>Kenji Arakawa:</strong> Is there cement in it?</p><p><strong>Tariq Mansour:</strong> This one has none. Stabilised earth, with five to eight percent cement, is common in Australia and the United States because engineers are more comfortable with it. But cement takes away what makes earth good, which is that it can be returned to the ground, and it reduces the moisture buffering. Here we rely on a good hat and good boots.</p><p><strong>Kenji Arakawa:</strong> Meaning a roof overhang and a plinth.</p><p><strong>Tariq Mansour:</strong> Exactly. A stone plinth of fifty centimetres so splash water never reaches the earth, and eaves that project eighty centimetres. Rain hitting the face directly erodes it, slowly. A millimetre in a decade is fine. A gutter that overflows onto it is not.</p><p><strong>Kenji Arakawa:</strong> The episode promises one climate where it does not work.</p><p><strong>Tariq Mansour:</strong> Cold and wet together. Earth has high thermal mass but poor insulation. Mass is wonderful in a desert, where it soaks up the daytime heat and gives it back at night. Here in Granada we can see a twenty degree swing between day and night, so the wall evens that out. In Scotland or Norway, where it is cold and grey for months, the wall simply sits there cold and you are heating a very heavy object. You would need insulation inside it, and then you lose the mass.</p><p><strong>Kenji Arakawa:</strong> What does this cost compared with brick?</p><p><strong>Tariq Mansour:</strong> The material is almost free, but the labour is heavy. This house works out around twenty percent more expensive per square metre of wall than a brick cavity wall. The client accepted that because they wanted no air conditioning, and in the first summer the inside stayed under twenty-six degrees with forty outside.</p><p><strong>Kenji Arakawa:</strong> Tariq Mansour, thank you. That is Rammed Earth, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A builder on walls made from the soil they stand on, and the one climate where it does not work.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 4
+  field_featured_image:
+    -
+      entity: ca2fe0ab-fe17-48d8-b59e-e191bffba296
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ae8e3462-9061-4570-9b41-fd702773c108
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: rightup-podcast-long-table-ep07-critics-table.mp3
+  uri:
+    -
+      value: 'public://rightup/rightup-podcast-long-table-ep07-critics-table.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 594760
+  status:
+    -
+      value: true

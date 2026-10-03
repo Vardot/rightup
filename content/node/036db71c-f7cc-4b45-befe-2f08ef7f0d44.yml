@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 036db71c-f7cc-4b45-befe-2f08ef7f0d44
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    2ad264b6-1e3a-4453-8763-bd64fc36581d: media
+    a89990d3-1214-452b-9145-3142b6518607: media
+    00efc4c6-49b8-4d3f-843e-5eb2765643c8: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1781427600
+  changed:
+  - value: 1781427600
+  title:
+    -
+      value: 'The Building That Changes Every Winter'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/last-call/building-changes-every-winter
+      langcode: en
+  field_audio:
+    -
+      entity: 2ad264b6-1e3a-4453-8763-bd64fc36581d
+  field_content:
+    -
+      value: "<p><strong>Idris Calloway:</strong> This is Last Call, with me, Idris Calloway. On a housing block in Tromsø, the facade comes off every spring and goes back every autumn, rebuilt by the families who live behind it. Ingrid Halvorsen is the architect. Ingrid, welcome.</p><p><strong>Ingrid Halvorsen:</strong> Thank you, Idris. Glad to be here.</p><p><strong>Idris Calloway:</strong> Describe the building first.</p><p><strong>Ingrid Halvorsen:</strong> Twenty-four flats over five storeys, a timber frame with a fixed, insulated inner wall. Outside that is a steel grid of frames, about one metre twenty by two metres forty, set forty centimetres off the wall. In winter each household fills its frames with panels. In summer the frames are empty and the balconies are open.</p><p><strong>Idris Calloway:</strong> So the residents really do it themselves?</p><p><strong>Ingrid Halvorsen:</strong> The winter panels, yes. They come off in April and go back in October, on two weekends the housing cooperative organises. There is a cherry picker hired for each weekend, and a rota.</p><p><strong>Idris Calloway:</strong> What do people put in?</p><p><strong>Ingrid Halvorsen:</strong> Polycarbonate mostly, because it is light and lets the low sun through. Reclaimed windows. One family used old cabin doors from a ferry. A retired teacher on the fourth floor knits a woollen layer behind her polycarbonate every year in a different colour.</p><p><strong>Idris Calloway:</strong> Who decided to give that away? It is the face of the building.</p><p><strong>Ingrid Halvorsen:</strong> The cooperative's board, against my first advice, honestly. I had drawn one standard panel. In the second consultation meeting a man asked why he could choose his curtains but not his wall, and nobody in the room had an answer. The board voted for open panels that evening.</p><p><strong>Idris Calloway:</strong> What rules are there?</p><p><strong>Ingrid Halvorsen:</strong> Three. A maximum weight of twenty-two kilos per panel so two people can lift it. A standard clip fixing, which we tested to storm wind loads. And no fully opaque panels on the north side, because the stair needs daylight. Everything else is up to them.</p><p><strong>Idris Calloway:</strong> Did the planners accept that?</p><p><strong>Ingrid Halvorsen:</strong> It took eight months. They wanted an elevation drawing for approval, and the elevation changes every year. In the end we submitted the grid and the three rules as the design, and photographs each autumn as a record.</p><p><strong>Idris Calloway:</strong> Has anything gone wrong?</p><p><strong>Ingrid Halvorsen:</strong> In the second winter a panel came loose in a storm and landed in the car park. Nobody was hurt. The clip had been fitted upside down. Now every panel gets a second check from a neighbour.</p><p><strong>Idris Calloway:</strong> Ingrid Halvorsen, thank you. That is Last Call.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A facade designed to be dismantled and rebuilt each year by the people who live behind it.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 18
+  field_featured_image:
+    -
+      entity: a89990d3-1214-452b-9145-3142b6518607
+  field_host:
+    -
+      value: 'Idris Calloway'
+  field_podcast:
+    -
+      entity: 00efc4c6-49b8-4d3f-843e-5eb2765643c8

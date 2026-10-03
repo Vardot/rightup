@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 89d6a68c-f1fb-46d7-ba6c-fc1b912bba41
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    a09fce3a-a817-4e31-b988-40556de6c5c4: media
+    e6c8ca16-67b7-4833-8df2-e3ae3c9b733b: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1762592400
+  changed:
+  - value: 1762592400
+  title:
+    -
+      value: 'Lime Plaster'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/lime-plaster
+      langcode: en
+  field_audio:
+    -
+      entity: a09fce3a-a817-4e31-b988-40556de6c5c4
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> Material World, I'm Kenji Arakawa, and I am standing in a Georgian terrace in Bath that has had its gypsum plaster stripped back to the stone. Agnes Thorne has been plastering in lime for twenty-two years. Agnes, this wall has been wet for how long?</p><p><strong>Agnes Thorne:</strong> About forty years, by the look of the salts. Somebody in the seventies replastered it in gypsum and painted it with vinyl emulsion. The stone behind kept taking water from the ground and the rain, and it had nowhere to go. So it pushed out through the mortar joints and rotted the skirting.</p><p><strong>Kenji Arakawa:</strong> And lime solves that how?</p><p><strong>Agnes Thorne:</strong> Lime is vapour open. It lets moisture move through and evaporate from the face. Gypsum and cement seal the surface, so the water stays trapped in the wall. People call lime a finish that breathes. It is not breathing, but it is letting the building dry out, which is what an old solid wall was designed to do.</p><p><strong>Kenji Arakawa:</strong> Explain how it actually sets, because it is different from cement.</p><p><strong>Agnes Thorne:</strong> Limestone is burnt in a kiln at around nine hundred degrees, which drives off carbon dioxide and leaves quicklime. Add water and you get slaked lime, a putty. Once it is on the wall it slowly takes carbon dioxide back out of the air and turns into limestone again. That is why it is slow. A coat might need a week before the next one, and full carbonation takes months.</p><p><strong>Kenji Arakawa:</strong> Which is presumably why it fell out of use.</p><p><strong>Agnes Thorne:</strong> Exactly that. After the war, builders needed speed. Gypsum sets in an hour, and you can decorate the next day. Lime needs three coats, scratch, float and set, with damp hessian over it in summer so it does not dry too fast and craze. On a house this size that is six weeks against two.</p><p><strong>Kenji Arakawa:</strong> So what is bringing it back?</p><p><strong>Agnes Thorne:</strong> Conservation officers, partly. Listed building consent now usually requires it. But also clients who have lived with a damp house and been told to fit a dehumidifier. The other thing is hemp and lime for retrofit insulation. Lime is the binder that does not trap moisture behind the insulation.</p><p><strong>Kenji Arakawa:</strong> What are you putting on this wall?</p><p><strong>Agnes Thorne:</strong> A non-hydraulic putty, matured for three months, mixed one to three with a sharp local sand and goat hair in the base coat, which stops it cracking. Then a fine finishing coat, trowelled tight, and limewash rather than paint. Limewash is lime, water and a little pigment, maybe five coats, thin as milk.</p><p><strong>Kenji Arakawa:</strong> How much does it cost compared with the gypsum it replaces?</p><p><strong>Agnes Thorne:</strong> Roughly double, per square metre. But I have repaired lime that was put on in 1790. I have never repaired gypsum that old.</p><p><strong>Kenji Arakawa:</strong> Agnes Thorne, thank you. That is Lime Plaster, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'A plasterer on a finish that breathes, why it fell out of use, and why it is coming back.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 2
+  field_featured_image:
+    -
+      entity: e6c8ca16-67b7-4833-8df2-e3ae3c9b733b
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233

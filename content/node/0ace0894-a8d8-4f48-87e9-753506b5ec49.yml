@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0ace0894-a8d8-4f48-87e9-753506b5ec49
+  bundle: podcast_episode
+  default_langcode: en
+  depends:
+    296ae29d-6a5b-4eea-b380-dd3e5f4a7e3b: media
+    02f79969-1865-4c03-9920-488972ff170d: media
+    3749d569-dd25-4f5a-8e79-c960491f5233: node
+default:
+  revision_uid:
+    -
+      target_id: 0
+  revision_log:
+    -
+      value: 'Created new Podcast episode'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 0
+  created:
+  - value: 1772960400
+  changed:
+  - value: 1772960400
+  title:
+    -
+      value: Linoleum
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /podcasts/material-world/linoleum
+      langcode: en
+  field_audio:
+    -
+      entity: 296ae29d-6a5b-4eea-b380-dd3e5f4a7e3b
+  field_content:
+    -
+      value: "<p><strong>Kenji Arakawa:</strong> This is Material World, I'm Kenji Arakawa, and I am holding a sheet of something that smells faintly of linseed and sawdust. Lars Vanderhoek is a process technician at a linoleum plant in the Netherlands, one of very few left making the real thing. Lars, what is in my hand?</p><p><strong>Lars Vanderhoek:</strong> Linoleum. Linseed oil, pine rosin, cork flour or wood flour, limestone powder, pigment, all pressed onto a jute backing. Nothing synthetic in the body of it. When people see it in a school corridor they call it vinyl, and it bothers me every time.</p><p><strong>Kenji Arakawa:</strong> How is it different from vinyl?</p><p><strong>Lars Vanderhoek:</strong> Vinyl is PVC, made from oil and chlorine, with plasticisers to make it flexible. Linoleum is mostly plant and mineral. The colour goes all the way through, so wear does not reveal a printed pattern underneath. And linoleum keeps hardening for years because the oil keeps oxidising.</p><p><strong>Kenji Arakawa:</strong> Take me through the making of it.</p><p><strong>Lars Vanderhoek:</strong> First we oxidise linseed oil with the rosin in big heated tanks until it becomes a thick rubbery mass we call linoleum cement. That takes about a day. Then it matures for a week. We mix it with the fillers and pigment, granulate it, and calender it onto the jute under heavy rollers. Then the sheet hangs in drying rooms at around sixty to eighty degrees for two to four weeks.</p><p><strong>Kenji Arakawa:</strong> Weeks, hanging?</p><p><strong>Lars Vanderhoek:</strong> In festoons, loops many metres high, in halls the size of a church. During that time it develops a yellow film on the surface. We call it drying-room yellow. Customers sometimes think the blue floor arrived the wrong colour. It disappears after a few days in daylight.</p><p><strong>Kenji Arakawa:</strong> Who is still specifying it?</p><p><strong>Lars Vanderhoek:</strong> Hospitals and schools, mostly, because it resists bacteria fairly well and lasts thirty years or more. Lately architects for residential work too. A housing cooperative in Zurich used it in two hundred flats, in a deep red, because the tenants wanted something that aged rather than wore out. Furniture makers use the thin desktop grade on tables.</p><p><strong>Kenji Arakawa:</strong> What can it not do?</p><p><strong>Lars Vanderhoek:</strong> Wet rooms are difficult. Prolonged standing water attacks the jute backing and high alkalinity damages the surface. So no shower floors. And it needs to acclimatise before installation, at least twenty-four hours on site, or it will not lie flat.</p><p><strong>Kenji Arakawa:</strong> Is the factory secure?</p><p><strong>Lars Vanderhoek:</strong> Our raw materials are the risk. Flax for the oil is a crop, and two poor harvests in Canada raised our oil price by nearly forty percent. A vinyl plant does not care about the weather on the prairie.</p><p><strong>Kenji Arakawa:</strong> Lars Vanderhoek, thank you. That is Linoleum, on Material World.</p>"
+      format: full_html
+  field_description:
+    -
+      value: 'The floor everybody mistakes for vinyl, made from linseed oil and cork dust in one remaining factory.'
+  field_duration:
+    -
+      value: '3 Mins'
+  field_episode_number:
+    -
+      value: 6
+  field_featured_image:
+    -
+      entity: 02f79969-1865-4c03-9920-488972ff170d
+  field_host:
+    -
+      value: 'Kenji Arakawa'
+  field_podcast:
+    -
+      entity: 3749d569-dd25-4f5a-8e79-c960491f5233
