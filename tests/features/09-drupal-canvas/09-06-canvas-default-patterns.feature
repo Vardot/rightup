@@ -28,7 +28,6 @@ Feature: Drupal Canvas - default Canvas patterns
       And the Canvas Library "Patterns" tab should list "Feature Cards"
       And the Canvas Library "Patterns" tab should list "Counters"
       And the Canvas Library "Patterns" tab should list "Feature Highlight"
-      And the Canvas Library "Patterns" tab should list "Latest Blog Posts"
       And the Canvas Library "Patterns" tab should list "FAQ Accordion"
       And the Canvas Library "Patterns" tab should list "Image Cards"
       And the Canvas Library "Patterns" tab should list "Contact Form with Info"

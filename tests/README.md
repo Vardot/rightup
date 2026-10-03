@@ -217,7 +217,7 @@ tests/
     03-admin-pages/                 # Admin/dev pages, media list, JSON:API, audit trail, bulk upload
     04-admin-users/                 # Masquerade, disable users, admin keyboard navigation
     05-content-pages/               # Utility pages, breadcrumbs
-    06-content-blog/                # Blog permissions, blog page
+    06-content-news/                # News listing and article pages
     07-content-contact/             # Contact us page
     08-content-homepage/            # Homepage
     09-drupal-canvas/               # Canvas page permissions, Canvas editor

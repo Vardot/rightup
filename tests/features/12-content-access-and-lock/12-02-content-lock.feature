@@ -7,17 +7,17 @@ Feature: Content Management - Content Lock
   @check @local @development @staging @production
   Scenario: Set up content lock test content as the webmaster
     Given I am a logged in user with the "webmaster" user
-     When I go to "/node/add/blog"
+     When I go to "/node/add/news"
       And wait
-      And I wait for the text "Create Blog post" to appear
-     Then I should see "Create Blog post"
-     When I fill in "Test Content Lock Blog Post" for "Title"
-      And I fill in "Test description for content lock blog post." for "#edit-field-description-0-value" by attr
+      And I wait for the text "Create News post" to appear
+     Then I should see "Create News post"
+     When I fill in "Test Content Lock News Post" for "Title"
+      And I fill in "Test description for content lock news post." for "#edit-field-description-0-value" by attr
       And I scroll to the bottom
       And I submit by id "edit-submit"
       And wait
-      And I wait for the text "Test Content Lock Blog Post" to appear
-     Then I should see "Test Content Lock Blog Post"
+      And I wait for the text "Test Content Lock News Post" to appear
+     Then I should see "Test Content Lock News Post"
 
   @check @local @development @staging @production
   Scenario: Check that the webmaster can access and verify Content Lock settings
@@ -68,21 +68,21 @@ Feature: Content Management - Content Lock
      Then I should not see "Content lock settings"
 
   @check @local @development @staging @production
-  Scenario: Check that Content editor locking a Blog post prevents Content admin from editing it simultaneously
+  Scenario: Check that Content editor locking a News post prevents Content admin from editing it simultaneously
     Given I am a logged in user with the "Content editor" user
      When I go to "/admin/content"
       And wait
       And I wait for the text "Content" to appear
      Then I should see "Content"
-     When I fill in "Test Content Lock Blog Post" for "Title"
+     When I fill in "Test Content Lock News Post" for "Title"
       And I press the "Filter" button
       And wait
-      And I wait for the text "Test Content Lock Blog Post" to appear
-     Then I should see "Test Content Lock Blog Post"
-     When I open the "Edit" link in the "Test Content Lock Blog Post" row
+      And I wait for the text "Test Content Lock News Post" to appear
+     Then I should see "Test Content Lock News Post"
+     When I open the "Edit" link in the "Test Content Lock News Post" row
       And wait
-      And I wait for the text "Test Content Lock Blog Post" to appear
-     Then I should see "Test Content Lock Blog Post"
+      And I wait for the text "Test Content Lock News Post" to appear
+     Then I should see "Test Content Lock News Post"
       And I should see "simultaneous editing"
      When I am an anonymous user
       And I am a logged in user with the "Content admin" user
@@ -90,12 +90,12 @@ Feature: Content Management - Content Lock
       And wait
       And I wait for the text "Content" to appear
      Then I should see "Content"
-     When I fill in "Test Content Lock Blog Post" for "Title"
+     When I fill in "Test Content Lock News Post" for "Title"
       And I press the "Filter" button
       And wait
-      And I wait for the text "Test Content Lock Blog Post" to appear
-     Then I should see "Test Content Lock Blog Post"
-     When I open the "Edit" link in the "Test Content Lock Blog Post" row
+      And I wait for the text "Test Content Lock News Post" to appear
+     Then I should see "Test Content Lock News Post"
+     When I open the "Edit" link in the "Test Content Lock News Post" row
       And wait
       And I wait for the text "This content is being edited by the user" to appear
      Then I should see "This content is being edited by the user"
@@ -106,5 +106,5 @@ Feature: Content Management - Content Lock
      Then I should see "Break Lock for content"
      When I submit by id "edit-submit"
       And wait
-      And I wait for the text "Test Content Lock Blog Post" to appear
-     Then I should see "Test Content Lock Blog Post"
+      And I wait for the text "Test Content Lock News Post" to appear
+     Then I should see "Test Content Lock News Post"

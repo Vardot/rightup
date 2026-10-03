@@ -20,12 +20,12 @@ Feature: Content Structure - Drupal Canvas Editor
       And I should see "Edit"
 
   @check @local @development @staging @production
-  Scenario: Check that the webmaster can manage the Blog page in Canvas Pages
+  Scenario: Check that the webmaster can manage the Podcasts page in Canvas Pages
     Given I am a logged in user with the "webmaster" user
      When I go to "/admin/content/pages"
       And wait
      Then I should see "Pages"
-      And I should see "Blog"
+      And I should see "Podcasts"
       And I should see "Edit"
 
   @check @local @development @staging @production

@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+  - node.type.news
   - core.entity_view_mode.node.impressed_card_medium
   - core.entity_view_mode.user.author_banner
-  - node.type.blog
   module:
   - node
   - user
@@ -190,7 +190,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            blog: blog
+            news: news
           group: 1
           exposed: false
           expose:

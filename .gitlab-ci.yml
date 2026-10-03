@@ -634,7 +634,7 @@ workflow:
           - "02-user-management"
           - "03-admin-pages"
           - "05-content-pages"
-          - "06-content-blog"
+          - "06-content-news"
           - "07-content-contact"
           - "10-content-permissions"
           - "11-content-workflow"

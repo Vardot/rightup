@@ -35,7 +35,6 @@
     "drupal/varbase_seo_base": "1.0.x-dev",
     "drupal/varbase_webform_base": "1.0.x-dev",
     "drupal/varbase_page_base": "1.0.x-dev",
-    "drupal/varbase_blog_base": "1.0.x-dev",
     "drupal/varbase_news_base": "1.0.x-dev",
     "drupal/varbase_podcasts_base": "2.0.x-dev",
     "drupal/varbase_canvas_base": "1.0.x-dev",

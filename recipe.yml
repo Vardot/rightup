@@ -1,6 +1,6 @@
 name: Rightup
 type: Site
-description: 'Designed for news sites, magazines and editorial teams, this template features ready-made home, blog, features and contact pages, with articles, categories and tags, a media library, search and a contact form.'
+description: 'Designed for news sites, magazines and editorial teams, this template features ready-made home, news, podcasts and contact pages, with articles, categories and tags, a media library, search and a contact form.'
 recipes:
   - varbase_users_base
   - drupal_cms_admin_ui
@@ -24,7 +24,6 @@ recipes:
   - varbase_seo_base
   - varbase_webform_base
   - varbase_page_base
-  - varbase_blog_base
   - varbase_news_base
   - varbase_podcasts_base
   - varbase_performance_base
@@ -977,13 +976,6 @@ config:
         display.latest.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
         display.featured.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
         display.related.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-unformatted
-    views.view.blog:
-      setViewsComponentStyleTheme:
-        theme: default
-      simpleConfigUpdate:
-        display.all.display_options.style.options.component_id: vartheme_bs5_rightup:grid
-        display.latest.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-grid
-        display.related.display_options.style.options.component_id: vartheme_bs5_rightup:views-view-unformatted
     canvas.content_template.node.news.card:
       repointComponentTreeToTheme:
         theme: default
@@ -1266,63 +1258,6 @@ config:
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.news.text_card_small:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.card:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.featured_card_large:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.featured_card_medium:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.featured_card_small:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.featured_card_xlarge:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.featured_card_xsmall:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.full:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.hero_card:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.impressed_card_large:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.impressed_card_medium:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.impressed_card_small:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.impressed_card_xlarge:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.impressed_card_xsmall:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.overlay_card_large:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.overlay_card_medium:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.overlay_card_xlarge:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.text_card_large:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.text_card_medium:
-      repointComponentTreeToTheme:
-        theme: default
-    canvas.content_template.node.blog.text_card_small:
       repointComponentTreeToTheme:
         theme: default
     workflows.workflow.varbase_editorial_workflow:

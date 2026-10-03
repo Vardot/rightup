@@ -5,7 +5,7 @@ Feature: Content Structure - Standard Breadcrumbs
       So that I can understand and navigate the site hierarchy.
 
   @check @local @development @staging @production
-  Scenario: Check that the blog listing page has a breadcrumb
+  Scenario: Check that a news article page has a breadcrumb
     Given I am an anonymous user
      When I go to "/news/architecture-unease-how-brutalism-became-beautiful-again"
       And wait

@@ -11,7 +11,7 @@ Feature: Content Structure - Canvas Pages permissions
       And wait
      Then I should see "Pages"
       And I should see "Home"
-      And I should see "Blog"
+      And I should see "Podcasts"
       And I should see "Contact Us"
 
   @check @local @development @staging @production

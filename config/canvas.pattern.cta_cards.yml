@@ -129,7 +129,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.heading
     component_version: 0889e2ce906c3164
     inputs:
-      heading_text: Blog
+      heading_text: News
       level: 3
     label: null
   b297c995-fd0f-473b-830c-67c167b56a60:
@@ -166,7 +166,7 @@ component_tree:
       size: btn-md
       label: Read the News
       href:
-        uri: internal:/blog
+        uri: internal:/news
         options: {}
       disabled: false
       icon: none

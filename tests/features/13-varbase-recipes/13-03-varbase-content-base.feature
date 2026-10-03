@@ -11,8 +11,8 @@ Feature: Varbase Recipe - Content Base (content types + taxonomy)
   Scenario: Content types and taxonomy are available
      When I go to "/admin/structure/types"
       And wait
-      And I wait for the text "Blog post" to appear
-     Then I should see "Blog post"
+      And I wait for the text "News post" to appear
+     Then I should see "News post"
       And I should see "Utility page"
      When I go to "/admin/structure/taxonomy"
       And wait

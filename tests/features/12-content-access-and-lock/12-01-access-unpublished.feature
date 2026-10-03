@@ -18,17 +18,17 @@ Feature: Content Management - Access Unpublished
       And wait
       And I wait for the text "Test Unpublished Page" to appear
      Then I should see "Test Unpublished Page"
-     When I go to "/node/add/blog"
+     When I go to "/node/add/news"
       And wait
-      And I wait for the text "Create Blog post" to appear
-     Then I should see "Create Blog post"
-     When I fill in "Test Unpublished Blog Post" for "Title"
-      And I fill in "Test description for unpublished blog post." for "#edit-field-description-0-value" by attr
+      And I wait for the text "Create News post" to appear
+     Then I should see "Create News post"
+     When I fill in "Test Unpublished News Post" for "Title"
+      And I fill in "Test description for unpublished news post." for "#edit-field-description-0-value" by attr
       And I scroll to the bottom
       And I press the "Save" button
       And wait
-      And I wait for the text "Test Unpublished Blog Post" to appear
-     Then I should see "Test Unpublished Blog Post"
+      And I wait for the text "Test Unpublished News Post" to appear
+     Then I should see "Test Unpublished News Post"
 
   @check @local @development @staging @production
   Scenario: Check that the webmaster can access the Access Unpublished configuration and token list
@@ -88,70 +88,70 @@ Feature: Content Management - Access Unpublished
       And I should see "Temporary unpublished access"
 
   @check @local @development @staging @production
-  Scenario: Check that the webmaster can view an unpublished Blog post and see the Temporary unpublished access section
+  Scenario: Check that the webmaster can view an unpublished News post and see the Temporary unpublished access section
     Given I am a logged in user with the "webmaster" user
-     When I go to "/blog/test-unpublished-blog-post"
+     When I go to "/news/test-unpublished-news-post"
       And wait
-      And I wait for the text "Test Unpublished Blog Post" to appear
-     Then I should see "Test Unpublished Blog Post"
+      And I wait for the text "Test Unpublished News Post" to appear
+     Then I should see "Test Unpublished News Post"
      When I go to "/admin/content"
       And wait
       And I wait for the text "Content" to appear
      Then I should see "Content"
-     When I fill in "Test Unpublished Blog Post" for "Title"
+     When I fill in "Test Unpublished News Post" for "Title"
       And I press the "Filter" button
       And wait
-      And I wait for the text "Test Unpublished Blog Post" to appear
-     Then I should see "Test Unpublished Blog Post"
-     When I open the "Edit" link in the "Test Unpublished Blog Post" row
+      And I wait for the text "Test Unpublished News Post" to appear
+     Then I should see "Test Unpublished News Post"
+     When I open the "Edit" link in the "Test Unpublished News Post" row
       And wait
-      And I wait for the text "Test Unpublished Blog Post" to appear
-     Then I should see "Test Unpublished Blog Post"
+      And I wait for the text "Test Unpublished News Post" to appear
+     Then I should see "Test Unpublished News Post"
       And I should see "Temporary unpublished access"
 
   @check @local @development @staging @production
-  Scenario: Check that the Content editor can view unpublished Page and Blog post content
+  Scenario: Check that the Content editor can view unpublished Page and News post content
     Given I am a logged in user with the "Content editor" user
      When I go to "/test-unpublished-page"
       And wait
       And I wait for the text "Test Unpublished Page" to appear
      Then I should see "Test Unpublished Page"
-     When I go to "/blog/test-unpublished-blog-post"
+     When I go to "/news/test-unpublished-news-post"
       And wait
-      And I wait for the text "Test Unpublished Blog Post" to appear
-     Then I should see "Test Unpublished Blog Post"
+      And I wait for the text "Test Unpublished News Post" to appear
+     Then I should see "Test Unpublished News Post"
 
   @check @local @development @staging @production
-  Scenario: Check that the Content admin can view unpublished Page and Blog post content
+  Scenario: Check that the Content admin can view unpublished Page and News post content
     Given I am a logged in user with the "Content admin" user
      When I go to "/test-unpublished-page"
       And wait
       And I wait for the text "Test Unpublished Page" to appear
      Then I should see "Test Unpublished Page"
-     When I go to "/blog/test-unpublished-blog-post"
+     When I go to "/news/test-unpublished-news-post"
       And wait
-      And I wait for the text "Test Unpublished Blog Post" to appear
-     Then I should see "Test Unpublished Blog Post"
+      And I wait for the text "Test Unpublished News Post" to appear
+     Then I should see "Test Unpublished News Post"
 
   @check @local @development @staging @production
-  Scenario: Check that anonymous users can not directly access unpublished Page or Blog post content without a token
+  Scenario: Check that anonymous users can not directly access unpublished Page or News post content without a token
     Given I am an anonymous user
      When I go to "/test-unpublished-page"
       And wait
      Then I should not see "Test Unpublished Page"
-     When I go to "/blog/test-unpublished-blog-post"
+     When I go to "/news/test-unpublished-news-post"
       And wait
-     Then I should not see "Test Unpublished Blog Post"
+     Then I should not see "Test Unpublished News Post"
 
   @check @local @development @staging @production
-  Scenario: Check that Normal users can not directly access unpublished Page or Blog post content without a token
+  Scenario: Check that Normal users can not directly access unpublished Page or News post content without a token
     Given I am a logged in user with the "Normal user" user
      When I go to "/test-unpublished-page"
       And wait
      Then I should not see "Test Unpublished Page"
-     When I go to "/blog/test-unpublished-blog-post"
+     When I go to "/news/test-unpublished-news-post"
       And wait
-     Then I should not see "Test Unpublished Blog Post"
+     Then I should not see "Test Unpublished News Post"
 
   @check @local @development @staging @production
   Scenario: Check that Access Unpublished permissions are granted to anonymous and authenticated roles

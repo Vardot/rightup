@@ -22,7 +22,7 @@ Feature: Quality - Performance budgets
      Then the page should load in less than 5 seconds
 
   @perf @local @development @staging @production
-  Scenario: The blog listing page loads within budget
+  Scenario: The news listing page loads within budget
     Given I am an anonymous user
      When I go to "/news"
       And wait

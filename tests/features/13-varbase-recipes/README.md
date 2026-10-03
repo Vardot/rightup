@@ -17,7 +17,6 @@ FEATURES="tests/features/13-varbase-recipes/**/*.feature" ddev yarn test:chromiu
 | `13-02-varbase-users-base.feature` | Varbase Recipe - Users Base (editorial roles) | 1 |
 | `13-03-varbase-content-base.feature` | Varbase Recipe - Content Base (content types + taxonomy) | 1 |
 | `13-04-varbase-page-base.feature` | Varbase Recipe - Page Base (Utility page type) | 1 |
-| `13-05-varbase-blog-base.feature` | Varbase Recipe - Blog Base (Blog post type) | 1 |
 | `13-06-varbase-media-base.feature` | Varbase Recipe - Media Base (media types + library) | 1 |
 | `13-07-varbase-editor-base.feature` | Varbase Recipe - Editor Base (CKEditor 5) | 1 |
 | `13-08-varbase-security-base.feature` | Varbase Recipe - Security Base (password policy + CAPTCHA) | 1 |
