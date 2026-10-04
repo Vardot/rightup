@@ -34,3 +34,19 @@ Feature: Frontend Pages - News Listing Page
       And wait
      Then I should see "Architecture"
       And I should see "Podcasts"
+
+  @check @local @development @staging @production
+  Scenario: Check that an article page puts the author and Share on one row
+    Given I am an anonymous user
+     When I go to "/news/architecture-unease-how-brutalism-became-beautiful-again"
+      And wait
+     Then I should see "Chiara Romano"
+      And I should not see "By Chiara Romano"
+      And the "Chiara Romano" byline and the Share links should sit on one row
+
+  @check @local @development @staging @production
+  Scenario: Check that an article page shows the caption of its image
+    Given I am an anonymous user
+     When I go to "/news/architecture-unease-how-brutalism-became-beautiful-again"
+      And wait
+     Then I should see "Habitat 67, Montreal. Photo: Editorial Archive"

@@ -510,6 +510,10 @@ config:
     system.theme:
       simpleConfigUpdate:
         default: vartheme_bs5_rightup
+    # An article shows its image's title as the caption, so editors need the field.
+    field.field.media.image.field_media_image:
+      simpleConfigUpdate:
+        settings.title_field: true
     # The contact form lives in a Canvas page, where its Ajax submit gets the
     # whole page back and shows "Oops, something went wrong". Submit normally.
     webform.webform.business_contact:
@@ -1049,8 +1053,10 @@ config:
               bg_edge2edge: false
               section_header: true
               gutter: gx-5 gy-5
-              padding_block_start: pt-4
-              padding_block_end: pb-4
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+              margin_block_end: mb-4
+              vertical_alignment: align-items-stretch
           6f328b71-1f89-537c-9db7-e1e963adc1f3:
             uuid: 6f328b71-1f89-537c-9db7-e1e963adc1f3
             component_id: block.system_breadcrumb_block
@@ -1060,6 +1066,45 @@ config:
               label_display: '0'
             parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
             slot: header_slot
+          02d25eea-1d62-5736-bf40-90adc92c2453:
+            uuid: 02d25eea-1d62-5736-bf40-90adc92c2453
+            component_id: sdc.vartheme_bs5_rightup.group
+            component_version: a84c76c20ee7a3da
+            inputs:
+              height: h-100
+              direction: vertical
+              gap: gap-4
+              wrap: nowrap
+              align_items: align-items-stretch
+              justify_content: justify-content-between
+              padding_inline_end: pe-5
+            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
+            slot: col_1
+          df85358e-b4be-5a48-89d1-0cbd45617eaf:
+            uuid: df85358e-b4be-5a48-89d1-0cbd45617eaf
+            component_id: sdc.vartheme_bs5_rightup.group
+            component_version: a84c76c20ee7a3da
+            inputs:
+              direction: vertical
+              gap: gap-4
+              wrap: nowrap
+              align_items: align-items-stretch
+              justify_content: justify-content-start
+              padding_inline_end: pe-5
+            parent_uuid: 02d25eea-1d62-5736-bf40-90adc92c2453
+            slot: content
+          b08dece8-6897-5e77-aada-b45da9e3e849:
+            uuid: b08dece8-6897-5e77-aada-b45da9e3e849
+            component_id: sdc.vartheme_bs5_rightup.group
+            component_version: a84c76c20ee7a3da
+            inputs:
+              direction: vertical
+              gap: gap-2
+              wrap: nowrap
+              align_items: align-items-stretch
+              justify_content: justify-content-start
+            parent_uuid: df85358e-b4be-5a48-89d1-0cbd45617eaf
+            slot: content
           981e66ef-0adf-5e0b-ac8c-d47cc3e8a04c:
             uuid: 981e66ef-0adf-5e0b-ac8c-d47cc3e8a04c
             component_id: sdc.vartheme_bs5_rightup.heading
@@ -1070,8 +1115,8 @@ config:
                 expression: ℹ︎␜entity:node:news␝title␞␟value
               level: 1
               text_size: h1
-            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_1
+            parent_uuid: b08dece8-6897-5e77-aada-b45da9e3e849
+            slot: content
           b64bd5f4-c3e5-51e2-b1a7-4fce666de78e:
             uuid: b64bd5f4-c3e5-51e2-b1a7-4fce666de78e
             component_id: sdc.vartheme_bs5_rightup.text
@@ -1080,10 +1125,10 @@ config:
               text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:news␝field_description␞␟value
-              text_size: fs-5
+              text_size: fs-4
               text_color: text-body
-            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_1
+            parent_uuid: b08dece8-6897-5e77-aada-b45da9e3e849
+            slot: content
           adaf5007-0fb2-5ded-ae03-4fc3440b242a:
             uuid: adaf5007-0fb2-5ded-ae03-4fc3440b242a
             component_id: sdc.vartheme_bs5_rightup.date
@@ -1093,30 +1138,59 @@ config:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:news␝created␞␟value
                 adapter: unix_to_date
-            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_1
+              text_color: text-body
+              size: fs-6
+            parent_uuid: df85358e-b4be-5a48-89d1-0cbd45617eaf
+            slot: content
+          34c8efaa-df32-5b34-83c0-65a42ea532af:
+            uuid: 34c8efaa-df32-5b34-83c0-65a42ea532af
+            component_id: sdc.vartheme_bs5_rightup.group
+            component_version: a84c76c20ee7a3da
+            inputs:
+              direction: vertical
+              gap: gap-0
+              wrap: nowrap
+              align_items: align-items-stretch
+              justify_content: justify-content-end
+              padding_inline_end: pe-5
+            parent_uuid: 02d25eea-1d62-5736-bf40-90adc92c2453
+            slot: content
           5b71656b-f9c6-54c0-8e9e-75c14296ef92:
             uuid: 5b71656b-f9c6-54c0-8e9e-75c14296ef92
             component_id: sdc.vartheme_bs5_rightup.divider
             component_version: 3351739a2f3f46b5
             inputs:
-              border_color: border-black
+              border_color: none
               margin_top: mt-3
               margin_bottom: mb-3
-            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_1
+            parent_uuid: 34c8efaa-df32-5b34-83c0-65a42ea532af
+            slot: content
+          652f2893-9f52-51b3-9aa0-d6fa35ec08cb:
+            uuid: 652f2893-9f52-51b3-9aa0-d6fa35ec08cb
+            component_id: sdc.vartheme_bs5_rightup.group
+            component_version: a84c76c20ee7a3da
+            inputs:
+              direction: horizontal
+              gap: gap-3
+              wrap: nowrap
+              align_items: align-items-center
+              justify_content: justify-content-between
+            parent_uuid: 34c8efaa-df32-5b34-83c0-65a42ea532af
+            slot: content
           af0e1c2d-76ab-5a1c-94d6-3f8a22b9dc2a:
             uuid: af0e1c2d-76ab-5a1c-94d6-3f8a22b9dc2a
             component_id: sdc.vartheme_bs5_rightup.byline
-            component_version: cc4869187f83aa8b
+            component_version: 6e30b9f069cf711d
             inputs:
               author:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:news␝uid␞␟entity␜␜entity:user␝name␞␟value
               size: fs-6
-              text_color: text-dark
-            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_1
+              text_color: text-body
+              show_prefix: false
+              font_weight: fw-medium
+            parent_uuid: 652f2893-9f52-51b3-9aa0-d6fa35ec08cb
+            slot: content
           0c25c8b6-326d-5881-b5d2-2bdde61064e7:
             uuid: 0c25c8b6-326d-5881-b5d2-2bdde61064e7
             component_id: sdc.vartheme_bs5_rightup.share
@@ -1124,15 +1198,37 @@ config:
             inputs:
               heading: Share
               display_title: true
-              alignment: start
+              alignment: end
               orientation: horizontal
               native_share: false
               placement: inline
               share_title:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:news␝title␞␟value
+            parent_uuid: 652f2893-9f52-51b3-9aa0-d6fa35ec08cb
+            slot: content
+          1d695a6a-8cbe-573b-8620-287b7900edd3:
+            uuid: 1d695a6a-8cbe-573b-8620-287b7900edd3
+            component_id: sdc.vartheme_bs5_rightup.divider
+            component_version: 3351739a2f3f46b5
+            inputs:
+              border_color: none
+              margin_top: mt-3
+              margin_bottom: mb-0
+            parent_uuid: 34c8efaa-df32-5b34-83c0-65a42ea532af
+            slot: content
+          c3446ce9-248c-566f-9220-9428eccca6fd:
+            uuid: c3446ce9-248c-566f-9220-9428eccca6fd
+            component_id: sdc.vartheme_bs5_rightup.group
+            component_version: a84c76c20ee7a3da
+            inputs:
+              direction: vertical
+              gap: gap-4
+              wrap: nowrap
+              align_items: align-items-stretch
+              justify_content: justify-content-start
             parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_1
+            slot: col_2
           a7a427a0-1041-56cb-b799-e21d6c27d2d3:
             uuid: a7a427a0-1041-56cb-b799-e21d6c27d2d3
             component_id: sdc.vartheme_bs5_rightup.image
@@ -1147,8 +1243,22 @@ config:
               width: w-100
               rounded: none
               loading: eager
-            parent_uuid: 974e483a-6f58-53c6-b7c2-fbf7d819e4c7
-            slot: col_2
+            parent_uuid: c3446ce9-248c-566f-9220-9428eccca6fd
+            slot: content
+          a6024830-2229-507e-98f3-baf10e614dba:
+            uuid: a6024830-2229-507e-98f3-baf10e614dba
+            component_id: sdc.vartheme_bs5_rightup.text
+            component_version: a67ef6b9d036abac
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:news␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟title
+              text_size: fs-5
+              font_style: italic
+              text_color: text-muted
+              opacity: opacity-75
+            parent_uuid: c3446ce9-248c-566f-9220-9428eccca6fd
+            slot: content
           2b3e7323-09ca-51e8-99bd-6272e3501c8c:
             uuid: 2b3e7323-09ca-51e8-99bd-6272e3501c8c
             component_id: sdc.vartheme_bs5_rightup.section
@@ -1158,7 +1268,9 @@ config:
               columns: 67-33
               bg_edge2edge: false
               gutter: gx-5 gy-5
+              padding_block_start: pt-5
               padding_block_end: pb-5
+              margin_block_end: mb-4
           11605cea-904b-5d5c-be47-fc45e38b3efe:
             uuid: 11605cea-904b-5d5c-be47-fc45e38b3efe
             component_id: sdc.vartheme_bs5_rightup.rich-text
@@ -1177,7 +1289,7 @@ config:
             inputs:
               text: Editor's Picks
               text_size: fs-6
-              border_color: border-black
+              border_color: border-tertiary
             parent_uuid: 2b3e7323-09ca-51e8-99bd-6272e3501c8c
             slot: col_2
           16461c26-7f4a-5519-ac9f-f1af44698cb4:
@@ -1237,7 +1349,8 @@ config:
               bg_edge2edge: false
               section_header: true
               padding_block_start: pt-5
-              padding_block_end: pb-5
+              padding_block_end: pb-0
+              margin_block_start: mt-4
           b2253e91-df8b-57c6-ac7a-aa35201c46dc:
             uuid: b2253e91-df8b-57c6-ac7a-aa35201c46dc
             component_id: sdc.vartheme_bs5_rightup.divider
@@ -1245,7 +1358,7 @@ config:
             inputs:
               text: On Display
               text_size: fs-6
-              border_color: border-black
+              border_color: border-tertiary
             parent_uuid: 9ed6d135-559e-5480-bb58-588c54cd2600
             slot: header_slot
           e8788926-7a29-5bd6-bcf9-0854e2a23fe1:
