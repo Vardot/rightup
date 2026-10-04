@@ -76,7 +76,7 @@ component_tree:
       heading_text:
         sourceType: entity-field
         expression: "\u2139\uFE0E\u241Centity:node:news\u241Dtitle\u241E\u241Fvalue"
-      level: 3
+      level: 2
   3d296e31-1f14-4903-8d96-e3e5a1b27252:
     parent_uuid: 2f51ec6a-5560-4bfb-b9a2-1c0d6ade5d50
     slot: content
