@@ -510,6 +510,11 @@ config:
     system.theme:
       simpleConfigUpdate:
         default: vartheme_bs5_rightup
+    # The contact form lives in a Canvas page, where its Ajax submit gets the
+    # whole page back and shows "Oops, something went wrong". Submit normally.
+    webform.webform.business_contact:
+      simpleConfigUpdate:
+        settings.ajax: false
     # The header search box shows the placeholder as its only prompt, so it
     # carries the header design's wording instead of the Drupal CMS Search
     # default. Set here rather than by patching that third-party recipe.
