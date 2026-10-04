@@ -673,7 +673,7 @@ workflow:
       - SUITE: "12-content-access-and-lock-b"
         FEATURES_GLOB: "tests/features/12-content-access-and-lock/12-02-*.feature"
       - SUITE: "15-quality-a"
-        FEATURES_GLOB: "tests/features/15-quality/15-02-*.feature"
+        FEATURES_GLOB: "tests/features/15-quality/15-{02,05}-*.feature"
       - SUITE: "15-quality-b"
         FEATURES_GLOB: "tests/features/15-quality/15-{01,03,04}-*.feature"
       - SUITE: "17-content-podcasts-a"
