@@ -537,6 +537,21 @@ config:
             entity:node: entity:node
           group: 1
           exposed: false
+        display.default.display_options.filters.search_api_language:
+          id: search_api_language
+          table: search_api_index_content
+          field: search_api_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
         display.default.display_options.filters.created:
           id: created
           table: search_api_index_content

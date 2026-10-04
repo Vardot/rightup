@@ -70,6 +70,23 @@ display:
           plugin_id: bundle
           entity_type: node
           entity_field: type
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
+          group: 1
+          exposed: false
       style:
         type: default
         options:
