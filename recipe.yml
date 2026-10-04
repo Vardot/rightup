@@ -1256,7 +1256,7 @@ config:
               text_size: fs-5
               font_style: italic
               text_color: text-muted
-              opacity: opacity-75
+              opacity: opacity-100
             parent_uuid: c3446ce9-248c-566f-9220-9428eccca6fd
             slot: content
           2b3e7323-09ca-51e8-99bd-6272e3501c8c:
