@@ -265,7 +265,8 @@ Then(/^the episode should offer every platform of the "([^"]+)" podcast, in orde
   if (!want.length) throw friendly({ action: 'find the Listen on links of', target: title, hint: 'No such podcast in content/node.' });
   const got = await region(this, 'listen on').locator('a').evaluateAll((as) => as.map((a) => ({
     uri: a.origin === location.origin ? a.pathname : a.href.replace(/\/$/, ''),
-    title: a.textContent.replace(/\s+/g, ' ').trim(),
+    // The theme adds a visually hidden new-tab hint to external links; the platform name is what is compared.
+    title: a.textContent.replace(/\s+/g, ' ').trim().replace(/ \(opens in a new tab\)$/, ''),
   })));
   assert.deepStrictEqual(got, want.map((l) => ({ uri: l.uri.replace(/\/$/, ''), title: l.title })));
 });
