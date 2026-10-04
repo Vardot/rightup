@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-10-04
+### Changed
+- Requires Vartheme BS5 Rightup 1.0.4.
+- The Live feed and Search views follow the interface language (#3628100).
+
+### Fixes
+- The home page and the Canvas editor no longer fail with an OutOfRangeException: the content
+  templates reference only component versions the recipe ships, and a functional test checks it
+  (#3628401).
+- The news article banner matches the design: the author name and the Share links sit on one
+  row between two hairlines, the left column fills the height of the image, the image's title
+  shows as a caption 24px under it, and the summary, caption and date use the design's sizes
+  and colors, with the caption kept at an accessible contrast (#3628418). Needs Vartheme BS5
+  Rightup 1.0.4 for the Byline options.
+- Search result titles are h2, so the heading outline does not skip a level (#3628151).
+- The contact form submits without Ajax (#3628155).
+- The podcast episode functional test compares the platform names without the new-tab hint
+  (#3628386).
+
 ## [1.0.2] - 2026-10-03
 ### Changed
 - Requires Vartheme BS5 Rightup 1.0.3.
