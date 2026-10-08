@@ -8,12 +8,9 @@
   "require": {
     "drupal/core": "^11.4",
     "drupal/recipe_installer_kit": "~1",
-    "drupal/drupal_cms_admin_ui": "~2",
     "drupal/drupal_cms_anti_spam": "~2",
     "drupal/drupal_cms_authentication": "~2",
     "drupal/drupal_cms_helper": "~2",
-    "drupal/drupal_cms_media": "~2",
-    "drupal/drupal_cms_privacy_basic": "~2",
     "drupal/drupal_cms_search": "~2",
     "drupal/drupal_cms_seo_basic": "~2",
     "drupal/drupal_cms_forms": "~2",
