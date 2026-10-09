@@ -2,7 +2,7 @@
 
 # The Rightup
 [![pipeline status](https://git.drupalcode.org/project/rightup/badges/1.0.x/pipeline.svg)](https://git.drupalcode.org/project/rightup/-/pipelines)
-[![The Rightup](https://img.shields.io/badge/The%20Rightup-1.0.3-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/rightup/-/pipelines?ref=1.0.3)
+[![The Rightup](https://img.shields.io/badge/The%20Rightup-1.0.4-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/rightup/-/pipelines?ref=1.0.4)
 [![Automated Functional Testing](https://git.drupalcode.org/project/varbase_project/badges/11.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_project/-/pipelines)
 
 A media, news and magazine site template recipe for Varbase, providing a modern recipe-first approach to initializing editorial and newsroom sites.

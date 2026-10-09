@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-10-09
+### Fixes
+- Stop requiring the `drupal_cms_admin_ui`, `drupal_cms_media` and `drupal_cms_privacy_basic`
+  recipes, which Drupal CMS 2.2 removed, so The Rightup installs on Drupal CMS 2.2.3 and later.
+  Editors land on the Varbase welcome dashboard from Varbase Admin Base (#3629384).
+
+### Changed
+- Cover the Varbase welcome dashboard in the functional testing suite (#3629384).
+
 ## [1.0.3] - 2026-10-04
 ### Changed
 - Requires Vartheme BS5 Rightup 1.0.4.
