@@ -337,9 +337,6 @@ workflow:
     - composer config repositories.rightup
         '{"type":"path","url":"'"$CI_PROJECT_DIR"'","options":{"symlink":false,"versions":{"drupal/rightup":"'"$RECIPE_DEV_VERSION"'"}}}'
         --json
-    # svg_image 3.x caps enshrined/svg-sanitize below 1.0, and the 2026-10-08
-    # advisories block every 0.x. Alias the fixed 1.0.0 until svg_image allows it.
-    - composer require "enshrined/svg-sanitize:1.0.0 as 0.22.1" --no-update
     - composer require drupal/rightup:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
     # The Rightup recipe deliberately does not compose the API / Auth /
     # i18n / AI stacks, and no longer requires those recipe packages. Pull them
