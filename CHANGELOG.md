@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-10-11
+### Changed
+- Remove the temporary CI-only `enshrined/svg-sanitize` alias. `drupal/svg_image` 3.2.5 allows
+  svg-sanitize 1.0, so installs no longer need the alias (#3629801).
+
 ## [1.0.4] - 2026-10-09
 ### Fixes
 - Stop requiring the `drupal_cms_admin_ui`, `drupal_cms_media` and `drupal_cms_privacy_basic`
