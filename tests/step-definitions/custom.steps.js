@@ -92,7 +92,8 @@ Then(/^(?:the page should have|(?:I |we )*should have) a working footer$/, async
   if ((await footer.locator('a[href="https://www.facebook.com"]').count()) === 0) throw friendly('Footer is missing the Facebook link (https://www.facebook.com).', 'Check the Social media menu in the Canvas Footer region.');
   if ((await footer.locator('a[href="https://x.com"]').count()) === 0) throw friendly('Footer is missing the X link (https://x.com).', 'Check the Social media menu in the Canvas Footer region.');
   if ((await footer.locator('a[href="https://www.instagram.com"]').count()) === 0) throw friendly('Footer is missing the Instagram link (https://www.instagram.com).', 'Check the Social media menu in the Canvas Footer region.');
-  if ((await footer.locator('a[hx-on-click]').count()) === 0) throw friendly('Footer is missing the copy page link control.', 'Check the Copy link item in the Social media menu in the Canvas Footer region.');
+  if ((await footer.locator('a.copy-link').count()) === 0) throw friendly('Footer is missing the copy page link control.', 'Check the Copy link item in the Social media menu in the Canvas Footer region.');
+  if ((await footer.locator('a.copy-link[hx-on\\:click]').count()) === 0) throw friendly('The copy page link control has no HTMX click handler.', 'The theme adds hx-on:click to links with the copy-link class.');
 
   // The sitemap row: the Main navigation menu, placed in the footer.
   if (!text.includes('Studios')) throw friendly('Footer is missing the "Studios" sitemap link.', 'Check the Main navigation menu block in the Canvas Footer region.');

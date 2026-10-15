@@ -19,8 +19,8 @@ default:
         class:
           - bi
           - bi-link-45deg
+          - copy-link
         role: button
-        hx-on-click: 'event.preventDefault(); navigator.clipboard.writeText(window.location.href).then(() => this.classList.add(''is-copied''))'
   external:
   - value: false
   weight:
