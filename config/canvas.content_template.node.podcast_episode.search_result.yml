@@ -12,17 +12,16 @@ dependencies:
   - field.field.media.image.field_media_image
   - field.field.node.podcast_episode.field_description
   - field.field.node.podcast_episode.field_featured_image
-  - field.field.node.podcast_episode.field_tags
+  - field.field.node.podcast_episode.field_podcast
   - image.style.canvas_parametrized_width
   - media.type.image
+  - node.type.podcast
   - node.type.podcast_episode
-  - taxonomy.vocabulary.tags
   module:
   - file
   - media
   - node
   - options
-  - taxonomy
   - user
 id: node.podcast_episode.search_result
 content_entity_type_id: node
@@ -65,7 +64,7 @@ component_tree:
     inputs:
       label:
         sourceType: entity-field
-        expression: "\u2139\uFE0E\u241Centity:node:podcast_episode\u241Dfield_tags\u241E0\u241Fentity\u241C\u241Centity:taxonomy_term:tags\u241Dname\u241E\u241Fvalue"
+        expression: "\u2139\uFE0E\u241Centity:node:podcast_episode\u241Dfield_podcast\u241E0\u241Fentity\u241C\u241Centity:node:podcast\u241Dtitle\u241E\u241Fvalue"
   77987d9d-e675-4dbd-9ed3-a9086dd4d6b7:
     parent_uuid: a2373e16-07f7-466d-b4bc-19eb7dcfd014
     slot: content

@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The footer Copy link works again on Drupal core 11.4.10, which strips `hx-*` attributes
   from menu links. The link carries a `copy-link` class and the theme adds the HTMX click handler.
   Needs Vartheme BS5 Rightup with #3631079 (#3631078).
+- Searching for a podcast episode no longer throws a LogicException: the search result chip
+  shows the episode's podcast instead of a tag the episodes do not have (#3631049).
 
 ## [1.0.5] - 2026-10-11
 ### Changed
