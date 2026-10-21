@@ -23,6 +23,13 @@ default:
       section_header: true
   - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
     slot: header_slot
+    uuid: 084739a9-b016-5e33-ae6c-50b24c5ccd17
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: header_slot
     uuid: 6d366794-a175-5514-a17a-e3988a1c71f9
     component_id: sdc.vartheme_bs5_rightup.heading
     inputs:
@@ -38,6 +45,19 @@ default:
       label_display: '0'
       label: 'Exposed form: search-results_block'
       views_label: ''
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: header_slot
+    uuid: f1e26191-fad3-5385-bfe3-744e251ef277
+    component_id: sdc.vartheme_bs5_rightup.spacer
+    inputs:
+      size: py-4
+  - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
+    slot: header_slot
+    uuid: ddb48d1a-343c-5697-be9f-013cec6a795b
+    component_id: block.facet_block.search_tabs_category
+    inputs:
+      label: Category tabs
+      label_display: '0'
   - parent_uuid: 5829d0cd-2e79-5573-af47-f2409022992f
     slot: col_1
     uuid: dab10909-a2b8-544c-9197-6e5c57893a0b

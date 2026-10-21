@@ -507,6 +507,8 @@ workflow:
     # hang applies here unchanged.
     - ./vendor/bin/drush php:eval 'foreach(\Drupal::entityTypeManager()->getStorage("editor")->loadMultiple() as $e){$s=$e->getSettings();$c=false;if(!empty($s["toolbar"]["items"])&&is_array($s["toolbar"]["items"])){$n=array_values(array_filter($s["toolbar"]["items"],function($i){return stripos((string)$i,"ai_ckeditor")===false&&stripos((string)$i,"aickeditor")===false;}));if($n!==$s["toolbar"]["items"]){$s["toolbar"]["items"]=$n;$c=true;}}if(!empty($s["plugins"])&&is_array($s["plugins"])){foreach(array_keys($s["plugins"]) as $k){if(stripos($k,"ai_ckeditor")!==false){unset($s["plugins"][$k]);$c=true;}}}if($c){$e->setSettings($s);$e->save();}}' || true
     - ./vendor/bin/drush cache:rebuild
+    # Fill the search index for the search page scenarios; cron never runs here.
+    - ./vendor/bin/drush search-api:index
     # = Prepare for deterministic testing =
     - ./vendor/bin/drush pm:uninstall antibot -y || true
     # Neutralize Honeypot (added by drupal_cms_anti_spam): its time-restriction

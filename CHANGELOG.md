@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- The search page follows the design: Category tabs above the results (All, then the four
+  categories with the most results) beside the Category list in the rail. Both show the same
+  choice, and a tab keeps the other filters, the keywords and the sort. A Sort by control
+  (Relevance or Newest) sits beside the keyword box, the page gets its breadcrumb, and the search
+  page scenarios join the functional testing suite (#3631973).
 
 ## [1.0.6] - 2026-10-19
 ### Added

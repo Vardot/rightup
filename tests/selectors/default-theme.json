@@ -35,7 +35,17 @@
     "more featured stories": ".view-id-rightup_news.view-display-id-featured_more",
     "on display": ".view-id-rightup_news.view-display-id-featured_slider",
     "podcast show": ".view-id-rightup_news.view-display-id-podcast_show",
-    "podcast episodes": ".view-id-rightup_news.view-display-id-podcast_episodes"
+    "podcast episodes": ".view-id-rightup_news.view-display-id-podcast_episodes",
+    "search results": ".view-id-search.view-display-id-results_block",
+    "search form": "[data-drupal-selector=\"views-exposed-form-search-results-block\"]",
+    "search date form": "[data-drupal-selector=\"views-exposed-form-search-date-block\"]",
+    "category tabs": "[data-drupal-facet-id=\"search_tabs_category\"]",
+    "active category tab": "[data-drupal-facet-id=\"search_tabs_category\"] a[aria-current=\"true\"]",
+    "all tab": "[data-drupal-facet-id=\"search_tabs_category\"] a[data-drupal-facet-item-value=\"reset_all\"]",
+    "architecture tab": "[data-drupal-facet-id=\"search_tabs_category\"] a[data-drupal-facet-item-value=\"Architecture\"]",
+    "category filter": "[data-drupal-facet-id=\"search_category\"]",
+    "active category filter": "[data-drupal-facet-id=\"search_category\"] input:checked + label",
+    "selected sort": "[data-drupal-selector=\"views-exposed-form-search-results-block\"] .bef-links a[aria-current=\"true\"]"
   },
   "xpath": {}
 }

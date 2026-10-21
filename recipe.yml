@@ -633,6 +633,34 @@ config:
                   value: -1 year
                   type: offset
         display.default.display_options.header.result.content: Showing @start-@end of @total
+        # Relevance comes first, so it is the default sort.
+        display.default.display_options.sorts:
+          search_api_relevance:
+            id: search_api_relevance
+            table: search_api_index_content
+            field: search_api_relevance
+            relationship: none
+            group_type: group
+            admin_label: ''
+            plugin_id: search_api
+            order: DESC
+            expose:
+              label: Relevance
+              field_identifier: relevance
+            exposed: true
+          created:
+            id: created
+            table: search_api_index_content
+            field: created
+            relationship: none
+            group_type: group
+            admin_label: ''
+            plugin_id: search_api
+            order: DESC
+            expose:
+              label: Newest
+              field_identifier: newest
+            exposed: true
         display.header_search:
           id: header_search
           display_title: Header search
@@ -700,9 +728,24 @@ config:
               operator: AND
               groups:
                 1: AND
+            sorts:
+              search_api_relevance:
+                id: search_api_relevance
+                table: search_api_index_content
+                field: search_api_relevance
+                relationship: none
+                group_type: group
+                admin_label: ''
+                plugin_id: search_api
+                order: DESC
+                expose:
+                  label: ''
+                  field_identifier: ''
+                exposed: false
             defaults:
               filters: false
               filter_groups: false
+              sorts: false
               exposed_block: false
             display_description: Exposed search form for the header, so the page display can render its own form inline.
             exposed_block: true
@@ -750,9 +793,42 @@ config:
                     page: search_result
                     podcast: search_result
                     podcast_episode: search_result
+            # The sort shows as links, so changing it keeps the chosen category.
+            exposed_form:
+              type: bef
+              options:
+                submit_button: Search
+                reset_button: false
+                reset_button_label: Reset
+                exposed_sorts_label: Sort by
+                expose_sort_order: false
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+                text_input_required: ''
+                text_input_required_format: content_format
+                bef:
+                  general:
+                    input_required: true
+                  sort:
+                    plugin_id: bef_links
+                    advanced:
+                      collapsible: false
+                      collapsible_label: Sort options
+                      combine: false
+                      combine_rewrite: ''
+                      is_secondary: false
+                      reset: false
+                      reset_label: ''
+                      no_reset: false
+                  filter:
+                    search_api_fulltext:
+                      plugin_id: default
+                      advanced:
+                        hide_label: true
             defaults:
               pager: false
               row: false
+              exposed_form: false
               exposed_block: false
             display_description: The results listing, placed on the Canvas search page beside the facet rail.
             exposed_block: true
@@ -799,6 +875,35 @@ config:
             display_description: Date Published filter for the search results rail.
             exposed_block: true
             display_extenders: []
+        # Never placed: the query behind the Category tabs, one row is enough.
+        display.category_tabs:
+          id: category_tabs
+          display_title: Category tabs
+          display_plugin: block
+          position: 5
+          display_options:
+            pager:
+              type: some
+              options:
+                offset: 0
+                items_per_page: 1
+            defaults:
+              pager: false
+            display_description: The query behind the Category tabs facets. Not placed.
+            display_extenders: []
+            block_description: Category tabs
+          cache_metadata:
+            max-age: -1
+            contexts:
+            - languages:language_content
+            - languages:language_interface
+            - url
+            - url.query_args
+            - user.node_grants:view
+            - user.permissions
+            tags:
+            - config:search_api.index.content
+            - search_api_list:content
         display.page.display_options.enabled: false
     search_api.index.content:
       simpleConfigUpdate:
@@ -1592,6 +1697,116 @@ config:
               sort: 20
             settings:
               sort: ASC
+    # Category tabs: own display, same URL alias as the rail list, so both show one choice.
+    facets.facet.search_tabs_category:
+      createIfNotExists:
+        status: true
+        dependencies:
+          config:
+          - search_api.index.content
+          - views.view.search
+          module:
+          - search_api
+        id: search_tabs_category
+        name: Category tabs
+        weight: 0
+        min_count: 1
+        missing: false
+        missing_label: others
+        url_alias: category
+        facet_source_id: search_api:views_block__search__category_tabs
+        field_identifier: category_name
+        query_operator: or
+        hard_limit: 4
+        exclude: false
+        use_hierarchy: false
+        keep_hierarchy_parents_active: false
+        hierarchy:
+          type: taxonomy
+          config: []
+        expand_hierarchy: false
+        enable_parent_when_child_gets_disabled: true
+        widget:
+          type: links
+          config:
+            show_numbers: false
+            soft_limit: 0
+            soft_limit_settings:
+              show_less_label: 'Show less'
+              show_more_label: 'Show more'
+            show_reset_link: true
+            reset_text: All
+            hide_reset_when_no_selection: false
+        empty_behavior:
+          behavior: none
+        only_visible_when_facet_source_is_visible: null
+        show_only_one_result: true
+        show_title: null
+        processor_configs:
+          url_processor_handler:
+            processor_id: url_processor_handler
+            weights:
+              pre_query: -10
+              build: -10
+            settings: []
+          display_value_widget_order:
+            processor_id: display_value_widget_order
+            weights:
+              sort: 20
+            settings:
+              sort: ASC
+    # Not placed: keeps the Content Type choice in the tab links and in the tab query.
+    facets.facet.search_tabs_content_type:
+      createIfNotExists:
+        status: true
+        dependencies:
+          config:
+          - search_api.index.content
+          - views.view.search
+          module:
+          - search_api
+        id: search_tabs_content_type
+        name: Category tabs content type
+        weight: 0
+        min_count: 1
+        missing: false
+        missing_label: others
+        url_alias: content_type
+        facet_source_id: search_api:views_block__search__category_tabs
+        field_identifier: type
+        query_operator: or
+        hard_limit: null
+        exclude: false
+        use_hierarchy: false
+        keep_hierarchy_parents_active: false
+        hierarchy:
+          type: taxonomy
+          config: []
+        expand_hierarchy: false
+        enable_parent_when_child_gets_disabled: true
+        widget:
+          type: links
+          config:
+            show_numbers: false
+            soft_limit: 0
+            soft_limit_settings:
+              show_less_label: 'Show less'
+              show_more_label: 'Show more'
+            show_reset_link: false
+            reset_text: 'Show all'
+            hide_reset_when_no_selection: false
+        empty_behavior:
+          behavior: none
+        only_visible_when_facet_source_is_visible: null
+        show_only_one_result: false
+        show_title: null
+        processor_configs:
+          url_processor_handler:
+            processor_id: url_processor_handler
+            weights:
+              pre_query: -10
+              build: -10
+            settings: []
     canvas.component.block.views_exposed_filter_block.search-header_search:
       createIfNotExists:
         status: true
@@ -1666,6 +1881,30 @@ config:
         provider: facets
         source: block
         source_local_id: facet_block:search_category
+    canvas.component.block.facet_block.search_tabs_category:
+      createIfNotExists:
+        status: true
+        dependencies:
+          config:
+          - facets.facet.search_tabs_category
+          module:
+          - facets
+        active_version: c86142e21d7f4c1f
+        versioned_properties:
+          active:
+            settings:
+              default_settings:
+                id: facet_block:search_tabs_category
+                label: Category tabs
+                label_display: '0'
+                provider: facets
+            fallback_metadata:
+              slot_definitions: null
+        label: Category tabs
+        id: block.facet_block.search_tabs_category
+        provider: facets
+        source: block
+        source_local_id: facet_block:search_tabs_category
     canvas.page_region.vartheme_bs5_rightup.header:
       createIfNotExists:
         status: true
