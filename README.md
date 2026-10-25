@@ -35,6 +35,19 @@ This recipe bundles:
 
 Install via Drupal Recipe Installer Kit. After installation, you'll be redirected to `/admin/dashboard/welcome`.
 
+## Add Varbase AI
+
+The Rightup has no Blog content type, which Varbase AI Taxonomy Tagging tags by default. Point it at
+News when you apply Varbase AI Base:
+
+```bash
+ddev composer require drupal/varbase_ai_base:~1
+ddev drush recipe ../recipes/varbase_ai_base \
+  --input=varbase_ai_taxonomy_tagging.content_type=news
+```
+
+See [Varbase AI Base](https://docs.varbase.vardot.com/developers/understanding-varbase/varbase-ai-recipes/varbase-ai-base).
+
 ## Learn More
 
 - [Issue #3567072](https://www.drupal.org/project/rightup/issues/3567072)
