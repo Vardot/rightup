@@ -37,12 +37,13 @@ Install via Drupal Recipe Installer Kit. After installation, you'll be redirecte
 
 ## Add Varbase AI
 
-The Rightup has no Blog content type, which Varbase AI Taxonomy Tagging tags by default. Point it at
-News when you apply Varbase AI Base:
+Apply Varbase AI Base. Its Varbase AI Taxonomy Tagging tags Page by default. To tag News as well,
+apply Taxonomy Tagging again:
 
 ```bash
 ddev composer require drupal/varbase_ai_base:~1
-ddev drush recipe ../recipes/varbase_ai_base \
+ddev drush recipe ../recipes/varbase_ai_base
+ddev drush recipe ../recipes/varbase_ai_taxonomy_tagging \
   --input=varbase_ai_taxonomy_tagging.content_type=news
 ```
 
