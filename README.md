@@ -49,6 +49,10 @@ ddev drush recipe ../recipes/varbase_ai_taxonomy_tagging \
 
 See [Varbase AI Base](https://docs.varbase.vardot.com/developers/understanding-varbase/varbase-ai-recipes/varbase-ai-base).
 
+## Telemetry
+
+Drupal CMS telemetry is off in this project's CI (`DRUPAL_CMS_TELEMETRY=0`). To keep it off on your own install, set `DRUPAL_CMS_TELEMETRY=0` in the environment before installing the site template.
+
 ## Learn More
 
 - [Issue #3567072](https://www.drupal.org/project/rightup/issues/3567072)

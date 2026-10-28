@@ -49,6 +49,7 @@ variables:
   # project dir so the Install job can cache them for the pull-only test jobs.
   COMPOSER_CACHE_DIR: "${CI_PROJECT_DIR}/.cache/composer"
   PLAYWRIGHT_BROWSERS_PATH: "${CI_PROJECT_DIR}/.cache/ms-playwright"
+  DRUPAL_CMS_TELEMETRY: "0"
 
 workflow:
   rules:

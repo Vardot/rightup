@@ -904,7 +904,6 @@ config:
             tags:
             - config:search_api.index.content
             - search_api_list:content
-        display.page.display_options.enabled: false
     search_api.index.content:
       simpleConfigUpdate:
         # Index on cron, not on save. The install imports this recipe's content
@@ -1832,31 +1831,6 @@ config:
         provider: views
         source: block
         source_local_id: views_exposed_filter_block:search-header_search
-    canvas.component.block.views_exposed_filter_block.search-page:
-      createIfNotExists:
-        status: true
-        dependencies:
-          config:
-          - views.view.search
-          module:
-          - views
-        active_version: 435ec28df1ef5629
-        versioned_properties:
-          active:
-            settings:
-              default_settings:
-                id: views_exposed_filter_block:search-page
-                label: 'Exposed form: search-page'
-                label_display: '0'
-                provider: views
-                views_label: ''
-            fallback_metadata:
-              slot_definitions: null
-        label: 'Exposed form: search-page'
-        id: block.views_exposed_filter_block.search-page
-        provider: views
-        source: block
-        source_local_id: views_exposed_filter_block:search-page
     canvas.component.block.facet_block.search_category:
       createIfNotExists:
         status: true
