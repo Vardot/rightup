@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2026-11-01
+### Changed
+- Requires Drupal CMS Search 2.2.7 or later. The recipe no longer disables the Search view's page
+  display, and no longer adds a Canvas component for its exposed form (#3633832).
+- Drupal CMS telemetry is off in CI, and the README says how to keep it off on your own install
+  (#3633832).
+
+### Documentation
+- How to add Varbase AI without a Blog content type. Varbase AI Taxonomy Tagging tags Page by
+  default, so Varbase AI Base needs no input (#3633120).
+
 ## [1.0.7] - 2026-10-21
 ### Changed
 - The search page follows the design: Category tabs above the results (All, then the four
