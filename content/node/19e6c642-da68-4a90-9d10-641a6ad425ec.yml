@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/one-typeface-six-rebrands-inside-foundrys-busiest-year
-    langcode: en
   field_content:
   - value: '<p>Half the rebrands you saw this year were set in the same custom sans, and none of the clients knew about the others.</p>
 

@@ -115,4 +115,3 @@ default:
       text_color: text-body
   path:
   - alias: /contact-us
-    langcode: en

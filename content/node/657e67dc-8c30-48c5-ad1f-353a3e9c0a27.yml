@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/ten-years-one-logo
-      langcode: en
   field_audio:
     -
       entity: 57260061-d705-4779-b88b-cfc9a4b1b1bf

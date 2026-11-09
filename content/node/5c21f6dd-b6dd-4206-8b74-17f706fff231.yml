@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/inside-gallery-show-built-entirely-borrowed-light
-    langcode: en
   field_content:
   - value: '<p>There are no wall labels. There is no didactic panel by the door. There is a room, and there is neon, and the argument is left to the two of them.</p>
 

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/what-fen-marble-actually-use-pitch-new-clients
-    langcode: en
   field_content:
   - value: '<p>There is no deck. There is a notebook, a set of pencils, and a single sheet of A4 with the brief written on it in the client''s own words.</p>
 

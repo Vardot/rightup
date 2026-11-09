@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/who-owns-brief
-      langcode: en
   field_audio:
     -
       entity: f7462208-6936-410c-a21c-638dde18b401

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/why-more-brands-dropping-taglines
-    langcode: en
   field_content:
   - value: '<p>Four of the most talked-about rebrands this year launched without a tagline.</p>
 

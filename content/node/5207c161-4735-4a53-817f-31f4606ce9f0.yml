@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/milan-design-week-opens-record-number-independent-studios
-    langcode: en
   field_content:
   - value: '<p>By ten on the first morning the queue outside the Tortona warehouses was three deep, and more than half of it was waiting for studios that did not exist five years ago.</p>
 

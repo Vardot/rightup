@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/masters-worth-it
-      langcode: en
   field_audio:
     -
       entity: 8feb36a6-9ef0-424a-b134-b0483349ac0d

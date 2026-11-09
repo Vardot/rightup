@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/rotterdam-collective-shares-one-workshop-nine-studios
-    langcode: en
   field_content:
   - value: '<p>The depot in Rotterdam-West houses nine studios on one lease. They share a CNC router, a paint booth and a bookkeeper.</p>
 

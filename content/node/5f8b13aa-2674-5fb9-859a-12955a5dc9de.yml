@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/kettle-designed-repaired-one-screwdriver
-    langcode: en
   field_content:
   - value: '<p>Every part of the Fix kettle comes apart with a single Torx screwdriver, from the element to the switch.</p>
 

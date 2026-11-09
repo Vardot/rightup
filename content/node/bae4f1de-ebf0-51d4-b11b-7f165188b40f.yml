@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/how-one-studio-runs-every-project-single-wall
-    langcode: en
   field_content:
   - value: '<p>Every live project at Studio Brink lives on a single wall of pinboard in the middle of the room.</p>
 

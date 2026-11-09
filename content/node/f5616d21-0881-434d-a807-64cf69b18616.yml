@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/glassblowers-bench
-      langcode: en
   field_audio:
     -
       entity: f991e0ff-ee42-4085-9a98-21a9a123510b

@@ -44,7 +44,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/what-rejected-pitch-actually-sounds
-      langcode: en
   field_audio:
     -
       entity: 0f8579b2-49da-573f-8f1a-f218f9559f46

@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/foundry-pour
-      langcode: en
   field_audio:
     -
       entity: 75948559-e1ea-4957-91d9-af1f14c101b3

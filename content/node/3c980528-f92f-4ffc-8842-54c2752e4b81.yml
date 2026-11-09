@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/pitch-we-won-saying-no
-      langcode: en
   field_audio:
     -
       entity: d3063d98-d41c-42f7-885e-3b7ad133232b

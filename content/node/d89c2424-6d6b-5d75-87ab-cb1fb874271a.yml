@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/halden-roe-moves-studio-former-ferry-terminal
-    langcode: en
   field_content:
   - value: '<p>Halden & Roe spent a decade in a fourth-floor loft above a shoe shop. This spring the twenty-two person studio moved its desks, its model shop and its archive into a ferry terminal that had stood empty since the crossing was cancelled.</p>
 

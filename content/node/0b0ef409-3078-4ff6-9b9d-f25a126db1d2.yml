@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/print-shop-six-morning
-      langcode: en
   field_audio:
     -
       entity: 38294b4f-c316-41ad-9879-870e5c07a321

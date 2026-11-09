@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/arclight-studio-announce-fall-exhibition
-    langcode: en
   field_content:
   - value: '<p>The show is made entirely of work the studio did not ship.</p>
 

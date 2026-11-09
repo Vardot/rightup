@@ -41,7 +41,6 @@ default:
   path:
     -
       alias: /podcasts/last-call
-      langcode: en
   field_description:
     -
       value: 'The decisions nobody sees, told by the people who made them.'

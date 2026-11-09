@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/linoleum
-      langcode: en
   field_audio:
     -
       entity: 296ae29d-6a5b-4eea-b380-dd3e5f4a7e3b

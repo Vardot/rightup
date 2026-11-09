@@ -44,4 +44,3 @@ default:
       text_color: text-body
   path:
   - alias: /accessibility
-    langcode: en

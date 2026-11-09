@@ -27,7 +27,6 @@ default:
       value: true
   path:
     -
-      langcode: en
       alias: null
   field_media_audio_file:
     -

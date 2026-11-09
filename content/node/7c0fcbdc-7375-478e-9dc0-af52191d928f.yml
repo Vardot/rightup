@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/renzo-vidal-premieres-short-film-honoring-late-mentor
-    langcode: en
   field_content:
   - value: '<p>The film opens on an empty workshop and stays there for four minutes before anyone speaks.</p>
 

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/five-questions-good-design-brief-always-answers
-    langcode: en
   field_content:
   - value: '<p>Who is it for, what should change, how will we know, what can''t move, and who decides. Five questions, asked before any fee is quoted.</p>
 

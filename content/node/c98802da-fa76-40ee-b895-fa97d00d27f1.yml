@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/recycled-glass-terrazzo
-      langcode: en
   field_audio:
     -
       entity: 131bb447-7a7f-4961-8269-59ca4a80f97b

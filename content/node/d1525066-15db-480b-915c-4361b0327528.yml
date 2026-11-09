@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/photographers-10-year-study-ceremony-and-color-west-africa
-    langcode: en
   field_content:
   - value: '<p>Ten years of return visits, the same three villages, the same week of the year, and a slowly changing cast.</p>
 

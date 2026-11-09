@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/paper
-      langcode: en
   field_audio:
     -
       entity: 11389bbb-d205-4d46-80ab-b12ab1c57b3b

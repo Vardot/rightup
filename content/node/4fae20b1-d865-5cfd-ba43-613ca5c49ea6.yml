@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/inside-week-long-workshop-replaced-discovery
-    langcode: en
   field_content:
   - value: '<p>Instead of a discovery phase measured in months, Common Ground runs one week with the client in the studio every day.</p>
 

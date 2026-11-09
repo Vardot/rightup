@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/fen-marble-reveal-first-look-rotterdam-flagship
-    langcode: en
   field_content:
   - value: '<p>The hoarding came down on a Tuesday morning, and the first thing visible from the street was the stair: a single spiral of blackened steel, rising through three floors without touching a
       wall.</p>

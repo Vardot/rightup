@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/saying-no-growth
-      langcode: en
   field_audio:
     -
       entity: f5923166-2fb0-4cab-b3e7-b909c361f2a3

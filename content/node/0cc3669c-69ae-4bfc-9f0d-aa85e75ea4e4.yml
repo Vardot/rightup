@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/students-ask-jury
-      langcode: en
   field_audio:
     -
       entity: 167f2157-cf44-4933-bad4-0a737afb6feb

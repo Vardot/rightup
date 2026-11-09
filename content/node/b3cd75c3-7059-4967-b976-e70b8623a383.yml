@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/partner-who-left-mid-project
-      langcode: en
   field_audio:
     -
       entity: 1e1dabe6-16ca-470c-8cbd-884589ae7fd7

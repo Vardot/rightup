@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/architecture-unease-how-brutalism-became-beautiful-again
-    langcode: en
   field_content:
   - value: '<p>The ramp up to the Yale Art and Architecture Building still forces a decision. You either take the long way round, past the bush-hammered piers, or you cut through the shadow they throw across
       the entrance at four in the afternoon.</p>

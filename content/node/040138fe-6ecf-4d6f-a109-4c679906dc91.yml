@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/oak
-      langcode: en
   field_audio:
     -
       entity: 89172879-9946-4d02-8904-a96d12b14650

@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/cast-iron
-      langcode: en
   field_audio:
     -
       entity: 94b31400-5055-4a27-8aa5-d2a61adc6398

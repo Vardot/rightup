@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/why-we-killed-our-best-selling-product
-      langcode: en
   field_audio:
     -
       entity: 1a661a14-102a-4046-a211-504db1d3a8e1

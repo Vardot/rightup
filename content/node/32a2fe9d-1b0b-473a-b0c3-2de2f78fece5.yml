@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/shared-office
-      langcode: en
   field_audio:
     -
       entity: 8d8c1425-b3ca-4527-8d73-2d17aa533233

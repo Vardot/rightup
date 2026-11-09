@@ -41,7 +41,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice
-      langcode: en
   field_description:
     -
       value: 'How two and three-person studios compete against agencies ten times their size.'

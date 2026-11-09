@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/why-danish-brand-brought-back-1968-radio
-    langcode: en
   field_content:
   - value: '<p>Holm Audio sold its first portable radio in 1968. The reissue keeps the walnut case, the cloth grille and the hand-lettered dial.</p>
 

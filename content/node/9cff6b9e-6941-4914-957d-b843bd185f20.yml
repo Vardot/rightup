@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/font-took-four-years
-      langcode: en
   field_audio:
     -
       entity: ab376674-d38a-4184-9857-d73d1fe3d8da

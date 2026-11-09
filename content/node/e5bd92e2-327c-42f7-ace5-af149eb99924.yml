@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/architects-versus-engineers-round-table
-      langcode: en
   field_audio:
     -
       entity: 7fa7f413-967e-4219-aa94-5b2b44aa0381

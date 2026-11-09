@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/critics-table
-      langcode: en
   field_audio:
     -
       entity: c2b68539-a44b-439f-a5e5-70aa926959ad

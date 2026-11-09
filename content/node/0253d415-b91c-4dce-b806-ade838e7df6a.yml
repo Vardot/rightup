@@ -41,7 +41,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours
-      langcode: en
   field_description:
     -
       value: 'Studio founders answer the questions younger designers are afraid to ask.'

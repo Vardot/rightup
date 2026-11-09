@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/design-week-panel-end-mood-board
-      langcode: en
   field_audio:
     -
       entity: 5662ddde-9a37-4ed3-a455-aedcade4b8ae

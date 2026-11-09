@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/building-changes-every-winter
-      langcode: en
   field_audio:
     -
       entity: 2ad264b6-1e3a-4453-8763-bd64fc36581d

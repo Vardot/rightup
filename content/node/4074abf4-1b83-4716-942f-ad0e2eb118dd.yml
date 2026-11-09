@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/we-stopped-taking-briefs
-      langcode: en
   field_audio:
     -
       entity: b417e6a3-eb0c-4b32-9190-51f7f2d8f210

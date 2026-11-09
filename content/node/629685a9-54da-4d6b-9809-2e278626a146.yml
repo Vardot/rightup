@@ -44,7 +44,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/intern-who-redesigned-office
-      langcode: en
   field_audio:
     -
       entity: dbbc6ab3-ef65-545b-aba7-fc25e1d97242

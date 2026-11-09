@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/studio-no-job-titles
-      langcode: en
   field_audio:
     -
       entity: 4c514259-0a22-4d55-910e-ddabd7d0aedd

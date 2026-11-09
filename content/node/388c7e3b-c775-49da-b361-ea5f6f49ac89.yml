@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/how-do-i-give-feedback-my-boss
-      langcode: en
   field_audio:
     -
       entity: f0abd602-620b-4012-9aa7-315da1f69b9f

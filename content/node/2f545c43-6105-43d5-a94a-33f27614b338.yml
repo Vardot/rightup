@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/working-free-once
-      langcode: en
   field_audio:
     -
       entity: ee3ddc63-2e43-480e-be3d-2ef6a46996ce

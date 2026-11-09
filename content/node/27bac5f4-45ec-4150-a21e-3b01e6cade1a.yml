@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/documentary-series-turning-manual-labor-still-life
-    langcode: en
   field_content:
   - value: '<p>Each episode holds a single frame for a full minute before anything moves.</p>
 

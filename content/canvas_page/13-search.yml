@@ -142,4 +142,3 @@ default:
       views_label: ''
   path:
   - alias: /search
-    langcode: en

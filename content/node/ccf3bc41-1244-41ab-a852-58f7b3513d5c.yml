@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/why-bridge-lost-its-colour
-      langcode: en
   field_audio:
     -
       entity: b43ee8a6-a0f2-4784-b025-2756314bfa20

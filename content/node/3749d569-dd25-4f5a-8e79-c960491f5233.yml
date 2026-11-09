@@ -41,7 +41,6 @@ default:
   path:
     -
       alias: /podcasts/material-world
-      langcode: en
   field_description:
     -
       value: 'A deep dive into one material, one fabricator, one episode at a time.'

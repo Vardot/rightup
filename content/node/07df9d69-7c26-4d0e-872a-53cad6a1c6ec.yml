@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/community-center-built-color-blocked-voids
-    langcode: en
   field_content:
   - value: '<p>From the street the building is white. Every way in is blue or yellow, and you can find the door from a hundred metres away without reading a sign.</p>
 

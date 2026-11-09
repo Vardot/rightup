@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/bank-rebranded-without-changing-logo
-    langcode: en
   field_content:
   - value: '<p>Nordvik Sparebank kept the logo it has used since 1979 and changed almost everything else.</p>
 

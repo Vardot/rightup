@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/studios-new-icon-set-ditches-every-convention
-    langcode: en
   field_content:
   - value: '<p>No rounded corners. No consistent stroke weight. A triangle where a play button should be, pointing very slightly downward.</p>
 

@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/we-publish-our-rates
-      langcode: en
   field_audio:
     -
       entity: adfd03c9-02a2-49ab-ba56-cae84170dc67

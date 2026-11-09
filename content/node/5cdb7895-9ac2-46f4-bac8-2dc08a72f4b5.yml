@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/morning-type-foundry-floor
-      langcode: en
   field_audio:
     -
       entity: a67f6aed-d837-476f-9770-17573c34e0b7

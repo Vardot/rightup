@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/craft-versus-scale
-      langcode: en
   field_audio:
     -
       entity: 13d211ee-0041-46be-9790-f62354af63d1

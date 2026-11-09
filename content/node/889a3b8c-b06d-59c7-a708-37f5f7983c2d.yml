@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/office-chair-made-recycled-fishing-nets
-    langcode: en
   field_content:
   - value: '<p>Each Mar chair uses around one and a half kilograms of nylon recovered from fishing nets off the Portuguese coast.</p>
 

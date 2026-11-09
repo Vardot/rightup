@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/chair-every-design-school-still-teaches
-    langcode: en
   field_content:
   - value: '<p>Forty years on, it is still the first object first-year students are asked to take apart and rebuild.</p>
 

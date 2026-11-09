@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/concert-hall-reshaping-what-roof-can-do
-    langcode: en
   field_content:
   - value: '<p>The roof is the acoustic shell, the rainwater strategy and the only thing holding the building up.</p>
 

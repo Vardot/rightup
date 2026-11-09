@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/case-slower-feedback-rounds
-    langcode: en
   field_content:
   - value: '<p>Northfold used to show clients work every Friday. It now holds two reviews per project: one for direction, one for sign-off.</p>
 

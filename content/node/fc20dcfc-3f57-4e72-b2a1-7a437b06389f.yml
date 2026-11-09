@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/how-do-i-ask-raise
-      langcode: en
   field_audio:
     -
       entity: 9dd96767-8a00-462e-9ce8-651cc69ad60e

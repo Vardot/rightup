@@ -369,4 +369,3 @@ default:
       items_per_page: null
   path:
   - alias: /home
-    langcode: en

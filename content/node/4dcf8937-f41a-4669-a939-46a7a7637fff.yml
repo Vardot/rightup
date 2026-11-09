@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/sample-room
-      langcode: en
   field_audio:
     -
       entity: c76e252c-edf7-470a-a447-8f7d8b14608d

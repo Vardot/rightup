@@ -175,4 +175,3 @@ default:
       exposed: {}
   path:
   - alias: /newsletter
-    langcode: en

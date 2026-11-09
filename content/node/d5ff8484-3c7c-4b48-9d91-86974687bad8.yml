@@ -44,7 +44,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/three-years-without-deck
-      langcode: en
   field_audio:
     -
       entity: c256f792-07e6-569d-8e52-9a78c8cc5f98

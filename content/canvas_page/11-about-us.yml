@@ -134,4 +134,3 @@ default:
       lazy: false
   path:
   - alias: /about-us
-    langcode: en

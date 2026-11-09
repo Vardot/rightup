@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/tableware-range-fired-half-usual-temperature
-    langcode: en
   field_content:
   - value: '<p>Earth & Ash''s new range is fired at around 600 degrees, half the temperature of conventional stoneware.</p>
 

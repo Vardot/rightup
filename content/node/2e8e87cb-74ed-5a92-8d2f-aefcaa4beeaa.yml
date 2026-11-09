@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/mexico-city-studio-run-entirely-by-former-apprentices
-    langcode: en
   field_content:
   - value: '<p>Taller Vega was founded in 1998 by a cabinetmaker and an architect. Today all five partners joined as apprentices.</p>
 

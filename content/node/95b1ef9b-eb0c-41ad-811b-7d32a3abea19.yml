@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/warehouse-became-library
-      langcode: en
   field_audio:
     -
       entity: 62471213-66f4-44d6-b465-60b3992c440e

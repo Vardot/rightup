@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/client-who-wanted-it-uglier
-      langcode: en
   field_audio:
     -
       entity: 30615b14-5023-4b43-8662-178470485596

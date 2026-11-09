@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/why-airlines-new-logo-took-four-years
-    langcode: en
   field_content:
   - value: '<p>Three scrapped directions, one change of chief executive, and a mark that survived because a single engineer liked it on a tail fin mock-up.</p>
 

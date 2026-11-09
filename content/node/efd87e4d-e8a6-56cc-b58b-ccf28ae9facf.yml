@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/folding-stool-took-decade-get-right
-    langcode: en
   field_content:
   - value: '<p>Puu Works first drew its folding stool in 2014. The version going on sale this month is the eleventh prototype.</p>
 

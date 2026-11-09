@@ -41,7 +41,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes
-      langcode: en
   field_description:
     -
       value: 'Short dispatches recorded live from studio visits and site walks.'

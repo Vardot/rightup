@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/type-foundry-built-overlapping-shapes
-    langcode: en
   field_content:
   - value: '<p>Every glyph in the family begins as a stack of translucent rectangles, rotated until the overlaps make a letter.</p>
 

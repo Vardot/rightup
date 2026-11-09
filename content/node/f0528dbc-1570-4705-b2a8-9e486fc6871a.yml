@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/why-more-studios-are-charging-pitch-itself
-    langcode: en
   field_content:
   - value: '<p>Free pitching is getting rarer, and the clients are the ones who blinked first.</p>
 

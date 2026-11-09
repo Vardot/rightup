@@ -312,4 +312,3 @@ default:
       size: py-0
   path:
   - alias: /process
-    langcode: en

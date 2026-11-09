@@ -41,7 +41,6 @@ default:
   path:
     -
       alias: /podcasts/long-table
-      langcode: en
   field_description:
     -
       value: 'Round-table conversations recorded live at design week events.'

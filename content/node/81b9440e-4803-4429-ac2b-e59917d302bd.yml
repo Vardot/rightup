@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/night-shift-signwriters
-      langcode: en
   field_audio:
     -
       entity: 269a011d-c291-4eef-9941-8edfe1171b92

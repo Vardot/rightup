@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/live-furniture-fair
-      langcode: en
   field_audio:
     -
       entity: e584e9b1-a573-4901-9e90-203756150cf8

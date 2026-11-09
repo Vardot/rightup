@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/facade-changes-color-weather
-    langcode: en
   field_content:
   - value: '<p>At eleven degrees and rising the building is the colour of wet slate. By the afternoon it is closer to sand.</p>
 

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/see-fen-marbles-surprise-pop-local-ceramicists
-    langcode: en
   field_content:
   - value: '<p>For one weekend the model shop became a gallery, and the models were moved to the floor to make room for other people''s work.</p>
 

@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/quarry-first-light
-      langcode: en
   field_audio:
     -
       entity: 1cdce09f-f202-4bf7-b3f9-c397ad43b3cd

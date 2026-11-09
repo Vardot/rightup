@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/archive-became-exhibition-accident
-    langcode: en
   field_content:
   - value: '<p>A storage audit for the insurers turned into the best-attended show the museum has run.</p>
 

@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/how-do-i-leave-job-well
-      langcode: en
   field_audio:
     -
       entity: ef1af36e-662e-4200-807c-e789ea4ea43c

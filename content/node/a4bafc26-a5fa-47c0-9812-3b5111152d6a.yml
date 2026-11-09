@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/do-i-need-portfolio-site
-      langcode: en
   field_audio:
     -
       entity: 4082de15-9790-468e-ad66-206906ebfc8c

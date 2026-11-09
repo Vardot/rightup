@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/what-actually-happens-first-client-meeting
-    langcode: en
   field_content:
   - value: '<p>Five founders, five different opening questions, and one they all ask before anyone opens a laptop.</p>
 

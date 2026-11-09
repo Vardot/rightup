@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/typography-manual-every-junior-designer-still-reads
-    langcode: en
   field_content:
   - value: '<p>Fifty years on, a short handbook on grids is still the first thing handed to a new hire in more studios than any other book.</p>
 

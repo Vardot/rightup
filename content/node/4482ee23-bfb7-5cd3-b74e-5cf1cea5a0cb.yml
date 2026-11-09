@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/why-we-stopped-using-mood-boards
-    langcode: en
   field_content:
   - value: '<p>For years every project at Field Office opened with a mood board. Last year the studio dropped them.</p>
 

@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/rammed-earth
-      langcode: en
   field_audio:
     -
       entity: 4e1dd4f5-0bb7-45c9-b9e6-2b851894dd76

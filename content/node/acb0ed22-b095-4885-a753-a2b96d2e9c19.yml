@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/studio-garage
-      langcode: en
   field_audio:
     -
       entity: b9cb61e1-2430-467c-8fab-5a43abb73108

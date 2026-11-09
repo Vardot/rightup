@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/how-studio-okoro-built-practice-without-website
-    langcode: en
   field_content:
   - value: '<p>Studio Okoro has designed restaurants, clinics and two hotels in Lagos without a website, a portfolio PDF or a social account.</p>
 

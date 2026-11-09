@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/site-timber-tower
-      langcode: en
   field_audio:
     -
       entity: 04e2d104-e68c-4190-8914-c2b62e0d8bae

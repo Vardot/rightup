@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/museum-identity-built-from-floor-plan
-    langcode: en
   field_content:
   - value: '<p>The new identity for the Wharf Street Museum is drawn from the building''s floor plan, traced along the route most visitors take.</p>
 

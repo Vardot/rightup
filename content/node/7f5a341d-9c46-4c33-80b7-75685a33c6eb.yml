@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/brick
-      langcode: en
   field_audio:
     -
       entity: 0f79255d-7ac7-4723-976c-ae3af607fc14

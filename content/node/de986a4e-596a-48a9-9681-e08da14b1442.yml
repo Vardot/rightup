@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/should-i-specialise
-      langcode: en
   field_audio:
     -
       entity: 8d78617b-c890-4e27-b254-e15ab142de83

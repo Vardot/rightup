@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/two-people-one-hospital
-      langcode: en
   field_audio:
     -
       entity: eb665405-3418-46b7-a9ca-27053fcc7e6e

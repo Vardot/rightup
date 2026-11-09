@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/arclight-studio-unveils-new-identity-nordic-airline
-    langcode: en
   field_content:
   - value: '<p>The new mark is a single line that starts at the tail fin and does not stop until it has crossed the fuselage, the boarding pass and the coffee cup.</p>
 

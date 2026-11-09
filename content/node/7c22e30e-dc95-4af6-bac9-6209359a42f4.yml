@@ -44,7 +44,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/client-who-fired-whole-deck
-      langcode: en
   field_audio:
     -
       entity: e135f4a3-dffa-5f16-9967-33ed07b13678

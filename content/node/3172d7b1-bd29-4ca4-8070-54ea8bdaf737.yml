@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/museum-became-its-own-archive
-    langcode: en
   field_content:
   - value: '<p>With nothing left to buy, the museum turned the camera on its own storage and found a show in the inventory.</p>
 

@@ -44,7 +44,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/studio-fires-itself-every-year
-      langcode: en
   field_audio:
     -
       entity: 6b432c65-8103-5a0b-abac-d870810c8b3e

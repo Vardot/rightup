@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/when-should-i-fire-client
-      langcode: en
   field_audio:
     -
       entity: 1bfd9a54-c03b-4c42-b26e-e4323f14ccfe

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/desk-lamp-built-single-sheet-aluminium
-    langcode: en
   field_content:
   - value: '<p>Studio Ferri''s Piega lamp starts life as one flat sheet of aluminium and is folded into shape by hand.</p>
 

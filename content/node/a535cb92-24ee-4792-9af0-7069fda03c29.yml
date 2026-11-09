@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/norwegian-firm-builds-library-no-straight-shelves
-    langcode: en
   field_content:
   - value: '<p>Curved timber shelving follows the reading rooms around a central void, and there is not a right angle in the building where a book meets a wall.</p>
 

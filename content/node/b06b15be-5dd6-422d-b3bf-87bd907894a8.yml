@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/bloom-ash-kiro-tanaka-and-lea-wren-launch-new-collective
-    langcode: en
   field_content:
   - value: '<p>Three practices, one lease, and a client list they have agreed to share before they have agreed how to split it.</p>
 

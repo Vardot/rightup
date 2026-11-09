@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/hiring-employee-number-one
-      langcode: en
   field_audio:
     -
       entity: 320dda1a-ed62-4280-bbe9-5c344b3d6ee4

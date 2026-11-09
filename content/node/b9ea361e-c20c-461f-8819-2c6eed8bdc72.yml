@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/small-practice/model-shop-refuses-go-digital
-      langcode: en
   field_audio:
     -
       entity: 2f20d4f3-104d-4298-8196-470dd7748f07

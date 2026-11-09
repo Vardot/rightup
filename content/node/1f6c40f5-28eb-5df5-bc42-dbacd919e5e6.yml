@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/what-happens-sketches-after-project-ships
-    langcode: en
   field_content:
   - value: '<p>Most design studios produce far more sketches than any client sees. We asked three how they keep them.</p>
 

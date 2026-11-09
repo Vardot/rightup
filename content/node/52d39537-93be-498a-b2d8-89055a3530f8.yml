@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/why-more-studios-are-sketching-hand-again
-    langcode: en
   field_content:
   - value: '<p>The first hour of a project, in five of the studios we spoke to, now happens without a screen in the room.</p>
 

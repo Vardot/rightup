@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/cork
-      langcode: en
   field_audio:
     -
       entity: b5283f2a-13a3-4c3c-8b4f-9c49a9627e2d

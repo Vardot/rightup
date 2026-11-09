@@ -44,7 +44,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/no-straight-walls
-      langcode: en
   field_audio:
     -
       entity: 061985be-dea2-5cbd-8d12-a189b3b7d9b3

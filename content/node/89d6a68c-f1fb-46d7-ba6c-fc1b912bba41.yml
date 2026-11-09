@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/lime-plaster
-      langcode: en
   field_audio:
     -
       entity: a09fce3a-a817-4e31-b988-40556de6c5c4

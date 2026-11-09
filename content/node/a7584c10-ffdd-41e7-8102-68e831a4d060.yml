@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/long-table/clients-stage
-      langcode: en
   field_audio:
     -
       entity: 842e0bae-3842-4b12-aebd-d0a6b6b8ce11

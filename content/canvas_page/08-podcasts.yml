@@ -90,4 +90,3 @@ default:
       exposed: {}
   path:
   - alias: /podcasts
-    langcode: en

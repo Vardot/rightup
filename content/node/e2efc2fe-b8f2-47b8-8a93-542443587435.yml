@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/inside-model-archive
-      langcode: en
   field_audio:
     -
       entity: 0d2bb9c1-9684-411d-ba7d-9437e495c342

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/inside-atelier-moraes-four-person-studio-lisbon
-    langcode: en
   field_content:
   - value: '<p>Atelier Moraes works from a single room in Alfama with one long table and four chairs. The studio has turned away more work this year than it has taken on.</p>
 

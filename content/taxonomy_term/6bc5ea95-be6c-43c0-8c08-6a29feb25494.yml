@@ -25,5 +25,4 @@ default:
       value: true
   path:
     -
-      langcode: en
       alias: null

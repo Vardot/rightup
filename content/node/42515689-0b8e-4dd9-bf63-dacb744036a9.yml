@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/how-do-i-price-my-first-project
-      langcode: en
   field_audio:
     -
       entity: ea0055c1-80a4-4dd0-a970-03596d89ac35

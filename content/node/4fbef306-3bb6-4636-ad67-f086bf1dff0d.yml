@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/danish-lighting-brand-just-reissued-its-most-controversial-chair
-    langcode: en
   field_content:
   - value: '<p>It was pulled from production after a single season in 1971, and for fifty-four years the only way to sit in one was to find a collector willing to let you.</p>
 

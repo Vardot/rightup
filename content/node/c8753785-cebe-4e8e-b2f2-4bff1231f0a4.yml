@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/gallery-no-walls-only-light
-    langcode: en
   field_content:
   - value: '<p>There is nothing hanging. The room is the work, and it is different depending on where you stand in it.</p>
 

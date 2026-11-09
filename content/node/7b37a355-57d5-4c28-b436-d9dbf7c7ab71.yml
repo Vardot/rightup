@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/material-world/hemp
-      langcode: en
   field_audio:
     -
       entity: e5c81899-9508-4ac7-be7f-ec233679e9e9

@@ -27,7 +27,6 @@ default:
       value: 0
   path:
     -
-      langcode: en
       alias: null
   field_last_password_reset:
     -

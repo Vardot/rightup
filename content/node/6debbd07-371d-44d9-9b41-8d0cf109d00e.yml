@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/office-hours/what-goes-contract
-      langcode: en
   field_audio:
     -
       entity: b37bac98-c8cf-4fac-8445-96a39b9c703f

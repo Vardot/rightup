@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/field-notes/walking-unfinished-terminal
-      langcode: en
   field_audio:
     -
       entity: 099ab346-e1f6-4759-af14-753d22ab0f84

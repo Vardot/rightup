@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/seoul-studio-designing-only-public-libraries
-    langcode: en
   field_content:
   - value: '<p>Bureau Haneul has completed fourteen libraries across South Korea and has not taken a commission for anything else.</p>
 

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/inside-studio-turned-down-its-biggest-client
-    langcode: en
   field_content:
   - value: '<p>A seven-figure retainer, three years guaranteed, and a studio of eleven people who said no in a meeting that lasted twenty minutes.</p>
 

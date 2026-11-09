@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /news/concrete-institute-built-age-purpose
-    langcode: en
   field_content:
   - value: '<p>The architects call it planned patina, and they have written the maintenance manual to match.</p>
 

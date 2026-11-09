@@ -43,7 +43,6 @@ default:
   path:
     -
       alias: /podcasts/last-call/building-site-nobody-wanted
-      langcode: en
   field_audio:
     -
       entity: b1919d18-0777-488b-8370-b12a85452b9c
