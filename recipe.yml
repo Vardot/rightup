@@ -511,11 +511,15 @@ config:
     field.field.media.image.field_media_image:
       simpleConfigUpdate:
         settings.title_field: true
-    # The contact form lives in a Canvas page, where its Ajax submit gets the
-    # whole page back and shows "Oops, something went wrong". Submit normally.
+    # The contact form lives in a Canvas page. There its Ajax submit gets the
+    # whole page back and shows "Oops, something went wrong", and a redirect
+    # confirmation throws inside the component and renders as an error. Submit
+    # normally and confirm inline, in place of the form.
     webform.webform.business_contact:
       simpleConfigUpdate:
         settings.ajax: false
+        settings.confirmation_type: inline
+        settings.confirmation_message: 'Thank you for contacting us. We will get back to you soon.'
     # The header search box shows the placeholder as its only prompt, so it
     # carries the header design's wording instead of the Drupal CMS Search
     # default. Set here rather than by patching that third-party recipe.
