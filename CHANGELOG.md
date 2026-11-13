@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- HTML emails use The Rightup theme's PNG email logo (`logo-email.png`) instead of the SVG site
+  logo, which many email clients do not show (#3637905).
 
 ## [1.0.8] - 2026-11-01
 ### Changed
