@@ -31,6 +31,107 @@ install:
 config:
   strict: false
   actions:
+    # Canvas makes a component for every block as soon as the block exists, and
+    # labels it in the install language, so on a non-English install a component
+    # Canvas made before this recipe has another version than the English one
+    # the templates and the header region below pin. Keep the English version
+    # beside it as an older version. Only blocks whose label is translated.
+    canvas.component.block.system_branding_block:
+      simpleConfigUpdate:
+        versioned_properties.7d528e00f56b3abf:
+          settings:
+            default_settings:
+              id: system_branding_block
+              label: Site branding
+              label_display: '0'
+              provider: system
+              use_site_logo: true
+              use_site_name: true
+              use_site_slogan: true
+          fallback_metadata:
+            slot_definitions: null
+    canvas.component.block.system_breadcrumb_block:
+      simpleConfigUpdate:
+        versioned_properties.0d7e961dd03aa710:
+          settings:
+            default_settings:
+              id: system_breadcrumb_block
+              label: Breadcrumbs
+              label_display: '0'
+              provider: system
+          fallback_metadata:
+            slot_definitions: null
+    canvas.component.block.webform_block:
+      simpleConfigUpdate:
+        versioned_properties.b5dca6ca0519bf1b:
+          settings:
+            default_settings:
+              id: webform_block
+              label: Webform
+              label_display: '0'
+              provider: webform
+              webform_id: ''
+              default_data: ''
+              redirect: false
+              lazy: false
+          fallback_metadata:
+            slot_definitions: null
+    canvas.component.block.views_block.news-latest:
+      simpleConfigUpdate:
+        versioned_properties.6815ab2dcfe29656:
+          settings:
+            default_settings:
+              id: 'views_block:news-latest'
+              label: 'News: Latest news posts'
+              label_display: '0'
+              provider: views
+              views_label: ''
+              items_per_page: null
+              exposed: {  }
+          fallback_metadata:
+            slot_definitions: null
+    canvas.component.block.views_block.podcast_episodes-by_podcast:
+      simpleConfigUpdate:
+        versioned_properties.5896723e32df506f:
+          settings:
+            default_settings:
+              id: 'views_block:podcast_episodes-by_podcast'
+              label: 'Podcast episodes: episodes of this podcast'
+              label_display: '0'
+              provider: views
+              views_label: ''
+              items_per_page: null
+              exposed: {  }
+          fallback_metadata:
+            slot_definitions: null
+    canvas.component.block.views_block.podcast_episodes-count_by_podcast:
+      simpleConfigUpdate:
+        versioned_properties.573b7f68699a04e1:
+          settings:
+            default_settings:
+              id: 'views_block:podcast_episodes-count_by_podcast'
+              label: 'Podcast episodes: episode count of this podcast'
+              label_display: '0'
+              provider: views
+              views_label: ''
+              items_per_page: null
+              exposed: {  }
+          fallback_metadata:
+            slot_definitions: null
+    canvas.component.block.views_block.podcasts-more:
+      simpleConfigUpdate:
+        versioned_properties.fa919fed33225238:
+          settings:
+            default_settings:
+              id: 'views_block:podcasts-more'
+              label: 'Podcasts: more podcasts'
+              label_display: '0'
+              provider: views
+              views_label: ''
+              items_per_page: null
+              exposed: {  }
+          fallback_metadata:
+            slot_definitions: null
     canvas.content_template.node.podcast.full:
       simpleConfigUpdate:
         component_tree:
@@ -1835,6 +1936,19 @@ config:
         provider: views
         source: block
         source_local_id: views_exposed_filter_block:search-header_search
+      # Canvas may have made it already when header_search appeared, labelled
+      # in the install language: keep the English version, as at the top.
+      simpleConfigUpdate:
+        versioned_properties.7bcf8ab13aa5d5d0:
+          settings:
+            default_settings:
+              id: views_exposed_filter_block:search-header_search
+              label: 'Exposed form: search-header_search'
+              label_display: '0'
+              provider: views
+              views_label: ''
+          fallback_metadata:
+            slot_definitions: null
     canvas.component.block.facet_block.search_category:
       createIfNotExists:
         status: true
