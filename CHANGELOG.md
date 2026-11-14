@@ -6,14 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.9] - 2026-11-14
 ### Fixed
+- The home page is found when the site's default language is not English (#3636517).
+- The contact form confirms inline, in place of the form, so submitting it no longer shows an
+  error (#3636517).
 - Installing in a language other than English no longer stops with "is not a version that exists
   on component config entity": the recipe keeps the English version of each block component it
   pins, beside the one Canvas made in the install language (#3636517).
 
 ### Changed
 - HTML emails use The Rightup theme's PNG email logo (`logo-email.png`) instead of the SVG site
-  logo, which many email clients do not show (#3637905).
+  logo, which many email clients do not show. Needs Vartheme BS5 Rightup 1.0.9 or later
+  (#3637905).
+- The test tooling requires Node.js 24 or later and Yarn 4.18.1, and the CI Node jobs run on
+  `node:24` (#3635695).
 
 ## [1.0.8] - 2026-11-01
 ### Changed
