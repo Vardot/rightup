@@ -109,7 +109,7 @@ workflow:
 # = Reusable before_script fragments =
 .fragments:
   # The Playwright image is Ubuntu noble (PHP 8.3 default); add ondrej/php for
-  # PHP 8.4, then PHP + Composer + ImageMagick/WebP + a MySQL client. Needed by
+  # PHP 8.5, then PHP + Composer + ImageMagick/WebP + a MySQL client. Needed by
   # the Install job (build + drush) and by every test job (drush restore/serve).
   host_php_setup:
     - export DEBIAN_FRONTEND=noninteractive
@@ -117,7 +117,7 @@ workflow:
     - apt-get install -y --no-install-recommends software-properties-common ca-certificates curl gnupg lsb-release
     - add-apt-repository -y ppa:ondrej/php
     - apt-get update -y
-    - apt-get install -y --no-install-recommends php8.4-cli php8.4-mysql php8.4-gd php8.4-curl php8.4-xml php8.4-mbstring php8.4-zip php8.4-intl unzip git default-mysql-client webp imagemagick libmagickcore-6.q16-6-extra
+    - apt-get install -y --no-install-recommends php8.5-cli php8.5-mysql php8.5-gd php8.5-curl php8.5-xml php8.5-mbstring php8.5-zip php8.5-intl unzip git default-mysql-client webp imagemagick libmagickcore-6.q16-6-extra
     - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
     - corepack enable || true
     - composer --version && php --version
