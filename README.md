@@ -35,6 +35,20 @@ This recipe bundles:
 
 Install via Drupal Recipe Installer Kit. After installation, you'll be redirected to `/admin/dashboard/welcome`.
 
+## Brand kit
+
+Change the site's colours in Canvas, **Brand kit**. The kit's colours are Bootstrap 5.3's own
+colour variables (Primary is `--bs-primary`, Body text is `--bs-body-color`, Link is
+`--bs-link-color`, and so on, plus Bootstrap's named colours `--bs-blue` to `--bs-gray-dark`),
+starting at the theme's values. The theme reads them directly,
+and the recipe's global CSS derives the rest from them (tints, button states, utilities, focus
+rings), so buttons, links, coloured bands and tints follow. Content editors and content admins
+can edit the kit.
+
+Canvas counts only code components under "components affected", so it shows 0; the change still
+applies to the whole site. Parts the theme draws in fixed colours (for example the Tertiary and
+Accent design colours, which are not Bootstrap colours) keep them.
+
 ## Add Varbase AI
 
 Apply Varbase AI Base. Its Varbase AI Taxonomy Tagging tags Page by default. To tag News as well,

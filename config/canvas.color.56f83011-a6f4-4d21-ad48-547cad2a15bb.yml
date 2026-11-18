@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 56f83011-a6f4-4d21-ad48-547cad2a15bb
+name: 'Danger'
+cssVariable: '--bs-danger'
+value:
+  colorSpace: srgb
+  components:
+    - 0.862745
+    - 0.207843
+    - 0.270588
+  alpha: null
+  hex: '#dc3545'
+displayFormat: hex
+weight: 5

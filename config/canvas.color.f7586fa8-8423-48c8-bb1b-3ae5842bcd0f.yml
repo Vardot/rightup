@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: f7586fa8-8423-48c8-bb1b-3ae5842bcd0f
+name: 'Code'
+cssVariable: '--bs-code-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.839216
+    - 0.2
+    - 0.517647
+  alpha: null
+  hex: '#d63384'
+displayFormat: hex
+weight: 19

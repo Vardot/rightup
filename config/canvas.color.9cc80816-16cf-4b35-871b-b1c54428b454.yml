@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 9cc80816-16cf-4b35-871b-b1c54428b454
+name: 'Body text'
+cssVariable: '--bs-body-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.141176
+    - 0.141176
+    - 0.141176
+  alpha: null
+  hex: '#242424'
+displayFormat: hex
+weight: 8

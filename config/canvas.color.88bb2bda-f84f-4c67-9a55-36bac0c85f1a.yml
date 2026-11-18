@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 88bb2bda-f84f-4c67-9a55-36bac0c85f1a
+name: 'Info'
+cssVariable: '--bs-info'
+value:
+  colorSpace: srgb
+  components:
+    - 0.05098
+    - 0.792157
+    - 0.941176
+  alpha: null
+  hex: '#0dcaf0'
+displayFormat: hex
+weight: 3

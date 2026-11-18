@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 0c55f273-cb6a-4f9f-b67a-5f6acd252e75
+name: 'Green'
+cssVariable: '--bs-green'
+value:
+  colorSpace: srgb
+  components:
+    - 0.098039
+    - 0.529412
+    - 0.329412
+  alpha: null
+  hex: '#198754'
+displayFormat: hex
+weight: 29

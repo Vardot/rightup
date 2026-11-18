@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 23427333-4d13-496c-b376-6ece1b724d6e
+name: 'Warning'
+cssVariable: '--bs-warning'
+value:
+  colorSpace: srgb
+  components:
+    - 1.0
+    - 0.756863
+    - 0.027451
+  alpha: null
+  hex: '#ffc107'
+displayFormat: hex
+weight: 4

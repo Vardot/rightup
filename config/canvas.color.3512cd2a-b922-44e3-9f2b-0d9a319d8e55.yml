@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 3512cd2a-b922-44e3-9f2b-0d9a319d8e55
+name: 'Purple'
+cssVariable: '--bs-purple'
+value:
+  colorSpace: srgb
+  components:
+    - 0.435294
+    - 0.258824
+    - 0.756863
+  alpha: null
+  hex: '#6f42c1'
+displayFormat: hex
+weight: 24

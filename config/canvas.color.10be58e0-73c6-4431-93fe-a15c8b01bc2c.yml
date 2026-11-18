@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 10be58e0-73c6-4431-93fe-a15c8b01bc2c
+name: 'Black'
+cssVariable: '--bs-black'
+value:
+  colorSpace: srgb
+  components:
+    - 0.0
+    - 0.0
+    - 0.0
+  alpha: null
+  hex: '#000000'
+displayFormat: hex
+weight: 33

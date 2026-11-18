@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 5fad3aa3-25d3-4356-8ce2-d00ed161a4c3
+name: 'Tertiary background'
+cssVariable: '--bs-tertiary-bg'
+value:
+  colorSpace: srgb
+  components:
+    - 0.129412
+    - 0.145098
+    - 0.160784
+  alpha: null
+  hex: '#212529'
+displayFormat: hex
+weight: 14

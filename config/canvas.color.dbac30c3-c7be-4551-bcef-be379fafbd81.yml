@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: dbac30c3-c7be-4551-bcef-be379fafbd81
+name: 'Link'
+cssVariable: '--bs-link-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.0
+    - 0.0
+    - 0.0
+  alpha: null
+  hex: '#000000'
+displayFormat: hex
+weight: 16
