@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   variables at the theme's values, global CSS derives tints, button states and utilities from
   them, and content editors and content admins get the "administer brand kit" permission
   (#3638673).
+### Fixed
+- Move the Privacy Notice page from `/privacy-notice` to `/privacy-policy`, where the contact
+  form consent link points, repoint the footer link, and add a draft-for-demo warning that tells
+  editors to replace it with the site's own privacy statement before launch (#3639419).
 
 ## [1.0.9] - 2026-11-14
 ### Fixed

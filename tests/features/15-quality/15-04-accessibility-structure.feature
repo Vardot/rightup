@@ -33,7 +33,7 @@ Feature: Quality - Accessibility structure
       | about us          | /about-us                                                       |
       | advertise         | /advertise                                                      |
       | contact us        | /contact-us                                                     |
-      | privacy notice    | /privacy-notice                                                 |
+      | privacy notice    | /privacy-policy                                                 |
       | search            | /search                                                         |
       | terms of use      | /terms-of-use                                                   |
       | accessibility     | /accessibility                                                  |
@@ -68,7 +68,7 @@ Feature: Quality - Accessibility structure
       | about us          | /about-us                                                       |
       | advertise         | /advertise                                                      |
       | contact us        | /contact-us                                                     |
-      | privacy notice    | /privacy-notice                                                 |
+      | privacy notice    | /privacy-policy                                                 |
       | search            | /search                                                         |
       | terms of use      | /terms-of-use                                                   |
       | accessibility     | /accessibility                                                  |

@@ -33,7 +33,7 @@ Feature: Website Base Requirements - Front-end pages
       | About Us     | /about-us           |
       | Contact Us   | /contact-us         |
       | Advertise    | /advertise          |
-      | Privacy Notice | /privacy-notice   |
+      | Privacy Notice | /privacy-policy   |
       | Terms of Use | /terms-of-use       |
       | Accessibility | /accessibility     |
 

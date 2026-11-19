@@ -26,7 +26,7 @@ Feature: Quality - Accessibility (a11y)
       | about us          | /about-us                                                       |
       | advertise         | /advertise                                                      |
       | contact us        | /contact-us                                                     |
-      | privacy notice    | /privacy-notice                                                 |
+      | privacy notice    | /privacy-policy                                                 |
       | search            | /search                                                         |
       | terms of use      | /terms-of-use                                                   |
       | accessibility     | /accessibility                                                  |
