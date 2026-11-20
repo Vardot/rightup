@@ -39,7 +39,7 @@ component_tree:
       section_header: false
       section_footer: false
       aos_once: true
-    label: null
+    label: Section
   dd0b7632-e33a-4cec-8882-8969355dac0b:
     parent_uuid: 667bdc46-7746-4749-8fff-590df86dfef3
     slot: col_1
@@ -53,7 +53,7 @@ component_tree:
       show_indicators: true
       show_controls: true
       controller_color: white
-    label: null
+    label: 'Hero Slider (Container)'
   fb300bf2-391e-47fc-965c-d037980a36a0:
     parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
     slot: slides
@@ -74,7 +74,7 @@ component_tree:
       overlay_bg: none
       button_text: 'Read the News'
       button_url: /about-us
-    label: null
+    label: 'Hero Slide'
   c3feefad-fcdc-4c1a-829e-235d58291003:
     parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
     slot: slides
@@ -95,7 +95,7 @@ component_tree:
       overlay_bg: none
       button_text: 'About Us'
       button_url: /about-us
-    label: null
+    label: 'Hero Slide'
   d69b3e17-4c9a-4fe1-87cd-7de4f846d71d:
     parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
     slot: slides
@@ -116,7 +116,7 @@ component_tree:
       overlay_bg: none
       button_text: 'Browse the Sections'
       button_url: /features
-    label: null
+    label: 'Hero Slide'
   035c2ad1-4dad-4517-a333-51234879c65e:
     parent_uuid: dd0b7632-e33a-4cec-8882-8969355dac0b
     slot: slides
@@ -137,4 +137,4 @@ component_tree:
       overlay_bg: none
       button_text: 'Contact us'
       button_url: /contact-us
-    label: null
+    label: 'Hero Slide'

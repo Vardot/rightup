@@ -28,7 +28,7 @@ component_tree:
       section_header: false
       section_footer: false
       aos_once: false
-    label: null
+    label: Section
   104c62e6-e984-4695-b62f-30209c443092:
     parent_uuid: 3c12918d-a55c-4a09-aba9-15324a6681e1
     slot: col_1
@@ -39,7 +39,7 @@ component_tree:
       gap: gap-1
       align_items: align-items-center
       aos_once: false
-    label: null
+    label: Group
   ac5eb124-b731-47cf-8595-8c2cdf78f978:
     parent_uuid: 104c62e6-e984-4695-b62f-30209c443092
     slot: content
@@ -51,7 +51,7 @@ component_tree:
       level: 3
       text_size: display-1
       text_color: text-dark
-    label: null
+    label: Heading
   856d0fa4-652e-4823-ae24-b9440663cb64:
     parent_uuid: 104c62e6-e984-4695-b62f-30209c443092
     slot: content
@@ -64,7 +64,7 @@ component_tree:
         format: canvas_html_block
       text_size: fs-6
       text_color: text-dark
-    label: null
+    label: Text
   a78ad87e-2248-4543-a2cf-34dd327b6e3c:
     parent_uuid: 3c12918d-a55c-4a09-aba9-15324a6681e1
     slot: col_2
@@ -75,7 +75,7 @@ component_tree:
       gap: gap-1
       align_items: align-items-center
       aos_once: false
-    label: null
+    label: Group
   278695e6-effa-453e-b98f-51f06711512a:
     parent_uuid: a78ad87e-2248-4543-a2cf-34dd327b6e3c
     slot: content
@@ -86,7 +86,7 @@ component_tree:
       heading_text: 200+
       level: 3
       text_size: display-1
-    label: null
+    label: Heading
   28dde5fb-9860-4458-b4a2-197350d38fd4:
     parent_uuid: a78ad87e-2248-4543-a2cf-34dd327b6e3c
     slot: content
@@ -98,7 +98,7 @@ component_tree:
         value: '<p>Studios interviewed</p>'
         format: canvas_html_block
       text_size: fs-6
-    label: null
+    label: Text
   898be8e4-fd28-4d57-b32e-fd8c3c686a21:
     parent_uuid: 3c12918d-a55c-4a09-aba9-15324a6681e1
     slot: col_3
@@ -109,7 +109,7 @@ component_tree:
       gap: gap-1
       align_items: align-items-center
       aos_once: false
-    label: null
+    label: Group
   8b4997e0-dac5-4dc3-87b5-fc2e573f39d4:
     parent_uuid: 898be8e4-fd28-4d57-b32e-fd8c3c686a21
     slot: content
@@ -120,7 +120,7 @@ component_tree:
       heading_text: 10+
       level: 3
       text_size: display-1
-    label: null
+    label: Heading
   f8a5bf84-1e73-4f3a-b0a1-7544e94f3774:
     parent_uuid: 898be8e4-fd28-4d57-b32e-fd8c3c686a21
     slot: content
@@ -132,4 +132,4 @@ component_tree:
         value: '<p>Years building Drupal</p>'
         format: canvas_html_block
       text_size: fs-6
-    label: null
+    label: Text

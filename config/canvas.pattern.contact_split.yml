@@ -29,7 +29,7 @@ component_tree:
       section_header: false
       section_footer: false
       aos_once: false
-    label: null
+    label: Section
   56995c7f-6523-4ef7-af34-246d05eed027:
     parent_uuid: 179b3860-636c-4074-a550-fd021ff11904
     slot: col_1
@@ -39,7 +39,7 @@ component_tree:
     inputs:
       heading_text: Ask us about anything
       level: 2
-    label: null
+    label: Heading
   e7706d44-4876-4238-9ba5-f16ffb96a42c:
     parent_uuid: 179b3860-636c-4074-a550-fd021ff11904
     slot: col_1
@@ -53,7 +53,7 @@ component_tree:
       default_data: ''
       redirect: false
       lazy: false
-    label: null
+    label: Webform
   480e9841-537f-4933-802a-0f812955e215:
     parent_uuid: 179b3860-636c-4074-a550-fd021ff11904
     slot: col_2
@@ -69,7 +69,7 @@ component_tree:
       padding_inline_end: pe-5
       radius: rounded-2
       aos_once: true
-    label: null
+    label: Group
   06914e88-8bb5-4caa-9676-234439736ca6:
     parent_uuid: 480e9841-537f-4933-802a-0f812955e215
     slot: content
@@ -79,7 +79,7 @@ component_tree:
     inputs:
       heading_text: Contact Information
       level: 3
-    label: null
+    label: Heading
   b7cbfce3-2dc7-4c9c-8a42-37a1096ac719:
     parent_uuid: 480e9841-537f-4933-802a-0f812955e215
     slot: content
@@ -92,7 +92,7 @@ component_tree:
         format: canvas_html_block
       text_size: none
       text_color: text-body
-    label: null
+    label: Text
   4f2f1f61-c420-4729-a13d-570c7b0da587:
     parent_uuid: 480e9841-537f-4933-802a-0f812955e215
     slot: content
@@ -100,4 +100,4 @@ component_tree:
     component_id: sdc.vartheme_bs5_rightup.spacer
     component_version: 80de1b3919d08f87
     inputs: {}
-    label: null
+    label: Spacer

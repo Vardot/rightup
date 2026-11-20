@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Move the Privacy Notice page from `/privacy-notice` to `/privacy-policy`, where the contact
   form consent link points, repoint the footer link, and add a draft-for-demo warning that tells
   editors to replace it with the site's own privacy statement before launch (#3639419).
+- Fresh installs no longer report invalid items under Canvas data health. Each component in the
+  shipped patterns has a label (Canvas 1.13 rejects `label: null`), and the recipe no longer ships
+  the Navbar Component config, which Canvas disables (the theme's Navbar has an empty value in its
+  Placement options) and so could never bring up to date (#3639420).
 
 ## [1.0.9] - 2026-11-14
 ### Fixed

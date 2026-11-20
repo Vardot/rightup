@@ -29,7 +29,7 @@ component_tree:
       vertical_alignment: align-items-stretch
       section_header: true
       section_footer: false
-    label: null
+    label: Section
   a9167d87-1921-432e-bdc8-6f018d5d5773:
     parent_uuid: aa4cd243-a564-405d-83fb-27454c5db46f
     slot: header_slot
@@ -40,7 +40,7 @@ component_tree:
       heading_text: Explore More
       level: 2
       align: text-center
-    label: null
+    label: Heading
   db674ad5-a689-4ba3-998e-7910698261c0:
     parent_uuid: aa4cd243-a564-405d-83fb-27454c5db46f
     slot: col_1
@@ -54,7 +54,7 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-    label: null
+    label: 'Text Card'
   77efcf07-6f26-48f6-bc57-1bf4ff871796:
     parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
     slot: content
@@ -64,7 +64,7 @@ component_tree:
     inputs:
       heading_text: About Us
       level: 3
-    label: null
+    label: Heading
   b919a0f1-671c-418e-b2a7-8bcd01bf2073:
     parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
     slot: content
@@ -77,7 +77,7 @@ component_tree:
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
-    label: null
+    label: Text
   6059c74a-d85c-4b0f-b537-91f3998a3988:
     parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
     slot: content
@@ -86,7 +86,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-4
-    label: null
+    label: Spacer
   7f65fa7d-17f4-4064-bcde-abdf26e8e75c:
     parent_uuid: db674ad5-a689-4ba3-998e-7910698261c0
     slot: content
@@ -107,7 +107,7 @@ component_tree:
       alignment: left
       full_width: false
       radius: rounded
-    label: null
+    label: Button
   ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4:
     parent_uuid: aa4cd243-a564-405d-83fb-27454c5db46f
     slot: col_2
@@ -121,7 +121,7 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-    label: null
+    label: 'Text Card'
   170cb322-ecb7-470b-91e0-8cefdef99932:
     parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
     slot: content
@@ -131,7 +131,7 @@ component_tree:
     inputs:
       heading_text: News
       level: 3
-    label: null
+    label: Heading
   b297c995-fd0f-473b-830c-67c167b56a60:
     parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
     slot: content
@@ -144,7 +144,7 @@ component_tree:
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
-    label: null
+    label: Text
   e2f96d54-fe49-443d-ac5a-e9fa19569cb3:
     parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
     slot: content
@@ -153,7 +153,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-4
-    label: null
+    label: Spacer
   5ce80e8c-39e3-4946-9aae-e60156b93ab7:
     parent_uuid: ca76a503-e3fd-4fc8-bf54-8eb7f7b592d4
     slot: content
@@ -174,4 +174,4 @@ component_tree:
       alignment: left
       full_width: false
       radius: rounded
-    label: null
+    label: Button

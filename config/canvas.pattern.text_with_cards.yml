@@ -44,7 +44,7 @@ component_tree:
       section_header: false
       section_footer: false
       aos_once: false
-    label: null
+    label: Section
   47e8a75d-01c0-4aa3-9f20-bdb2004add5b:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: header_slot
@@ -54,7 +54,7 @@ component_tree:
     inputs:
       heading_text: 'Everything you need to build'
       level: 2
-    label: null
+    label: Heading
   42e2f7f2-cd8a-494b-b49c-96d78e31590b:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: col_1
@@ -63,7 +63,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-2
-    label: null
+    label: Spacer
   67ed0375-7a50-41b5-a538-14d3e0d3b657:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: col_1
@@ -73,7 +73,7 @@ component_tree:
     inputs:
       heading_text: 'Built for design reporting'
       level: 2
-    label: null
+    label: Heading
   e64b4e3a-de12-42bb-bf2d-d59305ca6c17:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: col_1
@@ -85,7 +85,7 @@ component_tree:
         value: '<p>Reporting on the studios, buildings and products being made right now.</p>'
         format: canvas_html_block
       text_color: text-subtle-text
-    label: null
+    label: Text
   8bf7a563-fd52-416c-b0e5-27afd9ce7b28:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: col_1
@@ -106,7 +106,7 @@ component_tree:
       icon_first: false
       full_width: false
       radius: rounded-1
-    label: null
+    label: Button
   3b9cc2ec-a59f-4b39-a72c-4c6a6651d952:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: col_2
@@ -122,7 +122,7 @@ component_tree:
       stretched_link: false
       icon_image:
         target_id: '15'
-    label: null
+    label: 'Text Card'
   da049ffb-e053-422e-ad8e-badbc4329123:
     parent_uuid: 3b9cc2ec-a59f-4b39-a72c-4c6a6651d952
     slot: content
@@ -131,7 +131,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-4
-    label: null
+    label: Spacer
   c34c5f68-f376-482f-9b26-9dbe7c7084fc:
     parent_uuid: 3b9cc2ec-a59f-4b39-a72c-4c6a6651d952
     slot: content
@@ -141,7 +141,7 @@ component_tree:
     inputs:
       heading_text: 'Studio Profiles'
       level: 3
-    label: null
+    label: Heading
   ea069e59-6d89-44ed-a0ce-f09725d0f469:
     parent_uuid: 3b9cc2ec-a59f-4b39-a72c-4c6a6651d952
     slot: content
@@ -150,7 +150,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-1
-    label: null
+    label: Spacer
   1b77dae0-dd4d-4ff7-b46d-9ffeda889428:
     parent_uuid: 3b9cc2ec-a59f-4b39-a72c-4c6a6651d952
     slot: content
@@ -163,7 +163,7 @@ component_tree:
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
-    label: null
+    label: Text
   261234b6-9e4e-437a-a4c1-a3f3e8c6321e:
     parent_uuid: 63f0b4b0-6dc1-4e8a-9066-811bdaea07bd
     slot: col_3
@@ -179,7 +179,7 @@ component_tree:
       stretched_link: false
       icon_image:
         target_id: '18'
-    label: null
+    label: 'Text Card'
   9ab19436-004e-4303-b548-c5b3e5d1040c:
     parent_uuid: 261234b6-9e4e-437a-a4c1-a3f3e8c6321e
     slot: content
@@ -188,7 +188,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-4
-    label: null
+    label: Spacer
   c636b7cd-d964-45a8-ac12-9106dd25021c:
     parent_uuid: 261234b6-9e4e-437a-a4c1-a3f3e8c6321e
     slot: content
@@ -198,7 +198,7 @@ component_tree:
     inputs:
       heading_text: 'Weekly Podcast'
       level: 3
-    label: null
+    label: Heading
   37ad87b7-9467-4cda-a394-1377a61c479e:
     parent_uuid: 261234b6-9e4e-437a-a4c1-a3f3e8c6321e
     slot: content
@@ -207,7 +207,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-1
-    label: null
+    label: Spacer
   f17ad3a9-4d31-4a15-aff3-cbb58c71f18c:
     parent_uuid: 261234b6-9e4e-437a-a4c1-a3f3e8c6321e
     slot: content
@@ -220,4 +220,4 @@ component_tree:
         format: canvas_html_block
       text_size: fs-6
       text_color: text-subtle-text
-    label: null
+    label: Text

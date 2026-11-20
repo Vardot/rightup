@@ -41,7 +41,7 @@ component_tree:
       radius: rounded-2
       media:
         target_id: '27'
-    label: null
+    label: 'Media banner'
   565d2149-dce3-431f-8b77-42c1750652fe:
     parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
     slot: media_banner_slot
@@ -51,7 +51,7 @@ component_tree:
     inputs:
       label: Breadcrumbs
       label_display: '0'
-    label: null
+    label: Breadcrumbs
   f2d5849a-6b0b-4c87-bbc7-23cb31901d0f:
     parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
     slot: media_banner_slot
@@ -60,7 +60,7 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-4
-    label: null
+    label: Spacer
   39f7a34d-2f1a-4a6a-b07b-a11a9bae9515:
     parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
     slot: media_banner_slot
@@ -71,7 +71,7 @@ component_tree:
       heading_text: 'Contact Us'
       level: 1
       text_color: text-white
-    label: null
+    label: Heading
   580545d1-a1fc-4ee7-8554-0f9df9762761:
     parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
     slot: media_banner_slot
@@ -84,7 +84,7 @@ component_tree:
         format: canvas_html_block
       text_size: none
       text_color: text-white
-    label: null
+    label: Text
   c4385d4a-76af-44e9-be44-279eae3ef516:
     parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff
     slot: media_banner_slot
@@ -93,4 +93,4 @@ component_tree:
     component_version: 80de1b3919d08f87
     inputs:
       size: py-4
-    label: null
+    label: Spacer
