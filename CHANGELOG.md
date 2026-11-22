@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   shipped patterns has a label (Canvas 1.13 rejects `label: null`), and the recipe no longer ships
   the Navbar Component config, which Canvas disables (the theme's Navbar has an empty value in its
   Placement options) and so could never bring up to date (#3639420).
+- Canvas data health no longer reports the Hero Slide component as invalid on a fresh install. The
+  recipe stops shipping its Component config, whose default text had been edited without a new
+  version, so Canvas builds it from the theme (#RB03).
 
 ## [1.0.9] - 2026-11-14
 ### Fixed
