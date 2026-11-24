@@ -50,6 +50,8 @@ variables:
   COMPOSER_CACHE_DIR: "${CI_PROJECT_DIR}/.cache/composer"
   PLAYWRIGHT_BROWSERS_PATH: "${CI_PROJECT_DIR}/.cache/ms-playwright"
   DRUPAL_CMS_TELEMETRY: "0"
+  # Proof only: "1" makes amazee.ai unreachable, so the Echo fallback runs.
+  AMAZEE_UNREACHABLE: ""
 
 workflow:
   rules:
@@ -473,6 +475,7 @@ workflow:
     # abort on config actions that need a live AI provider, which the firewalled
     # runner does not have. Each failure is reported and summarised so the log
     # distinguishes a clean apply from an aborted one.
+    - if [ -n "$AMAZEE_UNREACHABLE" ]; then echo "127.0.0.1 api.amazee.ai" >> /etc/hosts; fi
     - |
       APPLY_FAILED=""
       for R in varbase_i18n_base varbase_api_base varbase_auth_base \
@@ -501,6 +504,13 @@ workflow:
     # The AI safety/taxonomy sub-recipes abort on config actions that need a live
     # AI provider (unavailable in CI), so enable their modules explicitly.
     - ./vendor/bin/drush pm:enable ai_logging ai_observability ai_automators -y || true
+    # amazee.ai through Drupal CMS AI, or the Echo test provider when amazee.ai
+    # cannot be reached (see tests/README.md, "AI provider").
+    - |
+      export DRUSH=./vendor/bin/drush DR=./vendor/bin/dr SETTINGS_PHP="$WEB_ROOT/sites/default/settings.php"
+      export DRUPAL_CMS_AI="$(composer info drupal/drupal_cms_ai --path | awk '{print $2}')"
+      export AI_RECIPES="$(for R in varbase_ai_base varbase_ai_context varbase_ai_safety; do composer info "drupal/$R" --path | awk '{print $2}'; done | tr '\n' ' ')"
+    - . "$CI_PROJECT_DIR/tests/scripts/ai-provider.sh"
     # Strip the ai_ckeditor button/plugin from every editor: rendering its
     # settings subform performs a live AI-provider lookup that hangs on the
     # firewalled runner and times out the text-format page. Carried over from the
