@@ -34,7 +34,7 @@ Feature: Website Base Requirements - Front-end pages
       | Contact Us   | /contact-us         |
       | Advertise    | /advertise          |
       | Privacy Notice | /privacy-policy   |
-      | Terms of Use | /terms-of-use       |
+      | Terms of Use | /terms-and-conditions |
       | Accessibility | /accessibility     |
 
     Examples: Listing pages

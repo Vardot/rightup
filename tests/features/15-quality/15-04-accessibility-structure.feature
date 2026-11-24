@@ -35,7 +35,7 @@ Feature: Quality - Accessibility structure
       | contact us        | /contact-us                                                     |
       | privacy notice    | /privacy-policy                                                 |
       | search            | /search                                                         |
-      | terms of use      | /terms-of-use                                                   |
+      | terms of use      | /terms-and-conditions                                           |
       | accessibility     | /accessibility                                                  |
       | news listing      | /news                                                           |
       | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |
@@ -70,7 +70,7 @@ Feature: Quality - Accessibility structure
       | contact us        | /contact-us                                                     |
       | privacy notice    | /privacy-policy                                                 |
       | search            | /search                                                         |
-      | terms of use      | /terms-of-use                                                   |
+      | terms of use      | /terms-and-conditions                                           |
       | accessibility     | /accessibility                                                  |
       | news listing      | /news                                                           |
       | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |

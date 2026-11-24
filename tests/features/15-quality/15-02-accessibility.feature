@@ -28,7 +28,7 @@ Feature: Quality - Accessibility (a11y)
       | contact us        | /contact-us                                                     |
       | privacy notice    | /privacy-policy                                                 |
       | search            | /search                                                         |
-      | terms of use      | /terms-of-use                                                   |
+      | terms of use      | /terms-and-conditions                                           |
       | accessibility     | /accessibility                                                  |
       | news listing      | /news                                                           |
       | news article      | /news/architecture-unease-how-brutalism-became-beautiful-again  |

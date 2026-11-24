@@ -12,7 +12,7 @@ default:
   menu_name:
   - value: footer
   link:
-  - uri: 'internal:/terms-of-use'
+  - uri: 'internal:/terms-and-conditions'
     title: ''
     options: {}
   external:
