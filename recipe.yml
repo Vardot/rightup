@@ -1934,8 +1934,10 @@ config:
             .form-range.form-range::-webkit-slider-thumb:active, .form-range.form-range::-moz-range-thumb:active { background-color: color-mix(in srgb, var(--bs-primary) 30%, #fff); }
             .form-range.form-range:focus::-webkit-slider-thumb, .form-range.form-range:focus::-moz-range-thumb { box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--bs-focus-ring-color); }
           compiled: *rightup_brand_kit_css
-    # Every article carries a byline that links to its author, so a visitor has
-    # to be able to open an author page.
+    # Every article byline shows its author's name, which Canvas reads from the
+    # user account, so visitors need "access user profiles". The ECA model
+    # rightup_author_pages_404 still answers 404 to visitors on /user/N, and on
+    # /author/N for an account with no published article.
     # Every article carries a category eyebrow, and the search results page
     # binds it straight from the term. Canvas resolves a term reference through
     # BOTH of these permissions — without the second it returns NULL and every

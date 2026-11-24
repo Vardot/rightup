@@ -26,6 +26,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   own demo images on every install. They reference the images by UUID instead of by numeric ID,
   which pointed at audio items on an installed site. Feature Cards and Text with Cards no longer
   carry icons that do not exist in The Rightup (#3639423).
+- Visitors no longer see an account page for every user. `/user/N` answers 404 to visitors, as
+  `/author/N` does for an account with no published article; article bylines keep showing the
+  author's name (#3639424).
 
 ## [1.0.9] - 2026-11-14
 ### Fixed
