@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.10] - 2026-11-24
 ### Added
 - A Drupal Canvas brand kit that restyles the whole site: its colours are the Bootstrap 5.3 colour
   variables at the theme's values, global CSS derives tints, button states and utilities from
@@ -32,6 +34,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Move the Terms of Use page from `/terms-of-use` to `/terms-and-conditions`, where the contact
   form consent link points, repoint the footer link, and add the same draft-for-demo warning.
   The link opened "Page not found" (#3639422).
+
+### Changed
+- The CI pipeline runs on PHP 8.5, the default PHP version for The Rightup (#3638910).
 
 ## [1.0.9] - 2026-11-14
 ### Fixed
