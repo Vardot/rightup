@@ -12,14 +12,14 @@ dependencies:
     - media.type.image
     - media.type.svg_image
   content:
-    - 'file:file:2d85a3ba-b9fb-42f4-bb02-3e4662b5e4ff'
-    - 'file:file:9f9cf049-c0d9-4596-9a17-a43e6ba81bfb'
-    - 'file:file:a9465d07-8e21-4374-b5f6-683e787d1388'
-    - 'file:file:ef46d5fb-c867-4451-8a2a-9f35a94b50a5'
-    - 'media:image:54f43ead-20b5-4c46-9e39-4a9e38a43e43'
-    - 'media:image:59d9ce37-b406-4b0d-8f7c-6002f3447554'
-    - 'media:image:8aa9c55f-602b-482a-b834-a94f06768e97'
-    - 'media:image:8e1ac1f0-8fa9-470d-ad15-6e9f7f0e38b6'
+    - 'file:file:136d7d91-4a18-4fc8-b65a-2db144b77240'
+    - 'file:file:3526ffaf-53fc-491f-b2f6-271c67c0e2fe'
+    - 'file:file:35a85326-cedd-4fb1-a73b-5750d910067e'
+    - 'file:file:a91edad7-b83d-4761-842e-68f687b924d8'
+    - 'media:image:157504de-26e6-4c11-ae7a-cdb685af89cc'
+    - 'media:image:3fe49026-d9f1-4749-855a-5a573459cae6'
+    - 'media:image:48c9fc14-4475-4ba5-b11e-f0d4c7bd492d'
+    - 'media:image:797fea71-ec14-46bb-a796-b74b5b3e0ae5'
   module:
     - file
     - media
@@ -68,7 +68,7 @@ component_tree:
         value: "<p>Reporting on the studios, buildings and products being made right now, told by the people who made them.</p>"
         format: canvas_html_block
       media:
-        target_id: '38'
+        target_uuid: 48c9fc14-4475-4ba5-b11e-f0d4c7bd492d
       title_tag: h2
       title_size: h1
       overlay_bg: none
@@ -89,7 +89,7 @@ component_tree:
         value: '<p>Assemble your site from composable Drupal recipes, applied on their own or grouped together. Start from an enterprise-ready baseline instead of wiring everything up by hand.</p>'
         format: canvas_html_block
       media:
-        target_id: '36'
+        target_uuid: 3fe49026-d9f1-4749-855a-5a573459cae6
       title_tag: h2
       title_size: h1
       overlay_bg: none
@@ -110,7 +110,7 @@ component_tree:
         value: '<p>Build and arrange pages visually with Drupal Canvas, no code required. The Bootstrap 5 based Vartheme keeps every layout responsive and on brand.</p>'
         format: canvas_html_block
       media:
-        target_id: '26'
+        target_uuid: 797fea71-ec14-46bb-a796-b74b5b3e0ae5
       title_tag: h2
       title_size: h1
       overlay_bg: none
@@ -131,7 +131,7 @@ component_tree:
         value: '<p>Security hardening, accessibility, and SEO come configured out of the box. Launch with confidence on a foundation built for real-world production sites.</p>'
         format: canvas_html_block
       media:
-        target_id: '24'
+        target_uuid: 157504de-26e6-4c11-ae7a-cdb685af89cc
       title_tag: h2
       title_size: h1
       overlay_bg: none

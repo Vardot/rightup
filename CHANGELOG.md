@@ -21,7 +21,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Placement options) and so could never bring up to date (#3639420).
 - Canvas data health no longer reports the Hero Slide component as invalid on a fresh install. The
   recipe stops shipping its Component config, whose default text had been edited without a new
-  version, so Canvas builds it from the theme (#RB03).
+  version, so Canvas builds it from the theme (#3639425).
+- The Image Cards, Hero Slider, Media Banner Intro and Feature Highlight patterns show The Rightup's
+  own demo images on every install. They reference the images by UUID instead of by numeric ID,
+  which pointed at audio items on an installed site. Feature Cards and Text with Cards no longer
+  carry icons that do not exist in The Rightup (#3639423).
 
 ## [1.0.9] - 2026-11-14
 ### Fixed

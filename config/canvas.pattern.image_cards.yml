@@ -16,13 +16,14 @@ dependencies:
     - media.type.image
     - media.type.svg_image
   content:
-    - 'file:file:2652f6cd-284e-5598-8d07-2242cad1c3e5'
-    - 'file:file:3bef5ee9-daa4-5584-a37c-7dc22bc78997'
-    - 'file:file:b9309646-f2ca-5c0d-8f2b-6e99da354e87'
-    - 'media:svg_image:1fbeced8-3376-5027-a8df-67d07c1352e3'
-    - 'media:svg_image:29e1d4c3-4817-5921-972d-0a276e6f9b19'
-    - 'media:svg_image:5fb606b9-9b43-54e7-9bf4-357a3360993d'
-    - 'media:svg_image:70e666ba-6af5-5456-bf74-13c53e653fb5'
+    - 'file:file:2bcee994-1003-48b0-b1f6-a5a92604c9d3'
+    - 'file:file:61a1f698-2bbc-4637-894e-511bffb9474f'
+    - 'file:file:79c7c9b9-254b-4e61-96a8-0d6ef65ef8df'
+    - 'file:file:aa25aa6a-9ab1-4071-a993-f859690ccbf3'
+    - 'media:image:02f79969-1865-4c03-9920-488972ff170d'
+    - 'media:image:34e0d823-b607-4fd8-84af-8516062fe3e2'
+    - 'media:image:9390cad4-3619-4c98-94ae-f789202e28be'
+    - 'media:image:afe93cbe-b34e-46e2-9a7e-45ff6424e105'
   module:
     - file
     - media
@@ -99,7 +100,7 @@ component_tree:
     component_version: 20b07c548b4cf729
     inputs:
       media:
-        target_id: '15'
+        target_uuid: afe93cbe-b34e-46e2-9a7e-45ff6424e105
     label: Image
   1967964b-cdbd-43a3-8907-5bab8ac05509:
     parent_uuid: 1f651f07-475a-418f-beee-42f6fcf7c121
@@ -145,7 +146,7 @@ component_tree:
     component_version: 20b07c548b4cf729
     inputs:
       media:
-        target_id: '1'
+        target_uuid: 9390cad4-3619-4c98-94ae-f789202e28be
     label: Image
   c9fb45a5-989b-49e8-8130-ee270363a533:
     parent_uuid: fda214d7-6837-4aba-b4f1-29f00be316a0
@@ -191,7 +192,7 @@ component_tree:
     component_version: 20b07c548b4cf729
     inputs:
       media:
-        target_id: '14'
+        target_uuid: 34e0d823-b607-4fd8-84af-8516062fe3e2
     label: Image
   a1334300-831a-4592-9152-7cbfc6b6a400:
     parent_uuid: 611f83d7-3b1c-411a-9cc4-17d5616caec8
@@ -237,7 +238,7 @@ component_tree:
     component_version: 20b07c548b4cf729
     inputs:
       media:
-        target_id: '28'
+        target_uuid: 02f79969-1865-4c03-9920-488972ff170d
     label: Image
   546a626b-f136-4d7a-b6e1-f64d0b645959:
     parent_uuid: 1d7a48f3-ad37-46f9-8ebc-081a3137cb38

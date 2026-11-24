@@ -14,8 +14,8 @@ dependencies:
     - media.type.image
     - media.type.svg_image
   content:
-    - 'file:file:55be58cb-39aa-43a3-a011-bd3c2711d669'
-    - 'media:image:65af2f45-8bb9-4c0c-b2fd-9dae1e4ff1c9'
+    - 'file:file:f1a802c8-7cc9-4413-ba6a-5d18dd8aeabd'
+    - 'media:image:8235799f-3a5b-4c70-958d-df36f4bdcd44'
   module:
     - file
     - media
@@ -40,7 +40,7 @@ component_tree:
       padding_inline_end: pe-5
       radius: rounded-2
       media:
-        target_id: '27'
+        target_uuid: 8235799f-3a5b-4c70-958d-df36f4bdcd44
     label: 'Media banner'
   565d2149-dce3-431f-8b77-42c1750652fe:
     parent_uuid: 4b714aa3-24dd-4e0b-8fda-cb5561527dff

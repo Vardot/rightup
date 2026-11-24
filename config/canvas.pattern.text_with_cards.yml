@@ -8,21 +8,9 @@ dependencies:
     - canvas.component.sdc.vartheme_bs5_rightup.section
     - canvas.component.sdc.vartheme_bs5_rightup.spacer
     - canvas.component.sdc.vartheme_bs5_rightup.text
-    - field.field.media.image.field_media_image
-    - field.field.media.svg_image.field_media_svg_image
     - filter.format.canvas_html_block
-    - image.style.canvas_parametrized_width
-    - media.type.image
-    - media.type.svg_image
-  content:
-    - 'file:file:3bef5ee9-daa4-5584-a37c-7dc22bc78997'
-    - 'file:file:9adc6fbf-e17a-5869-ad75-1b65f09b106c'
-    - 'media:svg_image:29e1d4c3-4817-5921-972d-0a276e6f9b19'
-    - 'media:svg_image:4636b88f-f27b-502e-8f04-257ae082a013'
   module:
-    - file
     - link
-    - media
     - options
     - text
 id: text_with_cards
@@ -120,8 +108,6 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-      icon_image:
-        target_id: '15'
     label: 'Text Card'
   da049ffb-e053-422e-ad8e-badbc4329123:
     parent_uuid: 3b9cc2ec-a59f-4b39-a72c-4c6a6651d952
@@ -177,8 +163,6 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-      icon_image:
-        target_id: '18'
     label: 'Text Card'
   9ab19436-004e-4303-b548-c5b3e5d1040c:
     parent_uuid: 261234b6-9e4e-437a-a4c1-a3f3e8c6321e

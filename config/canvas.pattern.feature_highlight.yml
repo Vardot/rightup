@@ -14,8 +14,8 @@ dependencies:
     - media.type.image
     - media.type.svg_image
   content:
-    - 'file:file:20f5e582-98d4-41be-a3cd-7cf937c05a0d'
-    - 'media:image:464c44f5-2ba4-46c0-909b-d6c82ad48a3e'
+    - 'file:file:9330bb06-ea01-469b-bc4e-15cd4b519a20'
+    - 'media:image:de02f379-7c66-479a-be1b-7497651dab4d'
   module:
     - file
     - media
@@ -50,7 +50,7 @@ component_tree:
     inputs:
       media_position: end
       media_image:
-        target_id: '19'
+        target_uuid: de02f379-7c66-479a-be1b-7497651dab4d
       ratio: ratio-auto
       fit: object-fit-contain
       card_border: false

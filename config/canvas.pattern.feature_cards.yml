@@ -7,22 +7,8 @@ dependencies:
     - canvas.component.sdc.vartheme_bs5_rightup.section
     - canvas.component.sdc.vartheme_bs5_rightup.spacer
     - canvas.component.sdc.vartheme_bs5_rightup.text
-    - field.field.media.image.field_media_image
-    - field.field.media.svg_image.field_media_svg_image
     - filter.format.canvas_html_block
-    - image.style.canvas_parametrized_width
-    - media.type.image
-    - media.type.svg_image
-  content:
-    - 'file:file:2652f6cd-284e-5598-8d07-2242cad1c3e5'
-    - 'file:file:b9309646-f2ca-5c0d-8f2b-6e99da354e87'
-    - 'file:file:e1261c3b-599d-58fc-9838-1c81975802a3'
-    - 'media:svg_image:1955c46d-6f86-50a7-880a-fa8d434c5abb'
-    - 'media:svg_image:1fbeced8-3376-5027-a8df-67d07c1352e3'
-    - 'media:svg_image:70e666ba-6af5-5456-bf74-13c53e653fb5'
   module:
-    - file
-    - media
     - options
     - text
 id: feature_cards
@@ -67,8 +53,6 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-      icon_image:
-        target_id: '13'
     label: 'Text Card'
   7047cc80-ddc7-495c-9b44-c1b48fad5180:
     parent_uuid: 2838a875-78d1-4cfa-927c-29cace1cc59f
@@ -124,8 +108,6 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-      icon_image:
-        target_id: '14'
     label: 'Text Card'
   985a31a9-03d9-4294-92de-1a9e8594b4e2:
     parent_uuid: f37ffb3f-e9c3-4390-a48c-5d76362d58d5
@@ -181,8 +163,6 @@ component_tree:
       corner_style: rounded-3
       equal_height: true
       stretched_link: false
-      icon_image:
-        target_id: '28'
     label: 'Text Card'
   076f528f-1c8e-496f-88b1-5d18859204f8:
     parent_uuid: 24f0ea42-14af-4a6e-be9d-0e76f71eee91
