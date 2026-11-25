@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.11] - 2026-11-25
+### Changed
+- Use caret constraints with ^11.4 || ^12.0 to allow Drupal 11.5 and Drupal 12 in The Rightup
+  ([#3639428](https://git.drupalcode.org/project/rightup/-/work_items/3639428)).
+
 ## [1.0.10] - 2026-11-24
 ### Added
 - A Drupal Canvas brand kit that restyles the whole site: its colours are the Bootstrap 5.3 colour
