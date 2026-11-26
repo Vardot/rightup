@@ -1109,7 +1109,7 @@ config:
       disable: []
     canvas.component.block.navigation_link:
       disable: []
-    canvas.component.block.navigation_shortcuts:
+    ?canvas.component.block.navigation_shortcuts:
       disable: []
     canvas.component.block.page_title_block:
       disable: []
